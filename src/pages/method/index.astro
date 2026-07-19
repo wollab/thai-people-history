@@ -1,0 +1,18 @@
+---
+import { AlertTriangle, CheckCircle2, CircleHelp, Scale } from "lucide-astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="วิธีอ่านหลักฐาน | ประวัติศาสตร์ประชาชนไทย">
+  <article class="method-page container">
+    <header><p class="eyebrow">เกี่ยวกับโครงการ</p><h1>อ่านหลักฐานอย่างไร<br />โดยไม่ทำให้ความจริงง่ายเกินไป</h1><p>คลังนี้แยกสิ่งที่หลักฐานรองรับออกจากสิ่งที่ผู้เขียนตีความ และแสดงความไม่แน่นอนเมื่อข้อมูลยังไม่พอ</p></header>
+    <section class="principle-grid" id="evidence">
+      <article><CheckCircle2 /><h2>ข้อเท็จจริง</h2><p>ข้อความที่มีแหล่งอ้างอิงชัดเจน ระบุปี หน่วย นิยาม หรือหน้าต้นทางได้</p></article>
+      <article><Scale /><h2>การตีความ</h2><p>คำอธิบายความหมายหรือความสัมพันธ์ระหว่างหลักฐาน ซึ่งต้องแยกจาก fact</p></article>
+      <article><AlertTriangle /><h2>ข้อถกเถียง</h2><p>จุดที่แหล่งข้อมูลหรือผู้ศึกษาให้คำอธิบายต่างกัน โดยไม่รีบตัดมุมมองที่ไม่เข้ากับ narrative</p></article>
+      <article><CircleHelp /><h2>คำถามเปิด</h2><p>ข้อมูลที่ยังไม่พอจะสรุป และสิ่งที่ต้องค้นต่อก่อนเผยแพร่เป็นความรู้สาธารณะ</p></article>
+    </section>
+    <section class="method-copy"><h2>กติกาก่อนเผยแพร่</h2><ol><li>เหตุการณ์ทั่วไปมี source ที่ตรวจสอบได้อย่างน้อยหนึ่งแหล่ง</li><li>เหตุการณ์สำคัญหรืออ่อนไหวพยายาม cross-check จากแหล่งต่างประเภท 2-3 แหล่ง</li><li>ตัวเลขบันทึกปี ชุดข้อมูล หน่วย และนิยาม</li><li>causal claim ต้องมีหลักฐานรองรับ ไม่ใช้การเกิดพร้อมกันแทนเหตุและผล</li><li>ทุกบทมีข้อจำกัด เสียงที่ยังหายไป และวันที่ตรวจทานล่าสุด</li></ol></section>
+    <section class="method-copy" id="rights"><h2>สิทธิภาพและสื่อ</h2><p>ภาพสาธารณะต้องมี creator, วันที่, archive, license และ caption ครบ ไฟล์ที่ติดลิขสิทธิ์หรือ oral history ที่ยังไม่ได้รับอนุญาตจะอยู่เฉพาะใน research layer และไม่ถูกนำขึ้นเว็บ</p></section>
+  </article>
+</BaseLayout>

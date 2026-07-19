@@ -1,0 +1,114 @@
+---
+import { Menu, Search, X } from "lucide-astro";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "ประวัติศาสตร์ประชาชนไทย 2460-2560",
+  description = "คลังประวัติศาสตร์ภาคประชาชนไทยผ่านชีวิต โอกาส ความคิด และการเปลี่ยนแปลง",
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f7f2e8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;600;700;800&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="masthead" href={base}>ประวัติศาสตร์ประชาชนไทย</a>
+      <span class="date-stamp">พ.ศ. 2460-2560</span>
+      <nav class="desktop-nav" aria-label="เมนูหลัก">
+        <a href={`${base}#timeline`}>สำรวจตามเวลา</a>
+        <a href={`${base}#stories`}>ชีวิตผู้คน</a>
+        <a href={`${base}#themes`}>ประเด็น</a>
+        <a href={`${base}#world`}>ไทยกับโลก</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="ค้นหา" data-search-open><Search size={21} /></button>
+        <button class="icon-button mobile-menu-button" type="button" aria-label="เปิดเมนู" aria-expanded="false" data-menu-button><Menu size={23} /></button>
+      </div>
+      <nav class="mobile-nav" aria-label="เมนูมือถือ" data-mobile-nav hidden>
+        <a href={`${base}#timeline`}>สำรวจตามเวลา</a>
+        <a href={`${base}#stories`}>ชีวิตผู้คน</a>
+        <a href={`${base}#themes`}>ประเด็น</a>
+        <a href={`${base}#world`}>ไทยกับโลก</a>
+        <a href={`${base}method/`}>วิธีอ่านหลักฐาน</a>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer class="site-footer">
+      <div>
+        <strong>ประวัติศาสตร์ประชาชนไทย 2460-2560</strong>
+        <p>ต้นแบบคลังความรู้สาธารณะ เนื้อหายังอยู่ระหว่างค้นคว้าและตรวจสอบ</p>
+      </div>
+      <nav aria-label="เมนูท้ายหน้า">
+        <a href={`${base}method/`}>วิธีวิจัย</a>
+        <a href={`${base}method/#evidence`}>สถานะหลักฐาน</a>
+        <a href={`${base}method/#rights`}>สิทธิภาพและสื่อ</a>
+      </nav>
+    </footer>
+
+    <dialog class="search-dialog" data-search-dialog>
+      <form method="dialog" class="search-shell">
+        <div class="search-bar">
+          <Search size={22} aria-hidden="true" />
+          <label class="sr-only" for="site-search">ค้นหาภายในต้นแบบ</label>
+          <input id="site-search" type="search" placeholder="ค้นหาช่วงเวลา ประเด็น หรือชีวิตผู้คน" autocomplete="off" data-search-input />
+          <button class="icon-button" value="cancel" aria-label="ปิดการค้นหา"><X size={22} /></button>
+        </div>
+        <p class="search-hint">ลองค้นหา: การศึกษา, เมือง, เศรษฐกิจ, สงครามเย็น</p>
+        <div class="search-results" data-search-results></div>
+      </form>
+    </dialog>
+
+    <script is:inline define:vars={{ base }}>
+      const menuButton = document.querySelector("[data-menu-button]");
+      const mobileNav = document.querySelector("[data-mobile-nav]");
+      menuButton?.addEventListener("click", () => {
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", String(!isOpen));
+        mobileNav.hidden = isOpen;
+      });
+      mobileNav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+        mobileNav.hidden = true;
+        menuButton?.setAttribute("aria-expanded", "false");
+      }));
+
+      const dialog = document.querySelector("[data-search-dialog]");
+      const searchInput = document.querySelector("[data-search-input]");
+      const results = document.querySelector("[data-search-results]");
+      const searchData = [
+        { title: "หนึ่งร้อยปีในหน้าประวัติศาสตร์", meta: "สำรวจตามเวลา", href: `${base}#timeline`, keywords: "ปี เวลา ช่วง ประวัติศาสตร์" },
+        { title: "เมืองขยาย ชีวิตเปลี่ยน", meta: "บททดลอง", href: `${base}stories/city-and-mobility/`, keywords: "เมือง กรุงเทพ การเดินทาง งาน" },
+        { title: "การศึกษาและความฝัน", meta: "บททดลอง", href: `${base}stories/education-and-dreams/`, keywords: "โรงเรียน การศึกษา เด็ก ครอบครัว โอกาส" },
+        { title: "เศรษฐกิจในชีวิตประจำวัน", meta: "บททดลอง", href: `${base}stories/everyday-economy/`, keywords: "เศรษฐกิจ รายได้ ราคา ที่ดิน หนี้ เกษตร" },
+        { title: "วิธีอ่านหลักฐาน", meta: "เกี่ยวกับโครงการ", href: `${base}method/`, keywords: "แหล่งอ้างอิง fact interpretation dispute สงครามเย็น" },
+      ];
+      document.querySelector("[data-search-open]")?.addEventListener("click", () => {
+        dialog?.showModal();
+        setTimeout(() => searchInput?.focus(), 0);
+      });
+      searchInput?.addEventListener("input", (event) => {
+        const query = event.target.value.trim().toLowerCase();
+        if (!query) { results.innerHTML = ""; return; }
+        const matches = searchData.filter((item) => `${item.title} ${item.meta} ${item.keywords}`.toLowerCase().includes(query));
+        results.innerHTML = matches.length
+          ? matches.map((item) => `<a href="${item.href}"><strong>${item.title}</strong><span>${item.meta}</span></a>`).join("")
+          : `<p class="empty-result">ยังไม่พบในต้นแบบ ลองใช้คำที่กว้างขึ้น</p>`;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+---
+import { ArrowRight, BookOpen, CalendarDays, CheckCircle2, Clock3, Globe2, Users } from "lucide-astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { periods, stories } from "../data/periods";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout>
+  <section class="issue-line container" aria-label="ข้อมูลฉบับ">
+    <span>ปีที่ 1</span><span>ฉบับต้นแบบ</span><span>ปรับปรุง 19 กรกฎาคม 2569</span><span>คลังเรียนรู้ประวัติศาสตร์โดยและเพื่อประชาชน</span>
+  </section>
+
+  <section class="hero container">
+    <div class="hero-copy">
+      <p class="eyebrow">คลังความรู้สาธารณะ</p>
+      <h1>100 ปีของชีวิต<br />โอกาส ความคิด<br />และการเปลี่ยนแปลง</h1>
+      <p class="hero-deck">ร่วมสำรวจเรื่องราวของผู้คน เหตุการณ์ และความคิดที่หล่อหลอมสังคมไทยในรอบศตวรรษ ผ่านเอกสาร ภาพถ่าย เสียง และคำบอกเล่า</p>
+      <a class="primary-action" href="#timeline">เริ่มสำรวจ <ArrowRight size={18} /></a>
+    </div>
+    <figure class="hero-image">
+      <img src={`${base}images/bangkok-1960.jpg`} alt="กรุงเทพฯ ในปี ค.ศ. 1960 ภาพแนวตั้งขาวดำ" />
+      <figcaption>กรุงเทพฯ ค.ศ. 1960 · ภาพสาธารณสมบัติ · Wikimedia Commons</figcaption>
+    </figure>
+    <ol class="year-rail" aria-label="ช่วงปีสำคัญ">
+      {periods.map((period, index) => <li class:list={{ active: index === 2 }}><span>{period.range.split("-")[0]}</span></li>)}
+      <li><span>2560</span></li>
+    </ol>
+  </section>
+
+  <section class="route-grid container" aria-labelledby="route-heading">
+    <h2 id="route-heading" class="sr-only">เลือกเส้นทางสำรวจ</h2>
+    <a href="#timeline"><CalendarDays /><span><strong>ตามปี</strong><small>สำรวจเหตุการณ์สำคัญทีละช่วงเวลา</small></span><ArrowRight /></a>
+    <a href="#stories"><Users /><span><strong>ตามชีวิต</strong><small>เข้าใจชีวิตผู้คนในหลากหลายมิติ</small></span><ArrowRight /></a>
+    <a href="#themes"><BookOpen /><span><strong>ตามเรื่อง</strong><small>เจาะลึกประเด็นที่หลากหลายและเชื่อมโยง</small></span><ArrowRight /></a>
+    <a href="#world"><Globe2 /><span><strong>เทียบโลก</strong><small>มองประเทศไทยในบริบทโลกและภูมิภาค</small></span><ArrowRight /></a>
+  </section>
+
+  <section class="timeline-section" id="timeline" data-timeline>
+    <div class="container">
+      <div class="section-heading">
+        <div><p class="eyebrow">Timeline</p><h2>หนึ่งร้อยปีในหน้าประวัติศาสตร์</h2></div>
+        <p>เลือกช่วงเวลาเพื่อดูคำถามหลักของไทยและบริบทโลกที่ต้องค้นคว้าควบคู่กัน</p>
+      </div>
+      <div class="period-tabs" role="tablist" aria-label="เลือกช่วงเวลา">
+        {periods.map((period, index) => <button type="button" role="tab" aria-selected={index === 2 ? "true" : "false"} data-period={index}>{period.range}</button>)}
+      </div>
+      <div class="timeline-rows" id="world">
+        <div class="lane-label thailand"><span class="map-dot"></span>ประเทศไทย</div>
+        <div class="lane-copy" data-thai>{periods[2].thai}</div>
+        <div class="lane-label world"><Globe2 size={20} />โลกและภูมิภาค</div>
+        <div class="lane-copy" data-world>{periods[2].world}</div>
+      </div>
+      <article class="period-focus" aria-live="polite">
+        <p class="period-number" data-range>{periods[2].range}</p>
+        <div><h3 data-period-title>{periods[2].title}</h3><p data-period-question>{periods[2].question}</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="stories container" id="stories" aria-labelledby="stories-heading">
+    <div class="section-heading compact"><div><p class="eyebrow">Reading paths</p><h2 id="stories-heading">เรื่องที่ชวนอ่านต่อ</h2></div><p class="draft-label">เนื้อหาทดลอง ยังไม่ใช่บทสรุปทางประวัติศาสตร์</p></div>
+    <div class="story-grid">
+      {stories.map((story) => (
+        <article class="story-card">
+          <a class="story-image" href={`${base}stories/${story.slug}/`}><img src={`${base}${story.image}`} alt={story.imageAlt} /></a>
+          <div class="story-content">
+            <p class="story-period">พ.ศ. {story.period}</p>
+            <h3><a href={`${base}stories/${story.slug}/`}>{story.title}</a></h3>
+            <p>{story.deck}</p>
+            <footer><span><CheckCircle2 size={16} />ตรวจสิทธิภาพแล้ว</span><span><Clock3 size={16} />{story.time}</span><a href={`${base}stories/${story.slug}/`} aria-label={`อ่าน ${story.title}`}><ArrowRight size={19} /></a></footer>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="themes" id="themes">
+    <div class="container themes-inner">
+      <div><p class="eyebrow">Life themes</p><h2>ชีวิตคนเปลี่ยนอย่างไร</h2><p>ประวัติศาสตร์ไม่เกิดขึ้นเฉพาะในรัฐสภาหรือสนามรบ แต่ปรากฏในงาน บ้าน โรงเรียน ตลาด ถนน และความฝันของผู้คน</p></div>
+      <div class="theme-list">
+        <a href={`${base}stories/everyday-economy/`}><span>01</span>เศรษฐกิจและโอกาส<ArrowRight /></a>
+        <a href={`${base}stories/education-and-dreams/`}><span>02</span>การศึกษาและโลกทัศน์<ArrowRight /></a>
+        <a href={`${base}stories/city-and-mobility/`}><span>03</span>เมือง ชนบท และการย้ายถิ่น<ArrowRight /></a>
+        <a href={`${base}method/`}><span>04</span>สิทธิ การเคลื่อนไหว และความทรงจำ<ArrowRight /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="method-strip container">
+    <div><p class="eyebrow">Research protocol</p><h2>อ่านง่าย โดยไม่ซ่อนความไม่แน่นอน</h2></div>
+    <p>ทุกเนื้อหาแยกข้อเท็จจริง การตีความ ข้อถกเถียง และคำถามที่ยังเปิดอยู่ พร้อมพากลับไปหาแหล่งอ้างอิง</p>
+    <a class="text-action" href={`${base}method/`}>ดูวิธีทำงาน <ArrowRight size={18} /></a>
+  </section>
+
+<script type="application/json" id="period-data" is:inline set:html={JSON.stringify(periods)}></script>
+
+<script is:inline>
+  const periodsData = JSON.parse(document.querySelector("#period-data")?.textContent ?? "[]");
+    const timeline = document.querySelector("[data-timeline]");
+    const tabs = timeline?.querySelectorAll("[data-period]") ?? [];
+    tabs.forEach((tab) => tab.addEventListener("click", () => {
+      const index = Number(tab.dataset.period);
+    const period = periodsData[index];
+      tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
+      timeline.querySelector("[data-range]").textContent = period.range;
+      timeline.querySelector("[data-period-title]").textContent = period.title;
+      timeline.querySelector("[data-period-question]").textContent = period.question;
+      timeline.querySelector("[data-thai]").textContent = period.thai;
+      timeline.querySelector("[data-world]").textContent = period.world;
+    }));
+  </script>
+</BaseLayout>

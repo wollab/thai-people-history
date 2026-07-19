@@ -1,0 +1,53 @@
+---
+import { ArrowLeft, CheckCircle2, ExternalLink } from "lucide-astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { stories } from "../../data/periods";
+
+export function getStaticPaths() {
+  return stories.map((story) => ({ params: { slug: story.slug }, props: { story } }));
+}
+
+const { story } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const sourceMap: Record<string, { caption: string; credit: string; source: string }> = {
+  "city-and-mobility": {
+    caption: "กรุงเทพฯ ค.ศ. 1960",
+    credit: "Unknown author · Public domain in Thailand",
+    source: "https://commons.wikimedia.org/wiki/File:Bangkok,_1960.jpg",
+  },
+  "education-and-dreams": {
+    caption: "ห้องเรียนระดับประถม อำเภอนาหว้า จังหวัดนครพนม ค.ศ. 2007",
+    credit: "Mattes · Public domain",
+    source: "https://commons.wikimedia.org/wiki/File:Classroom_Grade_School_Na_Wa.JPG",
+  },
+  "everyday-economy": {
+    caption: "เกษตรกรในนาข้าว ประเทศไทย ค.ศ. 2016",
+    credit: "Jtorquy · CC0 1.0",
+    source: "https://commons.wikimedia.org/wiki/File:Rice_Farmers_in_Thailand.jpg",
+  },
+};
+const source = sourceMap[story.slug];
+---
+
+<BaseLayout title={`${story.title} | ประวัติศาสตร์ประชาชนไทย`} description={story.deck}>
+  <article class="article-page container">
+    <a class="back-link" href={`${base}#stories`}><ArrowLeft size={18} /> กลับสู่เรื่องที่ชวนอ่าน</a>
+    <header class="article-header">
+      <div class="article-date"><span>พ.ศ.</span><strong>{story.period}</strong></div>
+      <div><p class="eyebrow">บททดลอง · อยู่ระหว่างค้นคว้า</p><h1>{story.title}</h1><p class="article-deck">{story.deck}</p></div>
+    </header>
+    <figure class="article-figure">
+      <img src={`${base}${story.image}`} alt={story.imageAlt} />
+      <figcaption><span>{source.caption}</span><span>{source.credit}</span></figcaption>
+    </figure>
+    <div class="article-layout">
+      <aside class="article-index"><strong>ในหน้านี้</strong><a href="#question">คำถามตั้งต้น</a><a href="#evidence">หลักฐานที่ต้องหา</a><a href="#limits">ขอบเขตของบททดลอง</a></aside>
+      <div class="article-body">
+        <section id="question"><p class="status-line interpretation">คำถามตั้งต้น</p><h2>เราอยากเข้าใจอะไรจากเรื่องนี้</h2><p>หน้านี้แสดงรูปแบบการอ่านและระบบอ้างอิงของเว็บไซต์ เนื้อหายังเป็นกรอบคำถามจากโครงการวิจัย ไม่ใช่ข้อสรุปทางประวัติศาสตร์</p><p>การเขียนฉบับจริงจะเริ่มจากหลักฐานร่วมสมัย งานวิชาการ สถิติ และประสบการณ์ของผู้คนหลายกลุ่ม ก่อนพัฒนาเป็น narrative ที่อ่านต่อเนื่องได้</p></section>
+        <section id="evidence"><p class="status-line evidence"><CheckCircle2 size={17} /> แผนการตรวจสอบ</p><h2>หลักฐานที่ต้องนำมาวางร่วมกัน</h2><ul><li>เอกสารรัฐและสถิติที่นิยามปี หน่วย และขอบเขตชัดเจน</li><li>หนังสือพิมพ์ ภาพถ่าย หรือสื่อร่วมสมัยที่บอกบรรยากาศของช่วงเวลา</li><li>งานวิชาการที่ช่วยอธิบายโครงสร้างและข้อถกเถียง</li><li>คำบอกเล่าหรือ memoir ที่ทำให้เห็นประสบการณ์ แต่ต้องแยกความทรงจำออกจาก fact ที่ตรวจได้</li></ul></section>
+        <section id="limits"><p class="status-line caution">ข้อมูลยังไม่พอ</p><h2>ขอบเขตของบททดลอง</h2><p>ภาพในหน้านี้ผ่านการตรวจสิทธิแล้ว แต่ยังไม่ถูกใช้เป็นหลักฐานรองรับข้อสรุปใด เนื้อหาจะเลื่อนเป็น public draft ได้เมื่อ claim สำคัญมี source metadata, counter-source และ bias review ครบตาม protocol</p></section>
+        <section class="source-note"><p class="eyebrow">Image source</p><h2>ที่มาของภาพ</h2><p>{source.caption} · {source.credit}</p><a href={source.source} target="_blank" rel="noreferrer">เปิดหน้าต้นฉบับที่ Wikimedia Commons <ExternalLink size={16} /></a></section>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
