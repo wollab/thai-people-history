@@ -1,6 +1,7 @@
 ---
 import { Menu, Search, X } from "lucide-astro";
 import "../styles/global.css";
+import { events } from "../data/history";
 
 interface Props {
   title?: string;
@@ -12,6 +13,12 @@ const {
   description = "คลังประวัติศาสตร์ภาคประชาชนไทยผ่านชีวิต โอกาส ความคิด และการเปลี่ยนแปลง",
 } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const eventSearchData = events.map((event) => ({
+  title: event.title,
+  meta: `พ.ศ. ${event.beYear} · ${event.period}`,
+  href: `${base}archive/?q=${encodeURIComponent(event.title)}`,
+  keywords: [event.summary, event.peopleImpact, ...event.themes, ...event.locations].join(" "),
+}));
 ---
 
 <!doctype html>
@@ -31,6 +38,7 @@ const base = import.meta.env.BASE_URL;
       <a class="masthead" href={base}>ประวัติศาสตร์ประชาชนไทย</a>
       <span class="date-stamp">พ.ศ. 2460-2560</span>
       <nav class="desktop-nav" aria-label="เมนูหลัก">
+        <a href={`${base}archive/`}>ฐานข้อมูล</a>
         <a href={`${base}#timeline`}>สำรวจตามเวลา</a>
         <a href={`${base}#stories`}>ชีวิตผู้คน</a>
         <a href={`${base}#themes`}>ประเด็น</a>
@@ -41,6 +49,7 @@ const base = import.meta.env.BASE_URL;
         <button class="icon-button mobile-menu-button" type="button" aria-label="เปิดเมนู" aria-expanded="false" data-menu-button><Menu size={23} /></button>
       </div>
       <nav class="mobile-nav" aria-label="เมนูมือถือ" data-mobile-nav hidden>
+        <a href={`${base}archive/`}>ฐานข้อมูลเหตุการณ์</a>
         <a href={`${base}#timeline`}>สำรวจตามเวลา</a>
         <a href={`${base}#stories`}>ชีวิตผู้คน</a>
         <a href={`${base}#themes`}>ประเด็น</a>
@@ -55,6 +64,7 @@ const base = import.meta.env.BASE_URL;
         <p>ต้นแบบคลังความรู้สาธารณะ เนื้อหายังอยู่ระหว่างค้นคว้าและตรวจสอบ</p>
       </div>
       <nav aria-label="เมนูท้ายหน้า">
+        <a href={`${base}archive/`}>ฐานข้อมูล</a>
         <a href={`${base}method/`}>วิธีวิจัย</a>
         <a href={`${base}method/#evidence`}>สถานะหลักฐาน</a>
         <a href={`${base}method/#rights`}>สิทธิภาพและสื่อ</a>
@@ -69,11 +79,12 @@ const base = import.meta.env.BASE_URL;
           <input id="site-search" type="search" placeholder="ค้นหาช่วงเวลา ประเด็น หรือชีวิตผู้คน" autocomplete="off" data-search-input />
           <button class="icon-button" value="cancel" aria-label="ปิดการค้นหา"><X size={22} /></button>
         </div>
-        <p class="search-hint">ลองค้นหา: การศึกษา, เมือง, เศรษฐกิจ, สงครามเย็น</p>
+        <p class="search-hint">ค้นหาได้จาก {events.length} เหตุการณ์ เช่น การศึกษา, แรงงาน, วิกฤต 2540</p>
         <div class="search-results" data-search-results></div>
       </form>
     </dialog>
 
+    <script type="application/json" id="event-search-data" is:inline set:html={JSON.stringify(eventSearchData)}></script>
     <script is:inline define:vars={{ base }}>
       const menuButton = document.querySelector("[data-menu-button]");
       const mobileNav = document.querySelector("[data-mobile-nav]");
@@ -90,12 +101,15 @@ const base = import.meta.env.BASE_URL;
       const dialog = document.querySelector("[data-search-dialog]");
       const searchInput = document.querySelector("[data-search-input]");
       const results = document.querySelector("[data-search-results]");
+      const eventSearchData = JSON.parse(document.querySelector("#event-search-data")?.textContent ?? "[]");
       const searchData = [
+        { title: "ฐานข้อมูลเหตุการณ์ 2460-2560", meta: "40 เหตุการณ์", href: `${base}archive/`, keywords: "ฐานข้อมูล timeline source อ้างอิง" },
         { title: "หนึ่งร้อยปีในหน้าประวัติศาสตร์", meta: "สำรวจตามเวลา", href: `${base}#timeline`, keywords: "ปี เวลา ช่วง ประวัติศาสตร์" },
         { title: "เมืองขยาย ชีวิตเปลี่ยน", meta: "บททดลอง", href: `${base}stories/city-and-mobility/`, keywords: "เมือง กรุงเทพ การเดินทาง งาน" },
         { title: "การศึกษาและความฝัน", meta: "บททดลอง", href: `${base}stories/education-and-dreams/`, keywords: "โรงเรียน การศึกษา เด็ก ครอบครัว โอกาส" },
         { title: "เศรษฐกิจในชีวิตประจำวัน", meta: "บททดลอง", href: `${base}stories/everyday-economy/`, keywords: "เศรษฐกิจ รายได้ ราคา ที่ดิน หนี้ เกษตร" },
         { title: "วิธีอ่านหลักฐาน", meta: "เกี่ยวกับโครงการ", href: `${base}method/`, keywords: "แหล่งอ้างอิง fact interpretation dispute สงครามเย็น" },
+        ...eventSearchData,
       ];
       document.querySelector("[data-search-open]")?.addEventListener("click", () => {
         dialog?.showModal();

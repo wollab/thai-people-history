@@ -2,6 +2,7 @@
 import { ArrowRight, BookOpen, CalendarDays, CheckCircle2, Clock3, Globe2, Users } from "lucide-astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { periods, stories } from "../data/periods";
+import { events } from "../data/history";
 
 const base = import.meta.env.BASE_URL;
 ---
@@ -16,7 +17,7 @@ const base = import.meta.env.BASE_URL;
       <p class="eyebrow">คลังความรู้สาธารณะ</p>
       <h1>100 ปีของชีวิต<br />โอกาส ความคิด<br />และการเปลี่ยนแปลง</h1>
       <p class="hero-deck">ร่วมสำรวจเรื่องราวของผู้คน เหตุการณ์ และความคิดที่หล่อหลอมสังคมไทยในรอบศตวรรษ ผ่านเอกสาร ภาพถ่าย เสียง และคำบอกเล่า</p>
-      <a class="primary-action" href="#timeline">เริ่มสำรวจ <ArrowRight size={18} /></a>
+      <a class="primary-action" href={`${base}archive/`}>สำรวจ {events.length} เหตุการณ์ <ArrowRight size={18} /></a>
     </div>
     <figure class="hero-image">
       <img src={`${base}images/bangkok-1960.jpg`} alt="กรุงเทพฯ ในปี ค.ศ. 1960 ภาพแนวตั้งขาวดำ" />
@@ -30,7 +31,7 @@ const base = import.meta.env.BASE_URL;
 
   <section class="route-grid container" aria-labelledby="route-heading">
     <h2 id="route-heading" class="sr-only">เลือกเส้นทางสำรวจ</h2>
-    <a href="#timeline"><CalendarDays /><span><strong>ตามปี</strong><small>สำรวจเหตุการณ์สำคัญทีละช่วงเวลา</small></span><ArrowRight /></a>
+    <a href={`${base}archive/`}><CalendarDays /><span><strong>ตามปี</strong><small>ค้นหาและกรอง {events.length} เหตุการณ์พร้อมแหล่งอ้างอิง</small></span><ArrowRight /></a>
     <a href="#stories"><Users /><span><strong>ตามชีวิต</strong><small>เข้าใจชีวิตผู้คนในหลากหลายมิติ</small></span><ArrowRight /></a>
     <a href="#themes"><BookOpen /><span><strong>ตามเรื่อง</strong><small>เจาะลึกประเด็นที่หลากหลายและเชื่อมโยง</small></span><ArrowRight /></a>
     <a href="#world"><Globe2 /><span><strong>เทียบโลก</strong><small>มองประเทศไทยในบริบทโลกและภูมิภาค</small></span><ArrowRight /></a>
@@ -53,7 +54,7 @@ const base = import.meta.env.BASE_URL;
       </div>
       <article class="period-focus" aria-live="polite">
         <p class="period-number" data-range>{periods[2].range}</p>
-        <div><h3 data-period-title>{periods[2].title}</h3><p data-period-question>{periods[2].question}</p></div>
+        <div><h3 data-period-title>{periods[2].title}</h3><p data-period-question>{periods[2].question}</p><a class="period-database-link" data-period-link href={`${base}archive/?period=${periods[2].range}`}>ดูเหตุการณ์ในช่วงนี้ <ArrowRight size={17} /></a></div>
       </article>
     </div>
   </section>
@@ -95,7 +96,7 @@ const base = import.meta.env.BASE_URL;
 
 <script type="application/json" id="period-data" is:inline set:html={JSON.stringify(periods)}></script>
 
-<script is:inline>
+<script is:inline define:vars={{ base }}>
   const periodsData = JSON.parse(document.querySelector("#period-data")?.textContent ?? "[]");
     const timeline = document.querySelector("[data-timeline]");
     const tabs = timeline?.querySelectorAll("[data-period]") ?? [];
@@ -108,6 +109,7 @@ const base = import.meta.env.BASE_URL;
       timeline.querySelector("[data-period-question]").textContent = period.question;
       timeline.querySelector("[data-thai]").textContent = period.thai;
       timeline.querySelector("[data-world]").textContent = period.world;
+      timeline.querySelector("[data-period-link]").href = `${base}archive/?period=${period.range}`;
     }));
   </script>
 </BaseLayout>

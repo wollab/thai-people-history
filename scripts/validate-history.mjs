@@ -1,0 +1,81 @@
+import { readFile } from "node:fs/promises";
+
+const expectedPeriods = ["2460-2475", "2475-2500", "2500-2516", "2516-2535", "2535-2549", "2549-2560"];
+const allowedVerification = new Set(["verified", "corroborated"]);
+const allowedImpact = new Set(["contextual", "documented"]);
+const sensitivePattern = /รัฐประหาร|ความรุนแรง|14 ตุลา|6 ตุลา|พฤษภาคม 2535|เปลี่ยนแปลงการปกครอง/;
+
+const history = JSON.parse(await readFile(new URL("../src/data/history.json", import.meta.url), "utf8"));
+const errors = [];
+const warnings = [];
+
+const uniqueIndex = (items, label) => {
+  const index = new Map();
+  for (const item of items ?? []) {
+    if (!item.id) errors.push(`${label}: พบรายการไม่มี id`);
+    else if (index.has(item.id)) errors.push(`${label}: id ซ้ำ ${item.id}`);
+    else index.set(item.id, item);
+  }
+  return index;
+};
+
+const sources = uniqueIndex(history.sources, "source");
+const contexts = uniqueIndex(history.worldContexts, "worldContext");
+uniqueIndex(history.events, "event");
+
+for (const source of history.sources ?? []) {
+  try { new URL(source.url); } catch { errors.push(`source ${source.id}: URL ไม่ถูกต้อง`); }
+  for (const field of ["title", "publisher", "type", "language"]) {
+    if (!source[field]) errors.push(`source ${source.id}: ไม่มี ${field}`);
+  }
+}
+
+for (const context of history.worldContexts ?? []) {
+  for (const sourceId of context.sourceIds ?? []) {
+    if (!sources.has(sourceId)) errors.push(`worldContext ${context.id}: ไม่พบ source ${sourceId}`);
+  }
+}
+
+const periodCounts = Object.fromEntries(expectedPeriods.map((period) => [period, 0]));
+for (const event of history.events ?? []) {
+  if (!(event.period in periodCounts)) errors.push(`event ${event.id}: period ไม่อยู่ในกรอบ ${event.period}`);
+  else periodCounts[event.period] += 1;
+
+  for (const field of ["beYear", "ceYear", "title", "summary", "peopleImpact", "openQuestion"]) {
+    if (!event[field]) errors.push(`event ${event.id}: ไม่มี ${field}`);
+  }
+  if (!allowedVerification.has(event.verification)) errors.push(`event ${event.id}: verification ไม่ถูกต้อง`);
+  if (!allowedImpact.has(event.impactStatus)) errors.push(`event ${event.id}: impactStatus ไม่ถูกต้อง`);
+  if (!event.themes?.length) errors.push(`event ${event.id}: ไม่มี theme`);
+  if (!event.sourceIds?.length) errors.push(`event ${event.id}: ไม่มี source`);
+
+  for (const sourceId of event.sourceIds ?? []) {
+    if (!sources.has(sourceId)) errors.push(`event ${event.id}: ไม่พบ source ${sourceId}`);
+  }
+  for (const contextId of event.worldContextIds ?? []) {
+    if (!contexts.has(contextId)) errors.push(`event ${event.id}: ไม่พบ worldContext ${contextId}`);
+  }
+
+  const beStart = Number(event.beYear.match(/\d{4}/)?.[0]);
+  const ceStart = Number(event.ceYear.match(/\d{4}/)?.[0]);
+  if (!beStart || !ceStart || beStart - 543 !== ceStart) {
+    errors.push(`event ${event.id}: ปี พ.ศ./ค.ศ. ไม่ตรงกัน (${event.beYear}/${event.ceYear})`);
+  }
+
+  if (sensitivePattern.test(event.title) && event.sourceIds.length < 2) {
+    warnings.push(`event ${event.id}: เหตุการณ์อ่อนไหวมีแหล่งอ้างอิงเพียง 1 แหล่ง ควรค้นเพิ่มก่อนเขียนบทสรุปเชิงลึก`);
+  }
+}
+
+for (const [period, count] of Object.entries(periodCounts)) {
+  if (count < 6) errors.push(`period ${period}: มีเพียง ${count} เหตุการณ์ (ขั้นต่ำ 6)`);
+}
+
+console.log(`ตรวจแล้ว: ${history.events.length} เหตุการณ์ | ${history.sources.length} แหล่งอ้างอิง | ${history.worldContexts.length} บริบทโลก`);
+console.log(Object.entries(periodCounts).map(([period, count]) => `${period}: ${count}`).join(" | "));
+for (const warning of warnings) console.warn(`คำเตือน: ${warning}`);
+if (errors.length) {
+  for (const error of errors) console.error(`ข้อผิดพลาด: ${error}`);
+  process.exit(1);
+}
+

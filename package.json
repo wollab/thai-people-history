@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build",
+    "validate:data": "node scripts/validate-history.mjs",
+    "build": "npm run validate:data && astro check && astro build",
     "preview": "astro preview"
   },
   "dependencies": {
