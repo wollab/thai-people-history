@@ -83,6 +83,7 @@ img { display: block; max-width: 100%; }
 .map-dot { width: 20px; height: 20px; border: 5px double var(--paper); border-radius: 50%; }
 .period-focus { display: grid; grid-template-columns: 220px 1fr; gap: 34px; padding: 28px 0 0; }
 .period-number { margin: 0; color: var(--vermilion); font-family: var(--serif); font-size: 28px; font-weight: 800; }
+.period-number-ce { color: var(--muted); font-family: var(--sans); font-size: 15px; font-weight: 600; }
 .period-focus h3 { margin: 0; font-family: var(--serif); font-size: 28px; }
 .period-focus p:last-child { margin: 5px 0 0; color: var(--muted); }
 .period-database-link { display: inline-flex; gap: 8px; align-items: center; margin-top: 12px; color: var(--vermilion); font-size: 15px; font-weight: 700; }
@@ -143,6 +144,7 @@ img { display: block; max-width: 100%; }
 .article-date { padding: 14px 16px; color: var(--paper-bright); background: var(--vermilion); }
 .article-date span { display: block; font-size: 13px; }
 .article-date strong { display: block; margin-top: 4px; font-family: var(--serif); font-size: 27px; }
+.article-date small { display: block; margin-top: 3px; font-size: 12px; opacity: 0.85; }
 .article-header h1 { font-size: clamp(48px, 6vw, 84px); }
 .article-deck { max-width: 900px; margin: 14px 0 0; color: var(--muted); font-size: 21px; }
 .article-figure { margin: 34px 0 54px; }

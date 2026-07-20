@@ -4,6 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { events, microhistories, sourceById, worldContextById, eventById, singleSourceSensitiveEventIds } from "../../data/history";
 import { periods } from "../../data/periods";
 import { patterns } from "../../data/research-index";
+import { formatBeRange } from "../../utils/thai-year";
 
 const tagLabels: Record<string, string> = {
   agriculture: "เกษตรกรรม", amnesty: "นิรโทษกรรม", "black-market": "ตลาดมืด", care: "การดูแล", "care-work": "งานดูแล",
@@ -112,9 +113,9 @@ const base = import.meta.env.BASE_URL;
           const flagged = singleSourceSensitiveEventIds.has(event.id);
           return (
             <article class="event-entry" data-event data-type="event" data-period={event.period} data-themes={event.themes.join(" ")} data-search={row.search}>
-              <div class="event-date"><strong>พ.ศ. {event.beYear}</strong><span>ค.ศ. {event.ceYear}</span></div>
+              <div class="event-date"><strong>พ.ศ. {event.beYear}</strong><span>(ค.ศ. {event.ceYear})</span></div>
               <div class="event-body">
-                <div class="event-heading"><div><p class="event-period">เหตุการณ์โครงสร้าง · ช่วง {event.period}</p><h2>{event.title}</h2></div><span class:list={["evidence-badge", event.verification]}>{event.verification === "corroborated" ? "ยืนยันข้ามแหล่ง" : "ตรวจแหล่งแล้ว"}</span></div>
+                <div class="event-heading"><div><p class="event-period">เหตุการณ์โครงสร้าง · ช่วง {formatBeRange(event.period)}</p><h2>{event.title}</h2></div><span class:list={["evidence-badge", event.verification]}>{event.verification === "corroborated" ? "ยืนยันข้ามแหล่ง" : "ตรวจแหล่งแล้ว"}</span></div>
                 <p class="event-summary">{event.summary}</p>
                 {flagged && <p class="needs-sources"><AlertTriangle size={17} /><span><strong>ต้องการแหล่งเพิ่ม</strong> เหตุการณ์อ่อนไหวนี้ยังมีแหล่งอ้างอิงเพียงชุดเดียว อยู่ระหว่างหา cross-source เพิ่มก่อนเขียนบทสรุปเชิงลึก ตาม 00_research_protocol.md</span></p>}
                 <section class="people-impact"><h3>ผลต่อชีวิตและโอกาสของผู้คน</h3><p>{event.peopleImpact}</p><span>{event.impactStatus === "documented" ? "มีหลักฐานผลกระทบโดยตรง" : "บริบทประกอบที่ยังต้องขยายหลักฐาน"}</span></section>
@@ -134,9 +135,9 @@ const base = import.meta.env.BASE_URL;
         const linkedEvents = record.linkedEventIds.map((id) => eventById.get(id)).filter(Boolean);
         return (
           <article class="event-entry" data-event data-type="microhistory" data-period={record.period} data-themes={record.everydayDimensions.join(" ")} data-search={row.search}>
-            <div class="event-date"><strong>พ.ศ. {record.beYear}</strong><span>ค.ศ. {record.ceYear}</span></div>
+            <div class="event-date"><strong>พ.ศ. {record.beYear}</strong><span>(ค.ศ. {record.ceYear})</span></div>
             <div class="event-body">
-              <div class="event-heading"><div><p class="event-period"><Users size={13} style="display:inline;vertical-align:-2px;" /> Microhistory · ช่วง {record.period}</p><h2>{record.title}</h2></div><span class:list={["evidence-badge", record.evidenceStatus]}>{evidenceStatusLabel[record.evidenceStatus]}</span></div>
+              <div class="event-heading"><div><p class="event-period"><Users size={13} style="display:inline;vertical-align:-2px;" /> Microhistory · ช่วง {formatBeRange(record.period)}</p><h2>{record.title}</h2></div><span class:list={["evidence-badge", record.evidenceStatus]}>{evidenceStatusLabel[record.evidenceStatus]}</span></div>
               <p class="event-summary">{record.fact}</p>
               <section class="people-impact"><h3>ประสบการณ์ชีวิต</h3><p>{record.livedExperience}</p><span>กลุ่มคน: {record.groups.join(", ")} · พื้นที่: {record.location.join(", ")}</span></section>
               <ul class="event-themes" aria-label="มิติชีวิตประจำวัน">{record.everydayDimensions.map((tag) => <li>{tagLabels[tag] ?? tag}</li>)}</ul>

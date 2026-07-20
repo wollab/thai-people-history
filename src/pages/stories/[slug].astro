@@ -2,6 +2,7 @@
 import { ArrowLeft, CheckCircle2, ExternalLink } from "lucide-astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { stories } from "../../data/periods";
+import { beFromCe, ceRangeFromBeRange, formatBeCe } from "../../utils/thai-year";
 
 export function getStaticPaths() {
   return stories.map((story) => ({ params: { slug: story.slug }, props: { story } }));
@@ -11,17 +12,17 @@ const { story } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const sourceMap: Record<string, { caption: string; credit: string; source: string }> = {
   "city-and-mobility": {
-    caption: "กรุงเทพฯ ค.ศ. 1960",
+    caption: `กรุงเทพฯ ${formatBeCe(beFromCe(1960), 1960)}`,
     credit: "Unknown author · Public domain in Thailand",
     source: "https://commons.wikimedia.org/wiki/File:Bangkok,_1960.jpg",
   },
   "education-and-dreams": {
-    caption: "ห้องเรียนระดับประถม อำเภอนาหว้า จังหวัดนครพนม ค.ศ. 2007",
+    caption: `ห้องเรียนระดับประถม อำเภอนาหว้า จังหวัดนครพนม ${formatBeCe(beFromCe(2007), 2007)}`,
     credit: "Mattes · Public domain",
     source: "https://commons.wikimedia.org/wiki/File:Classroom_Grade_School_Na_Wa.JPG",
   },
   "everyday-economy": {
-    caption: "เกษตรกรในนาข้าว ประเทศไทย ค.ศ. 2016",
+    caption: `เกษตรกรในนาข้าว ประเทศไทย ${formatBeCe(beFromCe(2016), 2016)}`,
     credit: "Jtorquy · CC0 1.0",
     source: "https://commons.wikimedia.org/wiki/File:Rice_Farmers_in_Thailand.jpg",
   },
@@ -33,7 +34,7 @@ const source = sourceMap[story.slug];
   <article class="article-page container">
     <a class="back-link" href={`${base}#stories`}><ArrowLeft size={18} /> กลับสู่เรื่องที่ชวนอ่าน</a>
     <header class="article-header">
-      <div class="article-date"><span>พ.ศ.</span><strong>{story.period}</strong></div>
+      <div class="article-date"><span>พ.ศ.</span><strong>{story.period}</strong><small>(ค.ศ. {ceRangeFromBeRange(story.period)})</small></div>
       <div><p class="eyebrow">บททดลอง · อยู่ระหว่างค้นคว้า</p><h1>{story.title}</h1><p class="article-deck">{story.deck}</p></div>
     </header>
     <figure class="article-figure">

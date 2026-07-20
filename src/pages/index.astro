@@ -3,13 +3,16 @@ import { ArrowRight, BookOpen, CalendarDays, CheckCircle2, Clock3, Globe2, Users
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { periods, stories } from "../data/periods";
 import { events, microhistories } from "../data/history";
+import { beFromCe, ceRangeFromBeRange, formatBeCe, formatBeRange } from "../utils/thai-year";
 
 const base = import.meta.env.BASE_URL;
 const periodsWithCounts = periods.map((period) => ({
   ...period,
+  ceRange: ceRangeFromBeRange(period.range),
   eventCount: events.filter((event) => event.period === period.range).length,
   mhCount: microhistories.filter((record) => record.period === period.range).length,
 }));
+const bangkokPhotoBeYear = beFromCe(1960);
 ---
 
 <BaseLayout>
@@ -25,8 +28,8 @@ const periodsWithCounts = periods.map((period) => ({
       <a class="primary-action" href={`${base}archive/`}>สำรวจ {events.length} เหตุการณ์ และ {microhistories.length} microhistory <ArrowRight size={18} /></a>
     </div>
     <figure class="hero-image">
-      <img src={`${base}images/bangkok-1960.jpg`} alt="กรุงเทพฯ ในปี ค.ศ. 1960 ภาพแนวตั้งขาวดำ" />
-      <figcaption>กรุงเทพฯ ค.ศ. 1960 · ภาพสาธารณสมบัติ · Wikimedia Commons</figcaption>
+      <img src={`${base}images/bangkok-1960.jpg`} alt={`กรุงเทพฯ ใน${formatBeCe(bangkokPhotoBeYear, 1960)} ภาพแนวตั้งขาวดำ`} />
+      <figcaption>กรุงเทพฯ {formatBeCe(bangkokPhotoBeYear, 1960)} · ภาพสาธารณสมบัติ · Wikimedia Commons</figcaption>
     </figure>
     <ol class="year-rail" aria-label="ช่วงปีสำคัญ">
       {periods.map((period, index) => <li class:list={{ active: index === 2 }}><span>{period.range.split("-")[0]}</span></li>)}
@@ -58,7 +61,7 @@ const periodsWithCounts = periods.map((period) => ({
         <div class="lane-copy" data-world>{periods[2].world}</div>
       </div>
       <article class="period-focus" aria-live="polite">
-        <p class="period-number" data-range>{periods[2].range}</p>
+        <p class="period-number"><span data-range>พ.ศ. {periodsWithCounts[2].range}</span> <span class="period-number-ce" data-ce-range>(ค.ศ. {periodsWithCounts[2].ceRange})</span></p>
         <div><h3 data-period-title>{periods[2].title}</h3><p data-period-question>{periods[2].question}</p><a class="period-database-link" data-period-link href={`${base}archive/?period=${periodsWithCounts[2].range}`}>ดูเหตุการณ์ในช่วงนี้ (<span data-period-count>{periodsWithCounts[2].eventCount} เหตุการณ์ · {periodsWithCounts[2].mhCount} microhistory</span>) <ArrowRight size={17} /></a></div>
       </article>
     </div>
@@ -71,7 +74,7 @@ const periodsWithCounts = periods.map((period) => ({
         <article class="story-card">
           <a class="story-image" href={`${base}stories/${story.slug}/`}><img src={`${base}${story.image}`} alt={story.imageAlt} /></a>
           <div class="story-content">
-            <p class="story-period">พ.ศ. {story.period}</p>
+            <p class="story-period">{formatBeRange(story.period)}</p>
             <h3><a href={`${base}stories/${story.slug}/`}>{story.title}</a></h3>
             <p>{story.deck}</p>
             <footer><span><CheckCircle2 size={16} />ตรวจสิทธิภาพแล้ว</span><span><Clock3 size={16} />{story.time}</span><a href={`${base}stories/${story.slug}/`} aria-label={`อ่าน ${story.title}`}><ArrowRight size={19} /></a></footer>
@@ -109,7 +112,8 @@ const periodsWithCounts = periods.map((period) => ({
       const index = Number(tab.dataset.period);
     const period = periodsData[index];
       tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
-      timeline.querySelector("[data-range]").textContent = period.range;
+      timeline.querySelector("[data-range]").textContent = `พ.ศ. ${period.range}`;
+      timeline.querySelector("[data-ce-range]").textContent = `(ค.ศ. ${period.ceRange})`;
       timeline.querySelector("[data-period-title]").textContent = period.title;
       timeline.querySelector("[data-period-question]").textContent = period.question;
       timeline.querySelector("[data-thai]").textContent = period.thai;

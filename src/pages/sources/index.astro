@@ -2,6 +2,7 @@
 import { ArrowUpRight, Globe2 } from "lucide-astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { sources, worldContexts } from "../../data/history";
+import { formatBeCe } from "../../utils/thai-year";
 
 const sourceTypeLabel: Record<string, string> = {
   "official-history": "ประวัติทางการ", "official-record": "บันทึกทางการ", "peer-reviewed-research": "งานวิจัยตรวจทาน",
@@ -57,12 +58,11 @@ const sortedContexts = [...worldContexts].sort((a, b) => (a.beYear ?? "").locale
     <div class="archive-result-line"><p><Globe2 size={18} /><strong>{sortedContexts.length}</strong> บริบทโลก/ภูมิภาค</p><p>เรียงตามปี พ.ศ.</p></div>
     <div class="source-table-wrap">
       <table class="source-table">
-        <thead><tr><th>พ.ศ.</th><th>ค.ศ.</th><th>เหตุการณ์โลก/ภูมิภาค</th><th>ช่องทางอิทธิพล</th><th>ความเชื่อมโยงกับไทย</th></tr></thead>
+        <thead><tr><th>ปี</th><th>เหตุการณ์โลก/ภูมิภาค</th><th>ช่องทางอิทธิพล</th><th>ความเชื่อมโยงกับไทย</th></tr></thead>
         <tbody>
           {sortedContexts.map((context) => (
             <tr>
-              <td>{context.beYear}</td>
-              <td>{context.ceYear}</td>
+              <td>{formatBeCe(context.beYear, context.ceYear)}</td>
               <td><strong>{context.title}</strong><br /><span class="source-summary">{context.summary}</span></td>
               <td>{context.channel}</td>
               <td>{context.relation === "direct" ? "โดยตรง" : context.relation === "indirect" ? "โดยอ้อม" : "บริบทประกอบ"}</td>

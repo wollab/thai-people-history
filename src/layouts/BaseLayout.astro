@@ -2,6 +2,7 @@
 import { Menu, Search, X } from "lucide-astro";
 import "../styles/global.css";
 import { events, microhistories } from "../data/history";
+import { formatBeCe } from "../utils/thai-year";
 
 interface Props {
   title?: string;
@@ -16,13 +17,13 @@ const base = import.meta.env.BASE_URL;
 const eventSearchData = [
   ...events.map((event) => ({
     title: event.title,
-    meta: `พ.ศ. ${event.beYear} · ${event.period}`,
+    meta: `${formatBeCe(event.beYear, event.ceYear)} · ${event.period}`,
     href: `${base}archive/?q=${encodeURIComponent(event.title)}`,
     keywords: [event.summary, event.peopleImpact, ...event.themes, ...event.locations].join(" "),
   })),
   ...microhistories.map((record) => ({
     title: record.title,
-    meta: `Microhistory · พ.ศ. ${record.beYear} · ${record.period}`,
+    meta: `Microhistory · ${formatBeCe(record.beYear, record.ceYear)} · ${record.period}`,
     href: `${base}archive/?q=${encodeURIComponent(record.title)}`,
     keywords: [record.fact, record.livedExperience, ...record.everydayDimensions, ...record.groups, ...record.location].join(" "),
   })),
