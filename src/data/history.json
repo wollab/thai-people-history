@@ -1,11 +1,12 @@
 {
   "meta": {
     "title": "ฐานข้อมูลประวัติศาสตร์ประชาชนไทย พ.ศ. 2460-2560",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "updated": "2026-07-20",
     "canonicalStatus": "staging-source-of-truth",
     "canonicalPath": "03_Documents/04_Knowledge_Base/01_Inbox/04_Personal_Learning/2026-07-19-thai-people-history-2460-2560/09_event_database.json",
-    "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า"
+    "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า",
+    "lastResearchBatch": "batch-2026-07-20-gap-fill-01"
   },
   "sources": [
     {
@@ -480,6 +481,105 @@
       "url": "https://www.etda.or.th/th/Our-Service/Standard-%281%29/Certifications-%281%29.aspx",
       "type": "official-survey-series",
       "language": "th"
+    },
+    {
+      "id": "src-kpi-first-election-2476",
+      "title": "การเลือกตั้งทั่วไปครั้งแรกของไทย พ.ศ. 2476",
+      "publisher": "สถาบันพระปกเกล้า",
+      "url": "https://kpi.ac.th/learning-media/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%84%E0%B8%9B%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89/",
+      "type": "institutional-history",
+      "language": "th",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-escap-women-industry",
+      "title": "Promoting diversified skill development for women in industry: Volume II",
+      "publisher": "United Nations Economic and Social Commission for Asia and the Pacific",
+      "url": "https://www.unescap.org/kp/1993/promoting-diversified-skill-development-women-industry-volume-ii",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-anamwathana-women-factory",
+      "title": "Working conditions of women factory workers in industrializing Thailand, 1960-1990s",
+      "publisher": "Labor History",
+      "url": "https://doi.org/10.1080/0023656X.2024.2304305",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-hrw-black-may",
+      "title": "Bloody May: Excessive Use of Lethal Force in Bangkok",
+      "publisher": "Human Rights Watch",
+      "url": "https://www.hrw.org/report/1992/10/01/bloody-may/excessive-use-lethal-force-bangkok",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-amnesty-black-may-families",
+      "title": "เลือน แต่ไม่ลืม: ความทรงจำของญาติผู้สูญหายจากพฤษภาคม 2535",
+      "publisher": "แอมเนสตี้ อินเตอร์เนชั่นแนล ประเทศไทย",
+      "url": "https://www.amnesty.or.th/blog/2022/05/%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%99-%E0%B9%81%E0%B8%95%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A5%E0%B8%B7%E0%B8%A1-%E0%B8%8A%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%88%E0%B8%99%E0%B9%83/",
+      "type": "oral-history-public-program",
+      "language": "th",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-fao-moac-tsunami-assessment",
+      "title": "Detailed technical damages and needs assessment mission in fisheries and agriculture sectors in tsunami affected six provinces in Thailand",
+      "publisher": "Food and Agriculture Organization and Ministry of Agriculture and Cooperatives",
+      "url": "https://www.fao.org/4/ae545e/ae545e00.htm",
+      "type": "international-assessment",
+      "language": "en",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-ilo-thailand-tsunami-tourism",
+      "title": "After the tsunami in Thailand: The tourist industry fights back",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/resource/article/after-tsunami-thailand-tourist-industry-fights-back",
+      "type": "international-field-report",
+      "language": "en",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-ilo-thai-unions-gfc",
+      "title": "ILO-Thai Trade Unions discuss effective responses to the global economic crisis",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/resource/news/ilo-thai-trade-unions-discuss-effective-responses-global-economic-crisis",
+      "type": "international-labour-report",
+      "language": "en",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-hrw-2010-descent-chaos",
+      "title": "Descent into Chaos: Thailand's 2010 Red Shirt Protests and the Government Crackdown",
+      "publisher": "Human Rights Watch",
+      "url": "https://www.hrw.org/report/2011/05/03/descent-chaos/thailands-2010-red-shirt-protests-and-government-crackdown",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-amnesty-2014-attitude-adjustment",
+      "title": "Attitude adjustment: 100 days under martial law",
+      "publisher": "Amnesty International",
+      "url": "https://www.amnesty.org/en/documents/ASA39/011/2014/en/",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-ohchr-2016-military-courts",
+      "title": "UN Human Rights Office welcomes Thailand decision to end prosecution of civilians in military courts",
+      "publisher": "UN Human Rights Office for South-East Asia",
+      "url": "https://bangkok.ohchr.org/news/2016/news-release-un-human-rights-office-welcomes-thailand-decision-end-prosecution-civilians",
+      "type": "international-official-record",
+      "language": "en",
+      "accessed": "2026-07-20"
     }
   ],
   "worldContexts": [
@@ -1246,7 +1346,9 @@
         "ภาคตะวันออก"
       ],
       "sourceIds": [
-        "src-wb-eastern-seaboard"
+        "src-wb-eastern-seaboard",
+        "src-escap-women-industry",
+        "src-anamwathana-women-factory"
       ],
       "worldContextIds": [
         "world-export-shift"
@@ -1273,7 +1375,9 @@
         "กรุงเทพฯ"
       ],
       "sourceIds": [
-        "src-parliament-may-1992"
+        "src-parliament-may-1992",
+        "src-hrw-black-may",
+        "src-amnesty-black-may-families"
       ],
       "worldContextIds": [
         "world-export-shift"
@@ -1463,7 +1567,9 @@
         "สตูล"
       ],
       "sourceIds": [
-        "src-wb-tsunami"
+        "src-wb-tsunami",
+        "src-fao-moac-tsunami-assessment",
+        "src-ilo-thailand-tsunami-tourism"
       ],
       "worldContextIds": [
         "world-globalisation"
@@ -1517,7 +1623,8 @@
         "พื้นที่อุตสาหกรรมส่งออก"
       ],
       "sourceIds": [
-        "src-wb-gfc"
+        "src-wb-gfc",
+        "src-ilo-thai-unions-gfc"
       ],
       "worldContextIds": [
         "world-gfc"
@@ -1544,7 +1651,8 @@
         "กรุงเทพฯ"
       ],
       "sourceIds": [
-        "src-trct-2010"
+        "src-trct-2010",
+        "src-hrw-2010-descent-chaos"
       ],
       "worldContextIds": [
         "world-platform"
@@ -1626,7 +1734,9 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-mfa-ncpo"
+        "src-mfa-ncpo",
+        "src-amnesty-2014-attitude-adjustment",
+        "src-ohchr-2016-military-courts"
       ],
       "worldContextIds": [
         "world-platform"
@@ -1714,6 +1824,31 @@
       ],
       "verification": "verified",
       "openQuestion": "ต้องแยกการเข้าถึงตามอายุ รายได้ เพศ และพื้นที่เพื่อไม่ให้ค่าเฉลี่ยประเทศกลบความเหลื่อมล้ำ"
+    },
+    {
+      "id": "th-2476-first-general-election",
+      "period": "2475-2500",
+      "beYear": "2476",
+      "ceYear": "1933",
+      "title": "การเลือกตั้งทั่วไปครั้งแรกของไทย",
+      "summary": "วันที่ 15 พฤศจิกายน 2476 มีการเลือกตั้งสมาชิกสภาผู้แทนราษฎรประเภทที่ 1 เป็นครั้งแรก โดยใช้ระบบทางอ้อม และได้สมาชิกจากการเลือกตั้ง 78 คนทำงานร่วมกับสมาชิกประเภทที่ 2 จำนวนเท่ากัน",
+      "peopleImpact": "ประชาชนในทุกจังหวัดเข้าสู่กระบวนการเลือกผู้แทนระดับชาติเป็นครั้งแรก แต่สิทธิทางการเมืองยังผ่านกลไกผู้แทนตำบลและอยู่ร่วมกับสมาชิกที่มาจากการแต่งตั้ง",
+      "impactStatus": "contextual",
+      "themes": [
+        "politics",
+        "citizenship",
+        "state"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-kpi-first-election-2476",
+        "src-parliament-history"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "บันทึกระดับจังหวัดสะท้อนวิธีทำความเข้าใจการเลือกตั้งและอุปสรรคของผู้มีสิทธิกลุ่มต่างๆ อย่างไร"
     }
   ],
   "microhistoryMeta": {
@@ -2846,6 +2981,312 @@
         "ผู้พิการ"
       ],
       "openQuestion": "ช่องว่างด้านอุปกรณ์ ทักษะ ค่าใช้จ่าย และคุณภาพสัญญาณต่างกันอย่างไรตามรายได้และพื้นที่"
+    },
+    {
+      "id": "mh-2476-first-election-voters",
+      "period": "2475-2500",
+      "beYear": "2476",
+      "ceYear": "1933",
+      "title": "ประชาชนกับการเลือกผู้แทนระดับชาติครั้งแรก",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้มีสิทธิเลือกตั้ง",
+        "ผู้แทนตำบล",
+        "ครอบครัวในชนบทและเมือง"
+      ],
+      "everydayDimensions": [
+        "citizenship",
+        "political-participation",
+        "local-administration"
+      ],
+      "fact": "การเลือกตั้งทั่วไปวันที่ 15 พฤศจิกายน 2476 เป็นการเลือกตั้งทางอ้อม ผู้มีสิทธิเลือกผู้แทนตำบล แล้วผู้แทนตำบลเลือกสมาชิกสภาผู้แทนราษฎรประเภทที่ 1 รวม 78 คน",
+      "livedExperience": "กระบวนการนี้ทำให้คนในจังหวัดต่างๆ มีบทบาทในระบบผู้แทนระดับชาติเป็นครั้งแรก แต่หลักฐานปัจจุบันยังอธิบายกติกาได้ดีกว่าความรู้สึกและการตัดสินใจของผู้ใช้สิทธิแต่ละพื้นที่",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-kpi-first-election-2476",
+        "src-parliament-history"
+      ],
+      "linkedEventIds": [
+        "th-2476-first-general-election"
+      ],
+      "missingVoices": [
+        "ผู้หญิงผู้ใช้สิทธิ",
+        "ชาวชนบทห่างไกล",
+        "ผู้ไม่มีสิทธิหรือเข้าไม่ถึงหน่วยเลือกตั้ง"
+      ],
+      "openQuestion": "หนังสือพิมพ์ บันทึกจังหวัด และความทรงจำครอบครัวอธิบายการเลือกตั้งครั้งแรกต่างจากเอกสารส่วนกลางอย่างไร"
+    },
+    {
+      "id": "mh-2528-women-export-factories",
+      "period": "2516-2535",
+      "beYear": "2528-2534",
+      "ceYear": "1985-1991",
+      "title": "แรงงานหญิงในโรงงานส่งออกช่วงเศรษฐกิจขยายตัว",
+      "location": [
+        "กรุงเทพฯ",
+        "ปริมณฑล",
+        "เขตอุตสาหกรรมหลายภูมิภาค"
+      ],
+      "groups": [
+        "แรงงานหญิง",
+        "แรงงานย้ายถิ่น",
+        "ครอบครัวชนบท"
+      ],
+      "everydayDimensions": [
+        "factory-work",
+        "wages",
+        "occupational-health",
+        "gender"
+      ],
+      "fact": "อุตสาหกรรมเพื่อการส่งออกดึงผู้หญิงจำนวนมากเข้าสู่งานการผลิต โดยการจ้างงานกระจุกในงานทักษะต่ำ และหลักฐานจากการสำรวจและคำบอกเล่าระบุปัญหาสภาพการทำงานในโรงงาน",
+      "livedExperience": "ค่าจ้างโรงงานเปิดทางให้ผู้หญิงมีรายได้และเชื่อมครัวเรือนชนบทกับเศรษฐกิจอุตสาหกรรม ขณะเดียวกันความเสี่ยงด้านสุขภาพ ชั่วโมงงาน และโอกาสเลื่อนตำแหน่งไม่ได้กระจายเท่ากัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-escap-women-industry",
+        "src-anamwathana-women-factory"
+      ],
+      "linkedEventIds": [
+        "th-2528-export-boom"
+      ],
+      "missingVoices": [
+        "แรงงานโรงงานนอกกรุงเทพฯ",
+        "แรงงานที่ออกจากโรงงาน",
+        "หัวหน้าครัวเรือนที่รับเงินส่งกลับ"
+      ],
+      "openQuestion": "รายได้จากโรงงานเปลี่ยนอำนาจตัดสินใจของผู้หญิงในครัวเรือนและชุมชนต้นทางมากน้อยเพียงใด"
+    },
+    {
+      "id": "mh-2535-missing-families",
+      "period": "2535-2549",
+      "beYear": "2535-2565",
+      "ceYear": "1992-2022",
+      "title": "ญาติผู้สูญหายจากพฤษภาคม 2535 กับการรอคำตอบ",
+      "location": [
+        "กรุงเทพฯ",
+        "หลายภูมิภาค"
+      ],
+      "groups": [
+        "ญาติผู้สูญหาย",
+        "ผู้ชุมนุม",
+        "ครอบครัวผู้ได้รับผลกระทบ"
+      ],
+      "everydayDimensions": [
+        "loss",
+        "memory",
+        "justice",
+        "family-life"
+      ],
+      "fact": "การใช้กำลังระหว่างวันที่ 17-20 พฤษภาคม 2535 มีผู้เสียชีวิต บาดเจ็บ และสูญหาย และหลายครอบครัวยังคงติดตามความจริงและความรับผิดชอบในเวลาต่อมา",
+      "livedExperience": "สำหรับญาติผู้สูญหาย เหตุการณ์ไม่ได้จบลงพร้อมการยุติการชุมนุม แต่ดำเนินต่อในรูปการรอคอย การค้นหา การทำกิจกรรมรำลึก และการเรียกร้องให้รัฐชี้แจงชะตากรรมของคนในครอบครัว",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-hrw-black-may",
+        "src-amnesty-black-may-families"
+      ],
+      "linkedEventIds": [
+        "th-2535-black-may"
+      ],
+      "missingVoices": [
+        "ครอบครัวที่เลิกติดตามคดี",
+        "ผู้บาดเจ็บจากต่างจังหวัด",
+        "เจ้าหน้าที่ระดับปฏิบัติ"
+      ],
+      "openQuestion": "เอกสารราชการและหลักฐานของครอบครัวตรงกันหรือขัดกันตรงใดเกี่ยวกับรายชื่อและชะตากรรมผู้สูญหาย"
+    },
+    {
+      "id": "mh-2547-fishing-communities-tsunami",
+      "period": "2535-2549",
+      "beYear": "2547-2548",
+      "ceYear": "2004-2005",
+      "title": "ชุมชนประมงอันดามันฟื้นเรือ เครื่องมือ และรายได้หลังสึนามิ",
+      "location": [
+        "หกจังหวัดชายฝั่งอันดามัน"
+      ],
+      "groups": [
+        "ชาวประมงรายย่อย",
+        "ครัวเรือนชายฝั่ง",
+        "ผู้เพาะเลี้ยงสัตว์น้ำ"
+      ],
+      "everydayDimensions": [
+        "livelihood",
+        "housing",
+        "food-security",
+        "coastal-resources"
+      ],
+      "fact": "สึนามิ 26 ธันวาคม 2547 ทำลายเรือ เครื่องมือประมง พื้นที่เพาะเลี้ยง และทรัพย์สินการผลิตของชุมชนชายฝั่งจำนวนมากในหกจังหวัดอันดามัน",
+      "livedExperience": "การฟื้นตัวของครัวเรือนไม่ได้ขึ้นกับบ้านพักเพียงอย่างเดียว แต่ขึ้นกับการได้เรือ เครื่องมือ เงินทุน และสิทธิใช้ทรัพยากรกลับคืนมา จึงเกิดทั้งความช่วยเหลือเร่งด่วนและโจทย์การฟื้นอาชีพระยะยาว",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-fao-moac-tsunami-assessment",
+        "src-wb-tsunami"
+      ],
+      "linkedEventIds": [
+        "th-2547-tsunami"
+      ],
+      "missingVoices": [
+        "แรงงานประมงข้ามชาติ",
+        "ผู้หญิงในห่วงโซ่แปรรูป",
+        "ชุมชนที่ไม่มีเอกสารสิทธิที่ดิน"
+      ],
+      "openQuestion": "รูปแบบแจกเรือและเครื่องมือช่วยให้ครัวเรือนกลุ่มใดกลับสู่อาชีพเดิม และทิ้งใครไว้นอกระบบช่วยเหลือ"
+    },
+    {
+      "id": "mh-2547-tourism-workers-tsunami",
+      "period": "2535-2549",
+      "beYear": "2547-2548",
+      "ceYear": "2004-2005",
+      "title": "แรงงานท่องเที่ยวกับรายได้ที่หยุดลงหลังสึนามิ",
+      "location": [
+        "ภูเก็ต",
+        "พังงา",
+        "ชายฝั่งอันดามัน"
+      ],
+      "groups": [
+        "ลูกจ้างโรงแรม",
+        "แรงงานนอกระบบ",
+        "ผู้ประกอบการท่องเที่ยวรายย่อย",
+        "แรงงานย้ายถิ่น"
+      ],
+      "everydayDimensions": [
+        "employment",
+        "income",
+        "migration",
+        "recovery"
+      ],
+      "fact": "สึนามิกระทบรีสอร์ต ชายหาด และกิจการท่องเที่ยว ทำให้รายได้และงานทั้งในระบบและนอกระบบหยุดชะงัก และเกิดโครงการฟื้นอาชีพในภูเก็ตกับพังงา",
+      "livedExperience": "ผู้ที่รอดชีวิตยังเผชิญการขาดรายได้ ลูกจ้างชั่วคราวและแรงงานย้ายถิ่นมีหลักประกันต่างจากลูกจ้างประจำ ส่วนการกลับมาของนักท่องเที่ยวเป็นเงื่อนไขสำคัญต่อการฟื้นงาน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-ilo-thailand-tsunami-tourism",
+        "src-wb-tsunami"
+      ],
+      "linkedEventIds": [
+        "th-2547-tsunami"
+      ],
+      "missingVoices": [
+        "พนักงานบริการหญิง",
+        "แรงงานข้ามชาติ",
+        "คนงานรายวันที่ไม่ได้ขึ้นทะเบียน"
+      ],
+      "openQuestion": "แรงงานแต่ละสถานะได้รับเงินช่วยเหลือ การฝึกอาชีพ และการกลับเข้าทำงานต่างกันอย่างไร"
+    },
+    {
+      "id": "mh-2551-export-workers-crisis",
+      "period": "2549-2560",
+      "beYear": "2551-2552",
+      "ceYear": "2008-2009",
+      "title": "แรงงานส่งออกเมื่อคำสั่งซื้อจากต่างประเทศลดลง",
+      "location": [
+        "เขตอุตสาหกรรมหลายภูมิภาค"
+      ],
+      "groups": [
+        "แรงงานค่าจ้างต่ำ",
+        "แรงงานเหมาช่วง",
+        "แรงงานข้ามชาติ",
+        "คนหนุ่มสาวเข้าสู่ตลาดงาน"
+      ],
+      "everydayDimensions": [
+        "layoffs",
+        "working-hours",
+        "wages",
+        "household-risk"
+      ],
+      "fact": "วิกฤตการเงินโลกกระทบอุตสาหกรรมส่งออกของไทย โดยวงหารือของ ILO และสหภาพแรงงานไทยระบุว่ารถยนต์ อิเล็กทรอนิกส์ โรงแรม และท่องเที่ยวได้รับผล และแรงงานเหมาช่วงเป็นกลุ่มแรกๆ ที่เสี่ยงถูกเลิกจ้าง",
+      "livedExperience": "แรงงานรับแรงกระแทกผ่านการลดชั่วโมง ลดโบนัส หยุดงาน หรือเลิกจ้าง และการกลับชนบทแบบหลังวิกฤต 2540 ทำได้ยากขึ้นเมื่อเศรษฐกิจชนบทได้รับผลกระทบพร้อมกัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-ilo-thai-unions-gfc",
+        "src-wb-gfc"
+      ],
+      "linkedEventIds": [
+        "th-2551-global-crisis"
+      ],
+      "missingVoices": [
+        "แรงงานหญิงในอิเล็กทรอนิกส์",
+        "แรงงานเหมาช่วงที่ไม่เป็นสมาชิกสหภาพ",
+        "ครอบครัวในพื้นที่ต้นทาง"
+      ],
+      "openQuestion": "ครัวเรือนใช้หนี้ เงินออม การย้ายถิ่น และสวัสดิการสังคมร่วมกันอย่างไรในช่วงรายได้ลด"
+    },
+    {
+      "id": "mh-2553-victims-medical-aid",
+      "period": "2549-2560",
+      "beYear": "2553",
+      "ceYear": "2010",
+      "title": "ผู้บาดเจ็บ ครอบครัว และหน่วยแพทย์ท่ามกลางความรุนแรงปี 2553",
+      "location": [
+        "กรุงเทพฯ",
+        "ภาคอีสาน",
+        "ภาคกลาง"
+      ],
+      "groups": [
+        "ผู้ชุมนุม",
+        "ประชาชนในพื้นที่",
+        "ครอบครัวผู้เสียชีวิตและบาดเจ็บ",
+        "บุคลากรและอาสาแพทย์"
+      ],
+      "everydayDimensions": [
+        "injury",
+        "medical-aid",
+        "loss",
+        "justice"
+      ],
+      "fact": "การเผชิญหน้าและการสลายการชุมนุมเดือนเมษายน-พฤษภาคม 2553 ทำให้มีผู้เสียชีวิตและบาดเจ็บจำนวนมาก รายงาน คอป. และ Human Rights Watch ตรวจสอบการใช้กำลัง อาวุธ และการคุ้มครองงานช่วยเหลือทางการแพทย์",
+      "livedExperience": "ผลต่อประชาชนครอบคลุมการบาดเจ็บ การสูญเสียรายได้และสมาชิกครอบครัว การเข้าถึงการรักษา และการติดตามข้อเท็จจริงทางคดี ซึ่งดำเนินต่อหลังพื้นที่ชุมนุมยุติลง",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-trct-2010",
+        "src-hrw-2010-descent-chaos"
+      ],
+      "linkedEventIds": [
+        "th-2553-political-violence"
+      ],
+      "missingVoices": [
+        "ผู้ได้รับผลที่ไม่ร่วมชุมนุม",
+        "อาสากู้ชีพรายย่อย",
+        "ครอบครัวทหารและเจ้าหน้าที่ที่เสียชีวิต"
+      ],
+      "openQuestion": "คำให้การ เวชระเบียน ภาพเหตุการณ์ และคำวินิจฉัยทางคดีสอดคล้องหรือขัดกันในแต่ละกรณีอย่างไร"
+    },
+    {
+      "id": "mh-2557-civilians-military-courts",
+      "period": "2549-2560",
+      "beYear": "2557-2559",
+      "ceYear": "2014-2016",
+      "title": "พลเรือนกับการเรียกรายงานตัวและการพิจารณาคดีในศาลทหาร",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "นักกิจกรรม",
+        "นักวิชาการ",
+        "นักการเมือง",
+        "พลเรือนที่ถูกดำเนินคดี"
+      ],
+      "everydayDimensions": [
+        "detention",
+        "legal-process",
+        "expression",
+        "family-life"
+      ],
+      "fact": "หลังรัฐประหาร 22 พฤษภาคม 2557 มีการเรียกบุคคลไปรายงานตัว ควบคุมตัว และนำคดีพลเรือนบางประเภทขึ้นศาลทหาร ก่อนที่คำสั่งในปี 2559 จะยุติการนำคดีพลเรือนใหม่เข้าสู่ศาลทหาร",
+      "livedExperience": "ผลกระทบปรากฏผ่านการหายไปจากบ้านหรือที่ทำงานชั่วคราว การติดต่อครอบครัวและทนายที่จำกัด ความไม่แน่นอนทางคดี และการปรับพฤติกรรมการแสดงความคิดเห็น",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-amnesty-2014-attitude-adjustment",
+        "src-ohchr-2016-military-courts"
+      ],
+      "linkedEventIds": [
+        "th-2557-coup"
+      ],
+      "missingVoices": [
+        "ครอบครัวผู้ถูกเรียกรายงานตัว",
+        "ผู้ที่ไม่เปิดเผยประสบการณ์",
+        "เจ้าหน้าที่ผู้ปฏิบัติตามคำสั่ง"
+      ],
+      "openQuestion": "ผลทางอาชีพ ครอบครัว และการแสดงความคิดเห็นดำเนินต่อหลังคดีหรือการควบคุมตัวยุติลงนานเพียงใด"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Thai People History Research Index",
-    "version": "0.1.0",
-    "updated": "2026-07-19",
+    "version": "0.2.0",
+    "updated": "2026-07-20",
     "derivedFrom": "09_event_database.json",
-    "derivedFromVersion": "0.3.1",
+    "derivedFromVersion": "0.4.0",
     "generator": "scripts/build_research_index.mjs",
     "rule": "ไฟล์นี้เป็นดัชนีอนุพันธ์ ห้ามแก้แทนฐานข้อมูลหลัก"
   },
@@ -816,6 +816,181 @@
         "patients-caregivers"
       ],
       "evidenceStatus": "documented-case"
+    },
+    "mh-2476-first-election-voters": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "state-everyday",
+        "movements-civil-society",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "collective-action"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2528-women-export-factories": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "industrialization",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "bangkok",
+        "central",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "workers",
+        "migrants",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2535-missing-families": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "movements-civil-society",
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "collective-action",
+        "policy-law"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "families-households",
+        "movement-members"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2547-fishing-communities-tsunami": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban",
+        "state-everyday"
+      ],
+      "mechanismIds": [
+        "environment-disaster",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "south"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "families-households",
+        "traders-small-business"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2547-tourism-workers-tsunami": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban"
+      ],
+      "mechanismIds": [
+        "environment-disaster",
+        "migration-mobility",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "south"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "migrants",
+        "traders-small-business",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2551-export-workers-crisis": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban"
+      ],
+      "mechanismIds": [
+        "market-shock",
+        "industrialization",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "migrants",
+        "children-youth",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2553-victims-medical-aid": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "state-everyday",
+        "movements-civil-society",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "collective-action",
+        "war-security",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "movement-members",
+        "patients-caregivers",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2557-civilians-military-courts": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "state-everyday",
+        "movements-civil-society",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "policy-law"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "movement-members",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "documented-case"
     }
   },
   "indexes": {
@@ -832,7 +1007,8 @@
         "mh-2484-bangkoknoi-war",
         "mh-2484-wartime-shortages",
         "mh-2484-women-wartime",
-        "mh-2485-free-thai-networks"
+        "mh-2485-free-thai-networks",
+        "mh-2476-first-election-voters"
       ],
       "2500-2516": [
         "mh-2500-working-women",
@@ -846,21 +1022,28 @@
         "mh-2517-farmer-federation",
         "mh-2519-southern-women-cpt",
         "mh-2523-sanpong-agrarian-change",
-        "mh-2525-eastern-seaboard-workers"
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2528-women-export-factories"
       ],
       "2535-2549": [
         "mh-2534-pakmun-livelihoods",
         "mh-2540-workers-crisis",
         "mh-2540-pateung-karen-migration",
         "mh-2544-village-fund-households",
-        "mh-2545-uhc-patients"
+        "mh-2545-uhc-patients",
+        "mh-2535-missing-families",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami"
       ],
       "2549-2560": [
         "mh-2550-migrant-workers-rights",
         "mh-2552-women-traders-politics",
         "mh-2554-flood-households",
         "mh-2555-minimum-wage-households",
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2551-export-workers-crisis",
+        "mh-2553-victims-medical-aid",
+        "mh-2557-civilians-military-courts"
       ]
     },
     "byMacroTheme": {
@@ -879,7 +1062,11 @@
         "mh-2544-village-fund-households",
         "mh-2545-uhc-patients",
         "mh-2550-migrant-workers-rights",
-        "mh-2555-minimum-wage-households"
+        "mh-2555-minimum-wage-households",
+        "mh-2476-first-election-voters",
+        "mh-2535-missing-families",
+        "mh-2553-victims-medical-aid",
+        "mh-2557-civilians-military-courts"
       ],
       "state-everyday": [
         "mh-2460-war-volunteer-families",
@@ -890,7 +1077,12 @@
         "mh-2484-women-wartime",
         "mh-2508-family-size-regions",
         "mh-2545-uhc-patients",
-        "mh-2554-flood-households"
+        "mh-2554-flood-households",
+        "mh-2476-first-election-voters",
+        "mh-2535-missing-families",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2553-victims-medical-aid",
+        "mh-2557-civilians-military-courts"
       ],
       "identity-belonging": [
         "mh-2460-war-volunteer-families",
@@ -905,7 +1097,8 @@
         "mh-2519-southern-women-cpt",
         "mh-2540-pateung-karen-migration",
         "mh-2550-migrant-workers-rights",
-        "mh-2552-women-traders-politics"
+        "mh-2552-women-traders-politics",
+        "mh-2528-women-export-factories"
       ],
       "economy-opportunity": [
         "mh-2472-rice-households",
@@ -924,7 +1117,11 @@
         "mh-2552-women-traders-politics",
         "mh-2554-flood-households",
         "mh-2555-minimum-wage-households",
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2528-women-export-factories",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2551-export-workers-crisis"
       ],
       "rural-urban": [
         "mh-2472-rice-households",
@@ -933,7 +1130,11 @@
         "mh-2525-eastern-seaboard-workers",
         "mh-2540-workers-crisis",
         "mh-2540-pateung-karen-migration",
-        "mh-2550-migrant-workers-rights"
+        "mh-2550-migrant-workers-rights",
+        "mh-2528-women-export-factories",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2551-export-workers-crisis"
       ],
       "movements-civil-society": [
         "mh-2485-free-thai-networks",
@@ -941,7 +1142,11 @@
         "mh-2517-farmer-federation",
         "mh-2519-southern-women-cpt",
         "mh-2534-pakmun-livelihoods",
-        "mh-2552-women-traders-politics"
+        "mh-2552-women-traders-politics",
+        "mh-2476-first-election-voters",
+        "mh-2535-missing-families",
+        "mh-2553-victims-medical-aid",
+        "mh-2557-civilians-military-courts"
       ]
     },
     "byMechanism": {
@@ -960,7 +1165,9 @@
         "mh-2484-women-wartime",
         "mh-2485-free-thai-networks",
         "mh-2507-base-towns",
-        "mh-2519-southern-women-cpt"
+        "mh-2519-southern-women-cpt",
+        "mh-2553-victims-medical-aid",
+        "mh-2557-civilians-military-courts"
       ],
       "migration-mobility": [
         "mh-2460-war-volunteer-families",
@@ -970,7 +1177,10 @@
         "mh-2525-eastern-seaboard-workers",
         "mh-2540-workers-crisis",
         "mh-2540-pateung-karen-migration",
-        "mh-2550-migrant-workers-rights"
+        "mh-2550-migrant-workers-rights",
+        "mh-2528-women-export-factories",
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2551-export-workers-crisis"
       ],
       "policy-law": [
         "mh-2464-compulsory-school",
@@ -979,7 +1189,10 @@
         "mh-2517-farmer-federation",
         "mh-2544-village-fund-households",
         "mh-2550-migrant-workers-rights",
-        "mh-2555-minimum-wage-households"
+        "mh-2555-minimum-wage-households",
+        "mh-2476-first-election-voters",
+        "mh-2535-missing-families",
+        "mh-2557-civilians-military-courts"
       ],
       "media-ideas": [
         "mh-2468-satri-thai-readers",
@@ -995,7 +1208,8 @@
         "mh-2484-wartime-shortages",
         "mh-2523-sanpong-agrarian-change",
         "mh-2540-workers-crisis",
-        "mh-2540-pateung-karen-migration"
+        "mh-2540-pateung-karen-migration",
+        "mh-2551-export-workers-crisis"
       ],
       "collective-action": [
         "mh-2485-free-thai-networks",
@@ -1003,14 +1217,19 @@
         "mh-2517-farmer-federation",
         "mh-2519-southern-women-cpt",
         "mh-2534-pakmun-livelihoods",
-        "mh-2552-women-traders-politics"
+        "mh-2552-women-traders-politics",
+        "mh-2476-first-election-voters",
+        "mh-2535-missing-families",
+        "mh-2553-victims-medical-aid"
       ],
       "industrialization": [
         "mh-2500-working-women",
         "mh-2507-base-towns",
         "mh-2525-eastern-seaboard-workers",
         "mh-2550-migrant-workers-rights",
-        "mh-2555-minimum-wage-households"
+        "mh-2555-minimum-wage-households",
+        "mh-2528-women-export-factories",
+        "mh-2551-export-workers-crisis"
       ],
       "infrastructure": [
         "mh-2504-isan-roads-migration",
@@ -1021,11 +1240,16 @@
         "mh-2508-family-size-regions",
         "mh-2544-village-fund-households",
         "mh-2545-uhc-patients",
-        "mh-2554-flood-households"
+        "mh-2554-flood-households",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2553-victims-medical-aid"
       ],
       "environment-disaster": [
         "mh-2534-pakmun-livelihoods",
-        "mh-2554-flood-households"
+        "mh-2554-flood-households",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami"
       ],
       "technology": [
         "mh-2556-internet-routines"
@@ -1043,7 +1267,10 @@
         "mh-2515-higher-education-expansion",
         "mh-2516-women-media-citizenship",
         "mh-2540-workers-crisis",
-        "mh-2550-migrant-workers-rights"
+        "mh-2550-migrant-workers-rights",
+        "mh-2528-women-export-factories",
+        "mh-2535-missing-families",
+        "mh-2553-victims-medical-aid"
       ],
       "international": [
         "mh-2460-war-volunteer-families",
@@ -1057,11 +1284,14 @@
         "mh-2544-village-fund-households",
         "mh-2545-uhc-patients",
         "mh-2555-minimum-wage-households",
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2476-first-election-voters",
+        "mh-2557-civilians-military-courts"
       ],
       "central": [
         "mh-2472-rice-households",
-        "mh-2554-flood-households"
+        "mh-2554-flood-households",
+        "mh-2528-women-export-factories"
       ],
       "multi-region": [
         "mh-2472-rice-households",
@@ -1070,7 +1300,11 @@
         "mh-2515-higher-education-expansion",
         "mh-2517-farmer-federation",
         "mh-2540-workers-crisis",
-        "mh-2550-migrant-workers-rights"
+        "mh-2550-migrant-workers-rights",
+        "mh-2528-women-export-factories",
+        "mh-2535-missing-families",
+        "mh-2551-export-workers-crisis",
+        "mh-2553-victims-medical-aid"
       ],
       "northeast": [
         "mh-2504-isan-roads-migration",
@@ -1085,7 +1319,9 @@
         "mh-2552-women-traders-politics"
       ],
       "south": [
-        "mh-2519-southern-women-cpt"
+        "mh-2519-southern-women-cpt",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami"
       ],
       "east": [
         "mh-2525-eastern-seaboard-workers"
@@ -1123,7 +1359,15 @@
         "mh-2550-migrant-workers-rights",
         "mh-2554-flood-households",
         "mh-2555-minimum-wage-households",
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2476-first-election-voters",
+        "mh-2528-women-export-factories",
+        "mh-2535-missing-families",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2551-export-workers-crisis",
+        "mh-2553-victims-medical-aid",
+        "mh-2557-civilians-military-courts"
       ],
       "workers": [
         "mh-2460-war-volunteer-families",
@@ -1135,14 +1379,18 @@
         "mh-2540-workers-crisis",
         "mh-2550-migrant-workers-rights",
         "mh-2554-flood-households",
-        "mh-2555-minimum-wage-households"
+        "mh-2555-minimum-wage-households",
+        "mh-2528-women-export-factories",
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2551-export-workers-crisis"
       ],
       "children-youth": [
         "mh-2464-compulsory-school",
         "mh-2508-family-size-regions",
         "mh-2515-higher-education-expansion",
         "mh-2540-pateung-karen-migration",
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2551-export-workers-crisis"
       ],
       "women-gender": [
         "mh-2468-satri-thai-readers",
@@ -1152,7 +1400,8 @@
         "mh-2508-family-size-regions",
         "mh-2516-women-media-citizenship",
         "mh-2519-southern-women-cpt",
-        "mh-2552-women-traders-politics"
+        "mh-2552-women-traders-politics",
+        "mh-2528-women-export-factories"
       ],
       "farmers-rural": [
         "mh-2472-rice-households",
@@ -1163,12 +1412,16 @@
         "mh-2525-eastern-seaboard-workers",
         "mh-2534-pakmun-livelihoods",
         "mh-2544-village-fund-households",
-        "mh-2554-flood-households"
+        "mh-2554-flood-households",
+        "mh-2547-fishing-communities-tsunami"
       ],
       "professionals-officials": [
         "mh-2482-cultural-mandates",
         "mh-2508-family-size-regions",
-        "mh-2545-uhc-patients"
+        "mh-2545-uhc-patients",
+        "mh-2476-first-election-voters",
+        "mh-2553-victims-medical-aid",
+        "mh-2557-civilians-military-courts"
       ],
       "traders-small-business": [
         "mh-2484-bangkoknoi-war",
@@ -1177,7 +1430,9 @@
         "mh-2544-village-fund-households",
         "mh-2552-women-traders-politics",
         "mh-2554-flood-households",
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami"
       ],
       "movement-members": [
         "mh-2485-free-thai-networks",
@@ -1185,7 +1440,10 @@
         "mh-2517-farmer-federation",
         "mh-2519-southern-women-cpt",
         "mh-2534-pakmun-livelihoods",
-        "mh-2552-women-traders-politics"
+        "mh-2552-women-traders-politics",
+        "mh-2535-missing-families",
+        "mh-2553-victims-medical-aid",
+        "mh-2557-civilians-military-courts"
       ],
       "migrants": [
         "mh-2504-isan-roads-migration",
@@ -1193,7 +1451,10 @@
         "mh-2540-workers-crisis",
         "mh-2540-pateung-karen-migration",
         "mh-2550-migrant-workers-rights",
-        "mh-2555-minimum-wage-households"
+        "mh-2555-minimum-wage-households",
+        "mh-2528-women-export-factories",
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2551-export-workers-crisis"
       ],
       "ethnic-religious": [
         "mh-2519-southern-women-cpt",
@@ -1202,7 +1463,8 @@
       ],
       "patients-caregivers": [
         "mh-2545-uhc-patients",
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2553-victims-medical-aid"
       ]
     },
     "byEvidenceStatus": {
@@ -1214,7 +1476,10 @@
         "mh-2515-higher-education-expansion",
         "mh-2525-eastern-seaboard-workers",
         "mh-2544-village-fund-households",
-        "mh-2555-minimum-wage-households"
+        "mh-2555-minimum-wage-households",
+        "mh-2476-first-election-voters",
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2553-victims-medical-aid"
       ],
       "research-lead": [
         "mh-2460-war-volunteer-families"
@@ -1240,7 +1505,12 @@
         "mh-2550-migrant-workers-rights",
         "mh-2552-women-traders-politics",
         "mh-2554-flood-households",
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2528-women-export-factories",
+        "mh-2535-missing-families",
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2551-export-workers-crisis",
+        "mh-2557-civilians-military-courts"
       ]
     },
     "bySourceFamily": {
@@ -1278,7 +1548,8 @@
         "src-asean-aec",
         "src-parliament-constitution-2560",
         "src-un-internet",
-        "src-etda-internet-profile"
+        "src-etda-internet-profile",
+        "src-kpi-first-election-2476"
       ],
       "academic-analysis": [
         "src-mfa-treaties",
@@ -1291,7 +1562,16 @@
         "src-claremont-base-towns",
         "src-jss-women-media-2516",
         "src-jss-farmer-movement",
-        "src-jssnu-women-cpt-south"
+        "src-jssnu-women-cpt-south",
+        "src-anamwathana-women-factory",
+        "src-hrw-black-may",
+        "src-amnesty-black-may-families",
+        "src-fao-moac-tsunami-assessment",
+        "src-ilo-thailand-tsunami-tourism",
+        "src-ilo-thai-unions-gfc",
+        "src-hrw-2010-descent-chaos",
+        "src-amnesty-2014-attitude-adjustment",
+        "src-ohchr-2016-military-courts"
       ],
       "international-institutional": [
         "src-wb-depression",
@@ -1302,7 +1582,8 @@
         "src-wb-flood-2554",
         "src-wb-isan-roads",
         "src-wb-population-1978",
-        "src-wb-workers-crisis"
+        "src-wb-workers-crisis",
+        "src-escap-women-industry"
       ],
       "lived-fieldwork": [
         "src-silpakorn-bangkoknoi-ww2",
@@ -1327,13 +1608,13 @@
         "institutions-long-term": 2
       },
       "2475-2500": {
-        "state-everyday": 4,
+        "state-everyday": 5,
         "economy-opportunity": 2,
         "rural-urban": 0,
         "education-media": 0,
-        "movements-civil-society": 1,
+        "movements-civil-society": 2,
         "identity-belonging": 3,
-        "institutions-long-term": 0
+        "institutions-long-term": 1
       },
       "2500-2516": {
         "state-everyday": 1,
@@ -1346,37 +1627,37 @@
       },
       "2516-2535": {
         "state-everyday": 0,
-        "economy-opportunity": 3,
+        "economy-opportunity": 4,
+        "rural-urban": 3,
+        "education-media": 1,
+        "movements-civil-society": 3,
+        "identity-belonging": 3,
+        "institutions-long-term": 0
+      },
+      "2535-2549": {
+        "state-everyday": 3,
+        "economy-opportunity": 5,
+        "rural-urban": 4,
+        "education-media": 0,
+        "movements-civil-society": 2,
+        "identity-belonging": 1,
+        "institutions-long-term": 3
+      },
+      "2549-2560": {
+        "state-everyday": 3,
+        "economy-opportunity": 6,
         "rural-urban": 2,
         "education-media": 1,
         "movements-civil-society": 3,
         "identity-belonging": 2,
-        "institutions-long-term": 0
-      },
-      "2535-2549": {
-        "state-everyday": 1,
-        "economy-opportunity": 3,
-        "rural-urban": 2,
-        "education-media": 0,
-        "movements-civil-society": 1,
-        "identity-belonging": 1,
-        "institutions-long-term": 2
-      },
-      "2549-2560": {
-        "state-everyday": 1,
-        "economy-opportunity": 5,
-        "rural-urban": 1,
-        "education-media": 1,
-        "movements-civil-society": 1,
-        "identity-belonging": 2,
-        "institutions-long-term": 2
+        "institutions-long-term": 4
       }
     },
     "sourceFamilyCounts": {
       "archive-primary": 7,
-      "state-official": 25,
-      "academic-analysis": 11,
-      "international-institutional": 9,
+      "state-official": 26,
+      "academic-analysis": 20,
+      "international-institutional": 10,
       "lived-fieldwork": 7
     },
     "eventToMicrohistories": {
@@ -1438,7 +1719,8 @@
         "mh-2545-uhc-patients"
       ],
       "th-2553-political-violence": [
-        "mh-2552-women-traders-politics"
+        "mh-2552-women-traders-politics",
+        "mh-2553-victims-medical-aid"
       ],
       "th-2554-flood": [
         "mh-2554-flood-households"
@@ -1448,6 +1730,25 @@
       ],
       "th-2550-2560-internet": [
         "mh-2556-internet-routines"
+      ],
+      "th-2476-first-general-election": [
+        "mh-2476-first-election-voters"
+      ],
+      "th-2528-export-boom": [
+        "mh-2528-women-export-factories"
+      ],
+      "th-2535-black-may": [
+        "mh-2535-missing-families"
+      ],
+      "th-2547-tsunami": [
+        "mh-2547-fishing-communities-tsunami",
+        "mh-2547-tourism-workers-tsunami"
+      ],
+      "th-2551-global-crisis": [
+        "mh-2551-export-workers-crisis"
+      ],
+      "th-2557-coup": [
+        "mh-2557-civilians-military-courts"
       ]
     },
     "eventsWithoutMicrohistory": [
@@ -1459,15 +1760,10 @@
       "th-2501-authoritarian-charter",
       "th-2510-asean",
       "th-2518-labour-relations",
-      "th-2528-export-boom",
-      "th-2535-black-may",
       "th-2538-wto",
       "th-2540-constitution",
       "th-2542-education-act",
-      "th-2547-tsunami",
       "th-2549-coup",
-      "th-2551-global-crisis",
-      "th-2557-coup",
       "th-2558-aec",
       "th-2560-constitution"
     ],
@@ -1480,10 +1776,7 @@
     ],
     "singleSourceSensitiveEvents": [
       "th-2501-authoritarian-charter",
-      "th-2516-october-14",
-      "th-2535-black-may",
-      "th-2553-political-violence",
-      "th-2557-coup"
+      "th-2516-october-14"
     ]
   },
   "patterns": [
