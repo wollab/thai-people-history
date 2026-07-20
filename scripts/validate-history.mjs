@@ -71,7 +71,36 @@ for (const [period, count] of Object.entries(periodCounts)) {
   if (count < 6) errors.push(`period ${period}: มีเพียง ${count} เหตุการณ์ (ขั้นต่ำ 6)`);
 }
 
-console.log(`ตรวจแล้ว: ${history.events.length} เหตุการณ์ | ${history.sources.length} แหล่งอ้างอิง | ${history.worldContexts.length} บริบทโลก`);
+const allowedEvidenceStatus = new Set(["documented-case", "contextual-lead", "research-lead"]);
+const mhPeriodCounts = Object.fromEntries(expectedPeriods.map((period) => [period, 0]));
+for (const record of history.microhistories ?? []) {
+  if (!(record.period in mhPeriodCounts)) errors.push(`microhistory ${record.id}: period ไม่อยู่ในกรอบ ${record.period}`);
+  else mhPeriodCounts[record.period] += 1;
+
+  for (const field of ["beYear", "ceYear", "title", "fact", "livedExperience", "openQuestion"]) {
+    if (!record[field]) errors.push(`microhistory ${record.id}: ไม่มี ${field}`);
+  }
+  for (const field of ["groups", "location", "everydayDimensions", "sourceIds", "missingVoices"]) {
+    if (!record[field]?.length) errors.push(`microhistory ${record.id}: ${field} ว่างเปล่า`);
+  }
+  if (!allowedEvidenceStatus.has(record.evidenceStatus)) errors.push(`microhistory ${record.id}: evidenceStatus ไม่ถูกต้อง`);
+  for (const sourceId of record.sourceIds ?? []) {
+    if (!sources.has(sourceId)) errors.push(`microhistory ${record.id}: ไม่พบ source ${sourceId}`);
+  }
+  for (const eventId of record.linkedEventIds ?? []) {
+    if (!history.events.some((event) => event.id === eventId)) errors.push(`microhistory ${record.id}: ไม่พบ event ${eventId}`);
+  }
+  const beStart = Number(record.beYear.match(/\d{4}/)?.[0]);
+  const ceStart = Number(record.ceYear.match(/\d{4}/)?.[0]);
+  if (!beStart || !ceStart || beStart - 543 !== ceStart) {
+    errors.push(`microhistory ${record.id}: ปี พ.ศ./ค.ศ. ไม่ตรงกัน (${record.beYear}/${record.ceYear})`);
+  }
+}
+for (const [period, count] of Object.entries(mhPeriodCounts)) {
+  if (count < 5) warnings.push(`period ${period}: microhistory มีเพียง ${count} เรื่อง (เป้าหมาย 5)`);
+}
+
+console.log(`ตรวจแล้ว: ${history.events.length} เหตุการณ์ | ${history.microhistories?.length ?? 0} microhistory | ${history.sources.length} แหล่งอ้างอิง | ${history.worldContexts.length} บริบทโลก`);
 console.log(Object.entries(periodCounts).map(([period, count]) => `${period}: ${count}`).join(" | "));
 for (const warning of warnings) console.warn(`คำเตือน: ${warning}`);
 if (errors.length) {

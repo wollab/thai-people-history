@@ -2,6 +2,7 @@ import rawHistory from "./history.json";
 
 export type VerificationStatus = "verified" | "corroborated";
 export type ImpactStatus = "contextual" | "documented";
+export type EvidenceStatus = "documented-case" | "contextual-lead" | "research-lead";
 
 export type HistorySource = {
   id: string;
@@ -10,6 +11,7 @@ export type HistorySource = {
   url: string;
   type: string;
   language: string;
+  note?: string;
 };
 
 export type WorldContext = {
@@ -40,17 +42,48 @@ export type HistoryEvent = {
   openQuestion: string;
 };
 
+export type Microhistory = {
+  id: string;
+  period: string;
+  beYear: string;
+  ceYear: string;
+  title: string;
+  location: string[];
+  groups: string[];
+  everydayDimensions: string[];
+  fact: string;
+  livedExperience: string;
+  evidenceStatus: EvidenceStatus;
+  sourceIds: string[];
+  linkedEventIds: string[];
+  missingVoices: string[];
+  openQuestion: string;
+};
+
 export const history = rawHistory as {
   meta: typeof rawHistory.meta;
   sources: HistorySource[];
   worldContexts: WorldContext[];
   events: HistoryEvent[];
+  microhistories: Microhistory[];
 };
 
 export const sources = history.sources;
 export const worldContexts = history.worldContexts;
 export const events = history.events;
+export const microhistories = history.microhistories;
 
 export const sourceById = new Map(sources.map((source) => [source.id, source]));
 export const worldContextById = new Map(worldContexts.map((context) => [context.id, context]));
+export const eventById = new Map(events.map((event) => [event.id, event]));
+export const microhistoryById = new Map(microhistories.map((record) => [record.id, record]));
+
+/** Sensitive events flagged in 10_claude_handoff.md as still having only one source — surface this in the UI, never hide it silently. */
+export const singleSourceSensitiveEventIds = new Set([
+  "th-2501-authoritarian-charter",
+  "th-2516-october-14",
+  "th-2535-black-may",
+  "th-2553-political-violence",
+  "th-2557-coup",
+]);
 

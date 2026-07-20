@@ -1,111 +1,2851 @@
 {
   "meta": {
     "title": "ฐานข้อมูลประวัติศาสตร์ประชาชนไทย พ.ศ. 2460-2560",
-    "version": "0.2.0",
-    "updated": "2026-07-19",
+    "version": "0.3.1",
+    "updated": "2026-07-20",
+    "canonicalStatus": "staging-source-of-truth",
+    "canonicalPath": "03_Documents/04_Knowledge_Base/01_Inbox/04_Personal_Learning/2026-07-19-thai-people-history-2460-2560/09_event_database.json",
     "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า"
   },
   "sources": [
-    {"id":"src-frus-ww1","title":"Siam declared war against Germany and Austria, 22 July 1917","publisher":"U.S. Department of State, Office of the Historian","url":"https://history.state.gov/historicaldocuments/frus1917Supp01v01/d644","type":"primary-document","language":"en"},
-    {"id":"src-moe-history","title":"A History of Thai Education","publisher":"Ministry of Education, Thailand","url":"https://bic.moe.go.th/images/stories/book/other/MOE/A_HISTORY_OF_THAI_EDUCATION-1976.pdf","type":"official-history","language":"en"},
-    {"id":"src-chula-history","title":"History of Chulalongkorn University","publisher":"Chulalongkorn University","url":"https://www.chula.ac.th/en/about/overview/history/","type":"institutional-history","language":"en"},
-    {"id":"src-mfa-treaties","title":"From Extraterritoriality to Equality: Thailand's Foreign Relations 1855-1939","publisher":"International Studies Center, Ministry of Foreign Affairs","url":"https://isc.mfa.go.th/en/content/from-extraterritoriality-to-equality-thailand-s-fo","type":"scholarly-official","language":"en"},
-    {"id":"src-wb-depression","title":"The Unequal Effects of the Great Depression on Rural Households in Siam, 1930-1934","publisher":"World Bank","url":"https://www.worldbank.org/en/events/2017/09/07/unequal-effects-of-the-great-depression-on-rural-households-in-siam","type":"research","language":"en"},
-    {"id":"src-parliament-2475","title":"คณะราษฎรและการเปลี่ยนแปลงการปกครอง พ.ศ. 2475","publisher":"พิพิธภัณฑ์รัฐสภา","url":"https://www.parliamentmuseum.go.th/ar63-People_team.html","type":"official-history","language":"th"},
-    {"id":"src-parliament-constitution-2475","title":"รัฐธรรมนูญแห่งราชอาณาจักรสยาม พุทธศักราช 2475","publisher":"พิพิธภัณฑ์รัฐสภา","url":"https://www.parliamentmuseum.go.th/constitution/constitution-1-2475.html","type":"official-record","language":"th"},
-    {"id":"src-national-archives-mandates","title":"Thai cultural mandates","publisher":"The National Archives of Thailand via Google Arts & Culture","url":"https://artsandculture.google.com/asset/thai-cultural-mandates-the-national-archives-of-thailand/wwFI4bpgoMsPhQ?hl=en","type":"archive","language":"en"},
-    {"id":"src-cia-free-thai","title":"War of a Different King: OSS and Free Thai Operations in World War II","publisher":"Central Intelligence Agency, Center for the Study of Intelligence","url":"https://www.cia.gov/resources/csi/static/OSS-and-Free-Thai.pdf","type":"archival-study","language":"en"},
-    {"id":"src-un-thailand","title":"Thailand: United Nations Member State","publisher":"United Nations","url":"https://www.un.org/en/about-us/member-states/thailand","type":"official-record","language":"en"},
-    {"id":"src-state-seato","title":"Southeast Asia Treaty Organization (SEATO), 1954","publisher":"U.S. Department of State, Office of the Historian","url":"https://history.state.gov/milestones/1953-1960/seato","type":"official-history","language":"en"},
-    {"id":"src-parliament-history","title":"89 ปี สำนักงานเลขาธิการสภาผู้แทนราษฎร","publisher":"พิพิธภัณฑ์รัฐสภา","url":"https://www.parliamentmuseum.go.th/89y/content5.html","type":"official-history","language":"th"},
-    {"id":"src-nesdc-plans","title":"The National Economic and Social Development Plan","publisher":"Office of the National Economic and Social Development Council","url":"https://www.nesdc.go.th/en/the-national-economic-and-social-development-plan/","type":"official-plan","language":"en"},
-    {"id":"src-frus-bases","title":"U.S. Military Deployments to Thailand, 1972","publisher":"U.S. Department of State, Office of the Historian","url":"https://history.state.gov/historicaldocuments/frus1969-76v20/d164","type":"primary-document","language":"en"},
-    {"id":"src-asean-history","title":"History of ASEAN and the Bangkok Declaration","publisher":"ASEAN Secretariat","url":"https://asean.org/main-search/","type":"official-history","language":"en"},
-    {"id":"src-ops-highered","title":"ประวัติหน่วยงานด้านอุดมศึกษา","publisher":"สำนักงานปลัดกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม","url":"https://www.ops.go.th/th/content_page/item/1707-history-mua","type":"official-history","language":"th"},
-    {"id":"src-nrct-14oct","title":"Overthrow of Thanom government in Thailand, 14 October 1973","publisher":"ระบบหอจดหมายเหตุต่างประเทศ ทูลกระหม่อมอาจารย์, วช.","url":"https://archives.nrct.go.th/histdept/items/show/400","type":"primary-document-archive","language":"en"},
-    {"id":"src-ilo-labour-2518","title":"Labour Relations Act, B.E. 2518 (1975)","publisher":"ILO NATLEX","url":"https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=14497","type":"legal-record","language":"en"},
-    {"id":"src-doct6","title":"บันทึก 6 ตุลา: คลังหลักฐานและความทรงจำ","publisher":"โครงการบันทึก 6 ตุลา","url":"https://doct6.com/","type":"public-archive","language":"th"},
-    {"id":"src-ago-oct6-case","title":"คดีจลาจล 6 ตุลาคม 2519","publisher":"ห้องสมุดกฎหมาย สำนักงานอัยการสูงสุด","url":"https://www3.ago.go.th/library/riot-case-6-october-2519/","type":"official-case-record","language":"th"},
-    {"id":"src-order-66-study","title":"A Paradigm Shift in Policy-making: Order No. 66/2523","publisher":"Journal of Arts and Thai Studies","url":"https://so08.tci-thaijo.org/index.php/artssu/article/view/4312","type":"peer-reviewed-research","language":"th"},
-    {"id":"src-wb-eastern-seaboard","title":"Thailand Investment Climate, Eastern Seaboard Program","publisher":"World Bank","url":"https://documents1.worldbank.org/curated/en/116101468118461511/pdf/35353.pdf","type":"institutional-research","language":"en"},
-    {"id":"src-parliament-may-1992","title":"งานรำลึกวีรชนพฤษภาประชาธรรม","publisher":"รัฐสภาไทย","url":"https://web.parliament.go.th/view/7/ภาพข่าวรัฐสภา/ข่าวรัฐสภา/4226/TH-TH","type":"official-commemoration","language":"th"},
-    {"id":"src-wto-thailand","title":"Thailand and the WTO","publisher":"World Trade Organization","url":"https://www.wto.org/english/thewto_e/countries_e/thailand_e.htm","type":"official-record","language":"en"},
-    {"id":"src-bot-2540","title":"บทเรียนจากวิกฤตต้มยำกุ้ง","publisher":"Bank of Thailand","url":"https://www.bot.or.th/en/our-roles/special-measures/Tom-Yum-Kung-lesson.html","type":"official-history","language":"en"},
-    {"id":"src-imf-2540","title":"IMF Approves Stand-by Credit for Thailand","publisher":"International Monetary Fund","url":"https://www.imf.org/external/np/sec/pr/1997/pr9737.htm","type":"official-record","language":"en"},
-    {"id":"src-parliament-constitution-2540","title":"รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช 2540","publisher":"พิพิธภัณฑ์รัฐสภา","url":"https://parliamentmuseum.go.th/constitution/constitution-16-2540.html","type":"official-record","language":"th"},
-    {"id":"src-education-act-2542","title":"พระราชบัญญัติการศึกษาแห่งชาติ พ.ศ. 2542","publisher":"สำนักงานปลัดกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม","url":"https://www.ops.go.th/th/content_page/item/1707-history-mua","type":"official-history","language":"th"},
-    {"id":"src-wb-village-fund","title":"Thailand Economic Monitor reports: What is the Village Fund?","publisher":"World Bank","url":"https://www.worldbank.org/en/country/thailand/publication/thailand-economic-monitor-reports","type":"institutional-research","language":"en"},
-    {"id":"src-who-uhc","title":"In Thailand, universal health care eases the impact of diabetes","publisher":"World Health Organization","url":"https://www.who.int/en/news-room/feature-stories/detail/in-thailand-universal-health-care-eases-the-impact-of-diabetes","type":"official-history","language":"en"},
-    {"id":"src-wb-tsunami","title":"Thailand-World Bank Group Partnership: Emergency Responses to the Tsunami","publisher":"World Bank","url":"https://documents1.worldbank.org/curated/en/319941468308953677/pdf/353850TH0Country0dialogue020051cdm2004.pdf","type":"institutional-report","language":"en"},
-    {"id":"src-parliament-constitution-2549","title":"Constitution of the Kingdom of Thailand (Interim), B.E. 2549","publisher":"Library of Parliament","url":"https://library.parliament.go.th/sites/default/files/assets/files/give%20%26%20take/main%20page/constitutions/NALT-cons_temp2549E.pdf","type":"legal-record","language":"en"},
-    {"id":"src-wb-gfc","title":"Thailand and the Global Financial Crisis, 2008-2009","publisher":"World Bank","url":"https://www.worldbank.org/en/news/press-release/2010/06/24/thai-economic-recovery-still-driven-export-growth-world-bank-says","type":"institutional-report","language":"en"},
-    {"id":"src-trct-2010","title":"Truth for Reconciliation Commission of Thailand final report overview","publisher":"Center for Strategic and International Studies","url":"https://www.csis.org/analysis/thailands-truth-reconciliation-commission-issues-final-report","type":"secondary-summary-of-official-report","language":"en"},
-    {"id":"src-wb-flood-2554","title":"The World Bank Supports Thailand's Post-Floods Recovery Effort","publisher":"World Bank","url":"https://www.worldbank.org/en/news/feature/2011/12/13/world-bank-supports-thailands-post-floods-recovery-effort","type":"institutional-assessment","language":"en"},
-    {"id":"src-ilo-wage-300","title":"Notification of the Wage Committee on Minimum Wage Rate No. 7","publisher":"ILO NATLEX / Ministry of Labour","url":"https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/93544/THA93544%20Eng.pdf","type":"legal-record","language":"en"},
-    {"id":"src-mfa-ncpo","title":"NCPO Announcement No. 1/2557: Control of National Administration","publisher":"Ministry of Foreign Affairs, Thailand","url":"https://www.mfa.go.th/en/content/5d5bcdc115e39c3060012117","type":"primary-document","language":"en"},
-    {"id":"src-asean-aec","title":"ASEAN Economic Community 2015 Fact Sheet","publisher":"ASEAN Secretariat","url":"https://www.asean.org/wp-content/uploads/2012/05/56.-December-2015-Fact-Sheet-on-ASEAN-Economic-Community-AEC-1.pdf","type":"official-record","language":"en"},
-    {"id":"src-parliament-constitution-2560","title":"รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช 2560","publisher":"พิพิธภัณฑ์รัฐสภา","url":"https://parliamentmuseum.go.th/constitution/constitution-20-2560.html","type":"official-record","language":"th"},
-    {"id":"src-un-internet","title":"Percentage of individuals using the Internet: Thailand","publisher":"UNdata / ITU","url":"https://data.un.org/Data.aspx?d=ITU&f=ind1Code%3AI99H%3BcountryCode%3ATHA","type":"official-statistics","language":"en"}
+    {
+      "id": "src-frus-ww1",
+      "title": "Siam declared war against Germany and Austria, 22 July 1917",
+      "publisher": "U.S. Department of State, Office of the Historian",
+      "url": "https://history.state.gov/historicaldocuments/frus1917Supp01v01/d644",
+      "type": "primary-document",
+      "language": "en"
+    },
+    {
+      "id": "src-moe-history",
+      "title": "A History of Thai Education",
+      "publisher": "Ministry of Education, Thailand",
+      "url": "https://bic.moe.go.th/images/stories/book/other/MOE/A_HISTORY_OF_THAI_EDUCATION-1976.pdf",
+      "type": "official-history",
+      "language": "en"
+    },
+    {
+      "id": "src-chula-history",
+      "title": "History of Chulalongkorn University",
+      "publisher": "Chulalongkorn University",
+      "url": "https://www.chula.ac.th/en/about/overview/history/",
+      "type": "institutional-history",
+      "language": "en"
+    },
+    {
+      "id": "src-mfa-treaties",
+      "title": "From Extraterritoriality to Equality: Thailand's Foreign Relations 1855-1939",
+      "publisher": "International Studies Center, Ministry of Foreign Affairs",
+      "url": "https://isc.mfa.go.th/en/content/from-extraterritoriality-to-equality-thailand-s-fo",
+      "type": "scholarly-official",
+      "language": "en"
+    },
+    {
+      "id": "src-wb-depression",
+      "title": "The Unequal Effects of the Great Depression on Rural Households in Siam, 1930-1934",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/events/2017/09/07/unequal-effects-of-the-great-depression-on-rural-households-in-siam",
+      "type": "research",
+      "language": "en"
+    },
+    {
+      "id": "src-parliament-2475",
+      "title": "คณะราษฎรและการเปลี่ยนแปลงการปกครอง พ.ศ. 2475",
+      "publisher": "พิพิธภัณฑ์รัฐสภา",
+      "url": "https://www.parliamentmuseum.go.th/ar63-People_team.html",
+      "type": "official-history",
+      "language": "th"
+    },
+    {
+      "id": "src-parliament-constitution-2475",
+      "title": "รัฐธรรมนูญแห่งราชอาณาจักรสยาม พุทธศักราช 2475",
+      "publisher": "พิพิธภัณฑ์รัฐสภา",
+      "url": "https://www.parliamentmuseum.go.th/constitution/constitution-1-2475.html",
+      "type": "official-record",
+      "language": "th"
+    },
+    {
+      "id": "src-national-archives-mandates",
+      "title": "Thai cultural mandates",
+      "publisher": "The National Archives of Thailand via Google Arts & Culture",
+      "url": "https://artsandculture.google.com/asset/thai-cultural-mandates-the-national-archives-of-thailand/wwFI4bpgoMsPhQ?hl=en",
+      "type": "archive",
+      "language": "en"
+    },
+    {
+      "id": "src-cia-free-thai",
+      "title": "War of a Different King: OSS and Free Thai Operations in World War II",
+      "publisher": "Central Intelligence Agency, Center for the Study of Intelligence",
+      "url": "https://www.cia.gov/resources/csi/static/OSS-and-Free-Thai.pdf",
+      "type": "archival-study",
+      "language": "en"
+    },
+    {
+      "id": "src-un-thailand",
+      "title": "Thailand: United Nations Member State",
+      "publisher": "United Nations",
+      "url": "https://www.un.org/en/about-us/member-states/thailand",
+      "type": "official-record",
+      "language": "en"
+    },
+    {
+      "id": "src-state-seato",
+      "title": "Southeast Asia Treaty Organization (SEATO), 1954",
+      "publisher": "U.S. Department of State, Office of the Historian",
+      "url": "https://history.state.gov/milestones/1953-1960/seato",
+      "type": "official-history",
+      "language": "en"
+    },
+    {
+      "id": "src-parliament-history",
+      "title": "89 ปี สำนักงานเลขาธิการสภาผู้แทนราษฎร",
+      "publisher": "พิพิธภัณฑ์รัฐสภา",
+      "url": "https://www.parliamentmuseum.go.th/89y/content5.html",
+      "type": "official-history",
+      "language": "th"
+    },
+    {
+      "id": "src-nesdc-plans",
+      "title": "The National Economic and Social Development Plan",
+      "publisher": "Office of the National Economic and Social Development Council",
+      "url": "https://www.nesdc.go.th/en/the-national-economic-and-social-development-plan/",
+      "type": "official-plan",
+      "language": "en"
+    },
+    {
+      "id": "src-frus-bases",
+      "title": "U.S. Military Deployments to Thailand, 1972",
+      "publisher": "U.S. Department of State, Office of the Historian",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v20/d164",
+      "type": "primary-document",
+      "language": "en"
+    },
+    {
+      "id": "src-asean-history",
+      "title": "History of ASEAN and the Bangkok Declaration",
+      "publisher": "ASEAN Secretariat",
+      "url": "https://asean.org/main-search/",
+      "type": "official-history",
+      "language": "en"
+    },
+    {
+      "id": "src-ops-highered",
+      "title": "ประวัติหน่วยงานด้านอุดมศึกษา",
+      "publisher": "สำนักงานปลัดกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม",
+      "url": "https://www.ops.go.th/th/content_page/item/1707-history-mua",
+      "type": "official-history",
+      "language": "th"
+    },
+    {
+      "id": "src-nrct-14oct",
+      "title": "Overthrow of Thanom government in Thailand, 14 October 1973",
+      "publisher": "ระบบหอจดหมายเหตุต่างประเทศ ทูลกระหม่อมอาจารย์, วช.",
+      "url": "https://archives.nrct.go.th/histdept/items/show/400",
+      "type": "primary-document-archive",
+      "language": "en"
+    },
+    {
+      "id": "src-ilo-labour-2518",
+      "title": "Labour Relations Act, B.E. 2518 (1975)",
+      "publisher": "ILO NATLEX",
+      "url": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=14497",
+      "type": "legal-record",
+      "language": "en"
+    },
+    {
+      "id": "src-doct6",
+      "title": "บันทึก 6 ตุลา: คลังหลักฐานและความทรงจำ",
+      "publisher": "โครงการบันทึก 6 ตุลา",
+      "url": "https://doct6.com/",
+      "type": "public-archive",
+      "language": "th"
+    },
+    {
+      "id": "src-ago-oct6-case",
+      "title": "คดีจลาจล 6 ตุลาคม 2519",
+      "publisher": "ห้องสมุดกฎหมาย สำนักงานอัยการสูงสุด",
+      "url": "https://www3.ago.go.th/library/riot-case-6-october-2519/",
+      "type": "official-case-record",
+      "language": "th"
+    },
+    {
+      "id": "src-order-66-study",
+      "title": "A Paradigm Shift in Policy-making: Order No. 66/2523",
+      "publisher": "Journal of Arts and Thai Studies",
+      "url": "https://so08.tci-thaijo.org/index.php/artssu/article/view/4312",
+      "type": "peer-reviewed-research",
+      "language": "th"
+    },
+    {
+      "id": "src-wb-eastern-seaboard",
+      "title": "Thailand Investment Climate, Eastern Seaboard Program",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/116101468118461511/pdf/35353.pdf",
+      "type": "institutional-research",
+      "language": "en"
+    },
+    {
+      "id": "src-parliament-may-1992",
+      "title": "งานรำลึกวีรชนพฤษภาประชาธรรม",
+      "publisher": "รัฐสภาไทย",
+      "url": "https://web.parliament.go.th/view/7/ภาพข่าวรัฐสภา/ข่าวรัฐสภา/4226/TH-TH",
+      "type": "official-commemoration",
+      "language": "th"
+    },
+    {
+      "id": "src-wto-thailand",
+      "title": "Thailand and the WTO",
+      "publisher": "World Trade Organization",
+      "url": "https://www.wto.org/english/thewto_e/countries_e/thailand_e.htm",
+      "type": "official-record",
+      "language": "en"
+    },
+    {
+      "id": "src-bot-2540",
+      "title": "บทเรียนจากวิกฤตต้มยำกุ้ง",
+      "publisher": "Bank of Thailand",
+      "url": "https://www.bot.or.th/en/our-roles/special-measures/Tom-Yum-Kung-lesson.html",
+      "type": "official-history",
+      "language": "en"
+    },
+    {
+      "id": "src-imf-2540",
+      "title": "IMF Approves Stand-by Credit for Thailand",
+      "publisher": "International Monetary Fund",
+      "url": "https://www.imf.org/external/np/sec/pr/1997/pr9737.htm",
+      "type": "official-record",
+      "language": "en"
+    },
+    {
+      "id": "src-parliament-constitution-2540",
+      "title": "รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช 2540",
+      "publisher": "พิพิธภัณฑ์รัฐสภา",
+      "url": "https://parliamentmuseum.go.th/constitution/constitution-16-2540.html",
+      "type": "official-record",
+      "language": "th"
+    },
+    {
+      "id": "src-education-act-2542",
+      "title": "พระราชบัญญัติการศึกษาแห่งชาติ พ.ศ. 2542",
+      "publisher": "สำนักงานปลัดกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม",
+      "url": "https://www.ops.go.th/th/content_page/item/1707-history-mua",
+      "type": "official-history",
+      "language": "th"
+    },
+    {
+      "id": "src-wb-village-fund",
+      "title": "Thailand Economic Monitor reports: What is the Village Fund?",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/country/thailand/publication/thailand-economic-monitor-reports",
+      "type": "institutional-research",
+      "language": "en"
+    },
+    {
+      "id": "src-who-uhc",
+      "title": "In Thailand, universal health care eases the impact of diabetes",
+      "publisher": "World Health Organization",
+      "url": "https://www.who.int/en/news-room/feature-stories/detail/in-thailand-universal-health-care-eases-the-impact-of-diabetes",
+      "type": "official-history",
+      "language": "en"
+    },
+    {
+      "id": "src-wb-tsunami",
+      "title": "Thailand-World Bank Group Partnership: Emergency Responses to the Tsunami",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/319941468308953677/pdf/353850TH0Country0dialogue020051cdm2004.pdf",
+      "type": "institutional-report",
+      "language": "en"
+    },
+    {
+      "id": "src-parliament-constitution-2549",
+      "title": "Constitution of the Kingdom of Thailand (Interim), B.E. 2549",
+      "publisher": "Library of Parliament",
+      "url": "https://library.parliament.go.th/sites/default/files/assets/files/give%20%26%20take/main%20page/constitutions/NALT-cons_temp2549E.pdf",
+      "type": "legal-record",
+      "language": "en"
+    },
+    {
+      "id": "src-wb-gfc",
+      "title": "Thailand and the Global Financial Crisis, 2008-2009",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/news/press-release/2010/06/24/thai-economic-recovery-still-driven-export-growth-world-bank-says",
+      "type": "institutional-report",
+      "language": "en"
+    },
+    {
+      "id": "src-trct-2010",
+      "title": "Truth for Reconciliation Commission of Thailand final report overview",
+      "publisher": "Center for Strategic and International Studies",
+      "url": "https://www.csis.org/analysis/thailands-truth-reconciliation-commission-issues-final-report",
+      "type": "secondary-summary-of-official-report",
+      "language": "en"
+    },
+    {
+      "id": "src-wb-flood-2554",
+      "title": "The World Bank Supports Thailand's Post-Floods Recovery Effort",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/news/feature/2011/12/13/world-bank-supports-thailands-post-floods-recovery-effort",
+      "type": "institutional-assessment",
+      "language": "en"
+    },
+    {
+      "id": "src-ilo-wage-300",
+      "title": "Notification of the Wage Committee on Minimum Wage Rate No. 7",
+      "publisher": "ILO NATLEX / Ministry of Labour",
+      "url": "https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/93544/THA93544%20Eng.pdf",
+      "type": "legal-record",
+      "language": "en"
+    },
+    {
+      "id": "src-mfa-ncpo",
+      "title": "ประกาศคณะรักษาความสงบแห่งชาติ ฉบับที่ 1/2557 เรื่อง การควบคุมอำนาจการปกครองประเทศ",
+      "publisher": "วิกิซอร์ซ (ต้นฉบับราชกิจจานุเบกษา)",
+      "url": "https://th.wikisource.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%87%E0%B8%9A%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%88_%E0%B9%91/%E0%B9%92%E0%B9%95%E0%B9%95%E0%B9%97",
+      "type": "primary-document",
+      "language": "th",
+      "note": "แทนที่ URL เดิมของ mfa.go.th ที่เสีย (404) เมื่อ 2026-07-19 — ตรวจแล้วว่าเป็นต้นฉบับประกาศฉบับเดียวกัน"
+    },
+    {
+      "id": "src-asean-aec",
+      "title": "ASEAN Economic Community 2015 Fact Sheet",
+      "publisher": "ASEAN Secretariat",
+      "url": "https://www.asean.org/wp-content/uploads/2012/05/56.-December-2015-Fact-Sheet-on-ASEAN-Economic-Community-AEC-1.pdf",
+      "type": "official-record",
+      "language": "en"
+    },
+    {
+      "id": "src-parliament-constitution-2560",
+      "title": "รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช 2560",
+      "publisher": "พิพิธภัณฑ์รัฐสภา",
+      "url": "https://parliamentmuseum.go.th/constitution/constitution-20-2560.html",
+      "type": "official-record",
+      "language": "th"
+    },
+    {
+      "id": "src-un-internet",
+      "title": "Percentage of individuals using the Internet: Thailand",
+      "publisher": "UNdata / ITU",
+      "url": "https://data.un.org/Data.aspx?d=ITU&f=ind1Code%3AI99H%3BcountryCode%3ATHA",
+      "type": "official-statistics",
+      "language": "en"
+    },
+    {
+      "id": "src-jts-satri-thai",
+      "title": "Notions of Women’s Issues in The Satri Thai Magazine (1925-1927)",
+      "publisher": "Journal of Thai Studies, Chulalongkorn University",
+      "url": "https://so04.tci-thaijo.org/index.php/TSDJ/article/view/267248",
+      "type": "peer-reviewed-research",
+      "language": "th"
+    },
+    {
+      "id": "src-oxford-ww2-impact",
+      "title": "Thailand during World War II: Impact and aftermath",
+      "publisher": "Oxford University Research Archive",
+      "url": "https://ora.ox.ac.uk/objects/uuid%3A623a2d48-a892-49e4-842d-0ea1758a72c2",
+      "type": "doctoral-research",
+      "language": "en"
+    },
+    {
+      "id": "src-silpakorn-bangkoknoi-ww2",
+      "title": "สงครามมหาเอเชียบูรพาจากความทรงจำของชาวบ้านบุและชาวปากคลองบางกอกน้อย",
+      "publisher": "วารสารอักษรศาสตร์ มหาวิทยาลัยศิลปากร",
+      "url": "https://so04.tci-thaijo.org/index.php/jasu/article/view/239327",
+      "type": "oral-history-research",
+      "language": "th"
+    },
+    {
+      "id": "src-jsn-women-ww2",
+      "title": "ความคิดของผู้นำและกิจกรรมของหญิงไทยในสมัยสงครามโลกครั้งที่ 2 ภายใต้เงากองทัพญี่ปุ่น",
+      "publisher": "วารสารเครือข่ายญี่ปุ่นศึกษา",
+      "url": "https://so04.tci-thaijo.org/index.php/jsn/article/viewFile/42407/35053",
+      "type": "peer-reviewed-research",
+      "language": "th"
+    },
+    {
+      "id": "src-chula-working-women",
+      "title": "ทัศนะของผู้หญิงทำงานในสังคมไทย พ.ศ. 2500-2516",
+      "publisher": "Chulalongkorn University Theses and Dissertations",
+      "url": "https://digital.car.chula.ac.th/chulaetd/24352/",
+      "type": "academic-thesis",
+      "language": "th"
+    },
+    {
+      "id": "src-wb-isan-roads",
+      "title": "World Development Report 2009: Reshaping Economic Geography - Thailand Northeast case",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/312591468004457911/pdf/490460PUB0slee101Official0Use0Only1.pdf",
+      "type": "institutional-research",
+      "language": "en"
+    },
+    {
+      "id": "src-claremont-base-towns",
+      "title": "Escaping the Peripherality: Local Experiences of the US Military Presence in Northeast Thailand",
+      "publisher": "Claremont Graduate University",
+      "url": "https://scholarship.claremont.edu/cgu_etd/897/",
+      "type": "open-access-dissertation",
+      "language": "en"
+    },
+    {
+      "id": "src-wb-population-1978",
+      "title": "Thailand: Population, family planning and regional demographic change",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/412641468117279973/pdf/multi0page.pdf",
+      "type": "institutional-report",
+      "language": "en"
+    },
+    {
+      "id": "src-jss-women-media-2516",
+      "title": "สื่อมวลชนกับสำนึกพลเมืองเรื่องผู้หญิง พ.ศ. 2516-2519",
+      "publisher": "วารสารวิจัยสังคมและปริทัศน์",
+      "url": "https://so04.tci-thaijo.org/index.php/socialresearchjournal/article/view/84119",
+      "type": "peer-reviewed-research",
+      "language": "th"
+    },
+    {
+      "id": "src-jss-farmer-movement",
+      "title": "ขบวนการชาวนาชาวไร่ในสังคมไทย: จากอดีตสู่ปัจจุบัน",
+      "publisher": "วารสารวิจัยสังคมและปริทัศน์",
+      "url": "https://so04.tci-thaijo.org/index.php/socialresearchjournal/article/view/246908",
+      "type": "peer-reviewed-research",
+      "language": "th"
+    },
+    {
+      "id": "src-jssnu-women-cpt-south",
+      "title": "Empowerment the Role of Women in the Communist Party of Thailand, Phatthalung, Trang and Satun through the Tawan Daeng Journal, 1977-1982",
+      "publisher": "Journal of Social Sciences Naresuan University",
+      "url": "https://so04.tci-thaijo.org/index.php/jssnu/article/view/270951",
+      "type": "peer-reviewed-research",
+      "language": "th"
+    },
+    {
+      "id": "src-cmu-sanpong",
+      "title": "Sanpong Village Revisited: Agrarian Change in Northern Thailand",
+      "publisher": "Journal of Social Sciences, Chiang Mai University",
+      "url": "https://so04.tci-thaijo.org/index.php/jss/article/view/173567",
+      "type": "anthropological-research",
+      "language": "en"
+    },
+    {
+      "id": "src-wb-workers-crisis",
+      "title": "Thailand Social Monitor: Thai Workers and the 1997 Crisis",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/612531468778514857/pdf/multi0page.pdf",
+      "type": "institutional-research",
+      "language": "en"
+    },
+    {
+      "id": "src-kbu-karen-migration",
+      "title": "Factors Determining Migration among Karen People in Pateung Community, Chiang Mai",
+      "publisher": "Kasem Bundit Journal",
+      "url": "https://so04.tci-thaijo.org/index.php/jkbu/article/view/58842",
+      "type": "field-research",
+      "language": "th-en"
+    },
+    {
+      "id": "src-nida-pakmun",
+      "title": "Hydropower Dam and Development, Whose Development and for Whom? A Lesson from Pak Mun Dam",
+      "publisher": "NIDA Case Research Journal",
+      "url": "https://so04.tci-thaijo.org/index.php/ncrj/article/view/100229",
+      "type": "ethnographic-case-study",
+      "language": "th-en"
+    },
+    {
+      "id": "src-cmu-women-traders",
+      "title": "From Market to the Street: the Journey of the Red Shirt Woman Traders",
+      "publisher": "Journal of Social Sciences, Chiang Mai University",
+      "url": "https://so04.tci-thaijo.org/index.php/jss/article/view/170697",
+      "type": "qualitative-case-study",
+      "language": "th-en"
+    },
+    {
+      "id": "src-swurd-flood-households",
+      "title": "ความเปราะบางต่อภัยธรรมชาติของครัวเรือน: กรณีเหตุการณ์น้ำท่วม พ.ศ. 2554",
+      "publisher": "Srinakharinwirot Research and Development Journal",
+      "url": "https://so04.tci-thaijo.org/index.php/swurd/article/view/123691",
+      "type": "household-survey-research",
+      "language": "th-en"
+    },
+    {
+      "id": "src-sjij-migrant-workers",
+      "title": "Laboring class and inequality: Burmese workers in Mae Sot and Bangkok",
+      "publisher": "Social Justice and Inequality Journal",
+      "url": "https://so04.tci-thaijo.org/index.php/sjij/article/view/264865",
+      "type": "anthropological-research",
+      "language": "th-en"
+    },
+    {
+      "id": "src-etda-internet-profile",
+      "title": "Thailand Internet User Profile and User Behavior Surveys 2556-2560",
+      "publisher": "Electronic Transactions Development Agency",
+      "url": "https://www.etda.or.th/th/Our-Service/Standard-%281%29/Certifications-%281%29.aspx",
+      "type": "official-survey-series",
+      "language": "th"
+    }
   ],
   "worldContexts": [
-    {"id":"world-ww1","beYear":"2460-2462","ceYear":"1917-1919","title":"ปลายสงครามโลกครั้งที่ 1 และระเบียบแวร์ซายส์","channel":"war-security","relation":"direct","summary":"สยามเข้าร่วมสงครามฝ่ายสัมพันธมิตรและเข้าสู่การเจรจาหลังสงคราม","sourceIds":["src-frus-ww1","src-mfa-treaties"]},
-    {"id":"world-depression","beYear":"2472-2477","ceYear":"1929-1934","title":"ภาวะเศรษฐกิจตกต่ำครั้งใหญ่","channel":"economy-trade","relation":"direct","summary":"ราคาข้าวและรายได้จากการค้าระหว่างประเทศลดลง ส่งแรงกดผ่านเศรษฐกิจส่งออกของสยาม","sourceIds":["src-wb-depression"]},
-    {"id":"world-ww2","beYear":"2482-2488","ceYear":"1939-1945","title":"สงครามโลกครั้งที่ 2 และสงครามแปซิฟิก","channel":"war-security","relation":"direct","summary":"การขยายสงครามมาถึงเอเชียตะวันออกเฉียงใต้และประเทศไทยโดยตรง","sourceIds":["src-cia-free-thai"]},
-    {"id":"world-postwar","beYear":"2488-2492","ceYear":"1945-1949","title":"สหประชาชาติและระเบียบโลกหลังสงคราม","channel":"regional-order","relation":"direct","summary":"ไทยปรับสถานะระหว่างประเทศหลังสงครามและเข้าเป็นสมาชิกสหประชาชาติ","sourceIds":["src-un-thailand"]},
-    {"id":"world-cold-war","beYear":"2490-2518","ceYear":"1947-1975","title":"สงครามเย็นและสงครามอินโดจีน","channel":"war-security","relation":"direct","summary":"พันธมิตรทางทหาร ความช่วยเหลือ และฐานทัพเชื่อมไทยกับสงครามในภูมิภาค","sourceIds":["src-state-seato","src-frus-bases"]},
-    {"id":"world-development","beYear":"2504-2514","ceYear":"1961-1971","title":"รัฐพัฒนาและการวางแผนเศรษฐกิจ","channel":"development","relation":"direct","summary":"การวางแผนพัฒนาและโครงสร้างพื้นฐานกลายเป็นกรอบนโยบายหลักของรัฐไทย","sourceIds":["src-nesdc-plans"]},
-    {"id":"world-indochina","beYear":"2518-2523","ceYear":"1975-1980","title":"สงครามอินโดจีนสิ้นสุดและภูมิรัฐศาสตร์เปลี่ยน","channel":"regional-order","relation":"context","summary":"การเปลี่ยนระบอบในประเทศเพื่อนบ้านเป็นบริบทความมั่นคงของไทย","sourceIds":["src-order-66-study"]},
-    {"id":"world-export-shift","beYear":"2528-2534","ceYear":"1985-1991","title":"การย้ายฐานการผลิตในเอเชียและปลายสงครามเย็น","channel":"economy-trade","relation":"context","summary":"การลงทุนและการผลิตเพื่อส่งออกในเอเชียขยายตัว ขณะที่ไทยพัฒนา Eastern Seaboard","sourceIds":["src-wb-eastern-seaboard"]},
-    {"id":"world-globalisation","beYear":"2535-2549","ceYear":"1992-2006","title":"โลกาภิวัตน์ การค้าเสรี และวิกฤตการเงินเอเชีย","channel":"economy-trade","relation":"direct","summary":"การเปิดการค้าและเงินทุนสร้างทั้งโอกาสและความเปราะบางใหม่","sourceIds":["src-wto-thailand","src-imf-2540"]},
-    {"id":"world-gfc","beYear":"2551-2552","ceYear":"2008-2009","title":"วิกฤตการเงินโลก","channel":"economy-trade","relation":"direct","summary":"แรงกระแทกส่งผ่านการส่งออกและอุปสงค์ภายนอก มากกว่าผ่านวิกฤตธนาคารภายในแบบปี 2540","sourceIds":["src-wb-gfc"]},
-    {"id":"world-platform","beYear":"2550-2560","ceYear":"2007-2017","title":"การขยายตัวของอินเทอร์เน็ตและการเมืองบนแพลตฟอร์ม","channel":"media-culture","relation":"context","summary":"สัดส่วนผู้ใช้อินเทอร์เน็ตในไทยเพิ่มขึ้นอย่างมาก เปลี่ยนช่องทางรับข่าวสารและการรวมตัว","sourceIds":["src-un-internet"]},
-    {"id":"world-aec","beYear":"2558","ceYear":"2015","title":"ประชาคมเศรษฐกิจอาเซียน","channel":"regional-order","relation":"direct","summary":"อาเซียนประกาศจัดตั้ง AEC เป็นหมุดหมายของการรวมตัวทางเศรษฐกิจภูมิภาค","sourceIds":["src-asean-aec"]}
+    {
+      "id": "world-ww1",
+      "beYear": "2460-2462",
+      "ceYear": "1917-1919",
+      "title": "ปลายสงครามโลกครั้งที่ 1 และระเบียบแวร์ซายส์",
+      "channel": "war-security",
+      "relation": "direct",
+      "summary": "สยามเข้าร่วมสงครามฝ่ายสัมพันธมิตรและเข้าสู่การเจรจาหลังสงคราม",
+      "sourceIds": [
+        "src-frus-ww1",
+        "src-mfa-treaties"
+      ]
+    },
+    {
+      "id": "world-depression",
+      "beYear": "2472-2477",
+      "ceYear": "1929-1934",
+      "title": "ภาวะเศรษฐกิจตกต่ำครั้งใหญ่",
+      "channel": "economy-trade",
+      "relation": "direct",
+      "summary": "ราคาข้าวและรายได้จากการค้าระหว่างประเทศลดลง ส่งแรงกดผ่านเศรษฐกิจส่งออกของสยาม",
+      "sourceIds": [
+        "src-wb-depression"
+      ]
+    },
+    {
+      "id": "world-ww2",
+      "beYear": "2482-2488",
+      "ceYear": "1939-1945",
+      "title": "สงครามโลกครั้งที่ 2 และสงครามแปซิฟิก",
+      "channel": "war-security",
+      "relation": "direct",
+      "summary": "การขยายสงครามมาถึงเอเชียตะวันออกเฉียงใต้และประเทศไทยโดยตรง",
+      "sourceIds": [
+        "src-cia-free-thai"
+      ]
+    },
+    {
+      "id": "world-postwar",
+      "beYear": "2488-2492",
+      "ceYear": "1945-1949",
+      "title": "สหประชาชาติและระเบียบโลกหลังสงคราม",
+      "channel": "regional-order",
+      "relation": "direct",
+      "summary": "ไทยปรับสถานะระหว่างประเทศหลังสงครามและเข้าเป็นสมาชิกสหประชาชาติ",
+      "sourceIds": [
+        "src-un-thailand"
+      ]
+    },
+    {
+      "id": "world-cold-war",
+      "beYear": "2490-2518",
+      "ceYear": "1947-1975",
+      "title": "สงครามเย็นและสงครามอินโดจีน",
+      "channel": "war-security",
+      "relation": "direct",
+      "summary": "พันธมิตรทางทหาร ความช่วยเหลือ และฐานทัพเชื่อมไทยกับสงครามในภูมิภาค",
+      "sourceIds": [
+        "src-state-seato",
+        "src-frus-bases"
+      ]
+    },
+    {
+      "id": "world-development",
+      "beYear": "2504-2514",
+      "ceYear": "1961-1971",
+      "title": "รัฐพัฒนาและการวางแผนเศรษฐกิจ",
+      "channel": "development",
+      "relation": "direct",
+      "summary": "การวางแผนพัฒนาและโครงสร้างพื้นฐานกลายเป็นกรอบนโยบายหลักของรัฐไทย",
+      "sourceIds": [
+        "src-nesdc-plans"
+      ]
+    },
+    {
+      "id": "world-indochina",
+      "beYear": "2518-2523",
+      "ceYear": "1975-1980",
+      "title": "สงครามอินโดจีนสิ้นสุดและภูมิรัฐศาสตร์เปลี่ยน",
+      "channel": "regional-order",
+      "relation": "context",
+      "summary": "การเปลี่ยนระบอบในประเทศเพื่อนบ้านเป็นบริบทความมั่นคงของไทย",
+      "sourceIds": [
+        "src-order-66-study"
+      ]
+    },
+    {
+      "id": "world-export-shift",
+      "beYear": "2528-2534",
+      "ceYear": "1985-1991",
+      "title": "การย้ายฐานการผลิตในเอเชียและปลายสงครามเย็น",
+      "channel": "economy-trade",
+      "relation": "context",
+      "summary": "การลงทุนและการผลิตเพื่อส่งออกในเอเชียขยายตัว ขณะที่ไทยพัฒนา Eastern Seaboard",
+      "sourceIds": [
+        "src-wb-eastern-seaboard"
+      ]
+    },
+    {
+      "id": "world-globalisation",
+      "beYear": "2535-2549",
+      "ceYear": "1992-2006",
+      "title": "โลกาภิวัตน์ การค้าเสรี และวิกฤตการเงินเอเชีย",
+      "channel": "economy-trade",
+      "relation": "direct",
+      "summary": "การเปิดการค้าและเงินทุนสร้างทั้งโอกาสและความเปราะบางใหม่",
+      "sourceIds": [
+        "src-wto-thailand",
+        "src-imf-2540"
+      ]
+    },
+    {
+      "id": "world-gfc",
+      "beYear": "2551-2552",
+      "ceYear": "2008-2009",
+      "title": "วิกฤตการเงินโลก",
+      "channel": "economy-trade",
+      "relation": "direct",
+      "summary": "แรงกระแทกส่งผ่านการส่งออกและอุปสงค์ภายนอก มากกว่าผ่านวิกฤตธนาคารภายในแบบปี 2540",
+      "sourceIds": [
+        "src-wb-gfc"
+      ]
+    },
+    {
+      "id": "world-platform",
+      "beYear": "2550-2560",
+      "ceYear": "2007-2017",
+      "title": "การขยายตัวของอินเทอร์เน็ตและการเมืองบนแพลตฟอร์ม",
+      "channel": "media-culture",
+      "relation": "context",
+      "summary": "สัดส่วนผู้ใช้อินเทอร์เน็ตในไทยเพิ่มขึ้นอย่างมาก เปลี่ยนช่องทางรับข่าวสารและการรวมตัว",
+      "sourceIds": [
+        "src-un-internet"
+      ]
+    },
+    {
+      "id": "world-aec",
+      "beYear": "2558",
+      "ceYear": "2015",
+      "title": "ประชาคมเศรษฐกิจอาเซียน",
+      "channel": "regional-order",
+      "relation": "direct",
+      "summary": "อาเซียนประกาศจัดตั้ง AEC เป็นหมุดหมายของการรวมตัวทางเศรษฐกิจภูมิภาค",
+      "sourceIds": [
+        "src-asean-aec"
+      ]
+    }
   ],
   "events": [
-    {"id":"th-2460-chulalongkorn-university","period":"2460-2475","beYear":"2460","ceYear":"1917","title":"สถาปนาจุฬาลงกรณ์มหาวิทยาลัย","summary":"โรงเรียนข้าราชการพลเรือนได้รับการยกฐานะเป็นจุฬาลงกรณ์มหาวิทยาลัย ซึ่งเป็นมหาวิทยาลัยแห่งแรกของไทย","peopleImpact":"ขยายโครงสร้างการผลิตบุคลากรระดับอุดมศึกษาของรัฐ แต่การเข้าถึงในระยะแรกยังจำกัดอยู่ในคนจำนวนน้อย","impactStatus":"contextual","themes":["education","state"],"locations":["กรุงเทพฯ"],"sourceIds":["src-chula-history","src-ops-highered"],"worldContextIds":["world-ww1"],"verification":"corroborated","openQuestion":"นักศึกษารุ่นแรกมีพื้นเพทางชนชั้นและภูมิภาคอย่างไร"},
-    {"id":"th-2460-ww1","period":"2460-2475","beYear":"2460","ceYear":"1917","title":"สยามประกาศสงครามต่อเยอรมนีและออสเตรีย-ฮังการี","summary":"รัฐบาลสยามประกาศสงครามเมื่อ 22 กรกฎาคม 2460 และต่อมาส่งกองกำลังอาสาไปยุโรป","peopleImpact":"ผลโดยตรงกระจุกในกำลังอาสา ครอบครัว และกิจการของชนชาติศัตรู ขณะที่ผลระยะยาวอยู่ที่สถานะระหว่างประเทศของรัฐ","impactStatus":"contextual","themes":["war","international-relations"],"locations":["ทั่วประเทศ","ยุโรป"],"sourceIds":["src-frus-ww1","src-mfa-treaties"],"worldContextIds":["world-ww1"],"verification":"corroborated","openQuestion":"ภาระทางเศรษฐกิจและประสบการณ์ของครอบครัวทหารอาสาปรากฏในหลักฐานใดบ้าง"},
-    {"id":"th-2464-compulsory-education","period":"2460-2475","beYear":"2464","ceYear":"1921","title":"กฎหมายประถมศึกษาภาคบังคับ","summary":"พระราชบัญญัติประถมศึกษา พ.ศ. 2464 วางหลักการศึกษาภาคบังคับ โดยการบังคับใช้ขยายตามความพร้อมของพื้นที่","peopleImpact":"โรงเรียนและรัฐเข้ามามีบทบาทในชีวิตเด็กและครอบครัวมากขึ้น แต่ความพร้อมของโรงเรียน ครู และท้องถิ่นแตกต่างกัน","impactStatus":"documented","themes":["education","childhood","state"],"locations":["ทั่วประเทศ"],"sourceIds":["src-moe-history"],"worldContextIds":[],"verification":"verified","openQuestion":"อัตราการเข้าเรียนและภาระของครอบครัวต่างกันอย่างไรในแต่ละมณฑล"},
-    {"id":"th-2468-treaty-revision","period":"2460-2475","beYear":"2468","ceYear":"1925","title":"การแก้ไขสนธิสัญญาที่จำกัดอำนาจศาลและภาษี","summary":"การเจรจากับมหาอำนาจในทศวรรษ 1920 ลดข้อจำกัดด้านสิทธิสภาพนอกอาณาเขตและภาษีของสยามลงเป็นลำดับ","peopleImpact":"เพิ่มพื้นที่นโยบายและอำนาจศาลของรัฐสยาม ผลต่อคนทั่วไปเกิดผ่านระบบกฎหมาย รายได้รัฐ และนโยบายสาธารณะมากกว่าการเปลี่ยนทันทีในวันเดียว","impactStatus":"contextual","themes":["law","international-relations","state"],"locations":["ทั่วประเทศ"],"sourceIds":["src-mfa-treaties"],"worldContextIds":["world-ww1"],"verification":"verified","openQuestion":"รายได้ภาษีที่เพิ่มขึ้นถูกจัดสรรไปยังบริการสาธารณะใดบ้าง"},
-    {"id":"th-2472-depression","period":"2460-2475","beYear":"2472-2477","ceYear":"1929-1934","title":"ภาวะเศรษฐกิจตกต่ำส่งผ่านราคาข้าว","summary":"วิกฤตเศรษฐกิจโลกทำให้ราคาข้าวลดลงอย่างมาก แม้ปริมาณส่งออกบางตลาดเพิ่มขึ้น","peopleImpact":"ครัวเรือนชนบทได้รับผลไม่เท่ากันตามขนาดที่ดิน หนี้ การถือครองผลผลิต และการเข้าถึงตลาด","impactStatus":"documented","themes":["economy","agriculture","inequality"],"locations":["ภาคกลาง","พื้นที่ปลูกข้าว"],"sourceIds":["src-wb-depression"],"worldContextIds":["world-depression"],"verification":"verified","openQuestion":"ผลกระทบต่อแรงงานรับจ้างและครัวเรือนไร้ที่ดินรุนแรงเพียงใด"},
-    {"id":"th-2475-revolution","period":"2460-2475","beYear":"2475","ceYear":"1932","title":"การเปลี่ยนแปลงการปกครอง 24 มิถุนายน 2475","summary":"คณะราษฎรยึดอำนาจและเปลี่ยนโครงสร้างการปกครองจากสมบูรณาญาสิทธิราชย์สู่ระบอบที่มีรัฐธรรมนูญ","peopleImpact":"แนวคิดว่าประชาชนเป็นเจ้าของอำนาจอธิปไตยเข้าสู่สถาบันการเมือง แต่สิทธิและการมีส่วนร่วมจริงขยายตัวเป็นกระบวนการที่ไม่สม่ำเสมอ","impactStatus":"contextual","themes":["politics","citizenship","rights"],"locations":["กรุงเทพฯ","ทั่วประเทศ"],"sourceIds":["src-parliament-2475","src-parliament-constitution-2475"],"worldContextIds":["world-depression"],"verification":"corroborated","openQuestion":"คนต่างจังหวัดรับรู้และตีความเหตุการณ์ผ่านช่องทางใด"},
-
-    {"id":"th-2475-constitution","period":"2475-2500","beYear":"2475","ceYear":"1932","title":"ประกาศใช้รัฐธรรมนูญถาวรฉบับแรก","summary":"รัฐธรรมนูญแห่งราชอาณาจักรสยามประกาศใช้เมื่อ 10 ธันวาคม 2475","peopleImpact":"สร้างกรอบสถาบันสำหรับรัฐสภาและการเป็นพลเมืองภายใต้รัฐธรรมนูญ แม้รูปแบบตัวแทนและอำนาจทางการเมืองยังเปลี่ยนอีกหลายครั้ง","impactStatus":"documented","themes":["constitution","politics","citizenship"],"locations":["ทั่วประเทศ"],"sourceIds":["src-parliament-constitution-2475"],"worldContextIds":["world-depression"],"verification":"verified","openQuestion":"งานฉลองรัฐธรรมนูญทำให้แนวคิดใหม่เข้าถึงประชาชนอย่างไร"},
-    {"id":"th-2482-name-and-mandates","period":"2475-2500","beYear":"2482-2485","ceYear":"1939-1942","title":"เปลี่ยนชื่อประเทศและออกชุดรัฐนิยม","summary":"รัฐบาลเปลี่ยนชื่อสยามเป็นประเทศไทยในปี 2482 และออกประกาศรัฐนิยมหลายฉบับกำกับภาษา การแต่งกาย และพฤติกรรมสาธารณะ","peopleImpact":"นโยบายชาตินิยมเข้าไปจัดระเบียบชีวิตประจำวันและนิยามความเป็นไทยผ่านโรงเรียน สื่อ ราชการ และพื้นที่สาธารณะ","impactStatus":"documented","themes":["nationalism","culture","media"],"locations":["ทั่วประเทศ"],"sourceIds":["src-national-archives-mandates","src-un-thailand"],"worldContextIds":["world-ww2"],"verification":"corroborated","openQuestion":"การปฏิบัติตามรัฐนิยมแตกต่างกันอย่างไรระหว่างเมือง ชนบท และกลุ่มชาติพันธุ์"},
-    {"id":"th-2484-pacific-war","period":"2475-2500","beYear":"2484","ceYear":"1941","title":"สงครามแปซิฟิกมาถึงประเทศไทย","summary":"กองทัพญี่ปุ่นเข้าสู่ประเทศไทยวันที่ 8 ธันวาคม 2484 และประเทศไทยเข้าสู่ความสัมพันธ์เป็นพันธมิตรกับญี่ปุ่นในช่วงสงคราม","peopleImpact":"ประชาชนเผชิญการระดมทรัพยากร การควบคุมสินค้า ความขาดแคลน เงินเฟ้อ และความเสี่ยงจากการโจมตีทางอากาศ โดยประสบการณ์ต่างกันตามพื้นที่","impactStatus":"contextual","themes":["war","economy","everyday-life"],"locations":["ทั่วประเทศ"],"sourceIds":["src-cia-free-thai"],"worldContextIds":["world-ww2"],"verification":"verified","openQuestion":"หลักฐานครัวเรือนและตลาดท้องถิ่นสะท้อนความขาดแคลนอย่างไร"},
-    {"id":"th-2485-free-thai","period":"2475-2500","beYear":"2485-2488","ceYear":"1942-1945","title":"ขบวนการเสรีไทยต่อต้านญี่ปุ่น","summary":"เครือข่ายเสรีไทยทำงานทั้งในและนอกประเทศร่วมกับฝ่ายสัมพันธมิตรในช่วงสงครามโลกครั้งที่ 2","peopleImpact":"ผู้เข้าร่วมและชุมชนที่เกี่ยวข้องรับความเสี่ยงจากงานลับ ขณะที่บทบาทของขบวนการมีส่วนต่อการต่อรองสถานะไทยหลังสงคราม","impactStatus":"contextual","themes":["resistance","war","international-relations"],"locations":["ประเทศไทย","สหรัฐอเมริกา","สหราชอาณาจักร"],"sourceIds":["src-cia-free-thai"],"worldContextIds":["world-ww2","world-postwar"],"verification":"verified","openQuestion":"ควรเพิ่มประวัติสมาชิกระดับท้องถิ่น ผู้หญิง และผู้สนับสนุนที่ไม่ปรากฏชื่ออย่างไร"},
-    {"id":"th-2489-un-membership","period":"2475-2500","beYear":"2489","ceYear":"1946","title":"ไทยเข้าเป็นสมาชิกสหประชาชาติ","summary":"ไทยเข้าเป็นสมาชิกสหประชาชาติเมื่อ 15 ธันวาคม 2489","peopleImpact":"เชื่อมรัฐไทยกับกรอบกฎหมาย สิทธิมนุษยชน การพัฒนา และความร่วมมือระหว่างประเทศหลังสงคราม","impactStatus":"contextual","themes":["international-relations","rights","development"],"locations":["ทั่วประเทศ"],"sourceIds":["src-un-thailand"],"worldContextIds":["world-postwar"],"verification":"verified","openQuestion":"พันธกรณีระหว่างประเทศถูกแปลงเป็นกฎหมายและสถาบันภายในช่วงใดบ้าง"},
-    {"id":"th-2497-seato","period":"2475-2500","beYear":"2497","ceYear":"1954","title":"ไทยร่วมก่อตั้ง SEATO","summary":"ไทยเป็นหนึ่งในแปดประเทศที่จัดตั้งองค์การสนธิสัญญาป้องกันเอเชียตะวันออกเฉียงใต้ในเดือนกันยายน 2497","peopleImpact":"กรอบต่อต้านคอมมิวนิสต์มีอิทธิพลต่อความมั่นคง การทหาร ความช่วยเหลือ และนโยบายต่อพื้นที่ชายแดนและชนบท","impactStatus":"contextual","themes":["cold-war","security","international-relations"],"locations":["กรุงเทพฯ","ทั่วประเทศ"],"sourceIds":["src-state-seato"],"worldContextIds":["world-cold-war"],"verification":"verified","openQuestion":"งบและโครงการภายใต้พันธมิตรส่งถึงชุมชนใดและสร้างผู้ได้ประโยชน์หรือผู้เสียประโยชน์อย่างไร"},
-
-    {"id":"th-2501-authoritarian-charter","period":"2500-2516","beYear":"2501","ceYear":"1958","title":"รัฐประหารและธรรมนูญการปกครอง พ.ศ. 2501","summary":"การยึดอำนาจในปี 2501 ยกเลิกรัฐธรรมนูญเดิมและใช้ธรรมนูญที่ให้สภาร่างรัฐธรรมนูญทำหน้าที่นิติบัญญัติ","peopleImpact":"พื้นที่การเมืองแบบเลือกตั้งถูกจำกัด ขณะที่รัฐรวมศูนย์ใช้อำนาจบริหารผลักดันนโยบายพัฒนาและความมั่นคง","impactStatus":"documented","themes":["politics","state","security"],"locations":["ทั่วประเทศ"],"sourceIds":["src-parliament-history"],"worldContextIds":["world-cold-war"],"verification":"verified","openQuestion":"คำสั่งและมาตรการความมั่นคงกระทบคนต่างพื้นที่อย่างไร"},
-    {"id":"th-2504-first-plan","period":"2500-2516","beYear":"2504","ceYear":"1961","title":"เริ่มแผนพัฒนาเศรษฐกิจแห่งชาติฉบับที่ 1","summary":"ไทยเริ่มใช้แผนพัฒนาเศรษฐกิจแห่งชาติฉบับที่ 1 เป็นกรอบรวมศูนย์สำหรับการลงทุนและพัฒนา พ.ศ. 2504-2509","peopleImpact":"ถนน ชลประทาน ไฟฟ้า การศึกษา และบริการรัฐขยายตัว แต่ประโยชน์และต้นทุนกระจายไม่เท่ากันตามพื้นที่และอาชีพ","impactStatus":"contextual","themes":["development","infrastructure","economy"],"locations":["ทั่วประเทศ"],"sourceIds":["src-nesdc-plans"],"worldContextIds":["world-development","world-cold-war"],"verification":"verified","openQuestion":"ควรใช้สถิติรายจังหวัดใดวัดการเข้าถึงบริการและการย้ายถิ่น"},
-    {"id":"th-2508-us-bases","period":"2500-2516","beYear":"2508-2516","ceYear":"1965-1973","title":"ฐานทัพสหรัฐและสงครามเวียดนาม","summary":"สหรัฐใช้ฐานทัพในไทยสนับสนุนปฏิบัติการทางอากาศในอินโดจีน โดยกำลังพลสหรัฐในไทยเพิ่มขึ้นหลายหมื่นคนในช่วงสูงสุด","peopleImpact":"เกิดงาน รายได้ และธุรกิจบริการรอบฐานทัพ พร้อมผลทางวัฒนธรรม ที่ดิน ความมั่นคง และความสัมพันธ์กับชุมชน","impactStatus":"contextual","themes":["war","labour","local-economy","culture"],"locations":["อู่ตะเภา","โคราช","อุดรธานี","อุบลราชธานี","นครพนม","ตาคลี"],"sourceIds":["src-frus-bases"],"worldContextIds":["world-cold-war"],"verification":"verified","openQuestion":"เสียงของแรงงานหญิงและชุมชนรอบฐานทัพถูกบันทึกไว้ที่ใด"},
-    {"id":"th-2510-asean","period":"2500-2516","beYear":"2510","ceYear":"1967","title":"ปฏิญญากรุงเทพและการก่อตั้งอาเซียน","summary":"ไทยร่วมกับอินโดนีเซีย มาเลเซีย ฟิลิปปินส์ และสิงคโปร์ลงนามปฏิญญากรุงเทพเมื่อ 8 สิงหาคม 2510","peopleImpact":"เปิดกรอบความร่วมมือภูมิภาคที่ต่อมามีผลต่อการค้า การเดินทาง แรงงาน และนโยบายร่วม แต่ผลต่อชีวิตคนเกิดสะสมระยะยาว","impactStatus":"contextual","themes":["regional-order","economy","international-relations"],"locations":["กรุงเทพฯ","เอเชียตะวันออกเฉียงใต้"],"sourceIds":["src-asean-history"],"worldContextIds":["world-cold-war"],"verification":"verified","openQuestion":"ประชาชนรับรู้คำว่าอาเซียนผ่านหลักสูตรและสื่อในแต่ละทศวรรษอย่างไร"},
-    {"id":"th-2515-higher-education-bureau","period":"2500-2516","beYear":"2515","ceYear":"1972","title":"จัดตั้งทบวงมหาวิทยาลัยของรัฐ","summary":"ประกาศคณะปฏิวัติฉบับที่ 216 จัดตั้งทบวงมหาวิทยาลัยของรัฐเมื่อ 29 กันยายน 2515","peopleImpact":"การกำกับมหาวิทยาลัยถูกจัดรวมเป็นระบบเฉพาะในช่วงที่จำนวนนักศึกษาและสถาบันอุดมศึกษากำลังขยาย","impactStatus":"documented","themes":["education","youth","state"],"locations":["ทั่วประเทศ"],"sourceIds":["src-ops-highered"],"worldContextIds":["world-development"],"verification":"verified","openQuestion":"การขยายมหาวิทยาลัยภูมิภาคเปลี่ยนโอกาสของครอบครัวนอกกรุงเทพฯ อย่างไร"},
-    {"id":"th-2516-october-14","period":"2500-2516","beYear":"2516","ceYear":"1973","title":"การเคลื่อนไหว 14 ตุลาคม 2516","summary":"การประท้วงขนาดใหญ่ที่นำโดยนักศึกษาและประชาชนเผชิญการปราบปราม ก่อนรัฐบาลจอมพลถนอม กิตติขจรสิ้นสุดลง","peopleImpact":"เปิดพื้นที่การเมือง สื่อ สหภาพ และขบวนการชาวนาในช่วงต่อมา พร้อมทิ้งความสูญเสียและข้อถกเถียงเรื่องจำนวนผู้เสียชีวิต","impactStatus":"contextual","themes":["democracy","movement","violence","memory"],"locations":["กรุงเทพฯ"],"sourceIds":["src-nrct-14oct"],"worldContextIds":["world-cold-war"],"verification":"verified","openQuestion":"ต้องเทียบจำนวนผู้เสียชีวิตและบาดเจ็บจากแหล่งร่วมสมัยหลายชุดก่อนเผยแพร่ตัวเลข"},
-
-    {"id":"th-2518-labour-relations","period":"2516-2535","beYear":"2518","ceYear":"1975","title":"พระราชบัญญัติแรงงานสัมพันธ์ พ.ศ. 2518","summary":"กฎหมายกำหนดกลไกข้อตกลงสภาพการจ้าง การระงับข้อพิพาท การนัดหยุดงาน และการจัดตั้งสหภาพแรงงาน","peopleImpact":"ให้กรอบกฎหมายแก่การรวมตัวและต่อรองของแรงงานเอกชน ขณะเดียวกันขอบเขตและการบังคับใช้ยังมีข้อจำกัด","impactStatus":"documented","themes":["labour","law","rights"],"locations":["ทั่วประเทศ"],"sourceIds":["src-ilo-labour-2518"],"worldContextIds":["world-indochina"],"verification":"verified","openQuestion":"จำนวนสหภาพและข้อพิพาทเปลี่ยนอย่างไรหลังประกาศใช้"},
-    {"id":"th-2519-october-6","period":"2516-2535","beYear":"2519","ceYear":"1976","title":"ความรุนแรง 6 ตุลาคม 2519","summary":"ตำรวจและกลุ่มฝ่ายขวาใช้ความรุนแรงต่อผู้ชุมนุมในมหาวิทยาลัยธรรมศาสตร์และสนามหลวง ก่อนเกิดรัฐประหารในวันเดียวกัน","peopleImpact":"มีผู้เสียชีวิต บาดเจ็บ และถูกจับกุมจำนวนมาก เหตุการณ์ส่งผลต่อการลี้ภัยเข้าป่า ความกลัว และความทรงจำสาธารณะที่ยังถกเถียง","impactStatus":"documented","themes":["violence","movement","memory","justice"],"locations":["มหาวิทยาลัยธรรมศาสตร์ ท่าพระจันทร์","สนามหลวง"],"sourceIds":["src-doct6","src-ago-oct6-case"],"worldContextIds":["world-indochina"],"verification":"corroborated","openQuestion":"ตัวเลขผู้เสียชีวิตและผู้สูญหายต้องแสดงแยกตามชุดหลักฐาน ไม่รวมเป็นตัวเลขเดียวโดยไม่อธิบาย"},
-    {"id":"th-2523-order-66","period":"2516-2535","beYear":"2523","ceYear":"1980","title":"คำสั่งสำนักนายกรัฐมนตรีที่ 66/2523","summary":"คำสั่งกำหนดยุทธศาสตร์ต่อสู้เพื่อเอาชนะคอมมิวนิสต์โดยเน้นการเมือง การลดเงื่อนไขความไม่เป็นธรรม และการเปิดทางให้ผู้เข้าร่วมขบวนการกลับคืนสังคม","peopleImpact":"เปลี่ยนแนวทางจากการปราบปรามอย่างเดียวไปสู่การเมืองและนิรโทษกรรม มีส่วนต่อการลดลงของการสู้รบ แต่ผลในแต่ละพื้นที่ไม่เหมือนกัน","impactStatus":"contextual","themes":["security","amnesty","rural-society"],"locations":["พื้นที่ชนบทและชายแดน"],"sourceIds":["src-order-66-study"],"worldContextIds":["world-indochina"],"verification":"verified","openQuestion":"ผู้กลับจากป่าปรับตัวด้านที่ดิน งาน และความปลอดภัยอย่างไร"},
-    {"id":"th-2525-eastern-seaboard","period":"2516-2535","beYear":"2525-2534","ceYear":"1982-1991","title":"โครงการพัฒนาพื้นที่ชายฝั่งทะเลตะวันออก","summary":"แผนพัฒนาฉบับที่ 5 เลือก Eastern Seaboard เป็นศูนย์อุตสาหกรรมใหม่และลงทุนท่าเรือ นิคม และโครงสร้างพื้นฐาน","peopleImpact":"สร้างงานโรงงานและดึงแรงงานย้ายถิ่นสู่ชลบุรี ระยอง และฉะเชิงเทรา พร้อมต้นทุนด้านเมือง ที่อยู่อาศัย และสิ่งแวดล้อม","impactStatus":"documented","themes":["industry","migration","environment","infrastructure"],"locations":["ชลบุรี","ระยอง","ฉะเชิงเทรา"],"sourceIds":["src-wb-eastern-seaboard"],"worldContextIds":["world-export-shift"],"verification":"verified","openQuestion":"ควรเพิ่มหลักฐานชุมชนประมง เกษตรกร และแรงงานหญิงรอบนิคม"},
-    {"id":"th-2528-export-boom","period":"2516-2535","beYear":"2528-2534","ceYear":"1985-1991","title":"การผลิตเพื่อส่งออกและการย้ายฐานการผลิตขยายตัว","summary":"การลงทุนในโครงสร้างพื้นฐานและโรงงานส่งออก โดยเฉพาะพื้นที่ชายฝั่งตะวันออก มีส่วนต่อการขยายตัวของการส่งออกปลายทศวรรษ 2520 ถึงต้นทศวรรษ 2530","peopleImpact":"งานนอกภาคเกษตรเพิ่มขึ้นและเร่งการย้ายถิ่น แต่ค่าจ้าง ความมั่นคงในการทำงาน และสภาพแวดล้อมแตกต่างตามอุตสาหกรรม","impactStatus":"contextual","themes":["economy","industry","labour","migration"],"locations":["กรุงเทพฯ และปริมณฑล","ภาคตะวันออก"],"sourceIds":["src-wb-eastern-seaboard"],"worldContextIds":["world-export-shift"],"verification":"verified","openQuestion":"ต้องเติมข้อมูลค่าจ้างจริง ชั่วโมงทำงาน และแรงงานข้ามถิ่นแยกเพศ"},
-    {"id":"th-2535-black-may","period":"2516-2535","beYear":"2535","ceYear":"1992","title":"เหตุการณ์พฤษภาคม 2535","summary":"การประท้วงต่อต้านนายกรัฐมนตรีที่มาจากคณะรัฐประหารเผชิญการใช้กำลังในกรุงเทพฯ ก่อนนายกรัฐมนตรีลาออก","peopleImpact":"ความสูญเสียและการหายสาบสูญกลายเป็นแรงผลักต่อข้อเรียกร้องเรื่องรัฐบาลพลเรือน สิทธิ และการปฏิรูปการเมือง","impactStatus":"contextual","themes":["democracy","movement","violence","memory"],"locations":["กรุงเทพฯ"],"sourceIds":["src-parliament-may-1992"],"worldContextIds":["world-export-shift"],"verification":"verified","openQuestion":"ต้องแสดงตัวเลขผู้เสียชีวิต บาดเจ็บ และสูญหายแยกตามแหล่งทางการและภาคประชาชน"},
-
-    {"id":"th-2538-wto","period":"2535-2549","beYear":"2538","ceYear":"1995","title":"ไทยเป็นสมาชิกผู้ก่อตั้งองค์การการค้าโลก","summary":"ไทยเป็นสมาชิก WTO ตั้งแต่การก่อตั้งองค์การเมื่อ 1 มกราคม 2538","peopleImpact":"กติกาการค้าโลกมีผลต่อผู้ส่งออก ผู้ผลิต เกษตรกร ทรัพย์สินทางปัญญา และนโยบายภายใน แต่ผลต่างกันตามสินค้าและอำนาจต่อรอง","impactStatus":"contextual","themes":["trade","agriculture","industry"],"locations":["ทั่วประเทศ"],"sourceIds":["src-wto-thailand"],"worldContextIds":["world-globalisation"],"verification":"verified","openQuestion":"ควรเลือกกรณีสินค้าใดเพื่อแสดงทั้งผู้ได้ประโยชน์และผู้รับต้นทุน"},
-    {"id":"th-2540-financial-crisis","period":"2535-2549","beYear":"2540","ceYear":"1997","title":"ลอยตัวเงินบาทและวิกฤตต้มยำกุ้ง","summary":"ธนาคารแห่งประเทศไทยเปลี่ยนเป็นระบบอัตราแลกเปลี่ยนลอยตัวแบบจัดการเมื่อ 2 กรกฎาคม 2540 หลังแรงกดดันต่อเงินบาทและเงินสำรอง","peopleImpact":"ธุรกิจล้ม การว่างงานและหนี้เพิ่มขึ้น ขณะที่ผลจากค่าเงินและการปรับโครงสร้างแตกต่างระหว่างลูกหนี้ ผู้ส่งออก แรงงาน และครัวเรือน","impactStatus":"documented","themes":["economy","debt","labour","inequality"],"locations":["ทั่วประเทศ"],"sourceIds":["src-bot-2540","src-imf-2540"],"worldContextIds":["world-globalisation"],"verification":"corroborated","openQuestion":"ต้องเพิ่มสถิติการว่างงาน รายได้จริง และการกลับชนบทจากแหล่งทางการ"},
-    {"id":"th-2540-constitution","period":"2535-2549","beYear":"2540","ceYear":"1997","title":"รัฐธรรมนูญ พ.ศ. 2540","summary":"รัฐธรรมนูญฉบับที่ 16 ประกาศใช้เมื่อ 11 ตุลาคม 2540 หลังผ่านกระบวนการสภาร่างรัฐธรรมนูญ","peopleImpact":"ขยายการรับรองสิทธิและสร้างองค์กรตรวจสอบใหม่ พร้อมเปลี่ยนระบบเลือกตั้งและพรรคการเมือง","impactStatus":"documented","themes":["constitution","rights","politics"],"locations":["ทั่วประเทศ"],"sourceIds":["src-parliament-constitution-2540"],"worldContextIds":["world-globalisation"],"verification":"verified","openQuestion":"สิทธิที่บัญญัติเปลี่ยนการเข้าถึงความยุติธรรมจริงเพียงใดในแต่ละกลุ่ม"},
-    {"id":"th-2542-education-act","period":"2535-2549","beYear":"2542","ceYear":"1999","title":"พระราชบัญญัติการศึกษาแห่งชาติ พ.ศ. 2542","summary":"กฎหมายแม่บทการศึกษากำหนดการปฏิรูประบบ การกระจายอำนาจ และการมีส่วนร่วมของท้องถิ่นและเอกชน","peopleImpact":"เปลี่ยนโครงสร้างบริหาร หลักสูตร และความคาดหวังต่อสิทธิทางการศึกษา แต่คุณภาพและทรัพยากรยังแตกต่างระหว่างพื้นที่","impactStatus":"contextual","themes":["education","decentralisation","rights"],"locations":["ทั่วประเทศ"],"sourceIds":["src-education-act-2542"],"worldContextIds":["world-globalisation"],"verification":"verified","openQuestion":"ผลต่อโรงเรียนขนาดเล็ก ครู และเด็กนอกระบบเป็นอย่างไร"},
-    {"id":"th-2544-village-fund","period":"2535-2549","beYear":"2544","ceYear":"2001","title":"กองทุนหมู่บ้านหนึ่งล้านบาท","summary":"รัฐบาลเริ่มโครงการกองทุนหมู่บ้านโดยจัดทุนหมุนเวียนให้หมู่บ้านและชุมชนเมืองบริหารสินเชื่อในระดับชุมชน","peopleImpact":"เพิ่มแหล่งเงินทุนใกล้ตัวสำหรับครัวเรือนและกิจการรายย่อย ขณะเดียวกันผลต่อหนี้และอำนาจตัดสินใจในชุมชนแตกต่างกัน","impactStatus":"contextual","themes":["finance","rural-society","local-governance"],"locations":["ทั่วประเทศ"],"sourceIds":["src-wb-village-fund"],"worldContextIds":["world-globalisation"],"verification":"verified","openQuestion":"ต้องแยกผลระยะสั้นด้านการบริโภคออกจากผลระยะยาวด้านรายได้และหนี้"},
-    {"id":"th-2545-universal-health","period":"2535-2549","beYear":"2545","ceYear":"2002","title":"หลักประกันสุขภาพถ้วนหน้า","summary":"ไทยจัดระบบหลักประกันสุขภาพถ้วนหน้าระดับประเทศในปี 2545 ต่อเนื่องจากโครงการ 30 บาทที่เริ่มดำเนินการก่อนหน้า","peopleImpact":"ประชาชนที่เดิมไม่มีประกันสุขภาพจำนวนมากเข้าถึงบริการผ่านระบบที่ใช้ภาษีเป็นฐาน และภาระค่าใช้จ่ายรุนแรงของครัวเรือนลดลงตามงานประเมินหลายชุด","impactStatus":"documented","themes":["health","welfare","inequality"],"locations":["ทั่วประเทศ"],"sourceIds":["src-who-uhc"],"worldContextIds":["world-globalisation"],"verification":"verified","openQuestion":"คุณภาพและเวลารอแตกต่างกันอย่างไรระหว่างพื้นที่และระดับโรงพยาบาล"},
-    {"id":"th-2547-tsunami","period":"2535-2549","beYear":"2547","ceYear":"2004","title":"สึนามิชายฝั่งอันดามัน","summary":"คลื่นสึนามิจากแผ่นดินไหวมหาสมุทรอินเดียวันที่ 26 ธันวาคม 2547 กระทบหกจังหวัดชายฝั่งอันดามันของไทย","peopleImpact":"มีผู้เสียชีวิต สูญหาย บ้านเรือน อาชีพประมง และการท่องเที่ยวเสียหาย โดยแรงงานนอกระบบและครัวเรือนที่มีเงินออมน้อยฟื้นตัวได้ยากกว่า","impactStatus":"documented","themes":["disaster","livelihood","tourism","environment"],"locations":["ระนอง","พังงา","กระบี่","ภูเก็ต","ตรัง","สตูล"],"sourceIds":["src-wb-tsunami"],"worldContextIds":["world-globalisation"],"verification":"verified","openQuestion":"ควรเพิ่มประสบการณ์แรงงานข้ามชาติและชุมชนประมงที่ตกหล่นจากทะเบียนช่วยเหลือ"},
-
-    {"id":"th-2549-coup","period":"2549-2560","beYear":"2549","ceYear":"2006","title":"รัฐประหาร 19 กันยายน 2549","summary":"คณะทหารยึดอำนาจ ยกเลิกรัฐธรรมนูญ พ.ศ. 2540 และประกาศใช้รัฐธรรมนูญชั่วคราว พ.ศ. 2549","peopleImpact":"สถาบันจากรัฐธรรมนูญเดิมถูกยุติหรือจัดใหม่ กิจกรรมทางการเมืองและพื้นที่สื่อถูกจำกัดในช่วงหลังยึดอำนาจ","impactStatus":"documented","themes":["coup","constitution","media","rights"],"locations":["ทั่วประเทศ"],"sourceIds":["src-parliament-constitution-2549","src-parliament-constitution-2540"],"worldContextIds":["world-platform"],"verification":"corroborated","openQuestion":"ผลระยะยาวต่อความไว้วางใจ การแบ่งขั้ว และการมีส่วนร่วมควรประเมินจากข้อมูลใด"},
-    {"id":"th-2551-global-crisis","period":"2549-2560","beYear":"2551-2552","ceYear":"2008-2009","title":"วิกฤตการเงินโลกกระทบการส่งออกไทย","summary":"วิกฤตโลกทำให้อุปสงค์ต่างประเทศลดลงและการส่งออกไทยหดตัวรุนแรงในช่วงปลายปี 2551 ต่อเนื่องปี 2552","peopleImpact":"แรงงานและผู้ประกอบการในอุตสาหกรรมส่งออกเผชิญชั่วโมงทำงาน รายได้ และการจ้างงานที่ลดลง แม้ระบบธนาคารไทยไม่ได้ล้มแบบปี 2540","impactStatus":"documented","themes":["economy","trade","labour"],"locations":["พื้นที่อุตสาหกรรมส่งออก"],"sourceIds":["src-wb-gfc"],"worldContextIds":["world-gfc"],"verification":"verified","openQuestion":"ผลต่อแรงงานเหมาช่วงและแรงงานข้ามชาติถูกนับในสถิติครบเพียงใด"},
-    {"id":"th-2553-political-violence","period":"2549-2560","beYear":"2553","ceYear":"2010","title":"การชุมนุมและความรุนแรงเมษายน-พฤษภาคม 2553","summary":"การชุมนุมของแนวร่วมประชาธิปไตยต่อต้านเผด็จการแห่งชาติในกรุงเทพฯ จบลงด้วยปฏิบัติการสลายการชุมนุมและความสูญเสีย","peopleImpact":"ผู้ชุมนุม เจ้าหน้าที่ สื่อ อาสาพยาบาล ผู้ค้า และครอบครัวได้รับผลโดยตรง ขณะที่ความรับผิดและลำดับเหตุการณ์บางส่วนยังเป็นข้อถกเถียง","impactStatus":"documented","themes":["movement","violence","justice","memory"],"locations":["กรุงเทพฯ"],"sourceIds":["src-trct-2010"],"worldContextIds":["world-platform"],"verification":"verified","openQuestion":"ก่อนเผยแพร่ตัวเลข ต้องอ้างรายงานฉบับเต็มและแยกผู้เสียชีวิตตามสถานะและเหตุแห่งการตาย"},
-    {"id":"th-2554-flood","period":"2549-2560","beYear":"2554","ceYear":"2011","title":"มหาอุทกภัย พ.ศ. 2554","summary":"น้ำท่วมยาวนานกระทบ 26 จังหวัดสำคัญและพื้นที่อุตสาหกรรม โดยการประเมินร่วมระบุความเสียหายและความสูญเสียประมาณ 1.425 ล้านล้านบาท","peopleImpact":"ประชาชนสูญเสียบ้าน รายได้ และการเดินทาง โรงงานหยุดผลิต และผลลุกลามไปยังห่วงโซ่อุปทานยานยนต์กับอิเล็กทรอนิกส์โลก","impactStatus":"documented","themes":["disaster","industry","housing","supply-chain"],"locations":["ลุ่มเจ้าพระยา","ภาคกลาง","กรุงเทพฯ และปริมณฑล"],"sourceIds":["src-wb-flood-2554"],"worldContextIds":["world-platform"],"verification":"verified","openQuestion":"ความช่วยเหลือและการฟื้นตัวต่างกันอย่างไรระหว่างผู้เช่า เจ้าของบ้าน แรงงาน และโรงงาน"},
-    {"id":"th-2556-minimum-wage","period":"2549-2560","beYear":"2555-2556","ceYear":"2012-2013","title":"นโยบายค่าจ้างขั้นต่ำ 300 บาททั่วประเทศ","summary":"ค่าจ้างขั้นต่ำเพิ่มเป็น 300 บาทในจังหวัดนำร่องปี 2555 และครอบคลุมจังหวัดที่เหลือตั้งแต่ 1 มกราคม 2556","peopleImpact":"เพิ่มฐานรายได้ตามกฎหมายของลูกจ้างค่าจ้างต่ำ แต่ผลจริงขึ้นกับการบังคับใช้ ชั่วโมงทำงาน การจ้างไม่เป็นทางการ และการปรับตัวของนายจ้าง","impactStatus":"documented","themes":["labour","wage","inequality"],"locations":["ทั่วประเทศ"],"sourceIds":["src-ilo-wage-300"],"worldContextIds":["world-platform"],"verification":"verified","openQuestion":"ค่าจ้างจริง การจ้างงาน และราคาสินค้าเปลี่ยนต่างกันอย่างไรตามจังหวัดและกิจการ"},
-    {"id":"th-2557-coup","period":"2549-2560","beYear":"2557","ceYear":"2014","title":"รัฐประหาร 22 พฤษภาคม 2557","summary":"คณะรักษาความสงบแห่งชาติประกาศควบคุมอำนาจการบริหารประเทศตั้งแต่เวลา 16.30 น. วันที่ 22 พฤษภาคม 2557","peopleImpact":"สภาและรัฐบาลเดิมสิ้นอำนาจ มีการเรียกรายงานตัว จำกัดการชุมนุม และควบคุมสื่อ ส่งผลต่อการทำงานทางการเมืองและเสรีภาพสาธารณะ","impactStatus":"documented","themes":["coup","rights","media","politics"],"locations":["ทั่วประเทศ"],"sourceIds":["src-mfa-ncpo"],"worldContextIds":["world-platform"],"verification":"verified","openQuestion":"ควรจัดทำฐานคำสั่ง คสช. แยกตามสิทธิและกลุ่มผู้ได้รับผลกระทบ"},
-    {"id":"th-2558-aec","period":"2549-2560","beYear":"2558","ceYear":"2015","title":"การจัดตั้งประชาคมเศรษฐกิจอาเซียน","summary":"อาเซียนประกาศจัดตั้งประชาคมเศรษฐกิจอาเซียนอย่างเป็นทางการในปลายปี 2558","peopleImpact":"ลดอุปสรรคบางด้านของการค้าและบริการ และเพิ่มกรอบเคลื่อนย้ายแรงงานฝีมือ แต่ไม่ได้ทำให้แรงงานทุกประเภทเดินทางได้เสรี","impactStatus":"documented","themes":["regional-order","trade","migration","labour"],"locations":["ประเทศไทย","อาเซียน"],"sourceIds":["src-asean-aec"],"worldContextIds":["world-aec"],"verification":"verified","openQuestion":"แรงงานทักษะต่ำและธุรกิจรายย่อยได้รับผลจริงต่างจากคำประกาศนโยบายอย่างไร"},
-    {"id":"th-2560-constitution","period":"2549-2560","beYear":"2559-2560","ceYear":"2016-2017","title":"ประชามติและรัฐธรรมนูญ พ.ศ. 2560","summary":"ร่างรัฐธรรมนูญผ่านประชามติวันที่ 7 สิงหาคม 2559 และรัฐธรรมนูญฉบับที่ 20 ประกาศใช้วันที่ 6 เมษายน 2560","peopleImpact":"กำหนดโครงสร้างการเลือกตั้ง องค์กรรัฐ และวุฒิสภาช่วงเปลี่ยนผ่านที่มีสมาชิก 250 คนตามกระบวนการสรรหาและแต่งตั้ง","impactStatus":"documented","themes":["constitution","election","politics"],"locations":["ทั่วประเทศ"],"sourceIds":["src-parliament-constitution-2560"],"worldContextIds":["world-platform"],"verification":"verified","openQuestion":"ข้อจำกัดการรณรงค์ประชามติและการรับรู้เนื้อหาร่างควรบันทึกจากแหล่งใดบ้าง"},
-    {"id":"th-2550-2560-internet","period":"2549-2560","beYear":"2550-2560","ceYear":"2007-2017","title":"อินเทอร์เน็ตเข้าสู่ชีวิตของคนส่วนใหญ่","summary":"ข้อมูล ITU ระบุสัดส่วนประชากรไทยที่ใช้อินเทอร์เน็ตเพิ่มจากประมาณ 20.03% ในปี 2550 เป็น 52.89% ในปี 2560","peopleImpact":"ข่าวสาร การค้า ความบันเทิง การหางาน และการรวมตัวทางการเมืองย้ายขึ้นแพลตฟอร์มมากขึ้น ขณะที่ความเหลื่อมล้ำด้านอุปกรณ์และทักษะยังคงอยู่","impactStatus":"documented","themes":["digital","media","economy","politics"],"locations":["ทั่วประเทศ"],"sourceIds":["src-un-internet"],"worldContextIds":["world-platform"],"verification":"verified","openQuestion":"ต้องแยกการเข้าถึงตามอายุ รายได้ เพศ และพื้นที่เพื่อไม่ให้ค่าเฉลี่ยประเทศกลบความเหลื่อมล้ำ"}
+    {
+      "id": "th-2460-chulalongkorn-university",
+      "period": "2460-2475",
+      "beYear": "2460",
+      "ceYear": "1917",
+      "title": "สถาปนาจุฬาลงกรณ์มหาวิทยาลัย",
+      "summary": "โรงเรียนข้าราชการพลเรือนได้รับการยกฐานะเป็นจุฬาลงกรณ์มหาวิทยาลัย ซึ่งเป็นมหาวิทยาลัยแห่งแรกของไทย",
+      "peopleImpact": "ขยายโครงสร้างการผลิตบุคลากรระดับอุดมศึกษาของรัฐ แต่การเข้าถึงในระยะแรกยังจำกัดอยู่ในคนจำนวนน้อย",
+      "impactStatus": "contextual",
+      "themes": [
+        "education",
+        "state"
+      ],
+      "locations": [
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-chula-history",
+        "src-ops-highered"
+      ],
+      "worldContextIds": [
+        "world-ww1"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "นักศึกษารุ่นแรกมีพื้นเพทางชนชั้นและภูมิภาคอย่างไร"
+    },
+    {
+      "id": "th-2460-ww1",
+      "period": "2460-2475",
+      "beYear": "2460",
+      "ceYear": "1917",
+      "title": "สยามประกาศสงครามต่อเยอรมนีและออสเตรีย-ฮังการี",
+      "summary": "รัฐบาลสยามประกาศสงครามเมื่อ 22 กรกฎาคม 2460 และต่อมาส่งกองกำลังอาสาไปยุโรป",
+      "peopleImpact": "ผลโดยตรงกระจุกในกำลังอาสา ครอบครัว และกิจการของชนชาติศัตรู ขณะที่ผลระยะยาวอยู่ที่สถานะระหว่างประเทศของรัฐ",
+      "impactStatus": "contextual",
+      "themes": [
+        "war",
+        "international-relations"
+      ],
+      "locations": [
+        "ทั่วประเทศ",
+        "ยุโรป"
+      ],
+      "sourceIds": [
+        "src-frus-ww1",
+        "src-mfa-treaties"
+      ],
+      "worldContextIds": [
+        "world-ww1"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ภาระทางเศรษฐกิจและประสบการณ์ของครอบครัวทหารอาสาปรากฏในหลักฐานใดบ้าง"
+    },
+    {
+      "id": "th-2464-compulsory-education",
+      "period": "2460-2475",
+      "beYear": "2464",
+      "ceYear": "1921",
+      "title": "กฎหมายประถมศึกษาภาคบังคับ",
+      "summary": "พระราชบัญญัติประถมศึกษา พ.ศ. 2464 วางหลักการศึกษาภาคบังคับ โดยการบังคับใช้ขยายตามความพร้อมของพื้นที่",
+      "peopleImpact": "โรงเรียนและรัฐเข้ามามีบทบาทในชีวิตเด็กและครอบครัวมากขึ้น แต่ความพร้อมของโรงเรียน ครู และท้องถิ่นแตกต่างกัน",
+      "impactStatus": "documented",
+      "themes": [
+        "education",
+        "childhood",
+        "state"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-moe-history"
+      ],
+      "worldContextIds": [],
+      "verification": "verified",
+      "openQuestion": "อัตราการเข้าเรียนและภาระของครอบครัวต่างกันอย่างไรในแต่ละมณฑล"
+    },
+    {
+      "id": "th-2468-treaty-revision",
+      "period": "2460-2475",
+      "beYear": "2468",
+      "ceYear": "1925",
+      "title": "การแก้ไขสนธิสัญญาที่จำกัดอำนาจศาลและภาษี",
+      "summary": "การเจรจากับมหาอำนาจในทศวรรษ 1920 ลดข้อจำกัดด้านสิทธิสภาพนอกอาณาเขตและภาษีของสยามลงเป็นลำดับ",
+      "peopleImpact": "เพิ่มพื้นที่นโยบายและอำนาจศาลของรัฐสยาม ผลต่อคนทั่วไปเกิดผ่านระบบกฎหมาย รายได้รัฐ และนโยบายสาธารณะมากกว่าการเปลี่ยนทันทีในวันเดียว",
+      "impactStatus": "contextual",
+      "themes": [
+        "law",
+        "international-relations",
+        "state"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-mfa-treaties"
+      ],
+      "worldContextIds": [
+        "world-ww1"
+      ],
+      "verification": "verified",
+      "openQuestion": "รายได้ภาษีที่เพิ่มขึ้นถูกจัดสรรไปยังบริการสาธารณะใดบ้าง"
+    },
+    {
+      "id": "th-2472-depression",
+      "period": "2460-2475",
+      "beYear": "2472-2477",
+      "ceYear": "1929-1934",
+      "title": "ภาวะเศรษฐกิจตกต่ำส่งผ่านราคาข้าว",
+      "summary": "วิกฤตเศรษฐกิจโลกทำให้ราคาข้าวลดลงอย่างมาก แม้ปริมาณส่งออกบางตลาดเพิ่มขึ้น",
+      "peopleImpact": "ครัวเรือนชนบทได้รับผลไม่เท่ากันตามขนาดที่ดิน หนี้ การถือครองผลผลิต และการเข้าถึงตลาด",
+      "impactStatus": "documented",
+      "themes": [
+        "economy",
+        "agriculture",
+        "inequality"
+      ],
+      "locations": [
+        "ภาคกลาง",
+        "พื้นที่ปลูกข้าว"
+      ],
+      "sourceIds": [
+        "src-wb-depression"
+      ],
+      "worldContextIds": [
+        "world-depression"
+      ],
+      "verification": "verified",
+      "openQuestion": "ผลกระทบต่อแรงงานรับจ้างและครัวเรือนไร้ที่ดินรุนแรงเพียงใด"
+    },
+    {
+      "id": "th-2475-revolution",
+      "period": "2460-2475",
+      "beYear": "2475",
+      "ceYear": "1932",
+      "title": "การเปลี่ยนแปลงการปกครอง 24 มิถุนายน 2475",
+      "summary": "คณะราษฎรยึดอำนาจและเปลี่ยนโครงสร้างการปกครองจากสมบูรณาญาสิทธิราชย์สู่ระบอบที่มีรัฐธรรมนูญ",
+      "peopleImpact": "แนวคิดว่าประชาชนเป็นเจ้าของอำนาจอธิปไตยเข้าสู่สถาบันการเมือง แต่สิทธิและการมีส่วนร่วมจริงขยายตัวเป็นกระบวนการที่ไม่สม่ำเสมอ",
+      "impactStatus": "contextual",
+      "themes": [
+        "politics",
+        "citizenship",
+        "rights"
+      ],
+      "locations": [
+        "กรุงเทพฯ",
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-parliament-2475",
+        "src-parliament-constitution-2475"
+      ],
+      "worldContextIds": [
+        "world-depression"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "คนต่างจังหวัดรับรู้และตีความเหตุการณ์ผ่านช่องทางใด"
+    },
+    {
+      "id": "th-2475-constitution",
+      "period": "2475-2500",
+      "beYear": "2475",
+      "ceYear": "1932",
+      "title": "ประกาศใช้รัฐธรรมนูญถาวรฉบับแรก",
+      "summary": "รัฐธรรมนูญแห่งราชอาณาจักรสยามประกาศใช้เมื่อ 10 ธันวาคม 2475",
+      "peopleImpact": "สร้างกรอบสถาบันสำหรับรัฐสภาและการเป็นพลเมืองภายใต้รัฐธรรมนูญ แม้รูปแบบตัวแทนและอำนาจทางการเมืองยังเปลี่ยนอีกหลายครั้ง",
+      "impactStatus": "documented",
+      "themes": [
+        "constitution",
+        "politics",
+        "citizenship"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-parliament-constitution-2475"
+      ],
+      "worldContextIds": [
+        "world-depression"
+      ],
+      "verification": "verified",
+      "openQuestion": "งานฉลองรัฐธรรมนูญทำให้แนวคิดใหม่เข้าถึงประชาชนอย่างไร"
+    },
+    {
+      "id": "th-2482-name-and-mandates",
+      "period": "2475-2500",
+      "beYear": "2482-2485",
+      "ceYear": "1939-1942",
+      "title": "เปลี่ยนชื่อประเทศและออกชุดรัฐนิยม",
+      "summary": "รัฐบาลเปลี่ยนชื่อสยามเป็นประเทศไทยในปี 2482 และออกประกาศรัฐนิยมหลายฉบับกำกับภาษา การแต่งกาย และพฤติกรรมสาธารณะ",
+      "peopleImpact": "นโยบายชาตินิยมเข้าไปจัดระเบียบชีวิตประจำวันและนิยามความเป็นไทยผ่านโรงเรียน สื่อ ราชการ และพื้นที่สาธารณะ",
+      "impactStatus": "documented",
+      "themes": [
+        "nationalism",
+        "culture",
+        "media"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-national-archives-mandates",
+        "src-un-thailand"
+      ],
+      "worldContextIds": [
+        "world-ww2"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "การปฏิบัติตามรัฐนิยมแตกต่างกันอย่างไรระหว่างเมือง ชนบท และกลุ่มชาติพันธุ์"
+    },
+    {
+      "id": "th-2484-pacific-war",
+      "period": "2475-2500",
+      "beYear": "2484",
+      "ceYear": "1941",
+      "title": "สงครามแปซิฟิกมาถึงประเทศไทย",
+      "summary": "กองทัพญี่ปุ่นเข้าสู่ประเทศไทยวันที่ 8 ธันวาคม 2484 และประเทศไทยเข้าสู่ความสัมพันธ์เป็นพันธมิตรกับญี่ปุ่นในช่วงสงคราม",
+      "peopleImpact": "ประชาชนเผชิญการระดมทรัพยากร การควบคุมสินค้า ความขาดแคลน เงินเฟ้อ และความเสี่ยงจากการโจมตีทางอากาศ โดยประสบการณ์ต่างกันตามพื้นที่",
+      "impactStatus": "contextual",
+      "themes": [
+        "war",
+        "economy",
+        "everyday-life"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-cia-free-thai"
+      ],
+      "worldContextIds": [
+        "world-ww2"
+      ],
+      "verification": "verified",
+      "openQuestion": "หลักฐานครัวเรือนและตลาดท้องถิ่นสะท้อนความขาดแคลนอย่างไร"
+    },
+    {
+      "id": "th-2485-free-thai",
+      "period": "2475-2500",
+      "beYear": "2485-2488",
+      "ceYear": "1942-1945",
+      "title": "ขบวนการเสรีไทยต่อต้านญี่ปุ่น",
+      "summary": "เครือข่ายเสรีไทยทำงานทั้งในและนอกประเทศร่วมกับฝ่ายสัมพันธมิตรในช่วงสงครามโลกครั้งที่ 2",
+      "peopleImpact": "ผู้เข้าร่วมและชุมชนที่เกี่ยวข้องรับความเสี่ยงจากงานลับ ขณะที่บทบาทของขบวนการมีส่วนต่อการต่อรองสถานะไทยหลังสงคราม",
+      "impactStatus": "contextual",
+      "themes": [
+        "resistance",
+        "war",
+        "international-relations"
+      ],
+      "locations": [
+        "ประเทศไทย",
+        "สหรัฐอเมริกา",
+        "สหราชอาณาจักร"
+      ],
+      "sourceIds": [
+        "src-cia-free-thai"
+      ],
+      "worldContextIds": [
+        "world-ww2",
+        "world-postwar"
+      ],
+      "verification": "verified",
+      "openQuestion": "ควรเพิ่มประวัติสมาชิกระดับท้องถิ่น ผู้หญิง และผู้สนับสนุนที่ไม่ปรากฏชื่ออย่างไร"
+    },
+    {
+      "id": "th-2489-un-membership",
+      "period": "2475-2500",
+      "beYear": "2489",
+      "ceYear": "1946",
+      "title": "ไทยเข้าเป็นสมาชิกสหประชาชาติ",
+      "summary": "ไทยเข้าเป็นสมาชิกสหประชาชาติเมื่อ 15 ธันวาคม 2489",
+      "peopleImpact": "เชื่อมรัฐไทยกับกรอบกฎหมาย สิทธิมนุษยชน การพัฒนา และความร่วมมือระหว่างประเทศหลังสงคราม",
+      "impactStatus": "contextual",
+      "themes": [
+        "international-relations",
+        "rights",
+        "development"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-un-thailand"
+      ],
+      "worldContextIds": [
+        "world-postwar"
+      ],
+      "verification": "verified",
+      "openQuestion": "พันธกรณีระหว่างประเทศถูกแปลงเป็นกฎหมายและสถาบันภายในช่วงใดบ้าง"
+    },
+    {
+      "id": "th-2497-seato",
+      "period": "2475-2500",
+      "beYear": "2497",
+      "ceYear": "1954",
+      "title": "ไทยร่วมก่อตั้ง SEATO",
+      "summary": "ไทยเป็นหนึ่งในแปดประเทศที่จัดตั้งองค์การสนธิสัญญาป้องกันเอเชียตะวันออกเฉียงใต้ในเดือนกันยายน 2497",
+      "peopleImpact": "กรอบต่อต้านคอมมิวนิสต์มีอิทธิพลต่อความมั่นคง การทหาร ความช่วยเหลือ และนโยบายต่อพื้นที่ชายแดนและชนบท",
+      "impactStatus": "contextual",
+      "themes": [
+        "cold-war",
+        "security",
+        "international-relations"
+      ],
+      "locations": [
+        "กรุงเทพฯ",
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-state-seato"
+      ],
+      "worldContextIds": [
+        "world-cold-war"
+      ],
+      "verification": "verified",
+      "openQuestion": "งบและโครงการภายใต้พันธมิตรส่งถึงชุมชนใดและสร้างผู้ได้ประโยชน์หรือผู้เสียประโยชน์อย่างไร"
+    },
+    {
+      "id": "th-2501-authoritarian-charter",
+      "period": "2500-2516",
+      "beYear": "2501",
+      "ceYear": "1958",
+      "title": "รัฐประหารและธรรมนูญการปกครอง พ.ศ. 2501",
+      "summary": "การยึดอำนาจในปี 2501 ยกเลิกรัฐธรรมนูญเดิมและใช้ธรรมนูญที่ให้สภาร่างรัฐธรรมนูญทำหน้าที่นิติบัญญัติ",
+      "peopleImpact": "พื้นที่การเมืองแบบเลือกตั้งถูกจำกัด ขณะที่รัฐรวมศูนย์ใช้อำนาจบริหารผลักดันนโยบายพัฒนาและความมั่นคง",
+      "impactStatus": "documented",
+      "themes": [
+        "politics",
+        "state",
+        "security"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-parliament-history"
+      ],
+      "worldContextIds": [
+        "world-cold-war"
+      ],
+      "verification": "verified",
+      "openQuestion": "คำสั่งและมาตรการความมั่นคงกระทบคนต่างพื้นที่อย่างไร"
+    },
+    {
+      "id": "th-2504-first-plan",
+      "period": "2500-2516",
+      "beYear": "2504",
+      "ceYear": "1961",
+      "title": "เริ่มแผนพัฒนาเศรษฐกิจแห่งชาติฉบับที่ 1",
+      "summary": "ไทยเริ่มใช้แผนพัฒนาเศรษฐกิจแห่งชาติฉบับที่ 1 เป็นกรอบรวมศูนย์สำหรับการลงทุนและพัฒนา พ.ศ. 2504-2509",
+      "peopleImpact": "ถนน ชลประทาน ไฟฟ้า การศึกษา และบริการรัฐขยายตัว แต่ประโยชน์และต้นทุนกระจายไม่เท่ากันตามพื้นที่และอาชีพ",
+      "impactStatus": "contextual",
+      "themes": [
+        "development",
+        "infrastructure",
+        "economy"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-nesdc-plans"
+      ],
+      "worldContextIds": [
+        "world-development",
+        "world-cold-war"
+      ],
+      "verification": "verified",
+      "openQuestion": "ควรใช้สถิติรายจังหวัดใดวัดการเข้าถึงบริการและการย้ายถิ่น"
+    },
+    {
+      "id": "th-2508-us-bases",
+      "period": "2500-2516",
+      "beYear": "2508-2516",
+      "ceYear": "1965-1973",
+      "title": "ฐานทัพสหรัฐและสงครามเวียดนาม",
+      "summary": "สหรัฐใช้ฐานทัพในไทยสนับสนุนปฏิบัติการทางอากาศในอินโดจีน โดยกำลังพลสหรัฐในไทยเพิ่มขึ้นหลายหมื่นคนในช่วงสูงสุด",
+      "peopleImpact": "เกิดงาน รายได้ และธุรกิจบริการรอบฐานทัพ พร้อมผลทางวัฒนธรรม ที่ดิน ความมั่นคง และความสัมพันธ์กับชุมชน",
+      "impactStatus": "contextual",
+      "themes": [
+        "war",
+        "labour",
+        "local-economy",
+        "culture"
+      ],
+      "locations": [
+        "อู่ตะเภา",
+        "โคราช",
+        "อุดรธานี",
+        "อุบลราชธานี",
+        "นครพนม",
+        "ตาคลี"
+      ],
+      "sourceIds": [
+        "src-frus-bases"
+      ],
+      "worldContextIds": [
+        "world-cold-war"
+      ],
+      "verification": "verified",
+      "openQuestion": "เสียงของแรงงานหญิงและชุมชนรอบฐานทัพถูกบันทึกไว้ที่ใด"
+    },
+    {
+      "id": "th-2510-asean",
+      "period": "2500-2516",
+      "beYear": "2510",
+      "ceYear": "1967",
+      "title": "ปฏิญญากรุงเทพและการก่อตั้งอาเซียน",
+      "summary": "ไทยร่วมกับอินโดนีเซีย มาเลเซีย ฟิลิปปินส์ และสิงคโปร์ลงนามปฏิญญากรุงเทพเมื่อ 8 สิงหาคม 2510",
+      "peopleImpact": "เปิดกรอบความร่วมมือภูมิภาคที่ต่อมามีผลต่อการค้า การเดินทาง แรงงาน และนโยบายร่วม แต่ผลต่อชีวิตคนเกิดสะสมระยะยาว",
+      "impactStatus": "contextual",
+      "themes": [
+        "regional-order",
+        "economy",
+        "international-relations"
+      ],
+      "locations": [
+        "กรุงเทพฯ",
+        "เอเชียตะวันออกเฉียงใต้"
+      ],
+      "sourceIds": [
+        "src-asean-history"
+      ],
+      "worldContextIds": [
+        "world-cold-war"
+      ],
+      "verification": "verified",
+      "openQuestion": "ประชาชนรับรู้คำว่าอาเซียนผ่านหลักสูตรและสื่อในแต่ละทศวรรษอย่างไร"
+    },
+    {
+      "id": "th-2515-higher-education-bureau",
+      "period": "2500-2516",
+      "beYear": "2515",
+      "ceYear": "1972",
+      "title": "จัดตั้งทบวงมหาวิทยาลัยของรัฐ",
+      "summary": "ประกาศคณะปฏิวัติฉบับที่ 216 จัดตั้งทบวงมหาวิทยาลัยของรัฐเมื่อ 29 กันยายน 2515",
+      "peopleImpact": "การกำกับมหาวิทยาลัยถูกจัดรวมเป็นระบบเฉพาะในช่วงที่จำนวนนักศึกษาและสถาบันอุดมศึกษากำลังขยาย",
+      "impactStatus": "documented",
+      "themes": [
+        "education",
+        "youth",
+        "state"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-ops-highered"
+      ],
+      "worldContextIds": [
+        "world-development"
+      ],
+      "verification": "verified",
+      "openQuestion": "การขยายมหาวิทยาลัยภูมิภาคเปลี่ยนโอกาสของครอบครัวนอกกรุงเทพฯ อย่างไร"
+    },
+    {
+      "id": "th-2516-october-14",
+      "period": "2500-2516",
+      "beYear": "2516",
+      "ceYear": "1973",
+      "title": "การเคลื่อนไหว 14 ตุลาคม 2516",
+      "summary": "การประท้วงขนาดใหญ่ที่นำโดยนักศึกษาและประชาชนเผชิญการปราบปราม ก่อนรัฐบาลจอมพลถนอม กิตติขจรสิ้นสุดลง",
+      "peopleImpact": "เปิดพื้นที่การเมือง สื่อ สหภาพ และขบวนการชาวนาในช่วงต่อมา พร้อมทิ้งความสูญเสียและข้อถกเถียงเรื่องจำนวนผู้เสียชีวิต",
+      "impactStatus": "contextual",
+      "themes": [
+        "democracy",
+        "movement",
+        "violence",
+        "memory"
+      ],
+      "locations": [
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-nrct-14oct"
+      ],
+      "worldContextIds": [
+        "world-cold-war"
+      ],
+      "verification": "verified",
+      "openQuestion": "ต้องเทียบจำนวนผู้เสียชีวิตและบาดเจ็บจากแหล่งร่วมสมัยหลายชุดก่อนเผยแพร่ตัวเลข"
+    },
+    {
+      "id": "th-2518-labour-relations",
+      "period": "2516-2535",
+      "beYear": "2518",
+      "ceYear": "1975",
+      "title": "พระราชบัญญัติแรงงานสัมพันธ์ พ.ศ. 2518",
+      "summary": "กฎหมายกำหนดกลไกข้อตกลงสภาพการจ้าง การระงับข้อพิพาท การนัดหยุดงาน และการจัดตั้งสหภาพแรงงาน",
+      "peopleImpact": "ให้กรอบกฎหมายแก่การรวมตัวและต่อรองของแรงงานเอกชน ขณะเดียวกันขอบเขตและการบังคับใช้ยังมีข้อจำกัด",
+      "impactStatus": "documented",
+      "themes": [
+        "labour",
+        "law",
+        "rights"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-ilo-labour-2518"
+      ],
+      "worldContextIds": [
+        "world-indochina"
+      ],
+      "verification": "verified",
+      "openQuestion": "จำนวนสหภาพและข้อพิพาทเปลี่ยนอย่างไรหลังประกาศใช้"
+    },
+    {
+      "id": "th-2519-october-6",
+      "period": "2516-2535",
+      "beYear": "2519",
+      "ceYear": "1976",
+      "title": "ความรุนแรง 6 ตุลาคม 2519",
+      "summary": "ตำรวจและกลุ่มฝ่ายขวาใช้ความรุนแรงต่อผู้ชุมนุมในมหาวิทยาลัยธรรมศาสตร์และสนามหลวง ก่อนเกิดรัฐประหารในวันเดียวกัน",
+      "peopleImpact": "มีผู้เสียชีวิต บาดเจ็บ และถูกจับกุมจำนวนมาก เหตุการณ์ส่งผลต่อการลี้ภัยเข้าป่า ความกลัว และความทรงจำสาธารณะที่ยังถกเถียง",
+      "impactStatus": "documented",
+      "themes": [
+        "violence",
+        "movement",
+        "memory",
+        "justice"
+      ],
+      "locations": [
+        "มหาวิทยาลัยธรรมศาสตร์ ท่าพระจันทร์",
+        "สนามหลวง"
+      ],
+      "sourceIds": [
+        "src-doct6",
+        "src-ago-oct6-case"
+      ],
+      "worldContextIds": [
+        "world-indochina"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ตัวเลขผู้เสียชีวิตและผู้สูญหายต้องแสดงแยกตามชุดหลักฐาน ไม่รวมเป็นตัวเลขเดียวโดยไม่อธิบาย"
+    },
+    {
+      "id": "th-2523-order-66",
+      "period": "2516-2535",
+      "beYear": "2523",
+      "ceYear": "1980",
+      "title": "คำสั่งสำนักนายกรัฐมนตรีที่ 66/2523",
+      "summary": "คำสั่งกำหนดยุทธศาสตร์ต่อสู้เพื่อเอาชนะคอมมิวนิสต์โดยเน้นการเมือง การลดเงื่อนไขความไม่เป็นธรรม และการเปิดทางให้ผู้เข้าร่วมขบวนการกลับคืนสังคม",
+      "peopleImpact": "เปลี่ยนแนวทางจากการปราบปรามอย่างเดียวไปสู่การเมืองและนิรโทษกรรม มีส่วนต่อการลดลงของการสู้รบ แต่ผลในแต่ละพื้นที่ไม่เหมือนกัน",
+      "impactStatus": "contextual",
+      "themes": [
+        "security",
+        "amnesty",
+        "rural-society"
+      ],
+      "locations": [
+        "พื้นที่ชนบทและชายแดน"
+      ],
+      "sourceIds": [
+        "src-order-66-study"
+      ],
+      "worldContextIds": [
+        "world-indochina"
+      ],
+      "verification": "verified",
+      "openQuestion": "ผู้กลับจากป่าปรับตัวด้านที่ดิน งาน และความปลอดภัยอย่างไร"
+    },
+    {
+      "id": "th-2525-eastern-seaboard",
+      "period": "2516-2535",
+      "beYear": "2525-2534",
+      "ceYear": "1982-1991",
+      "title": "โครงการพัฒนาพื้นที่ชายฝั่งทะเลตะวันออก",
+      "summary": "แผนพัฒนาฉบับที่ 5 เลือก Eastern Seaboard เป็นศูนย์อุตสาหกรรมใหม่และลงทุนท่าเรือ นิคม และโครงสร้างพื้นฐาน",
+      "peopleImpact": "สร้างงานโรงงานและดึงแรงงานย้ายถิ่นสู่ชลบุรี ระยอง และฉะเชิงเทรา พร้อมต้นทุนด้านเมือง ที่อยู่อาศัย และสิ่งแวดล้อม",
+      "impactStatus": "documented",
+      "themes": [
+        "industry",
+        "migration",
+        "environment",
+        "infrastructure"
+      ],
+      "locations": [
+        "ชลบุรี",
+        "ระยอง",
+        "ฉะเชิงเทรา"
+      ],
+      "sourceIds": [
+        "src-wb-eastern-seaboard"
+      ],
+      "worldContextIds": [
+        "world-export-shift"
+      ],
+      "verification": "verified",
+      "openQuestion": "ควรเพิ่มหลักฐานชุมชนประมง เกษตรกร และแรงงานหญิงรอบนิคม"
+    },
+    {
+      "id": "th-2528-export-boom",
+      "period": "2516-2535",
+      "beYear": "2528-2534",
+      "ceYear": "1985-1991",
+      "title": "การผลิตเพื่อส่งออกและการย้ายฐานการผลิตขยายตัว",
+      "summary": "การลงทุนในโครงสร้างพื้นฐานและโรงงานส่งออก โดยเฉพาะพื้นที่ชายฝั่งตะวันออก มีส่วนต่อการขยายตัวของการส่งออกปลายทศวรรษ 2520 ถึงต้นทศวรรษ 2530",
+      "peopleImpact": "งานนอกภาคเกษตรเพิ่มขึ้นและเร่งการย้ายถิ่น แต่ค่าจ้าง ความมั่นคงในการทำงาน และสภาพแวดล้อมแตกต่างตามอุตสาหกรรม",
+      "impactStatus": "contextual",
+      "themes": [
+        "economy",
+        "industry",
+        "labour",
+        "migration"
+      ],
+      "locations": [
+        "กรุงเทพฯ และปริมณฑล",
+        "ภาคตะวันออก"
+      ],
+      "sourceIds": [
+        "src-wb-eastern-seaboard"
+      ],
+      "worldContextIds": [
+        "world-export-shift"
+      ],
+      "verification": "verified",
+      "openQuestion": "ต้องเติมข้อมูลค่าจ้างจริง ชั่วโมงทำงาน และแรงงานข้ามถิ่นแยกเพศ"
+    },
+    {
+      "id": "th-2535-black-may",
+      "period": "2516-2535",
+      "beYear": "2535",
+      "ceYear": "1992",
+      "title": "เหตุการณ์พฤษภาคม 2535",
+      "summary": "การประท้วงต่อต้านนายกรัฐมนตรีที่มาจากคณะรัฐประหารเผชิญการใช้กำลังในกรุงเทพฯ ก่อนนายกรัฐมนตรีลาออก",
+      "peopleImpact": "ความสูญเสียและการหายสาบสูญกลายเป็นแรงผลักต่อข้อเรียกร้องเรื่องรัฐบาลพลเรือน สิทธิ และการปฏิรูปการเมือง",
+      "impactStatus": "contextual",
+      "themes": [
+        "democracy",
+        "movement",
+        "violence",
+        "memory"
+      ],
+      "locations": [
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-parliament-may-1992"
+      ],
+      "worldContextIds": [
+        "world-export-shift"
+      ],
+      "verification": "verified",
+      "openQuestion": "ต้องแสดงตัวเลขผู้เสียชีวิต บาดเจ็บ และสูญหายแยกตามแหล่งทางการและภาคประชาชน"
+    },
+    {
+      "id": "th-2538-wto",
+      "period": "2535-2549",
+      "beYear": "2538",
+      "ceYear": "1995",
+      "title": "ไทยเป็นสมาชิกผู้ก่อตั้งองค์การการค้าโลก",
+      "summary": "ไทยเป็นสมาชิก WTO ตั้งแต่การก่อตั้งองค์การเมื่อ 1 มกราคม 2538",
+      "peopleImpact": "กติกาการค้าโลกมีผลต่อผู้ส่งออก ผู้ผลิต เกษตรกร ทรัพย์สินทางปัญญา และนโยบายภายใน แต่ผลต่างกันตามสินค้าและอำนาจต่อรอง",
+      "impactStatus": "contextual",
+      "themes": [
+        "trade",
+        "agriculture",
+        "industry"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-wto-thailand"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "verified",
+      "openQuestion": "ควรเลือกกรณีสินค้าใดเพื่อแสดงทั้งผู้ได้ประโยชน์และผู้รับต้นทุน"
+    },
+    {
+      "id": "th-2540-financial-crisis",
+      "period": "2535-2549",
+      "beYear": "2540",
+      "ceYear": "1997",
+      "title": "ลอยตัวเงินบาทและวิกฤตต้มยำกุ้ง",
+      "summary": "ธนาคารแห่งประเทศไทยเปลี่ยนเป็นระบบอัตราแลกเปลี่ยนลอยตัวแบบจัดการเมื่อ 2 กรกฎาคม 2540 หลังแรงกดดันต่อเงินบาทและเงินสำรอง",
+      "peopleImpact": "ธุรกิจล้ม การว่างงานและหนี้เพิ่มขึ้น ขณะที่ผลจากค่าเงินและการปรับโครงสร้างแตกต่างระหว่างลูกหนี้ ผู้ส่งออก แรงงาน และครัวเรือน",
+      "impactStatus": "documented",
+      "themes": [
+        "economy",
+        "debt",
+        "labour",
+        "inequality"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-bot-2540",
+        "src-imf-2540"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ต้องเพิ่มสถิติการว่างงาน รายได้จริง และการกลับชนบทจากแหล่งทางการ"
+    },
+    {
+      "id": "th-2540-constitution",
+      "period": "2535-2549",
+      "beYear": "2540",
+      "ceYear": "1997",
+      "title": "รัฐธรรมนูญ พ.ศ. 2540",
+      "summary": "รัฐธรรมนูญฉบับที่ 16 ประกาศใช้เมื่อ 11 ตุลาคม 2540 หลังผ่านกระบวนการสภาร่างรัฐธรรมนูญ",
+      "peopleImpact": "ขยายการรับรองสิทธิและสร้างองค์กรตรวจสอบใหม่ พร้อมเปลี่ยนระบบเลือกตั้งและพรรคการเมือง",
+      "impactStatus": "documented",
+      "themes": [
+        "constitution",
+        "rights",
+        "politics"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-parliament-constitution-2540"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "verified",
+      "openQuestion": "สิทธิที่บัญญัติเปลี่ยนการเข้าถึงความยุติธรรมจริงเพียงใดในแต่ละกลุ่ม"
+    },
+    {
+      "id": "th-2542-education-act",
+      "period": "2535-2549",
+      "beYear": "2542",
+      "ceYear": "1999",
+      "title": "พระราชบัญญัติการศึกษาแห่งชาติ พ.ศ. 2542",
+      "summary": "กฎหมายแม่บทการศึกษากำหนดการปฏิรูประบบ การกระจายอำนาจ และการมีส่วนร่วมของท้องถิ่นและเอกชน",
+      "peopleImpact": "เปลี่ยนโครงสร้างบริหาร หลักสูตร และความคาดหวังต่อสิทธิทางการศึกษา แต่คุณภาพและทรัพยากรยังแตกต่างระหว่างพื้นที่",
+      "impactStatus": "contextual",
+      "themes": [
+        "education",
+        "decentralisation",
+        "rights"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-education-act-2542"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "verified",
+      "openQuestion": "ผลต่อโรงเรียนขนาดเล็ก ครู และเด็กนอกระบบเป็นอย่างไร"
+    },
+    {
+      "id": "th-2544-village-fund",
+      "period": "2535-2549",
+      "beYear": "2544",
+      "ceYear": "2001",
+      "title": "กองทุนหมู่บ้านหนึ่งล้านบาท",
+      "summary": "รัฐบาลเริ่มโครงการกองทุนหมู่บ้านโดยจัดทุนหมุนเวียนให้หมู่บ้านและชุมชนเมืองบริหารสินเชื่อในระดับชุมชน",
+      "peopleImpact": "เพิ่มแหล่งเงินทุนใกล้ตัวสำหรับครัวเรือนและกิจการรายย่อย ขณะเดียวกันผลต่อหนี้และอำนาจตัดสินใจในชุมชนแตกต่างกัน",
+      "impactStatus": "contextual",
+      "themes": [
+        "finance",
+        "rural-society",
+        "local-governance"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-wb-village-fund"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "verified",
+      "openQuestion": "ต้องแยกผลระยะสั้นด้านการบริโภคออกจากผลระยะยาวด้านรายได้และหนี้"
+    },
+    {
+      "id": "th-2545-universal-health",
+      "period": "2535-2549",
+      "beYear": "2545",
+      "ceYear": "2002",
+      "title": "หลักประกันสุขภาพถ้วนหน้า",
+      "summary": "ไทยจัดระบบหลักประกันสุขภาพถ้วนหน้าระดับประเทศในปี 2545 ต่อเนื่องจากโครงการ 30 บาทที่เริ่มดำเนินการก่อนหน้า",
+      "peopleImpact": "ประชาชนที่เดิมไม่มีประกันสุขภาพจำนวนมากเข้าถึงบริการผ่านระบบที่ใช้ภาษีเป็นฐาน และภาระค่าใช้จ่ายรุนแรงของครัวเรือนลดลงตามงานประเมินหลายชุด",
+      "impactStatus": "documented",
+      "themes": [
+        "health",
+        "welfare",
+        "inequality"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-who-uhc"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "verified",
+      "openQuestion": "คุณภาพและเวลารอแตกต่างกันอย่างไรระหว่างพื้นที่และระดับโรงพยาบาล"
+    },
+    {
+      "id": "th-2547-tsunami",
+      "period": "2535-2549",
+      "beYear": "2547",
+      "ceYear": "2004",
+      "title": "สึนามิชายฝั่งอันดามัน",
+      "summary": "คลื่นสึนามิจากแผ่นดินไหวมหาสมุทรอินเดียวันที่ 26 ธันวาคม 2547 กระทบหกจังหวัดชายฝั่งอันดามันของไทย",
+      "peopleImpact": "มีผู้เสียชีวิต สูญหาย บ้านเรือน อาชีพประมง และการท่องเที่ยวเสียหาย โดยแรงงานนอกระบบและครัวเรือนที่มีเงินออมน้อยฟื้นตัวได้ยากกว่า",
+      "impactStatus": "documented",
+      "themes": [
+        "disaster",
+        "livelihood",
+        "tourism",
+        "environment"
+      ],
+      "locations": [
+        "ระนอง",
+        "พังงา",
+        "กระบี่",
+        "ภูเก็ต",
+        "ตรัง",
+        "สตูล"
+      ],
+      "sourceIds": [
+        "src-wb-tsunami"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "verified",
+      "openQuestion": "ควรเพิ่มประสบการณ์แรงงานข้ามชาติและชุมชนประมงที่ตกหล่นจากทะเบียนช่วยเหลือ"
+    },
+    {
+      "id": "th-2549-coup",
+      "period": "2549-2560",
+      "beYear": "2549",
+      "ceYear": "2006",
+      "title": "รัฐประหาร 19 กันยายน 2549",
+      "summary": "คณะทหารยึดอำนาจ ยกเลิกรัฐธรรมนูญ พ.ศ. 2540 และประกาศใช้รัฐธรรมนูญชั่วคราว พ.ศ. 2549",
+      "peopleImpact": "สถาบันจากรัฐธรรมนูญเดิมถูกยุติหรือจัดใหม่ กิจกรรมทางการเมืองและพื้นที่สื่อถูกจำกัดในช่วงหลังยึดอำนาจ",
+      "impactStatus": "documented",
+      "themes": [
+        "coup",
+        "constitution",
+        "media",
+        "rights"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-parliament-constitution-2549",
+        "src-parliament-constitution-2540"
+      ],
+      "worldContextIds": [
+        "world-platform"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ผลระยะยาวต่อความไว้วางใจ การแบ่งขั้ว และการมีส่วนร่วมควรประเมินจากข้อมูลใด"
+    },
+    {
+      "id": "th-2551-global-crisis",
+      "period": "2549-2560",
+      "beYear": "2551-2552",
+      "ceYear": "2008-2009",
+      "title": "วิกฤตการเงินโลกกระทบการส่งออกไทย",
+      "summary": "วิกฤตโลกทำให้อุปสงค์ต่างประเทศลดลงและการส่งออกไทยหดตัวรุนแรงในช่วงปลายปี 2551 ต่อเนื่องปี 2552",
+      "peopleImpact": "แรงงานและผู้ประกอบการในอุตสาหกรรมส่งออกเผชิญชั่วโมงทำงาน รายได้ และการจ้างงานที่ลดลง แม้ระบบธนาคารไทยไม่ได้ล้มแบบปี 2540",
+      "impactStatus": "documented",
+      "themes": [
+        "economy",
+        "trade",
+        "labour"
+      ],
+      "locations": [
+        "พื้นที่อุตสาหกรรมส่งออก"
+      ],
+      "sourceIds": [
+        "src-wb-gfc"
+      ],
+      "worldContextIds": [
+        "world-gfc"
+      ],
+      "verification": "verified",
+      "openQuestion": "ผลต่อแรงงานเหมาช่วงและแรงงานข้ามชาติถูกนับในสถิติครบเพียงใด"
+    },
+    {
+      "id": "th-2553-political-violence",
+      "period": "2549-2560",
+      "beYear": "2553",
+      "ceYear": "2010",
+      "title": "การชุมนุมและความรุนแรงเมษายน-พฤษภาคม 2553",
+      "summary": "การชุมนุมของแนวร่วมประชาธิปไตยต่อต้านเผด็จการแห่งชาติในกรุงเทพฯ จบลงด้วยปฏิบัติการสลายการชุมนุมและความสูญเสีย",
+      "peopleImpact": "ผู้ชุมนุม เจ้าหน้าที่ สื่อ อาสาพยาบาล ผู้ค้า และครอบครัวได้รับผลโดยตรง ขณะที่ความรับผิดและลำดับเหตุการณ์บางส่วนยังเป็นข้อถกเถียง",
+      "impactStatus": "documented",
+      "themes": [
+        "movement",
+        "violence",
+        "justice",
+        "memory"
+      ],
+      "locations": [
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-trct-2010"
+      ],
+      "worldContextIds": [
+        "world-platform"
+      ],
+      "verification": "verified",
+      "openQuestion": "ก่อนเผยแพร่ตัวเลข ต้องอ้างรายงานฉบับเต็มและแยกผู้เสียชีวิตตามสถานะและเหตุแห่งการตาย"
+    },
+    {
+      "id": "th-2554-flood",
+      "period": "2549-2560",
+      "beYear": "2554",
+      "ceYear": "2011",
+      "title": "มหาอุทกภัย พ.ศ. 2554",
+      "summary": "น้ำท่วมยาวนานกระทบ 26 จังหวัดสำคัญและพื้นที่อุตสาหกรรม โดยการประเมินร่วมระบุความเสียหายและความสูญเสียประมาณ 1.425 ล้านล้านบาท",
+      "peopleImpact": "ประชาชนสูญเสียบ้าน รายได้ และการเดินทาง โรงงานหยุดผลิต และผลลุกลามไปยังห่วงโซ่อุปทานยานยนต์กับอิเล็กทรอนิกส์โลก",
+      "impactStatus": "documented",
+      "themes": [
+        "disaster",
+        "industry",
+        "housing",
+        "supply-chain"
+      ],
+      "locations": [
+        "ลุ่มเจ้าพระยา",
+        "ภาคกลาง",
+        "กรุงเทพฯ และปริมณฑล"
+      ],
+      "sourceIds": [
+        "src-wb-flood-2554"
+      ],
+      "worldContextIds": [
+        "world-platform"
+      ],
+      "verification": "verified",
+      "openQuestion": "ความช่วยเหลือและการฟื้นตัวต่างกันอย่างไรระหว่างผู้เช่า เจ้าของบ้าน แรงงาน และโรงงาน"
+    },
+    {
+      "id": "th-2556-minimum-wage",
+      "period": "2549-2560",
+      "beYear": "2555-2556",
+      "ceYear": "2012-2013",
+      "title": "นโยบายค่าจ้างขั้นต่ำ 300 บาททั่วประเทศ",
+      "summary": "ค่าจ้างขั้นต่ำเพิ่มเป็น 300 บาทในจังหวัดนำร่องปี 2555 และครอบคลุมจังหวัดที่เหลือตั้งแต่ 1 มกราคม 2556",
+      "peopleImpact": "เพิ่มฐานรายได้ตามกฎหมายของลูกจ้างค่าจ้างต่ำ แต่ผลจริงขึ้นกับการบังคับใช้ ชั่วโมงทำงาน การจ้างไม่เป็นทางการ และการปรับตัวของนายจ้าง",
+      "impactStatus": "documented",
+      "themes": [
+        "labour",
+        "wage",
+        "inequality"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-ilo-wage-300"
+      ],
+      "worldContextIds": [
+        "world-platform"
+      ],
+      "verification": "verified",
+      "openQuestion": "ค่าจ้างจริง การจ้างงาน และราคาสินค้าเปลี่ยนต่างกันอย่างไรตามจังหวัดและกิจการ"
+    },
+    {
+      "id": "th-2557-coup",
+      "period": "2549-2560",
+      "beYear": "2557",
+      "ceYear": "2014",
+      "title": "รัฐประหาร 22 พฤษภาคม 2557",
+      "summary": "คณะรักษาความสงบแห่งชาติประกาศควบคุมอำนาจการบริหารประเทศตั้งแต่เวลา 16.30 น. วันที่ 22 พฤษภาคม 2557",
+      "peopleImpact": "สภาและรัฐบาลเดิมสิ้นอำนาจ มีการเรียกรายงานตัว จำกัดการชุมนุม และควบคุมสื่อ ส่งผลต่อการทำงานทางการเมืองและเสรีภาพสาธารณะ",
+      "impactStatus": "documented",
+      "themes": [
+        "coup",
+        "rights",
+        "media",
+        "politics"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-mfa-ncpo"
+      ],
+      "worldContextIds": [
+        "world-platform"
+      ],
+      "verification": "verified",
+      "openQuestion": "ควรจัดทำฐานคำสั่ง คสช. แยกตามสิทธิและกลุ่มผู้ได้รับผลกระทบ"
+    },
+    {
+      "id": "th-2558-aec",
+      "period": "2549-2560",
+      "beYear": "2558",
+      "ceYear": "2015",
+      "title": "การจัดตั้งประชาคมเศรษฐกิจอาเซียน",
+      "summary": "อาเซียนประกาศจัดตั้งประชาคมเศรษฐกิจอาเซียนอย่างเป็นทางการในปลายปี 2558",
+      "peopleImpact": "ลดอุปสรรคบางด้านของการค้าและบริการ และเพิ่มกรอบเคลื่อนย้ายแรงงานฝีมือ แต่ไม่ได้ทำให้แรงงานทุกประเภทเดินทางได้เสรี",
+      "impactStatus": "documented",
+      "themes": [
+        "regional-order",
+        "trade",
+        "migration",
+        "labour"
+      ],
+      "locations": [
+        "ประเทศไทย",
+        "อาเซียน"
+      ],
+      "sourceIds": [
+        "src-asean-aec"
+      ],
+      "worldContextIds": [
+        "world-aec"
+      ],
+      "verification": "verified",
+      "openQuestion": "แรงงานทักษะต่ำและธุรกิจรายย่อยได้รับผลจริงต่างจากคำประกาศนโยบายอย่างไร"
+    },
+    {
+      "id": "th-2560-constitution",
+      "period": "2549-2560",
+      "beYear": "2559-2560",
+      "ceYear": "2016-2017",
+      "title": "ประชามติและรัฐธรรมนูญ พ.ศ. 2560",
+      "summary": "ร่างรัฐธรรมนูญผ่านประชามติวันที่ 7 สิงหาคม 2559 และรัฐธรรมนูญฉบับที่ 20 ประกาศใช้วันที่ 6 เมษายน 2560",
+      "peopleImpact": "กำหนดโครงสร้างการเลือกตั้ง องค์กรรัฐ และวุฒิสภาช่วงเปลี่ยนผ่านที่มีสมาชิก 250 คนตามกระบวนการสรรหาและแต่งตั้ง",
+      "impactStatus": "documented",
+      "themes": [
+        "constitution",
+        "election",
+        "politics"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-parliament-constitution-2560"
+      ],
+      "worldContextIds": [
+        "world-platform"
+      ],
+      "verification": "verified",
+      "openQuestion": "ข้อจำกัดการรณรงค์ประชามติและการรับรู้เนื้อหาร่างควรบันทึกจากแหล่งใดบ้าง"
+    },
+    {
+      "id": "th-2550-2560-internet",
+      "period": "2549-2560",
+      "beYear": "2550-2560",
+      "ceYear": "2007-2017",
+      "title": "อินเทอร์เน็ตเข้าสู่ชีวิตของคนส่วนใหญ่",
+      "summary": "ข้อมูล ITU ระบุสัดส่วนประชากรไทยที่ใช้อินเทอร์เน็ตเพิ่มจากประมาณ 20.03% ในปี 2550 เป็น 52.89% ในปี 2560",
+      "peopleImpact": "ข่าวสาร การค้า ความบันเทิง การหางาน และการรวมตัวทางการเมืองย้ายขึ้นแพลตฟอร์มมากขึ้น ขณะที่ความเหลื่อมล้ำด้านอุปกรณ์และทักษะยังคงอยู่",
+      "impactStatus": "documented",
+      "themes": [
+        "digital",
+        "media",
+        "economy",
+        "politics"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-un-internet"
+      ],
+      "worldContextIds": [
+        "world-platform"
+      ],
+      "verification": "verified",
+      "openQuestion": "ต้องแยกการเข้าถึงตามอายุ รายได้ เพศ และพื้นที่เพื่อไม่ให้ค่าเฉลี่ยประเทศกลบความเหลื่อมล้ำ"
+    }
+  ],
+  "microhistoryMeta": {
+    "title": "Source-backed microhistory records",
+    "version": "0.1.0",
+    "updated": "2026-07-19",
+    "editorialNote": "กรณีศึกษาระดับชีวิตประชาชนที่มีแหล่งรองรับ ใช้เป็นฐานขยายงาน ไม่ใช่บทเล่าสำเร็จ ห้ามตัด missingVoices และ openQuestion ออกโดยไม่มีหลักฐานใหม่"
+  },
+  "microhistories": [
+    {
+      "id": "mh-2460-university-access",
+      "period": "2460-2475",
+      "beYear": "2460",
+      "ceYear": "1917",
+      "title": "นักศึกษารุ่นแรกกับประตูอุดมศึกษาที่ยังแคบ",
+      "location": [
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "นักศึกษา",
+        "ครอบครัวชนชั้นกลางและข้าราชการ"
+      ],
+      "everydayDimensions": [
+        "education",
+        "social-mobility"
+      ],
+      "fact": "การยกฐานะโรงเรียนข้าราชการพลเรือนเป็นจุฬาลงกรณ์มหาวิทยาลัยสร้างสถาบันอุดมศึกษาแห่งแรกของประเทศ",
+      "livedExperience": "โอกาสเรียนระดับมหาวิทยาลัยเกิดขึ้นจริง แต่ยังจำกัดด้านจำนวน สถานที่ และพื้นเพของผู้เข้าถึงเมื่อเทียบกับประชากรทั้งประเทศ",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-chula-history",
+        "src-ops-highered"
+      ],
+      "linkedEventIds": [
+        "th-2460-chulalongkorn-university"
+      ],
+      "missingVoices": [
+        "นักศึกษาหญิงรุ่นแรก",
+        "นักศึกษาจากต่างจังหวัด",
+        "ครอบครัวที่ไม่สามารถส่งลูกเรียน"
+      ],
+      "openQuestion": "ทะเบียนนักศึกษารุ่นแรกสะท้อนชนชั้น เพศ และภูมิภาคอย่างไร"
+    },
+    {
+      "id": "mh-2460-war-volunteer-families",
+      "period": "2460-2475",
+      "beYear": "2460-2462",
+      "ceYear": "1917-1919",
+      "title": "ทหารอาสาและครอบครัวเมื่อสยามเข้าสงครามโลก",
+      "location": [
+        "กรุงเทพฯ",
+        "ยุโรป"
+      ],
+      "groups": [
+        "ทหารอาสา",
+        "ครอบครัวทหาร"
+      ],
+      "everydayDimensions": [
+        "war",
+        "family",
+        "mobility"
+      ],
+      "fact": "สยามประกาศสงครามต่อเยอรมนีและออสเตรีย-ฮังการีและส่งกองทหารอาสาไปยุโรป",
+      "livedExperience": "หลักฐานทางการยืนยันการส่งกำลัง แต่ประสบการณ์การสมัคร การเดินทาง รายได้ และภาระของครอบครัวยังไม่ปรากฏเพียงพอในฐานปัจจุบัน",
+      "evidenceStatus": "research-lead",
+      "sourceIds": [
+        "src-frus-ww1"
+      ],
+      "linkedEventIds": [
+        "th-2460-ww1"
+      ],
+      "missingVoices": [
+        "จดหมายทหารอาสา",
+        "ภรรยาและบุตร",
+        "ผู้สมัครที่ไม่ได้รับเลือก"
+      ],
+      "openQuestion": "มีบัญชีเงินเดือน จดหมาย หรือคำบอกเล่าของทหารอาสาและครอบครัวหรือไม่"
+    },
+    {
+      "id": "mh-2464-compulsory-school",
+      "period": "2460-2475",
+      "beYear": "2464",
+      "ceYear": "1921",
+      "title": "เด็ก ครอบครัว และโรงเรียนภาคบังคับ",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "เด็กวัยเรียน",
+        "ผู้ปกครอง",
+        "ครูท้องถิ่น"
+      ],
+      "everydayDimensions": [
+        "education",
+        "childhood",
+        "state"
+      ],
+      "fact": "พระราชบัญญัติประถมศึกษากำหนดกรอบการศึกษาภาคบังคับและขยายบทบาทรัฐในวัยเด็ก",
+      "livedExperience": "กฎหมายทำให้โรงเรียนกลายเป็นส่วนหนึ่งของความสัมพันธ์ระหว่างครอบครัว ชุมชน และรัฐ แต่การเข้าถึงและภาระของครอบครัวแตกต่างกันตามพื้นที่",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-moe-history"
+      ],
+      "linkedEventIds": [
+        "th-2464-compulsory-education"
+      ],
+      "missingVoices": [
+        "เด็กชนบท",
+        "เด็กหญิง",
+        "ครูโรงเรียนวัด",
+        "ครอบครัวแรงงาน"
+      ],
+      "openQuestion": "การมาเรียนจริง อัตราขาดเรียน และเหตุผลที่เด็กออกจากโรงเรียนต่างกันอย่างไรในแต่ละจังหวัด"
+    },
+    {
+      "id": "mh-2468-satri-thai-readers",
+      "period": "2460-2475",
+      "beYear": "2468-2470",
+      "ceYear": "1925-1927",
+      "title": "นิตยสารสตรีไทยกับพื้นที่สาธารณะของผู้หญิง",
+      "location": [
+        "กรุงเทพฯ และเครือข่ายผู้อ่าน"
+      ],
+      "groups": [
+        "นักเขียนหญิง",
+        "ผู้อ่านหญิง",
+        "ผู้หญิงทำงาน"
+      ],
+      "everydayDimensions": [
+        "media",
+        "gender",
+        "education",
+        "work"
+      ],
+      "fact": "นิตยสารสตรีไทยบริหารโดยผู้หญิงและเผยแพร่ข้อถกเถียงเรื่องการศึกษา อาชีพ การแต่งงาน ความไม่เสมอภาค แฟชั่น และศีลธรรมของผู้หญิง",
+      "livedExperience": "สื่อสิ่งพิมพ์เปิดพื้นที่ให้ผู้หญิงวิจารณ์อำนาจชายเป็นใหญ่และคิดถึงบทบาทสมัยใหม่ ขณะเดียวกันข้อเขียนยังรักษาความคาดหวังด้านกิริยาและศีลธรรมเดิมไว้",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-jts-satri-thai"
+      ],
+      "linkedEventIds": [],
+      "missingVoices": [
+        "ผู้อ่านนอกกรุงเทพฯ",
+        "ผู้หญิงชนชั้นแรงงาน",
+        "จดหมายผู้อ่าน"
+      ],
+      "openQuestion": "ใครซื้อ อ่าน และส่งต่อนิตยสารนี้ และเนื้อหามีอิทธิพลนอกกลุ่มผู้รู้หนังสือมากเพียงใด"
+    },
+    {
+      "id": "mh-2472-rice-households",
+      "period": "2460-2475",
+      "beYear": "2472-2477",
+      "ceYear": "1929-1934",
+      "title": "ครัวเรือนชาวนากับราคาข้าวในภาวะเศรษฐกิจตกต่ำ",
+      "location": [
+        "ภาคกลาง",
+        "ชนบทสยาม"
+      ],
+      "groups": [
+        "ชาวนา",
+        "ผู้เช่าที่ดิน",
+        "เจ้าของที่ดิน",
+        "เจ้าหนี้"
+      ],
+      "everydayDimensions": [
+        "agriculture",
+        "income",
+        "debt",
+        "inequality"
+      ],
+      "fact": "ภาวะเศรษฐกิจตกต่ำทำให้ราคาข้าวลดลง และผลต่อครัวเรือนชนบทไม่เท่ากันตามการถือครองที่ดิน หนี้ และสถานะในระบบการผลิต",
+      "livedExperience": "รายได้จากพืชผลลดลงกระทบความสามารถชำระหนี้และการใช้จ่าย แต่ครัวเรือนที่มีทรัพย์สินและภาระต่างกันรับแรงกระแทกไม่เหมือนกัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-wb-depression"
+      ],
+      "linkedEventIds": [
+        "th-2472-depression"
+      ],
+      "missingVoices": [
+        "สมุดบัญชีครัวเรือน",
+        "ผู้หญิงในครัวเรือน",
+        "แรงงานรับจ้างไร้ที่ดิน"
+      ],
+      "openQuestion": "ครัวเรือนลดรายจ่าย ขายทรัพย์สิน หรือเปลี่ยนอาชีพอย่างไรในแต่ละพื้นที่"
+    },
+    {
+      "id": "mh-2482-cultural-mandates",
+      "period": "2475-2500",
+      "beYear": "2482-2485",
+      "ceYear": "1939-1942",
+      "title": "การแต่งกาย ภาษา และมารยาทภายใต้รัฐนิยม",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ประชาชนทั่วไป",
+        "ข้าราชการ",
+        "ผู้ค้า",
+        "นักเรียน"
+      ],
+      "everydayDimensions": [
+        "culture",
+        "language",
+        "clothing",
+        "state"
+      ],
+      "fact": "รัฐออกประกาศรัฐนิยมที่กำหนดชื่อประเทศ ภาษา การแต่งกาย มารยาท และพฤติกรรมสาธารณะหลายด้าน",
+      "livedExperience": "นโยบายชาตินิยมลงมาถึงเสื้อผ้า คำพูด การทักทาย และการวางตัว แต่ระดับการปฏิบัติตามจริงในเมืองและชนบทยังต่างกัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-national-archives-mandates"
+      ],
+      "linkedEventIds": [
+        "th-2482-name-and-mandates"
+      ],
+      "missingVoices": [
+        "แม่ค้า",
+        "ชาวชนบท",
+        "กลุ่มชาติพันธุ์",
+        "ช่างตัดเสื้อ"
+      ],
+      "openQuestion": "ประชาชนต่อรอง ล้อเลียน หรือปรับใช้รัฐนิยมในชีวิตจริงอย่างไร"
+    },
+    {
+      "id": "mh-2484-bangkoknoi-war",
+      "period": "2475-2500",
+      "beYear": "2484-2488",
+      "ceYear": "1941-1945",
+      "title": "ชาวบ้านบุและปากคลองบางกอกน้อยท่ามกลางสงคราม",
+      "location": [
+        "บางกอกน้อย กรุงเทพฯ"
+      ],
+      "groups": [
+        "ครอบครัวชุมชน",
+        "ช่างฝีมือ",
+        "ผู้โดยสารรถไฟ"
+      ],
+      "everydayDimensions": [
+        "war",
+        "housing",
+        "food",
+        "memory"
+      ],
+      "fact": "พื้นที่ใกล้สถานีรถไฟบางกอกน้อยเป็นที่ตั้งกำลังญี่ปุ่นและเป็นเป้าหมายโจมตีของฝ่ายสัมพันธมิตร",
+      "livedExperience": "ประวัติศาสตร์บอกเล่าของคนในพื้นที่บันทึกการอยู่ใกล้เป้าหมายทางทหาร การหลบภัย และการปรับชีวิตของชุมชนระหว่างสงคราม",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-silpakorn-bangkoknoi-ww2"
+      ],
+      "linkedEventIds": [
+        "th-2484-pacific-war"
+      ],
+      "missingVoices": [
+        "เด็ก",
+        "ผู้เช่าบ้าน",
+        "ผู้บาดเจ็บ",
+        "ครอบครัวที่ย้ายออก"
+      ],
+      "openQuestion": "แผนที่ความเสียหายและรายชื่อครัวเรือนช่วยตรวจความทรงจำแต่ละชุดได้อย่างไร"
+    },
+    {
+      "id": "mh-2484-wartime-shortages",
+      "period": "2475-2500",
+      "beYear": "2484-2488",
+      "ceYear": "1941-1945",
+      "title": "ค่าครองชีพ การปันส่วน และตลาดในช่วงญี่ปุ่นยึดครอง",
+      "location": [
+        "กรุงเทพฯ",
+        "ชนบทไทย"
+      ],
+      "groups": [
+        "แรงงาน",
+        "แม่บ้าน",
+        "ผู้บริโภค",
+        "ชาวนา"
+      ],
+      "everydayDimensions": [
+        "food",
+        "prices",
+        "wages",
+        "black-market"
+      ],
+      "fact": "การยึดครองของญี่ปุ่นทำให้เศรษฐกิจหดตัว เงินเฟ้อสูง สินค้าอุปโภคบริโภคขาดแคลน และเกิดการปันส่วน",
+      "livedExperience": "ค่าจ้างจริงและมาตรฐานชีวิตลดลง ครัวเรือนต้องรับมือกับราคาที่สูงขึ้นและการหาสินค้านอกระบบปกติ โดยแรงกระทบต่างกันระหว่างเมืองกับชนบท",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-oxford-ww2-impact"
+      ],
+      "linkedEventIds": [
+        "th-2484-pacific-war"
+      ],
+      "missingVoices": [
+        "บัญชีครัวเรือน",
+        "แม่ค้าในตลาด",
+        "แรงงานนอกระบบ",
+        "คนจนเมือง"
+      ],
+      "openQuestion": "ตะกร้าสินค้า ค่าแรงจริง และวิธีรับมือของครัวเรือนเปลี่ยนรายปีอย่างไร"
+    },
+    {
+      "id": "mh-2484-women-wartime",
+      "period": "2475-2500",
+      "beYear": "2484-2488",
+      "ceYear": "1941-1945",
+      "title": "ผู้หญิงกับงานสาธารณะและความคาดหวังทางเพศในสงคราม",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้หญิง",
+        "องค์กรสตรี",
+        "ภรรยาและแม่"
+      ],
+      "everydayDimensions": [
+        "gender",
+        "work",
+        "nationalism",
+        "family"
+      ],
+      "fact": "ผู้นำและองค์กรสตรีจัดกิจกรรมในบริบทสงคราม ขณะที่รัฐและสังคมกำหนดภาพผู้หญิงที่เหมาะสมภายใต้ชาตินิยมและการปรากฏตัวของกองทัพญี่ปุ่น",
+      "livedExperience": "สงครามเปิดบทบาทสาธารณะบางด้านแก่ผู้หญิง แต่ควบคู่กับการควบคุมศีลธรรม ความสัมพันธ์ และภาพความเป็นหญิงที่รัฐต้องการ",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-jsn-women-ww2"
+      ],
+      "linkedEventIds": [
+        "th-2484-pacific-war"
+      ],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "หญิงชนบท",
+        "ผู้หญิงที่สัมพันธ์กับทหารญี่ปุ่น"
+      ],
+      "openQuestion": "กิจกรรมระดับชาติสะท้อนประสบการณ์ผู้หญิงต่างชนชั้นและต่างพื้นที่เพียงใด"
+    },
+    {
+      "id": "mh-2485-free-thai-networks",
+      "period": "2475-2500",
+      "beYear": "2485-2488",
+      "ceYear": "1942-1945",
+      "title": "เครือข่ายเสรีไทยและงานลับที่พึ่งคนในพื้นที่",
+      "location": [
+        "กรุงเทพฯ",
+        "ภาคเหนือ",
+        "ภาคอีสาน",
+        "ต่างประเทศ"
+      ],
+      "groups": [
+        "สมาชิกเสรีไทย",
+        "ชาวบ้านผู้สนับสนุน",
+        "ครอบครัวเครือข่าย"
+      ],
+      "everydayDimensions": [
+        "resistance",
+        "risk",
+        "communication",
+        "mobility"
+      ],
+      "fact": "ขบวนการเสรีไทยประสานงานกับฝ่ายสัมพันธมิตรและสร้างเครือข่ายต่อต้านญี่ปุ่นทั้งในและนอกประเทศ",
+      "livedExperience": "งานข่าว การซ่อนคน การเดินทาง และการสื่อสารต้องอาศัยผู้สนับสนุนในพื้นที่ แต่ฐานปัจจุบันยังเล่าผ่านองค์กรข่าวกรองมากกว่าคนท้องถิ่น",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-cia-free-thai"
+      ],
+      "linkedEventIds": [
+        "th-2485-free-thai"
+      ],
+      "missingVoices": [
+        "ผู้ส่งข่าว",
+        "เจ้าของบ้านพัก",
+        "ผู้หญิงในเครือข่าย",
+        "ชาวบ้านอีสานและเหนือ"
+      ],
+      "openQuestion": "มีบันทึกท้องถิ่นใดระบุผู้สนับสนุนที่ไม่ปรากฏในรายชื่อผู้นำ"
+    },
+    {
+      "id": "mh-2500-working-women",
+      "period": "2500-2516",
+      "beYear": "2500-2516",
+      "ceYear": "1957-1973",
+      "title": "ผู้หญิงทำงานกับภาระงานสองพื้นที่",
+      "location": [
+        "กรุงเทพฯ และเมืองใหญ่"
+      ],
+      "groups": [
+        "ผู้หญิงมีการศึกษา",
+        "พนักงานสำนักงาน",
+        "ครู",
+        "วิชาชีพหญิง"
+      ],
+      "everydayDimensions": [
+        "work",
+        "gender",
+        "family",
+        "education"
+      ],
+      "fact": "แผนพัฒนาและการขยายการศึกษาสร้างโอกาสให้ผู้หญิงชนชั้นกลางที่มีการศึกษาเข้าสู่อาชีพใหม่มากขึ้น",
+      "livedExperience": "การมีงานนอกบ้านเพิ่มอิสระและบทบาทสาธารณะ แต่ความคาดหวังให้เป็นภรรยาและแม่ที่มีประสิทธิภาพทำให้ผู้หญิงรับภาระทั้งงานอาชีพและงานบ้าน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-chula-working-women"
+      ],
+      "linkedEventIds": [
+        "th-2504-first-plan"
+      ],
+      "missingVoices": [
+        "แรงงานหญิงโรงงาน",
+        "แม่บ้านรับจ้าง",
+        "ผู้หญิงชนบท"
+      ],
+      "openQuestion": "ค่าจ้าง เส้นทางเลื่อนตำแหน่ง และการแบ่งงานบ้านต่างกันอย่างไรตามอาชีพ"
+    },
+    {
+      "id": "mh-2504-isan-roads-migration",
+      "period": "2500-2516",
+      "beYear": "2504-2516",
+      "ceYear": "1961-1973",
+      "title": "ถนนอีสานเปิดตลาดและทางย้ายถิ่น",
+      "location": [
+        "ภาคอีสาน",
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "ครัวเรือนเกษตร",
+        "แรงงานย้ายถิ่น",
+        "ผู้ค้าริมทาง"
+      ],
+      "everydayDimensions": [
+        "roads",
+        "migration",
+        "market",
+        "family"
+      ],
+      "fact": "การลงทุนถนนในภาคอีสานเร่งขึ้นตั้งแต่ทศวรรษ 2500 และเชื่อมเมือง จังหวัด และหมู่บ้านเข้ากับโครงข่ายหลัก",
+      "livedExperience": "ถนนเพิ่มการเข้าถึงตลาดและบริการ พร้อมทำให้การเดินทางไปหางานในกรุงเทพฯ และเมืองภาคกลางสะดวกขึ้น ความมั่นคงและการพัฒนาจึงเปลี่ยนทั้งการค้าและโครงสร้างครอบครัว",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-wb-isan-roads"
+      ],
+      "linkedEventIds": [
+        "th-2504-first-plan"
+      ],
+      "missingVoices": [
+        "คนขับรถ",
+        "แม่ค้าริมทาง",
+        "เด็กที่พ่อแม่ย้ายถิ่น",
+        "หมู่บ้านที่ถนนยังไม่ถึง"
+      ],
+      "openQuestion": "หมู่บ้านที่ได้ถนนก่อนและหลังมีรายได้ การเรียน และการย้ายถิ่นต่างกันอย่างไร"
+    },
+    {
+      "id": "mh-2507-base-towns",
+      "period": "2500-2516",
+      "beYear": "2507-2516",
+      "ceYear": "1964-1973",
+      "title": "คนทำงานในเมืองฐานทัพอีสาน",
+      "location": [
+        "อุดรธานี",
+        "อุบลราชธานี",
+        "นครพนม",
+        "นครราชสีมา"
+      ],
+      "groups": [
+        "แรงงานอีสาน",
+        "ผู้หญิงทำงานบริการ",
+        "ผู้ค้า",
+        "ครอบครัวเมืองฐานทัพ"
+      ],
+      "everydayDimensions": [
+        "work",
+        "services",
+        "culture",
+        "inequality"
+      ],
+      "fact": "การตั้งฐานทัพสหรัฐในภาคอีสานสร้างการจ้างงานและการติดต่อกับชาวต่างชาติในเมืองรอบฐานทัพ",
+      "livedExperience": "คนท้องถิ่นใช้โอกาสทางงานและรายได้เพื่อลดข้อจำกัดทางเศรษฐกิจ ขณะเดียวกันเผชิญความไม่เท่าเทียม การเปลี่ยนบรรทัดฐาน และเศรษฐกิจที่ผูกกับการทหาร",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-claremont-base-towns",
+        "src-frus-bases"
+      ],
+      "linkedEventIds": [
+        "th-2508-us-bases"
+      ],
+      "missingVoices": [
+        "พนักงานหญิง",
+        "ลูกครึ่ง",
+        "ผู้เช่าที่ดิน",
+        "คนที่เสียประโยชน์จากฐานทัพ"
+      ],
+      "openQuestion": "รายได้ ที่ดิน และโครงสร้างครอบครัวเปลี่ยนอย่างไรเมื่อทหารสหรัฐถอนกำลัง"
+    },
+    {
+      "id": "mh-2508-family-size-regions",
+      "period": "2500-2516",
+      "beYear": "2508-2516",
+      "ceYear": "1965-1973",
+      "title": "ครอบครัวขนาดเล็กเกิดไม่พร้อมกันทุกภูมิภาค",
+      "location": [
+        "ภาคเหนือ",
+        "ภาคอีสาน",
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้หญิงวัยเจริญพันธุ์",
+        "คู่สมรส",
+        "เด็ก",
+        "บุคลากรสาธารณสุข"
+      ],
+      "everydayDimensions": [
+        "family",
+        "health",
+        "gender",
+        "regional-inequality"
+      ],
+      "fact": "อัตราเกิดเริ่มลดลงตั้งแต่ปลายทศวรรษ 2500 แต่รายงานพบความแตกต่างระดับภูมิภาค โดยภาคเหนือลดเร็วกว่าภาคอีสาน",
+      "livedExperience": "จำนวนบุตรและภาระพึ่งพิงเปลี่ยนไปไม่เท่ากันตามการเข้าถึงบริการ ความรู้ และโครงสร้างเศรษฐกิจของแต่ละพื้นที่",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-wb-population-1978"
+      ],
+      "linkedEventIds": [],
+      "missingVoices": [
+        "คำตัดสินใจของผู้หญิง",
+        "เจ้าหน้าที่อนามัยตำบล",
+        "ครอบครัวมุสลิมและชาติพันธุ์"
+      ],
+      "openQuestion": "ใครเป็นผู้ตัดสินใจเรื่องจำนวนบุตร และการคุมกำเนิดเข้าถึงหมู่บ้านผ่านช่องทางใด"
+    },
+    {
+      "id": "mh-2515-higher-education-expansion",
+      "period": "2500-2516",
+      "beYear": "2515-2516",
+      "ceYear": "1972-1973",
+      "title": "นักศึกษารุ่นขยายกับพื้นที่สาธารณะใหม่",
+      "location": [
+        "กรุงเทพฯ",
+        "เมืองมหาวิทยาลัย"
+      ],
+      "groups": [
+        "นักศึกษา",
+        "ครอบครัวต่างจังหวัด",
+        "อาจารย์"
+      ],
+      "everydayDimensions": [
+        "education",
+        "youth",
+        "media",
+        "politics"
+      ],
+      "fact": "จำนวนและระบบสถาบันอุดมศึกษาขยายตัวจนรัฐจัดตั้งทบวงมหาวิทยาลัยใน พ.ศ. 2515",
+      "livedExperience": "มหาวิทยาลัยกลายเป็นช่องทางการเลื่อนสถานะและพื้นที่แลกเปลี่ยนความคิดของคนหนุ่มสาว แต่ต้นทุนและการเข้าถึงยังไม่เท่ากัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-ops-highered"
+      ],
+      "linkedEventIds": [
+        "th-2515-higher-education-bureau",
+        "th-2516-october-14"
+      ],
+      "missingVoices": [
+        "นักศึกษารุ่นแรกจากชนบท",
+        "นักศึกษาหญิง",
+        "ผู้สอบไม่ได้และผู้ลาออก"
+      ],
+      "openQuestion": "ภูมิหลังครอบครัวและภูมิภาคของนักศึกษาที่เข้าร่วมกิจกรรมสาธารณะเป็นอย่างไร"
+    },
+    {
+      "id": "mh-2516-women-media-citizenship",
+      "period": "2516-2535",
+      "beYear": "2516-2519",
+      "ceYear": "1973-1976",
+      "title": "ผู้หญิงเรียกร้องความเป็นพลเมืองผ่านสื่อ",
+      "location": [
+        "กรุงเทพฯ",
+        "เครือข่ายสื่อ"
+      ],
+      "groups": [
+        "นักเขียนหญิง",
+        "นักศึกษาหญิง",
+        "นักกิจกรรมหญิง",
+        "ผู้อ่าน"
+      ],
+      "everydayDimensions": [
+        "media",
+        "gender",
+        "citizenship",
+        "movement"
+      ],
+      "fact": "ช่วง พ.ศ. 2516-2519 หนังสือพิมพ์ นิตยสาร และงานเขียนของผู้หญิงหัวก้าวหน้าเปิดพื้นที่ถกเถียงความไม่เท่าเทียมและสถานะผู้หญิงในฐานะพลเมือง",
+      "livedExperience": "เสียงผู้หญิงปรากฏในพื้นที่สาธารณะมากขึ้น แต่ยังถูกจำกัดด้วยกรอบคิดชายเป็นใหญ่และความหลากหลายของผู้หญิงที่ปรากฏในสื่อยังน้อย",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-jss-women-media-2516"
+      ],
+      "linkedEventIds": [
+        "th-2516-october-14"
+      ],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "หญิงชนบท",
+        "ผู้หญิงมุสลิม",
+        "ผู้หญิงชาติพันธุ์"
+      ],
+      "openQuestion": "ข้อเรียกร้องจากสื่อเชื่อมกับชีวิตและองค์กรผู้หญิงนอกเมืองอย่างไร"
+    },
+    {
+      "id": "mh-2517-farmer-federation",
+      "period": "2516-2535",
+      "beYear": "2517-2519",
+      "ceYear": "1974-1976",
+      "title": "ชาวนารวมตัวต่อรองเรื่องที่ดิน หนี้ และค่าเช่า",
+      "location": [
+        "ภาคเหนือ",
+        "ภาคกลาง",
+        "ภาคอีสาน"
+      ],
+      "groups": [
+        "ชาวนา",
+        "ผู้เช่าที่ดิน",
+        "ผู้นำชาวนา",
+        "ครอบครัวเกษตร"
+      ],
+      "everydayDimensions": [
+        "land",
+        "debt",
+        "rent",
+        "movement"
+      ],
+      "fact": "สหพันธ์ชาวนาชาวไร่แห่งประเทศไทยเติบโตในช่วงประชาธิปไตยหลัง 14 ตุลาคม และเคลื่อนไหวปัญหาที่ดิน หนี้ และความสัมพันธ์การผลิต",
+      "livedExperience": "ปัญหาในไร่นาและสัญญาเช่าถูกยกระดับเป็นข้อเรียกร้องสาธารณะ แต่ผู้นำหลายคนเผชิญความรุนแรงและการลอบสังหาร",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-jss-farmer-movement"
+      ],
+      "linkedEventIds": [
+        "th-2516-october-14"
+      ],
+      "missingVoices": [
+        "ภรรยาผู้นำชาวนา",
+        "ผู้เช่าที่ดินหญิง",
+        "เจ้าของที่ดินรายย่อย"
+      ],
+      "openQuestion": "ข้อเรียกร้องแต่ละจังหวัดต่างกันอย่างไร และครอบครัวผู้นำรับผลจากความรุนแรงอย่างไร"
+    },
+    {
+      "id": "mh-2519-southern-women-cpt",
+      "period": "2516-2535",
+      "beYear": "2520-2525",
+      "ceYear": "1977-1982",
+      "title": "ผู้หญิงในขบวนการคอมมิวนิสต์ภาคใต้ผ่านวารสารตะวันแดง",
+      "location": [
+        "พัทลุง",
+        "ตรัง",
+        "สตูล"
+      ],
+      "groups": [
+        "สหายหญิง",
+        "ผู้หญิงท้องถิ่น",
+        "นักเขียนหญิง"
+      ],
+      "everydayDimensions": [
+        "gender",
+        "resistance",
+        "literacy",
+        "care-work"
+      ],
+      "fact": "วารสารตะวันแดงมีคอลัมน์ที่มุ่งเชื่อมผู้หญิงปัญญาชนกับผู้หญิงท้องถิ่นและผลักบทบาทผู้หญิงในขบวนการปฏิวัติระหว่าง พ.ศ. 2520-2525",
+      "livedExperience": "สื่อภายในขบวนการเปิดพื้นที่พูดเรื่องบทบาทหญิง แต่การประกาศอุดมการณ์ไม่ได้แปลว่าการแบ่งงานและอำนาจในชีวิตจริงเท่าเทียมกัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-jssnu-women-cpt-south"
+      ],
+      "linkedEventIds": [
+        "th-2519-october-6",
+        "th-2523-order-66"
+      ],
+      "missingVoices": [
+        "คำบอกเล่าสหายหญิง",
+        "ผู้หญิงมลายูมุสลิม",
+        "สมาชิกครอบครัว"
+      ],
+      "openQuestion": "งานดูแล งานครัว และการตัดสินใจในฐานที่มั่นแบ่งตามเพศอย่างไร"
+    },
+    {
+      "id": "mh-2523-sanpong-agrarian-change",
+      "period": "2516-2535",
+      "beYear": "2510-2524",
+      "ceYear": "1967-1981",
+      "title": "บ้านสันโป่งกับความแตกต่างภายในหมู่บ้านเกษตร",
+      "location": [
+        "สันป่าตอง จังหวัดเชียงใหม่"
+      ],
+      "groups": [
+        "ชาวนา",
+        "เจ้าของที่ดิน",
+        "แรงงานเกษตร",
+        "ครัวเรือนชนบท"
+      ],
+      "everydayDimensions": [
+        "land",
+        "labour",
+        "class",
+        "agriculture"
+      ],
+      "fact": "งานภาคสนามระยะยาวที่บ้านสันโป่งศึกษาความแตกต่างของครัวเรือนเกษตรตามการควบคุมที่ดินและแรงงานระหว่างปลายทศวรรษ 2510 ถึงต้นทศวรรษ 2520",
+      "livedExperience": "คำว่า 'ชาวนา' ไม่ใช่กลุ่มเดียวกันทั้งหมด โอกาสสะสมทุนหรือสูญเสียความมั่นคงขึ้นกับที่ดิน แรงงานครอบครัว และความสัมพันธ์กับตลาด",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-cmu-sanpong"
+      ],
+      "linkedEventIds": [],
+      "missingVoices": [
+        "ผู้หญิงในครัวเรือน",
+        "แรงงานไร้ที่ดิน",
+        "คนหนุ่มสาวที่ย้ายออก"
+      ],
+      "openQuestion": "ครัวเรือนแต่ละฐานะปรับตัวต่อเครื่องจักร หนี้ และการย้ายถิ่นอย่างไร"
+    },
+    {
+      "id": "mh-2525-eastern-seaboard-workers",
+      "period": "2516-2535",
+      "beYear": "2525-2534",
+      "ceYear": "1982-1991",
+      "title": "แรงงานย้ายถิ่นและชุมชนรอบนิคมชายฝั่งตะวันออก",
+      "location": [
+        "ชลบุรี",
+        "ระยอง",
+        "ฉะเชิงเทรา"
+      ],
+      "groups": [
+        "แรงงานโรงงาน",
+        "ผู้เช่าห้อง",
+        "ชุมชนประมง",
+        "เกษตรกร"
+      ],
+      "everydayDimensions": [
+        "factory",
+        "migration",
+        "housing",
+        "environment"
+      ],
+      "fact": "โครงการชายฝั่งทะเลตะวันออกลงทุนท่าเรือ นิคมอุตสาหกรรม และโครงสร้างพื้นฐานเพื่อสร้างฐานการผลิตใหม่",
+      "livedExperience": "งานโรงงานดึงคนย้ายถิ่นและสร้างเมืองใหม่ ขณะเดียวกันเพิ่มความต้องการที่อยู่อาศัยและแรงกดดันต่อทรัพยากรของชุมชนเดิม",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-wb-eastern-seaboard"
+      ],
+      "linkedEventIds": [
+        "th-2525-eastern-seaboard"
+      ],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "ผู้เช่าห้อง",
+        "ชาวประมง",
+        "ชุมชนรอบมาบตาพุด"
+      ],
+      "openQuestion": "ค่าจ้าง ค่าเช่า สุขภาพ และคุณภาพน้ำเปลี่ยนอย่างไรในชุมชนแต่ละแห่ง"
+    },
+    {
+      "id": "mh-2534-pakmun-livelihoods",
+      "period": "2535-2549",
+      "beYear": "2534-2546",
+      "ceYear": "1991-2003",
+      "title": "ชุมชนปากมูลกับอาชีพประมงและการต่อรองโครงการพัฒนา",
+      "location": [
+        "อุบลราชธานี",
+        "ลุ่มน้ำมูล"
+      ],
+      "groups": [
+        "ชาวประมงพื้นบ้าน",
+        "ครัวเรือนริมแม่น้ำ",
+        "สมัชชาคนจน"
+      ],
+      "everydayDimensions": [
+        "fishery",
+        "food",
+        "income",
+        "movement"
+      ],
+      "fact": "การสร้างเขื่อนปากมูลนำไปสู่ข้อพิพาทยาวนานเรื่องระบบนิเวศปลา อาชีพ วิถีชีวิต และการมีส่วนร่วมของชุมชน",
+      "livedExperience": "แม่น้ำเป็นทั้งแหล่งอาหาร รายได้ และความสัมพันธ์ของชุมชน การเปลี่ยนระบบนิเวศจึงไม่ใช่เพียงความเสียหายทางเศรษฐกิจและนำไปสู่การรวมตัวต่อรองกับรัฐ",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-nida-pakmun"
+      ],
+      "linkedEventIds": [],
+      "missingVoices": [
+        "ผู้หญิงแปรรูปปลา",
+        "เด็กและผู้สูงอายุ",
+        "ครัวเรือนที่ไม่เข้าร่วมการประท้วง"
+      ],
+      "openQuestion": "รายได้ อาหาร และการย้ายอาชีพเปลี่ยนก่อนและหลังเปิดเขื่อนอย่างไรในแต่ละครัวเรือน"
+    },
+    {
+      "id": "mh-2540-workers-crisis",
+      "period": "2535-2549",
+      "beYear": "2540-2543",
+      "ceYear": "1997-2000",
+      "title": "คนงานรับมือการตกงานและรายได้ลดหลังวิกฤต 2540",
+      "location": [
+        "กรุงเทพฯ",
+        "เขตอุตสาหกรรม",
+        "ชนบทปลายทางกลับถิ่น"
+      ],
+      "groups": [
+        "แรงงานถูกเลิกจ้าง",
+        "แรงงานค่าจ้าง",
+        "ครอบครัวชนบท"
+      ],
+      "everydayDimensions": [
+        "jobs",
+        "wages",
+        "migration",
+        "coping"
+      ],
+      "fact": "วิกฤตทำให้คนงานสูญเสียงาน ค่าจ้าง และชั่วโมงทำงาน และบางส่วนเปลี่ยนอาชีพ กลับไปเรียน ทำงานบ้าน หรือกลับภาคเกษตร",
+      "livedExperience": "ครัวเรือนกระจายความเสี่ยงผ่านการแบ่งงาน ทรัพยากรครอบครัว การย้ายถิ่น และการรับงานรายได้น้อย ความยืดหยุ่นช่วยพยุงชีวิตแต่ผลักภาระกลับสู่ครอบครัวและชนบท",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-wb-workers-crisis",
+        "src-bot-2540"
+      ],
+      "linkedEventIds": [
+        "th-2540-financial-crisis"
+      ],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "แรงงานรับเหมาช่วง",
+        "ผู้ไม่มีทะเบียนประกันสังคม"
+      ],
+      "openQuestion": "ใครกลับเข้าสู่งานเดิมได้ และใครติดอยู่ในงานค่าจ้างต่ำระยะยาว"
+    },
+    {
+      "id": "mh-2540-pateung-karen-migration",
+      "period": "2535-2549",
+      "beYear": "2540-2549",
+      "ceYear": "1997-2006",
+      "title": "การย้ายถิ่นของครอบครัวกะเหรี่ยงชุมชนป่าตึง",
+      "location": [
+        "ชุมชนป่าตึง จังหวัดเชียงใหม่"
+      ],
+      "groups": [
+        "ชาวกะเหรี่ยง",
+        "แรงงานย้ายถิ่น",
+        "เด็ก",
+        "ผู้สูงอายุ"
+      ],
+      "everydayDimensions": [
+        "migration",
+        "ethnicity",
+        "family",
+        "income"
+      ],
+      "fact": "งานสำรวจและสัมภาษณ์ชุมชนกะเหรี่ยงคาทอลิกป่าตึงพบว่าเหตุผลเศรษฐกิจและสังคมเป็นแรงสำคัญของการย้ายถิ่นทั้งรายบุคคลและทั้งครอบครัว",
+      "livedExperience": "การไปทำงานช่วยสร้างฐานะ แต่ทำให้การดูแลเด็กและผู้สูงอายุเปลี่ยนไป และบางครัวเรือนวางแผนกลับถิ่นเมื่อเงื่อนไขเปลี่ยน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-kbu-karen-migration"
+      ],
+      "linkedEventIds": [
+        "th-2540-financial-crisis"
+      ],
+      "missingVoices": [
+        "เด็กที่อยู่กับญาติ",
+        "ผู้สูงอายุ",
+        "ผู้ย้ายถิ่นหญิง"
+      ],
+      "openQuestion": "เงินส่งกลับ การดูแล และภาษา/อัตลักษณ์เปลี่ยนตามรูปแบบการย้ายถิ่นอย่างไร"
+    },
+    {
+      "id": "mh-2544-village-fund-households",
+      "period": "2535-2549",
+      "beYear": "2544-2549",
+      "ceYear": "2001-2006",
+      "title": "เงินกองทุนหมู่บ้านกับทางเลือกของครัวเรือน",
+      "location": [
+        "หมู่บ้านทั่วประเทศ"
+      ],
+      "groups": [
+        "ครัวเรือนชนบท",
+        "ผู้กู้",
+        "คณะกรรมการกองทุน",
+        "ผู้ค้ารายย่อย"
+      ],
+      "everydayDimensions": [
+        "credit",
+        "debt",
+        "small-business",
+        "local-governance"
+      ],
+      "fact": "นโยบายกองทุนหมู่บ้านจัดสรรเงินหนึ่งล้านบาทต่อหมู่บ้านเพื่อเป็นแหล่งสินเชื่อหมุนเวียนในระดับชุมชน",
+      "livedExperience": "เงินกู้เพิ่มทางเลือกด้านการลงทุนและสภาพคล่อง แต่ผลลัพธ์ขึ้นกับกติกาท้องถิ่น วัตถุประสงค์การกู้ ความสามารถชำระ และอำนาจในคณะกรรมการ",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-wb-village-fund"
+      ],
+      "linkedEventIds": [
+        "th-2544-village-fund"
+      ],
+      "missingVoices": [
+        "ผู้กู้หญิง",
+        "ผู้ถูกปฏิเสธกู้",
+        "ครัวเรือนหนี้หลายแหล่ง"
+      ],
+      "openQuestion": "ใครเข้าถึงเงินกู้ ใช้ทำอะไร และหนี้สุทธิเปลี่ยนอย่างไรตามเพศและฐานะ"
+    },
+    {
+      "id": "mh-2545-uhc-patients",
+      "period": "2535-2549",
+      "beYear": "2545-2549",
+      "ceYear": "2002-2006",
+      "title": "ผู้ป่วยโรคเรื้อรังกับค่าใช้จ่ายหลังหลักประกันสุขภาพถ้วนหน้า",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้ป่วยโรคเรื้อรัง",
+        "ครอบครัวรายได้น้อย",
+        "บุคลากรสาธารณสุข"
+      ],
+      "everydayDimensions": [
+        "health",
+        "household-cost",
+        "care",
+        "welfare"
+      ],
+      "fact": "ระบบหลักประกันสุขภาพถ้วนหน้าขยายสิทธิบริการแก่ประชาชนที่ไม่ได้อยู่ในระบบสวัสดิการเดิม",
+      "livedExperience": "กรณีผู้ป่วยเบาหวานที่ WHO นำเสนอชี้ว่าการเข้าถึงบริการช่วยลดภาระค่าใช้จ่ายจากโรคเรื้อรัง แต่ระยะทาง คุณภาพ และภาระผู้ดูแลยังต้องศึกษาแยกพื้นที่",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-who-uhc"
+      ],
+      "linkedEventIds": [
+        "th-2545-universal-health"
+      ],
+      "missingVoices": [
+        "ผู้ป่วยพื้นที่ห่างไกล",
+        "ผู้ดูแลในครอบครัว",
+        "คนพิการ",
+        "แรงงานข้ามชาติ"
+      ],
+      "openQuestion": "ค่าเดินทาง เวลารอ และรายได้ที่เสียไประหว่างรักษาลดหรือเพิ่มภาระจริงเท่าใด"
+    },
+    {
+      "id": "mh-2550-migrant-workers-rights",
+      "period": "2549-2560",
+      "beYear": "2550-2560",
+      "ceYear": "2007-2017",
+      "title": "แรงงานพม่าระหว่างงานราคาถูกกับสิทธิที่เข้าไม่ถึง",
+      "location": [
+        "แม่สอด จังหวัดตาก",
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "แรงงานข้ามชาติพม่า",
+        "ครอบครัวแรงงาน",
+        "นายจ้าง"
+      ],
+      "everydayDimensions": [
+        "work",
+        "housing",
+        "health",
+        "legal-status"
+      ],
+      "fact": "งานศึกษาพบว่าแรงงานพม่าในแม่สอดและกรุงเทพฯ เผชิญมาตรฐานที่ต่างจากพลเมืองในเรื่องอาชีพ ค่าจ้าง ที่อยู่อาศัย การรักษาพยาบาล และสถานะทางกฎหมาย",
+      "livedExperience": "ความต้องการแรงงานของเศรษฐกิจอยู่คู่กับความไม่มั่นคงด้านเอกสารและสิทธิ ทำให้การเจ็บป่วย การเปลี่ยนงาน หรือการเรียกร้องค่าจ้างมีความเสี่ยงสูง",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-sjij-migrant-workers"
+      ],
+      "linkedEventIds": [],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "เด็กติดตาม",
+        "นายจ้างรายย่อย",
+        "ล่ามชุมชน"
+      ],
+      "openQuestion": "สถานะทะเบียนเปลี่ยนอำนาจต่อรองและการเข้าถึงสุขภาพในแต่ละอาชีพอย่างไร"
+    },
+    {
+      "id": "mh-2552-women-traders-politics",
+      "period": "2549-2560",
+      "beYear": "2552-2553",
+      "ceYear": "2009-2010",
+      "title": "แม่ค้าสันกำแพงจากเครือข่ายตลาดสู่การเมืองเสื้อแดง",
+      "location": [
+        "ตลาดสันกำแพง จังหวัดเชียงใหม่"
+      ],
+      "groups": [
+        "แม่ค้า",
+        "ผู้หญิงเสื้อแดง",
+        "ครอบครัวผู้ค้า"
+      ],
+      "everydayDimensions": [
+        "market",
+        "gender",
+        "mobility",
+        "politics"
+      ],
+      "fact": "งานภาคสนามพบว่าอาชีพค้าขายเพิ่มบทบาทสาธารณะและการเดินทางของผู้หญิง และเครือข่ายตลาดเป็นฐานของกลุ่มสันกำแพงรักประชาธิปไตย",
+      "livedExperience": "พื้นที่ตลาดเชื่อมงาน รายได้ มิตรภาพ และการเรียนรู้ทางการเมือง ผู้หญิงจึงไม่ได้เข้าสู่การเคลื่อนไหวในฐานะผู้ตามเท่านั้น แต่ผ่านเครือข่ายที่สร้างจากชีวิตประจำวัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-cmu-women-traders"
+      ],
+      "linkedEventIds": [
+        "th-2553-political-violence"
+      ],
+      "missingVoices": [
+        "แม่ค้าที่ไม่เข้าร่วม",
+        "สมาชิกครอบครัวที่เห็นต่าง",
+        "ผู้ค้ากลุ่มการเมืองอื่น"
+      ],
+      "openQuestion": "ความขัดแย้งทางการเมืองเปลี่ยนความสัมพันธ์ ลูกค้า และรายได้ในตลาดอย่างไร"
+    },
+    {
+      "id": "mh-2554-flood-households",
+      "period": "2549-2560",
+      "beYear": "2554",
+      "ceYear": "2011",
+      "title": "ครัวเรือนลุ่มเจ้าพระยากับความสามารถฟื้นตัวหลังน้ำท่วม",
+      "location": [
+        "ลุ่มเจ้าพระยา",
+        "ภาคกลาง"
+      ],
+      "groups": [
+        "ครัวเรือนประสบภัย",
+        "แรงงาน",
+        "เกษตรกร",
+        "ผู้ประกอบการรายย่อย"
+      ],
+      "everydayDimensions": [
+        "housing",
+        "income",
+        "mobility",
+        "disaster"
+      ],
+      "fact": "การวิเคราะห์ข้อมูลสำรวจครัวเรือนพบว่าความสามารถในการกลับสู่สภาพเดิมมีความสัมพันธ์กับความสูญเสียทางเศรษฐกิจและรายได้ โดยเฉพาะจังหวัดลุ่มเจ้าพระยาที่ท่วมรุนแรง",
+      "livedExperience": "ความเสียหายไม่ได้จบเมื่อน้ำลด ครัวเรือนที่มีเงินออม งานมั่นคง ที่อยู่อาศัยแข็งแรง หรือเข้าถึงความช่วยเหลือต่างกันใช้เวลาฟื้นตัวไม่เท่ากัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-swurd-flood-households",
+        "src-wb-flood-2554"
+      ],
+      "linkedEventIds": [
+        "th-2554-flood"
+      ],
+      "missingVoices": [
+        "ผู้เช่าบ้าน",
+        "แรงงานโรงงาน",
+        "คนพิการ",
+        "ผู้ไม่มีเอกสารสิทธิ"
+      ],
+      "openQuestion": "หนี้ การหยุดงาน และค่าเช่าที่พักชั่วคราวทำให้การฟื้นตัวต่างกันอย่างไร"
+    },
+    {
+      "id": "mh-2555-minimum-wage-households",
+      "period": "2549-2560",
+      "beYear": "2555-2556",
+      "ceYear": "2012-2013",
+      "title": "ค่าจ้างขั้นต่ำ 300 บาทในงบครัวเรือนแรงงาน",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "แรงงานค่าจ้างต่ำ",
+        "นายจ้างรายย่อย",
+        "ครอบครัวแรงงาน"
+      ],
+      "everydayDimensions": [
+        "wage",
+        "food",
+        "housing",
+        "work-hours"
+      ],
+      "fact": "อัตราค่าจ้างขั้นต่ำ 300 บาทต่อวันขยายครอบคลุมจังหวัดที่เหลือตั้งแต่ 1 มกราคม 2556",
+      "livedExperience": "อัตราตามกฎหมายเพิ่มฐานรายได้ที่คาดหวัง แต่ผลต่อชีวิตขึ้นกับการบังคับใช้ จำนวนวันทำงาน ชั่วโมงล่วงเวลา ราคาสินค้า และสถานะการจ้าง",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-ilo-wage-300"
+      ],
+      "linkedEventIds": [
+        "th-2556-minimum-wage"
+      ],
+      "missingVoices": [
+        "แรงงานนอกระบบ",
+        "แรงงานข้ามชาติ",
+        "ลูกจ้างธุรกิจขนาดเล็ก",
+        "คนทำงานไม่เต็มเวลา"
+      ],
+      "openQuestion": "รายได้สุทธิ ชั่วโมงทำงาน และราคาที่อยู่อาศัยเปลี่ยนจริงอย่างไรในแต่ละจังหวัด"
+    },
+    {
+      "id": "mh-2556-internet-routines",
+      "period": "2549-2560",
+      "beYear": "2556-2560",
+      "ceYear": "2013-2017",
+      "title": "อินเทอร์เน็ตเปลี่ยนการค้นข้อมูล ซื้อขาย และติดต่อของคนไทย",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้ใช้อินเทอร์เน็ต",
+        "เยาวชน",
+        "ผู้ค้าออนไลน์",
+        "ครัวเรือนชนบท"
+      ],
+      "everydayDimensions": [
+        "communication",
+        "information",
+        "commerce",
+        "digital-divide"
+      ],
+      "fact": "ETDA เริ่มสำรวจพฤติกรรมผู้ใช้อินเทอร์เน็ตประจำปีตั้งแต่ พ.ศ. 2556 โดยเก็บข้อมูลประชากร วัตถุประสงค์ ระยะเวลา อุปกรณ์ และปัญหาการใช้งาน",
+      "livedExperience": "อินเทอร์เน็ตเข้าไปอยู่ในกิจวัตรการสื่อสาร ค้นข้อมูล และธุรกรรม แต่ข้อมูลผู้ใช้ไม่ควรถูกใช้แทนประชากรที่ยังเข้าไม่ถึงหรือไม่ตอบแบบสำรวจ",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-etda-internet-profile",
+        "src-un-internet"
+      ],
+      "linkedEventIds": [
+        "th-2550-2560-internet"
+      ],
+      "missingVoices": [
+        "ผู้สูงอายุ",
+        "ผู้มีรายได้น้อย",
+        "หมู่บ้านสัญญาณอ่อน",
+        "ผู้พิการ"
+      ],
+      "openQuestion": "ช่องว่างด้านอุปกรณ์ ทักษะ ค่าใช้จ่าย และคุณภาพสัญญาณต่างกันอย่างไรตามรายได้และพื้นที่"
+    }
   ]
 }

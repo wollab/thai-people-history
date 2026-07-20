@@ -2,14 +2,19 @@
 import { ArrowRight, BookOpen, CalendarDays, CheckCircle2, Clock3, Globe2, Users } from "lucide-astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { periods, stories } from "../data/periods";
-import { events } from "../data/history";
+import { events, microhistories } from "../data/history";
 
 const base = import.meta.env.BASE_URL;
+const periodsWithCounts = periods.map((period) => ({
+  ...period,
+  eventCount: events.filter((event) => event.period === period.range).length,
+  mhCount: microhistories.filter((record) => record.period === period.range).length,
+}));
 ---
 
 <BaseLayout>
   <section class="issue-line container" aria-label="ข้อมูลฉบับ">
-    <span>ปีที่ 1</span><span>ฉบับต้นแบบ</span><span>ปรับปรุง 19 กรกฎาคม 2569</span><span>คลังเรียนรู้ประวัติศาสตร์โดยและเพื่อประชาชน</span>
+    <span>ปีที่ 1</span><span>ฉบับต้นแบบ</span><span>ปรับปรุง 20 กรกฎาคม 2569</span><span>คลังเรียนรู้ประวัติศาสตร์โดยและเพื่อประชาชน</span>
   </section>
 
   <section class="hero container">
@@ -17,7 +22,7 @@ const base = import.meta.env.BASE_URL;
       <p class="eyebrow">คลังความรู้สาธารณะ</p>
       <h1>100 ปีของชีวิต<br />โอกาส ความคิด<br />และการเปลี่ยนแปลง</h1>
       <p class="hero-deck">ร่วมสำรวจเรื่องราวของผู้คน เหตุการณ์ และความคิดที่หล่อหลอมสังคมไทยในรอบศตวรรษ ผ่านเอกสาร ภาพถ่าย เสียง และคำบอกเล่า</p>
-      <a class="primary-action" href={`${base}archive/`}>สำรวจ {events.length} เหตุการณ์ <ArrowRight size={18} /></a>
+      <a class="primary-action" href={`${base}archive/`}>สำรวจ {events.length} เหตุการณ์ และ {microhistories.length} microhistory <ArrowRight size={18} /></a>
     </div>
     <figure class="hero-image">
       <img src={`${base}images/bangkok-1960.jpg`} alt="กรุงเทพฯ ในปี ค.ศ. 1960 ภาพแนวตั้งขาวดำ" />
@@ -54,7 +59,7 @@ const base = import.meta.env.BASE_URL;
       </div>
       <article class="period-focus" aria-live="polite">
         <p class="period-number" data-range>{periods[2].range}</p>
-        <div><h3 data-period-title>{periods[2].title}</h3><p data-period-question>{periods[2].question}</p><a class="period-database-link" data-period-link href={`${base}archive/?period=${periods[2].range}`}>ดูเหตุการณ์ในช่วงนี้ <ArrowRight size={17} /></a></div>
+        <div><h3 data-period-title>{periods[2].title}</h3><p data-period-question>{periods[2].question}</p><a class="period-database-link" data-period-link href={`${base}archive/?period=${periodsWithCounts[2].range}`}>ดูเหตุการณ์ในช่วงนี้ (<span data-period-count>{periodsWithCounts[2].eventCount} เหตุการณ์ · {periodsWithCounts[2].mhCount} microhistory</span>) <ArrowRight size={17} /></a></div>
       </article>
     </div>
   </section>
@@ -94,7 +99,7 @@ const base = import.meta.env.BASE_URL;
     <a class="text-action" href={`${base}method/`}>ดูวิธีทำงาน <ArrowRight size={18} /></a>
   </section>
 
-<script type="application/json" id="period-data" is:inline set:html={JSON.stringify(periods)}></script>
+<script type="application/json" id="period-data" is:inline set:html={JSON.stringify(periodsWithCounts)}></script>
 
 <script is:inline define:vars={{ base }}>
   const periodsData = JSON.parse(document.querySelector("#period-data")?.textContent ?? "[]");
@@ -110,6 +115,7 @@ const base = import.meta.env.BASE_URL;
       timeline.querySelector("[data-thai]").textContent = period.thai;
       timeline.querySelector("[data-world]").textContent = period.world;
       timeline.querySelector("[data-period-link]").href = `${base}archive/?period=${period.range}`;
+      timeline.querySelector("[data-period-count]").textContent = `${period.eventCount} เหตุการณ์ · ${period.mhCount} microhistory`;
     }));
   </script>
 </BaseLayout>

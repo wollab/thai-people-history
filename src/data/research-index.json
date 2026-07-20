@@ -1,0 +1,1592 @@
+{
+  "meta": {
+    "title": "Thai People History Research Index",
+    "version": "0.1.0",
+    "updated": "2026-07-19",
+    "derivedFrom": "09_event_database.json",
+    "derivedFromVersion": "0.3.1",
+    "generator": "scripts/build_research_index.mjs",
+    "rule": "ไฟล์นี้เป็นดัชนีอนุพันธ์ ห้ามแก้แทนฐานข้อมูลหลัก"
+  },
+  "taxonomies": {
+    "macroThemes": [
+      {
+        "id": "state-everyday",
+        "label": "รัฐในชีวิตประจำวัน",
+        "question": "รัฐเข้าถึง ควบคุม หรือให้บริการประชาชนผ่านอะไร"
+      },
+      {
+        "id": "economy-opportunity",
+        "label": "เศรษฐกิจและโอกาส",
+        "question": "รายได้ งาน ทรัพย์สิน และความเสี่ยงถูกกระจายอย่างไร"
+      },
+      {
+        "id": "rural-urban",
+        "label": "ชนบท เมือง และการย้ายถิ่น",
+        "question": "พื้นที่และการเคลื่อนย้ายเปลี่ยนครอบครัวและอาชีพอย่างไร"
+      },
+      {
+        "id": "education-media",
+        "label": "การศึกษา สื่อ และจินตนาการ",
+        "question": "คนเรียนรู้ เชื่อ ฝัน และสื่อสารผ่านอะไร"
+      },
+      {
+        "id": "movements-civil-society",
+        "label": "ขบวนการประชาชนและประชาสังคม",
+        "question": "ผู้คนรวมตัวและต่อรองอำนาจอย่างไร"
+      },
+      {
+        "id": "identity-belonging",
+        "label": "อัตลักษณ์ ความเชื่อ และการเป็นส่วนหนึ่ง",
+        "question": "ใครถูกนับรวม ถูกกันออก หรือกำหนดบทบาทอย่างไร"
+      },
+      {
+        "id": "institutions-long-term",
+        "label": "สถาบันและผลระยะยาว",
+        "question": "กฎหมาย นโยบาย และสถาบันทิ้งผลต่อโอกาสอย่างไร"
+      }
+    ],
+    "mechanisms": [
+      {
+        "id": "policy-law",
+        "label": "กฎหมายและนโยบาย"
+      },
+      {
+        "id": "war-security",
+        "label": "สงครามและความมั่นคง"
+      },
+      {
+        "id": "market-shock",
+        "label": "วิกฤตและแรงกระแทกตลาด"
+      },
+      {
+        "id": "infrastructure",
+        "label": "โครงสร้างพื้นฐาน"
+      },
+      {
+        "id": "institution-expansion",
+        "label": "การขยายสถาบันและบริการ"
+      },
+      {
+        "id": "media-ideas",
+        "label": "สื่อและการหมุนเวียนความคิด"
+      },
+      {
+        "id": "collective-action",
+        "label": "การรวมตัวและต่อรอง"
+      },
+      {
+        "id": "migration-mobility",
+        "label": "การย้ายถิ่นและการเคลื่อนที่"
+      },
+      {
+        "id": "industrialization",
+        "label": "อุตสาหกรรมและการเปลี่ยนงาน"
+      },
+      {
+        "id": "welfare-service",
+        "label": "สวัสดิการและบริการสาธารณะ"
+      },
+      {
+        "id": "technology",
+        "label": "เทคโนโลยีและแพลตฟอร์ม"
+      },
+      {
+        "id": "environment-disaster",
+        "label": "สิ่งแวดล้อมและภัยพิบัติ"
+      }
+    ],
+    "regions": [
+      {
+        "id": "bangkok",
+        "label": "กรุงเทพฯ"
+      },
+      {
+        "id": "central",
+        "label": "ภาคกลาง"
+      },
+      {
+        "id": "north",
+        "label": "ภาคเหนือ"
+      },
+      {
+        "id": "northeast",
+        "label": "ภาคอีสาน"
+      },
+      {
+        "id": "east",
+        "label": "ภาคตะวันออก"
+      },
+      {
+        "id": "south",
+        "label": "ภาคใต้"
+      },
+      {
+        "id": "nationwide",
+        "label": "ทั่วประเทศ"
+      },
+      {
+        "id": "multi-region",
+        "label": "หลายภูมิภาค"
+      },
+      {
+        "id": "international",
+        "label": "ต่างประเทศ"
+      }
+    ],
+    "groupCategories": [
+      {
+        "id": "children-youth",
+        "label": "เด็กและเยาวชน"
+      },
+      {
+        "id": "students-educators",
+        "label": "นักเรียน นักศึกษา และครู"
+      },
+      {
+        "id": "women-gender",
+        "label": "ผู้หญิงและความสัมพันธ์ทางเพศ"
+      },
+      {
+        "id": "workers",
+        "label": "แรงงานและลูกจ้าง"
+      },
+      {
+        "id": "farmers-rural",
+        "label": "เกษตรกรและครัวเรือนชนบท"
+      },
+      {
+        "id": "migrants",
+        "label": "ผู้ย้ายถิ่นและแรงงานข้ามชาติ"
+      },
+      {
+        "id": "ethnic-religious",
+        "label": "กลุ่มชาติพันธุ์และศาสนา"
+      },
+      {
+        "id": "patients-caregivers",
+        "label": "ผู้ป่วย ผู้พิการ และผู้ดูแล"
+      },
+      {
+        "id": "traders-small-business",
+        "label": "ผู้ค้าและผู้ประกอบการรายย่อย"
+      },
+      {
+        "id": "families-households",
+        "label": "ครอบครัวและครัวเรือน"
+      },
+      {
+        "id": "professionals-officials",
+        "label": "วิชาชีพและเจ้าหน้าที่"
+      },
+      {
+        "id": "movement-members",
+        "label": "สมาชิกขบวนการและนักกิจกรรม"
+      }
+    ],
+    "evidenceStatuses": [
+      {
+        "id": "documented-case",
+        "label": "มีหลักฐานกรณีชีวิตประชาชน",
+        "publicationUse": "ใช้เขียนกรณีศึกษาได้โดยรักษาข้อจำกัดของแหล่ง"
+      },
+      {
+        "id": "contextual-lead",
+        "label": "มีหลักฐานบริบท",
+        "publicationUse": "ใช้ตั้งคำถามและวางบริบท ห้ามเติมประสบการณ์เฉพาะบุคคล"
+      },
+      {
+        "id": "research-lead",
+        "label": "หัวข้อรอหลักฐานชีวิต",
+        "publicationUse": "ใช้เป็น backlog เท่านั้น"
+      }
+    ]
+  },
+  "microhistoryFacets": {
+    "mh-2460-university-access": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "education-media",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "bangkok"
+      ],
+      "groupCategoryIds": [
+        "students-educators",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2460-war-volunteer-families": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "state-everyday",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "bangkok",
+        "international"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "families-households"
+      ],
+      "evidenceStatus": "research-lead"
+    },
+    "mh-2464-compulsory-school": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "state-everyday",
+        "education-media",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "students-educators",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2468-satri-thai-readers": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "education-media",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "media-ideas"
+      ],
+      "regionIds": [
+        "bangkok"
+      ],
+      "groupCategoryIds": [
+        "women-gender"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2472-rice-households": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban"
+      ],
+      "mechanismIds": [
+        "market-shock"
+      ],
+      "regionIds": [
+        "central",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2482-cultural-mandates": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "state-everyday",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "media-ideas"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2484-bangkoknoi-war": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "state-everyday",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "war-security"
+      ],
+      "regionIds": [
+        "bangkok"
+      ],
+      "groupCategoryIds": [
+        "families-households",
+        "traders-small-business"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2484-wartime-shortages": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "state-everyday"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "market-shock"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "farmers-rural",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2484-women-wartime": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "identity-belonging",
+        "state-everyday"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "policy-law"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2485-free-thai-networks": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "movements-civil-society",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "collective-action"
+      ],
+      "regionIds": [
+        "multi-region",
+        "international"
+      ],
+      "groupCategoryIds": [
+        "movement-members",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2500-working-women": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "industrialization",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "bangkok"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "workers",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2504-isan-roads-migration": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "rural-urban",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "infrastructure",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "northeast",
+        "bangkok"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "migrants",
+        "traders-small-business",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2507-base-towns": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "industrialization",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "northeast"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "women-gender",
+        "traders-small-business",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2508-family-size-regions": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "state-everyday",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "welfare-service",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "north",
+        "northeast",
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "children-youth",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2515-higher-education-expansion": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "education-media",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "institution-expansion",
+        "media-ideas"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "students-educators",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2516-women-media-citizenship": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "education-media",
+        "identity-belonging",
+        "movements-civil-society"
+      ],
+      "mechanismIds": [
+        "media-ideas",
+        "collective-action"
+      ],
+      "regionIds": [
+        "bangkok"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "movement-members"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2517-farmer-federation": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "movements-civil-society"
+      ],
+      "mechanismIds": [
+        "collective-action",
+        "policy-law"
+      ],
+      "regionIds": [
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "movement-members",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2519-southern-women-cpt": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "identity-belonging",
+        "movements-civil-society"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "media-ideas",
+        "collective-action"
+      ],
+      "regionIds": [
+        "south"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "movement-members",
+        "ethnic-religious"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2523-sanpong-agrarian-change": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban"
+      ],
+      "mechanismIds": [
+        "market-shock",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "north"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "workers",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2525-eastern-seaboard-workers": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "rural-urban",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "infrastructure",
+        "industrialization",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "east"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "migrants",
+        "farmers-rural",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2534-pakmun-livelihoods": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "movements-civil-society"
+      ],
+      "mechanismIds": [
+        "environment-disaster",
+        "collective-action",
+        "infrastructure"
+      ],
+      "regionIds": [
+        "northeast"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "movement-members",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2540-workers-crisis": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban"
+      ],
+      "mechanismIds": [
+        "market-shock",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "migrants",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2540-pateung-karen-migration": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "rural-urban",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "migration-mobility",
+        "market-shock"
+      ],
+      "regionIds": [
+        "north"
+      ],
+      "groupCategoryIds": [
+        "migrants",
+        "ethnic-religious",
+        "children-youth",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2544-village-fund-households": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "traders-small-business",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2545-uhc-patients": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "welfare-service",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "patients-caregivers",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2550-migrant-workers-rights": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban",
+        "identity-belonging",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "migration-mobility",
+        "policy-law",
+        "industrialization"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "migrants",
+        "ethnic-religious",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2552-women-traders-politics": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "movements-civil-society",
+        "identity-belonging",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "collective-action",
+        "media-ideas"
+      ],
+      "regionIds": [
+        "north"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "traders-small-business",
+        "movement-members"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2554-flood-households": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "state-everyday"
+      ],
+      "mechanismIds": [
+        "environment-disaster",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "central"
+      ],
+      "groupCategoryIds": [
+        "families-households",
+        "workers",
+        "farmers-rural",
+        "traders-small-business"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2555-minimum-wage-households": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "industrialization"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "migrants",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2556-internet-routines": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "education-media",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "technology",
+        "media-ideas"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "traders-small-business",
+        "families-households",
+        "patients-caregivers"
+      ],
+      "evidenceStatus": "documented-case"
+    }
+  },
+  "indexes": {
+    "byPeriod": {
+      "2460-2475": [
+        "mh-2460-university-access",
+        "mh-2460-war-volunteer-families",
+        "mh-2464-compulsory-school",
+        "mh-2468-satri-thai-readers",
+        "mh-2472-rice-households"
+      ],
+      "2475-2500": [
+        "mh-2482-cultural-mandates",
+        "mh-2484-bangkoknoi-war",
+        "mh-2484-wartime-shortages",
+        "mh-2484-women-wartime",
+        "mh-2485-free-thai-networks"
+      ],
+      "2500-2516": [
+        "mh-2500-working-women",
+        "mh-2504-isan-roads-migration",
+        "mh-2507-base-towns",
+        "mh-2508-family-size-regions",
+        "mh-2515-higher-education-expansion"
+      ],
+      "2516-2535": [
+        "mh-2516-women-media-citizenship",
+        "mh-2517-farmer-federation",
+        "mh-2519-southern-women-cpt",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2525-eastern-seaboard-workers"
+      ],
+      "2535-2549": [
+        "mh-2534-pakmun-livelihoods",
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration",
+        "mh-2544-village-fund-households",
+        "mh-2545-uhc-patients"
+      ],
+      "2549-2560": [
+        "mh-2550-migrant-workers-rights",
+        "mh-2552-women-traders-politics",
+        "mh-2554-flood-households",
+        "mh-2555-minimum-wage-households",
+        "mh-2556-internet-routines"
+      ]
+    },
+    "byMacroTheme": {
+      "education-media": [
+        "mh-2460-university-access",
+        "mh-2464-compulsory-school",
+        "mh-2468-satri-thai-readers",
+        "mh-2515-higher-education-expansion",
+        "mh-2516-women-media-citizenship",
+        "mh-2556-internet-routines"
+      ],
+      "institutions-long-term": [
+        "mh-2460-university-access",
+        "mh-2464-compulsory-school",
+        "mh-2515-higher-education-expansion",
+        "mh-2544-village-fund-households",
+        "mh-2545-uhc-patients",
+        "mh-2550-migrant-workers-rights",
+        "mh-2555-minimum-wage-households"
+      ],
+      "state-everyday": [
+        "mh-2460-war-volunteer-families",
+        "mh-2464-compulsory-school",
+        "mh-2482-cultural-mandates",
+        "mh-2484-bangkoknoi-war",
+        "mh-2484-wartime-shortages",
+        "mh-2484-women-wartime",
+        "mh-2508-family-size-regions",
+        "mh-2545-uhc-patients",
+        "mh-2554-flood-households"
+      ],
+      "identity-belonging": [
+        "mh-2460-war-volunteer-families",
+        "mh-2468-satri-thai-readers",
+        "mh-2482-cultural-mandates",
+        "mh-2484-women-wartime",
+        "mh-2485-free-thai-networks",
+        "mh-2500-working-women",
+        "mh-2507-base-towns",
+        "mh-2508-family-size-regions",
+        "mh-2516-women-media-citizenship",
+        "mh-2519-southern-women-cpt",
+        "mh-2540-pateung-karen-migration",
+        "mh-2550-migrant-workers-rights",
+        "mh-2552-women-traders-politics"
+      ],
+      "economy-opportunity": [
+        "mh-2472-rice-households",
+        "mh-2484-bangkoknoi-war",
+        "mh-2484-wartime-shortages",
+        "mh-2500-working-women",
+        "mh-2504-isan-roads-migration",
+        "mh-2507-base-towns",
+        "mh-2517-farmer-federation",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2534-pakmun-livelihoods",
+        "mh-2540-workers-crisis",
+        "mh-2544-village-fund-households",
+        "mh-2550-migrant-workers-rights",
+        "mh-2552-women-traders-politics",
+        "mh-2554-flood-households",
+        "mh-2555-minimum-wage-households",
+        "mh-2556-internet-routines"
+      ],
+      "rural-urban": [
+        "mh-2472-rice-households",
+        "mh-2504-isan-roads-migration",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration",
+        "mh-2550-migrant-workers-rights"
+      ],
+      "movements-civil-society": [
+        "mh-2485-free-thai-networks",
+        "mh-2516-women-media-citizenship",
+        "mh-2517-farmer-federation",
+        "mh-2519-southern-women-cpt",
+        "mh-2534-pakmun-livelihoods",
+        "mh-2552-women-traders-politics"
+      ]
+    },
+    "byMechanism": {
+      "institution-expansion": [
+        "mh-2460-university-access",
+        "mh-2464-compulsory-school",
+        "mh-2500-working-women",
+        "mh-2508-family-size-regions",
+        "mh-2515-higher-education-expansion",
+        "mh-2545-uhc-patients"
+      ],
+      "war-security": [
+        "mh-2460-war-volunteer-families",
+        "mh-2484-bangkoknoi-war",
+        "mh-2484-wartime-shortages",
+        "mh-2484-women-wartime",
+        "mh-2485-free-thai-networks",
+        "mh-2507-base-towns",
+        "mh-2519-southern-women-cpt"
+      ],
+      "migration-mobility": [
+        "mh-2460-war-volunteer-families",
+        "mh-2504-isan-roads-migration",
+        "mh-2507-base-towns",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration",
+        "mh-2550-migrant-workers-rights"
+      ],
+      "policy-law": [
+        "mh-2464-compulsory-school",
+        "mh-2482-cultural-mandates",
+        "mh-2484-women-wartime",
+        "mh-2517-farmer-federation",
+        "mh-2544-village-fund-households",
+        "mh-2550-migrant-workers-rights",
+        "mh-2555-minimum-wage-households"
+      ],
+      "media-ideas": [
+        "mh-2468-satri-thai-readers",
+        "mh-2482-cultural-mandates",
+        "mh-2515-higher-education-expansion",
+        "mh-2516-women-media-citizenship",
+        "mh-2519-southern-women-cpt",
+        "mh-2552-women-traders-politics",
+        "mh-2556-internet-routines"
+      ],
+      "market-shock": [
+        "mh-2472-rice-households",
+        "mh-2484-wartime-shortages",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration"
+      ],
+      "collective-action": [
+        "mh-2485-free-thai-networks",
+        "mh-2516-women-media-citizenship",
+        "mh-2517-farmer-federation",
+        "mh-2519-southern-women-cpt",
+        "mh-2534-pakmun-livelihoods",
+        "mh-2552-women-traders-politics"
+      ],
+      "industrialization": [
+        "mh-2500-working-women",
+        "mh-2507-base-towns",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2550-migrant-workers-rights",
+        "mh-2555-minimum-wage-households"
+      ],
+      "infrastructure": [
+        "mh-2504-isan-roads-migration",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2534-pakmun-livelihoods"
+      ],
+      "welfare-service": [
+        "mh-2508-family-size-regions",
+        "mh-2544-village-fund-households",
+        "mh-2545-uhc-patients",
+        "mh-2554-flood-households"
+      ],
+      "environment-disaster": [
+        "mh-2534-pakmun-livelihoods",
+        "mh-2554-flood-households"
+      ],
+      "technology": [
+        "mh-2556-internet-routines"
+      ]
+    },
+    "byRegion": {
+      "bangkok": [
+        "mh-2460-university-access",
+        "mh-2460-war-volunteer-families",
+        "mh-2468-satri-thai-readers",
+        "mh-2484-bangkoknoi-war",
+        "mh-2484-wartime-shortages",
+        "mh-2500-working-women",
+        "mh-2504-isan-roads-migration",
+        "mh-2515-higher-education-expansion",
+        "mh-2516-women-media-citizenship",
+        "mh-2540-workers-crisis",
+        "mh-2550-migrant-workers-rights"
+      ],
+      "international": [
+        "mh-2460-war-volunteer-families",
+        "mh-2485-free-thai-networks"
+      ],
+      "nationwide": [
+        "mh-2464-compulsory-school",
+        "mh-2482-cultural-mandates",
+        "mh-2484-women-wartime",
+        "mh-2508-family-size-regions",
+        "mh-2544-village-fund-households",
+        "mh-2545-uhc-patients",
+        "mh-2555-minimum-wage-households",
+        "mh-2556-internet-routines"
+      ],
+      "central": [
+        "mh-2472-rice-households",
+        "mh-2554-flood-households"
+      ],
+      "multi-region": [
+        "mh-2472-rice-households",
+        "mh-2484-wartime-shortages",
+        "mh-2485-free-thai-networks",
+        "mh-2515-higher-education-expansion",
+        "mh-2517-farmer-federation",
+        "mh-2540-workers-crisis",
+        "mh-2550-migrant-workers-rights"
+      ],
+      "northeast": [
+        "mh-2504-isan-roads-migration",
+        "mh-2507-base-towns",
+        "mh-2508-family-size-regions",
+        "mh-2534-pakmun-livelihoods"
+      ],
+      "north": [
+        "mh-2508-family-size-regions",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2540-pateung-karen-migration",
+        "mh-2552-women-traders-politics"
+      ],
+      "south": [
+        "mh-2519-southern-women-cpt"
+      ],
+      "east": [
+        "mh-2525-eastern-seaboard-workers"
+      ]
+    },
+    "byGroupCategory": {
+      "students-educators": [
+        "mh-2460-university-access",
+        "mh-2464-compulsory-school",
+        "mh-2515-higher-education-expansion"
+      ],
+      "families-households": [
+        "mh-2460-university-access",
+        "mh-2460-war-volunteer-families",
+        "mh-2464-compulsory-school",
+        "mh-2472-rice-households",
+        "mh-2482-cultural-mandates",
+        "mh-2484-bangkoknoi-war",
+        "mh-2484-wartime-shortages",
+        "mh-2484-women-wartime",
+        "mh-2485-free-thai-networks",
+        "mh-2500-working-women",
+        "mh-2504-isan-roads-migration",
+        "mh-2507-base-towns",
+        "mh-2508-family-size-regions",
+        "mh-2515-higher-education-expansion",
+        "mh-2517-farmer-federation",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2534-pakmun-livelihoods",
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration",
+        "mh-2544-village-fund-households",
+        "mh-2545-uhc-patients",
+        "mh-2550-migrant-workers-rights",
+        "mh-2554-flood-households",
+        "mh-2555-minimum-wage-households",
+        "mh-2556-internet-routines"
+      ],
+      "workers": [
+        "mh-2460-war-volunteer-families",
+        "mh-2484-wartime-shortages",
+        "mh-2500-working-women",
+        "mh-2507-base-towns",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2540-workers-crisis",
+        "mh-2550-migrant-workers-rights",
+        "mh-2554-flood-households",
+        "mh-2555-minimum-wage-households"
+      ],
+      "children-youth": [
+        "mh-2464-compulsory-school",
+        "mh-2508-family-size-regions",
+        "mh-2515-higher-education-expansion",
+        "mh-2540-pateung-karen-migration",
+        "mh-2556-internet-routines"
+      ],
+      "women-gender": [
+        "mh-2468-satri-thai-readers",
+        "mh-2484-women-wartime",
+        "mh-2500-working-women",
+        "mh-2507-base-towns",
+        "mh-2508-family-size-regions",
+        "mh-2516-women-media-citizenship",
+        "mh-2519-southern-women-cpt",
+        "mh-2552-women-traders-politics"
+      ],
+      "farmers-rural": [
+        "mh-2472-rice-households",
+        "mh-2484-wartime-shortages",
+        "mh-2504-isan-roads-migration",
+        "mh-2517-farmer-federation",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2534-pakmun-livelihoods",
+        "mh-2544-village-fund-households",
+        "mh-2554-flood-households"
+      ],
+      "professionals-officials": [
+        "mh-2482-cultural-mandates",
+        "mh-2508-family-size-regions",
+        "mh-2545-uhc-patients"
+      ],
+      "traders-small-business": [
+        "mh-2484-bangkoknoi-war",
+        "mh-2504-isan-roads-migration",
+        "mh-2507-base-towns",
+        "mh-2544-village-fund-households",
+        "mh-2552-women-traders-politics",
+        "mh-2554-flood-households",
+        "mh-2556-internet-routines"
+      ],
+      "movement-members": [
+        "mh-2485-free-thai-networks",
+        "mh-2516-women-media-citizenship",
+        "mh-2517-farmer-federation",
+        "mh-2519-southern-women-cpt",
+        "mh-2534-pakmun-livelihoods",
+        "mh-2552-women-traders-politics"
+      ],
+      "migrants": [
+        "mh-2504-isan-roads-migration",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration",
+        "mh-2550-migrant-workers-rights",
+        "mh-2555-minimum-wage-households"
+      ],
+      "ethnic-religious": [
+        "mh-2519-southern-women-cpt",
+        "mh-2540-pateung-karen-migration",
+        "mh-2550-migrant-workers-rights"
+      ],
+      "patients-caregivers": [
+        "mh-2545-uhc-patients",
+        "mh-2556-internet-routines"
+      ]
+    },
+    "byEvidenceStatus": {
+      "contextual-lead": [
+        "mh-2460-university-access",
+        "mh-2464-compulsory-school",
+        "mh-2482-cultural-mandates",
+        "mh-2485-free-thai-networks",
+        "mh-2515-higher-education-expansion",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2544-village-fund-households",
+        "mh-2555-minimum-wage-households"
+      ],
+      "research-lead": [
+        "mh-2460-war-volunteer-families"
+      ],
+      "documented-case": [
+        "mh-2468-satri-thai-readers",
+        "mh-2472-rice-households",
+        "mh-2484-bangkoknoi-war",
+        "mh-2484-wartime-shortages",
+        "mh-2484-women-wartime",
+        "mh-2500-working-women",
+        "mh-2504-isan-roads-migration",
+        "mh-2507-base-towns",
+        "mh-2508-family-size-regions",
+        "mh-2516-women-media-citizenship",
+        "mh-2517-farmer-federation",
+        "mh-2519-southern-women-cpt",
+        "mh-2523-sanpong-agrarian-change",
+        "mh-2534-pakmun-livelihoods",
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration",
+        "mh-2545-uhc-patients",
+        "mh-2550-migrant-workers-rights",
+        "mh-2552-women-traders-politics",
+        "mh-2554-flood-households",
+        "mh-2556-internet-routines"
+      ]
+    },
+    "bySourceFamily": {
+      "archive-primary": [
+        "src-frus-ww1",
+        "src-national-archives-mandates",
+        "src-cia-free-thai",
+        "src-frus-bases",
+        "src-nrct-14oct",
+        "src-doct6",
+        "src-mfa-ncpo"
+      ],
+      "state-official": [
+        "src-moe-history",
+        "src-chula-history",
+        "src-parliament-2475",
+        "src-parliament-constitution-2475",
+        "src-un-thailand",
+        "src-state-seato",
+        "src-parliament-history",
+        "src-nesdc-plans",
+        "src-asean-history",
+        "src-ops-highered",
+        "src-ilo-labour-2518",
+        "src-ago-oct6-case",
+        "src-parliament-may-1992",
+        "src-wto-thailand",
+        "src-bot-2540",
+        "src-imf-2540",
+        "src-parliament-constitution-2540",
+        "src-education-act-2542",
+        "src-who-uhc",
+        "src-parliament-constitution-2549",
+        "src-ilo-wage-300",
+        "src-asean-aec",
+        "src-parliament-constitution-2560",
+        "src-un-internet",
+        "src-etda-internet-profile"
+      ],
+      "academic-analysis": [
+        "src-mfa-treaties",
+        "src-order-66-study",
+        "src-trct-2010",
+        "src-jts-satri-thai",
+        "src-oxford-ww2-impact",
+        "src-jsn-women-ww2",
+        "src-chula-working-women",
+        "src-claremont-base-towns",
+        "src-jss-women-media-2516",
+        "src-jss-farmer-movement",
+        "src-jssnu-women-cpt-south"
+      ],
+      "international-institutional": [
+        "src-wb-depression",
+        "src-wb-eastern-seaboard",
+        "src-wb-village-fund",
+        "src-wb-tsunami",
+        "src-wb-gfc",
+        "src-wb-flood-2554",
+        "src-wb-isan-roads",
+        "src-wb-population-1978",
+        "src-wb-workers-crisis"
+      ],
+      "lived-fieldwork": [
+        "src-silpakorn-bangkoknoi-ww2",
+        "src-cmu-sanpong",
+        "src-kbu-karen-migration",
+        "src-nida-pakmun",
+        "src-cmu-women-traders",
+        "src-swurd-flood-households",
+        "src-sjij-migrant-workers"
+      ]
+    }
+  },
+  "coverage": {
+    "periodMacroTheme": {
+      "2460-2475": {
+        "state-everyday": 2,
+        "economy-opportunity": 1,
+        "rural-urban": 1,
+        "education-media": 3,
+        "movements-civil-society": 0,
+        "identity-belonging": 2,
+        "institutions-long-term": 2
+      },
+      "2475-2500": {
+        "state-everyday": 4,
+        "economy-opportunity": 2,
+        "rural-urban": 0,
+        "education-media": 0,
+        "movements-civil-society": 1,
+        "identity-belonging": 3,
+        "institutions-long-term": 0
+      },
+      "2500-2516": {
+        "state-everyday": 1,
+        "economy-opportunity": 3,
+        "rural-urban": 1,
+        "education-media": 1,
+        "movements-civil-society": 0,
+        "identity-belonging": 3,
+        "institutions-long-term": 1
+      },
+      "2516-2535": {
+        "state-everyday": 0,
+        "economy-opportunity": 3,
+        "rural-urban": 2,
+        "education-media": 1,
+        "movements-civil-society": 3,
+        "identity-belonging": 2,
+        "institutions-long-term": 0
+      },
+      "2535-2549": {
+        "state-everyday": 1,
+        "economy-opportunity": 3,
+        "rural-urban": 2,
+        "education-media": 0,
+        "movements-civil-society": 1,
+        "identity-belonging": 1,
+        "institutions-long-term": 2
+      },
+      "2549-2560": {
+        "state-everyday": 1,
+        "economy-opportunity": 5,
+        "rural-urban": 1,
+        "education-media": 1,
+        "movements-civil-society": 1,
+        "identity-belonging": 2,
+        "institutions-long-term": 2
+      }
+    },
+    "sourceFamilyCounts": {
+      "archive-primary": 7,
+      "state-official": 25,
+      "academic-analysis": 11,
+      "international-institutional": 9,
+      "lived-fieldwork": 7
+    },
+    "eventToMicrohistories": {
+      "th-2460-chulalongkorn-university": [
+        "mh-2460-university-access"
+      ],
+      "th-2460-ww1": [
+        "mh-2460-war-volunteer-families"
+      ],
+      "th-2464-compulsory-education": [
+        "mh-2464-compulsory-school"
+      ],
+      "th-2472-depression": [
+        "mh-2472-rice-households"
+      ],
+      "th-2482-name-and-mandates": [
+        "mh-2482-cultural-mandates"
+      ],
+      "th-2484-pacific-war": [
+        "mh-2484-bangkoknoi-war",
+        "mh-2484-wartime-shortages",
+        "mh-2484-women-wartime"
+      ],
+      "th-2485-free-thai": [
+        "mh-2485-free-thai-networks"
+      ],
+      "th-2504-first-plan": [
+        "mh-2500-working-women",
+        "mh-2504-isan-roads-migration"
+      ],
+      "th-2508-us-bases": [
+        "mh-2507-base-towns"
+      ],
+      "th-2515-higher-education-bureau": [
+        "mh-2515-higher-education-expansion"
+      ],
+      "th-2516-october-14": [
+        "mh-2515-higher-education-expansion",
+        "mh-2516-women-media-citizenship",
+        "mh-2517-farmer-federation"
+      ],
+      "th-2519-october-6": [
+        "mh-2519-southern-women-cpt"
+      ],
+      "th-2523-order-66": [
+        "mh-2519-southern-women-cpt"
+      ],
+      "th-2525-eastern-seaboard": [
+        "mh-2525-eastern-seaboard-workers"
+      ],
+      "th-2540-financial-crisis": [
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration"
+      ],
+      "th-2544-village-fund": [
+        "mh-2544-village-fund-households"
+      ],
+      "th-2545-universal-health": [
+        "mh-2545-uhc-patients"
+      ],
+      "th-2553-political-violence": [
+        "mh-2552-women-traders-politics"
+      ],
+      "th-2554-flood": [
+        "mh-2554-flood-households"
+      ],
+      "th-2556-minimum-wage": [
+        "mh-2555-minimum-wage-households"
+      ],
+      "th-2550-2560-internet": [
+        "mh-2556-internet-routines"
+      ]
+    },
+    "eventsWithoutMicrohistory": [
+      "th-2468-treaty-revision",
+      "th-2475-revolution",
+      "th-2475-constitution",
+      "th-2489-un-membership",
+      "th-2497-seato",
+      "th-2501-authoritarian-charter",
+      "th-2510-asean",
+      "th-2518-labour-relations",
+      "th-2528-export-boom",
+      "th-2535-black-may",
+      "th-2538-wto",
+      "th-2540-constitution",
+      "th-2542-education-act",
+      "th-2547-tsunami",
+      "th-2549-coup",
+      "th-2551-global-crisis",
+      "th-2557-coup",
+      "th-2558-aec",
+      "th-2560-constitution"
+    ],
+    "microhistoriesWithoutEvent": [
+      "mh-2468-satri-thai-readers",
+      "mh-2508-family-size-regions",
+      "mh-2523-sanpong-agrarian-change",
+      "mh-2534-pakmun-livelihoods",
+      "mh-2550-migrant-workers-rights"
+    ],
+    "singleSourceSensitiveEvents": [
+      "th-2501-authoritarian-charter",
+      "th-2516-october-14",
+      "th-2535-black-may",
+      "th-2553-political-violence",
+      "th-2557-coup"
+    ]
+  },
+  "patterns": [
+    {
+      "id": "pat-01-state-through-daily-systems",
+      "status": "working-pattern",
+      "title": "รัฐเข้าถึงประชาชนผ่านระบบประจำวัน",
+      "statement": "โรงเรียน การแต่งกาย การวางแผนครอบครัว สินเชื่อ สุขภาพ และค่าจ้างทำให้นโยบายรัฐปรากฏในกิจวัตร แต่ผลขึ้นกับการเข้าถึงและการบังคับใช้",
+      "evidenceIds": [
+        "mh-2464-compulsory-school",
+        "mh-2482-cultural-mandates",
+        "mh-2508-family-size-regions",
+        "mh-2544-village-fund-households",
+        "mh-2545-uhc-patients",
+        "mh-2555-minimum-wage-households"
+      ],
+      "counterEvidenceNeeded": "กรณีไม่ปฏิบัติตาม ผู้ถูกกีดกัน และพื้นที่ที่บริการไปไม่ถึง"
+    },
+    {
+      "id": "pat-02-infrastructure-opportunity-cost",
+      "status": "working-pattern",
+      "title": "โครงสร้างพื้นฐานเปิดโอกาสพร้อมสร้างต้นทุนใหม่",
+      "statement": "ถนน ฐานทัพ นิคม และเขื่อนสร้างงาน ตลาด และการเดินทาง พร้อมเปลี่ยนที่ดิน ที่อยู่อาศัย สิ่งแวดล้อม และความสัมพันธ์ของชุมชน",
+      "evidenceIds": [
+        "mh-2504-isan-roads-migration",
+        "mh-2507-base-towns",
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2534-pakmun-livelihoods"
+      ],
+      "counterEvidenceNeeded": "ชุมชนที่ได้ประโยชน์โดยไม่มีการย้ายถิ่น และชุมชนที่ปฏิเสธโครงการ"
+    },
+    {
+      "id": "pat-03-households-absorb-shocks",
+      "status": "working-pattern",
+      "title": "ครัวเรือนเป็นกลไกรับแรงกระแทก",
+      "statement": "เมื่อเกิดราคาพืชผลตกต่ำ สงคราม วิกฤตการเงิน หรือภัยพิบัติ ครัวเรือนใช้หนี้ การแบ่งงาน การย้ายถิ่น เงินออม และการกลับชนบทเพื่อพยุงชีวิต",
+      "evidenceIds": [
+        "mh-2472-rice-households",
+        "mh-2484-wartime-shortages",
+        "mh-2540-workers-crisis",
+        "mh-2540-pateung-karen-migration",
+        "mh-2554-flood-households"
+      ],
+      "counterEvidenceNeeded": "ครัวเรือนที่แตกสลาย ผู้ไม่มีเครือญาติ และผู้ที่รัฐช่วยได้ทันเวลา"
+    },
+    {
+      "id": "pat-04-gender-opportunity-double-burden",
+      "status": "working-pattern",
+      "title": "พื้นที่ใหม่ของผู้หญิงมาพร้อมภาระและการควบคุมเดิม",
+      "statement": "สื่อ งาน การศึกษา สงคราม ตลาด และขบวนการเปิดบทบาทสาธารณะแก่ผู้หญิง แต่ความคาดหวังด้านครอบครัว ศีลธรรม และงานดูแลยังจำกัดอำนาจ",
+      "evidenceIds": [
+        "mh-2468-satri-thai-readers",
+        "mh-2484-women-wartime",
+        "mh-2500-working-women",
+        "mh-2516-women-media-citizenship",
+        "mh-2519-southern-women-cpt",
+        "mh-2552-women-traders-politics"
+      ],
+      "counterEvidenceNeeded": "ผู้หญิงต่างชนชั้น ศาสนา ชาติพันธุ์ และผู้หญิงที่ไม่ยอมรับกรอบนักเคลื่อนไหว"
+    },
+    {
+      "id": "pat-05-everyday-networks-to-movements",
+      "status": "working-pattern",
+      "title": "ขบวนการเติบโตจากเครือข่ายชีวิตประจำวัน",
+      "statement": "สื่อ ตลาด เครือญาติ เครือข่ายอาชีพ และการใช้ทรัพยากรร่วมกันเป็นฐานให้ผู้คนสร้างความไว้ใจและรวมตัวทางการเมือง",
+      "evidenceIds": [
+        "mh-2468-satri-thai-readers",
+        "mh-2485-free-thai-networks",
+        "mh-2517-farmer-federation",
+        "mh-2534-pakmun-livelihoods",
+        "mh-2552-women-traders-politics"
+      ],
+      "counterEvidenceNeeded": "เครือข่ายเดียวกันที่เลือกไม่เข้าร่วม เห็นต่าง หรือแตกตัว"
+    },
+    {
+      "id": "pat-06-formal-rights-uneven-access",
+      "status": "working-pattern",
+      "title": "สิทธิในกฎหมายไม่เท่ากับสิทธิที่ใช้ได้จริง",
+      "statement": "การศึกษา สุขภาพ ค่าจ้าง สินเชื่อ และสถานะแรงงานให้สิทธิหรือโอกาสบนกระดาษ แต่ระยะทาง เอกสาร การบังคับใช้ เพศ รายได้ และสัญชาติทำให้ผลต่างกัน",
+      "evidenceIds": [
+        "mh-2464-compulsory-school",
+        "mh-2544-village-fund-households",
+        "mh-2545-uhc-patients",
+        "mh-2550-migrant-workers-rights",
+        "mh-2555-minimum-wage-households",
+        "mh-2556-internet-routines"
+      ],
+      "counterEvidenceNeeded": "พื้นที่ที่การออกแบบท้องถิ่นลดช่องว่างได้จริง"
+    },
+    {
+      "id": "pat-07-center-periphery-uneven-timing",
+      "status": "working-pattern",
+      "title": "การเปลี่ยนแปลงเกิดไม่พร้อมกันระหว่างพื้นที่",
+      "statement": "มหาวิทยาลัย สื่อ บริการสุขภาพ ถนน การเปลี่ยนขนาดครอบครัว และอินเทอร์เน็ตขยายจากศูนย์กลางด้วยจังหวะต่างกัน ทำให้โอกาสและผลข้างเคียงไม่เกิดพร้อมกัน",
+      "evidenceIds": [
+        "mh-2460-university-access",
+        "mh-2468-satri-thai-readers",
+        "mh-2504-isan-roads-migration",
+        "mh-2508-family-size-regions",
+        "mh-2515-higher-education-expansion",
+        "mh-2556-internet-routines"
+      ],
+      "counterEvidenceNeeded": "นวัตกรรมที่เกิดจากท้องถิ่นและไหลกลับเข้าสู่ส่วนกลาง"
+    }
+  ]
+}
