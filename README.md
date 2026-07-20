@@ -7,6 +7,7 @@ Public website prototype for the Thai people history project covering B.E. 2460-
 - Prototype only
 - Historical summaries are research questions and context candidates, not final claims
 - Public-domain and CC0 images are documented in `public/images/ATTRIBUTION.md`
+- Current research completion and first-release targets are documented in `RESEARCH_PROGRESS.md`
 
 ## Local development
 
