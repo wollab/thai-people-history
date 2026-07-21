@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "ฐานข้อมูลประวัติศาสตร์ประชาชนไทย พ.ศ. 2460-2560",
-    "version": "0.5.0",
+    "version": "0.8.0",
     "updated": "2026-07-21",
     "canonicalStatus": "staging-source-of-truth",
     "canonicalPath": "03_Documents/04_Knowledge_Base/01_Inbox/04_Personal_Learning/2026-07-19-thai-people-history-2460-2560/09_event_database.json",
     "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า",
-    "lastResearchBatch": "batch-2026-07-21-coverage-gate-50"
+    "lastResearchBatch": "batch-2026-07-21-gate80-late"
   },
   "sources": [
     {
@@ -886,6 +886,456 @@
       "type": "international-study",
       "language": "en",
       "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-jss-public-health-siam",
+      "title": "Public Health in Modern Siam",
+      "publisher": "Journal of the Siam Society",
+      "url": "https://so06.tci-thaijo.org/index.php/pub_jss/article/view/158268",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-mahidol-siriraj-nursing",
+      "title": "Development of the school of nursing, midwifery, and public health at Siriraj, Thailand 1896-1971: A historical study",
+      "publisher": "Mahidol University Repository",
+      "url": "https://repository.li.mahidol.ac.th/entities/publication/7da5d5a8-8c7e-45e1-a640-c15521b0a571",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-thammasat-women-nursing",
+      "title": "วิชาชีพพยาบาลและผดุงครรภ์หญิงในสยาม พ.ศ. 2439-2478",
+      "publisher": "วารสารประวัติศาสตร์ ธรรมศาสตร์",
+      "url": "https://so05.tci-thaijo.org/index.php/thammasat_history/article/download/247097/170785/900497",
+      "type": "archival-study",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pmc-thai-mortality-transition",
+      "title": "Thailand's demographic and mortality transition",
+      "publisher": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3175806/",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-tsri-islamic-education-south",
+      "title": "การศึกษาอิสลามและนโยบายการศึกษาภาคใต้",
+      "publisher": "สำนักงานกองทุนสนับสนุนการวิจัย",
+      "url": "https://elibrary.tsri.or.th/fullP/RDG5610018/RDG5610018_full.pdf",
+      "type": "field-research",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-cambridge-women-suffrage-thailand",
+      "title": "Women's Suffrage in Thailand: A Southeast Asian Historiographical Challenge",
+      "publisher": "Cambridge University Press",
+      "url": "https://www.cambridge.org/core/journals/comparative-studies-in-society-and-history/article/womens-suffrage-in-thailand-a-southeast-asian-historiographical-challenge/69B0137CC9FAABC33C0325FC3EA97EB5",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-parliament-women-politics",
+      "title": "รายงานการศึกษาการมีส่วนร่วมทางการเมืองของผู้หญิง",
+      "publisher": "รัฐสภาไทย",
+      "url": "https://prt.parliament.go.th/server/api/core/bitstreams/2d0ddc16-cdf9-409e-8102-180d99acf7af/content",
+      "type": "official-research",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-cambridge-female-politicians-thailand",
+      "title": "New Wine in an Old Bottle: Female Politicians, Family Rule, and Democratization in Thailand",
+      "publisher": "Journal of Asian Studies",
+      "url": "https://www.cambridge.org/core/journals/journal-of-asian-studies/article/new-wine-in-an-old-bottle-female-politicians-family-rule-and-democratization-in-thailand/48D196BF393B708B4350A24DA2563F06",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-who-thai-primary-health-history",
+      "title": "Primary health care systems: Thailand historical review",
+      "publisher": "World Health Organization",
+      "url": "https://iris.who.int/bitstream/handle/10665/341061/WHO-HIS-HSR-17.25-eng.pdf?sequence=1",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pmc-thai-doctor-distribution",
+      "title": "Integrated strategies to improve rural doctor distribution in Thailand",
+      "publisher": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC317381/",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-nhso-uhc-history",
+      "title": "Lessons Learned from Thailand's Universal Health Coverage Scheme",
+      "publisher": "National Health Security Office",
+      "url": "https://media.nhso.go.th/assets/portals/1/files/Lesson_Learn_on_UHC/66-1_UHC-EN%2030_10_66-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1.pdf",
+      "type": "official-history",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-cinii-medicalizing-state-siam",
+      "title": "The Medicalizing State: the politics of health and hygiene in Thailand",
+      "publisher": "Kyoto University / CiNii Research",
+      "url": "https://cir.nii.ac.jp/crid/1360026340092450304",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-un-thailand-membership",
+      "title": "Member States: Thailand",
+      "publisher": "United Nations",
+      "url": "https://www.un.org/en/about-us/member-states/thailand",
+      "type": "international-official-record",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-ppat-history",
+      "title": "Our History",
+      "publisher": "Planned Parenthood Association of Thailand",
+      "url": "https://ppat.or.th/en/our-history/",
+      "type": "institutional-history",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pubmed-family-planning-thailand",
+      "title": "Family Planning in Thailand",
+      "publisher": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12264058/",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pubmed-health-family-planning",
+      "title": "National health services and family planning: Thailand, a case study",
+      "publisher": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1147129/",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-unfpa-thailand-40-years",
+      "title": "UNFPA in Thailand: 40 Years of Working Together",
+      "publisher": "UNFPA Thailand",
+      "url": "https://thailand.unfpa.org/en/publications/unfpa-thailand-40-years-working-together",
+      "type": "international-official-record",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pea-history",
+      "title": "Provincial Electricity Authority History",
+      "publisher": "Provincial Electricity Authority",
+      "url": "https://www.pea.co.th/en/about-pea/history",
+      "type": "official-history",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-wb-rural-electrification-thailand",
+      "title": "Thailand rural electrification project",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/841361468740715123/pdf/multi-page.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-wb-pea-1973-plan",
+      "title": "Thailand Provincial Electricity Authority development plan",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/731391468915308888/pdf/multi-page.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-wb-rural-electricity-northeast",
+      "title": "Rural electrification and village contributions in Thailand",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/174121468335451620/pdf/multi-page.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-oxford-hill-tribe-citizenship",
+      "title": "Subjects of the Nation Without Citizenship",
+      "publisher": "Oxford Academic",
+      "url": "https://academic.oup.com/book/3720/chapter-abstract/145117442",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-american-hill-tribe-stateless",
+      "title": "People without a nation: Citizenship and the hill tribes of Thailand",
+      "publisher": "American University Research Archive",
+      "url": "https://aura.american.edu/articles/thesis/People_without_a_nation_Citizenship_and_the_hill_tribes_of_Thailand/23879514",
+      "type": "academic-thesis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-wb-thai-green-revolution",
+      "title": "Thailand agricultural sector review and the Green Revolution",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/246261468311385750/pdf/multi_page.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-agecon-thai-rice-hyv",
+      "title": "Background to the Introduction of High Yielding Varieties of Rice in Thailand",
+      "publisher": "AgEcon Search",
+      "url": "https://ageconsearch.umn.edu/record/14005/files/p72-06.pdf",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pmc-thai-hiv-response",
+      "title": "Thirty years of HIV response in Thailand",
+      "publisher": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5337415/",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-chula-hiv-public-response",
+      "title": "การตอบสนองของสังคมและรัฐต่อโรคเอดส์ในประเทศไทย",
+      "publisher": "จุฬาลงกรณ์มหาวิทยาลัย",
+      "url": "https://digital.car.chula.ac.th/chulaetd/28589/",
+      "type": "academic-thesis",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-un-thailand-hiv-report",
+      "title": "Thailand's response to HIV/AIDS: progress and challenges",
+      "publisher": "United Nations Thailand",
+      "url": "https://old.un.or.th/pdf/HIV_AIDS_Report_ENG.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-ilo-thai-social-security",
+      "title": "Social protection for workers in Thailand",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40asia/%40ro-bangkok/documents/publication/wcms_655176.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-heidelberg-indochinese-refugees",
+      "title": "Indochinese refugees in Thailand after 1975",
+      "publisher": "Internationales Asienforum",
+      "url": "https://hasp.ub.uni-heidelberg.de/journals/iaf/article/view/2375",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-loc-thailand-country-study",
+      "title": "Thailand: A Country Study",
+      "publisher": "Library of Congress",
+      "url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/th/thailandcountrys00lepo/thailandcountrys00lepo.pdf",
+      "type": "institutional-research",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pmc-rural-doctors-movement",
+      "title": "Thailand's rural doctors movement and health system development",
+      "publisher": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10956689/",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-jica-thai-decentralization",
+      "title": "Decentralization and local government in Thailand",
+      "publisher": "Japan International Cooperation Agency",
+      "url": "https://www.jica.go.jp/Resource/jica-ri/IFIC_and_JBICI-Studies/english/publications/reports/study/capacity/200807/pdf/002.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-wb-thai-tao",
+      "title": "Thailand decentralization and Tambon Administrative Organizations",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/240161468312019690/pdf/multi-page.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-ugm-tao-participation",
+      "title": "Community participation in Tambon Administrative Organization: Nakhon Sawan case",
+      "publisher": "Universitas Gadjah Mada",
+      "url": "https://etd.repository.ugm.ac.id/penelitian/detail/42731",
+      "type": "qualitative-case-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-tci-community-radio-history",
+      "title": "พัฒนาการวิทยุชุมชนไทย",
+      "publisher": "วารสารนิเทศศาสตร์",
+      "url": "https://so02.tci-thaijo.org/index.php/jcomm/article/view/213621",
+      "type": "academic-analysis",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-tci-community-radio-audience",
+      "title": "ผู้ฟังวิทยุชุมชนในหกภูมิภาค",
+      "publisher": "วารสารนิเทศศาสตร์",
+      "url": "https://so02.tci-thaijo.org/index.php/jcomm/article/view/160390",
+      "type": "field-research",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-thammasat-youth-community-radio",
+      "title": "วิทยุชุมชนเพื่อวัฒนธรรมเยาวชน นครราชสีมา",
+      "publisher": "Thammasat Review",
+      "url": "https://sc01.tci-thaijo.org/index.php/tureview/article/view/47215",
+      "type": "qualitative-case-study",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-amnesty-war-drugs-2003",
+      "title": "Thailand: Grave developments in the war on drugs",
+      "publisher": "Amnesty International",
+      "url": "https://www.amnesty.org/en/documents/ASA39/008/2003/en/",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-hrw-war-drugs-thailand",
+      "title": "Not Enough Graves: The War on Drugs, HIV/AIDS, and Violations of Human Rights",
+      "publisher": "Human Rights Watch",
+      "url": "https://www.hrw.org/report/2004/07/07/not-enough-graves/war-drugs-hiv/aids-and-violations-human-rights",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-ahr-war-drugs-family-case",
+      "title": "Extrajudicial killings of alleged drug dealers in Thailand",
+      "publisher": "Asian Human Rights Commission",
+      "url": "https://www.humanrights.asia/resources/journals-magazines/article2/special-report-extrajudicial-killings-of-alleged-drug-dealers-in-thailand/extrajudicial-killings-of-alleged-drug-dealers-in-thailand/",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-eenet-inclusive-education-thailand",
+      "title": "Education for children with disabilities in Thailand",
+      "publisher": "Enabling Education Network",
+      "url": "https://www.eenet.org.uk/resources/docs/disabchild09-en.pdf",
+      "type": "institutional-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-unhcr-thailand-nationality-2015",
+      "title": "Thousands of stateless people given nationality in Thailand",
+      "publisher": "UNHCR",
+      "url": "https://www.unhcr.org/news/news/thousands-stateless-people-given-nationality-thailand",
+      "type": "international-field-report",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-unhcr-nationality-act-2551",
+      "title": "Nationality Act (No. 4), B.E. 2551 English translation",
+      "publisher": "UNHCR Refworld",
+      "url": "https://www.refworld.org/legal/legislation/natlegbod/2008/68510",
+      "type": "legal-record",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-unwomen-gender-equality-act",
+      "title": "Gender Equality Act on Preventing Discrimination and Promoting Equality in Thailand (2015)",
+      "publisher": "UN Women Data Hub",
+      "url": "https://data.unwomen.org/global-database-on-violence-against-women/country-profile/Thailand/measures/Gender%20Equality%20Act%20on%20Preventing%20Discrimination%20and%20Promoting%20Equality%20in%20Thailand%20%282015%29",
+      "type": "international-official-record",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-unwomen-thailand",
+      "title": "Thailand country page: gender equality legal milestones",
+      "publisher": "UN Women Asia-Pacific",
+      "url": "https://asiapacific.unwomen.org/en/countries/thailand",
+      "type": "international-official-record",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-unicef-child-support-grant",
+      "title": "Thailand's child support grant helps vulnerable families",
+      "publisher": "UNICEF Thailand",
+      "url": "https://www.unicef.org/thailand/stories/thailands-child-support-grant-helps-vulnerable-families",
+      "type": "international-field-report",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-unicef-first-three",
+      "title": "The 1st Three: Child Support Grant in Thailand",
+      "publisher": "UNICEF Thailand",
+      "url": "https://www.unicef.org/thailand/reports/1st-three",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-ilo-fishing-conditions-2013",
+      "title": "Employment practices and working conditions in Thailand's fishing sector",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/publications/employment-practices-and-working-conditions-thailand%E2%80%99s-fishing-sector",
+      "type": "international-labour-report",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-ilo-fishing-safeguarding",
+      "title": "Safeguarding migrant workers in Thailand's fishing sector",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40asia/%40ro-bangkok/%40sro-bangkok/documents/publication/wcms_548390.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
     }
   ],
   "worldContexts": [
@@ -1109,7 +1559,8 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-moe-history"
+        "src-moe-history",
+        "src-tsri-islamic-education-south"
       ],
       "worldContextIds": [],
       "verification": "verified",
@@ -1214,7 +1665,9 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-parliament-constitution-2475"
+        "src-parliament-constitution-2475",
+        "src-cambridge-women-suffrage-thailand",
+        "src-parliament-women-politics"
       ],
       "worldContextIds": [
         "world-depression"
@@ -1322,7 +1775,8 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-un-thailand"
+        "src-un-thailand",
+        "src-un-thailand-membership"
       ],
       "worldContextIds": [
         "world-postwar"
@@ -1772,7 +2226,8 @@
       "sourceIds": [
         "src-parliament-constitution-2540",
         "src-pajournal-community-rights",
-        "src-cmu-community-forest-rights"
+        "src-cmu-community-forest-rights",
+        "src-tci-community-radio-history"
       ],
       "worldContextIds": [
         "world-globalisation"
@@ -1799,7 +2254,8 @@
       ],
       "sourceIds": [
         "src-education-act-2542",
-        "src-kku-school-community"
+        "src-kku-school-community",
+        "src-eenet-inclusive-education-thailand"
       ],
       "worldContextIds": [
         "world-globalisation"
@@ -2053,7 +2509,8 @@
       "sourceIds": [
         "src-mfa-ncpo",
         "src-amnesty-2014-attitude-adjustment",
-        "src-ohchr-2016-military-courts"
+        "src-ohchr-2016-military-courts",
+        "src-tci-community-radio-history"
       ],
       "worldContextIds": [
         "world-platform"
@@ -2164,7 +2621,8 @@
       ],
       "sourceIds": [
         "src-kpi-first-election-2476",
-        "src-parliament-history"
+        "src-parliament-history",
+        "src-cambridge-women-suffrage-thailand"
       ],
       "worldContextIds": [],
       "verification": "corroborated",
@@ -2402,6 +2860,465 @@
       "worldContextIds": [],
       "verification": "corroborated",
       "openQuestion": "แรงงานหญิงและผู้รับงานผ่านผู้จ้างช่วงใช้สิทธิเรื่องค่าจ้างและความปลอดภัยได้จริงเพียงใด"
+    },
+    {
+      "id": "th-2461-public-health-department",
+      "period": "2460-2475",
+      "beYear": "2461",
+      "ceYear": "1918",
+      "title": "ตั้งกรมสาธารณสุข",
+      "summary": "รัฐรวมงานสุขาภิบาลและป้องกันโรคไว้ในกรมสาธารณสุขเมื่อ พ.ศ. 2461 ก่อนพัฒนาเป็นกระทรวงสาธารณสุขในเวลาต่อมา",
+      "peopleImpact": "การป้องกันโรคและสุขาภิบาลเริ่มมีหน่วยงานกลางรับผิดชอบ แต่บริการนอกเมืองยังขยายตัวอย่างจำกัดและประชาชนยังพึ่งการรักษาหลายระบบ",
+      "impactStatus": "contextual",
+      "themes": [
+        "health",
+        "state",
+        "infrastructure"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-jss-public-health-siam",
+        "src-who-thai-primary-health-history",
+        "src-pmc-thai-mortality-transition"
+      ],
+      "worldContextIds": [
+        "world-ww1",
+        "world-ww1"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "รายงานจังหวัดและสุขศาลาบันทึกการเข้าถึงบริการของหมู่บ้านกลุ่มใดบ้าง"
+    },
+    {
+      "id": "th-2468-nursing-midwifery-profession",
+      "period": "2460-2475",
+      "beYear": "2468-2475",
+      "ceYear": "1925-1932",
+      "title": "วิชาชีพพยาบาลและผดุงครรภ์หญิงขยายตัว",
+      "summary": "การฝึกพยาบาลและผดุงครรภ์ในโรงพยาบาลของรัฐค่อย ๆ สร้างวิชาชีพสมัยใหม่สำหรับผู้หญิงและเชื่อมงานคลอดกับระบบแพทย์",
+      "peopleImpact": "ผู้หญิงบางกลุ่มมีเส้นทางเรียนและทำงานใหม่ ขณะที่แม่และครอบครัวยังเข้าถึงผู้ให้บริการสมัยใหม่ไม่เท่ากันตามพื้นที่และฐานะ",
+      "impactStatus": "documented",
+      "themes": [
+        "health",
+        "gender",
+        "education",
+        "work"
+      ],
+      "locations": [
+        "กรุงเทพฯ",
+        "เมืองจังหวัด"
+      ],
+      "sourceIds": [
+        "src-mahidol-siriraj-nursing",
+        "src-thammasat-women-nursing"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "พยาบาลและผดุงครรภ์รุ่นแรกถูกส่งไปทำงานต่างจังหวัดอย่างไร"
+    },
+    {
+      "id": "th-2475-women-national-vote",
+      "period": "2475-2500",
+      "beYear": "2475-2476",
+      "ceYear": "1932-1933",
+      "title": "ผู้หญิงได้สิทธิเลือกตั้งระดับชาติ",
+      "summary": "ระบอบรัฐธรรมนูญหลัง พ.ศ. 2475 รับรองสิทธิทางการเมืองโดยไม่ตัดผู้หญิงออก และผู้หญิงเข้าร่วมการเลือกตั้งทั่วไป พ.ศ. 2476",
+      "peopleImpact": "สิทธิเลือกตั้งเปิดสถานะพลเมืองทางการเมืองอย่างเป็นทางการให้ผู้หญิง แต่ไม่ได้ทำให้การเป็นผู้แทนหรืออำนาจในสถาบันการเมืองเท่าเทียมทันที",
+      "impactStatus": "documented",
+      "themes": [
+        "gender",
+        "politics",
+        "citizenship"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-cambridge-women-suffrage-thailand",
+        "src-parliament-women-politics"
+      ],
+      "worldContextIds": [
+        "world-depression"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ทะเบียนผู้มาใช้สิทธิและหนังสือพิมพ์ท้องถิ่นสะท้อนการมีส่วนร่วมของผู้หญิงแต่ละภูมิภาคอย่างไร"
+    },
+    {
+      "id": "th-2492-first-woman-mp",
+      "period": "2475-2500",
+      "beYear": "2492",
+      "ceYear": "1949",
+      "title": "อรพินท์ ไชยกาล เป็นสมาชิกสภาผู้แทนราษฎรหญิงคนแรก",
+      "summary": "อรพินท์ ไชยกาล ได้รับเลือกตั้งจากจังหวัดอุบลราชธานีใน พ.ศ. 2492 เป็นผู้หญิงคนแรกที่เข้าสภาผู้แทนราษฎรไทย",
+      "peopleImpact": "เหตุการณ์แสดงว่าผู้หญิงเข้าสู่ตำแหน่งผู้แทนได้จริง แต่จำนวนผู้หญิงในรัฐสภายังต่ำมากและเครือข่ายครอบครัวการเมืองมีบทบาทสำคัญ",
+      "impactStatus": "documented",
+      "themes": [
+        "gender",
+        "politics",
+        "representation"
+      ],
+      "locations": [
+        "อุบลราชธานี",
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-parliament-women-politics",
+        "src-cambridge-female-politicians-thailand"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "ผู้เลือกตั้งหญิงและชายในอุบลราชธานีอธิบายการเลือกผู้แทนหญิงครั้งนั้นอย่างไร"
+    },
+    {
+      "id": "th-2503-hill-tribe-state-programmes",
+      "period": "2500-2516",
+      "beYear": "2503-2516",
+      "ceYear": "1960-1973",
+      "title": "รัฐขยายโครงการพัฒนาชาวเขาและการจำแนกประชากรบนพื้นที่สูง",
+      "summary": "หน่วยงานรัฐและโครงการพัฒนาเริ่มจำแนกกลุ่มชาวเขา สำรวจพื้นที่สูง และเชื่อมงานความมั่นคง เกษตร และสวัสดิการเข้าด้วยกัน",
+      "peopleImpact": "บางชุมชนเข้าถึงบริการและตลาดมากขึ้น แต่สถานะบุคคล การควบคุมการเดินทาง และการนิยามจากภายนอกสร้างข้อจำกัดระยะยาว",
+      "impactStatus": "documented",
+      "themes": [
+        "identity",
+        "citizenship",
+        "development",
+        "security"
+      ],
+      "locations": [
+        "ภาคเหนือ"
+      ],
+      "sourceIds": [
+        "src-oxford-hill-tribe-citizenship",
+        "src-american-hill-tribe-stateless"
+      ],
+      "worldContextIds": [
+        "world-cold-war",
+        "world-development"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ทะเบียนสำรวจหมู่บ้านและคำบอกเล่าชุมชนตรงหรือขัดกันอย่างไร"
+    },
+    {
+      "id": "th-2513-national-family-planning",
+      "period": "2500-2516",
+      "beYear": "2513",
+      "ceYear": "1970",
+      "title": "รัฐประกาศนโยบายวางแผนครอบครัวโดยสมัครใจ",
+      "summary": "รัฐบาลรับรองโครงการวางแผนครอบครัวแห่งชาติใน พ.ศ. 2513 และบูรณาการบริการคุมกำเนิดกับงานแม่และเด็ก",
+      "peopleImpact": "ผู้หญิงและคู่สมรสเข้าถึงการคุมกำเนิดมากขึ้นผ่านโรงพยาบาลและสถานีอนามัย แต่การตัดสินใจยังขึ้นกับข้อมูล คู่ครอง ผู้ให้บริการ และค่านิยมท้องถิ่น",
+      "impactStatus": "documented",
+      "themes": [
+        "health",
+        "family",
+        "gender",
+        "state"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-pubmed-family-planning-thailand",
+        "src-pubmed-health-family-planning",
+        "src-ppat-history"
+      ],
+      "worldContextIds": [
+        "world-development"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "สมุดบริการและประวัติชีวิตอธิบายว่าใครเป็นผู้ตัดสินใจคุมกำเนิดในครัวเรือน"
+    },
+    {
+      "id": "th-2515-rural-electrification",
+      "period": "2500-2516",
+      "beYear": "2515-2516",
+      "ceYear": "1972-1973",
+      "title": "การไฟฟ้าส่วนภูมิภาคเร่งแผนไฟฟ้าชนบท",
+      "summary": "ต้นทศวรรษ 2510 รัฐและการไฟฟ้าส่วนภูมิภาคเริ่มแผนขยายไฟฟ้าสู่หมู่บ้านจำนวนมาก โดยภาคตะวันออกเฉียงเหนือเป็นพื้นที่สำคัญ",
+      "peopleImpact": "ไฟฟ้าเปิดโอกาสด้านแสงสว่าง เครื่องใช้ การผลิต และข้อมูล แต่หมู่บ้านต้องรอคิวและบางแห่งรับภาระเงินสมทบหรือค่าติดตั้ง",
+      "impactStatus": "documented",
+      "themes": [
+        "infrastructure",
+        "rural",
+        "economy",
+        "technology"
+      ],
+      "locations": [
+        "ภาคตะวันออกเฉียงเหนือ",
+        "ชนบททั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-pea-history",
+        "src-wb-rural-electrification-thailand",
+        "src-wb-pea-1973-plan",
+        "src-wb-rural-electricity-northeast"
+      ],
+      "worldContextIds": [
+        "world-development"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "บันทึกหมู่บ้านแสดงว่าใครออกเงินและใครได้ต่อไฟก่อน"
+    },
+    {
+      "id": "th-2518-indochinese-refugees",
+      "period": "2516-2535",
+      "beYear": "2518-2535",
+      "ceYear": "1975-1992",
+      "title": "ผู้ลี้ภัยอินโดจีนจำนวนมากเดินทางเข้าสู่ประเทศไทย",
+      "summary": "หลังสงครามในเวียดนาม ลาว และกัมพูชา ผู้ลี้ภัยหลายแสนคนเข้าประเทศไทยและอยู่ในค่ายหรือศูนย์พักพิงตามชายแดนก่อนส่งต่อ กลับประเทศ หรือรอทางออกอื่น",
+      "peopleImpact": "ผู้ลี้ภัยเผชิญข้อจำกัดด้านการเดินทาง งาน และความไม่แน่นอน ขณะที่ชุมชนชายแดนและเจ้าหน้าที่ต้องรับภาระด้านที่ดิน ตลาด และบริการ",
+      "impactStatus": "documented",
+      "themes": [
+        "migration",
+        "war",
+        "border",
+        "humanitarian"
+      ],
+      "locations": [
+        "ชายแดนไทย-กัมพูชา",
+        "ชายแดนไทย-ลาว",
+        "ภาคตะวันออก"
+      ],
+      "sourceIds": [
+        "src-heidelberg-indochinese-refugees",
+        "src-loc-thailand-country-study"
+      ],
+      "worldContextIds": [
+        "world-indochina"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "คำบอกเล่าผู้ลี้ภัยและชาวบ้านรอบค่ายสะท้อนการพึ่งพาและความขัดแย้งอย่างไร"
+    },
+    {
+      "id": "th-2527-first-hiv-case",
+      "period": "2516-2535",
+      "beYear": "2527-2535",
+      "ceYear": "1984-1992",
+      "title": "พบผู้ติดเชื้อเอชไอวีรายแรกและโรคเอดส์กลายเป็นวิกฤตสาธารณสุข",
+      "summary": "ไทยรายงานผู้ติดเชื้อเอชไอวีรายแรกใน พ.ศ. 2527 ก่อนการระบาดขยายในหลายกลุ่มและรัฐยกระดับการรณรงค์ในต้นทศวรรษ 2530",
+      "peopleImpact": "ผู้ติดเชื้อและครอบครัวเผชิญทั้งความเจ็บป่วย ค่าใช้จ่าย และการตีตรา ขณะที่บุคลากรสุขภาพและองค์กรชุมชนต้องสร้างความรู้และบริการใหม่",
+      "impactStatus": "documented",
+      "themes": [
+        "health",
+        "stigma",
+        "family",
+        "civil-society"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-pmc-thai-hiv-response",
+        "src-chula-hiv-public-response",
+        "src-un-thailand-hiv-report"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ประวัติชีวิตผู้ติดเชื้อในภูมิภาคต่าง ๆ แสดงการเข้าถึงการตรวจและการตีตราอย่างไร"
+    },
+    {
+      "id": "th-2533-social-security-act",
+      "period": "2516-2535",
+      "beYear": "2533",
+      "ceYear": "1990",
+      "title": "ประกาศใช้พระราชบัญญัติประกันสังคม",
+      "summary": "พระราชบัญญัติประกันสังคม พ.ศ. 2533 จัดตั้งระบบเงินสมทบและสำนักงานประกันสังคมสำหรับลูกจ้างในระบบ ก่อนขยายความคุ้มครองภายหลัง",
+      "peopleImpact": "ลูกจ้างจำนวนมากได้หลักประกันด้านเจ็บป่วย คลอดบุตร ทุพพลภาพ และการขาดรายได้ แต่แรงงานนอกระบบยังอยู่นอกความคุ้มครองภาคบังคับ",
+      "impactStatus": "documented",
+      "themes": [
+        "labour",
+        "welfare",
+        "health",
+        "law"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-mol-labour-history",
+        "src-ilo-thai-social-security"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ลูกจ้างและนายจ้างรายย่อยปรับตัวต่อการจ่ายสมทบในระยะแรกอย่างไร"
+    },
+    {
+      "id": "th-2537-tao-act",
+      "period": "2535-2549",
+      "beYear": "2537",
+      "ceYear": "1994",
+      "title": "กฎหมายสภาตำบลและองค์การบริหารส่วนตำบลวางฐานการกระจายอำนาจท้องถิ่น",
+      "summary": "พระราชบัญญัติสภาตำบลและองค์การบริหารส่วนตำบล พ.ศ. 2537 สร้างองค์กรปกครองท้องถิ่นระดับตำบลทั่วพื้นที่นอกเทศบาล",
+      "peopleImpact": "ชาวบ้านมีช่องทางใกล้ตัวขึ้นสำหรับงบประมาณ ถนน น้ำ และบริการ แต่การมีส่วนร่วมและอำนาจตัดสินใจจริงต่างกันตามพื้นที่และความสัมพันธ์ท้องถิ่น",
+      "impactStatus": "documented",
+      "themes": [
+        "local-government",
+        "participation",
+        "services",
+        "law"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-jica-thai-decentralization",
+        "src-wb-thai-tao",
+        "src-ugm-tao-participation"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "รายงานประชุมสภา อบต. แสดงว่าใครเสนอและใครได้ประโยชน์จากงบประมาณระยะแรก"
+    },
+    {
+      "id": "th-2546-war-on-drugs",
+      "period": "2535-2549",
+      "beYear": "2546",
+      "ceYear": "2003",
+      "title": "รัฐบาลประกาศสงครามยาเสพติดและเกิดข้อกล่าวหาการสังหารนอกกระบวนการ",
+      "summary": "นโยบายปราบปรามยาเสพติด พ.ศ. 2546 ใช้เป้าหมายและบัญชีรายชื่ออย่างเข้มข้น ในช่วงเดียวกันมีผู้เสียชีวิตจำนวนมากและข้อกล่าวหาเรื่องการสังหารนอกกระบวนการยุติธรรม",
+      "peopleImpact": "ครอบครัวผู้เสียชีวิตและผู้ถูกกล่าวหาต้องเผชิญความกลัว การตีตรา และการเข้าถึงความยุติธรรม ขณะที่ผู้ใช้ยาบางส่วนหลีกเลี่ยงบริการสุขภาพ",
+      "impactStatus": "documented",
+      "themes": [
+        "security",
+        "justice",
+        "health",
+        "human-rights"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-amnesty-war-drugs-2003",
+        "src-hrw-war-drugs-thailand",
+        "src-ahr-war-drugs-family-case"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "สำนวนคดีและคำบอกเล่าครอบครัวจังหวัดต่าง ๆ ช่วยแยกกรณีและรูปแบบความรับผิดได้อย่างไร"
+    },
+    {
+      "id": "th-2551-nationality-act-amendment",
+      "period": "2549-2560",
+      "beYear": "2551",
+      "ceYear": "2008",
+      "title": "แก้กฎหมายสัญชาติ เปิดทางคืนและขอสัญชาติแก่คนบางกลุ่ม",
+      "summary": "พระราชบัญญัติสัญชาติฉบับที่ 4 พ.ศ. 2551 เปิดช่องให้ผู้ที่เสียสัญชาติจากประกาศ พ.ศ. 2515 และคนบางกลุ่มที่เกิดในไทยยื่นขอสถานะได้",
+      "peopleImpact": "คนไร้สัญชาติบางส่วนเข้าถึงบัตร การเดินทาง การศึกษา และงานได้มากขึ้น แต่กระบวนการพิสูจน์เอกสารและพยานยังใช้เวลานาน",
+      "impactStatus": "documented",
+      "themes": [
+        "citizenship",
+        "identity",
+        "law",
+        "mobility"
+      ],
+      "locations": [
+        "ภาคเหนือ",
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-unhcr-nationality-act-2551",
+        "src-unhcr-thailand-nationality-2015"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "แฟ้มคำขอและคลินิกกฎหมายแสดงคอขวดใดในการพิสูจน์สถานะ"
+    },
+    {
+      "id": "th-2558-gender-equality-act",
+      "period": "2549-2560",
+      "beYear": "2558",
+      "ceYear": "2015",
+      "title": "ประกาศใช้พระราชบัญญัติความเท่าเทียมระหว่างเพศ",
+      "summary": "กฎหมาย พ.ศ. 2558 ห้ามการเลือกปฏิบัติโดยไม่เป็นธรรมระหว่างเพศและตั้งกลไกพิจารณาคำร้อง รวมถึงคุ้มครองบุคคลที่มีการแสดงออกแตกต่างจากเพศโดยกำเนิด",
+      "peopleImpact": "ผู้หญิงและผู้มีความหลากหลายทางเพศมีช่องทางร้องเรียนเฉพาะมากขึ้น แต่ข้อยกเว้นและการรับรู้สิทธิจำกัดผลในทางปฏิบัติ",
+      "impactStatus": "documented",
+      "themes": [
+        "gender",
+        "rights",
+        "law",
+        "identity"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-unwomen-gender-equality-act",
+        "src-unwomen-thailand"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "คำวินิจฉัยช่วงแรกสะท้อนปัญหาการเลือกปฏิบัติในโรงเรียน งาน และบริการใด"
+    },
+    {
+      "id": "th-2558-child-support-grant",
+      "period": "2549-2560",
+      "beYear": "2558",
+      "ceYear": "2015",
+      "title": "เริ่มโครงการเงินอุดหนุนเพื่อการเลี้ยงดูเด็กแรกเกิด",
+      "summary": "รัฐเริ่มเงินอุดหนุนแบบไม่เก็บเงินสมทบสำหรับเด็กเล็กในครัวเรือนรายได้น้อยใน พ.ศ. 2558 ก่อนขยายอายุและจำนวนผู้รับภายหลัง",
+      "peopleImpact": "เงินสดช่วยค่าอาหาร การเดินทาง และการดูแลเด็กแก่ครอบครัวที่เข้าเกณฑ์ แต่การคัดกรองรายได้และเอกสารทำให้เด็กบางคนตกหล่น",
+      "impactStatus": "documented",
+      "themes": [
+        "welfare",
+        "children",
+        "family",
+        "poverty"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-unicef-child-support-grant",
+        "src-unicef-first-three"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ทะเบียนและคำบอกเล่าผู้ดูแลแสดงสาเหตุการตกหล่นจากสิทธิอย่างไร"
+    },
+    {
+      "id": "th-2558-fishing-reform",
+      "period": "2549-2560",
+      "beYear": "2558-2560",
+      "ceYear": "2015-2017",
+      "title": "ไทยเร่งปฏิรูปประมงและตรวจแรงงานหลังแรงกดดันเรื่อง IUU",
+      "summary": "หลังสหภาพยุโรปให้ใบเหลืองด้านประมงผิดกฎหมายใน พ.ศ. 2558 ไทยออกกฎหมายและระบบควบคุมเรือ การทำงาน และการตรวจแรงงานเข้มขึ้น",
+      "peopleImpact": "แรงงานประมงข้ามชาติถูกตรวจเอกสารและสภาพงานมากขึ้น แต่หนี้นายหน้า การกักเอกสาร ชั่วโมงงาน และข้อจำกัดการรวมตัวยังคงเป็นปัญหา",
+      "impactStatus": "documented",
+      "themes": [
+        "labour",
+        "migration",
+        "fishing",
+        "regulation"
+      ],
+      "locations": [
+        "จังหวัดชายฝั่ง",
+        "ทะเลอ่าวไทย",
+        "ทะเลอันดามัน"
+      ],
+      "sourceIds": [
+        "src-ilo-fishing-conditions-2013",
+        "src-ilo-fishing-safeguarding"
+      ],
+      "worldContextIds": [
+        "world-globalisation",
+        "world-aec"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "แบบสำรวจก่อนและหลังการปฏิรูปแสดงการเปลี่ยนแปลงด้านค่าจ้าง ชั่วโมงงาน และเสรีภาพการเดินทางอย่างไร"
     }
   ],
   "microhistoryMeta": {
@@ -4672,6 +5589,1377 @@
         "คนพิการที่ไม่มีบัตร"
       ],
       "openQuestion": "ข้อมูลร้องเรียนและประวัติชีวิตแสดงอุปสรรคหลังมีกฎหมายในบริการใดชัดที่สุด"
+    },
+    {
+      "id": "mh-2461-sanitation-new-state",
+      "period": "2460-2475",
+      "beYear": "2461-2475",
+      "ceYear": "1918-1932",
+      "title": "สุขาภิบาลกลายเป็นภารกิจของรัฐ แต่ยังไปถึงผู้คนไม่เท่ากัน",
+      "location": [
+        "กรุงเทพฯ",
+        "เมืองจังหวัด",
+        "ชนบท"
+      ],
+      "groups": [
+        "ครัวเรือน",
+        "ผู้ป่วย",
+        "เจ้าหน้าที่สุขาภิบาล"
+      ],
+      "everydayDimensions": [
+        "health",
+        "water",
+        "hygiene",
+        "services"
+      ],
+      "fact": "กรมสาธารณสุขก่อตั้งใน พ.ศ. 2461 เพื่อรวมงานป้องกันโรคและสุขาภิบาล",
+      "livedExperience": "ในเมืองมีการตรวจและรณรงค์เพิ่มขึ้น ขณะที่ชนบทยังพึ่งครอบครัว หมอพื้นบ้าน ร้านยา และบริการที่มีอยู่จำกัด",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-jss-public-health-siam",
+        "src-pmc-thai-mortality-transition"
+      ],
+      "linkedEventIds": [
+        "th-2461-public-health-department"
+      ],
+      "missingVoices": [
+        "ผู้ป่วยชนบท",
+        "หมอพื้นบ้าน",
+        "เจ้าหน้าที่ระดับอำเภอ"
+      ],
+      "openQuestion": "รายงานสุขาภิบาลจังหวัดใดบันทึกการตอบรับหรือการหลีกเลี่ยงมาตรการของประชาชน"
+    },
+    {
+      "id": "mh-2468-nurse-students",
+      "period": "2460-2475",
+      "beYear": "2468-2475",
+      "ceYear": "1925-1932",
+      "title": "นักเรียนพยาบาลหญิงกับงานอาชีพแบบใหม่",
+      "location": [
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "นักเรียนพยาบาล",
+        "ครอบครัว",
+        "บุคลากรโรงพยาบาล"
+      ],
+      "everydayDimensions": [
+        "education",
+        "work",
+        "gender",
+        "discipline"
+      ],
+      "fact": "โรงเรียนพยาบาลและผดุงครรภ์ฝึกผู้หญิงเข้าสู่งานโรงพยาบาลตามหลักสูตรและวินัยวิชาชีพ",
+      "livedExperience": "การเรียนเปิดรายได้และบทบาทนอกบ้าน แต่ผู้เรียนต้องอยู่ภายใต้กฎสถาบันและความคาดหวังด้านเพศและความประพฤติ",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-mahidol-siriraj-nursing",
+        "src-thammasat-women-nursing"
+      ],
+      "linkedEventIds": [
+        "th-2468-nursing-midwifery-profession"
+      ],
+      "missingVoices": [
+        "นักเรียนที่ลาออก",
+        "ครอบครัวต่างจังหวัด",
+        "ผู้ป่วยหญิง"
+      ],
+      "openQuestion": "ทะเบียนและจดหมายของนักเรียนพยาบาลบอกเหตุผลในการสมัครและลาออกอย่างไร"
+    },
+    {
+      "id": "mh-2468-midwives-mothers",
+      "period": "2460-2475",
+      "beYear": "2468-2475",
+      "ceYear": "1925-1932",
+      "title": "แม่ หมอตำแย และผดุงครรภ์ในช่วงเปลี่ยนผ่าน",
+      "location": [
+        "กรุงเทพฯ",
+        "เมืองจังหวัด"
+      ],
+      "groups": [
+        "หญิงตั้งครรภ์",
+        "หมอตำแย",
+        "ผดุงครรภ์"
+      ],
+      "everydayDimensions": [
+        "birth",
+        "care",
+        "health",
+        "belief"
+      ],
+      "fact": "การฝึกผดุงครรภ์สมัยใหม่ทำให้รัฐและโรงพยาบาลเข้ามากำกับความรู้และการคลอดมากขึ้น",
+      "livedExperience": "ครอบครัวเลือกใช้บริการจากความไว้ใจ ค่าใช้จ่าย ระยะทาง และธรรมเนียม ทำให้หมอตำแยและผดุงครรภ์สมัยใหม่ดำรงอยู่ร่วมกัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-thammasat-women-nursing",
+        "src-jss-public-health-siam"
+      ],
+      "linkedEventIds": [
+        "th-2468-nursing-midwifery-profession"
+      ],
+      "missingVoices": [
+        "แม่ชนบท",
+        "หมอตำแยท้องถิ่น",
+        "ครอบครัวมุสลิม"
+      ],
+      "openQuestion": "บันทึกการคลอดและคำบอกเล่าครอบครัวสะท้อนเหตุผลเลือกผู้ทำคลอดอย่างไร"
+    },
+    {
+      "id": "mh-2464-southern-islamic-schools",
+      "period": "2460-2475",
+      "beYear": "2464-2475",
+      "ceYear": "1921-1932",
+      "title": "ครอบครัวมุสลิมภาคใต้ระหว่างโรงเรียนรัฐกับการศึกษาอิสลาม",
+      "location": [
+        "ปัตตานี",
+        "ยะลา",
+        "นราธิวาส"
+      ],
+      "groups": [
+        "เด็กมุสลิม",
+        "ผู้ปกครอง",
+        "โต๊ะครู",
+        "ครูรัฐ"
+      ],
+      "everydayDimensions": [
+        "school",
+        "religion",
+        "language",
+        "identity"
+      ],
+      "fact": "พระราชบัญญัติประถมศึกษา พ.ศ. 2464 ขยายการศึกษาภาคบังคับและเชื่อมพื้นที่ภาคใต้เข้าสู่ระบบโรงเรียนของรัฐ",
+      "livedExperience": "ครอบครัวต้องจัดเวลา ภาษา และเนื้อหาระหว่างโรงเรียนรัฐกับการเรียนศาสนา โดยการปรับตัวต่างกันในแต่ละชุมชน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-moe-history",
+        "src-tsri-islamic-education-south"
+      ],
+      "linkedEventIds": [
+        "th-2464-compulsory-education"
+      ],
+      "missingVoices": [
+        "เด็กหญิง",
+        "ครอบครัวยากจน",
+        "ครูมลายู"
+      ],
+      "openQuestion": "ตารางเรียนและประวัติสถานศึกษาท้องถิ่นแสดงการจัดสองระบบร่วมกันอย่างไร"
+    },
+    {
+      "id": "mh-2468-treaty-mobility",
+      "period": "2460-2475",
+      "beYear": "2468-2473",
+      "ceYear": "1925-1930",
+      "title": "การแก้สนธิสัญญากับผลที่ยังต้องตามหาในชีวิตคนทำงาน",
+      "location": [
+        "กรุงเทพฯ",
+        "เมืองท่า"
+      ],
+      "groups": [
+        "ลูกจ้างต่างชาติ",
+        "ผู้ค้า",
+        "เจ้าหน้าที่กงสุล"
+      ],
+      "everydayDimensions": [
+        "law",
+        "trade",
+        "mobility",
+        "tax"
+      ],
+      "fact": "สยามทยอยแก้สนธิสัญญาที่จำกัดอำนาจศาลและภาษีของรัฐในช่วงหลังสงครามโลกครั้งที่หนึ่ง",
+      "livedExperience": "ผลระดับรัฐชัดเจนกว่าหลักฐานชีวิตประจำวัน ฐานปัจจุบันยังไม่พอจะสรุปว่ากฎใหม่เปลี่ยนงานและข้อพิพาทของผู้คนกลุ่มใดทันที",
+      "evidenceStatus": "research-lead",
+      "sourceIds": [
+        "src-mfa-treaties"
+      ],
+      "linkedEventIds": [
+        "th-2468-treaty-revision"
+      ],
+      "missingVoices": [
+        "ลูกจ้างท่าเรือ",
+        "ผู้ค้าจีน",
+        "คู่ความต่างจังหวัด"
+      ],
+      "openQuestion": "สำนวนศาลและบันทึกกงสุลหลังแก้สนธิสัญญาแสดงการเปลี่ยนแปลงคดีของประชาชนหรือไม่"
+    },
+    {
+      "id": "mh-2461-influenza-care-networks",
+      "period": "2460-2475",
+      "beYear": "2461-2462",
+      "ceYear": "1918-1919",
+      "title": "เครือญาติ วัด และชุมชนดูแลกันในโรคระบาด",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้ป่วย",
+        "ผู้ดูแล",
+        "พระสงฆ์",
+        "ครอบครัว"
+      ],
+      "everydayDimensions": [
+        "illness",
+        "care",
+        "funeral",
+        "work"
+      ],
+      "fact": "ไข้หวัดใหญ่ พ.ศ. 2461-2462 แพร่ทั่วสยามและทำให้มีผู้ป่วยและเสียชีวิตจำนวนมาก",
+      "livedExperience": "เมื่อบริการแพทย์มีจำกัด ภาระดูแลและจัดการศพตกกับครอบครัวและชุมชน แต่รายละเอียดนอกกรุงเทพฯ ยังไม่สม่ำเสมอ",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-dcj-influenza-siam",
+        "src-cambridge-influenza-thailand",
+        "src-pmc-thai-mortality-transition"
+      ],
+      "linkedEventIds": [
+        "th-2461-influenza"
+      ],
+      "missingVoices": [
+        "เด็กกำพร้า",
+        "ผู้ดูแลหญิง",
+        "ชุมชนห่างไกล"
+      ],
+      "openQuestion": "บัญชีวัดและจดหมายเหตุจังหวัดใดบันทึกการดูแลและพิธีศพในช่วงระบาด"
+    },
+    {
+      "id": "mh-2475-women-first-national-vote",
+      "period": "2475-2500",
+      "beYear": "2475-2476",
+      "ceYear": "1932-1933",
+      "title": "ผู้หญิงเข้าสู่คูหาเลือกตั้งระดับชาติ",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้หญิงผู้มีสิทธิ",
+        "เจ้าหน้าที่เลือกตั้ง",
+        "ครอบครัว"
+      ],
+      "everydayDimensions": [
+        "voting",
+        "citizenship",
+        "information",
+        "travel"
+      ],
+      "fact": "รัฐธรรมนูญหลังการเปลี่ยนแปลงการปกครองไม่ตัดสิทธิผู้หญิง และผู้หญิงใช้สิทธิในการเลือกตั้งทั่วไป พ.ศ. 2476",
+      "livedExperience": "สิทธิใหม่ต้องอาศัยทะเบียน ข้อมูล การเดินทาง และการยอมรับในครัวเรือน จึงไม่ควรถือว่าผู้หญิงทุกกลุ่มเข้าถึงเท่ากัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-cambridge-women-suffrage-thailand",
+        "src-parliament-women-politics"
+      ],
+      "linkedEventIds": [
+        "th-2475-revolution",
+        "th-2475-constitution",
+        "th-2476-first-general-election",
+        "th-2475-women-national-vote"
+      ],
+      "missingVoices": [
+        "ผู้หญิงชนบท",
+        "ผู้หญิงมุสลิม",
+        "ผู้หญิงที่ไม่ไปใช้สิทธิ"
+      ],
+      "openQuestion": "หน่วยเลือกตั้งและหนังสือพิมพ์จังหวัดบันทึกผู้หญิงผู้มาใช้สิทธิอย่างไร"
+    },
+    {
+      "id": "mh-2492-orapin-constituents",
+      "period": "2475-2500",
+      "beYear": "2492",
+      "ceYear": "1949",
+      "title": "ผู้เลือกตั้งอุบลราชธานีกับผู้แทนหญิงคนแรก",
+      "location": [
+        "อุบลราชธานี"
+      ],
+      "groups": [
+        "ผู้มีสิทธิเลือกตั้ง",
+        "ผู้หญิงการเมือง",
+        "ครู",
+        "เครือข่ายครอบครัว"
+      ],
+      "everydayDimensions": [
+        "campaign",
+        "voting",
+        "representation",
+        "gender"
+      ],
+      "fact": "อรพินท์ ไชยกาล ได้รับเลือกตั้งเป็น ส.ส. อุบลราชธานีใน พ.ศ. 2492 และเป็น ส.ส. หญิงคนแรกของไทย",
+      "livedExperience": "ชัยชนะเปิดภาพความเป็นไปได้ของผู้แทนหญิง แต่หลักฐานชี้ด้วยว่าเครือข่ายครอบครัวการเมืองยังเป็นทรัพยากรสำคัญในการเข้าสู่สนามเลือกตั้ง",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-parliament-women-politics",
+        "src-cambridge-female-politicians-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2492-first-woman-mp"
+      ],
+      "missingVoices": [
+        "ผู้ลงคะแนนหญิง",
+        "คู่แข่งเลือกตั้ง",
+        "ชาวบ้านนอกเขตเมือง"
+      ],
+      "openQuestion": "ใบปลิวและข่าวท้องถิ่นกล่าวถึงเพศ อาชีพครู และเครือข่ายครอบครัวของผู้สมัครอย่างไร"
+    },
+    {
+      "id": "mh-2475-rural-health-expansion",
+      "period": "2475-2500",
+      "beYear": "2475-2490",
+      "ceYear": "1932-1947",
+      "title": "สุขศาลาและบริการสุขภาพเริ่มขยายออกนอกเมือง",
+      "location": [
+        "ภาคเหนือ",
+        "ภาคตะวันออกเฉียงเหนือ",
+        "ชนบท"
+      ],
+      "groups": [
+        "ชาวบ้าน",
+        "เจ้าหน้าที่สุขศาลา",
+        "ผู้ป่วย"
+      ],
+      "everydayDimensions": [
+        "health",
+        "travel",
+        "medicine",
+        "state-services"
+      ],
+      "fact": "หลัง พ.ศ. 2475 รัฐขยายหน่วยสุขภาพและโรงพยาบาลจังหวัดมากขึ้น รวมถึงสุขศาลาระดับท้องถิ่น",
+      "livedExperience": "การมีหน่วยบริการใกล้ขึ้นลดระยะทางของบางพื้นที่ แต่จำนวนบุคลากร ยา และการคมนาคมยังจำกัดการใช้จริง",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-pmc-thai-mortality-transition",
+        "src-who-thai-primary-health-history",
+        "src-nhso-uhc-history"
+      ],
+      "linkedEventIds": [
+        "th-2461-public-health-department"
+      ],
+      "missingVoices": [
+        "คนบนพื้นที่สูง",
+        "แม่และเด็ก",
+        "ผู้ป่วยที่เดินทางไม่ไหว"
+      ],
+      "openQuestion": "สมุดผู้ป่วยของสุขศาลาแรก ๆ แสดงระยะทางและโรคที่ประชาชนนำมารักษาอย่างไร"
+    },
+    {
+      "id": "mh-2484-bangkok-evacuation",
+      "period": "2475-2500",
+      "beYear": "2484-2488",
+      "ceYear": "1941-1945",
+      "title": "ครอบครัวกรุงเทพฯ หาที่หลบภัยและย้ายออกจากพื้นที่เสี่ยง",
+      "location": [
+        "กรุงเทพฯ",
+        "ธนบุรี",
+        "จังหวัดรอบกรุงเทพฯ"
+      ],
+      "groups": [
+        "ครอบครัวเมือง",
+        "เด็ก",
+        "ผู้เช่าบ้าน"
+      ],
+      "everydayDimensions": [
+        "war",
+        "housing",
+        "food",
+        "mobility"
+      ],
+      "fact": "สงครามมหาเอเชียบูรพาทำให้กรุงเทพฯ และพื้นที่คมนาคมถูกโจมตีทางอากาศและประชาชนต้องใช้หลุมหลบภัยหรือย้ายที่พัก",
+      "livedExperience": "การย้ายขึ้นกับญาติ เงิน และพาหนะ ผู้ที่อยู่ต่อเผชิญการเตือนภัย การขาดแคลน และความไม่แน่นอนในชีวิตประจำวัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-oxford-ww2-impact",
+        "src-silpakorn-bangkoknoi-ww2"
+      ],
+      "linkedEventIds": [
+        "th-2484-pacific-war"
+      ],
+      "missingVoices": [
+        "ผู้เช่ารายได้น้อย",
+        "เด็ก",
+        "คนงานรถไฟ"
+      ],
+      "openQuestion": "บันทึกโรงเรียน วัด และครอบครัวบอกเส้นทางอพยพและการกลับบ้านอย่างไร"
+    },
+    {
+      "id": "mh-2489-un-membership-civil-service",
+      "period": "2475-2500",
+      "beYear": "2489-2500",
+      "ceYear": "1946-1957",
+      "title": "การเป็นสมาชิกสหประชาชาติกับโอกาสงานและความรู้ชุดใหม่",
+      "location": [
+        "กรุงเทพฯ",
+        "ต่างประเทศ"
+      ],
+      "groups": [
+        "ข้าราชการ",
+        "นักแปล",
+        "นักศึกษา",
+        "ผู้เชี่ยวชาญ"
+      ],
+      "everydayDimensions": [
+        "work",
+        "education",
+        "language",
+        "international"
+      ],
+      "fact": "ไทยเข้าเป็นสมาชิกสหประชาชาติเมื่อ 16 ธันวาคม พ.ศ. 2489 และเข้าร่วมหน่วยงานระหว่างประเทศมากขึ้น",
+      "livedExperience": "การประสานงานระหว่างประเทศสร้างงานด้านภาษา สถิติ สุขภาพ และพัฒนาแก่คนบางกลุ่ม แต่ฐานปัจจุบันยังไม่พอประเมินผลต่อประชาชนวงกว้าง",
+      "evidenceStatus": "research-lead",
+      "sourceIds": [
+        "src-un-thailand-membership",
+        "src-un-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2489-un-membership"
+      ],
+      "missingVoices": [
+        "เจ้าหน้าที่ชั้นผู้น้อย",
+        "ผู้รับทุนต่างจังหวัด",
+        "ชุมชนในโครงการระหว่างประเทศ"
+      ],
+      "openQuestion": "แฟ้มบุคลากรและทุนฝึกอบรมรุ่นแรกแสดงว่าใครเข้าถึงเครือข่ายสหประชาชาติ"
+    },
+    {
+      "id": "mh-2497-seato-nearby-communities",
+      "period": "2475-2500",
+      "beYear": "2497-2500",
+      "ceYear": "1954-1957",
+      "title": "ชุมชนรอบองค์กรความมั่นคงใหม่ในกรุงเทพฯ",
+      "location": [
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "ลูกจ้างสำนักงาน",
+        "ผู้ให้บริการ",
+        "ชุมชนเมือง"
+      ],
+      "everydayDimensions": [
+        "work",
+        "security",
+        "city",
+        "international"
+      ],
+      "fact": "ไทยร่วมก่อตั้งองค์การสนธิสัญญาป้องกันเอเชียตะวันออกเฉียงใต้ใน พ.ศ. 2497 และกรุงเทพฯ เป็นที่ตั้งสำนักงานใหญ่",
+      "livedExperience": "องค์กรสร้างงานและการติดต่อระหว่างประเทศบางส่วน แต่ผลต่อชุมชนและคนทำงานระดับล่างยังมีหลักฐานน้อยกว่าประวัติการทูต",
+      "evidenceStatus": "research-lead",
+      "sourceIds": [
+        "src-state-seato"
+      ],
+      "linkedEventIds": [
+        "th-2497-seato"
+      ],
+      "missingVoices": [
+        "พนักงานท้องถิ่น",
+        "ผู้หญิงทำงานบริการ",
+        "ชุมชนรอบสำนักงาน"
+      ],
+      "openQuestion": "บัญชีบุคลากรและเอกสารอาคารสำนักงานใหญ่บอกผลต่อแรงงานและย่านเมืองอย่างไร"
+    },
+    {
+      "id": "mh-2503-hill-community-documents",
+      "period": "2500-2516",
+      "beYear": "2503-2516",
+      "ceYear": "1960-1973",
+      "title": "ชุมชนบนพื้นที่สูงกับเอกสารที่กำหนดการเดินทางและโอกาส",
+      "location": [
+        "ภาคเหนือ"
+      ],
+      "groups": [
+        "กลุ่มชาติพันธุ์บนพื้นที่สูง",
+        "เจ้าหน้าที่",
+        "เด็กและเยาวชน"
+      ],
+      "everydayDimensions": [
+        "citizenship",
+        "travel",
+        "school",
+        "work"
+      ],
+      "fact": "โครงการรัฐสำรวจและจำแนกประชากรบนพื้นที่สูงในบริบทการพัฒนาและความมั่นคง",
+      "livedExperience": "ผู้ไม่มีเอกสารหรือสถานะไม่ชัดเจนเผชิญข้อจำกัดด้านการเดินทาง การศึกษา งาน และบริการ แม้เกิดและอาศัยในไทย",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-oxford-hill-tribe-citizenship",
+        "src-american-hill-tribe-stateless"
+      ],
+      "linkedEventIds": [
+        "th-2503-hill-tribe-state-programmes"
+      ],
+      "missingVoices": [
+        "ผู้หญิงชาติพันธุ์",
+        "เด็กที่ไม่ได้เรียน",
+        "ผู้นำชุมชนที่ปฏิเสธการจำแนก"
+      ],
+      "openQuestion": "ทะเบียนบ้านและประวัติครอบครัวแสดงจุดที่สถานะถูกบันทึกผิดหรือขาดหายอย่างไร"
+    },
+    {
+      "id": "mh-2513-family-planning-mothers",
+      "period": "2500-2516",
+      "beYear": "2511-2516",
+      "ceYear": "1968-1973",
+      "title": "ผู้หญิงตัดสินใจเรื่องจำนวนบุตรท่ามกลางบริการคุมกำเนิดใหม่",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้หญิง",
+        "คู่สมรส",
+        "แม่และเด็ก"
+      ],
+      "everydayDimensions": [
+        "reproduction",
+        "health",
+        "family",
+        "cost"
+      ],
+      "fact": "บริการวางแผนครอบครัวโดยสมัครใจขยายผ่านระบบแม่และเด็กและได้รับการรับรองเป็นนโยบายใน พ.ศ. 2513",
+      "livedExperience": "การมีทางเลือกคุมกำเนิดช่วยวางแผนค่าใช้จ่ายและสุขภาพ แต่สิทธิในการตัดสินใจไม่เท่ากันระหว่างผู้หญิงแต่ละครัวเรือน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-pubmed-family-planning-thailand",
+        "src-ppat-history"
+      ],
+      "linkedEventIds": [
+        "th-2513-national-family-planning"
+      ],
+      "missingVoices": [
+        "ผู้หญิงชนบท",
+        "ผู้หญิงมุสลิม",
+        "ผู้มีผลข้างเคียง"
+      ],
+      "openQuestion": "บันทึกคลินิกและคำบอกเล่าระบุบทบาทของสามี ญาติ และเจ้าหน้าที่ในการเลือกวิธีคุมกำเนิดอย่างไร"
+    },
+    {
+      "id": "mh-2513-midwives-contraception",
+      "period": "2500-2516",
+      "beYear": "2511-2516",
+      "ceYear": "1968-1973",
+      "title": "ผดุงครรภ์และสถานีอนามัยพาบริการวางแผนครอบครัวสู่ชนบท",
+      "location": [
+        "ชนบททั่วประเทศ"
+      ],
+      "groups": [
+        "ผดุงครรภ์",
+        "เจ้าหน้าที่อนามัย",
+        "ผู้หญิงชนบท"
+      ],
+      "everydayDimensions": [
+        "health",
+        "information",
+        "travel",
+        "trust"
+      ],
+      "fact": "โครงการใช้เครือข่ายโรงพยาบาล สถานีอนามัย และผดุงครรภ์ช่วยให้บริการคุมกำเนิดนอกเมือง",
+      "livedExperience": "เจ้าหน้าที่ใกล้ชุมชนลดระยะทางและสร้างความไว้ใจ แต่คุณภาพคำแนะนำและทางเลือกขึ้นกับบุคลากรและของที่มีในแต่ละพื้นที่",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-pubmed-health-family-planning",
+        "src-unfpa-thailand-40-years"
+      ],
+      "linkedEventIds": [
+        "th-2513-national-family-planning"
+      ],
+      "missingVoices": [
+        "ผดุงครรภ์ตำบล",
+        "ผู้ใช้ที่หยุดวิธีคุมกำเนิด",
+        "ชุมชนห่างไกล"
+      ],
+      "openQuestion": "สมุดเยี่ยมบ้านและรายงานสถานีอนามัยสะท้อนปัญหาและการปฏิเสธบริการอย่างไร"
+    },
+    {
+      "id": "mh-2515-village-electricity-contribution",
+      "period": "2500-2516",
+      "beYear": "2515-2516",
+      "ceYear": "1972-1973",
+      "title": "หมู่บ้านระดมเงินและต่อรองคิวเพื่อให้ไฟฟ้ามาถึง",
+      "location": [
+        "ภาคตะวันออกเฉียงเหนือ",
+        "ชนบท"
+      ],
+      "groups": [
+        "ครัวเรือนชนบท",
+        "ผู้นำหมู่บ้าน",
+        "ผู้ค้า"
+      ],
+      "everydayDimensions": [
+        "electricity",
+        "money",
+        "community",
+        "services"
+      ],
+      "fact": "แผนไฟฟ้าชนบทบางระยะกำหนดเกณฑ์ความพร้อมและเงินสมทบของชุมชนประกอบการขยายสายส่ง",
+      "livedExperience": "ครัวเรือนต้องตกลงเรื่องเงินและลำดับการต่อไฟ ผู้มีเงินหรือบ้านใกล้แนวสายอาจเข้าถึงก่อนคนชายขอบหมู่บ้าน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-wb-rural-electricity-northeast",
+        "src-wb-pea-1973-plan"
+      ],
+      "linkedEventIds": [
+        "th-2515-rural-electrification"
+      ],
+      "missingVoices": [
+        "ครัวเรือนยากจน",
+        "หมู่บ้านไม่ผ่านเกณฑ์",
+        "ผู้หญิงในคณะกรรมการ"
+      ],
+      "openQuestion": "รายงานประชุมหมู่บ้านบันทึกข้อขัดแย้งเรื่องเงินสมทบและแนวสายไฟอย่างไร"
+    },
+    {
+      "id": "mh-2515-electric-light-routines",
+      "period": "2500-2516",
+      "beYear": "2515-2516",
+      "ceYear": "1972-1973",
+      "title": "แสงไฟเปลี่ยนเวลาเรียน งานบ้าน และร้านค้าชนบท",
+      "location": [
+        "ชนบทหลายภูมิภาค"
+      ],
+      "groups": [
+        "เด็กนักเรียน",
+        "ครัวเรือน",
+        "ผู้ค้ารายย่อย"
+      ],
+      "everydayDimensions": [
+        "electricity",
+        "study",
+        "work",
+        "leisure"
+      ],
+      "fact": "การขยายไฟฟ้าสู่ชนบทเริ่มเร่งตัวในต้นทศวรรษ 2510 และขยายต่อเนื่องในแผนระดับชาติ",
+      "livedExperience": "ไฟฟ้าทำให้ใช้แสงสว่างและเครื่องใช้ได้นานขึ้น แต่ค่าเดินสายภายในและค่าไฟทำให้ผลประโยชน์ไม่เท่ากัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-pea-history",
+        "src-wb-rural-electrification-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2515-rural-electrification"
+      ],
+      "missingVoices": [
+        "เด็กหญิง",
+        "ร้านค้าที่ไม่มีทุนซื้อเครื่องใช้",
+        "หมู่บ้านนอกโครงข่าย"
+      ],
+      "openQuestion": "ประวัติหมู่บ้านและบัญชีครัวเรือนบอกว่าเครื่องใช้ชนิดใดเข้ามาก่อนและใครซื้อได้"
+    },
+    {
+      "id": "mh-2510-asean-border-traders",
+      "period": "2500-2516",
+      "beYear": "2510-2516",
+      "ceYear": "1967-1973",
+      "title": "อาเซียนเริ่มจากการทูต ก่อนจะเปลี่ยนชีวิตการค้าชายแดนอย่างช้า ๆ",
+      "location": [
+        "กรุงเทพฯ",
+        "พื้นที่ชายแดน"
+      ],
+      "groups": [
+        "ผู้ค้าชายแดน",
+        "เจ้าหน้าที่",
+        "แรงงานข้ามแดน"
+      ],
+      "everydayDimensions": [
+        "trade",
+        "mobility",
+        "international",
+        "law"
+      ],
+      "fact": "ไทยร่วมก่อตั้งอาเซียนใน พ.ศ. 2510 เพื่อความร่วมมือระดับภูมิภาค",
+      "livedExperience": "ในระยะแรกผลโดยตรงต่อผู้ค้ารายย่อยยังจำกัดเมื่อเทียบกับระดับรัฐ และกฎพรมแดนทวิภาคียังคงกำหนดการเดินทางประจำวัน",
+      "evidenceStatus": "research-lead",
+      "sourceIds": [
+        "src-asean-history"
+      ],
+      "linkedEventIds": [
+        "th-2510-asean"
+      ],
+      "missingVoices": [
+        "ผู้ค้าหญิง",
+        "ชุมชนสองฝั่งแดน",
+        "เจ้าหน้าที่ด่าน"
+      ],
+      "openQuestion": "เอกสารด่านและตลาดชายแดนหลัง พ.ศ. 2510 แสดงการเปลี่ยนแปลงที่โยงกับอาเซียนหรือไม่"
+    },
+    {
+      "id": "mh-2518-refugee-camp-life",
+      "period": "2516-2535",
+      "beYear": "2518-2535",
+      "ceYear": "1975-1992",
+      "title": "ชีวิตในศูนย์พักพิงระหว่างการรอทางออกที่ไม่แน่นอน",
+      "location": [
+        "ชายแดนไทย-กัมพูชา",
+        "ชายแดนไทย-ลาว"
+      ],
+      "groups": [
+        "ผู้ลี้ภัย",
+        "เด็ก",
+        "เจ้าหน้าที่ช่วยเหลือ"
+      ],
+      "everydayDimensions": [
+        "shelter",
+        "food",
+        "school",
+        "mobility"
+      ],
+      "fact": "ผู้ลี้ภัยอินโดจีนจำนวนมากอาศัยในค่ายและศูนย์พักพิงในประเทศไทยหลัง พ.ศ. 2518",
+      "livedExperience": "ชีวิตประจำวันขึ้นกับการแจกจ่ายอาหาร การรักษา โรงเรียน และกฎการเดินทาง ขณะที่ครอบครัวรอการส่งต่อหรือกลับประเทศ",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-heidelberg-indochinese-refugees",
+        "src-loc-thailand-country-study"
+      ],
+      "linkedEventIds": [
+        "th-2518-indochinese-refugees"
+      ],
+      "missingVoices": [
+        "เด็กเกิดในค่าย",
+        "ผู้หญิงหัวหน้าครัวเรือน",
+        "ผู้ที่ไม่ได้รับการส่งต่อ"
+      ],
+      "openQuestion": "ทะเบียนค่ายและประวัติชีวิตช่วยอธิบายการแยกครอบครัวและการเรียนของเด็กอย่างไร"
+    },
+    {
+      "id": "mh-2518-border-host-communities",
+      "period": "2516-2535",
+      "beYear": "2518-2535",
+      "ceYear": "1975-1992",
+      "title": "ชุมชนไทยรอบค่ายผู้ลี้ภัยกับตลาด ที่ดิน และความมั่นคง",
+      "location": [
+        "อรัญประเทศ",
+        "ชายแดนตะวันออก",
+        "ชายแดนลาว"
+      ],
+      "groups": [
+        "ชาวบ้านชายแดน",
+        "ผู้ค้า",
+        "เจ้าหน้าที่",
+        "ผู้ลี้ภัย"
+      ],
+      "everydayDimensions": [
+        "market",
+        "land",
+        "security",
+        "services"
+      ],
+      "fact": "การตั้งค่ายและการเคลื่อนย้ายผู้ลี้ภัยทำให้พื้นที่ชายแดนรองรับทั้งหน่วยงานความมั่นคงและความช่วยเหลือระหว่างประเทศ",
+      "livedExperience": "ตลาดและงานบางอย่างขยายตัวพร้อมแรงกดดันต่อที่ดิน ราคา และความปลอดภัย ความสัมพันธ์กับผู้ลี้ภัยมีทั้งช่วยเหลือ แลกเปลี่ยน และขัดแย้ง",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-heidelberg-indochinese-refugees",
+        "src-loc-thailand-country-study"
+      ],
+      "linkedEventIds": [
+        "th-2518-indochinese-refugees"
+      ],
+      "missingVoices": [
+        "ผู้ค้าหญิง",
+        "เกษตรกรรอบค่าย",
+        "เจ้าหน้าที่ท้องถิ่น"
+      ],
+      "openQuestion": "หนังสือพิมพ์และบัญชีตลาดท้องถิ่นแสดงผลต่อราคาและอาชีพอย่างไร"
+    },
+    {
+      "id": "mh-2527-hiv-stigma-families",
+      "period": "2516-2535",
+      "beYear": "2527-2535",
+      "ceYear": "1984-1992",
+      "title": "ผู้ติดเชื้อและครอบครัวเผชิญโรคพร้อมการตีตรา",
+      "location": [
+        "กรุงเทพฯ",
+        "ภาคเหนือ",
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้ติดเชื้อเอชไอวี",
+        "ครอบครัว",
+        "บุคลากรสุขภาพ"
+      ],
+      "everydayDimensions": [
+        "illness",
+        "care",
+        "stigma",
+        "work"
+      ],
+      "fact": "หลังพบผู้ติดเชื้อรายแรกใน พ.ศ. 2527 การระบาดขยายและความรู้สาธารณะในระยะแรกยังจำกัด",
+      "livedExperience": "ผู้ติดเชื้อบางรายสูญเสียงานหรือการยอมรับและครอบครัวรับภาระดูแล ขณะที่ความกลัวการเปิดเผยสถานะทำให้เข้าถึงบริการยากขึ้น",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-pmc-thai-hiv-response",
+        "src-chula-hiv-public-response",
+        "src-un-thailand-hiv-report"
+      ],
+      "linkedEventIds": [
+        "th-2527-first-hiv-case"
+      ],
+      "missingVoices": [
+        "เด็กที่ได้รับเชื้อ",
+        "คู่สมรสหญิง",
+        "ชุมชนชนบท"
+      ],
+      "openQuestion": "คำบอกเล่าและเวชระเบียนนิรนามสะท้อนผลของการตีตราต่อการตรวจและงานอย่างไร"
+    },
+    {
+      "id": "mh-2527-health-workers-hiv",
+      "period": "2516-2535",
+      "beYear": "2527-2535",
+      "ceYear": "1984-1992",
+      "title": "บุคลากรสุขภาพเรียนรู้โรคใหม่ท่ามกลางความกลัว",
+      "location": [
+        "โรงพยาบาลทั่วประเทศ"
+      ],
+      "groups": [
+        "แพทย์",
+        "พยาบาล",
+        "เจ้าหน้าที่ห้องปฏิบัติการ",
+        "ผู้ป่วย"
+      ],
+      "everydayDimensions": [
+        "hospital",
+        "knowledge",
+        "safety",
+        "care"
+      ],
+      "fact": "ระบบสุขภาพต้องสร้างแนวทางตรวจ ป้องกัน และดูแลเอชไอวี/เอดส์ในช่วงที่ความรู้และการรักษายังเปลี่ยนเร็ว",
+      "livedExperience": "เจ้าหน้าที่ต้องสมดุลความปลอดภัยกับการไม่เลือกปฏิบัติ และโรงพยาบาลต่างพื้นที่มีทรัพยากรไม่เท่ากัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-pmc-thai-hiv-response",
+        "src-un-thailand-hiv-report"
+      ],
+      "linkedEventIds": [
+        "th-2527-first-hiv-case"
+      ],
+      "missingVoices": [
+        "พยาบาลโรงพยาบาลชุมชน",
+        "เจ้าหน้าที่ห้องแล็บ",
+        "ผู้ป่วยที่ถูกปฏิเสธ"
+      ],
+      "openQuestion": "แนวปฏิบัติโรงพยาบาลและคำร้องเรียนบอกการเปลี่ยนทัศนคติของบุคลากรอย่างไร"
+    },
+    {
+      "id": "mh-2533-insured-workers",
+      "period": "2516-2535",
+      "beYear": "2533-2535",
+      "ceYear": "1990-1992",
+      "title": "ลูกจ้างเริ่มจ่ายสมทบเพื่อสิทธิประกันสังคม",
+      "location": [
+        "กรุงเทพฯ",
+        "เมืองอุตสาหกรรม",
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ลูกจ้างในระบบ",
+        "นายจ้าง",
+        "เจ้าหน้าที่ประกันสังคม"
+      ],
+      "everydayDimensions": [
+        "wages",
+        "health",
+        "welfare",
+        "documents"
+      ],
+      "fact": "พระราชบัญญัติประกันสังคม พ.ศ. 2533 สร้างระบบเงินสมทบและสิทธิประโยชน์สำหรับลูกจ้างในสถานประกอบการตามเกณฑ์",
+      "livedExperience": "ค่าจ้างถูกหักเป็นเงินสมทบแลกกับหลักประกันใหม่ แต่การขึ้นทะเบียนและความเข้าใจสิทธิในระยะแรกไม่เท่ากัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-mol-labour-history",
+        "src-ilo-thai-social-security"
+      ],
+      "linkedEventIds": [
+        "th-2533-social-security-act"
+      ],
+      "missingVoices": [
+        "ลูกจ้างโรงงานเล็ก",
+        "นายจ้างรายย่อย",
+        "แรงงานนอกระบบ"
+      ],
+      "openQuestion": "คำร้องและเอกสารขึ้นทะเบียนระยะแรกแสดงปัญหาการเข้าถึงสิทธิใดมากที่สุด"
+    },
+    {
+      "id": "mh-2519-oct6-victims-families",
+      "period": "2516-2535",
+      "beYear": "2519",
+      "ceYear": "1976",
+      "title": "ผู้เสียชีวิต ผู้ถูกจับ และครอบครัวหลัง 6 ตุลาคม",
+      "location": [
+        "กรุงเทพฯ",
+        "หลายจังหวัด"
+      ],
+      "groups": [
+        "นักศึกษา",
+        "ครอบครัวผู้เสียหาย",
+        "ผู้ถูกจับกุม"
+      ],
+      "everydayDimensions": [
+        "violence",
+        "grief",
+        "justice",
+        "memory"
+      ],
+      "fact": "เหตุการณ์ 6 ตุลาคม 2519 มีการสังหารและจับกุมผู้ชุมนุมที่มหาวิทยาลัยธรรมศาสตร์และสนามหลวง",
+      "livedExperience": "ครอบครัวต้องตามหาผู้สูญหาย รับศพ เยี่ยมผู้ถูกคุมขัง และอยู่กับความเงียบหรือการตีตราหลังเหตุการณ์",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-doct6",
+        "src-ago-oct6-case"
+      ],
+      "linkedEventIds": [
+        "th-2519-october-6"
+      ],
+      "missingVoices": [
+        "ครอบครัวต่างจังหวัด",
+        "ผู้รอดชีวิตหญิง",
+        "เจ้าหน้าที่ชั้นผู้น้อย"
+      ],
+      "openQuestion": "หลักฐานคดีและประวัติศาสตร์บอกเล่าช่วยระบุเส้นทางของผู้ถูกจับและครอบครัวได้เพียงใด"
+    },
+    {
+      "id": "mh-2537-tao-budget-meetings",
+      "period": "2535-2549",
+      "beYear": "2537-2549",
+      "ceYear": "1994-2006",
+      "title": "ชาวบ้านเข้าสู่เวทีงบประมาณตำบล แต่เสียงไม่เท่ากัน",
+      "location": [
+        "นครสวรรค์",
+        "หลายภูมิภาค"
+      ],
+      "groups": [
+        "ชาวบ้าน",
+        "สมาชิก อบต.",
+        "ผู้นำชุมชน"
+      ],
+      "everydayDimensions": [
+        "budget",
+        "roads",
+        "water",
+        "participation"
+      ],
+      "fact": "กฎหมาย พ.ศ. 2537 ทำให้ อบต. เป็นกลไกท้องถิ่นสำหรับบริการและงบประมาณตำบล",
+      "livedExperience": "เวทีประชาคมเปิดโอกาสเสนอถนน น้ำ และบริการ แต่เวลา ข้อมูล สถานะ และเครือข่ายทำให้บางกลุ่มพูดหรือได้รับงบมากกว่า",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-jica-thai-decentralization",
+        "src-ugm-tao-participation"
+      ],
+      "linkedEventIds": [
+        "th-2537-tao-act"
+      ],
+      "missingVoices": [
+        "ผู้หญิงดูแลบ้าน",
+        "คนจนไม่มีที่ดิน",
+        "เยาวชน"
+      ],
+      "openQuestion": "รายงานประชาคมและงบจริงตรงกันเพียงใด และข้อเสนอใดถูกตัดออก"
+    },
+    {
+      "id": "mh-2537-tao-local-workers",
+      "period": "2535-2549",
+      "beYear": "2537-2549",
+      "ceYear": "1994-2006",
+      "title": "เจ้าหน้าที่และผู้รับเหมาท้องถิ่นกับงานบริการใกล้บ้าน",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "เจ้าหน้าที่ อบต.",
+        "ผู้รับเหมารายย่อย",
+        "ชาวบ้าน"
+      ],
+      "everydayDimensions": [
+        "work",
+        "procurement",
+        "services",
+        "accountability"
+      ],
+      "fact": "การตั้ง อบต. กระจายงบและภารกิจบางส่วนสู่ระดับตำบล",
+      "livedExperience": "งานท้องถิ่นสร้างอาชีพและการตอบสนองเร็วขึ้นในบางพื้นที่ พร้อมความเสี่ยงเรื่องพวกพ้องและความสามารถบริหารที่ต่างกัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-jica-thai-decentralization",
+        "src-wb-thai-tao"
+      ],
+      "linkedEventIds": [
+        "th-2537-tao-act"
+      ],
+      "missingVoices": [
+        "ลูกจ้างชั่วคราว",
+        "ผู้รับเหมาที่แพ้ประมูล",
+        "ชุมชนห่างศูนย์ตำบล"
+      ],
+      "openQuestion": "เอกสารจัดซื้อและข้อร้องเรียนสะท้อนทั้งประโยชน์และการยึดกุมทรัพยากรอย่างไร"
+    },
+    {
+      "id": "mh-2544-community-radio-listeners",
+      "period": "2535-2549",
+      "beYear": "2544-2549",
+      "ceYear": "2001-2006",
+      "title": "วิทยุชุมชนเปิดไมค์ให้ข่าว ภาษา และปัญหาท้องถิ่น",
+      "location": [
+        "หลายภูมิภาค"
+      ],
+      "groups": [
+        "ผู้จัดรายการชุมชน",
+        "ผู้ฟัง",
+        "เยาวชน"
+      ],
+      "everydayDimensions": [
+        "media",
+        "language",
+        "culture",
+        "participation"
+      ],
+      "fact": "สถานีวิทยุชุมชนเริ่มออกอากาศโดยประชาชนใน พ.ศ. 2544 ภายใต้เจตนารมณ์การปฏิรูปสื่อตามรัฐธรรมนูญ พ.ศ. 2540",
+      "livedExperience": "ผู้ฟังได้ข่าวใกล้บ้านและพื้นที่ใช้ภาษาหรือวัฒนธรรมท้องถิ่น แต่สถานะใบอนุญาต เงินทุน และการแทรกแซงทำให้สถานีเปราะบาง",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-tci-community-radio-history",
+        "src-tci-community-radio-audience",
+        "src-thammasat-youth-community-radio"
+      ],
+      "linkedEventIds": [
+        "th-2540-constitution"
+      ],
+      "missingVoices": [
+        "ผู้ฟังสูงวัย",
+        "สถานีที่ปิดตัว",
+        "ชุมชนชายแดน"
+      ],
+      "openQuestion": "ผังรายการและจดหมายผู้ฟังแสดงว่าชุมชนใช้สถานีแก้ปัญหาใดจริง"
+    },
+    {
+      "id": "mh-2546-war-drugs-families",
+      "period": "2535-2549",
+      "beYear": "2546",
+      "ceYear": "2003",
+      "title": "ครอบครัวผู้เสียชีวิตตามหาความจริงในสงครามยาเสพติด",
+      "location": [
+        "หลายจังหวัด"
+      ],
+      "groups": [
+        "ครอบครัวผู้เสียชีวิต",
+        "ผู้ถูกกล่าวหา",
+        "เจ้าหน้าที่"
+      ],
+      "everydayDimensions": [
+        "death",
+        "fear",
+        "justice",
+        "stigma"
+      ],
+      "fact": "ช่วงนโยบายสงครามยาเสพติดมีผู้เสียชีวิตจำนวนมากและองค์กรสิทธิมนุษยชนบันทึกข้อกล่าวหาการสังหารนอกกระบวนการ",
+      "livedExperience": "ญาติต้องจัดงานศพ ทวงถามคดี และอยู่กับตราบาปของรายชื่อยาเสพติด โดยหลายกรณีไม่รู้ว่าใครต้องรับผิด",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-amnesty-war-drugs-2003",
+        "src-ahr-war-drugs-family-case",
+        "src-hrw-war-drugs-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2546-war-on-drugs"
+      ],
+      "missingVoices": [
+        "เด็กกำพร้า",
+        "ผู้รอดชีวิต",
+        "เจ้าหน้าที่ผู้คัดค้านคำสั่ง"
+      ],
+      "openQuestion": "สำนวนชันสูตรและคำร้องครอบครัวช่วยตรวจสอบความเชื่อมโยงกับบัญชีรายชื่ออย่างไร"
+    },
+    {
+      "id": "mh-2546-drug-users-healthcare",
+      "period": "2535-2549",
+      "beYear": "2546",
+      "ceYear": "2003",
+      "title": "ผู้ใช้ยาหลีกเลี่ยงบริการสุขภาพเพราะความกลัว",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้ใช้ยา",
+        "ผู้ติดเชื้อเอชไอวี",
+        "บุคลากรสุขภาพ"
+      ],
+      "everydayDimensions": [
+        "health",
+        "fear",
+        "treatment",
+        "privacy"
+      ],
+      "fact": "การปราบปรามเข้มข้นเกิดพร้อมบริการลดอันตรายและดูแลเอชไอวีที่ต้องอาศัยความไว้วางใจ",
+      "livedExperience": "ความกลัวถูกขึ้นบัญชีหรือจับกุมทำให้ผู้ใช้ยาบางส่วนหลีกเลี่ยงการรักษาและการป้องกันโรค",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-hrw-war-drugs-thailand",
+        "src-amnesty-war-drugs-2003"
+      ],
+      "linkedEventIds": [
+        "th-2546-war-on-drugs"
+      ],
+      "missingVoices": [
+        "ผู้ให้บริการต่างจังหวัด",
+        "ครอบครัวผู้ใช้ยา",
+        "ผู้ผ่านการบำบัด"
+      ],
+      "openQuestion": "ข้อมูลคลินิกและประวัติชีวิตแสดงการเปลี่ยนการใช้บริการระหว่างการรณรงค์อย่างไร"
+    },
+    {
+      "id": "mh-2542-disabled-students-inclusion",
+      "period": "2535-2549",
+      "beYear": "2542-2549",
+      "ceYear": "1999-2006",
+      "title": "เด็กพิการเข้าสู่โรงเรียนทั่วไปท่ามกลางข้อจำกัดการเข้าถึง",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "เด็กพิการ",
+        "ผู้ปกครอง",
+        "ครู"
+      ],
+      "everydayDimensions": [
+        "school",
+        "accessibility",
+        "care",
+        "rights"
+      ],
+      "fact": "พระราชบัญญัติการศึกษาแห่งชาติ พ.ศ. 2542 รับรองการศึกษาสำหรับคนพิการและสนับสนุนการจัดการศึกษาแบบเรียนรวม",
+      "livedExperience": "บางครอบครัวมีทางเลือกโรงเรียนใกล้บ้านขึ้น แต่ครู สื่อ อาคาร และการเดินทางยังไม่พร้อมเท่ากัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-education-act-2542",
+        "src-eenet-inclusive-education-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2542-education-act"
+      ],
+      "missingVoices": [
+        "เด็กพิการซ้อน",
+        "ครูผู้ช่วย",
+        "เด็กที่โรงเรียนปฏิเสธ"
+      ],
+      "openQuestion": "ทะเบียนเด็กและคำร้องผู้ปกครองแสดงว่าความพิการประเภทใดถูกกันออกมากที่สุด"
+    },
+    {
+      "id": "mh-2551-stateless-applicants",
+      "period": "2549-2560",
+      "beYear": "2551-2560",
+      "ceYear": "2008-2017",
+      "title": "คนไร้สัญชาติรวบรวมเอกสารและพยานเพื่อขอสถานะ",
+      "location": [
+        "ภาคเหนือ",
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "คนไร้สัญชาติ",
+        "ผู้นำชุมชน",
+        "เจ้าหน้าที่ทะเบียน"
+      ],
+      "everydayDimensions": [
+        "documents",
+        "travel",
+        "work",
+        "services"
+      ],
+      "fact": "กฎหมายสัญชาติฉบับ พ.ศ. 2551 เปิดช่องให้คนบางกลุ่มคืนหรือขอสัญชาติไทยได้",
+      "livedExperience": "ผู้ยื่นคำขอต้องตามหาเอกสารเกิด ทะเบียนเก่า และพยาน การได้บัตรเปลี่ยนโอกาสเดินทาง เรียน และทำงาน แต่กระบวนการอาจกินเวลาหลายปี",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-unhcr-nationality-act-2551",
+        "src-unhcr-thailand-nationality-2015"
+      ],
+      "linkedEventIds": [
+        "th-2551-nationality-act-amendment"
+      ],
+      "missingVoices": [
+        "ผู้ถูกปฏิเสธ",
+        "คนไร้พยาน",
+        "เด็กในพื้นที่ห่างไกล"
+      ],
+      "openQuestion": "แฟ้มคำขอระบุสาเหตุความล่าช้าและผลของการมีผู้ช่วยทางกฎหมายอย่างไร"
+    },
+    {
+      "id": "mh-2558-gender-discrimination-complaints",
+      "period": "2549-2560",
+      "beYear": "2558-2560",
+      "ceYear": "2015-2017",
+      "title": "ผู้ถูกเลือกปฏิบัติมีช่องทางร้องเรียนด้านความเท่าเทียมทางเพศ",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้หญิง",
+        "คนข้ามเพศ",
+        "ผู้มีความหลากหลายทางเพศ"
+      ],
+      "everydayDimensions": [
+        "work",
+        "school",
+        "services",
+        "complaint"
+      ],
+      "fact": "พระราชบัญญัติความเท่าเทียมระหว่างเพศ พ.ศ. 2558 ตั้งกลไกพิจารณาการเลือกปฏิบัติระหว่างเพศ",
+      "livedExperience": "กฎหมายเพิ่มภาษาสิทธิและช่องทางร้องเรียน แต่ผู้เสียหายยังต้องรู้สิทธิ รวบรวมหลักฐาน และรับความเสี่ยงจากการเปิดเผยตัว",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-unwomen-gender-equality-act",
+        "src-unwomen-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2558-gender-equality-act"
+      ],
+      "missingVoices": [
+        "ผู้ร้องเรียนต่างจังหวัด",
+        "คนข้ามเพศในโรงเรียน",
+        "แรงงานนอกระบบ"
+      ],
+      "openQuestion": "คำวินิจฉัยช่วง พ.ศ. 2558-2560 บอกปัญหาการบังคับใช้และข้อยกเว้นอย่างไร"
+    },
+    {
+      "id": "mh-2558-child-grant-caregivers",
+      "period": "2549-2560",
+      "beYear": "2558-2560",
+      "ceYear": "2015-2017",
+      "title": "เงินอุดหนุนเด็กเล็กช่วยค่าใช้จ่าย แต่การลงทะเบียนยังมีคนตกหล่น",
+      "location": [
+        "เชียงใหม่",
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "เด็กเล็ก",
+        "แม่วัยรุ่น",
+        "ผู้ดูแลรายได้น้อย"
+      ],
+      "everydayDimensions": [
+        "food",
+        "care",
+        "money",
+        "documents"
+      ],
+      "fact": "โครงการเงินอุดหนุนเด็กแรกเกิดเริ่มใน พ.ศ. 2558 สำหรับครัวเรือนรายได้น้อยและจ่ายเงินสดแก่ผู้ดูแล",
+      "livedExperience": "เงินจำนวนไม่มากช่วยซื้ออาหาร นม และค่าเดินทาง แต่การรับรองรายได้และทะเบียนทำให้บางครอบครัวสมัครยาก",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-unicef-child-support-grant",
+        "src-unicef-first-three"
+      ],
+      "linkedEventIds": [
+        "th-2558-child-support-grant"
+      ],
+      "missingVoices": [
+        "ผู้ดูแลไม่มีทะเบียนบ้าน",
+        "ครอบครัวแรงงานข้ามชาติ",
+        "ผู้สมัครไม่ผ่าน"
+      ],
+      "openQuestion": "ข้อมูลผู้ไม่ได้รับสิทธิแยกปัญหาเอกสาร รายได้ และการไม่รู้ข่าวสารได้อย่างไร"
+    },
+    {
+      "id": "mh-2558-migrant-fishers-documents",
+      "period": "2549-2560",
+      "beYear": "2558-2560",
+      "ceYear": "2015-2017",
+      "title": "แรงงานประมงข้ามชาติกับเอกสารที่ผูกการทำงานและการเดินทาง",
+      "location": [
+        "สมุทรสาคร",
+        "สงขลา",
+        "ระยอง",
+        "จังหวัดชายฝั่ง"
+      ],
+      "groups": [
+        "แรงงานประมงข้ามชาติ",
+        "นายหน้า",
+        "นายจ้าง"
+      ],
+      "everydayDimensions": [
+        "documents",
+        "debt",
+        "mobility",
+        "work"
+      ],
+      "fact": "การปฏิรูปประมงหลัง พ.ศ. 2558 เพิ่มการลงทะเบียนเรือและแรงงานและการตรวจที่ท่าเรือ",
+      "livedExperience": "การมีเอกสารช่วยให้ถูกตรวจสอบได้ แต่แรงงานบางคนยังพึ่งนายหน้าและนายจ้างในการถือเอกสาร เปลี่ยนงาน และเข้าถึงข้อมูล",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-ilo-fishing-conditions-2013",
+        "src-ilo-fishing-safeguarding"
+      ],
+      "linkedEventIds": [
+        "th-2558-fishing-reform"
+      ],
+      "missingVoices": [
+        "แรงงานหญิงแปรรูป",
+        "แรงงานบนเรือไกลฝั่ง",
+        "ผู้หลบหนีจากนายจ้าง"
+      ],
+      "openQuestion": "การสำรวจก่อนและหลังปี 2558 แสดงการเปลี่ยนการถือเอกสารและหนี้นายหน้าอย่างไร"
+    },
+    {
+      "id": "mh-2558-fishers-hours-safety",
+      "period": "2549-2560",
+      "beYear": "2558-2560",
+      "ceYear": "2015-2017",
+      "title": "ชั่วโมงงานและความปลอดภัยบนเรือยังตรวจได้ยาก",
+      "location": [
+        "ทะเลอ่าวไทย",
+        "ทะเลอันดามัน"
+      ],
+      "groups": [
+        "ลูกเรือประมง",
+        "ไต้ก๋ง",
+        "เจ้าหน้าที่ตรวจเรือ"
+      ],
+      "everydayDimensions": [
+        "hours",
+        "wages",
+        "safety",
+        "isolation"
+      ],
+      "fact": "มาตรการใหม่กำหนดการควบคุมเรือและตรวจแรงงานมากขึ้น หลังมีหลักฐานการบังคับใช้แรงงานและสภาพงานรุนแรงในอุตสาหกรรมประมง",
+      "livedExperience": "เมื่อเรือออกทะเลนาน การบันทึกชั่วโมง ค่าจ้าง และเหตุรุนแรงขึ้นกับระบบบนเรือและโอกาสร้องเรียนเมื่อเข้าฝั่ง",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-ilo-fishing-conditions-2013",
+        "src-ilo-fishing-safeguarding"
+      ],
+      "linkedEventIds": [
+        "th-2558-fishing-reform"
+      ],
+      "missingVoices": [
+        "ลูกเรือที่เสียชีวิต",
+        "แรงงานไร้เอกสาร",
+        "ครอบครัวในประเทศต้นทาง"
+      ],
+      "openQuestion": "ข้อมูลตรวจท่าเรือและคำบอกเล่าลูกเรือสอดคล้องกันเรื่องชั่วโมงงานและค่าจ้างเพียงใด"
+    },
+    {
+      "id": "mh-2557-community-radio-shutdown",
+      "period": "2549-2560",
+      "beYear": "2557-2560",
+      "ceYear": "2014-2017",
+      "title": "สถานีชุมชนหยุดออกอากาศหรือปรับเนื้อหาหลังรัฐประหาร",
+      "location": [
+        "หลายภูมิภาค"
+      ],
+      "groups": [
+        "ผู้จัดรายการชุมชน",
+        "ผู้ฟัง",
+        "นักกิจกรรมท้องถิ่น"
+      ],
+      "everydayDimensions": [
+        "media",
+        "speech",
+        "information",
+        "security"
+      ],
+      "fact": "หลังรัฐประหาร พ.ศ. 2557 คณะรัฐประหารสั่งระงับการออกอากาศของสถานีวิทยุจำนวนมากและกำกับการกลับมาออกอากาศ",
+      "livedExperience": "ผู้จัดรายการสูญเสียช่องทางและรายได้ ขณะที่ผู้ฟังขาดข่าวใกล้บ้านหรือหันไปใช้สื่อออนไลน์ แต่ผลแต่ละสถานีต่างกัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-mfa-ncpo",
+        "src-tci-community-radio-history"
+      ],
+      "linkedEventIds": [
+        "th-2557-coup"
+      ],
+      "missingVoices": [
+        "สถานีไม่เกี่ยวการเมือง",
+        "ผู้ฟังชนบท",
+        "เจ้าหน้าที่กำกับดูแล"
+      ],
+      "openQuestion": "ผังรายการและคำสั่งรายสถานีแสดงว่าเนื้อหาใดหายไปหรือย้ายแพลตฟอร์ม"
     }
   ]
 }

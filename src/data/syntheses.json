@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "บทสังเคราะห์ประวัติศาสตร์ประชาชนไทย",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "updated": "2026-07-21",
     "rule": "ทุกเรื่องต้องอ้างกลับไปยัง microhistory และ source IDs และระบุข้อจำกัดที่ยังไม่ควรสรุปเกินหลักฐาน"
   },
@@ -76,6 +76,42 @@
       "sourceIds": ["src-jil-thai-labour-law", "src-ilo-labour-2518", "src-pajournal-community-rights", "src-kku-school-community", "src-escap-disability-thailand", "src-ilo-homeworkers-act"],
       "claim": "การมีกฎหมายเปลี่ยนภาษาที่ประชาชนใช้เรียกร้องและเปิดกลไกใหม่ แต่ผลลัพธ์ยังขึ้นกับการรับรู้สิทธิ การพิสูจน์สถานะ การบังคับใช้ และทรัพยากรของแต่ละกลุ่ม",
       "limits": "ต้องเพิ่มข้อมูลคดี คำร้อง และผลการบังคับใช้เพื่อแยกสิทธิที่เกิดผลจริงออกจากสิทธิที่ยังเป็นหลักการ",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-care-health-households",
+      "title": "จากการดูแลในครัวเรือนสู่ระบบสุขภาพที่เข้าถึงชุมชน",
+      "deck": "โรคระบาด การคลอด การวางแผนครอบครัว เอชไอวี และหลักประกันสุขภาพแสดงการขยายบทบาทของรัฐและวิชาชีพ พร้อมภาระดูแลที่ยังอยู่กับครอบครัว",
+      "periodRange": "2461-2560",
+      "patternIds": ["pat-01-state-through-daily-systems", "pat-06-formal-rights-uneven-access", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2461-influenza-care-networks", "mh-2468-midwives-mothers", "mh-2475-rural-health-expansion", "mh-2513-midwives-contraception", "mh-2527-hiv-stigma-families", "mh-2545-uhc-patients"],
+      "sourceIds": ["src-pmc-thai-mortality-transition", "src-thammasat-women-nursing", "src-who-thai-primary-health-history", "src-pubmed-health-family-planning", "src-pmc-thai-hiv-response", "src-who-uhc"],
+      "claim": "ระบบสุขภาพไทยขยายจากหน่วยงานและโรงพยาบาลในเมืองไปสู่สถานีอนามัย อาสาสมัคร และหลักประกันที่กว้างขึ้น แต่ระยะทาง เอกสาร ความรู้ และแรงดูแลในครัวเรือนยังทำให้ผลลัพธ์ต่างกัน",
+      "limits": "หลักฐานยังไม่พอสำหรับหมอตำแย ผู้รักษาพื้นบ้าน ผู้ป่วยที่หลีกเลี่ยงรัฐ และครัวเรือนที่ไม่มีผู้ดูแล",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-documents-citizenship-mobility",
+      "title": "เอกสารหนึ่งใบกำหนดการเดินทาง การเรียน และการทำงาน",
+      "deck": "ทะเบียน โรงเรียน บัตรประชาชน เอกสารแรงงาน และกฎหมายสัญชาติทำให้การเป็นส่วนหนึ่งของรัฐกลายเป็นเงื่อนไขในชีวิตประจำวัน",
+      "periodRange": "2464-2560",
+      "patternIds": ["pat-01-state-through-daily-systems", "pat-06-formal-rights-uneven-access", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2464-southern-islamic-schools", "mh-2503-hill-community-documents", "mh-2518-refugee-camp-life", "mh-2550-migrant-workers-rights", "mh-2551-stateless-applicants", "mh-2558-migrant-fishers-documents"],
+      "sourceIds": ["src-tsri-islamic-education-south", "src-oxford-hill-tribe-citizenship", "src-heidelberg-indochinese-refugees", "src-sjij-migrant-workers", "src-unhcr-nationality-act-2551", "src-ilo-fishing-conditions-2013"],
+      "claim": "เมื่อบริการและสิทธิต่าง ๆ พึ่งเอกสารมากขึ้น ผู้ที่พิสูจน์สถานะได้มีโอกาสเดินทาง เรียน ทำงาน และร้องเรียนเพิ่มขึ้น ขณะที่ผู้ไม่มีเอกสารต้องพึ่งนายจ้าง เจ้าหน้าที่ พยาน และเครือข่ายช่วยเหลือ",
+      "limits": "ต้องเพิ่มแฟ้มคำขอที่ถูกปฏิเสธและเสียงเจ้าหน้าที่ทะเบียน เพื่อไม่อธิบายความล่าช้าจากมุมผู้ยื่นฝ่ายเดียว",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-local-voice-public-space",
+      "title": "พื้นที่สาธารณะขยับจากเมืองหลวงสู่ตำบล ชุมชน และชายแดน",
+      "deck": "การเลือกตั้ง องค์กรท้องถิ่น วิทยุชุมชน และเครือข่ายประชาชนสร้างช่องทางใหม่ให้คนพูดและต่อรอง แต่ทุกช่องทางยังถูกกำกับด้วยทรัพยากรและอำนาจ",
+      "periodRange": "2476-2560",
+      "patternIds": ["pat-05-everyday-networks-to-movements", "pat-06-formal-rights-uneven-access", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2476-first-election-voters", "mh-2492-orapin-constituents", "mh-2537-tao-budget-meetings", "mh-2538-assembly-poor-networks", "mh-2544-community-radio-listeners", "mh-2557-community-radio-shutdown"],
+      "sourceIds": ["src-wb-first-direct-election", "src-cambridge-female-politicians-thailand", "src-jica-thai-decentralization", "src-sage-assembly-poor", "src-tci-community-radio-audience", "src-mfa-ncpo"],
+      "claim": "ตลอดศตวรรษ ช่องทางการมีส่วนร่วมขยายจากการเลือกผู้แทนไปสู่ประชาคมตำบล สื่อชุมชน และเครือข่ายข้ามพื้นที่ แต่ความสามารถในการใช้ช่องทางเหล่านี้ขึ้นกับเวลา เงิน ความรู้ และเสรีภาพทางการเมือง",
+      "limits": "ยังขาดเสียงของผู้ไม่เข้าร่วม ผู้สนับสนุนการจำกัดพื้นที่ และชุมชนที่กลไกใหม่ทำให้ความขัดแย้งรุนแรงขึ้น",
       "status": "reader-draft"
     }
   ]

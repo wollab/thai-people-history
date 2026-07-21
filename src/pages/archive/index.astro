@@ -70,8 +70,14 @@ const mhRows: Row[] = microhistories.map((record) => ({
   search: [record.title, record.fact, record.livedExperience, record.period, ...record.everydayDimensions.map((t) => tagLabels[t] ?? t), ...record.groups, ...record.location].join(" ").toLowerCase(),
 }));
 
-const allTags = [...new Set([...eventRows, ...mhRows].flatMap((row) => row.tags))]
-  .sort((a, b) => (tagLabels[a] ?? a).localeCompare(tagLabels[b] ?? b, "th"));
+const tagsByLabel = new Map<string, string[]>();
+for (const tag of new Set([...eventRows, ...mhRows].flatMap((row) => row.tags))) {
+  const label = tagLabels[tag] ?? tag;
+  tagsByLabel.set(label, [...(tagsByLabel.get(label) ?? []), tag]);
+}
+const tagOptions = [...tagsByLabel.entries()]
+  .map(([label, tags]) => ({ label, value: tags.join("|") }))
+  .sort((a, b) => a.label.localeCompare(b.label, "th"));
 const sortedRows = [...eventRows, ...mhRows].sort((a, b) => Number(a.beYear.match(/\d{4}/)?.[0]) - Number(b.beYear.match(/\d{4}/)?.[0]));
 const base = import.meta.env.BASE_URL;
 ---
@@ -96,7 +102,7 @@ const base = import.meta.env.BASE_URL;
       <label class="archive-search"><Search size={19} /><span class="sr-only">ค้นหาเหตุการณ์</span><input type="search" placeholder="ค้นหาเหตุการณ์ บุคคล หรือประเด็น" data-event-search /></label>
       <label><span>ประเภท</span><select data-type-filter><option value="">ทุกประเภท</option><option value="event">เหตุการณ์โครงสร้าง</option><option value="microhistory">Microhistory</option></select></label>
       <label><span>ช่วงเวลา</span><select data-period-filter><option value="">ทุกช่วงเวลา</option>{periods.map((period) => <option value={period.range}>{period.range}</option>)}</select></label>
-      <label><span>ประเด็น</span><select data-theme-filter><option value="">ทุกประเด็น</option>{allTags.map((tag) => <option value={tag}>{tagLabels[tag] ?? tag}</option>)}</select></label>
+      <label><span>ประเด็น</span><select data-theme-filter><option value="">ทุกประเด็น</option>{tagOptions.map((option) => <option value={option.value}>{option.label}</option>)}</select></label>
       <button type="button" class="filter-reset" data-filter-reset>ล้างตัวกรอง</button>
     </div>
   </section>
@@ -191,7 +197,9 @@ const base = import.meta.env.BASE_URL;
       const query = search.value.trim().toLowerCase();
       let visible = 0;
       entries.forEach((entry) => {
-        const matches = (!query || entry.dataset.search.includes(query)) && (!type.value || entry.dataset.type === type.value) && (!period.value || entry.dataset.period === period.value) && (!theme.value || entry.dataset.themes.split(" ").includes(theme.value));
+        const selectedThemes = theme.value ? theme.value.split("|") : [];
+        const entryThemes = entry.dataset.themes.split(" ");
+        const matches = (!query || entry.dataset.search.includes(query)) && (!type.value || entry.dataset.type === type.value) && (!period.value || entry.dataset.period === period.value) && (!selectedThemes.length || selectedThemes.some((value) => entryThemes.includes(value)));
         entry.hidden = !matches;
         if (matches) visible += 1;
       });

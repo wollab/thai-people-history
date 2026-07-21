@@ -4,7 +4,7 @@
     "version": "0.2.0",
     "updated": "2026-07-21",
     "derivedFrom": "09_event_database.json",
-    "derivedFromVersion": "0.5.0",
+    "derivedFromVersion": "0.8.0",
     "generator": "scripts/build_research_index.mjs",
     "rule": "ไฟล์นี้เป็นดัชนีอนุพันธ์ ห้ามแก้แทนฐานข้อมูลหลัก"
   },
@@ -1476,6 +1476,780 @@
         "professionals-officials"
       ],
       "evidenceStatus": "contextual-lead"
+    },
+    "mh-2461-sanitation-new-state": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "institution-expansion",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "patients-caregivers",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2468-nurse-students": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "education-media",
+        "identity-belonging",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "bangkok"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "students-educators",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2468-midwives-mothers": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "state-everyday",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "institution-expansion",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "patients-caregivers",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2464-southern-islamic-schools": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "education-media",
+        "identity-belonging",
+        "state-everyday"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "south"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "students-educators",
+        "ethnic-religious",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2468-treaty-mobility": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "state-everyday",
+        "economy-opportunity",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law"
+      ],
+      "regionIds": [
+        "bangkok",
+        "international"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "traders-small-business",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "research-lead"
+    },
+    "mh-2461-influenza-care-networks": {
+      "period": "2460-2475",
+      "macroThemeIds": [
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "environment-disaster",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "patients-caregivers",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2475-women-first-national-vote": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "identity-belonging",
+        "movements-civil-society",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "collective-action"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2492-orapin-constituents": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "identity-belonging",
+        "movements-civil-society"
+      ],
+      "mechanismIds": [
+        "collective-action",
+        "policy-law"
+      ],
+      "regionIds": [
+        "northeast"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2475-rural-health-expansion": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "state-everyday",
+        "rural-urban",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "institution-expansion",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "north",
+        "northeast",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "patients-caregivers",
+        "farmers-rural",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2484-bangkok-evacuation": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "state-everyday",
+        "rural-urban",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "bangkok",
+        "central"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "families-households",
+        "workers"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2489-un-membership-civil-service": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "institutions-long-term",
+        "education-media"
+      ],
+      "mechanismIds": [
+        "institution-expansion",
+        "media-ideas"
+      ],
+      "regionIds": [
+        "bangkok",
+        "international"
+      ],
+      "groupCategoryIds": [
+        "professionals-officials",
+        "students-educators"
+      ],
+      "evidenceStatus": "research-lead"
+    },
+    "mh-2497-seato-nearby-communities": {
+      "period": "2475-2500",
+      "macroThemeIds": [
+        "state-everyday",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "bangkok"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "traders-small-business",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "research-lead"
+    },
+    "mh-2503-hill-community-documents": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "identity-belonging",
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "north"
+      ],
+      "groupCategoryIds": [
+        "ethnic-religious",
+        "children-youth",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2513-family-planning-mothers": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "state-everyday",
+        "identity-belonging",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "patients-caregivers",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2513-midwives-contraception": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "state-everyday",
+        "rural-urban",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "welfare-service",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "nationwide",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "patients-caregivers",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2515-village-electricity-contribution": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "infrastructure",
+        "collective-action"
+      ],
+      "regionIds": [
+        "northeast",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "traders-small-business",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2515-electric-light-routines": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban",
+        "education-media"
+      ],
+      "mechanismIds": [
+        "infrastructure",
+        "technology"
+      ],
+      "regionIds": [
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "farmers-rural",
+        "traders-small-business",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2510-asean-border-traders": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region",
+        "international"
+      ],
+      "groupCategoryIds": [
+        "traders-small-business",
+        "migrants",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "research-lead"
+    },
+    "mh-2518-refugee-camp-life": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "state-everyday",
+        "identity-belonging",
+        "rural-urban"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "migration-mobility",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "multi-region",
+        "international"
+      ],
+      "groupCategoryIds": [
+        "migrants",
+        "children-youth",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2518-border-host-communities": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "rural-urban",
+        "economy-opportunity",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "migration-mobility",
+        "market-shock"
+      ],
+      "regionIds": [
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "traders-small-business",
+        "migrants",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2527-hiv-stigma-families": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "state-everyday",
+        "identity-belonging",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "welfare-service",
+        "media-ideas"
+      ],
+      "regionIds": [
+        "nationwide",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "patients-caregivers",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2527-health-workers-hiv": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "welfare-service",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "patients-caregivers",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2533-insured-workers": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2519-oct6-victims-families": {
+      "period": "2516-2535",
+      "macroThemeIds": [
+        "state-everyday",
+        "movements-civil-society",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "collective-action",
+        "policy-law"
+      ],
+      "regionIds": [
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "students-educators",
+        "movement-members",
+        "patients-caregivers",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2537-tao-budget-meetings": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "state-everyday",
+        "movements-civil-society",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "collective-action"
+      ],
+      "regionIds": [
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2537-tao-local-workers": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "state-everyday",
+        "economy-opportunity",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "institution-expansion"
+      ],
+      "regionIds": [
+        "nationwide",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "traders-small-business",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2544-community-radio-listeners": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "education-media",
+        "movements-civil-society",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "media-ideas",
+        "technology",
+        "collective-action"
+      ],
+      "regionIds": [
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "movement-members",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2546-war-drugs-families": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "state-everyday",
+        "institutions-long-term",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "policy-law"
+      ],
+      "regionIds": [
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "families-households",
+        "patients-caregivers"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2546-drug-users-healthcare": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "state-everyday",
+        "identity-belonging",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "patients-caregivers",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2542-disabled-students-inclusion": {
+      "period": "2535-2549",
+      "macroThemeIds": [
+        "education-media",
+        "state-everyday",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "institution-expansion",
+        "welfare-service"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "students-educators",
+        "patients-caregivers",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2551-stateless-applicants": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "identity-belonging",
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "north",
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "ethnic-religious",
+        "migrants",
+        "families-households",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2558-gender-discrimination-complaints": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "identity-belonging",
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law"
+      ],
+      "regionIds": [
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "women-gender",
+        "movement-members",
+        "professionals-officials"
+      ],
+      "evidenceStatus": "contextual-lead"
+    },
+    "mh-2558-child-grant-caregivers": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "state-everyday",
+        "economy-opportunity",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "welfare-service",
+        "policy-law"
+      ],
+      "regionIds": [
+        "north",
+        "nationwide"
+      ],
+      "groupCategoryIds": [
+        "children-youth",
+        "women-gender",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2558-migrant-fishers-documents": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "rural-urban",
+        "identity-belonging"
+      ],
+      "mechanismIds": [
+        "migration-mobility",
+        "policy-law",
+        "industrialization"
+      ],
+      "regionIds": [
+        "south",
+        "east",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "migrants",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2558-fishers-hours-safety": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "industrialization",
+        "policy-law"
+      ],
+      "regionIds": [
+        "south",
+        "east",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "migrants"
+      ],
+      "evidenceStatus": "documented-case"
+    },
+    "mh-2557-community-radio-shutdown": {
+      "period": "2549-2560",
+      "macroThemeIds": [
+        "education-media",
+        "movements-civil-society",
+        "state-everyday"
+      ],
+      "mechanismIds": [
+        "war-security",
+        "policy-law",
+        "media-ideas"
+      ],
+      "regionIds": [
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "movement-members",
+        "professionals-officials",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
     }
   },
   "indexes": {
@@ -1488,7 +2262,13 @@
         "mh-2472-rice-households",
         "mh-2461-influenza-households",
         "mh-2461-chinese-school-families",
-        "mh-2470-bangkok-worker-strikes"
+        "mh-2470-bangkok-worker-strikes",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-nurse-students",
+        "mh-2468-midwives-mothers",
+        "mh-2464-southern-islamic-schools",
+        "mh-2468-treaty-mobility",
+        "mh-2461-influenza-care-networks"
       ],
       "2475-2500": [
         "mh-2482-cultural-mandates",
@@ -1498,7 +2278,13 @@
         "mh-2485-free-thai-networks",
         "mh-2476-first-election-voters",
         "mh-2480-direct-election-voters",
-        "mh-2499-labour-act-workers"
+        "mh-2499-labour-act-workers",
+        "mh-2475-women-first-national-vote",
+        "mh-2492-orapin-constituents",
+        "mh-2475-rural-health-expansion",
+        "mh-2484-bangkok-evacuation",
+        "mh-2489-un-membership-civil-service",
+        "mh-2497-seato-nearby-communities"
       ],
       "2500-2516": [
         "mh-2500-working-women",
@@ -1508,7 +2294,13 @@
         "mh-2515-higher-education-expansion",
         "mh-2501-press-civic-life",
         "mh-2505-rural-malaria-health",
-        "mh-2505-bangkok-migrants-housing"
+        "mh-2505-bangkok-migrants-housing",
+        "mh-2503-hill-community-documents",
+        "mh-2513-family-planning-mothers",
+        "mh-2513-midwives-contraception",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines",
+        "mh-2510-asean-border-traders"
       ],
       "2516-2535": [
         "mh-2516-women-media-citizenship",
@@ -1520,7 +2312,13 @@
         "mh-2516-october-participants-families",
         "mh-2518-labour-unions-bargaining",
         "mh-2518-hara-women-workers",
-        "mh-2520-village-health-volunteers"
+        "mh-2520-village-health-volunteers",
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities",
+        "mh-2527-hiv-stigma-families",
+        "mh-2527-health-workers-hiv",
+        "mh-2533-insured-workers",
+        "mh-2519-oct6-victims-families"
       ],
       "2535-2549": [
         "mh-2534-pakmun-livelihoods",
@@ -1535,7 +2333,13 @@
         "mh-2540-community-rights",
         "mh-2542-community-school-participation",
         "mh-2538-trips-medicine-access",
-        "mh-2540-community-forest-rights"
+        "mh-2540-community-forest-rights",
+        "mh-2537-tao-budget-meetings",
+        "mh-2537-tao-local-workers",
+        "mh-2544-community-radio-listeners",
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare",
+        "mh-2542-disabled-students-inclusion"
       ],
       "2549-2560": [
         "mh-2550-migrant-workers-rights",
@@ -1550,7 +2354,13 @@
         "mh-2558-aec-border-communities",
         "mh-2559-referendum-activists-voters",
         "mh-2553-home-workers-protection",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2551-stateless-applicants",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2558-child-grant-caregivers",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety",
+        "mh-2557-community-radio-shutdown"
       ]
     },
     "byMacroTheme": {
@@ -1565,7 +2375,14 @@
         "mh-2501-press-civic-life",
         "mh-2542-community-school-participation",
         "mh-2549-peaceful-anti-coup-activists",
-        "mh-2559-referendum-activists-voters"
+        "mh-2559-referendum-activists-voters",
+        "mh-2468-nurse-students",
+        "mh-2464-southern-islamic-schools",
+        "mh-2489-un-membership-civil-service",
+        "mh-2515-electric-light-routines",
+        "mh-2544-community-radio-listeners",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2557-community-radio-shutdown"
       ],
       "institutions-long-term": [
         "mh-2460-university-access",
@@ -1589,7 +2406,29 @@
         "mh-2542-community-school-participation",
         "mh-2538-trips-medicine-access",
         "mh-2553-home-workers-protection",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-treaty-mobility",
+        "mh-2461-influenza-care-networks",
+        "mh-2475-women-first-national-vote",
+        "mh-2475-rural-health-expansion",
+        "mh-2489-un-membership-civil-service",
+        "mh-2503-hill-community-documents",
+        "mh-2513-family-planning-mothers",
+        "mh-2513-midwives-contraception",
+        "mh-2515-village-electricity-contribution",
+        "mh-2510-asean-border-traders",
+        "mh-2527-hiv-stigma-families",
+        "mh-2527-health-workers-hiv",
+        "mh-2533-insured-workers",
+        "mh-2537-tao-budget-meetings",
+        "mh-2537-tao-local-workers",
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare",
+        "mh-2551-stateless-applicants",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2558-child-grant-caregivers",
+        "mh-2558-fishers-hours-safety"
       ],
       "state-everyday": [
         "mh-2460-war-volunteer-families",
@@ -1619,7 +2458,33 @@
         "mh-2538-trips-medicine-access",
         "mh-2549-peaceful-anti-coup-activists",
         "mh-2559-referendum-activists-voters",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-midwives-mothers",
+        "mh-2464-southern-islamic-schools",
+        "mh-2468-treaty-mobility",
+        "mh-2461-influenza-care-networks",
+        "mh-2475-rural-health-expansion",
+        "mh-2484-bangkok-evacuation",
+        "mh-2497-seato-nearby-communities",
+        "mh-2503-hill-community-documents",
+        "mh-2513-family-planning-mothers",
+        "mh-2513-midwives-contraception",
+        "mh-2518-refugee-camp-life",
+        "mh-2527-hiv-stigma-families",
+        "mh-2527-health-workers-hiv",
+        "mh-2533-insured-workers",
+        "mh-2519-oct6-victims-families",
+        "mh-2537-tao-budget-meetings",
+        "mh-2537-tao-local-workers",
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2551-stateless-applicants",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2558-child-grant-caregivers",
+        "mh-2558-fishers-hours-safety",
+        "mh-2557-community-radio-shutdown"
       ],
       "identity-belonging": [
         "mh-2460-war-volunteer-families",
@@ -1642,7 +2507,25 @@
         "mh-2540-community-forest-rights",
         "mh-2558-aec-border-communities",
         "mh-2553-home-workers-protection",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2468-nurse-students",
+        "mh-2468-midwives-mothers",
+        "mh-2464-southern-islamic-schools",
+        "mh-2475-women-first-national-vote",
+        "mh-2492-orapin-constituents",
+        "mh-2503-hill-community-documents",
+        "mh-2513-family-planning-mothers",
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities",
+        "mh-2527-hiv-stigma-families",
+        "mh-2519-oct6-victims-families",
+        "mh-2544-community-radio-listeners",
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2551-stateless-applicants",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2558-migrant-fishers-documents"
       ],
       "economy-opportunity": [
         "mh-2472-rice-households",
@@ -1674,7 +2557,20 @@
         "mh-2538-assembly-poor-networks",
         "mh-2538-trips-medicine-access",
         "mh-2558-aec-border-communities",
-        "mh-2553-home-workers-protection"
+        "mh-2553-home-workers-protection",
+        "mh-2468-nurse-students",
+        "mh-2468-treaty-mobility",
+        "mh-2484-bangkok-evacuation",
+        "mh-2497-seato-nearby-communities",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines",
+        "mh-2510-asean-border-traders",
+        "mh-2518-border-host-communities",
+        "mh-2533-insured-workers",
+        "mh-2537-tao-local-workers",
+        "mh-2558-child-grant-caregivers",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety"
       ],
       "rural-urban": [
         "mh-2472-rice-households",
@@ -1693,7 +2589,16 @@
         "mh-2520-village-health-volunteers",
         "mh-2538-assembly-poor-networks",
         "mh-2540-community-forest-rights",
-        "mh-2558-aec-border-communities"
+        "mh-2558-aec-border-communities",
+        "mh-2475-rural-health-expansion",
+        "mh-2484-bangkok-evacuation",
+        "mh-2513-midwives-contraception",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines",
+        "mh-2510-asean-border-traders",
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities",
+        "mh-2558-migrant-fishers-documents"
       ],
       "movements-civil-society": [
         "mh-2485-free-thai-networks",
@@ -1716,7 +2621,13 @@
         "mh-2540-community-rights",
         "mh-2540-community-forest-rights",
         "mh-2549-peaceful-anti-coup-activists",
-        "mh-2559-referendum-activists-voters"
+        "mh-2559-referendum-activists-voters",
+        "mh-2475-women-first-national-vote",
+        "mh-2492-orapin-constituents",
+        "mh-2519-oct6-victims-families",
+        "mh-2537-tao-budget-meetings",
+        "mh-2544-community-radio-listeners",
+        "mh-2557-community-radio-shutdown"
       ]
     },
     "byMechanism": {
@@ -1731,7 +2642,19 @@
         "mh-2505-rural-malaria-health",
         "mh-2520-village-health-volunteers",
         "mh-2542-community-school-participation",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-nurse-students",
+        "mh-2468-midwives-mothers",
+        "mh-2464-southern-islamic-schools",
+        "mh-2475-rural-health-expansion",
+        "mh-2489-un-membership-civil-service",
+        "mh-2497-seato-nearby-communities",
+        "mh-2503-hill-community-documents",
+        "mh-2513-midwives-contraception",
+        "mh-2527-health-workers-hiv",
+        "mh-2537-tao-local-workers",
+        "mh-2542-disabled-students-inclusion"
       ],
       "war-security": [
         "mh-2460-war-volunteer-families",
@@ -1745,7 +2668,15 @@
         "mh-2557-civilians-military-courts",
         "mh-2501-press-civic-life",
         "mh-2516-october-participants-families",
-        "mh-2549-peaceful-anti-coup-activists"
+        "mh-2549-peaceful-anti-coup-activists",
+        "mh-2484-bangkok-evacuation",
+        "mh-2497-seato-nearby-communities",
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities",
+        "mh-2519-oct6-victims-families",
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare",
+        "mh-2557-community-radio-shutdown"
       ],
       "migration-mobility": [
         "mh-2460-war-volunteer-families",
@@ -1760,7 +2691,13 @@
         "mh-2547-tourism-workers-tsunami",
         "mh-2551-export-workers-crisis",
         "mh-2505-bangkok-migrants-housing",
-        "mh-2558-aec-border-communities"
+        "mh-2558-aec-border-communities",
+        "mh-2484-bangkok-evacuation",
+        "mh-2510-asean-border-traders",
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities",
+        "mh-2551-stateless-applicants",
+        "mh-2558-migrant-fishers-documents"
       ],
       "policy-law": [
         "mh-2464-compulsory-school",
@@ -1785,7 +2722,26 @@
         "mh-2549-peaceful-anti-coup-activists",
         "mh-2559-referendum-activists-voters",
         "mh-2553-home-workers-protection",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2464-southern-islamic-schools",
+        "mh-2468-treaty-mobility",
+        "mh-2475-women-first-national-vote",
+        "mh-2492-orapin-constituents",
+        "mh-2503-hill-community-documents",
+        "mh-2513-family-planning-mothers",
+        "mh-2510-asean-border-traders",
+        "mh-2533-insured-workers",
+        "mh-2519-oct6-victims-families",
+        "mh-2537-tao-budget-meetings",
+        "mh-2537-tao-local-workers",
+        "mh-2546-war-drugs-families",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2551-stateless-applicants",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2558-child-grant-caregivers",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety",
+        "mh-2557-community-radio-shutdown"
       ],
       "media-ideas": [
         "mh-2468-satri-thai-readers",
@@ -1797,7 +2753,11 @@
         "mh-2556-internet-routines",
         "mh-2501-press-civic-life",
         "mh-2516-october-participants-families",
-        "mh-2559-referendum-activists-voters"
+        "mh-2559-referendum-activists-voters",
+        "mh-2489-un-membership-civil-service",
+        "mh-2527-hiv-stigma-families",
+        "mh-2544-community-radio-listeners",
+        "mh-2557-community-radio-shutdown"
       ],
       "market-shock": [
         "mh-2472-rice-households",
@@ -1808,7 +2768,8 @@
         "mh-2551-export-workers-crisis",
         "mh-2470-bangkok-worker-strikes",
         "mh-2538-trips-medicine-access",
-        "mh-2558-aec-border-communities"
+        "mh-2558-aec-border-communities",
+        "mh-2518-border-host-communities"
       ],
       "collective-action": [
         "mh-2485-free-thai-networks",
@@ -1829,7 +2790,13 @@
         "mh-2540-community-rights",
         "mh-2540-community-forest-rights",
         "mh-2549-peaceful-anti-coup-activists",
-        "mh-2559-referendum-activists-voters"
+        "mh-2559-referendum-activists-voters",
+        "mh-2475-women-first-national-vote",
+        "mh-2492-orapin-constituents",
+        "mh-2515-village-electricity-contribution",
+        "mh-2519-oct6-victims-families",
+        "mh-2537-tao-budget-meetings",
+        "mh-2544-community-radio-listeners"
       ],
       "industrialization": [
         "mh-2500-working-women",
@@ -1842,14 +2809,18 @@
         "mh-2505-bangkok-migrants-housing",
         "mh-2518-labour-unions-bargaining",
         "mh-2518-hara-women-workers",
-        "mh-2553-home-workers-protection"
+        "mh-2553-home-workers-protection",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety"
       ],
       "infrastructure": [
         "mh-2504-isan-roads-migration",
         "mh-2525-eastern-seaboard-workers",
         "mh-2534-pakmun-livelihoods",
         "mh-2538-assembly-poor-networks",
-        "mh-2558-aec-border-communities"
+        "mh-2558-aec-border-communities",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines"
       ],
       "welfare-service": [
         "mh-2508-family-size-regions",
@@ -1865,7 +2836,20 @@
         "mh-2520-village-health-volunteers",
         "mh-2538-trips-medicine-access",
         "mh-2553-home-workers-protection",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-midwives-mothers",
+        "mh-2461-influenza-care-networks",
+        "mh-2475-rural-health-expansion",
+        "mh-2513-family-planning-mothers",
+        "mh-2513-midwives-contraception",
+        "mh-2518-refugee-camp-life",
+        "mh-2527-hiv-stigma-families",
+        "mh-2527-health-workers-hiv",
+        "mh-2533-insured-workers",
+        "mh-2546-drug-users-healthcare",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2558-child-grant-caregivers"
       ],
       "environment-disaster": [
         "mh-2534-pakmun-livelihoods",
@@ -1875,10 +2859,13 @@
         "mh-2461-influenza-households",
         "mh-2538-assembly-poor-networks",
         "mh-2540-community-rights",
-        "mh-2540-community-forest-rights"
+        "mh-2540-community-forest-rights",
+        "mh-2461-influenza-care-networks"
       ],
       "technology": [
-        "mh-2556-internet-routines"
+        "mh-2556-internet-routines",
+        "mh-2515-electric-light-routines",
+        "mh-2544-community-radio-listeners"
       ]
     },
     "byRegion": {
@@ -1905,13 +2892,27 @@
         "mh-2518-labour-unions-bargaining",
         "mh-2518-hara-women-workers",
         "mh-2538-assembly-poor-networks",
-        "mh-2549-peaceful-anti-coup-activists"
+        "mh-2549-peaceful-anti-coup-activists",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-nurse-students",
+        "mh-2468-midwives-mothers",
+        "mh-2468-treaty-mobility",
+        "mh-2484-bangkok-evacuation",
+        "mh-2489-un-membership-civil-service",
+        "mh-2497-seato-nearby-communities",
+        "mh-2510-asean-border-traders",
+        "mh-2533-insured-workers",
+        "mh-2519-oct6-victims-families"
       ],
       "international": [
         "mh-2460-war-volunteer-families",
         "mh-2485-free-thai-networks",
         "mh-2538-trips-medicine-access",
-        "mh-2558-aec-border-communities"
+        "mh-2558-aec-border-communities",
+        "mh-2468-treaty-mobility",
+        "mh-2489-un-membership-civil-service",
+        "mh-2510-asean-border-traders",
+        "mh-2518-refugee-camp-life"
       ],
       "nationwide": [
         "mh-2464-compulsory-school",
@@ -1932,13 +2933,26 @@
         "mh-2538-trips-medicine-access",
         "mh-2559-referendum-activists-voters",
         "mh-2553-home-workers-protection",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-influenza-care-networks",
+        "mh-2475-women-first-national-vote",
+        "mh-2513-family-planning-mothers",
+        "mh-2513-midwives-contraception",
+        "mh-2527-hiv-stigma-families",
+        "mh-2527-health-workers-hiv",
+        "mh-2537-tao-local-workers",
+        "mh-2546-drug-users-healthcare",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2551-stateless-applicants",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2558-child-grant-caregivers"
       ],
       "central": [
         "mh-2472-rice-households",
         "mh-2554-flood-households",
         "mh-2528-women-export-factories",
-        "mh-2505-bangkok-migrants-housing"
+        "mh-2505-bangkok-migrants-housing",
+        "mh-2484-bangkok-evacuation"
       ],
       "multi-region": [
         "mh-2472-rice-households",
@@ -1963,28 +2977,59 @@
         "mh-2540-community-forest-rights",
         "mh-2549-peaceful-anti-coup-activists",
         "mh-2558-aec-border-communities",
-        "mh-2553-home-workers-protection"
+        "mh-2553-home-workers-protection",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-midwives-mothers",
+        "mh-2475-rural-health-expansion",
+        "mh-2513-midwives-contraception",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines",
+        "mh-2510-asean-border-traders",
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities",
+        "mh-2527-hiv-stigma-families",
+        "mh-2533-insured-workers",
+        "mh-2519-oct6-victims-families",
+        "mh-2537-tao-budget-meetings",
+        "mh-2537-tao-local-workers",
+        "mh-2544-community-radio-listeners",
+        "mh-2546-war-drugs-families",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety",
+        "mh-2557-community-radio-shutdown"
       ],
       "northeast": [
         "mh-2504-isan-roads-migration",
         "mh-2507-base-towns",
         "mh-2508-family-size-regions",
-        "mh-2534-pakmun-livelihoods"
+        "mh-2534-pakmun-livelihoods",
+        "mh-2492-orapin-constituents",
+        "mh-2475-rural-health-expansion",
+        "mh-2515-village-electricity-contribution"
       ],
       "north": [
         "mh-2508-family-size-regions",
         "mh-2523-sanpong-agrarian-change",
         "mh-2540-pateung-karen-migration",
         "mh-2552-women-traders-politics",
-        "mh-2540-community-forest-rights"
+        "mh-2540-community-forest-rights",
+        "mh-2475-rural-health-expansion",
+        "mh-2503-hill-community-documents",
+        "mh-2551-stateless-applicants",
+        "mh-2558-child-grant-caregivers"
       ],
       "south": [
         "mh-2519-southern-women-cpt",
         "mh-2547-fishing-communities-tsunami",
-        "mh-2547-tourism-workers-tsunami"
+        "mh-2547-tourism-workers-tsunami",
+        "mh-2464-southern-islamic-schools",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety"
       ],
       "east": [
-        "mh-2525-eastern-seaboard-workers"
+        "mh-2525-eastern-seaboard-workers",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety"
       ]
     },
     "byGroupCategory": {
@@ -1993,7 +3038,12 @@
         "mh-2464-compulsory-school",
         "mh-2515-higher-education-expansion",
         "mh-2461-chinese-school-families",
-        "mh-2542-community-school-participation"
+        "mh-2542-community-school-participation",
+        "mh-2468-nurse-students",
+        "mh-2464-southern-islamic-schools",
+        "mh-2489-un-membership-civil-service",
+        "mh-2519-oct6-victims-families",
+        "mh-2542-disabled-students-inclusion"
       ],
       "families-households": [
         "mh-2460-university-access",
@@ -2047,7 +3097,32 @@
         "mh-2558-aec-border-communities",
         "mh-2559-referendum-activists-voters",
         "mh-2553-home-workers-protection",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-midwives-mothers",
+        "mh-2464-southern-islamic-schools",
+        "mh-2461-influenza-care-networks",
+        "mh-2475-women-first-national-vote",
+        "mh-2492-orapin-constituents",
+        "mh-2484-bangkok-evacuation",
+        "mh-2503-hill-community-documents",
+        "mh-2513-family-planning-mothers",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines",
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities",
+        "mh-2527-hiv-stigma-families",
+        "mh-2533-insured-workers",
+        "mh-2519-oct6-victims-families",
+        "mh-2537-tao-budget-meetings",
+        "mh-2544-community-radio-listeners",
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2551-stateless-applicants",
+        "mh-2558-child-grant-caregivers",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2557-community-radio-shutdown"
       ],
       "workers": [
         "mh-2460-war-volunteer-families",
@@ -2070,7 +3145,14 @@
         "mh-2518-labour-unions-bargaining",
         "mh-2518-hara-women-workers",
         "mh-2558-aec-border-communities",
-        "mh-2553-home-workers-protection"
+        "mh-2553-home-workers-protection",
+        "mh-2468-treaty-mobility",
+        "mh-2484-bangkok-evacuation",
+        "mh-2497-seato-nearby-communities",
+        "mh-2533-insured-workers",
+        "mh-2537-tao-local-workers",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety"
       ],
       "children-youth": [
         "mh-2464-compulsory-school",
@@ -2081,7 +3163,15 @@
         "mh-2551-export-workers-crisis",
         "mh-2499-labour-act-workers",
         "mh-2516-october-participants-families",
-        "mh-2542-community-school-participation"
+        "mh-2542-community-school-participation",
+        "mh-2464-southern-islamic-schools",
+        "mh-2484-bangkok-evacuation",
+        "mh-2503-hill-community-documents",
+        "mh-2515-electric-light-routines",
+        "mh-2518-refugee-camp-life",
+        "mh-2544-community-radio-listeners",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2558-child-grant-caregivers"
       ],
       "women-gender": [
         "mh-2468-satri-thai-readers",
@@ -2095,7 +3185,15 @@
         "mh-2528-women-export-factories",
         "mh-2499-labour-act-workers",
         "mh-2518-hara-women-workers",
-        "mh-2553-home-workers-protection"
+        "mh-2553-home-workers-protection",
+        "mh-2468-nurse-students",
+        "mh-2468-midwives-mothers",
+        "mh-2475-women-first-national-vote",
+        "mh-2492-orapin-constituents",
+        "mh-2513-family-planning-mothers",
+        "mh-2513-midwives-contraception",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2558-child-grant-caregivers"
       ],
       "farmers-rural": [
         "mh-2472-rice-households",
@@ -2111,7 +3209,12 @@
         "mh-2505-rural-malaria-health",
         "mh-2538-assembly-poor-networks",
         "mh-2540-community-rights",
-        "mh-2540-community-forest-rights"
+        "mh-2540-community-forest-rights",
+        "mh-2475-rural-health-expansion",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines",
+        "mh-2518-border-host-communities",
+        "mh-2537-tao-budget-meetings"
       ],
       "professionals-officials": [
         "mh-2482-cultural-mandates",
@@ -2128,7 +3231,24 @@
         "mh-2538-trips-medicine-access",
         "mh-2549-peaceful-anti-coup-activists",
         "mh-2559-referendum-activists-voters",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-nurse-students",
+        "mh-2468-treaty-mobility",
+        "mh-2475-women-first-national-vote",
+        "mh-2492-orapin-constituents",
+        "mh-2475-rural-health-expansion",
+        "mh-2489-un-membership-civil-service",
+        "mh-2497-seato-nearby-communities",
+        "mh-2513-midwives-contraception",
+        "mh-2510-asean-border-traders",
+        "mh-2527-health-workers-hiv",
+        "mh-2533-insured-workers",
+        "mh-2537-tao-budget-meetings",
+        "mh-2537-tao-local-workers",
+        "mh-2551-stateless-applicants",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2557-community-radio-shutdown"
       ],
       "traders-small-business": [
         "mh-2484-bangkoknoi-war",
@@ -2140,7 +3260,14 @@
         "mh-2556-internet-routines",
         "mh-2547-fishing-communities-tsunami",
         "mh-2547-tourism-workers-tsunami",
-        "mh-2558-aec-border-communities"
+        "mh-2558-aec-border-communities",
+        "mh-2468-treaty-mobility",
+        "mh-2497-seato-nearby-communities",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines",
+        "mh-2510-asean-border-traders",
+        "mh-2518-border-host-communities",
+        "mh-2537-tao-local-workers"
       ],
       "movement-members": [
         "mh-2485-free-thai-networks",
@@ -2161,7 +3288,11 @@
         "mh-2540-community-rights",
         "mh-2540-community-forest-rights",
         "mh-2549-peaceful-anti-coup-activists",
-        "mh-2559-referendum-activists-voters"
+        "mh-2559-referendum-activists-voters",
+        "mh-2519-oct6-victims-families",
+        "mh-2544-community-radio-listeners",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2557-community-radio-shutdown"
       ],
       "migrants": [
         "mh-2504-isan-roads-migration",
@@ -2174,14 +3305,23 @@
         "mh-2547-tourism-workers-tsunami",
         "mh-2551-export-workers-crisis",
         "mh-2505-bangkok-migrants-housing",
-        "mh-2558-aec-border-communities"
+        "mh-2558-aec-border-communities",
+        "mh-2510-asean-border-traders",
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities",
+        "mh-2551-stateless-applicants",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety"
       ],
       "ethnic-religious": [
         "mh-2519-southern-women-cpt",
         "mh-2540-pateung-karen-migration",
         "mh-2550-migrant-workers-rights",
         "mh-2461-chinese-school-families",
-        "mh-2540-community-forest-rights"
+        "mh-2540-community-forest-rights",
+        "mh-2464-southern-islamic-schools",
+        "mh-2503-hill-community-documents",
+        "mh-2551-stateless-applicants"
       ],
       "patients-caregivers": [
         "mh-2545-uhc-patients",
@@ -2192,7 +3332,19 @@
         "mh-2516-october-participants-families",
         "mh-2520-village-health-volunteers",
         "mh-2538-trips-medicine-access",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-midwives-mothers",
+        "mh-2461-influenza-care-networks",
+        "mh-2475-rural-health-expansion",
+        "mh-2513-family-planning-mothers",
+        "mh-2513-midwives-contraception",
+        "mh-2527-hiv-stigma-families",
+        "mh-2527-health-workers-hiv",
+        "mh-2519-oct6-victims-families",
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare",
+        "mh-2542-disabled-students-inclusion"
       ]
     },
     "byEvidenceStatus": {
@@ -2219,10 +3371,29 @@
         "mh-2540-community-rights",
         "mh-2538-trips-medicine-access",
         "mh-2549-peaceful-anti-coup-activists",
-        "mh-2550-disability-rights-access"
+        "mh-2550-disability-rights-access",
+        "mh-2461-sanitation-new-state",
+        "mh-2468-midwives-mothers",
+        "mh-2461-influenza-care-networks",
+        "mh-2475-women-first-national-vote",
+        "mh-2475-rural-health-expansion",
+        "mh-2484-bangkok-evacuation",
+        "mh-2513-family-planning-mothers",
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines",
+        "mh-2518-border-host-communities",
+        "mh-2527-health-workers-hiv",
+        "mh-2533-insured-workers",
+        "mh-2537-tao-local-workers",
+        "mh-2558-gender-discrimination-complaints",
+        "mh-2557-community-radio-shutdown"
       ],
       "research-lead": [
-        "mh-2460-war-volunteer-families"
+        "mh-2460-war-volunteer-families",
+        "mh-2468-treaty-mobility",
+        "mh-2489-un-membership-civil-service",
+        "mh-2497-seato-nearby-communities",
+        "mh-2510-asean-border-traders"
       ],
       "documented-case": [
         "mh-2468-satri-thai-readers",
@@ -2260,7 +3431,24 @@
         "mh-2540-community-forest-rights",
         "mh-2558-aec-border-communities",
         "mh-2559-referendum-activists-voters",
-        "mh-2553-home-workers-protection"
+        "mh-2553-home-workers-protection",
+        "mh-2468-nurse-students",
+        "mh-2464-southern-islamic-schools",
+        "mh-2492-orapin-constituents",
+        "mh-2503-hill-community-documents",
+        "mh-2513-midwives-contraception",
+        "mh-2518-refugee-camp-life",
+        "mh-2527-hiv-stigma-families",
+        "mh-2519-oct6-victims-families",
+        "mh-2537-tao-budget-meetings",
+        "mh-2544-community-radio-listeners",
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare",
+        "mh-2542-disabled-students-inclusion",
+        "mh-2551-stateless-applicants",
+        "mh-2558-child-grant-caregivers",
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety"
       ]
     },
     "bySourceFamily": {
@@ -2275,7 +3463,8 @@
         "src-chula-chinese-schools-1918",
         "src-liberalarts-rama7-strikes",
         "src-frus-sarit-charter",
-        "src-frus-october-1973"
+        "src-frus-october-1973",
+        "src-thammasat-women-nursing"
       ],
       "state-official": [
         "src-moe-history",
@@ -2306,7 +3495,11 @@
         "src-kpi-first-election-2476",
         "src-mol-labour-history",
         "src-ilo-homeworkers-act",
-        "src-un-disability-law-thailand"
+        "src-un-disability-law-thailand",
+        "src-nhso-uhc-history",
+        "src-ppat-history",
+        "src-pea-history",
+        "src-unhcr-nationality-act-2551"
       ],
       "academic-analysis": [
         "src-mfa-treaties",
@@ -2350,7 +3543,41 @@
         "src-hrw-thailand-2007",
         "src-amnesty-referendum-2016",
         "src-hrw-referendum-monitoring",
-        "src-ilo-homeworkers-organizing"
+        "src-ilo-homeworkers-organizing",
+        "src-jss-public-health-siam",
+        "src-mahidol-siriraj-nursing",
+        "src-pmc-thai-mortality-transition",
+        "src-cambridge-women-suffrage-thailand",
+        "src-parliament-women-politics",
+        "src-cambridge-female-politicians-thailand",
+        "src-who-thai-primary-health-history",
+        "src-pmc-thai-doctor-distribution",
+        "src-cinii-medicalizing-state-siam",
+        "src-pubmed-family-planning-thailand",
+        "src-pubmed-health-family-planning",
+        "src-unfpa-thailand-40-years",
+        "src-oxford-hill-tribe-citizenship",
+        "src-american-hill-tribe-stateless",
+        "src-agecon-thai-rice-hyv",
+        "src-pmc-thai-hiv-response",
+        "src-chula-hiv-public-response",
+        "src-ilo-thai-social-security",
+        "src-heidelberg-indochinese-refugees",
+        "src-loc-thailand-country-study",
+        "src-pmc-rural-doctors-movement",
+        "src-jica-thai-decentralization",
+        "src-tci-community-radio-history",
+        "src-amnesty-war-drugs-2003",
+        "src-hrw-war-drugs-thailand",
+        "src-ahr-war-drugs-family-case",
+        "src-eenet-inclusive-education-thailand",
+        "src-unhcr-thailand-nationality-2015",
+        "src-unwomen-gender-equality-act",
+        "src-unwomen-thailand",
+        "src-unicef-child-support-grant",
+        "src-unicef-first-three",
+        "src-ilo-fishing-conditions-2013",
+        "src-ilo-fishing-safeguarding"
       ],
       "international-institutional": [
         "src-wb-depression",
@@ -2365,7 +3592,14 @@
         "src-escap-women-industry",
         "src-wb-first-direct-election",
         "src-wb-bangkok-migration",
-        "src-escap-disability-thailand"
+        "src-escap-disability-thailand",
+        "src-un-thailand-membership",
+        "src-wb-rural-electrification-thailand",
+        "src-wb-pea-1973-plan",
+        "src-wb-rural-electricity-northeast",
+        "src-wb-thai-green-revolution",
+        "src-un-thailand-hiv-report",
+        "src-wb-thai-tao"
       ],
       "lived-fieldwork": [
         "src-silpakorn-bangkoknoi-ww2",
@@ -2376,73 +3610,77 @@
         "src-swurd-flood-households",
         "src-sjij-migrant-workers",
         "src-kku-school-community",
-        "src-tsri-aec-border"
+        "src-tsri-aec-border",
+        "src-tsri-islamic-education-south",
+        "src-ugm-tao-participation",
+        "src-tci-community-radio-audience",
+        "src-thammasat-youth-community-radio"
       ]
     }
   },
   "coverage": {
     "periodMacroTheme": {
       "2460-2475": {
-        "state-everyday": 4,
-        "economy-opportunity": 2,
+        "state-everyday": 9,
+        "economy-opportunity": 4,
         "rural-urban": 1,
-        "education-media": 4,
+        "education-media": 6,
         "movements-civil-society": 1,
-        "identity-belonging": 3,
-        "institutions-long-term": 3
+        "identity-belonging": 6,
+        "institutions-long-term": 6
       },
       "2475-2500": {
-        "state-everyday": 7,
-        "economy-opportunity": 3,
-        "rural-urban": 0,
-        "education-media": 0,
-        "movements-civil-society": 3,
-        "identity-belonging": 3,
-        "institutions-long-term": 3
+        "state-everyday": 10,
+        "economy-opportunity": 5,
+        "rural-urban": 2,
+        "education-media": 1,
+        "movements-civil-society": 5,
+        "identity-belonging": 5,
+        "institutions-long-term": 6
       },
       "2500-2516": {
-        "state-everyday": 3,
-        "economy-opportunity": 4,
-        "rural-urban": 3,
-        "education-media": 2,
-        "movements-civil-society": 1,
-        "identity-belonging": 3,
-        "institutions-long-term": 2
-      },
-      "2516-2535": {
-        "state-everyday": 2,
-        "economy-opportunity": 6,
-        "rural-urban": 4,
-        "education-media": 1,
-        "movements-civil-society": 6,
-        "identity-belonging": 5,
-        "institutions-long-term": 2
-      },
-      "2535-2549": {
         "state-everyday": 6,
         "economy-opportunity": 7,
+        "rural-urban": 7,
+        "education-media": 3,
+        "movements-civil-society": 1,
+        "identity-belonging": 5,
+        "institutions-long-term": 7
+      },
+      "2516-2535": {
+        "state-everyday": 7,
+        "economy-opportunity": 8,
         "rural-urban": 6,
         "education-media": 1,
-        "movements-civil-society": 5,
-        "identity-belonging": 2,
-        "institutions-long-term": 6
+        "movements-civil-society": 7,
+        "identity-belonging": 9,
+        "institutions-long-term": 5
+      },
+      "2535-2549": {
+        "state-everyday": 11,
+        "economy-opportunity": 8,
+        "rural-urban": 6,
+        "education-media": 3,
+        "movements-civil-society": 7,
+        "identity-belonging": 6,
+        "institutions-long-term": 10
       },
       "2549-2560": {
-        "state-everyday": 6,
-        "economy-opportunity": 8,
-        "rural-urban": 3,
-        "education-media": 3,
-        "movements-civil-society": 5,
-        "identity-belonging": 5,
-        "institutions-long-term": 6
+        "state-everyday": 11,
+        "economy-opportunity": 11,
+        "rural-urban": 4,
+        "education-media": 4,
+        "movements-civil-society": 6,
+        "identity-belonging": 8,
+        "institutions-long-term": 10
       }
     },
     "sourceFamilyCounts": {
-      "archive-primary": 11,
-      "state-official": 29,
-      "academic-analysis": 42,
-      "international-institutional": 13,
-      "lived-fieldwork": 9
+      "archive-primary": 12,
+      "state-official": 33,
+      "academic-analysis": 76,
+      "international-institutional": 20,
+      "lived-fieldwork": 13
     },
     "eventToMicrohistories": {
       "th-2460-chulalongkorn-university": [
@@ -2452,7 +3690,8 @@
         "mh-2460-war-volunteer-families"
       ],
       "th-2464-compulsory-education": [
-        "mh-2464-compulsory-school"
+        "mh-2464-compulsory-school",
+        "mh-2464-southern-islamic-schools"
       ],
       "th-2472-depression": [
         "mh-2472-rice-households"
@@ -2463,7 +3702,8 @@
       "th-2484-pacific-war": [
         "mh-2484-bangkoknoi-war",
         "mh-2484-wartime-shortages",
-        "mh-2484-women-wartime"
+        "mh-2484-women-wartime",
+        "mh-2484-bangkok-evacuation"
       ],
       "th-2485-free-thai": [
         "mh-2485-free-thai-networks"
@@ -2487,7 +3727,8 @@
         "mh-2516-october-participants-families"
       ],
       "th-2519-october-6": [
-        "mh-2519-southern-women-cpt"
+        "mh-2519-southern-women-cpt",
+        "mh-2519-oct6-victims-families"
       ],
       "th-2523-order-66": [
         "mh-2519-southern-women-cpt"
@@ -2519,7 +3760,8 @@
         "mh-2556-internet-routines"
       ],
       "th-2476-first-general-election": [
-        "mh-2476-first-election-voters"
+        "mh-2476-first-election-voters",
+        "mh-2475-women-first-national-vote"
       ],
       "th-2528-export-boom": [
         "mh-2528-women-export-factories"
@@ -2535,10 +3777,12 @@
         "mh-2551-export-workers-crisis"
       ],
       "th-2557-coup": [
-        "mh-2557-civilians-military-courts"
+        "mh-2557-civilians-military-courts",
+        "mh-2557-community-radio-shutdown"
       ],
       "th-2461-influenza": [
-        "mh-2461-influenza-households"
+        "mh-2461-influenza-households",
+        "mh-2461-influenza-care-networks"
       ],
       "th-2461-chinese-private-schools": [
         "mh-2461-chinese-school-families"
@@ -2567,10 +3811,12 @@
       ],
       "th-2540-constitution": [
         "mh-2540-community-rights",
-        "mh-2540-community-forest-rights"
+        "mh-2540-community-forest-rights",
+        "mh-2544-community-radio-listeners"
       ],
       "th-2542-education-act": [
-        "mh-2542-community-school-participation"
+        "mh-2542-community-school-participation",
+        "mh-2542-disabled-students-inclusion"
       ],
       "th-2538-wto": [
         "mh-2538-trips-medicine-access"
@@ -2589,16 +3835,84 @@
       ],
       "th-2550-disability-empowerment-act": [
         "mh-2550-disability-rights-access"
+      ],
+      "th-2461-public-health-department": [
+        "mh-2461-sanitation-new-state",
+        "mh-2475-rural-health-expansion"
+      ],
+      "th-2468-nursing-midwifery-profession": [
+        "mh-2468-nurse-students",
+        "mh-2468-midwives-mothers"
+      ],
+      "th-2468-treaty-revision": [
+        "mh-2468-treaty-mobility"
+      ],
+      "th-2475-revolution": [
+        "mh-2475-women-first-national-vote"
+      ],
+      "th-2475-constitution": [
+        "mh-2475-women-first-national-vote"
+      ],
+      "th-2475-women-national-vote": [
+        "mh-2475-women-first-national-vote"
+      ],
+      "th-2492-first-woman-mp": [
+        "mh-2492-orapin-constituents"
+      ],
+      "th-2489-un-membership": [
+        "mh-2489-un-membership-civil-service"
+      ],
+      "th-2497-seato": [
+        "mh-2497-seato-nearby-communities"
+      ],
+      "th-2503-hill-tribe-state-programmes": [
+        "mh-2503-hill-community-documents"
+      ],
+      "th-2513-national-family-planning": [
+        "mh-2513-family-planning-mothers",
+        "mh-2513-midwives-contraception"
+      ],
+      "th-2515-rural-electrification": [
+        "mh-2515-village-electricity-contribution",
+        "mh-2515-electric-light-routines"
+      ],
+      "th-2510-asean": [
+        "mh-2510-asean-border-traders"
+      ],
+      "th-2518-indochinese-refugees": [
+        "mh-2518-refugee-camp-life",
+        "mh-2518-border-host-communities"
+      ],
+      "th-2527-first-hiv-case": [
+        "mh-2527-hiv-stigma-families",
+        "mh-2527-health-workers-hiv"
+      ],
+      "th-2533-social-security-act": [
+        "mh-2533-insured-workers"
+      ],
+      "th-2537-tao-act": [
+        "mh-2537-tao-budget-meetings",
+        "mh-2537-tao-local-workers"
+      ],
+      "th-2546-war-on-drugs": [
+        "mh-2546-war-drugs-families",
+        "mh-2546-drug-users-healthcare"
+      ],
+      "th-2551-nationality-act-amendment": [
+        "mh-2551-stateless-applicants"
+      ],
+      "th-2558-gender-equality-act": [
+        "mh-2558-gender-discrimination-complaints"
+      ],
+      "th-2558-child-support-grant": [
+        "mh-2558-child-grant-caregivers"
+      ],
+      "th-2558-fishing-reform": [
+        "mh-2558-migrant-fishers-documents",
+        "mh-2558-fishers-hours-safety"
       ]
     },
-    "eventsWithoutMicrohistory": [
-      "th-2468-treaty-revision",
-      "th-2475-revolution",
-      "th-2475-constitution",
-      "th-2489-un-membership",
-      "th-2497-seato",
-      "th-2510-asean"
-    ],
+    "eventsWithoutMicrohistory": [],
     "microhistoriesWithoutEvent": [
       "mh-2468-satri-thai-readers",
       "mh-2508-family-size-regions",
