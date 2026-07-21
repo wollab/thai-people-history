@@ -335,7 +335,10 @@ img { display: block; max-width: 100%; }
   .archive-header { padding-block: 45px 35px; }
   .archive-header h1 { font-size: 42px; }
   .archive-header > div > p:last-child { font-size: 17px; }
+  .archive-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .archive-stats div { padding: 12px 9px; }
+  .archive-stats div:nth-child(even) { border-right: 0; }
+  .archive-stats div:nth-child(-n + 2) { border-bottom: 1px solid var(--line); }
   .archive-stats dd { font-size: 28px; }
   .archive-tools { position: static; }
   .filter-bar { grid-template-columns: 1fr 1fr; gap: 9px; }

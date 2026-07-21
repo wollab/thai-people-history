@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "บทสังเคราะห์ประวัติศาสตร์ประชาชนไทย",
+    "version": "0.1.0",
+    "updated": "2026-07-21",
+    "rule": "ทุกเรื่องต้องอ้างกลับไปยัง microhistory และ source IDs และระบุข้อจำกัดที่ยังไม่ควรสรุปเกินหลักฐาน"
+  },
+  "stories": [
+    {
+      "id": "syn-state-in-everyday-life",
+      "title": "เมื่อรัฐเข้ามาอยู่ในชีวิตประจำวัน",
+      "deck": "โรงเรียน สุขภาพ ภาษา กฎหมายแรงงาน และบริการสาธารณะทำให้การขยายตัวของรัฐปรากฏผ่านกิจวัตร ไม่ได้เกิดเฉพาะในทำเนียบหรือรัฐสภา",
+      "periodRange": "2461-2560",
+      "patternIds": ["pat-01-state-through-daily-systems", "pat-06-formal-rights-uneven-access"],
+      "evidenceIds": ["mh-2461-chinese-school-families", "mh-2464-compulsory-school", "mh-2499-labour-act-workers", "mh-2520-village-health-volunteers", "mh-2545-uhc-patients", "mh-2550-disability-rights-access"],
+      "sourceIds": ["src-chula-chinese-schools-1918", "src-moe-history", "src-mol-labour-history", "src-oxford-thai-phc-volunteers", "src-who-uhc", "src-un-disability-law-thailand"],
+      "claim": "ตลอดหนึ่งศตวรรษ รัฐเข้าถึงประชาชนมากขึ้นผ่านสถาบันและบริการในชีวิตประจำวัน แต่การมีสิทธิในกฎหมายไม่รับประกันว่าทุกพื้นที่และทุกกลุ่มจะเข้าถึงได้เท่ากัน",
+      "limits": "ยังขาดหลักฐานของผู้ปฏิเสธบริการ ผู้ไม่มีเอกสาร และพื้นที่ที่เจ้าหน้าที่ไปไม่ถึง",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-households-absorb-shocks",
+      "title": "ครัวเรือนรับแรงกระแทกแทนเศรษฐกิจอย่างไร",
+      "deck": "ราคาข้าวตกต่ำ สงคราม วิกฤตการเงิน และน้ำท่วมเปลี่ยนงาน รายได้ หนี้ และการย้ายถิ่น โดยครัวเรือนเป็นหน่วยแรกที่ต้องปรับตัว",
+      "periodRange": "2472-2554",
+      "patternIds": ["pat-03-households-absorb-shocks"],
+      "evidenceIds": ["mh-2472-rice-households", "mh-2484-wartime-shortages", "mh-2540-workers-crisis", "mh-2551-export-workers-crisis", "mh-2554-flood-households"],
+      "sourceIds": ["src-wb-depression", "src-oxford-ww2-impact", "src-wb-workers-crisis", "src-ilo-thai-unions-gfc", "src-swurd-flood-households"],
+      "claim": "เมื่อรายได้หรือการผลิตสะดุด ครัวเรือนใช้การแบ่งงาน หนี้ เงินออม การย้ายถิ่น และเครือญาติพยุงชีวิต ทำให้ต้นทุนของวิกฤตกระจายไม่เท่ากันตามทรัพย์สินและเครือข่ายที่มี",
+      "limits": "หลักฐานยังบางสำหรับคนไร้บ้าน ผู้ไม่มีเครือญาติ และครัวเรือนที่แตกสลายจากวิกฤต",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-roads-migration-city",
+      "title": "ถนน งาน และเมืองดึงผู้คนออกจากบ้านเดิม",
+      "deck": "แผนพัฒนา ถนน ฐานทัพ และนิคมอุตสาหกรรมสร้างงานและการเดินทาง พร้อมเปลี่ยนที่ดิน ที่อยู่อาศัย และความสัมพันธ์ระหว่างชนบทกับเมือง",
+      "periodRange": "2504-2540",
+      "patternIds": ["pat-02-infrastructure-opportunity-cost", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2504-isan-roads-migration", "mh-2505-bangkok-migrants-housing", "mh-2507-base-towns", "mh-2525-eastern-seaboard-workers", "mh-2540-pateung-karen-migration"],
+      "sourceIds": ["src-wb-isan-roads", "src-wb-bangkok-migration", "src-claremont-base-towns", "src-wb-eastern-seaboard", "src-kbu-karen-migration"],
+      "claim": "โครงสร้างพื้นฐานเปิดโอกาสด้านงานและตลาด แต่ทำให้ผู้คนต้องรับต้นทุนค่าเช่า การเดินทาง การสูญเสียที่ดิน และการแยกครัวเรือน โดยผลเกิดต่างเวลากันในแต่ละภูมิภาค",
+      "limits": "ยังต้องเพิ่มกรณีผู้ที่เลือกไม่ย้ายและชุมชนที่ได้ประโยชน์โดยไม่เสียที่ดินหรืออาชีพเดิม",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-women-public-space-double-work",
+      "title": "พื้นที่ใหม่ของผู้หญิงกับภาระที่ไม่ได้หายไป",
+      "deck": "สื่อ โรงเรียน โรงงาน ตลาด และขบวนการเปิดพื้นที่สาธารณะให้ผู้หญิง แต่ความคาดหวังเรื่องครอบครัวและงานดูแลยังคงกำกับชีวิต",
+      "periodRange": "2468-2553",
+      "patternIds": ["pat-04-gender-opportunity-double-burden"],
+      "evidenceIds": ["mh-2468-satri-thai-readers", "mh-2484-women-wartime", "mh-2516-women-media-citizenship", "mh-2518-hara-women-workers", "mh-2528-women-export-factories", "mh-2553-home-workers-protection"],
+      "sourceIds": ["src-jts-satri-thai", "src-jsn-women-ww2", "src-jss-women-media-2516", "src-fes-thai-women-workers", "src-anamwathana-women-factory", "src-ilo-homeworkers-organizing"],
+      "claim": "โอกาสทำงาน เรียนรู้ และเคลื่อนไหวเพิ่มอำนาจของผู้หญิงบางกลุ่ม แต่ไม่ได้ลบการแบ่งงานดูแลหรือข้อจำกัดจากชนชั้น สถานที่ และสถานะการจ้าง",
+      "limits": "คำว่า 'ผู้หญิง' ยังรวมประสบการณ์ต่างกันมาก ต้องเพิ่มผู้หญิงมุสลิม ผู้หญิงชาติพันธุ์ คนพิการ และผู้ที่ไม่เข้าร่วมขบวนการ",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-networks-become-movements",
+      "title": "จากเครือข่ายชีวิตประจำวันสู่ขบวนการประชาชน",
+      "deck": "ที่ทำงาน ตลาด หมู่บ้าน สื่อ และเครือญาติเป็นพื้นที่สร้างความไว้ใจ ก่อนข้อเดือดร้อนจะกลายเป็นการรวมตัวและข้อเรียกร้องทางการเมือง",
+      "periodRange": "2470-2553",
+      "patternIds": ["pat-05-everyday-networks-to-movements"],
+      "evidenceIds": ["mh-2470-bangkok-worker-strikes", "mh-2485-free-thai-networks", "mh-2517-farmer-federation", "mh-2518-hara-women-workers", "mh-2538-assembly-poor-networks", "mh-2552-women-traders-politics"],
+      "sourceIds": ["src-liberalarts-rama7-strikes", "src-cia-free-thai", "src-jss-farmer-movement", "src-columbia-hara-workers", "src-sage-assembly-poor", "src-cmu-women-traders"],
+      "claim": "ขบวนการไม่ได้เริ่มจากอุดมการณ์เพียงอย่างเดียว แต่เติบโตจากความสัมพันธ์และปัญหาในชีวิตประจำวัน ซึ่งช่วยให้คนแบ่งงาน ระดมทรัพยากร และสร้างข้อเรียกร้องร่วม",
+      "limits": "ยังขาดเสียงของผู้ไม่เข้าร่วม ผู้ถอนตัว ผู้เห็นต่าง และความขัดแย้งภายในเครือข่าย",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-rights-paper-practice",
+      "title": "สิทธิบนกระดาษเดินทางไปถึงประชาชนหรือไม่",
+      "deck": "กฎหมายแรงงาน สิทธิชุมชน การศึกษา สุขภาพ คนพิการ และแรงงานนอกระบบขยายการรับรองสิทธิ แต่การใช้จริงขึ้นกับข้อมูล เอกสาร เจ้าหน้าที่ และอำนาจต่อรอง",
+      "periodRange": "2499-2560",
+      "patternIds": ["pat-06-formal-rights-uneven-access", "pat-01-state-through-daily-systems"],
+      "evidenceIds": ["mh-2499-labour-act-workers", "mh-2518-labour-unions-bargaining", "mh-2540-community-rights", "mh-2542-community-school-participation", "mh-2550-disability-rights-access", "mh-2553-home-workers-protection"],
+      "sourceIds": ["src-jil-thai-labour-law", "src-ilo-labour-2518", "src-pajournal-community-rights", "src-kku-school-community", "src-escap-disability-thailand", "src-ilo-homeworkers-act"],
+      "claim": "การมีกฎหมายเปลี่ยนภาษาที่ประชาชนใช้เรียกร้องและเปิดกลไกใหม่ แต่ผลลัพธ์ยังขึ้นกับการรับรู้สิทธิ การพิสูจน์สถานะ การบังคับใช้ และทรัพยากรของแต่ละกลุ่ม",
+      "limits": "ต้องเพิ่มข้อมูลคดี คำร้อง และผลการบังคับใช้เพื่อแยกสิทธิที่เกิดผลจริงออกจากสิทธิที่ยังเป็นหลักการ",
+      "status": "reader-draft"
+    }
+  ]
+}

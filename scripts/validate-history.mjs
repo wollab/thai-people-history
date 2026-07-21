@@ -6,6 +6,8 @@ const allowedImpact = new Set(["contextual", "documented"]);
 const sensitivePattern = /รัฐประหาร|ความรุนแรง|14 ตุลา|6 ตุลา|พฤษภาคม 2535|เปลี่ยนแปลงการปกครอง/;
 
 const history = JSON.parse(await readFile(new URL("../src/data/history.json", import.meta.url), "utf8"));
+const researchIndex = JSON.parse(await readFile(new URL("../src/data/research-index.json", import.meta.url), "utf8"));
+const syntheses = JSON.parse(await readFile(new URL("../src/data/syntheses.json", import.meta.url), "utf8"));
 const errors = [];
 const warnings = [];
 
@@ -21,7 +23,8 @@ const uniqueIndex = (items, label) => {
 
 const sources = uniqueIndex(history.sources, "source");
 const contexts = uniqueIndex(history.worldContexts, "worldContext");
-uniqueIndex(history.events, "event");
+const events = uniqueIndex(history.events, "event");
+const microhistoryIndex = uniqueIndex(history.microhistories, "microhistory");
 
 for (const source of history.sources ?? []) {
   try { new URL(source.url); } catch { errors.push(`source ${source.id}: URL ไม่ถูกต้อง`); }
@@ -97,14 +100,26 @@ for (const record of history.microhistories ?? []) {
   }
 }
 for (const [period, count] of Object.entries(mhPeriodCounts)) {
-  if (count < 5) warnings.push(`period ${period}: microhistory มีเพียง ${count} เรื่อง (เป้าหมาย 5)`);
+  if (count < 8) errors.push(`period ${period}: microhistory มีเพียง ${count} เรื่อง (ขั้นต่ำรุ่น 50% คือ 8)`);
 }
 
-console.log(`ตรวจแล้ว: ${history.events.length} เหตุการณ์ | ${history.microhistories?.length ?? 0} microhistory | ${history.sources.length} แหล่งอ้างอิง | ${history.worldContexts.length} บริบทโลก`);
+const patternIds = new Set(researchIndex.patterns.map((pattern) => pattern.id));
+for (const story of syntheses.stories ?? []) {
+  for (const field of ["title", "deck", "claim", "limits", "status"]) {
+    if (!story[field]) errors.push(`synthesis ${story.id}: ไม่มี ${field}`);
+  }
+  for (const id of story.evidenceIds ?? []) if (!microhistoryIndex.has(id)) errors.push(`synthesis ${story.id}: ไม่พบ microhistory ${id}`);
+  for (const id of story.sourceIds ?? []) if (!sources.has(id)) errors.push(`synthesis ${story.id}: ไม่พบ source ${id}`);
+  for (const id of story.patternIds ?? []) if (!patternIds.has(id)) errors.push(`synthesis ${story.id}: ไม่พบ pattern ${id}`);
+}
+if ((syntheses.stories?.length ?? 0) < 6) errors.push(`synthesis มีเพียง ${syntheses.stories?.length ?? 0} เรื่อง (ขั้นต่ำรุ่น 50% คือ 6)`);
+if ((researchIndex.coverage.singleSourceSensitiveEvents?.length ?? 0) > 0) errors.push(`research index ยังมี sensitive event แหล่งเดียว: ${researchIndex.coverage.singleSourceSensitiveEvents.join(", ")}`);
+for (const id of researchIndex.coverage.eventsWithoutMicrohistory ?? []) if (!events.has(id)) errors.push(`coverage อ้าง event ที่ไม่มีจริง ${id}`);
+
+console.log(`ตรวจแล้ว: ${history.events.length} เหตุการณ์ | ${history.microhistories?.length ?? 0} microhistory | ${history.sources.length} แหล่งอ้างอิง | ${history.worldContexts.length} บริบทโลก | ${syntheses.stories?.length ?? 0} บทสังเคราะห์`);
 console.log(Object.entries(periodCounts).map(([period, count]) => `${period}: ${count}`).join(" | "));
 for (const warning of warnings) console.warn(`คำเตือน: ${warning}`);
 if (errors.length) {
   for (const error of errors) console.error(`ข้อผิดพลาด: ${error}`);
   process.exit(1);
 }
-

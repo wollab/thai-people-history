@@ -1,4 +1,5 @@
 import rawHistory from "./history.json";
+import rawIndex from "./research-index.json";
 
 export type VerificationStatus = "verified" | "corroborated";
 export type ImpactStatus = "contextual" | "documented";
@@ -78,12 +79,5 @@ export const worldContextById = new Map(worldContexts.map((context) => [context.
 export const eventById = new Map(events.map((event) => [event.id, event]));
 export const microhistoryById = new Map(microhistories.map((record) => [record.id, record]));
 
-/** Sensitive events flagged in 10_claude_handoff.md as still having only one source — surface this in the UI, never hide it silently. */
-export const singleSourceSensitiveEventIds = new Set([
-  "th-2501-authoritarian-charter",
-  "th-2516-october-14",
-  "th-2535-black-may",
-  "th-2553-political-violence",
-  "th-2557-coup",
-]);
-
+/** Derived by the canonical research index so the public warning cannot drift from the data audit. */
+export const singleSourceSensitiveEventIds = new Set<string>(rawIndex.coverage.singleSourceSensitiveEvents);

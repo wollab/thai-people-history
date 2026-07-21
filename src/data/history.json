@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "ฐานข้อมูลประวัติศาสตร์ประชาชนไทย พ.ศ. 2460-2560",
-    "version": "0.4.0",
-    "updated": "2026-07-20",
+    "version": "0.5.0",
+    "updated": "2026-07-21",
     "canonicalStatus": "staging-source-of-truth",
     "canonicalPath": "03_Documents/04_Knowledge_Base/01_Inbox/04_Personal_Learning/2026-07-19-thai-people-history-2460-2560/09_event_database.json",
     "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า",
-    "lastResearchBatch": "batch-2026-07-20-gap-fill-01"
+    "lastResearchBatch": "batch-2026-07-21-coverage-gate-50"
   },
   "sources": [
     {
@@ -580,6 +580,312 @@
       "type": "international-official-record",
       "language": "en",
       "accessed": "2026-07-20"
+    },
+    {
+      "id": "src-dcj-influenza-siam",
+      "title": "การระบาดของไข้หวัดใหญ่สเปนในสยาม พ.ศ. 2461",
+      "publisher": "วารสารควบคุมโรค",
+      "url": "https://he01.tci-thaijo.org/index.php/DCJ/article/view/241194",
+      "type": "academic-analysis",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-cambridge-influenza-thailand",
+      "title": "The 1918-20 Influenza Pandemic: Siam",
+      "publisher": "Cambridge University Press",
+      "url": "https://www.cambridge.org/core/elements/191820-influenza-pandemic/E2695A213FACA1CD66D1AC9144EE7FD1",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-chula-chinese-schools-1918",
+      "title": "โรงเรียนจีนในกรุงเทพฯ พ.ศ. 2461-2475",
+      "publisher": "จุฬาลงกรณ์มหาวิทยาลัย",
+      "url": "https://digital.car.chula.ac.th/chulaetd/25279/",
+      "type": "archival-study",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-rmu-chinese-private-schools",
+      "title": "นโยบายของรัฐต่อโรงเรียนจีนในสยาม",
+      "publisher": "วารสารมหาวิทยาลัยราชภัฏมหาสารคาม",
+      "url": "https://so06.tci-thaijo.org/index.php/edu-rmu/article/view/280775",
+      "type": "academic-analysis",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-liberalarts-rama7-strikes",
+      "title": "การนัดหยุดงานของแรงงานในสมัยรัชกาลที่ 7",
+      "publisher": "วารสารศิลปศาสตร์",
+      "url": "https://so03.tci-thaijo.org/index.php/liberalarts/article/view/263776",
+      "type": "archival-study",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-wb-first-direct-election",
+      "title": "Parliamentary Strengthening in Developing Countries",
+      "publisher": "World Bank Institute",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/a6a95819-e8a6-5a28-9166-217c476372db/content",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-mol-labour-history",
+      "title": "History of the Ministry of Labour and Thai labour law",
+      "publisher": "Ministry of Labour",
+      "url": "https://www.mol.go.th/en/departments/mol-history",
+      "type": "official-history",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-jil-thai-labour-law",
+      "title": "Labour Law in Thailand",
+      "publisher": "Japan Institute for Labour Policy and Training",
+      "url": "https://www.jil.go.jp/english/events/documents/ann04_thailand.pdf",
+      "type": "institutional-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-frus-sarit-charter",
+      "title": "Telegram From the Embassy in Thailand on the Sarit regime",
+      "publisher": "U.S. Department of State, Office of the Historian",
+      "url": "https://history.state.gov/historicaldocuments/frus1958-60v15/d514",
+      "type": "primary-document-archive",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pmc-malaria-thailand",
+      "title": "Malaria control and elimination in Thailand: past and present",
+      "publisher": "Malaria Journal / PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6958345/",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-who-malaria-1964",
+      "title": "WHO regional report on malaria eradication, 1964",
+      "publisher": "World Health Organization",
+      "url": "https://iris.who.int/bitstream/10665/130579/1/rdr65_Complete.pdf",
+      "type": "international-official-record",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-wb-bangkok-migration",
+      "title": "Urbanization and migration in Thailand",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/181861468765014332/pdf/multi0page.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-frus-october-1973",
+      "title": "The October 1973 political crisis in Thailand",
+      "publisher": "U.S. Department of State, Office of the Historian",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve12/d377",
+      "type": "primary-document-archive",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-cambridge-youth-democracy",
+      "title": "Siblings, Comrades, Friends: Thailand's Youth Struggle for Democracy",
+      "publisher": "Cambridge University Press",
+      "url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/siblings-comrades-friends-kingship-hierarchy-and-equality-in-thailands-youth-struggle-for-democracy/FDD1698C6A24604F063EA3A1F5EC3BAF",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-fes-thai-women-workers",
+      "title": "Thai women workers and the labour movement",
+      "publisher": "Friedrich Ebert Stiftung",
+      "url": "https://library.fes.de/pdf-files/bueros/thailand/50112.pdf",
+      "type": "historical-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-columbia-hara-workers",
+      "title": "Women workers and the Hara Factory struggle",
+      "publisher": "Columbia University",
+      "url": "https://sites.asit.columbia.edu/wp-content/uploads/sites/29/2023/05/Kirk-Alexandra_thesis.pdf",
+      "type": "academic-thesis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pmc-informal-workers-thailand",
+      "title": "Informal workers and labour protection in Thailand",
+      "publisher": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5812466/",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-oxford-thai-phc-volunteers",
+      "title": "Thailand's national primary health care programme",
+      "publisher": "Health Policy and Planning, Oxford University Press",
+      "url": "https://academic.oup.com/heapol/article/5/3/246/558598",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-who-village-health-volunteers",
+      "title": "Thailand's village health volunteers",
+      "publisher": "World Health Organization Thailand",
+      "url": "https://www.who.int/thailand/news/feature-stories/detail/thailands-1-million-village-health-volunteers-unsung-heroes-are-helping-guard-communities-nationwide-from-covid-19",
+      "type": "international-field-report",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-sage-assembly-poor",
+      "title": "The Assembly of the Poor in Thailand",
+      "publisher": "Capital & Class / SAGE",
+      "url": "https://journals.sagepub.com/doi/10.5367/000000000101297208",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-assembly-poor",
+      "title": "สมัชชาคนจน",
+      "publisher": "สมัชชาคนจน",
+      "url": "https://www.assemblyofthepoor.org/",
+      "type": "movement-archive",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pajournal-community-rights",
+      "title": "สิทธิชุมชนกับการจัดการทรัพยากรธรรมชาติภายใต้รัฐธรรมนูญ พ.ศ. 2540",
+      "publisher": "วารสารรัฐประศาสนศาสตร์",
+      "url": "https://so05.tci-thaijo.org/index.php/pajournal/article/view/62260",
+      "type": "academic-analysis",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-cmu-community-forest-rights",
+      "title": "สิทธิชุมชนกับกฎหมายป่าชุมชน",
+      "publisher": "วารสารนิติสังคมศาสตร์ มหาวิทยาลัยเชียงใหม่",
+      "url": "https://so01.tci-thaijo.org/index.php/CMUJLSS/article/view/64642",
+      "type": "academic-analysis",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-kku-school-community",
+      "title": "การมีส่วนร่วมของชุมชนในการจัดการศึกษาของโรงเรียน",
+      "publisher": "มหาวิทยาลัยขอนแก่น",
+      "url": "https://ph02.tci-thaijo.org/index.php/gskku/article/view/22654",
+      "type": "qualitative-case-study",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-mahidol-trips-medicines",
+      "title": "Impact of the WTO TRIPS Agreement on the pharmaceutical industry in Thailand",
+      "publisher": "Mahidol University",
+      "url": "https://murex.mahidol.ac.th/en/publications/impact-of-the-world-trade-organization-trips-agreement-on-the-pha/",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-pmc-thailand-medicine-access",
+      "title": "TRIPS flexibilities and access to medicines in Thailand",
+      "publisher": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7122632/",
+      "type": "academic-analysis",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-hrw-thailand-2007",
+      "title": "World Report 2007: Thailand",
+      "publisher": "Human Rights Watch",
+      "url": "https://www.hrw.org/world-report/2007/country-chapters/thailand",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-tsri-aec-border",
+      "title": "การเตรียมความพร้อมของพื้นที่ชายแดนต่อประชาคมอาเซียน",
+      "publisher": "สำนักงานกองทุนสนับสนุนการวิจัย",
+      "url": "https://elibrary.tsri.or.th/fullP/RDG56A0024/RDG56A0024_full.pdf",
+      "type": "field-research",
+      "language": "th",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-amnesty-referendum-2016",
+      "title": "Thailand: Drop charges against peaceful referendum activists",
+      "publisher": "Amnesty International",
+      "url": "https://www.amnesty.org/en/documents/asa39/4644/2016/en/",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-hrw-referendum-monitoring",
+      "title": "Thailand: Junta Bans Referendum Monitoring",
+      "publisher": "Human Rights Watch",
+      "url": "https://www.hrw.org/news/2016/06/21/thailand-junta-bans-referendum-monitoring",
+      "type": "human-rights-investigation",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-ilo-homeworkers-act",
+      "title": "Homeworkers Protection Act, B.E. 2553 (2010)",
+      "publisher": "ILO NATLEX / Ministry of Labour",
+      "url": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=93545",
+      "type": "legal-record",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-ilo-homeworkers-organizing",
+      "title": "Interactions between workers' organizations and workers in the informal economy",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_protect/%40protrav/%40travail/documents/publication/wcms_735630.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-un-disability-law-thailand",
+      "title": "Persons with Disabilities Empowerment Act B.E. 2550 (2007)",
+      "publisher": "United Nations Enable",
+      "url": "https://www.un.org/development/desa/disabilities/disability-laws-and-acts-by-country-area.html",
+      "type": "legal-record",
+      "language": "en",
+      "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-escap-disability-thailand",
+      "title": "Harmonization of national laws with the Convention on the Rights of Persons with Disabilities: Thailand case study",
+      "publisher": "United Nations ESCAP",
+      "url": "https://www.unescap.org/sites/default/d8files/2023-07/ESCAP-2023-RP-Harmonization-National-Laws-Convention-Rights-Person-Disability-thailand-Case-study.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-21"
     }
   ],
   "worldContexts": [
@@ -1069,7 +1375,8 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-parliament-history"
+        "src-parliament-history",
+        "src-frus-sarit-charter"
       ],
       "worldContextIds": [
         "world-cold-war"
@@ -1208,7 +1515,9 @@
         "กรุงเทพฯ"
       ],
       "sourceIds": [
-        "src-nrct-14oct"
+        "src-nrct-14oct",
+        "src-frus-october-1973",
+        "src-cambridge-youth-democracy"
       ],
       "worldContextIds": [
         "world-cold-war"
@@ -1234,7 +1543,9 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-ilo-labour-2518"
+        "src-ilo-labour-2518",
+        "src-fes-thai-women-workers",
+        "src-pmc-informal-workers-thailand"
       ],
       "worldContextIds": [
         "world-indochina"
@@ -1403,7 +1714,9 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-wto-thailand"
+        "src-wto-thailand",
+        "src-mahidol-trips-medicines",
+        "src-pmc-thailand-medicine-access"
       ],
       "worldContextIds": [
         "world-globalisation"
@@ -1457,7 +1770,9 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-parliament-constitution-2540"
+        "src-parliament-constitution-2540",
+        "src-pajournal-community-rights",
+        "src-cmu-community-forest-rights"
       ],
       "worldContextIds": [
         "world-globalisation"
@@ -1483,7 +1798,8 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-education-act-2542"
+        "src-education-act-2542",
+        "src-kku-school-community"
       ],
       "worldContextIds": [
         "world-globalisation"
@@ -1597,7 +1913,8 @@
       ],
       "sourceIds": [
         "src-parliament-constitution-2549",
-        "src-parliament-constitution-2540"
+        "src-parliament-constitution-2540",
+        "src-hrw-thailand-2007"
       ],
       "worldContextIds": [
         "world-platform"
@@ -1764,7 +2081,8 @@
         "อาเซียน"
       ],
       "sourceIds": [
-        "src-asean-aec"
+        "src-asean-aec",
+        "src-tsri-aec-border"
       ],
       "worldContextIds": [
         "world-aec"
@@ -1790,7 +2108,9 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-parliament-constitution-2560"
+        "src-parliament-constitution-2560",
+        "src-amnesty-referendum-2016",
+        "src-hrw-referendum-monitoring"
       ],
       "worldContextIds": [
         "world-platform"
@@ -1849,6 +2169,239 @@
       "worldContextIds": [],
       "verification": "corroborated",
       "openQuestion": "บันทึกระดับจังหวัดสะท้อนวิธีทำความเข้าใจการเลือกตั้งและอุปสรรคของผู้มีสิทธิกลุ่มต่างๆ อย่างไร"
+    },
+    {
+      "id": "th-2461-influenza",
+      "period": "2460-2475",
+      "beYear": "2461-2462",
+      "ceYear": "1918-1919",
+      "title": "ไข้หวัดใหญ่สเปนระบาดทั่วสยาม",
+      "summary": "ไข้หวัดใหญ่ระบาดจากเส้นทางเดินเรือและการเคลื่อนย้ายผู้คน ก่อนแพร่ไปทั่วประเทศและลดลงในต้นปี 2462",
+      "peopleImpact": "การเจ็บป่วยและเสียชีวิตจำนวนมากกระทบครัวเรือน แรงงาน และการดูแลผู้ป่วย โดยหลักฐานร่วมสมัยยังบันทึกประสบการณ์ต่างจังหวัดไม่เท่ากัน",
+      "impactStatus": "documented",
+      "themes": [
+        "health",
+        "family",
+        "mobility"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-dcj-influenza-siam",
+        "src-cambridge-influenza-thailand"
+      ],
+      "worldContextIds": [
+        "world-ww1"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "บัญชีวัด หนังสือพิมพ์ และบันทึกท้องถิ่นสะท้อนการดูแลผู้ป่วยและการขาดแรงงานอย่างไร"
+    },
+    {
+      "id": "th-2461-chinese-private-schools",
+      "period": "2460-2475",
+      "beYear": "2461-2475",
+      "ceYear": "1918-1932",
+      "title": "รัฐกำกับโรงเรียนจีนผ่านกฎหมายโรงเรียนราษฎร์",
+      "summary": "การบังคับใช้กฎหมายโรงเรียนราษฎร์ทำให้โรงเรียนจีนต้องจดทะเบียน ใช้ภาษาไทยตามเงื่อนไข และอยู่ภายใต้การตรวจของรัฐ",
+      "peopleImpact": "ครอบครัวจีนและครูต้องปรับการเรียนภาษา อัตลักษณ์ และการจัดการโรงเรียนให้เข้ากับข้อกำหนดของรัฐ",
+      "impactStatus": "contextual",
+      "themes": [
+        "education",
+        "identity",
+        "state"
+      ],
+      "locations": [
+        "กรุงเทพฯ",
+        "เมืองการค้า"
+      ],
+      "sourceIds": [
+        "src-chula-chinese-schools-1918",
+        "src-rmu-chinese-private-schools"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "นักเรียนหญิงและโรงเรียนจีนต่างจังหวัดปรับตัวต่างจากกรุงเทพฯ อย่างไร"
+    },
+    {
+      "id": "th-2470-worker-strikes",
+      "period": "2460-2475",
+      "beYear": "2470-2475",
+      "ceYear": "1927-1932",
+      "title": "การนัดหยุดงานของแรงงานเมืองปลายสมบูรณาญาสิทธิราชย์",
+      "summary": "แรงงานรถราง รถลาก และขนส่งข้าวใช้การหยุดงานต่อรองเรื่องค่าจ้าง สวัสดิการ และสภาพการทำงาน",
+      "peopleImpact": "การรวมตัวทำให้ความขัดแย้งในที่ทำงานกลายเป็นข้อเรียกร้องสาธารณะ แม้รัฐยังควบคุมผู้นำและการรวมกลุ่มอย่างใกล้ชิด",
+      "impactStatus": "documented",
+      "themes": [
+        "labour",
+        "economy",
+        "movements"
+      ],
+      "locations": [
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-liberalarts-rama7-strikes"
+      ],
+      "worldContextIds": [
+        "world-depression"
+      ],
+      "verification": "verified",
+      "openQuestion": "แรงงานหญิง แรงงานจีน และครอบครัวคนงานมีบทบาทในเครือข่ายนัดหยุดงานอย่างไร"
+    },
+    {
+      "id": "th-2480-first-direct-election",
+      "period": "2475-2500",
+      "beYear": "2480",
+      "ceYear": "1937",
+      "title": "การเลือกตั้งสมาชิกสภาผู้แทนราษฎรโดยตรงครั้งแรก",
+      "summary": "วันที่ 7 พฤศจิกายน 2480 ประชาชนลงคะแนนเลือกสมาชิกสภาผู้แทนราษฎรประเภทที่ 1 โดยตรงเป็นครั้งแรก",
+      "peopleImpact": "ผู้มีสิทธิเปลี่ยนจากการเลือกผ่านผู้แทนตำบลไปสู่การลงคะแนนเลือกผู้แทนระดับชาติด้วยตนเอง แต่สภายังคงมีสมาชิกแต่งตั้งอีกส่วนหนึ่ง",
+      "impactStatus": "contextual",
+      "themes": [
+        "politics",
+        "citizenship"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-wb-first-direct-election",
+        "src-parliament-history"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "อัตราใช้สิทธิและการแข่งขันแตกต่างกันอย่างไรระหว่างจังหวัด"
+    },
+    {
+      "id": "th-2499-labour-act",
+      "period": "2475-2500",
+      "beYear": "2499",
+      "ceYear": "1956",
+      "title": "พระราชบัญญัติแรงงาน พ.ศ. 2499",
+      "summary": "กฎหมายแรงงานฉบับแรกกำหนดมาตรฐานเรื่องเวลาทำงาน วันหยุด การลาป่วย ค่าจ้าง และการคุ้มครองผู้หญิงกับเด็ก",
+      "peopleImpact": "ลูกจ้างมีกรอบสิทธิในที่ทำงานชัดขึ้น แต่การใช้สิทธิจริงยังขึ้นกับการตรวจแรงงาน การรับรู้กฎหมาย และอำนาจต่อรอง",
+      "impactStatus": "contextual",
+      "themes": [
+        "labour",
+        "law",
+        "welfare"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-mol-labour-history",
+        "src-jil-thai-labour-law"
+      ],
+      "worldContextIds": [
+        "world-cold-war"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "สถานประกอบการขนาดเล็กและแรงงานหญิงรับรู้และใช้สิทธิใหม่อย่างไร"
+    },
+    {
+      "id": "th-2520-village-health-volunteers",
+      "period": "2516-2535",
+      "beYear": "2520-2524",
+      "ceYear": "1977-1981",
+      "title": "ขยายระบบสาธารณสุขมูลฐานและอาสาสมัครสาธารณสุขหมู่บ้าน",
+      "summary": "รัฐขยายงานสาธารณสุขมูลฐานผ่านผู้สื่อข่าวสาธารณสุขและอาสาสมัครในหมู่บ้าน เพื่อเชื่อมครัวเรือนกับหน่วยบริการ",
+      "peopleImpact": "คนในชุมชนมีผู้ให้ข้อมูล เฝ้าระวัง และประสานบริการใกล้บ้านขึ้น แต่ภาระงานและคุณภาพการสนับสนุนแตกต่างกันตามพื้นที่",
+      "impactStatus": "documented",
+      "themes": [
+        "health",
+        "community",
+        "state"
+      ],
+      "locations": [
+        "ชนบททั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-oxford-thai-phc-volunteers",
+        "src-who-village-health-volunteers"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "เพศ สถานะชุมชน และค่าตอบแทนกำหนดประสบการณ์ของอาสาสมัครอย่างไร"
+    },
+    {
+      "id": "th-2538-assembly-poor",
+      "period": "2535-2549",
+      "beYear": "2538-2539",
+      "ceYear": "1995-1996",
+      "title": "การก่อตัวของสมัชชาคนจน",
+      "summary": "เครือข่ายผู้ได้รับผลกระทบจากเขื่อน ที่ดิน ป่า และโครงการพัฒนารวมตัวเป็นสมัชชาคนจนและยกระดับข้อเรียกร้องจากพื้นที่สู่ส่วนกลาง",
+      "peopleImpact": "ชาวบ้านจากหลายปัญหาสร้างเวทีร่วม เรียนรู้การเจรจา สื่อสารสาธารณะ และเชื่อมชีวิตประจำวันกับนโยบายระดับชาติ",
+      "impactStatus": "documented",
+      "themes": [
+        "movements",
+        "environment",
+        "rights"
+      ],
+      "locations": [
+        "หลายภูมิภาค",
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-sage-assembly-poor",
+        "src-assembly-poor",
+        "src-nida-pakmun"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "กลุ่มสมาชิกที่เห็นต่างหรือถอนตัวอธิบายข้อจำกัดของเครือข่ายอย่างไร"
+    },
+    {
+      "id": "th-2550-disability-empowerment-act",
+      "period": "2549-2560",
+      "beYear": "2550",
+      "ceYear": "2007",
+      "title": "พระราชบัญญัติส่งเสริมและพัฒนาคุณภาพชีวิตคนพิการ พ.ศ. 2550",
+      "summary": "กฎหมายวางกรอบสิทธิ การไม่เลือกปฏิบัติ การเข้าถึงบริการ และกลไกส่งเสริมคุณภาพชีวิตคนพิการ",
+      "peopleImpact": "คนพิการและองค์กรของคนพิการมีฐานกฎหมายสำหรับเรียกร้องการเข้าถึงงาน การศึกษา บริการ และสิ่งแวดล้อม แต่ช่องว่างการบังคับใช้ยังมีอยู่",
+      "impactStatus": "contextual",
+      "themes": [
+        "rights",
+        "disability",
+        "welfare"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-un-disability-law-thailand",
+        "src-escap-disability-thailand"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "การเข้าถึงสิทธิแตกต่างกันอย่างไรตามประเภทความพิการ รายได้ และภูมิภาค"
+    },
+    {
+      "id": "th-2553-homeworkers-protection",
+      "period": "2549-2560",
+      "beYear": "2553",
+      "ceYear": "2010",
+      "title": "พระราชบัญญัติคุ้มครองผู้รับงานไปทำที่บ้าน พ.ศ. 2553",
+      "summary": "กฎหมายกำหนดสัญญา ค่าตอบแทน ความปลอดภัย และความรับผิดของผู้จ้างต่อผู้รับงานไปทำที่บ้าน",
+      "peopleImpact": "แรงงานที่ทำงานจากบ้านซึ่งส่วนใหญ่ไม่อยู่ในระบบโรงงานได้รับการรับรองสิทธิเฉพาะมากขึ้น แต่การมองเห็นผู้จ้างช่วงและการบังคับใช้ยังเป็นโจทย์",
+      "impactStatus": "documented",
+      "themes": [
+        "labour",
+        "informal-economy",
+        "gender"
+      ],
+      "locations": [
+        "ทั่วประเทศ"
+      ],
+      "sourceIds": [
+        "src-ilo-homeworkers-act",
+        "src-ilo-homeworkers-organizing",
+        "src-pmc-informal-workers-thailand"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "แรงงานหญิงและผู้รับงานผ่านผู้จ้างช่วงใช้สิทธิเรื่องค่าจ้างและความปลอดภัยได้จริงเพียงใด"
     }
   ],
   "microhistoryMeta": {
@@ -3287,6 +3840,838 @@
         "เจ้าหน้าที่ผู้ปฏิบัติตามคำสั่ง"
       ],
       "openQuestion": "ผลทางอาชีพ ครอบครัว และการแสดงความคิดเห็นดำเนินต่อหลังคดีหรือการควบคุมตัวยุติลงนานเพียงใด"
+    },
+    {
+      "id": "mh-2461-influenza-households",
+      "period": "2460-2475",
+      "beYear": "2461-2462",
+      "ceYear": "1918-1919",
+      "title": "ครัวเรือนสยามในคลื่นไข้หวัดใหญ่",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้ป่วย",
+        "ผู้ดูแล",
+        "ครอบครัว",
+        "แรงงาน"
+      ],
+      "everydayDimensions": [
+        "illness",
+        "care",
+        "work",
+        "death"
+      ],
+      "fact": "งานทบทวนการระบาดระบุว่าประชากรราว 2.5 ล้านคนติดเชื้อและมีผู้เสียชีวิตอย่างน้อย 80,000 คน โดยโรคแพร่ทั่วประเทศก่อนลดลงในเดือนมีนาคม 2462",
+      "livedExperience": "ขนาดการระบาดหมายถึงหลายครัวเรือนต้องดูแลผู้ป่วยพร้อมกับรับมือการขาดคนทำงาน แต่หลักฐานที่มีบอกจำนวนได้ชัดกว่าวิธีดูแลในแต่ละท้องถิ่น",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-dcj-influenza-siam",
+        "src-cambridge-influenza-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2461-influenza"
+      ],
+      "missingVoices": [
+        "ผู้ดูแลหญิง",
+        "ชาวชนบท",
+        "แรงงานท่าเรือ"
+      ],
+      "openQuestion": "บันทึกวัดและหนังสือพิมพ์ท้องถิ่นบอกอะไรเกี่ยวกับงานศพ การรักษา และการขาดแรงงาน"
+    },
+    {
+      "id": "mh-2461-chinese-school-families",
+      "period": "2460-2475",
+      "beYear": "2461-2475",
+      "ceYear": "1918-1932",
+      "title": "ครอบครัวจีนระหว่างภาษาในบ้านกับภาษาในโรงเรียน",
+      "location": [
+        "กรุงเทพฯ",
+        "เมืองการค้า"
+      ],
+      "groups": [
+        "นักเรียนเชื้อสายจีน",
+        "ผู้ปกครอง",
+        "ครูโรงเรียนจีน"
+      ],
+      "everydayDimensions": [
+        "education",
+        "language",
+        "identity",
+        "family"
+      ],
+      "fact": "โรงเรียนจีนต้องจดทะเบียน อยู่ภายใต้การตรวจ และจัดการเรียนภาษาไทยตามกฎหมายโรงเรียนราษฎร์ ขณะที่รัฐกังวลอิทธิพลการเมืองจากจีน",
+      "livedExperience": "ผู้ปกครองและครูต้องประนีประนอมระหว่างการรักษาภาษาเครือญาติกับการปฏิบัติตามหลักสูตรและเงื่อนไขของรัฐ",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-chula-chinese-schools-1918",
+        "src-rmu-chinese-private-schools"
+      ],
+      "linkedEventIds": [
+        "th-2461-chinese-private-schools"
+      ],
+      "missingVoices": [
+        "นักเรียนหญิง",
+        "โรงเรียนต่างจังหวัด",
+        "ครอบครัวยากจน"
+      ],
+      "openQuestion": "จดหมาย สมุดเรียน และทะเบียนนักเรียนสะท้อนการเลือกภาษาและโรงเรียนของครอบครัวอย่างไร"
+    },
+    {
+      "id": "mh-2470-bangkok-worker-strikes",
+      "period": "2460-2475",
+      "beYear": "2470-2475",
+      "ceYear": "1927-1932",
+      "title": "คนงานรถราง รถลาก และท่าข้าวใช้การหยุดงานต่อรอง",
+      "location": [
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "คนงานรถราง",
+        "คนลากรถ",
+        "แรงงานขนข้าว"
+      ],
+      "everydayDimensions": [
+        "wages",
+        "working-conditions",
+        "collective-action"
+      ],
+      "fact": "หลักฐานประวัติศาสตร์บันทึกการนัดหยุดงานหลายอาชีพจากปัญหาค่าจ้าง สวัสดิการ สภาพเศรษฐกิจ และความขัดแย้งกับนายจ้าง",
+      "livedExperience": "การหยุดงานทำให้คนงานต้องชั่งรายได้รายวันกับโอกาสต่อรองร่วมกัน ขณะที่ผู้นำและเครือข่ายแรงงานเผชิญการจับตาจากรัฐ",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-liberalarts-rama7-strikes"
+      ],
+      "linkedEventIds": [
+        "th-2470-worker-strikes"
+      ],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "ครอบครัวคนงาน",
+        "คนงานที่ไม่ร่วมประท้วง"
+      ],
+      "openQuestion": "เงินช่วยเหลือและเครือข่ายชุมชนช่วยให้การหยุดงานดำเนินต่อได้อย่างไร"
+    },
+    {
+      "id": "mh-2480-direct-election-voters",
+      "period": "2475-2500",
+      "beYear": "2480",
+      "ceYear": "1937",
+      "title": "ผู้มีสิทธิเลือกผู้แทนระดับชาติด้วยตนเองครั้งแรก",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้มีสิทธิเลือกตั้ง",
+        "ผู้สมัคร",
+        "เจ้าหน้าที่ท้องถิ่น"
+      ],
+      "everydayDimensions": [
+        "citizenship",
+        "voting",
+        "local-administration"
+      ],
+      "fact": "การเลือกตั้งวันที่ 7 พฤศจิกายน 2480 เป็นการเลือกตั้งสมาชิกสภาผู้แทนราษฎรโดยตรงครั้งแรก หลังการเลือกตั้งทางอ้อมในปี 2476",
+      "livedExperience": "ผู้มีสิทธิต้องเรียนรู้บัตรเลือกตั้ง หน่วยเลือกตั้ง และการตัดสินใจเลือกผู้สมัครโดยตรง แต่หลักฐานระดับชาติยังไม่บอกประสบการณ์แต่ละจังหวัดเท่ากัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-wb-first-direct-election",
+        "src-parliament-history"
+      ],
+      "linkedEventIds": [
+        "th-2480-first-direct-election"
+      ],
+      "missingVoices": [
+        "ผู้หญิงผู้ใช้สิทธิ",
+        "ผู้ไม่รู้หนังสือ",
+        "ชาวพื้นที่ห่างไกล"
+      ],
+      "openQuestion": "ข้อร้องเรียนและหนังสือพิมพ์จังหวัดสะท้อนอุปสรรคการใช้สิทธิแบบใด"
+    },
+    {
+      "id": "mh-2499-labour-act-workers",
+      "period": "2475-2500",
+      "beYear": "2499",
+      "ceYear": "1956",
+      "title": "สิทธิวันหยุด ค่าจ้าง และเวลาทำงานเข้าสู่กฎหมายแรงงาน",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ลูกจ้างโรงงาน",
+        "แรงงานหญิง",
+        "แรงงานเด็ก"
+      ],
+      "everydayDimensions": [
+        "working-hours",
+        "wages",
+        "leave",
+        "safety"
+      ],
+      "fact": "พระราชบัญญัติแรงงาน พ.ศ. 2499 กำหนดเรื่องเวลาทำงาน วันหยุด ลาป่วย ค่าจ้างล่วงเวลา และข้อจำกัดการใช้แรงงานหญิงกับเด็ก",
+      "livedExperience": "กฎหมายสร้างภาษากลางสำหรับเรียกร้องสิทธิ แต่ลูกจ้างจะใช้ได้จริงต่อเมื่อรู้กฎหมาย มีหลักฐานการจ้าง และเข้าถึงการตรวจแรงงาน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-mol-labour-history",
+        "src-jil-thai-labour-law"
+      ],
+      "linkedEventIds": [
+        "th-2499-labour-act"
+      ],
+      "missingVoices": [
+        "แรงงานรายวัน",
+        "แรงงานในกิจการเล็ก",
+        "แรงงานนอกกรุงเทพฯ"
+      ],
+      "openQuestion": "คดีแรงงานและรายงานตรวจโรงงานปีแรกสะท้อนช่องว่างการบังคับใช้อย่างไร"
+    },
+    {
+      "id": "mh-2501-press-civic-life",
+      "period": "2500-2516",
+      "beYear": "2501-2506",
+      "ceYear": "1958-1963",
+      "title": "พื้นที่สาธารณะภายใต้อำนาจพิเศษของคณะปฏิวัติ",
+      "location": [
+        "ทั่วประเทศ",
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "นักหนังสือพิมพ์",
+        "นักเขียน",
+        "นักกิจกรรม",
+        "ประชาชนทั่วไป"
+      ],
+      "everydayDimensions": [
+        "media",
+        "speech",
+        "association",
+        "security"
+      ],
+      "fact": "หลังการยึดอำนาจปี 2501 รัฐบาลสฤษดิ์ใช้ธรรมนูญชั่วคราวและอำนาจพิเศษ ควบคู่กับการยุบสภาและจำกัดกิจกรรมทางการเมือง",
+      "livedExperience": "การสื่อสารและการรวมกลุ่มต้องคำนึงถึงการตรวจสอบและการลงโทษของรัฐมากขึ้น แต่หลักฐานที่มีเหมาะสำหรับอธิบายโครงสร้างมากกว่าประสบการณ์ของผู้อ่านทั่วไป",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-frus-sarit-charter",
+        "src-parliament-history"
+      ],
+      "linkedEventIds": [
+        "th-2501-authoritarian-charter"
+      ],
+      "missingVoices": [
+        "ผู้อ่านต่างจังหวัด",
+        "ครอบครัวผู้ถูกควบคุมตัว",
+        "เจ้าหน้าที่ระดับปฏิบัติ"
+      ],
+      "openQuestion": "หนังสือพิมพ์และจดหมายส่วนบุคคลสะท้อนการเซ็นเซอร์ตนเองอย่างไร"
+    },
+    {
+      "id": "mh-2505-rural-malaria-health",
+      "period": "2500-2516",
+      "beYear": "2504-2513",
+      "ceYear": "1961-1970",
+      "title": "ครัวเรือนชนบทกับการรุกของหน่วยควบคุมมาลาเรีย",
+      "location": [
+        "ชนบทหลายภูมิภาค"
+      ],
+      "groups": [
+        "ครัวเรือนชนบท",
+        "ผู้ป่วยมาลาเรีย",
+        "เจ้าหน้าที่สาธารณสุข"
+      ],
+      "everydayDimensions": [
+        "health",
+        "travel",
+        "treatment",
+        "work"
+      ],
+      "fact": "โครงการควบคุมมาลาเรียขยายการพ่นสาร การค้นหาผู้ป่วย และการรักษาในพื้นที่แพร่โรค โดยอัตราตายลดลงในระยะยาว",
+      "livedExperience": "การเข้าถึงทีมพ่นสารและยารักษาลดความเสี่ยงของบางชุมชน แต่การเดินทาง พื้นที่ป่า และความต่อเนื่องของบริการทำให้ผลไม่เท่ากัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-pmc-malaria-thailand",
+        "src-who-malaria-1964"
+      ],
+      "linkedEventIds": [
+        "th-2504-first-plan"
+      ],
+      "missingVoices": [
+        "ชุมชนชายป่า",
+        "แรงงานเคลื่อนย้าย",
+        "ผู้ป่วยที่รักษาด้วยวิธีท้องถิ่น"
+      ],
+      "openQuestion": "รายงานหน่วยมาลาเรียระดับจังหวัดบันทึกการยอมรับหรือปฏิเสธการพ่นสารอย่างไร"
+    },
+    {
+      "id": "mh-2505-bangkok-migrants-housing",
+      "period": "2500-2516",
+      "beYear": "2504-2513",
+      "ceYear": "1961-1970",
+      "title": "ผู้ย้ายถิ่นสร้างชีวิตใกล้งานในกรุงเทพฯ",
+      "location": [
+        "กรุงเทพฯ",
+        "ปริมณฑล"
+      ],
+      "groups": [
+        "ผู้ย้ายถิ่นชนบท",
+        "แรงงานค่าจ้าง",
+        "ครอบครัวเมือง"
+      ],
+      "everydayDimensions": [
+        "migration",
+        "housing",
+        "transport",
+        "work"
+      ],
+      "fact": "การเติบโตทางเศรษฐกิจและการรวมงานในกรุงเทพฯ ดึงผู้ย้ายถิ่นจากชนบทเข้ามา ขณะที่ที่อยู่อาศัยและบริการเมืองขยายไม่พร้อมกัน",
+      "livedExperience": "คนย้ายถิ่นต้องจัดสมดุลระหว่างระยะทางไปทำงาน ค่าเช่า ความแออัด และการส่งเงินกลับบ้าน โดยเครือญาติช่วยหางานและที่พัก",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-wb-bangkok-migration",
+        "src-nesdc-plans"
+      ],
+      "linkedEventIds": [
+        "th-2504-first-plan"
+      ],
+      "missingVoices": [
+        "ผู้เช่าหญิง",
+        "เด็กในชุมชนแออัด",
+        "ผู้ย้ายถิ่นตามฤดูกาล"
+      ],
+      "openQuestion": "ทะเบียนชุมชนและประวัติชีวิตบอกเส้นทางจากหมู่บ้านสู่ย่านงานอย่างไร"
+    },
+    {
+      "id": "mh-2516-october-participants-families",
+      "period": "2516-2535",
+      "beYear": "2516",
+      "ceYear": "1973",
+      "title": "นักศึกษา ประชาชน และครอบครัวในวันที่ 14 ตุลาคม",
+      "location": [
+        "กรุงเทพฯ",
+        "หลายจังหวัด"
+      ],
+      "groups": [
+        "นักศึกษา",
+        "ผู้ชุมนุม",
+        "ครอบครัว",
+        "ประชาชนในเมือง"
+      ],
+      "everydayDimensions": [
+        "protest",
+        "communication",
+        "care",
+        "loss"
+      ],
+      "fact": "การจับกุมนักกิจกรรมเรียกร้องรัฐธรรมนูญนำไปสู่การชุมนุมขนาดใหญ่ และวันที่ 14 ตุลาคมเกิดการใช้กำลัง มีผู้เสียชีวิตและบาดเจ็บ ก่อนผู้นำรัฐบาลออกนอกประเทศ",
+      "livedExperience": "การเข้าร่วมไม่ได้มีแต่นักศึกษา ประชาชนช่วยเดินขบวน ส่งข่าว ดูแลผู้บาดเจ็บ และตามหาสมาชิกครอบครัว แต่ประสบการณ์ของผู้ไม่เข้าร่วมยังมีหลักฐานน้อย",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-nrct-14oct",
+        "src-frus-october-1973",
+        "src-cambridge-youth-democracy"
+      ],
+      "linkedEventIds": [
+        "th-2516-october-14"
+      ],
+      "missingVoices": [
+        "ครอบครัวผู้เสียชีวิต",
+        "ผู้ค้าริมทาง",
+        "เจ้าหน้าที่ชั้นผู้น้อย"
+      ],
+      "openQuestion": "บันทึกโรงพยาบาลและคำบอกเล่าครอบครัวช่วยตรวจสอบลำดับเหตุการณ์ส่วนใดได้บ้าง"
+    },
+    {
+      "id": "mh-2518-labour-unions-bargaining",
+      "period": "2516-2535",
+      "beYear": "2518-2519",
+      "ceYear": "1975-1976",
+      "title": "ลูกจ้างใช้สหภาพและการเจรจาต่อรองในช่วงประชาธิปไตยเปิด",
+      "location": [
+        "กรุงเทพฯ",
+        "เขตอุตสาหกรรม"
+      ],
+      "groups": [
+        "สมาชิกสหภาพ",
+        "ลูกจ้างโรงงาน",
+        "นายจ้าง"
+      ],
+      "everydayDimensions": [
+        "union",
+        "bargaining",
+        "wages",
+        "dispute"
+      ],
+      "fact": "พระราชบัญญัติแรงงานสัมพันธ์ พ.ศ. 2518 วางกรอบการตั้งสหภาพ การยื่นข้อเรียกร้อง การเจรจา และการระงับข้อพิพาท",
+      "livedExperience": "ลูกจ้างมีช่องทางรวมตัวเป็นทางการมากขึ้น แต่ความรู้กฎหมาย ความเสี่ยงถูกเลิกจ้าง และความสัมพันธ์ในโรงงานยังกำหนดอำนาจต่อรอง",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-ilo-labour-2518",
+        "src-pmc-informal-workers-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2518-labour-relations"
+      ],
+      "missingVoices": [
+        "แรงงานเหมาช่วง",
+        "แรงงานโรงงานเล็ก",
+        "นายจ้างรายย่อย"
+      ],
+      "openQuestion": "ทะเบียนสหภาพและสำนวนข้อพิพาทบอกผลของการเจรจาครั้งแรกๆ อย่างไร"
+    },
+    {
+      "id": "mh-2518-hara-women-workers",
+      "period": "2516-2535",
+      "beYear": "2518-2519",
+      "ceYear": "1975-1976",
+      "title": "คนงานหญิงโรงงานฮารายึดโรงงานและจัดการผลิตเอง",
+      "location": [
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "แรงงานหญิงโรงงานเสื้อผ้า",
+        "สมาชิกสหภาพ"
+      ],
+      "everydayDimensions": [
+        "factory-work",
+        "gender",
+        "collective-action",
+        "income"
+      ],
+      "fact": "คนงานโรงงานฮารานัดหยุดงานจากข้อพิพาทกับนายจ้าง และช่วงหนึ่งเข้าควบคุมโรงงานเพื่อผลิตและจำหน่ายสินค้าเอง",
+      "livedExperience": "การต่อสู้เชื่อมเรื่องค่าจ้างและงานกับการจัดการอาหาร ที่พัก รายได้ และความเป็นผู้นำของแรงงานหญิงในพื้นที่โรงงาน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-fes-thai-women-workers",
+        "src-columbia-hara-workers"
+      ],
+      "linkedEventIds": [
+        "th-2518-labour-relations"
+      ],
+      "missingVoices": [
+        "คนงานที่ไม่เข้าร่วม",
+        "ครอบครัวคนงาน",
+        "พนักงานฝ่ายจัดการ"
+      ],
+      "openQuestion": "เอกสารสหภาพและคำบอกเล่าคนงานอธิบายการแบ่งงานระหว่างการยึดโรงงานอย่างไร"
+    },
+    {
+      "id": "mh-2520-village-health-volunteers",
+      "period": "2516-2535",
+      "beYear": "2520-2524",
+      "ceYear": "1977-1981",
+      "title": "อาสาสมัครสุขภาพเชื่อมบ้านกับสถานีอนามัย",
+      "location": [
+        "ชนบททั่วประเทศ"
+      ],
+      "groups": [
+        "อาสาสมัครสาธารณสุข",
+        "ครัวเรือนชนบท",
+        "เจ้าหน้าที่สถานีอนามัย"
+      ],
+      "everydayDimensions": [
+        "care",
+        "prevention",
+        "community-work",
+        "referral"
+      ],
+      "fact": "โครงการสาธารณสุขมูลฐานฝึกคนในหมู่บ้านให้สื่อสารสุขภาพ เฝ้าระวังโรค และประสานการส่งต่อกับหน่วยบริการ",
+      "livedExperience": "อาสาสมัครกลายเป็นคนที่เพื่อนบ้านพบได้ใกล้บ้าน แต่ต้องทำงานบนความไว้วางใจ เวลาอาสา และการสนับสนุนจากเจ้าหน้าที่",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-oxford-thai-phc-volunteers",
+        "src-who-village-health-volunteers"
+      ],
+      "linkedEventIds": [
+        "th-2520-village-health-volunteers"
+      ],
+      "missingVoices": [
+        "อาสาสมัครหญิงรุ่นแรก",
+        "หมู่บ้านห่างไกล",
+        "ผู้ไม่ใช้บริการรัฐ"
+      ],
+      "openQuestion": "สมุดเยี่ยมบ้านและประวัติชีวิต อสม. รุ่นแรกสะท้อนภาระงานที่มองไม่เห็นอย่างไร"
+    },
+    {
+      "id": "mh-2538-assembly-poor-networks",
+      "period": "2535-2549",
+      "beYear": "2538-2540",
+      "ceYear": "1995-1997",
+      "title": "ชาวบ้านหลายปัญหาสร้างเวทีร่วมในสมัชชาคนจน",
+      "location": [
+        "หลายภูมิภาค",
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "ชาวบ้านผู้ได้รับผลกระทบจากโครงการ",
+        "เกษตรกร",
+        "นักกิจกรรม"
+      ],
+      "everydayDimensions": [
+        "livelihood",
+        "travel",
+        "protest",
+        "negotiation"
+      ],
+      "fact": "เครือข่ายชาวบ้านจากปัญหาเขื่อน ที่ดิน ป่า และโครงการพัฒนารวมตัวเป็นสมัชชาคนจนและเดินทางชุมนุมเจรจากับรัฐบาล",
+      "livedExperience": "การเคลื่อนไหวต้องจัดทั้งการเดินทาง อาหาร ที่พัก การดูแลครอบครัว และการแปลปัญหาหลากพื้นที่ให้เป็นข้อเรียกร้องร่วม",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-sage-assembly-poor",
+        "src-assembly-poor",
+        "src-nida-pakmun"
+      ],
+      "linkedEventIds": [
+        "th-2538-assembly-poor"
+      ],
+      "missingVoices": [
+        "สมาชิกที่ถอนตัว",
+        "ผู้ดูแลบ้านระหว่างการชุมนุม",
+        "ชุมชนที่ไม่เข้าร่วม"
+      ],
+      "openQuestion": "บันทึกภายในเครือข่ายสะท้อนการตัดสินใจและความขัดแย้งระหว่างกลุ่มอย่างไร"
+    },
+    {
+      "id": "mh-2540-community-rights",
+      "period": "2535-2549",
+      "beYear": "2540-2549",
+      "ceYear": "1997-2006",
+      "title": "ชุมชนใช้ภาษาสิทธิในรัฐธรรมนูญต่อรองการจัดการทรัพยากร",
+      "location": [
+        "หลายภูมิภาค"
+      ],
+      "groups": [
+        "ชุมชนท้องถิ่น",
+        "เครือข่ายสิ่งแวดล้อม",
+        "องค์กรปกครองท้องถิ่น"
+      ],
+      "everydayDimensions": [
+        "resources",
+        "law",
+        "participation",
+        "livelihood"
+      ],
+      "fact": "รัฐธรรมนูญ พ.ศ. 2540 รับรองสิทธิชุมชนและการมีส่วนร่วมในการจัดการทรัพยากรธรรมชาติเป็นหลักการสำคัญ",
+      "livedExperience": "ชาวบ้านมีภาษากฎหมายใหม่สำหรับคัดค้านหรือเสนอการจัดการทรัพยากร แต่การใช้สิทธิต้องผ่านหน่วยงาน ขั้นตอน และกฎหมายรายสาขาที่อาจไม่สอดคล้องกัน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-parliament-constitution-2540",
+        "src-pajournal-community-rights"
+      ],
+      "linkedEventIds": [
+        "th-2540-constitution"
+      ],
+      "missingVoices": [
+        "ชุมชนที่แพ้คดี",
+        "เจ้าหน้าที่ท้องถิ่น",
+        "ผู้ใช้ทรัพยากรที่ไม่ได้เป็นสมาชิกชุมชน"
+      ],
+      "openQuestion": "คำร้องและรายงานประชาพิจารณ์กรณีใดแสดงว่าสิทธิชุมชนเปลี่ยนผลการตัดสินใจจริง"
+    },
+    {
+      "id": "mh-2542-community-school-participation",
+      "period": "2535-2549",
+      "beYear": "2542-2549",
+      "ceYear": "1999-2006",
+      "title": "ผู้ปกครองและชุมชนเข้ามาร่วมจัดการศึกษา",
+      "location": [
+        "หลายภูมิภาค"
+      ],
+      "groups": [
+        "ผู้ปกครอง",
+        "ครู",
+        "ผู้นำชุมชน",
+        "นักเรียน"
+      ],
+      "everydayDimensions": [
+        "school",
+        "curriculum",
+        "participation",
+        "local-knowledge"
+      ],
+      "fact": "พระราชบัญญัติการศึกษาแห่งชาติ พ.ศ. 2542 วางหลักการกระจายอำนาจและการมีส่วนร่วมของครอบครัว ชุมชน และองค์กรท้องถิ่นในการจัดการศึกษา",
+      "livedExperience": "บางโรงเรียนเปิดพื้นที่ให้ชุมชนร่วมวางหลักสูตรและกิจกรรม แต่เวลา ทรัพยากร และความสัมพันธ์กับผู้บริหารทำให้ระดับการมีส่วนร่วมต่างกัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-education-act-2542",
+        "src-kku-school-community"
+      ],
+      "linkedEventIds": [
+        "th-2542-education-act"
+      ],
+      "missingVoices": [
+        "นักเรียน",
+        "ผู้ปกครองรายได้น้อย",
+        "โรงเรียนเมือง"
+      ],
+      "openQuestion": "รายงานคณะกรรมการสถานศึกษาบอกว่าใครเสนอและใครมีอำนาจตัดสินใจจริง"
+    },
+    {
+      "id": "mh-2538-trips-medicine-access",
+      "period": "2535-2549",
+      "beYear": "2538-2549",
+      "ceYear": "1995-2006",
+      "title": "ผู้ป่วยและระบบสุขภาพภายใต้กติกาสิทธิบัตรยา",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้ป่วย",
+        "ผู้ดูแล",
+        "โรงพยาบาล",
+        "ผู้ผลิตยา"
+      ],
+      "everydayDimensions": [
+        "medicine",
+        "cost",
+        "treatment",
+        "policy"
+      ],
+      "fact": "การเข้าเป็นสมาชิก WTO ทำให้ไทยอยู่ภายใต้ข้อตกลง TRIPS ซึ่งมีผลต่อกติกาสิทธิบัตรยา การผลิต และทางเลือกเชิงนโยบายด้านการเข้าถึงยา",
+      "livedExperience": "ราคายาและการมีทางเลือกยาชื่อสามัญส่งผลต่อการรักษาและงบโรงพยาบาล แต่หลักฐานระดับข้อตกลงยังต้องจับคู่กับข้อมูลผู้ป่วยรายโรค",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-wto-thailand",
+        "src-mahidol-trips-medicines",
+        "src-pmc-thailand-medicine-access"
+      ],
+      "linkedEventIds": [
+        "th-2538-wto"
+      ],
+      "missingVoices": [
+        "ผู้ป่วยเอชไอวี",
+        "เภสัชกรโรงพยาบาลชุมชน",
+        "ผู้ผลิตยารายย่อย"
+      ],
+      "openQuestion": "ข้อมูลราคาและคำบอกเล่าผู้ป่วยแสดงจุดที่กติกาสิทธิบัตรเปลี่ยนการรักษาอย่างไร"
+    },
+    {
+      "id": "mh-2540-community-forest-rights",
+      "period": "2535-2549",
+      "beYear": "2540-2549",
+      "ceYear": "1997-2006",
+      "title": "ชุมชนป่ากับช่องว่างระหว่างรัฐธรรมนูญและกฎหมายป่าไม้",
+      "location": [
+        "ภาคเหนือ",
+        "หลายภูมิภาค"
+      ],
+      "groups": [
+        "ชุมชนป่า",
+        "กลุ่มชาติพันธุ์",
+        "เจ้าหน้าที่ป่าไม้"
+      ],
+      "everydayDimensions": [
+        "forest",
+        "land",
+        "law",
+        "food"
+      ],
+      "fact": "แม้รัฐธรรมนูญ พ.ศ. 2540 รับรองสิทธิชุมชน แต่กฎหมายและการบริหารป่าไม้ยังสร้างข้อขัดแย้งเรื่องการอยู่อาศัยและใช้ทรัพยากร",
+      "livedExperience": "ครัวเรือนต้องพิสูจน์ประวัติการอยู่ การดูแลป่า และสิทธิใช้ที่ดินต่อระบบเอกสารที่ไม่จำเป็นต้องตรงกับความทรงจำหรือกติกาชุมชน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-cmu-community-forest-rights",
+        "src-parliament-constitution-2540"
+      ],
+      "linkedEventIds": [
+        "th-2540-constitution"
+      ],
+      "missingVoices": [
+        "ผู้หญิงผู้เก็บของป่า",
+        "เยาวชนชาติพันธุ์",
+        "เจ้าหน้าที่ภาคสนาม"
+      ],
+      "openQuestion": "แผนที่ชุมชนและสำนวนคดีขัดแย้งกับแผนที่รัฐตรงจุดใด"
+    },
+    {
+      "id": "mh-2549-peaceful-anti-coup-activists",
+      "period": "2549-2560",
+      "beYear": "2549-2550",
+      "ceYear": "2006-2007",
+      "title": "นักกิจกรรมและประชาชนภายใต้ข้อจำกัดหลังรัฐประหาร 2549",
+      "location": [
+        "กรุงเทพฯ",
+        "หลายจังหวัด"
+      ],
+      "groups": [
+        "นักกิจกรรม",
+        "นักวิชาการ",
+        "สื่อ",
+        "ประชาชนผู้ชุมนุม"
+      ],
+      "everydayDimensions": [
+        "speech",
+        "assembly",
+        "media",
+        "security"
+      ],
+      "fact": "หลังรัฐประหาร 19 กันยายน 2549 มีการยกเลิกรัฐธรรมนูญ จำกัดกิจกรรมทางการเมือง และออกคำสั่งที่กระทบเสรีภาพการแสดงออกและการชุมนุม",
+      "livedExperience": "ผู้คัดค้านต้องประเมินความเสี่ยงจากคำสั่งห้าม การติดตาม และการดำเนินคดี ขณะที่ผู้เห็นด้วยหรือวางตัวเป็นกลางมีเหตุผลหลากหลายซึ่งยังต้องเก็บเพิ่ม",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-parliament-constitution-2549",
+        "src-hrw-thailand-2007"
+      ],
+      "linkedEventIds": [
+        "th-2549-coup"
+      ],
+      "missingVoices": [
+        "ผู้สนับสนุนรัฐประหาร",
+        "ประชาชนต่างจังหวัด",
+        "เจ้าหน้าที่ชั้นผู้น้อย"
+      ],
+      "openQuestion": "บันทึกกิจกรรมท้องถิ่นสะท้อนรูปแบบการคัดค้านนอกกรุงเทพฯ อย่างไร"
+    },
+    {
+      "id": "mh-2558-aec-border-communities",
+      "period": "2549-2560",
+      "beYear": "2556-2560",
+      "ceYear": "2013-2017",
+      "title": "ชุมชนชายแดนเตรียมรับการค้าและการเดินทางในยุค AEC",
+      "location": [
+        "พื้นที่ชายแดน"
+      ],
+      "groups": [
+        "ผู้ค้ารายย่อย",
+        "แรงงานข้ามแดน",
+        "เจ้าหน้าที่ท้องถิ่น",
+        "ครอบครัวชายแดน"
+      ],
+      "everydayDimensions": [
+        "trade",
+        "mobility",
+        "language",
+        "services"
+      ],
+      "fact": "การจัดตั้งประชาคมเศรษฐกิจอาเซียนปลายปี 2558 เชื่อมกับมาตรการอำนวยความสะดวกด้านการค้า การลงทุน และแรงงานฝีมือ ขณะที่พื้นที่ชายแดนเตรียมโครงสร้างและบริการ",
+      "livedExperience": "ผู้ค้ารายย่อยและครอบครัวชายแดนพบทั้งลูกค้าและการเดินทางที่มากขึ้น พร้อมการแข่งขัน กฎข้ามแดน และต้นทุนการปรับตัวที่ไม่เท่ากัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-asean-aec",
+        "src-tsri-aec-border"
+      ],
+      "linkedEventIds": [
+        "th-2558-aec"
+      ],
+      "missingVoices": [
+        "แรงงานไร้เอกสาร",
+        "ผู้ค้าหญิง",
+        "ชุมชนห่างด่านหลัก"
+      ],
+      "openQuestion": "ข้อมูลตลาดชายแดนและประวัติชีวิตครัวเรือนแยกผลของ AEC ออกจากแนวโน้มเดิมได้อย่างไร"
+    },
+    {
+      "id": "mh-2559-referendum-activists-voters",
+      "period": "2549-2560",
+      "beYear": "2559",
+      "ceYear": "2016",
+      "title": "ผู้มีสิทธิและนักกิจกรรมภายใต้กติกาประชามติ 2559",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้มีสิทธิออกเสียง",
+        "นักกิจกรรม",
+        "ผู้สังเกตการณ์",
+        "เจ้าหน้าที่"
+      ],
+      "everydayDimensions": [
+        "voting",
+        "speech",
+        "campaign",
+        "law"
+      ],
+      "fact": "ประชามติร่างรัฐธรรมนูญจัดเมื่อ 7 สิงหาคม 2559 ภายใต้กฎหมายและคำสั่งที่จำกัดการรณรงค์บางรูปแบบ มีการดำเนินคดีนักกิจกรรมและข้อกังวลเรื่องการสังเกตการณ์",
+      "livedExperience": "ผู้มีสิทธิต้องตัดสินใจจากข้อมูลที่เข้าถึงได้ ขณะที่ผู้รณรงค์ทั้งเห็นชอบและไม่เห็นชอบเผชิญพื้นที่สื่อสารไม่สมมาตร",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-parliament-constitution-2560",
+        "src-amnesty-referendum-2016",
+        "src-hrw-referendum-monitoring"
+      ],
+      "linkedEventIds": [
+        "th-2560-constitution"
+      ],
+      "missingVoices": [
+        "ผู้รณรงค์เห็นชอบ",
+        "ผู้ไม่ไปใช้สิทธิ",
+        "เจ้าหน้าที่ประจำหน่วย"
+      ],
+      "openQuestion": "สื่อท้องถิ่นและแบบสำรวจช่วยอธิบายความเข้าใจร่างรัฐธรรมนูญของผู้มีสิทธิได้เพียงใด"
+    },
+    {
+      "id": "mh-2553-home-workers-protection",
+      "period": "2549-2560",
+      "beYear": "2553-2560",
+      "ceYear": "2010-2017",
+      "title": "ผู้รับงานไปทำที่บ้านได้สิทธิเฉพาะในกฎหมาย",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "ผู้รับงานไปทำที่บ้าน",
+        "แรงงานหญิง",
+        "ผู้จ้างช่วง"
+      ],
+      "everydayDimensions": [
+        "home-work",
+        "wages",
+        "safety",
+        "care"
+      ],
+      "fact": "พระราชบัญญัติคุ้มครองผู้รับงานไปทำที่บ้าน พ.ศ. 2553 กำหนดเอกสารการจ้าง ค่าตอบแทน ความปลอดภัย และความรับผิดของผู้จ้าง",
+      "livedExperience": "งานผลิตเกิดในพื้นที่เดียวกับการดูแลครอบครัว ทำให้แรงงานประหยัดการเดินทางแต่รับความเสี่ยงเรื่องชั่วโมงงาน สารอันตราย และการต่อรองกับผู้จ้างช่วงไว้ในบ้าน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-ilo-homeworkers-act",
+        "src-ilo-homeworkers-organizing",
+        "src-pmc-informal-workers-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2553-homeworkers-protection"
+      ],
+      "missingVoices": [
+        "แรงงานนอกกลุ่มองค์กร",
+        "เด็กในครัวเรือนผลิต",
+        "ผู้จ้างช่วงรายย่อย"
+      ],
+      "openQuestion": "คำร้องและการตรวจหลังปี 2553 แสดงว่ากฎหมายเข้าถึงแรงงานกลุ่มใดก่อน"
+    },
+    {
+      "id": "mh-2550-disability-rights-access",
+      "period": "2549-2560",
+      "beYear": "2550-2560",
+      "ceYear": "2007-2017",
+      "title": "คนพิการใช้กรอบสิทธิเรียกร้องการเข้าถึงบริการและงาน",
+      "location": [
+        "ทั่วประเทศ"
+      ],
+      "groups": [
+        "คนพิการ",
+        "ครอบครัวผู้ดูแล",
+        "องค์กรคนพิการ",
+        "นายจ้าง"
+      ],
+      "everydayDimensions": [
+        "accessibility",
+        "employment",
+        "education",
+        "services"
+      ],
+      "fact": "พระราชบัญญัติส่งเสริมและพัฒนาคุณภาพชีวิตคนพิการ พ.ศ. 2550 รับรองสิทธิและกลไกด้านการเข้าถึง การฟื้นฟู อาชีพ และการไม่เลือกปฏิบัติ",
+      "livedExperience": "กฎหมายเพิ่มช่องทางร้องเรียนและสนับสนุน แต่การเดินทาง อาคาร ข้อมูล และทัศนคติยังทำให้สิทธิบนกระดาษไม่เท่ากับการใช้ชีวิตได้จริง",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-un-disability-law-thailand",
+        "src-escap-disability-thailand"
+      ],
+      "linkedEventIds": [
+        "th-2550-disability-empowerment-act"
+      ],
+      "missingVoices": [
+        "คนพิการชนบท",
+        "ผู้หญิงพิการ",
+        "คนพิการที่ไม่มีบัตร"
+      ],
+      "openQuestion": "ข้อมูลร้องเรียนและประวัติชีวิตแสดงอุปสรรคหลังมีกฎหมายในบริการใดชัดที่สุด"
     }
   ]
 }

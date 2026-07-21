@@ -1,28 +1,35 @@
 # Research Progress
 
-Current working estimate: **35% of the first public knowledge-base release**.
+Current working estimate: **50% of the first public knowledge-base release**. The canonical 50% quality gate passed on 21 July 2026.
 
-This percentage measures coverage, evidence quality, representation, and reader-ready synthesis. It does not claim that 35% of all Thai history has been collected.
+This percentage measures coverage, evidence quality, representation, and reader-ready synthesis. It does not claim that 50% of all Thai history has been collected.
 
 ## Current database
 
 | Measure | Current | First-release target |
 | --- | ---: | ---: |
-| Structural event/process records | 41 | 80+ |
-| People-level microhistories | 38 | 120+ |
-| Sources | 70 | 180+ |
-| Sensitive events with only one source | 2 | 0 |
-| Events without linked microhistory | 14 | 0 |
-| Public synthesis stories | 3 | 12+ |
+| Structural event/process records | 50 | 80+ |
+| People-level microhistories | 60 | 120+ |
+| Sources | 104 | 180+ |
+| Sensitive events with only one source | 0 | 0 |
+| Events without linked microhistory | 6 | 0 |
+| Reader-ready synthesis drafts | 6 | 12+ |
 
 ## Release rules
 
-Research is published in reviewable batches. Each batch is merged into the canonical knowledge base, validated, synced to this repository, built, deployed, and checked on the public site.
+Research batches remain in the canonical knowledge base until a 50% or 80% quality gate passes. Only then is a reviewed snapshot synced to this repository, built, deployed, and checked on the public site.
 
 The percentage can remain unchanged or decrease when new evidence reveals weak coverage, conflicting accounts, or claims that need to be downgraded.
 
-## Next milestone: 45%
+## Quality gate result: 50%
 
-- Add independent evidence for the remaining single-source sensitive events: B.E. 2501 and 14 October B.E. 2516.
-- Reduce events without people-level evidence from 14 to 6 or fewer.
-- Add labour history around B.E. 2518, provincial life under centralised development, and media/youth history during B.E. 2535-2549.
+- Every period contains at least 8 microhistories: 8, 8, 8, 10, 13, and 13.
+- No sensitive event detected by the audit remains dependent on one source.
+- Six events still lack linked people-level evidence.
+- 24 microhistories remain contextual or research leads and must not be written as individual lived experience without stronger evidence.
+
+## Next milestone: 80%
+
+- Reach at least 64 event/process records, 96 microhistories, and 145 sources.
+- Reach at least 14 microhistories in every period and reduce unlinked events to 3 or fewer.
+- Strengthen regional, disability, childhood, ethnicity, religion, informal-work, and border-community evidence with oral history, archives, and fieldwork.
