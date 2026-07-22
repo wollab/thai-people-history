@@ -1,35 +1,35 @@
 # Research Progress
 
-Current working estimate: **80% of the first public knowledge-base release**. The canonical 80% quality gate passed on 21 July 2026.
+Current status: **100% of the first public knowledge-base baseline**. The canonical 100% quality gate passed on 23 July 2026.
 
-This percentage measures coverage, evidence quality, representation, and reader-ready synthesis. It does not claim that 80% of all Thai history has been collected.
+This percentage measures the declared first-release baseline. It does not claim that all Thai history has been collected.
 
 ## Current database
 
 | Measure | Current | First-release target |
 | --- | ---: | ---: |
-| Structural event/process records | 66 | 80+ |
-| People-level microhistories | 96 | 120+ |
-| Sources | 154 | 180+ |
+| Structural event/process records | 81 | 80+ |
+| People-level microhistories | 120 | 120+ |
+| Sources | 191 | 180+ |
 | Sensitive events with only one source | 0 | 0 |
 | Events without linked microhistory | 0 | 0 |
-| Reader-ready synthesis drafts | 9 | 12+ |
+| Reader-ready synthesis drafts | 12 | 12+ |
 
 ## Release rules
 
-Research batches remain in the canonical knowledge base until a 50% or 80% quality gate passes. Only then is a reviewed snapshot synced to this repository, built, deployed, and checked on the public site.
+Research batches remain in the canonical knowledge base until the declared quality gate passes. Only then is a reviewed snapshot synced to this repository, built, deployed, and checked on the public site.
 
 The percentage can remain unchanged or decrease when new evidence reveals weak coverage, conflicting accounts, or claims that need to be downgraded.
 
-## Quality gate result: 80%
+## Quality gate result: 100%
 
-- Every period contains at least 14 microhistories: 14, 14, 14, 16, 19, and 19.
+- Every period contains at least 18 microhistories: 18, 18, 18, 20, 23, and 23.
 - No sensitive event detected by the audit remains dependent on one source.
 - Every event is linked to at least one people-level microhistory.
-- 43 microhistories remain contextual or research leads and must not be written as individual lived experience without stronger evidence.
+- 74 microhistories are documented cases, 46 are contextual leads, and no research leads remain in the public snapshot.
 
-## Next milestone: first-release baseline
+## Continuous research after baseline
 
-- Reach at least 80 event/process records, 120 microhistories, 180 sources, and 12 synthesis drafts.
-- Convert contextual and research leads only when direct evidence supports the change.
-- Prioritize local archives, oral history, and fieldwork from the East, Central region, and South.
+- Convert contextual leads only when direct evidence supports the change.
+- Prioritize local archives, oral history, non-participants, dissenting voices, and frontline officials.
+- Keep a public gap log so the 100% label is never mistaken for complete national history.

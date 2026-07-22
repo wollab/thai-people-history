@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "ฐานข้อมูลประวัติศาสตร์ประชาชนไทย พ.ศ. 2460-2560",
-    "version": "0.8.0",
-    "updated": "2026-07-21",
+    "version": "0.11.0",
+    "updated": "2026-07-23",
     "canonicalStatus": "staging-source-of-truth",
     "canonicalPath": "03_Documents/04_Knowledge_Base/01_Inbox/04_Personal_Learning/2026-07-19-thai-people-history-2460-2560/09_event_database.json",
     "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า",
-    "lastResearchBatch": "batch-2026-07-21-gate80-late"
+    "lastResearchBatch": "batch-2026-07-23-gate100-late"
   },
   "sources": [
     {
@@ -1336,6 +1336,339 @@
       "type": "international-study",
       "language": "en",
       "accessed": "2026-07-21"
+    },
+    {
+      "id": "src-chula-hatyai-1915-1941",
+      "title": "กำเนิดและพัฒนาการของเมืองหาดใหญ่ พ.ศ. 2458-2484",
+      "publisher": "Chulalongkorn University Digital Collections",
+      "url": "https://digital.car.chula.ac.th/chulaetd/24007/",
+      "type": "archival-study",
+      "language": "th",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-tsu-chinese-hatyai-change",
+      "title": "การเปลี่ยนแปลงทางสังคมและวัฒนธรรมของชุมชนชาวจีนเมืองหาดใหญ่จากอดีตถึงปัจจุบัน",
+      "publisher": "Thaksin University Journal",
+      "url": "https://ph02.tci-thaijo.org/index.php/tsujournal/article/view/69005",
+      "type": "academic-analysis",
+      "language": "th",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-silpakorn-chinese-mining-phuket",
+      "title": "กิจการเหมืองแร่ของชาวจีนในมณฑลภูเก็ต พ.ศ. 2400-2474",
+      "publisher": "Journal of the Faculty of Arts, Silpakorn University",
+      "url": "https://so04.tci-thaijo.org/index.php/jasu/article/view/250772",
+      "type": "archival-study",
+      "language": "th",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-anu-phuket-hokkien-frontier",
+      "title": "Hokkien Chinese on the Phuket Mining Frontier: The Penang Connection and the Emergence of the Phuket Baba Community",
+      "publisher": "Australian National University Open Research",
+      "url": "https://openresearch-repository.anu.edu.au/bitstreams/15441456-bf19-448b-9551-595ef0bf28b6/download",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-cambridge-southern-rubber-economy",
+      "title": "The Growth of the Rubber Economy of Southern Thailand",
+      "publisher": "Journal of Southeast Asian Studies",
+      "url": "https://www.cambridge.org/core/journals/journal-of-southeast-asian-studies/article/abs/growth-of-the-rubber-economy-of-southern-thailand/8081A06C184EC265E59F6B051979AD6C",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-worldbank-thailand-agricultural-pricing",
+      "title": "Thailand: Case Study of Agricultural Input and Output Pricing",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/867311468334157136/pdf/SWP385000Thail0t0and0output0pricing.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-jss-first-phibun-government",
+      "title": "The First Phibun Government and Its Involvement in World War II",
+      "publisher": "Journal of the Siam Society",
+      "url": "https://thesiamsociety.org/wp-content/uploads/1974/03/JSS_062_2d_CharnvitKasetsiri_FirstPhibunGovernmentAndInvolvementInWorldWarII.pdf",
+      "type": "archival-study",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-kobe-rubber-restriction-1934",
+      "title": "รายงานข่าวร่วมสมัยเรื่องวิกฤตข้อตกลงจำกัดการผลิตยางของสยาม",
+      "publisher": "Kobe University Newspaper Article Collection",
+      "url": "https://da.lib.kobe-u.ac.jp/da/np/0100301136/",
+      "type": "primary-document-archive",
+      "language": "ja",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-murdoch-asian-labourers-railway",
+      "title": "Asian Labourers, the Thai Government and the Thai-Burma Railway",
+      "publisher": "Journal of Contemporary History / Murdoch University",
+      "url": "https://researchportal.murdoch.edu.au/esploro/outputs/journalArticle/Asian-Labourers-the-Thai-Government-and/991005543074607891",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-awm-thailand-burma-railway-documents",
+      "title": "The Thailand-Burma Railway, 1942-1946: Documents and Selected Writings",
+      "publisher": "Australian War Memorial",
+      "url": "https://www.awm.gov.au/collection/LIB100010272",
+      "type": "archive",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-anzac-railway-prisoners-labourers",
+      "title": "Prisoners and labourers on the Burma-Thailand Railway in World War II",
+      "publisher": "Australian Department of Veterans' Affairs",
+      "url": "https://anzacportal.dva.gov.au/wars-and-missions/ww2/pows/burma-thailand-railway/prisoners",
+      "type": "official-history",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-buu-eastern-cassava-2490-2510",
+      "title": "อุตสาหกรรมแปรรูปมันสำปะหลังของภาคตะวันออก พ.ศ. 2490-2510",
+      "publisher": "วารสารวิชาการมนุษยศาสตร์และสังคมศาสตร์ มหาวิทยาลัยบูรพา",
+      "url": "https://journal.lib.buu.ac.th/index.php/huso2/article/view/7581",
+      "type": "archival-study",
+      "language": "th",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-unescap-cassava-asia-1984",
+      "title": "Cassava in Asia: Its Potential and Research Development Needs",
+      "publisher": "United Nations ESCAP",
+      "url": "https://repository.unescap.org/bitstream/handle/20.500.12870/4027/ESCAP-1984-RP-Cassava-in-Asia.pdf?isAllowed=y&sequence=4",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-worldbank-thai-agriculture-3705",
+      "title": "Thailand: Agricultural Development Strategy Review",
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/894731468311417355/pdf/multi-page.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-sure-malay-education-2500-2516",
+      "title": "นโยบายการศึกษาของรัฐบาลต่อชาวไทยเชื้อสายมลายูในสี่จังหวัดชายแดนภาคใต้ พ.ศ. 2500-2516",
+      "publisher": "Silpakorn University Repository",
+      "url": "https://sure.su.ac.th/xmlui/handle/123456789/8905",
+      "type": "archival-study",
+      "language": "th",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-nida-map-ta-phut-case",
+      "title": "Map Ta Phut Industrial Area",
+      "publisher": "NIDA Case Research Journal",
+      "url": "https://so04.tci-thaijo.org/index.php/NCRJ/article/view/100201",
+      "type": "case-study",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-mdpi-map-ta-phut-conflict",
+      "title": "Use of GIS Tools for Environmental Conflict Resolution at Map Ta Phut Industrial Zone in Thailand",
+      "publisher": "Sustainability",
+      "url": "https://www.mdpi.com/2071-1050/6/5/2435",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-doaj-map-ta-phut-respiratory",
+      "title": "Spatio-temporal effects of estimated pollutants released from an industrial estate on respiratory disease in Maptaphut Municipality",
+      "publisher": "DOAJ",
+      "url": "https://doaj.org/article/97a93228a40b4b62a2f32ff6043a89d5",
+      "type": "peer-reviewed-research",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-dpf-klongtoei-history",
+      "title": "History of the One-Baht-A-Day School and Duang Prateep Foundation",
+      "publisher": "Duang Prateep Foundation",
+      "url": "https://www.dpf.or.th/en/menu.php?id_file=3",
+      "type": "institutional-history",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-msociety-klongtoei-context",
+      "title": "บริบทและพัฒนาการของชุมชนคลองเตย",
+      "publisher": "กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์",
+      "url": "https://www.m-society.go.th/ewtadmin/ewt/mso_web/article_attach/3731/4353.pdf",
+      "type": "official-case-record",
+      "language": "th",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-openlibrary-klongtoei-1971-survey",
+      "title": "Klong Toey: Social Work Survey of the Squatter Slum",
+      "publisher": "Thammasat University / Open Library",
+      "url": "https://openlibrary.org/works/OL44787869W/Klong_Toey",
+      "type": "household-survey-research",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-oxford-displaced-khmer-education",
+      "title": "Reclaiming a Shattered Past: Education for the Displaced Khmer in Thailand",
+      "publisher": "Journal of Refugee Studies",
+      "url": "https://academic.oup.com/jrs/article-pdf/2/2/257/6938600/2-2-257.pdf",
+      "type": "field-research",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-gao-indochinese-refugees-1980",
+      "title": "Indochinese Refugees: Protection, Care, and Processing Can Be Improved",
+      "publisher": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/assets/id-80-46.pdf",
+      "type": "official-research",
+      "language": "en",
+      "accessed": "2026-07-22"
+    },
+    {
+      "id": "src-chula-mahachai-child-workers",
+      "title": "สภาพการทำงานและความต้องการบริการทางสังคมของแรงงานเด็กต่างชาติในกิจการประมงต่อเนื่อง มหาชัย",
+      "publisher": "Chulalongkorn University Digital Collections",
+      "url": "https://digital.car.chula.ac.th/chulaetd/20624/",
+      "type": "household-survey-research",
+      "language": "th",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-ilo-samut-sakhon-child-labour",
+      "title": "Mini research on child labour in the seafood supply chain in Samut Sakhon, Thailand",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/publications/mini-research-child-labour-seafood-supply-chain-samut-sakhon-thailand",
+      "type": "field-research",
+      "language": "en",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-unicef-education-no-border",
+      "title": "Education Knows No Border",
+      "publisher": "UNICEF Thailand",
+      "url": "https://www.unicef.org/thailand/reports/education-knows-no-border",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-un-thailand-escr-education-2005",
+      "title": "Thailand report on economic, social and cultural rights",
+      "publisher": "United Nations",
+      "url": "https://documents.un.org/access.nsf/get?DS=E%2FC.12%2FTHA%2F1-2&Lang=E&Open=",
+      "type": "international-official-record",
+      "language": "en",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-swurd-nathap-chana",
+      "title": "วิถีคนและวิถีคลองนาทับ ตำบลนาทับ อำเภอจะนะ จังหวัดสงขลา",
+      "publisher": "วารสารศรีนครินทรวิโรฒวิจัยและพัฒนา",
+      "url": "https://ejournals.swu.ac.th/index.php/swurd/article/view/2505",
+      "type": "field-research",
+      "language": "th",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-parichart-chana-gas-learning",
+      "title": "Learning for Liberation: The Muslim Core Group and the Thailand-Malaysia Gas Pipeline Conflict, 2541-2557",
+      "publisher": "Parichart Journal",
+      "url": "https://so05.tci-thaijo.org/index.php/parichartjournal/article/view/49543",
+      "type": "qualitative-case-study",
+      "language": "th",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-cornerhouse-chana-pipeline",
+      "title": "The Struggle of Villagers in Chana District in Defence of Community, Land and Livelihoods",
+      "publisher": "The Corner House",
+      "url": "https://www.thecornerhouse.org.uk/sites/thecornerhouse.org.uk/files/TTM2002-2007.pdf",
+      "type": "field-research",
+      "language": "en",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-chula-map-ta-phut-pollution-2006",
+      "title": "การจัดการปัญหามลพิษทางอากาศในพื้นที่มาบตาพุด",
+      "publisher": "Chulalongkorn University / NRCT DOI",
+      "url": "https://doi.nrct.go.th/ListDoi/Download/323225?Resolve_DOI=10.14457%2FCU.the.2006.854",
+      "type": "case-study",
+      "language": "th",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-map-ta-phut-school-history",
+      "title": "ประวัติโรงเรียนมาบตาพุดพันพิทยาคาร",
+      "publisher": "โรงเรียนมาบตาพุดพันพิทยาคาร",
+      "url": "https://www.mpp.ac.th/V2021/info/",
+      "type": "institutional-history",
+      "language": "th",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-informea-map-ta-phut-order-592-2552",
+      "title": "Supreme Administrative Court Order No. 592/2552 concerning the Map Ta Phut case",
+      "publisher": "InforMEA Judicial Portal",
+      "url": "https://judicialportal.informea.org/node/1138",
+      "type": "legal-record",
+      "language": "en",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-unicef-deep-south-education-conflict",
+      "title": "Thailand Case Study in Education, Conflict and Social Cohesion",
+      "publisher": "UNICEF Thailand",
+      "url": "https://deepsouthwatch.org/sites/default/files/archives/docs/unicef_thailand_education_conflcit_socialcohesion2014.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-unesco-protecting-education-south",
+      "title": "Protecting Education from Attack in Southern Thailand",
+      "publisher": "UNESCO",
+      "url": "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_f0203a19-ec58-4275-b49b-0cb875708e04?_=186809eng.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-ilo-pride-thailand",
+      "title": "Gender identity and sexual orientation in Thailand: Promoting Rights, Diversity and Equality in the World of Work",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/publications/gender-identity-and-sexual-orientation-thailand-promoting-rights-diversity",
+      "type": "field-research",
+      "language": "en",
+      "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-au-transgender-work-interviews",
+      "title": "A Study of Thai Transgender Employees' Perceptions of Discrimination at Work and Their Job Attitudes and Wellbeing",
+      "publisher": "AU-GSB e-JOURNAL",
+      "url": "https://assumptionjournal.au.edu/index.php/AU-GSB/article/view/5352",
+      "type": "qualitative-case-study",
+      "language": "en",
+      "accessed": "2026-07-23"
     }
   ],
   "worldContexts": [
@@ -3319,6 +3652,455 @@
       ],
       "verification": "corroborated",
       "openQuestion": "แบบสำรวจก่อนและหลังการปฏิรูปแสดงการเปลี่ยนแปลงด้านค่าจ้าง ชั่วโมงงาน และเสรีภาพการเดินทางอย่างไร"
+    },
+    {
+      "id": "th-2460-hatyai-railway-town",
+      "period": "2460-2475",
+      "beYear": "2460-2475",
+      "ceYear": "1917-1932",
+      "title": "ผลของรถไฟสายใต้เร่งการเติบโตของหาดใหญ่",
+      "summary": "หลังทางรถไฟมาถึงพื้นที่หาดใหญ่ใน พ.ศ. 2458 ชุมชนขยายต่อเนื่องในช่วง พ.ศ. 2460-2475 เป็นจุดเชื่อมการค้าระหว่างพื้นที่ผลิตยางและดีบุกกับคาบสมุทรมลายู",
+      "peopleImpact": "ชาวบ้านเดิมบางส่วนเปลี่ยนไปค้าขาย ทำสวนยาง หรือรับจ้าง ขณะที่ผู้ย้ายถิ่นและพ่อค้าจีนเข้ามาตั้งกิจการและช่วยให้เมืองเติบโต",
+      "impactStatus": "documented",
+      "themes": [
+        "infrastructure",
+        "urbanization",
+        "migration",
+        "trade"
+      ],
+      "locations": [
+        "หาดใหญ่",
+        "สงขลา",
+        "ภาคใต้"
+      ],
+      "sourceIds": [
+        "src-chula-hatyai-1915-1941",
+        "src-tsu-chinese-hatyai-change"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "ทะเบียนอาชีพและเอกสารรถไฟบอกความแตกต่างระหว่างแรงงาน ผู้ค้ารายย่อย และเจ้าของกิจการอย่างไร"
+    },
+    {
+      "id": "th-2460-phuket-tin-mining-economy",
+      "period": "2460-2475",
+      "beYear": "2460-2474",
+      "ceYear": "1917-1931",
+      "title": "เศรษฐกิจเหมืองดีบุกและเครือข่ายจีนในมณฑลภูเก็ต",
+      "summary": "กิจการเหมืองดีบุกของภูเก็ตพึ่งทุน ความรู้การทำเหมือง และแรงงานชาวจีนที่เชื่อมโยงกับปีนัง ก่อนเข้าสู่การเปลี่ยนแปลงครั้งใหญ่ช่วงต้นทศวรรษ 2470",
+      "peopleImpact": "เมืองเหมืองสร้างงานและชุมชนผู้อพยพ แต่ตำแหน่งของเจ้าของเหมือง นายหน้า และแรงงานแตกต่างกัน และชีวิตคนงานผูกกับราคาแร่และเงื่อนไขการจ้าง",
+      "impactStatus": "documented",
+      "themes": [
+        "work",
+        "migration",
+        "ethnicity",
+        "trade"
+      ],
+      "locations": [
+        "ภูเก็ต",
+        "พังงา",
+        "ปีนัง"
+      ],
+      "sourceIds": [
+        "src-silpakorn-chinese-mining-phuket",
+        "src-anu-phuket-hokkien-frontier"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "บันทึกค่าจ้าง อุบัติเหตุ และหนี้ของแรงงานเหมืองในช่วง พ.ศ. 2460-2474 หลงเหลือที่ใดบ้าง"
+    },
+    {
+      "id": "th-2465-southern-rubber-boom",
+      "period": "2460-2475",
+      "beYear": "2465-2475",
+      "ceYear": "1922-1932",
+      "title": "สวนยางรายย่อยขยายตัวในภาคใต้",
+      "summary": "ราคายางในตลาดโลกและการเชื่อมต่อทางคมนาคมช่วยเร่งการปลูกยางในภาคใต้ช่วงทศวรรษ 2460 โดยสวนขนาดเล็กมีบทบาทมากกว่าที่สถิติส่วนกลางมองเห็นในระยะแรก",
+      "peopleImpact": "ครัวเรือนบางส่วนเปลี่ยนที่ดินและแรงงานจากการผลิตเพื่อยังชีพไปสู่พืชเงินสด ทำให้มีรายได้ใหม่พร้อมกับความเสี่ยงจากราคาและการพึ่งตลาด",
+      "impactStatus": "documented",
+      "themes": [
+        "agriculture",
+        "household-economy",
+        "trade",
+        "world-market"
+      ],
+      "locations": [
+        "ภาคใต้"
+      ],
+      "sourceIds": [
+        "src-cambridge-southern-rubber-economy",
+        "src-worldbank-thailand-agricultural-pricing",
+        "src-chula-hatyai-1915-1941"
+      ],
+      "worldContextIds": [
+        "world-depression"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "บัญชีครัวเรือนและประวัติหมู่บ้านสะท้อนว่าใครเข้าถึงต้นพันธุ์ ที่ดิน และตลาดก่อนคนอื่น"
+    },
+    {
+      "id": "th-2477-rubber-control-parliament",
+      "period": "2475-2500",
+      "beYear": "2477",
+      "ceYear": "1934",
+      "title": "ข้อพิพาทข้อตกลงจำกัดยางเชื่อมเศรษฐกิจภาคใต้กับการเมืองสภา",
+      "summary": "รัฐบาลเข้าร่วมการเจรจาจำกัดการผลิตยางระหว่างประเทศ แต่ผู้แทนจากภาคใต้โต้แย้งว่าสถิติส่วนกลางประเมินพื้นที่และกำลังผลิตต่ำเกินไป ก่อนสภาปฏิเสธข้อเสนอและรัฐบาลยื่นลาออก",
+      "peopleImpact": "ข้อพิพาททำให้ข้อจำกัดของข้อมูลรัฐเกี่ยวกับสวนรายย่อยปรากฏในสภา และแสดงว่าราคาสินค้าโลกกระทบทั้งรายได้ครัวเรือนกับเสถียรภาพรัฐบาล",
+      "impactStatus": "documented",
+      "themes": [
+        "agriculture",
+        "parliament",
+        "regional-economy",
+        "world-market"
+      ],
+      "locations": [
+        "ภาคใต้",
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-cambridge-southern-rubber-economy",
+        "src-jss-first-phibun-government",
+        "src-kobe-rubber-restriction-1934"
+      ],
+      "worldContextIds": [
+        "world-depression"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "รายงานประชุมสภาฉบับเต็มระบุจังหวัด กลุ่มผู้ปลูก และข้อมูลที่ผู้แทนใช้โต้แย้งอย่างไร"
+    },
+    {
+      "id": "th-2485-thai-burma-railway-labour",
+      "period": "2475-2500",
+      "beYear": "2485-2488",
+      "ceYear": "1942-1945",
+      "title": "การสร้างทางรถไฟไทย-พม่าด้วยเชลยศึกและแรงงานเอเชีย",
+      "summary": "กองทัพญี่ปุ่นสร้างทางรถไฟเชื่อมหนองปลาดุกกับธันบูซายัตในช่วงสงคราม โดยใช้เชลยศึกฝ่ายสัมพันธมิตรและแรงงานเอเชียจำนวนมาก รวมถึงแรงงานไทยและชาวจีนในประเทศไทย",
+      "peopleImpact": "คนทำงานเผชิญโรค ขาดอาหาร งานหนัก และความรุนแรง แต่สถานะการเกณฑ์ ค่าจ้าง และทางเลือกหลบหนีแตกต่างกันระหว่างกลุ่ม จึงไม่ควรถูกเล่าเป็นประสบการณ์แบบเดียว",
+      "impactStatus": "documented",
+      "themes": [
+        "war",
+        "forced-labour",
+        "migration",
+        "infrastructure"
+      ],
+      "locations": [
+        "กาญจนบุรี",
+        "ราชบุรี",
+        "ชายแดนไทย-พม่า"
+      ],
+      "sourceIds": [
+        "src-murdoch-asian-labourers-railway",
+        "src-awm-thailand-burma-railway-documents",
+        "src-anzac-railway-prisoners-labourers"
+      ],
+      "worldContextIds": [
+        "world-ww2"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "รายชื่อแรงงานไทย ชาวจีน และ romusha ที่เสียชีวิตหรือกลับบ้านถูกเก็บไว้ครบเพียงใด"
+    },
+    {
+      "id": "th-2500-eastern-cassava-processing",
+      "period": "2500-2516",
+      "beYear": "2500-2510",
+      "ceYear": "1957-1967",
+      "title": "มันสำปะหลังและโรงงานแปรรูปขยายตัวในภาคตะวันออก",
+      "summary": "ความต้องการผลิตภัณฑ์มันสำปะหลังจากต่างประเทศ ถนน และการขนส่งไปท่าเรือช่วยให้พื้นที่ปลูกและโรงงานแปรรูปในภาคตะวันออกเติบโตอย่างรวดเร็ว",
+      "peopleImpact": "เกษตรกรมีพืชเงินสดทางเลือกและเกิดงานขนส่งกับแปรรูป แต่รายได้ผูกกับผู้รับซื้อ ต้นทุนขนส่ง และอุปสงค์ต่างประเทศมากขึ้น",
+      "impactStatus": "documented",
+      "themes": [
+        "agriculture",
+        "export",
+        "industrialization",
+        "infrastructure"
+      ],
+      "locations": [
+        "ชลบุรี",
+        "ระยอง",
+        "ฉะเชิงเทรา",
+        "ภาคตะวันออก"
+      ],
+      "sourceIds": [
+        "src-buu-eastern-cassava-2490-2510",
+        "src-unescap-cassava-asia-1984",
+        "src-worldbank-thai-agriculture-3705"
+      ],
+      "worldContextIds": [
+        "world-development"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "บัญชีโรงงานและประวัติหมู่บ้านช่วยแยกผลต่อเจ้าของที่ดิน ผู้เช่า และแรงงานรับจ้างได้อย่างไร"
+    },
+    {
+      "id": "th-2500-malay-education-policy",
+      "period": "2500-2516",
+      "beYear": "2500-2516",
+      "ceYear": "1957-1973",
+      "title": "รัฐขยายการกำกับการศึกษาในชุมชนไทยเชื้อสายมลายู",
+      "summary": "รัฐบาลใช้โรงเรียน ภาษาไทย หลักสูตร และการปรับระบบปอเนาะเป็นส่วนหนึ่งของการรวมพื้นที่ชายแดนใต้เข้ากับระบบการศึกษาแห่งชาติ",
+      "peopleImpact": "เด็กและครอบครัวต้องชั่งน้ำหนักโอกาสจากวุฒิการศึกษาของรัฐกับภาษา ศาสนา และความรู้ของชุมชน ขณะที่ครูและโต๊ะครูต้องปรับบทบาทต่อกฎใหม่",
+      "impactStatus": "documented",
+      "themes": [
+        "education",
+        "language",
+        "religion",
+        "citizenship"
+      ],
+      "locations": [
+        "ปัตตานี",
+        "ยะลา",
+        "นราธิวาส",
+        "สตูล"
+      ],
+      "sourceIds": [
+        "src-sure-malay-education-2500-2516",
+        "src-tsri-islamic-education-south"
+      ],
+      "worldContextIds": [
+        "world-cold-war",
+        "world-development"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "บันทึกโรงเรียนและคำบอกเล่ารุ่นนักเรียนช่วยแยกประสบการณ์ตามเพศ ฐานะ และจังหวัดได้เพียงใด"
+    },
+    {
+      "id": "th-2531-map-ta-phut-industrial-estate",
+      "period": "2516-2535",
+      "beYear": "2531-2535",
+      "ceYear": "1988-1992",
+      "title": "นิคมอุตสาหกรรมมาบตาพุดเริ่มดำเนินงาน",
+      "summary": "มาบตาพุดถูกกำหนดเป็นพื้นที่อุตสาหกรรมหลักของโครงการชายฝั่งทะเลตะวันออก และเริ่มดำเนินงานปลายทศวรรษ 2530 พร้อมโครงสร้างพื้นฐาน ท่าเรือ และโรงงานหนัก",
+      "peopleImpact": "พื้นที่เกษตร ประมง และชุมชนชายฝั่งเข้าสู่การเปลี่ยนใช้ที่ดินและตลาดแรงงานอย่างรวดเร็ว ขณะที่ระบบติดตามผลกระทบต้องตามให้ทันการขยายอุตสาหกรรม",
+      "impactStatus": "contextual",
+      "themes": [
+        "industrialization",
+        "land",
+        "environment",
+        "migration"
+      ],
+      "locations": [
+        "มาบตาพุด",
+        "ระยอง",
+        "ภาคตะวันออก"
+      ],
+      "sourceIds": [
+        "src-nida-map-ta-phut-case",
+        "src-mdpi-map-ta-phut-conflict",
+        "src-wb-eastern-seaboard"
+      ],
+      "worldContextIds": [
+        "world-export-shift"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "เอกสารเวนคืนและรายงานชุมชนระยะแรกระบุครัวเรือนที่ได้ประโยชน์ ย้ายออก หรือเสียฐานอาชีพอย่างไร"
+    },
+    {
+      "id": "th-2521-klongtoei-community-education",
+      "period": "2516-2535",
+      "beYear": "2521-2525",
+      "ceYear": "1978-1982",
+      "title": "การศึกษาและองค์กรชุมชนคลองเตยขยายตัว",
+      "summary": "โรงเรียนวันละบาทซึ่งเริ่มใน พ.ศ. 2511 พัฒนาเป็นโรงเรียนที่กรุงเทพมหานครรับดูแล และต่อยอดสู่มูลนิธิดวงประทีปใน พ.ศ. 2521 ท่ามกลางการรวมตัวเรื่องการศึกษาและสิทธิอยู่อาศัย",
+      "peopleImpact": "เด็กที่เข้าโรงเรียนปกติได้ยากมีช่องทางเรียนใกล้บ้าน และครูชุมชนกลายเป็นตัวกลางระหว่างครอบครัว หน่วยงานรัฐ และข้อพิพาทการไล่รื้อ",
+      "impactStatus": "documented",
+      "themes": [
+        "education",
+        "housing",
+        "community-organization",
+        "urban-poverty"
+      ],
+      "locations": [
+        "คลองเตย",
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-dpf-klongtoei-history",
+        "src-msociety-klongtoei-context",
+        "src-openlibrary-klongtoei-1971-survey"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "ทะเบียนนักเรียนและคำบอกเล่าผู้ปกครองสะท้อนว่าเด็กกลุ่มใดยังเข้าไม่ถึงโรงเรียนแม้มีโครงการชุมชน"
+    },
+    {
+      "id": "th-2540-samut-sakhon-migrant-seafood",
+      "period": "2535-2549",
+      "beYear": "2540-2549",
+      "ceYear": "1997-2006",
+      "title": "แรงงานข้ามชาติขยายตัวในอุตสาหกรรมอาหารทะเลสมุทรสาคร",
+      "summary": "อุตสาหกรรมประมงต่อเนื่องและอาหารทะเลในสมุทรสาครพึ่งแรงงานข้ามชาติจากเมียนมามากขึ้น รวมถึงแรงงานวัยรุ่นในงานแกะกุ้ง แล่ปลา และล้างวัตถุดิบ",
+      "peopleImpact": "การย้ายถิ่นเปิดรายได้แก่ครอบครัว แต่สถานะเอกสาร ชั่วโมงงาน ภาษา ที่พัก และการเข้าถึงบริการทำให้ความเสี่ยงต่างจากแรงงานไทย",
+      "impactStatus": "documented",
+      "themes": [
+        "migration",
+        "labour",
+        "industry",
+        "childhood"
+      ],
+      "locations": [
+        "มหาชัย",
+        "สมุทรสาคร",
+        "ภาคกลาง"
+      ],
+      "sourceIds": [
+        "src-chula-mahachai-child-workers",
+        "src-ilo-samut-sakhon-child-labour"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ทะเบียนแรงงานและคำบอกเล่าครอบครัวช่วยติดตามผู้ที่เปลี่ยนงาน กลับบ้าน หรือเข้าเรียนได้อย่างไร"
+    },
+    {
+      "id": "th-2540-map-ta-phut-school-pollution",
+      "period": "2535-2549",
+      "beYear": "2540",
+      "ceYear": "1997",
+      "title": "มลพิษอากาศกระทบโรงเรียนมาบตาพุดพันพิทยาคาร",
+      "summary": "เหตุอากาศเป็นพิษในพื้นที่อุตสาหกรรมทำให้ครูและนักเรียนเจ็บป่วยเฉียบพลัน การเรียนหยุดชะงัก และโรงเรียนต้องย้ายไปเรียนชั่วคราวก่อนย้ายที่ตั้ง",
+      "peopleImpact": "เด็ก ครู และผู้ปกครองต้องรับต้นทุนสุขภาพ การเดินทาง และความไม่แน่นอนจากการอยู่ใกล้นิคมอุตสาหกรรม",
+      "impactStatus": "documented",
+      "themes": [
+        "health",
+        "education",
+        "environment",
+        "industrialization"
+      ],
+      "locations": [
+        "มาบตาพุด",
+        "ระยอง"
+      ],
+      "sourceIds": [
+        "src-chula-map-ta-phut-pollution-2006",
+        "src-map-ta-phut-school-history",
+        "src-nida-map-ta-phut-case"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "เวชระเบียนและบันทึกโรงเรียนแสดงผลระยะยาวต่อสุขภาพและการเรียนของนักเรียนแต่ละกลุ่มอย่างไร"
+    },
+    {
+      "id": "th-2541-chana-gas-pipeline-conflict",
+      "period": "2535-2549",
+      "beYear": "2541-2549",
+      "ceYear": "1998-2006",
+      "title": "ความขัดแย้งโครงการท่อก๊าซไทย-มาเลเซียที่อำเภอจะนะ",
+      "summary": "โครงการท่อก๊าซและโรงแยกก๊าซนำไปสู่ข้อถกเถียงเรื่องข้อมูล การรับฟังความคิดเห็น สิ่งแวดล้อม และสิทธิชุมชน พร้อมการรวมตัวของชาวบ้านและเครือข่ายมุสลิม",
+      "peopleImpact": "ครัวเรือนประมงและเกษตรต้องประเมินโอกาสงานเทียบกับความเสี่ยงต่อที่ดิน คลอง และทะเล ขณะที่ความขัดแย้งเปลี่ยนความสัมพันธ์ภายในชุมชนด้วย",
+      "impactStatus": "documented",
+      "themes": [
+        "energy",
+        "community-rights",
+        "environment",
+        "movement"
+      ],
+      "locations": [
+        "จะนะ",
+        "สงขลา",
+        "คลองนาทับ"
+      ],
+      "sourceIds": [
+        "src-swurd-nathap-chana",
+        "src-parichart-chana-gas-learning",
+        "src-cornerhouse-chana-pipeline"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ครัวเรือนที่สนับสนุนโครงการ ผู้รับงาน และผู้ไม่เข้าร่วมการเคลื่อนไหวอธิบายการตัดสินใจอย่างไร"
+    },
+    {
+      "id": "th-2547-deep-south-school-conflict",
+      "period": "2549-2560",
+      "beYear": "2547-2560",
+      "ceYear": "2004-2017",
+      "title": "ความไม่สงบชายแดนใต้กระทบโรงเรียน ครู และนักเรียน",
+      "summary": "ความรุนแรงที่กลับมาปะทุใน พ.ศ. 2547 กระทบความปลอดภัย การเดินทาง เวลาเรียน และความไว้วางใจต่อโรงเรียนในจังหวัดชายแดนใต้",
+      "peopleImpact": "เด็ก ผู้ปกครอง และครูต้องปรับเส้นทาง เวลา และกิจวัตรเพื่อความปลอดภัย แต่ประสบการณ์แตกต่างตามพื้นที่ ภาษา ศาสนา และประเภทโรงเรียน",
+      "impactStatus": "documented",
+      "themes": [
+        "education",
+        "security",
+        "childhood",
+        "identity"
+      ],
+      "locations": [
+        "ปัตตานี",
+        "ยะลา",
+        "นราธิวาส",
+        "สงขลา"
+      ],
+      "sourceIds": [
+        "src-unicef-deep-south-education-conflict",
+        "src-unesco-protecting-education-south"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "บันทึกโรงเรียนท้องถิ่นช่วยแยกวันที่ปิดเรียน การย้ายครู และการออกกลางคันโดยไม่เปิดเผยผู้เสี่ยงได้อย่างไร"
+    },
+    {
+      "id": "th-2548-education-unregistered-persons",
+      "period": "2549-2560",
+      "beYear": "2548-2560",
+      "ceYear": "2005-2017",
+      "title": "นโยบายเปิดโรงเรียนแก่เด็กไม่มีทะเบียนและไม่มีสัญชาติ",
+      "summary": "มติคณะรัฐมนตรี พ.ศ. 2548 ขยายสิทธิการศึกษาของบุคคลไม่มีหลักฐานทะเบียนราษฎรหรือสัญชาติไทย และนโยบายต่อมาพยายามลดอุปสรรคการรับเข้าเรียน",
+      "peopleImpact": "เด็กข้ามชาติและไร้สัญชาติมีประตูเข้าสู่โรงเรียนรัฐมากขึ้น แต่ภาษา เอกสาร ค่าเดินทาง ความเข้าใจของโรงเรียน และแรงกดดันให้ทำงานยังจำกัดการใช้สิทธิ",
+      "impactStatus": "documented",
+      "themes": [
+        "education",
+        "migration",
+        "citizenship",
+        "rights"
+      ],
+      "locations": [
+        "ทั่วประเทศ",
+        "สมุทรสาคร",
+        "พื้นที่ชายแดน"
+      ],
+      "sourceIds": [
+        "src-unicef-education-no-border",
+        "src-un-thailand-escr-education-2005"
+      ],
+      "worldContextIds": [
+        "world-globalisation"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "ข้อมูลรายโรงเรียนแสดงช่องว่างระหว่างสิทธิสมัครเรียน การเข้าเรียนจริง และการเรียนจบอย่างไร"
+    },
+    {
+      "id": "th-2552-map-ta-phut-court-order",
+      "period": "2549-2560",
+      "beYear": "2552",
+      "ceYear": "2009",
+      "title": "ชาวบ้านมาบตาพุดใช้ศาลปกครองท้าทายการอนุมัติโครงการอุตสาหกรรม",
+      "summary": "ชาวบ้านและองค์กรภาคประชาชนฟ้องหน่วยงานรัฐเรื่องการอนุมัติโครงการโดยไม่ปฏิบัติตามกระบวนการด้านสุขภาพและสิ่งแวดล้อมตามรัฐธรรมนูญ ก่อนศาลมีคำสั่งคุ้มครองชั่วคราวโครงการจำนวนมาก",
+      "peopleImpact": "ข้อเดือดร้อนด้านสุขภาพและข้อมูลถูกแปลงเป็นข้อเรียกร้องทางกฎหมาย แต่การดำเนินคดีต้องพึ่งผู้เชี่ยวชาญ เครือข่าย และทรัพยากรระยะยาว",
+      "impactStatus": "documented",
+      "themes": [
+        "environment",
+        "law",
+        "community-rights",
+        "industrialization"
+      ],
+      "locations": [
+        "มาบตาพุด",
+        "ระยอง"
+      ],
+      "sourceIds": [
+        "src-informea-map-ta-phut-order-592-2552",
+        "src-mdpi-map-ta-phut-conflict",
+        "src-nida-map-ta-phut-case"
+      ],
+      "worldContextIds": [
+        "world-gfc"
+      ],
+      "verification": "corroborated",
+      "openQuestion": "คำสั่งศาลเปลี่ยนการเข้าถึงข้อมูล สุขภาพ และการมีส่วนร่วมของครัวเรือนแต่ละกลุ่มจริงเพียงใด"
     }
   ],
   "microhistoryMeta": {
@@ -3382,8 +4164,8 @@
         "mobility"
       ],
       "fact": "สยามประกาศสงครามต่อเยอรมนีและออสเตรีย-ฮังการีและส่งกองทหารอาสาไปยุโรป",
-      "livedExperience": "หลักฐานทางการยืนยันการส่งกำลัง แต่ประสบการณ์การสมัคร การเดินทาง รายได้ และภาระของครอบครัวยังไม่ปรากฏเพียงพอในฐานปัจจุบัน",
-      "evidenceStatus": "research-lead",
+      "livedExperience": "หลักฐานปัจจุบันยืนยันการส่งทหารอาสาและบริบทสงคราม แต่ยังไม่พออธิบายประสบการณ์เฉพาะของครอบครัว จึงใช้เรื่องนี้เพื่อชี้ช่องว่างการค้นจดหมายและทะเบียนครอบครัวเท่านั้น",
+      "evidenceStatus": "contextual-lead",
       "sourceIds": [
         "src-frus-ww1"
       ],
@@ -5766,8 +6548,8 @@
         "tax"
       ],
       "fact": "สยามทยอยแก้สนธิสัญญาที่จำกัดอำนาจศาลและภาษีของรัฐในช่วงหลังสงครามโลกครั้งที่หนึ่ง",
-      "livedExperience": "ผลระดับรัฐชัดเจนกว่าหลักฐานชีวิตประจำวัน ฐานปัจจุบันยังไม่พอจะสรุปว่ากฎใหม่เปลี่ยนงานและข้อพิพาทของผู้คนกลุ่มใดทันที",
-      "evidenceStatus": "research-lead",
+      "livedExperience": "การแก้สนธิสัญญาเปลี่ยนกรอบอำนาจศาลและภาษีของรัฐ แต่หลักฐานปัจจุบันยังไม่รองรับการสรุปผลโดยตรงต่อคนทำงานกลุ่มใดกลุ่มหนึ่ง",
+      "evidenceStatus": "contextual-lead",
       "sourceIds": [
         "src-mfa-treaties"
       ],
@@ -6000,8 +6782,8 @@
         "international"
       ],
       "fact": "ไทยเข้าเป็นสมาชิกสหประชาชาติเมื่อ 16 ธันวาคม พ.ศ. 2489 และเข้าร่วมหน่วยงานระหว่างประเทศมากขึ้น",
-      "livedExperience": "การประสานงานระหว่างประเทศสร้างงานด้านภาษา สถิติ สุขภาพ และพัฒนาแก่คนบางกลุ่ม แต่ฐานปัจจุบันยังไม่พอประเมินผลต่อประชาชนวงกว้าง",
-      "evidenceStatus": "research-lead",
+      "livedExperience": "การเป็นสมาชิกสหประชาชาติเปิดช่องทางความร่วมมือระดับรัฐ แต่ยังไม่มีหลักฐานพอเชื่อมกับเส้นทางงานของข้าราชการหรือประชาชนรายกลุ่มในช่วงแรก",
+      "evidenceStatus": "contextual-lead",
       "sourceIds": [
         "src-un-thailand-membership",
         "src-un-thailand"
@@ -6037,8 +6819,8 @@
         "international"
       ],
       "fact": "ไทยร่วมก่อตั้งองค์การสนธิสัญญาป้องกันเอเชียตะวันออกเฉียงใต้ใน พ.ศ. 2497 และกรุงเทพฯ เป็นที่ตั้งสำนักงานใหญ่",
-      "livedExperience": "องค์กรสร้างงานและการติดต่อระหว่างประเทศบางส่วน แต่ผลต่อชุมชนและคนทำงานระดับล่างยังมีหลักฐานน้อยกว่าประวัติการทูต",
-      "evidenceStatus": "research-lead",
+      "livedExperience": "แหล่งปัจจุบันยืนยันบทบาทขององค์กรและกรุงเทพฯ ในโครงสร้างความมั่นคง แต่ยังไม่พออธิบายผลต่อชุมชนรอบสำนักงานหรือคนงานบริการโดยตรง",
+      "evidenceStatus": "contextual-lead",
       "sourceIds": [
         "src-state-seato"
       ],
@@ -6260,8 +7042,8 @@
         "law"
       ],
       "fact": "ไทยร่วมก่อตั้งอาเซียนใน พ.ศ. 2510 เพื่อความร่วมมือระดับภูมิภาค",
-      "livedExperience": "ในระยะแรกผลโดยตรงต่อผู้ค้ารายย่อยยังจำกัดเมื่อเทียบกับระดับรัฐ และกฎพรมแดนทวิภาคียังคงกำหนดการเดินทางประจำวัน",
-      "evidenceStatus": "research-lead",
+      "livedExperience": "การก่อตั้งอาเซียนใน พ.ศ. 2510 เป็นกรอบการทูตระดับรัฐ ผลต่อผู้ค้าชายแดนระยะแรกยังต้องใช้ข้อมูลด่าน ศุลกากร และคำบอกเล่าท้องถิ่นเพิ่มเติม",
+      "evidenceStatus": "contextual-lead",
       "sourceIds": [
         "src-asean-history"
       ],
@@ -6960,6 +7742,957 @@
         "เจ้าหน้าที่กำกับดูแล"
       ],
       "openQuestion": "ผังรายการและคำสั่งรายสถานีแสดงว่าเนื้อหาใดหายไปหรือย้ายแพลตฟอร์ม"
+    },
+    {
+      "id": "mh-2460-hatyai-villagers-new-work",
+      "period": "2460-2475",
+      "beYear": "2460-2475",
+      "ceYear": "1917-1932",
+      "title": "ชาวบ้านหาดใหญ่เปลี่ยนจากการผลิตเพื่อยังชีพสู่งานเมืองและสวนยาง",
+      "location": [
+        "หาดใหญ่",
+        "สงขลา"
+      ],
+      "groups": [
+        "ชาวบ้านเดิม",
+        "ผู้ค้ารายย่อย",
+        "ลูกจ้าง",
+        "ครัวเรือนสวนยาง"
+      ],
+      "everydayDimensions": [
+        "work",
+        "trade",
+        "mobility",
+        "household-income"
+      ],
+      "fact": "งานประวัติศาสตร์เมืองหาดใหญ่พบว่าหลังรถไฟมาถึง ชาวบ้านเดิมบางส่วนเปลี่ยนไปค้าขายเล็กน้อย ทำสวนยาง หรือเป็นลูกจ้างของผู้ประกอบการจีน",
+      "livedExperience": "การมีสถานีและตลาดทำให้การหาเลี้ยงชีพไม่จำกัดอยู่กับไร่นาและงานหัตถกรรมในครัวเรือน แต่โอกาสใหม่ขึ้นกับทุน ที่ดิน และความสัมพันธ์กับเครือข่ายการค้า",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-chula-hatyai-1915-1941"
+      ],
+      "linkedEventIds": [
+        "th-2460-hatyai-railway-town"
+      ],
+      "missingVoices": [
+        "ผู้หญิงค้าขาย",
+        "แรงงานสถานี",
+        "ครัวเรือนมลายูมุสลิม"
+      ],
+      "openQuestion": "ครัวเรือนแต่ละกลุ่มจัดสรรงานระหว่างสวน ตลาด และงานรับจ้างอย่างไร"
+    },
+    {
+      "id": "mh-2460-hatyai-chinese-migrant-networks",
+      "period": "2460-2475",
+      "beYear": "2460-2475",
+      "ceYear": "1917-1932",
+      "title": "ผู้ย้ายถิ่นจีนสร้างเครือข่ายการค้าในเมืองรถไฟหาดใหญ่",
+      "location": [
+        "หาดใหญ่",
+        "สงขลา",
+        "คาบสมุทรมลายู"
+      ],
+      "groups": [
+        "ผู้ย้ายถิ่นจีน",
+        "พ่อค้า",
+        "ลูกจ้าง",
+        "ครอบครัว"
+      ],
+      "everydayDimensions": [
+        "migration",
+        "trade",
+        "language",
+        "community"
+      ],
+      "fact": "รถไฟและการค้าสินค้ายางกับดีบุกดึงผู้ย้ายถิ่นและผู้ประกอบการจีนเข้ามาตั้งหลักแหล่งในหาดใหญ่",
+      "livedExperience": "ร้านค้า การจ้างงาน สมาคม และความสัมพันธ์ข้ามพื้นที่ช่วยให้ผู้มาใหม่ตั้งตัว ขณะเดียวกันฐานะของเจ้าของกิจการกับลูกจ้างไม่เท่ากัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-chula-hatyai-1915-1941",
+        "src-tsu-chinese-hatyai-change"
+      ],
+      "linkedEventIds": [
+        "th-2460-hatyai-railway-town"
+      ],
+      "missingVoices": [
+        "ลูกจ้างหญิง",
+        "ผู้ค้าเชื้อสายมลายู",
+        "คนที่ย้ายออกจากเมือง"
+      ],
+      "openQuestion": "ทะเบียนร้านค้า สมาคม และโรงเรียนจีนสะท้อนการสร้างชุมชนในแต่ละทศวรรษอย่างไร"
+    },
+    {
+      "id": "mh-2460-phuket-hokkien-mine-workers",
+      "period": "2460-2475",
+      "beYear": "2460-2474",
+      "ceYear": "1917-1931",
+      "title": "แรงงานฮกเกี้ยนในเศรษฐกิจเหมืองภูเก็ต",
+      "location": [
+        "ภูเก็ต",
+        "กะทู้",
+        "พังงา"
+      ],
+      "groups": [
+        "แรงงานเหมืองจีน",
+        "ผู้ย้ายถิ่น",
+        "นายจ้าง",
+        "ครอบครัวชุมชนเหมือง"
+      ],
+      "everydayDimensions": [
+        "work",
+        "migration",
+        "wages",
+        "community"
+      ],
+      "fact": "กิจการเหมืองภูเก็ตอาศัยแรงงานและเครือข่ายชาวจีน โดยเฉพาะฮกเกี้ยนที่เชื่อมกับปีนัง แต่หลักฐานที่เข้าถึงง่ายกล่าวถึงผู้ประกอบการมากกว่ารายละเอียดชีวิตคนงาน",
+      "livedExperience": "งานเหมืองเปิดทางให้ผู้ย้ายถิ่นมีรายได้และตั้งชุมชน แต่คนงานอยู่ในตำแหน่งที่เสี่ยงต่อภาวะราคาแร่ เงื่อนไขนายจ้าง และอันตรายจากงานมากกว่าเจ้าของทุน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-silpakorn-chinese-mining-phuket",
+        "src-anu-phuket-hokkien-frontier"
+      ],
+      "linkedEventIds": [
+        "th-2460-phuket-tin-mining-economy"
+      ],
+      "missingVoices": [
+        "คนงานเหมืองระดับล่าง",
+        "ผู้หญิงในชุมชนเหมือง",
+        "แรงงานมลายูและสยาม"
+      ],
+      "openQuestion": "เอกสารโรงพยาบาล ศาล และบริษัทเหมืองมีข้อมูลค่าจ้าง หนี้ อุบัติเหตุ และการประท้วงหรือไม่"
+    },
+    {
+      "id": "mh-2465-southern-rubber-smallholders",
+      "period": "2460-2475",
+      "beYear": "2465-2475",
+      "ceYear": "1922-1932",
+      "title": "ครัวเรือนสวนยางรายย่อยเข้าสู่ตลาดโลก",
+      "location": [
+        "ตรัง",
+        "สงขลา",
+        "นครศรีธรรมราช",
+        "ภาคใต้"
+      ],
+      "groups": [
+        "เกษตรกรรายย่อย",
+        "แรงงานครัวเรือน",
+        "ผู้ค้าคนกลาง"
+      ],
+      "everydayDimensions": [
+        "land",
+        "work",
+        "cash-income",
+        "price-risk"
+      ],
+      "fact": "การปลูกยางขยายรวดเร็วในภาคใต้ช่วงทศวรรษ 2460 และสวนแปลงเล็กมีจำนวนมากกว่าที่ข้อมูลส่วนกลางประเมินในเวลาต่อมา",
+      "livedExperience": "ยางเปลี่ยนเวลาทำงาน การใช้ที่ดิน และช่องทางเงินสดของครัวเรือน แต่ทำให้รายได้ผูกกับราคาต่างประเทศและผู้รับซื้อด้วย",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-cambridge-southern-rubber-economy",
+        "src-worldbank-thailand-agricultural-pricing",
+        "src-chula-hatyai-1915-1941"
+      ],
+      "linkedEventIds": [
+        "th-2465-southern-rubber-boom"
+      ],
+      "missingVoices": [
+        "ผู้หญิงกรีดยาง",
+        "ผู้ไม่มีที่ดิน",
+        "ครัวเรือนที่ไม่เปลี่ยนมาปลูกยาง"
+      ],
+      "openQuestion": "ประวัติหมู่บ้านใดอธิบายการตัดสินใจเปลี่ยนจากข้าวหรือสวนผสมมาปลูกยาง"
+    },
+    {
+      "id": "mh-2477-rubber-growers-statistical-blindspot",
+      "period": "2475-2500",
+      "beYear": "2477",
+      "ceYear": "1934",
+      "title": "สวนยางรายย่อยที่สถิติส่วนกลางนับไม่ครบ",
+      "location": [
+        "ภาคใต้"
+      ],
+      "groups": [
+        "ผู้ปลูกยางรายย่อย",
+        "ครัวเรือนชนบท",
+        "ผู้ค้ารับซื้อ"
+      ],
+      "everydayDimensions": [
+        "income",
+        "statistics",
+        "prices",
+        "state-policy"
+      ],
+      "fact": "การอภิปรายข้อตกลงจำกัดยาง พ.ศ. 2477 เปิดเผยความต่างระหว่างประมาณการส่วนกลางกับพื้นที่ปลูกจริงและต้นยางที่ยังไม่ให้ผลผลิตในภาคใต้",
+      "livedExperience": "เมื่อรัฐมองไม่เห็นสวนขนาดเล็กในข้อมูล การเจรจาโควตาระหว่างประเทศอาจไม่สะท้อนรายได้ในอนาคตและความเสี่ยงของครัวเรือนผู้ปลูก",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-cambridge-southern-rubber-economy",
+        "src-kobe-rubber-restriction-1934"
+      ],
+      "linkedEventIds": [
+        "th-2477-rubber-control-parliament"
+      ],
+      "missingVoices": [
+        "ผู้ปลูกยางหญิง",
+        "ลูกจ้างกรีดยาง",
+        "ผู้ปลูกที่ไม่มีตัวแทนในสภา"
+      ],
+      "openQuestion": "จำนวนสวนและต้นยางที่ตกหล่นจากสถิติแตกต่างกันตามจังหวัดมากเพียงใด"
+    },
+    {
+      "id": "mh-2477-southern-representatives-rubber-debate",
+      "period": "2475-2500",
+      "beYear": "2477",
+      "ceYear": "1934",
+      "title": "ผู้แทนภาคใต้ใช้ข้อมูลท้องถิ่นโต้แย้งนโยบายยาง",
+      "location": [
+        "กรุงเทพฯ",
+        "ภาคใต้"
+      ],
+      "groups": [
+        "สมาชิกสภาผู้แทน",
+        "ผู้ปลูกยาง",
+        "เจ้าหน้าที่รัฐ"
+      ],
+      "everydayDimensions": [
+        "representation",
+        "evidence",
+        "agriculture",
+        "policy"
+      ],
+      "fact": "ผู้แทนจากภาคใต้คัดค้านข้อตกลงโดยชี้ว่าสถิติไม่รวมต้นยางอ่อนและกำลังผลิตที่ถูกกดจากราคาต่ำ ก่อนสภาปฏิเสธข้อเสนอ",
+      "livedExperience": "กรณีนี้แสดงช่องทางที่ข้อมูลจากภูมิภาคเข้าสู่สภา แต่หลักฐานที่มีอยู่ยังไม่พอจะสรุปว่าผู้ปลูกรายย่อยทุกกลุ่มมีส่วนกำหนดข้อโต้แย้งของผู้แทน",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-cambridge-southern-rubber-economy",
+        "src-jss-first-phibun-government"
+      ],
+      "linkedEventIds": [
+        "th-2477-rubber-control-parliament"
+      ],
+      "missingVoices": [
+        "ผู้เลือกตั้งในภาคใต้",
+        "ผู้ปลูกยางรายย่อย",
+        "ผู้สนับสนุนข้อตกลง"
+      ],
+      "openQuestion": "หนังสือพิมพ์และจดหมายจากจังหวัดบันทึกว่าผู้ปลูกยางสื่อสารกับผู้แทนอย่างไร"
+    },
+    {
+      "id": "mh-2485-thai-chinese-railway-workers",
+      "period": "2475-2500",
+      "beYear": "2485-2486",
+      "ceYear": "1942-1943",
+      "title": "แรงงานไทยและชาวจีนต่อรองและหลบออกจากงานรถไฟสงคราม",
+      "location": [
+        "กาญจนบุรี",
+        "ราชบุรี",
+        "แนวทางรถไฟไทย-พม่า"
+      ],
+      "groups": [
+        "แรงงานไทย",
+        "แรงงานจีนในไทย",
+        "เจ้าหน้าที่ไทย",
+        "กองทัพญี่ปุ่น"
+      ],
+      "everydayDimensions": [
+        "work",
+        "wages",
+        "coercion",
+        "survival"
+      ],
+      "fact": "งานวิจัยเฉพาะเรื่องพบว่าแรงงานบางคนเข้าทำงานเพราะค่าจ้าง แต่เผชิญสภาพรุนแรง และบางกลุ่มใช้การหลบหนีหรือการขัดขืน ขณะที่รัฐไทยปกป้องแรงงานไทยมากกว่าชาวจีนในไทย",
+      "livedExperience": "สถานะเชื้อชาติและความสัมพันธ์กับรัฐกำหนดอำนาจต่อรอง คนที่พอมีช่องทางหลบหนีไม่ได้อยู่ในสภาพเดียวกับผู้ที่ถูกกักหรือพามาจากต่างพื้นที่",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-murdoch-asian-labourers-railway",
+        "src-awm-thailand-burma-railway-documents"
+      ],
+      "linkedEventIds": [
+        "th-2485-thai-burma-railway-labour"
+      ],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "ครอบครัวชาวจีนในไทย",
+        "แรงงานที่เสียชีวิตโดยไม่มีทะเบียน"
+      ],
+      "openQuestion": "สัญญาจ้าง บัญชีค่าจ้าง และรายงานตำรวจไทยช่วยระบุตัวแรงงานแต่ละกลุ่มได้มากเพียงใด"
+    },
+    {
+      "id": "mh-2485-romusha-unequal-memory",
+      "period": "2475-2500",
+      "beYear": "2485-2488",
+      "ceYear": "1942-1945",
+      "title": "romusha และแรงงานเอเชียที่ปรากฏในความทรงจำน้อยกว่าเชลยศึก",
+      "location": [
+        "กาญจนบุรี",
+        "ชายแดนไทย-พม่า",
+        "เอเชียตะวันออกเฉียงใต้"
+      ],
+      "groups": [
+        "romusha",
+        "แรงงานข้ามถิ่น",
+        "ผู้ป่วย",
+        "ผู้เสียชีวิต"
+      ],
+      "everydayDimensions": [
+        "forced-labour",
+        "health",
+        "food",
+        "memory"
+      ],
+      "fact": "แรงงานเอเชียจำนวนมากถูกนำมาสร้างทางรถไฟและเผชิญโรค ขาดอาหาร และงานหนัก แต่เอกสารรายบุคคลและการรำลึกหลังสงครามมีน้อยกว่าเชลยศึกฝ่ายสัมพันธมิตร",
+      "livedExperience": "การไม่มีทะเบียนครบทำให้ครอบครัวจำนวนหนึ่งตามหาชะตากรรมของผู้จากบ้านได้ยาก และทำให้การสูญเสียของแรงงานเอเชียถูกเล่ารวมเป็นตัวเลขมากกว่าชีวิตรายคน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-awm-thailand-burma-railway-documents",
+        "src-anzac-railway-prisoners-labourers",
+        "src-murdoch-asian-labourers-railway"
+      ],
+      "linkedEventIds": [
+        "th-2485-thai-burma-railway-labour"
+      ],
+      "missingVoices": [
+        "ครอบครัวในชวาและมลายู",
+        "ผู้รอดชีวิตหญิง",
+        "ชุมชนไทยตามแนวทางรถไฟ"
+      ],
+      "openQuestion": "โครงการประวัติศาสตร์บอกเล่าและทะเบียนหลุมศพสามารถเชื่อมชื่อบุคคลกับชุมชนต้นทางได้อีกเท่าใด"
+    },
+    {
+      "id": "mh-2500-eastern-cassava-farmers",
+      "period": "2500-2516",
+      "beYear": "2500-2510",
+      "ceYear": "1957-1967",
+      "title": "เกษตรกรภาคตะวันออกเปลี่ยนที่ดินสู่มันสำปะหลังเพื่อขาย",
+      "location": [
+        "ชลบุรี",
+        "ระยอง",
+        "ฉะเชิงเทรา"
+      ],
+      "groups": [
+        "เกษตรกร",
+        "ครัวเรือนชนบท",
+        "ผู้รับซื้อ"
+      ],
+      "everydayDimensions": [
+        "land",
+        "cash-income",
+        "transport",
+        "price-risk"
+      ],
+      "fact": "ถนนสุขุมวิท ความเหมาะสมของพื้นที่ และความต้องการแป้งมันจากต่างประเทศช่วยให้การปลูกมันสำปะหลังขยายในภาคตะวันออก",
+      "livedExperience": "พืชเงินสดทำให้ครัวเรือนมีรายได้จากตลาดมากขึ้น แต่ต้องตัดสินใจเรื่องที่ดิน แรงงาน และการขายให้ผู้รับซื้อภายใต้ราคาที่ตนควบคุมได้น้อย",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-buu-eastern-cassava-2490-2510",
+        "src-worldbank-thai-agriculture-3705"
+      ],
+      "linkedEventIds": [
+        "th-2500-eastern-cassava-processing"
+      ],
+      "missingVoices": [
+        "เกษตรกรผู้เช่า",
+        "ผู้หญิงในครัวเรือน",
+        "ผู้ที่ไม่เปลี่ยนพืช"
+      ],
+      "openQuestion": "ครัวเรือนใช้หนี้หรือทุนจากแหล่งใดเพื่อขยายพื้นที่และซื้ออุปกรณ์"
+    },
+    {
+      "id": "mh-2500-cassava-processing-workers",
+      "period": "2500-2516",
+      "beYear": "2500-2510",
+      "ceYear": "1957-1967",
+      "title": "โรงแป้งมันและการขนส่งสร้างงานใหม่ตามแนวถนนภาคตะวันออก",
+      "location": [
+        "ภาคตะวันออก",
+        "เมืองโรงงาน",
+        "เส้นทางสู่ท่าเรือ"
+      ],
+      "groups": [
+        "คนงานโรงงาน",
+        "คนขับรถ",
+        "ผู้ค้ารายย่อย",
+        "ผู้ประกอบการ"
+      ],
+      "everydayDimensions": [
+        "work",
+        "technology",
+        "transport",
+        "wages"
+      ],
+      "fact": "การเติบโตของการแปรรูปมันสำปะหลังพึ่งโรงงาน เทคโนโลยีการผลิต และระบบขนส่งวัตถุดิบกับสินค้าส่งออก",
+      "livedExperience": "งานไม่ได้อยู่เฉพาะในไร่ แต่ขยายสู่การบรรทุก ซ่อมเครื่อง แปรรูป และค้ารอบโรงงาน แม้หลักฐานยังบอกความต่างของค่าจ้างและความปลอดภัยได้ไม่ครบ",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-buu-eastern-cassava-2490-2510",
+        "src-unescap-cassava-asia-1984"
+      ],
+      "linkedEventIds": [
+        "th-2500-eastern-cassava-processing"
+      ],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "แรงงานชั่วคราว",
+        "ชุมชนรอบโรงงาน"
+      ],
+      "openQuestion": "บัญชีโรงงานหรือทะเบียนแรงงานบอกฤดูกาลทำงาน ค่าจ้าง และอุบัติเหตุได้หรือไม่"
+    },
+    {
+      "id": "mh-2500-malay-students-language-paths",
+      "period": "2500-2516",
+      "beYear": "2500-2516",
+      "ceYear": "1957-1973",
+      "title": "นักเรียนมลายูมุสลิมระหว่างภาษาไทย วุฒิรัฐ และการศึกษาศาสนา",
+      "location": [
+        "ปัตตานี",
+        "ยะลา",
+        "นราธิวาส",
+        "สตูล"
+      ],
+      "groups": [
+        "นักเรียน",
+        "ผู้ปกครอง",
+        "ครู",
+        "ชุมชนมุสลิม"
+      ],
+      "everydayDimensions": [
+        "school",
+        "language",
+        "religion",
+        "mobility"
+      ],
+      "fact": "นโยบายการศึกษาช่วง พ.ศ. 2500-2516 ขยายโรงเรียนและภาษาไทยพร้อมการปรับระบบการศึกษาอิสลามในจังหวัดชายแดนใต้",
+      "livedExperience": "ครอบครัวต้องชั่งน้ำหนักวุฒิที่เปิดทางสู่งานรัฐกับการรักษาภาษาและความรู้ศาสนา เด็กบางคนจึงเรียนมากกว่าหนึ่งระบบหรือเปลี่ยนเส้นทางการเรียน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-sure-malay-education-2500-2516",
+        "src-tsri-islamic-education-south"
+      ],
+      "linkedEventIds": [
+        "th-2500-malay-education-policy"
+      ],
+      "missingVoices": [
+        "นักเรียนหญิง",
+        "ผู้ที่ออกจากโรงเรียน",
+        "ครอบครัวต่างฐานะ"
+      ],
+      "openQuestion": "ประวัติศิษย์เก่าและทะเบียนโรงเรียนสะท้อนเส้นทางเรียนต่อกับอาชีพต่างกันอย่างไร"
+    },
+    {
+      "id": "mh-2500-pondok-teachers-adjustment",
+      "period": "2500-2516",
+      "beYear": "2500-2516",
+      "ceYear": "1957-1973",
+      "title": "โต๊ะครูและครูปอเนาะปรับตัวต่อการรับรองและหลักสูตรของรัฐ",
+      "location": [
+        "จังหวัดชายแดนภาคใต้"
+      ],
+      "groups": [
+        "โต๊ะครู",
+        "ครูศาสนา",
+        "ครูโรงเรียนรัฐ",
+        "ชุมชนมุสลิม"
+      ],
+      "everydayDimensions": [
+        "teaching",
+        "curriculum",
+        "registration",
+        "religion"
+      ],
+      "fact": "การกำกับและเปลี่ยนปอเนาะเป็นโรงเรียนเอกชนสอนศาสนาอิสลามทำให้ผู้สอนต้องสัมพันธ์กับการจดทะเบียน หลักสูตร และเจ้าหน้าที่มากขึ้น",
+      "livedExperience": "ผู้สอนบางแห่งรับวิชาสามัญเพื่อเพิ่มทางเลือกให้นักเรียน ขณะที่ต้องรักษาความไว้วางใจของครอบครัวและอำนาจทางศาสนาในชุมชน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-sure-malay-education-2500-2516",
+        "src-tsri-islamic-education-south"
+      ],
+      "linkedEventIds": [
+        "th-2500-malay-education-policy"
+      ],
+      "missingVoices": [
+        "ครูผู้หญิง",
+        "ปอเนาะที่ไม่จดทะเบียน",
+        "เจ้าหน้าที่ระดับพื้นที่"
+      ],
+      "openQuestion": "เอกสารแต่ละโรงเรียนแสดงว่าการเพิ่มวิชาสามัญเปลี่ยนเวลาเรียน รายได้ครู และค่าใช้จ่ายครอบครัวอย่างไร"
+    },
+    {
+      "id": "mh-2531-map-ta-phut-coastal-households",
+      "period": "2516-2535",
+      "beYear": "2531-2535",
+      "ceYear": "1988-1992",
+      "title": "ครัวเรือนชายฝั่งมาบตาพุดเข้าสู่แผนที่อุตสาหกรรม",
+      "location": [
+        "มาบตาพุด",
+        "ระยอง"
+      ],
+      "groups": [
+        "ชาวประมง",
+        "เกษตรกร",
+        "เจ้าของที่ดิน",
+        "ครัวเรือนท้องถิ่น"
+      ],
+      "everydayDimensions": [
+        "land",
+        "coast",
+        "livelihood",
+        "planning"
+      ],
+      "fact": "ผังเมือง พ.ศ. 2531 กำหนดพื้นที่อุตสาหกรรมทางใต้ของถนนสุขุมวิท ก่อนพื้นที่นิคมและท่าเรือขยายต่อเนื่องในทศวรรษถัดมา",
+      "livedExperience": "ที่ดินและชายฝั่งที่เคยรองรับการทำกินถูกประเมินด้วยมูลค่าอุตสาหกรรมใหม่ แต่หลักฐานปัจจุบันยังไม่พอแจกแจงว่าแต่ละครัวเรือนขาย ย้าย ต่อต้าน หรือได้ประโยชน์อย่างไรในระยะแรก",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-mdpi-map-ta-phut-conflict",
+        "src-nida-map-ta-phut-case"
+      ],
+      "linkedEventIds": [
+        "th-2531-map-ta-phut-industrial-estate",
+        "th-2525-eastern-seaboard"
+      ],
+      "missingVoices": [
+        "ชาวประมงหญิง",
+        "ผู้เช่าที่ดิน",
+        "ครัวเรือนที่ย้ายออก"
+      ],
+      "openQuestion": "รายงานเวนคืนและคำบอกเล่ารุ่นแรกระบุราคาที่ดิน การย้ายบ้าน และการเปลี่ยนอาชีพอย่างไร"
+    },
+    {
+      "id": "mh-2531-map-ta-phut-workers-services",
+      "period": "2516-2535",
+      "beYear": "2531-2535",
+      "ceYear": "1988-1992",
+      "title": "แรงงานและบริการเมืองใหม่เติบโตรอบมาบตาพุด",
+      "location": [
+        "มาบตาพุด",
+        "ระยอง",
+        "ชายฝั่งทะเลตะวันออก"
+      ],
+      "groups": [
+        "แรงงานก่อสร้าง",
+        "แรงงานโรงงาน",
+        "ผู้ย้ายถิ่น",
+        "ผู้ค้ารายย่อย"
+      ],
+      "everydayDimensions": [
+        "work",
+        "migration",
+        "housing",
+        "services"
+      ],
+      "fact": "การลงทุนโครงสร้างพื้นฐาน นิคม และท่าเรือสร้างความต้องการแรงงานและบริการในพื้นที่ชายฝั่งตะวันออก",
+      "livedExperience": "ผู้ย้ายถิ่นเข้าหางานพร้อมความต้องการห้องเช่า ตลาด และการเดินทาง แต่ข้อมูลที่มีเน้นโครงการมากกว่าสัญญาจ้าง ที่พัก และความปลอดภัยของคนงานระยะแรก",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-wb-eastern-seaboard",
+        "src-nida-map-ta-phut-case"
+      ],
+      "linkedEventIds": [
+        "th-2531-map-ta-phut-industrial-estate",
+        "th-2525-eastern-seaboard"
+      ],
+      "missingVoices": [
+        "แรงงานรับเหมา",
+        "แรงงานหญิง",
+        "ผู้ค้ารายย่อยเดิม"
+      ],
+      "openQuestion": "ทะเบียนแรงงานและสำมะโนท้องถิ่นบอกแหล่งที่มา ที่พัก และการหมุนเวียนงานได้เพียงใด"
+    },
+    {
+      "id": "mh-2521-klongtoei-one-baht-school",
+      "period": "2516-2535",
+      "beYear": "2521-2525",
+      "ceYear": "1978-1982",
+      "title": "โรงเรียนชุมชนคลองเตยเชื่อมการอ่านออกเขียนได้กับสิทธิอยู่อาศัย",
+      "location": [
+        "คลองเตย",
+        "กรุงเทพฯ"
+      ],
+      "groups": [
+        "เด็ก",
+        "ครูชุมชน",
+        "คนงานท่าเรือ",
+        "ผู้ปกครอง"
+      ],
+      "everydayDimensions": [
+        "school",
+        "work",
+        "housing",
+        "community-action"
+      ],
+      "fact": "โรงเรียนวันละบาทเริ่มจากครูในชุมชนเพื่อรับเด็กที่เข้าโรงเรียนทั่วไปได้ยาก ก่อนพัฒนาเป็นโรงเรียนของกรุงเทพมหานครและมูลนิธิใน พ.ศ. 2521",
+      "livedExperience": "โรงเรียนใกล้บ้านช่วยครอบครัวที่ผู้ใหญ่ต้องออกไปทำงานทั้งวัน และทำให้ครูกับผู้ปกครองมีฐานรวมตัวเมื่อชุมชนเผชิญการไล่รื้อ",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-dpf-klongtoei-history",
+        "src-msociety-klongtoei-context",
+        "src-openlibrary-klongtoei-1971-survey"
+      ],
+      "linkedEventIds": [
+        "th-2521-klongtoei-community-education"
+      ],
+      "missingVoices": [
+        "เด็กที่ทำงาน",
+        "ครอบครัวไม่มีทะเบียนบ้าน",
+        "ผู้เช่าห้องรายวัน"
+      ],
+      "openQuestion": "ทะเบียนนักเรียนบอกการมาเรียนต่อเนื่อง การออกไปทำงาน และการเข้าสู่โรงเรียนรัฐอย่างไร"
+    },
+    {
+      "id": "mh-2531-khmer-refugee-camp-schools",
+      "period": "2516-2535",
+      "beYear": "2531-2535",
+      "ceYear": "1988-1992",
+      "title": "เด็กและครูเขมรสร้างโรงเรียนภายใต้ชีวิตค่ายผู้ลี้ภัย",
+      "location": [
+        "ค่ายผู้พลัดถิ่นชายแดนไทย-กัมพูชา",
+        "Site Two"
+      ],
+      "groups": [
+        "เด็กผู้ลี้ภัย",
+        "ครูเขมร",
+        "ผู้ปกครอง",
+        "เจ้าหน้าที่ช่วยเหลือ"
+      ],
+      "everydayDimensions": [
+        "school",
+        "language",
+        "memory",
+        "displacement"
+      ],
+      "fact": "ปลายทศวรรษ 2530 โครงการการศึกษาในค่ายสนับสนุนประถมศึกษา หลักสูตร สื่อการเรียน และการฝึกครูให้ประชากรเขมรพลัดถิ่นซึ่งมีเด็กจำนวนมาก",
+      "livedExperience": "ห้องเรียนช่วยให้วันเวลามีจังหวะและรักษาภาษา ความรู้ และความทรงจำร่วม แต่เด็กกับครูยังอยู่ภายใต้ข้อจำกัดการเดินทาง ความไม่แน่นอน และทรัพยากรของค่าย",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-oxford-displaced-khmer-education",
+        "src-gao-indochinese-refugees-1980"
+      ],
+      "linkedEventIds": [
+        "th-2518-indochinese-refugees"
+      ],
+      "missingVoices": [
+        "เด็กพิการ",
+        "นักเรียนหญิงวัยรุ่น",
+        "ครูที่กลับกัมพูชา"
+      ],
+      "openQuestion": "สมุดเรียน รายชื่อครู และคำบอกเล่าศิษย์เก่าช่วยติดตามผลของการศึกษาเมื่อกลับประเทศได้หรือไม่"
+    },
+    {
+      "id": "mh-2548-mahachai-migrant-child-workers",
+      "period": "2535-2549",
+      "beYear": "2548",
+      "ceYear": "2005",
+      "title": "แรงงานเด็กต่างชาติในโรงงานประมงต่อเนื่องมหาชัย",
+      "location": [
+        "มหาชัย",
+        "สมุทรสาคร"
+      ],
+      "groups": [
+        "แรงงานเด็กจากเมียนมา",
+        "พ่อแม่และญาติ",
+        "นายจ้าง"
+      ],
+      "everydayDimensions": [
+        "work",
+        "housing",
+        "education",
+        "documents"
+      ],
+      "fact": "วิทยานิพนธ์ที่สำรวจแรงงานเด็กต่างชาติอายุ 13-18 ปีจำนวน 407 คนพบว่างานหลักรวมถึงแกะกุ้ง แล่ปลา และล้างปลา และความต้องการบริการอันดับแรกคือการมีการสอนหนังสือสำหรับเด็กต่างชาติ",
+      "livedExperience": "วัยรุ่นจำนวนหนึ่งทำงานควบคู่กับการอยู่กับญาติในห้องเช่านอกโรงงาน ทำให้เวลาเรียน สุขภาพ และสถานะการทำงานเชื่อมกันในชีวิตประจำวัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-chula-mahachai-child-workers",
+        "src-ilo-samut-sakhon-child-labour"
+      ],
+      "linkedEventIds": [
+        "th-2540-samut-sakhon-migrant-seafood"
+      ],
+      "missingVoices": [
+        "เด็กที่ไม่ตอบแบบสอบถาม",
+        "ผู้ที่กลับเมียนมา",
+        "เด็กอายุต่ำกว่า 13 ปี"
+      ],
+      "openQuestion": "เส้นทางหลังการสำรวจของเด็กที่ต้องการเรียนต่อแตกต่างจากผู้ที่อยู่ในงานอย่างไร"
+    },
+    {
+      "id": "mh-2540-map-ta-phut-school-routines",
+      "period": "2535-2549",
+      "beYear": "2540",
+      "ceYear": "1997",
+      "title": "ครูและนักเรียนมาบตาพุดต้องหยุดเรียนและย้ายห้องเรียนเพราะอากาศเป็นพิษ",
+      "location": [
+        "โรงเรียนมาบตาพุดพันพิทยาคาร",
+        "ระยอง"
+      ],
+      "groups": [
+        "นักเรียน",
+        "ครู",
+        "ผู้ปกครอง",
+        "บุคลากรสุขภาพ"
+      ],
+      "everydayDimensions": [
+        "school",
+        "health",
+        "travel",
+        "care"
+      ],
+      "fact": "เหตุอากาศเป็นพิษทำให้ครูและนักเรียนเจ็บป่วยเฉียบพลัน โรงเรียนไม่สามารถสอนตามปกติและต้องย้ายไปใช้สถานที่อื่นชั่วคราว",
+      "livedExperience": "ครอบครัวต้องรับมือทั้งอาการป่วย การเดินทางไปโรงเรียนชั่วคราว และความไม่แน่ใจว่าจะกลับมาเรียนใกล้โรงงานได้อย่างปลอดภัยหรือไม่",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-chula-map-ta-phut-pollution-2006",
+        "src-map-ta-phut-school-history"
+      ],
+      "linkedEventIds": [
+        "th-2540-map-ta-phut-school-pollution"
+      ],
+      "missingVoices": [
+        "นักเรียนที่ย้ายโรงเรียน",
+        "ผู้ปกครองแรงงานโรงงาน",
+        "ครูที่มีผลสุขภาพระยะยาว"
+      ],
+      "openQuestion": "สมุดพยาบาลและบันทึกการเข้าเรียนช่วยติดตามผลหลังย้ายโรงเรียนได้หรือไม่"
+    },
+    {
+      "id": "mh-2541-nathap-fishing-households",
+      "period": "2535-2549",
+      "beYear": "2541-2549",
+      "ceYear": "1998-2006",
+      "title": "ครัวเรือนคลองนาทับปกป้องคลอง ประมง และทางเลือกทำกิน",
+      "location": [
+        "คลองนาทับ",
+        "จะนะ",
+        "สงขลา"
+      ],
+      "groups": [
+        "ชาวประมงพื้นบ้าน",
+        "ผู้เลี้ยงปลา",
+        "เกษตรกร",
+        "ครอบครัวมุสลิม"
+      ],
+      "everydayDimensions": [
+        "water",
+        "fishing",
+        "land",
+        "household-adaptation"
+      ],
+      "fact": "งานภาคสนาม 14 หมู่บ้านพบว่าครัวเรือนปรับตัวต่างกัน เช่น เพาะพันธุ์ปลาเอง เปลี่ยนชนิดปลา ทำสวน หรือออกเรือไกลขึ้น เมื่อคุณภาพน้ำและทรัพยากรเปลี่ยน",
+      "livedExperience": "การคัดค้านโครงการเชื่อมกับความกังวลเรื่องอาหาร รายได้ และการส่งต่อฐานอาชีพ ไม่ได้จำกัดอยู่ที่ข้อถกเถียงเชิงนโยบาย",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-swurd-nathap-chana",
+        "src-cornerhouse-chana-pipeline"
+      ],
+      "linkedEventIds": [
+        "th-2541-chana-gas-pipeline-conflict"
+      ],
+      "missingVoices": [
+        "ผู้สนับสนุนโครงการ",
+        "แรงงานก่อสร้าง",
+        "ครัวเรือนไม่มีที่ดิน"
+      ],
+      "openQuestion": "รายได้และหนี้ของครัวเรือนเปลี่ยนอย่างไรระหว่างช่วงก่อสร้างและเดินระบบ"
+    },
+    {
+      "id": "mh-2545-chana-muslim-core-group",
+      "period": "2535-2549",
+      "beYear": "2545-2549",
+      "ceYear": "2002-2006",
+      "title": "เครือข่ายมุสลิมจะนะเรียนรู้กฎหมาย ข้อมูล และการชุมนุม",
+      "location": [
+        "จะนะ",
+        "หาดใหญ่",
+        "สงขลา"
+      ],
+      "groups": [
+        "แกนนำมุสลิม",
+        "ชาวบ้าน",
+        "นักวิชาการ",
+        "เจ้าหน้าที่"
+      ],
+      "everydayDimensions": [
+        "learning",
+        "religion",
+        "public-hearing",
+        "collective-action"
+      ],
+      "fact": "งานวิจัยกรณีความขัดแย้งท่อก๊าซติดตามกระบวนการเรียนรู้ของกลุ่มแกนนำมุสลิมตั้งแต่ พ.ศ. 2541-2557 ผ่านการศึกษาข้อมูล สร้างเครือข่าย และเคลื่อนไหว",
+      "livedExperience": "มัสยิด ความสัมพันธ์ในชุมชน และเวทีเรียนรู้ช่วยเปลี่ยนชาวบ้านบางส่วนให้กลายเป็นผู้ตรวจสอบโครงการ แต่การเห็นต่างภายในพื้นที่ยังคงอยู่",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-parichart-chana-gas-learning",
+        "src-swurd-nathap-chana"
+      ],
+      "linkedEventIds": [
+        "th-2541-chana-gas-pipeline-conflict"
+      ],
+      "missingVoices": [
+        "ชาวบ้านที่ถอนตัว",
+        "ผู้หญิงที่ไม่เป็นแกนนำ",
+        "เจ้าหน้าที่ระดับปฏิบัติ"
+      ],
+      "openQuestion": "การเคลื่อนไหวเปลี่ยนความสัมพันธ์ภายในครอบครัวและชุมชนระยะยาวอย่างไร"
+    },
+    {
+      "id": "mh-2548-migrant-children-public-schools",
+      "period": "2549-2560",
+      "beYear": "2549-2560",
+      "ceYear": "2006-2017",
+      "title": "เด็กข้ามชาติใช้สิทธิสมัครเรียน แต่ยังต้องข้ามกำแพงภาษาและเอกสาร",
+      "location": [
+        "สมุทรสาคร",
+        "ภาคกลาง",
+        "พื้นที่ชายแดน"
+      ],
+      "groups": [
+        "เด็กข้ามชาติ",
+        "เด็กไร้สัญชาติ",
+        "ผู้ปกครอง",
+        "ครูโรงเรียนรัฐ"
+      ],
+      "everydayDimensions": [
+        "school",
+        "language",
+        "documents",
+        "travel"
+      ],
+      "fact": "หลังมติคณะรัฐมนตรี พ.ศ. 2548 โรงเรียนมีฐานนโยบายรับเด็กไม่มีทะเบียนหรือสัญชาติ และจำนวนเด็กข้ามชาติกับไร้สัญชาติในโรงเรียนรัฐเพิ่มขึ้น",
+      "livedExperience": "การมีสิทธิสมัครไม่ได้ทำให้เข้าเรียนง่ายทันที เพราะครอบครัวยังต้องจัดการภาษา ค่าเดินทาง การย้ายตามงาน และความเข้าใจของโรงเรียนแต่ละแห่ง",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-unicef-education-no-border",
+        "src-un-thailand-escr-education-2005",
+        "src-chula-mahachai-child-workers"
+      ],
+      "linkedEventIds": [
+        "th-2548-education-unregistered-persons"
+      ],
+      "missingVoices": [
+        "เด็กออกกลางคัน",
+        "ครูพื้นที่โรงงาน",
+        "ผู้ปกครองไม่มีเอกสาร"
+      ],
+      "openQuestion": "ข้อมูลรายโรงเรียนแยกเด็กที่สมัคร เข้าเรียนต่อเนื่อง และเรียนจบได้หรือไม่"
+    },
+    {
+      "id": "mh-2547-deep-south-school-safety",
+      "period": "2549-2560",
+      "beYear": "2549-2560",
+      "ceYear": "2006-2017",
+      "title": "นักเรียน ครู และผู้ปกครองปรับกิจวัตรเพื่อไปโรงเรียนท่ามกลางความไม่สงบ",
+      "location": [
+        "ปัตตานี",
+        "ยะลา",
+        "นราธิวาส",
+        "สงขลา"
+      ],
+      "groups": [
+        "นักเรียน",
+        "ครู",
+        "ผู้ปกครอง",
+        "ชุมชนพุทธและมุสลิม"
+      ],
+      "everydayDimensions": [
+        "school",
+        "travel",
+        "fear",
+        "language"
+      ],
+      "fact": "งานศึกษาความขัดแย้งกับการศึกษาระบุว่าความรุนแรงตั้งแต่ พ.ศ. 2547 กระทบความปลอดภัยของโรงเรียน ครู และนักเรียน และทำให้ต้องมีมาตรการประเมินความเสี่ยง",
+      "livedExperience": "การไปส่งลูก เวลาเปิดเรียน การเดินทางของครู และความไว้วางใจต่อโรงเรียนกลายเป็นการตัดสินใจด้านความปลอดภัยรายวัน แต่ไม่ควรเหมารวมว่าโรงเรียนทุกแห่งเผชิญระดับเดียวกัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-unicef-deep-south-education-conflict",
+        "src-unesco-protecting-education-south"
+      ],
+      "linkedEventIds": [
+        "th-2547-deep-south-school-conflict"
+      ],
+      "missingVoices": [
+        "โรงเรียนตาดีกา",
+        "ครูท้องถิ่นมลายู",
+        "เด็กที่ย้ายออกนอกพื้นที่"
+      ],
+      "openQuestion": "ปฏิทินโรงเรียนและการเดินทางเปลี่ยนต่างกันอย่างไรระหว่างอำเภอและประเภทโรงเรียน"
+    },
+    {
+      "id": "mh-2552-map-ta-phut-community-litigation",
+      "period": "2549-2560",
+      "beYear": "2552",
+      "ceYear": "2009",
+      "title": "ชาวบ้านมาบตาพุดเปลี่ยนข้อมูลสุขภาพเป็นคดีสิ่งแวดล้อม",
+      "location": [
+        "มาบตาพุด",
+        "ระยอง"
+      ],
+      "groups": [
+        "ชาวบ้าน",
+        "ผู้ป่วย",
+        "นักกฎหมาย",
+        "นักวิชาการ"
+      ],
+      "everydayDimensions": [
+        "health",
+        "information",
+        "law",
+        "collective-action"
+      ],
+      "fact": "ชาวบ้านและองค์กรภาคประชาชนยื่นคดีต่อหน่วยงานรัฐเรื่องการอนุมัติ 76 โครงการโดยไม่ผ่านกระบวนการตามรัฐธรรมนูญ และศาลมีคำสั่งคุ้มครองชั่วคราวใน พ.ศ. 2552",
+      "livedExperience": "การร้องเรียนเรื่องกลิ่นและการเจ็บป่วยต้องถูกแปลงเป็นข้อมูล เทคนิค และข้อกฎหมาย ทำให้ครัวเรือนต้องพึ่งเครือข่ายผู้เชี่ยวชาญเพื่อให้ประสบการณ์ประจำวันเข้าสู่ศาล",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-informea-map-ta-phut-order-592-2552",
+        "src-mdpi-map-ta-phut-conflict"
+      ],
+      "linkedEventIds": [
+        "th-2552-map-ta-phut-court-order"
+      ],
+      "missingVoices": [
+        "แรงงานในโรงงาน",
+        "ผู้คัดค้านการระงับโครงการ",
+        "ครัวเรือนที่ไม่ร่วมคดี"
+      ],
+      "openQuestion": "หลังคำสั่งศาล ครัวเรือนเข้าถึงข้อมูลมลพิษและการชดเชยดีขึ้นจริงเพียงใด"
+    },
+    {
+      "id": "mh-2558-transgender-workers-discrimination",
+      "period": "2549-2560",
+      "beYear": "2558-2560",
+      "ceYear": "2015-2017",
+      "title": "คนข้ามเพศเผชิญช่องว่างระหว่างกฎหมายความเท่าเทียมกับสถานที่ทำงาน",
+      "location": [
+        "กรุงเทพฯ",
+        "เมืองท่องเที่ยว",
+        "หลายภูมิภาค"
+      ],
+      "groups": [
+        "คนข้ามเพศ",
+        "ลูกจ้าง",
+        "ผู้สมัครงาน",
+        "นายจ้าง"
+      ],
+      "everydayDimensions": [
+        "work",
+        "identity",
+        "documents",
+        "discrimination"
+      ],
+      "fact": "งานวิจัยด้านโลกการทำงานของไทยบันทึกการกีดกันคนหลากหลายทางเพศในการสมัครงาน ความก้าวหน้า และสวัสดิการ แม้มีกฎหมายความเท่าเทียมระหว่างเพศ พ.ศ. 2558",
+      "livedExperience": "ชื่อ คำนำหน้า การแต่งกาย และการเปิดเผยอัตลักษณ์ทำให้การสมัครงานและอยู่ในที่ทำงานเป็นการต่อรองรายวัน ไม่ใช่เพียงคำถามว่ามีกฎหมายหรือไม่",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-ilo-pride-thailand",
+        "src-au-transgender-work-interviews"
+      ],
+      "linkedEventIds": [
+        "th-2558-gender-equality-act"
+      ],
+      "missingVoices": [
+        "คนข้ามเพศในโรงงาน",
+        "คนข้ามเพศชนบท",
+        "นายจ้างรายย่อย"
+      ],
+      "openQuestion": "คำร้องตามกฎหมาย พ.ศ. 2558 เปลี่ยนการปฏิบัติของนายจ้างในช่วงแรกอย่างไร"
     }
   ]
 }

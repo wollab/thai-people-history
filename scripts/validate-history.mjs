@@ -100,8 +100,16 @@ for (const record of history.microhistories ?? []) {
   }
 }
 for (const [period, count] of Object.entries(mhPeriodCounts)) {
-  if (count < 14) errors.push(`period ${period}: microhistory มีเพียง ${count} เรื่อง (ขั้นต่ำรุ่น 80% คือ 14)`);
+  if (count < 18) errors.push(`period ${period}: microhistory มีเพียง ${count} เรื่อง (ขั้นต่ำรุ่น 100% คือ 18)`);
 }
+
+if (history.events.length < 80) errors.push(`event มีเพียง ${history.events.length} เรื่อง (ขั้นต่ำรุ่น 100% คือ 80)`);
+if (history.microhistories.length < 120) errors.push(`microhistory มีเพียง ${history.microhistories.length} เรื่อง (ขั้นต่ำรุ่น 100% คือ 120)`);
+if (history.sources.length < 180) errors.push(`source มีเพียง ${history.sources.length} แหล่ง (ขั้นต่ำรุ่น 100% คือ 180)`);
+const documentedCases = history.microhistories.filter((record) => record.evidenceStatus === "documented-case").length;
+const researchLeads = history.microhistories.filter((record) => record.evidenceStatus === "research-lead").length;
+if (documentedCases < 72) errors.push(`documented-case มีเพียง ${documentedCases} เรื่อง (ขั้นต่ำรุ่น 100% คือ 72)`);
+if (researchLeads > 0) errors.push(`ยังมี research-lead ${researchLeads} เรื่องใน public snapshot`);
 
 const patternIds = new Set(researchIndex.patterns.map((pattern) => pattern.id));
 for (const story of syntheses.stories ?? []) {
@@ -112,10 +120,10 @@ for (const story of syntheses.stories ?? []) {
   for (const id of story.sourceIds ?? []) if (!sources.has(id)) errors.push(`synthesis ${story.id}: ไม่พบ source ${id}`);
   for (const id of story.patternIds ?? []) if (!patternIds.has(id)) errors.push(`synthesis ${story.id}: ไม่พบ pattern ${id}`);
 }
-if ((syntheses.stories?.length ?? 0) < 9) errors.push(`synthesis มีเพียง ${syntheses.stories?.length ?? 0} เรื่อง (ขั้นต่ำรุ่น 80% คือ 9)`);
+if ((syntheses.stories?.length ?? 0) < 12) errors.push(`synthesis มีเพียง ${syntheses.stories?.length ?? 0} เรื่อง (ขั้นต่ำรุ่น 100% คือ 12)`);
 if ((researchIndex.coverage.singleSourceSensitiveEvents?.length ?? 0) > 0) errors.push(`research index ยังมี sensitive event แหล่งเดียว: ${researchIndex.coverage.singleSourceSensitiveEvents.join(", ")}`);
 for (const id of researchIndex.coverage.eventsWithoutMicrohistory ?? []) if (!events.has(id)) errors.push(`coverage อ้าง event ที่ไม่มีจริง ${id}`);
-if ((researchIndex.coverage.eventsWithoutMicrohistory?.length ?? 0) > 3) errors.push(`event ที่ยังไม่มี microhistory มี ${researchIndex.coverage.eventsWithoutMicrohistory.length} เรื่อง (รุ่น 80% ต้องไม่เกิน 3)`);
+if ((researchIndex.coverage.eventsWithoutMicrohistory?.length ?? 0) > 0) errors.push(`event ที่ยังไม่มี microhistory มี ${researchIndex.coverage.eventsWithoutMicrohistory.length} เรื่อง (รุ่น 100% ต้องเป็น 0)`);
 
 console.log(`ตรวจแล้ว: ${history.events.length} เหตุการณ์ | ${history.microhistories?.length ?? 0} microhistory | ${history.sources.length} แหล่งอ้างอิง | ${history.worldContexts.length} บริบทโลก | ${syntheses.stories?.length ?? 0} บทสังเคราะห์`);
 console.log(Object.entries(periodCounts).map(([period, count]) => `${period}: ${count}`).join(" | "));

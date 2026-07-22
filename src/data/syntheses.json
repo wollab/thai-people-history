@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "บทสังเคราะห์ประวัติศาสตร์ประชาชนไทย",
-    "version": "0.2.0",
-    "updated": "2026-07-21",
+    "version": "0.3.0",
+    "updated": "2026-07-23",
     "rule": "ทุกเรื่องต้องอ้างกลับไปยัง microhistory และ source IDs และระบุข้อจำกัดที่ยังไม่ควรสรุปเกินหลักฐาน"
   },
   "stories": [
@@ -112,6 +112,42 @@
       "sourceIds": ["src-wb-first-direct-election", "src-cambridge-female-politicians-thailand", "src-jica-thai-decentralization", "src-sage-assembly-poor", "src-tci-community-radio-audience", "src-mfa-ncpo"],
       "claim": "ตลอดศตวรรษ ช่องทางการมีส่วนร่วมขยายจากการเลือกผู้แทนไปสู่ประชาคมตำบล สื่อชุมชน และเครือข่ายข้ามพื้นที่ แต่ความสามารถในการใช้ช่องทางเหล่านี้ขึ้นกับเวลา เงิน ความรู้ และเสรีภาพทางการเมือง",
       "limits": "ยังขาดเสียงของผู้ไม่เข้าร่วม ผู้สนับสนุนการจำกัดพื้นที่ และชุมชนที่กลไกใหม่ทำให้ความขัดแย้งรุนแรงขึ้น",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-world-market-households",
+      "title": "เมื่อตลาดโลกเข้ามาอยู่ในไร่ เหมือง โรงงาน และครัวเรือน",
+      "deck": "ข้าว ดีบุก ยาง มันสำปะหลัง และอาหารทะเลเชื่อมรายได้ของผู้คนกับราคา การขนส่ง และอุปสงค์ที่ตัดสินใจไกลจากชุมชน",
+      "periodRange": "2460-2560",
+      "patternIds": ["pat-02-infrastructure-opportunity-cost", "pat-03-households-absorb-shocks", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2460-phuket-hokkien-mine-workers", "mh-2465-southern-rubber-smallholders", "mh-2472-rice-households", "mh-2500-eastern-cassava-farmers", "mh-2500-cassava-processing-workers", "mh-2548-mahachai-migrant-child-workers"],
+      "sourceIds": ["src-silpakorn-chinese-mining-phuket", "src-cambridge-southern-rubber-economy", "src-wb-depression", "src-buu-eastern-cassava-2490-2510", "src-unescap-cassava-asia-1984", "src-chula-mahachai-child-workers"],
+      "claim": "การส่งออกเปิดงานและรายได้เงินสด แต่ทำให้ครัวเรือนรับความเสี่ยงจากราคา ผู้รับซื้อ ต้นทุนขนส่ง และสถานะการจ้างต่างกัน ผู้มีที่ดิน ทุน เอกสาร และเครือข่ายจึงใช้โอกาสเดียวกันได้ไม่เท่ากัน",
+      "limits": "ยังขาดบัญชีครัวเรือนระยะยาว ผู้ที่ออกจากกิจการ และแรงงานหญิงซึ่งงานมักไม่ปรากฏในสถิติการผลิต",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-school-language-citizenship",
+      "title": "โรงเรียน ภาษา และการเป็นส่วนหนึ่งของสังคม",
+      "deck": "โรงเรียนเปิดทางสู่วุฒิ งาน และบริการ พร้อมกำหนดภาษา เอกสาร และความรู้ที่ถูกนับอย่างเป็นทางการ",
+      "periodRange": "2464-2560",
+      "patternIds": ["pat-01-state-through-daily-systems", "pat-06-formal-rights-uneven-access", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2464-compulsory-school", "mh-2464-southern-islamic-schools", "mh-2500-malay-students-language-paths", "mh-2500-pondok-teachers-adjustment", "mh-2531-khmer-refugee-camp-schools", "mh-2548-migrant-children-public-schools", "mh-2547-deep-south-school-safety"],
+      "sourceIds": ["src-moe-history", "src-tsri-islamic-education-south", "src-sure-malay-education-2500-2516", "src-oxford-displaced-khmer-education", "src-unicef-education-no-border", "src-unicef-deep-south-education-conflict"],
+      "claim": "การขยายโรงเรียนไม่ได้เป็นเพียงการเพิ่มที่นั่งเรียน แต่เปลี่ยนความสัมพันธ์ระหว่างภาษา ศาสนา เอกสาร และโอกาส ครอบครัวบางกลุ่มใช้โรงเรียนเพื่อเปิดทางใหม่ ขณะที่บางกลุ่มต้องรักษาความรู้ชุมชนหรือข้ามอุปสรรคที่นโยบายบนกระดาษยังแก้ไม่หมด",
+      "limits": "ยังต้องเพิ่มสมุดเรียน บันทึกครู และประวัติผู้ที่ออกกลางคัน เพื่อไม่ใช้มุมสถาบันแทนประสบการณ์เด็ก",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-infrastructure-work-land-environment",
+      "title": "โครงสร้างพื้นฐานสร้างงานพร้อมเปลี่ยนที่ดินและสิ่งแวดล้อม",
+      "deck": "รถไฟ ถนน ท่าเรือ นิคม และโครงการพลังงานทำให้เมืองและตลาดขยายตัว แต่ต้นทุนไม่ได้ตกกับผู้ได้งานและผู้เสียฐานอาชีพในสัดส่วนเดียวกัน",
+      "periodRange": "2460-2560",
+      "patternIds": ["pat-02-infrastructure-opportunity-cost", "pat-05-everyday-networks-to-movements", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2460-hatyai-villagers-new-work", "mh-2500-cassava-processing-workers", "mh-2525-eastern-seaboard-workers", "mh-2531-map-ta-phut-coastal-households", "mh-2540-map-ta-phut-school-routines", "mh-2541-nathap-fishing-households", "mh-2552-map-ta-phut-community-litigation"],
+      "sourceIds": ["src-chula-hatyai-1915-1941", "src-buu-eastern-cassava-2490-2510", "src-wb-eastern-seaboard", "src-mdpi-map-ta-phut-conflict", "src-chula-map-ta-phut-pollution-2006", "src-swurd-nathap-chana", "src-informea-map-ta-phut-order-592-2552"],
+      "claim": "โครงสร้างพื้นฐานสร้างงาน การค้า และการย้ายถิ่น พร้อมเปลี่ยนการใช้ที่ดิน สุขภาพ และฐานทรัพยากร เมื่อข้อมูลและการชดเชยไม่ทันการลงทุน ผู้คนจึงใช้โรงเรียน เครือข่ายชุมชน การชุมนุม และศาลเพื่อทำให้ต้นทุนที่มองไม่เห็นเข้าสู่การตัดสินใจสาธารณะ",
+      "limits": "ต้องเพิ่มเสียงแรงงานที่สนับสนุนโครงการ ผู้ประกอบการรายย่อย ผู้ไม่เข้าร่วมการคัดค้าน และข้อมูลเปรียบเทียบพื้นที่ที่จัดการผลกระทบได้ดีกว่า",
       "status": "reader-draft"
     }
   ]
