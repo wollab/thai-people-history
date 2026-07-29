@@ -10,6 +10,7 @@ const researchIndex = JSON.parse(await readFile(new URL("../src/data/research-in
 const syntheses = JSON.parse(await readFile(new URL("../src/data/syntheses.json", import.meta.url), "utf8"));
 const sourceLabels = JSON.parse(await readFile(new URL("../src/data/source-labels.json", import.meta.url), "utf8"));
 const sourceIntegrity = JSON.parse(await readFile(new URL("../src/data/source-integrity.json", import.meta.url), "utf8"));
+const qualityIndicators = JSON.parse(await readFile(new URL("../src/data/quality-indicators.json", import.meta.url), "utf8"));
 const errors = [];
 const warnings = [];
 
@@ -142,7 +143,26 @@ if ((researchIndex.coverage.singleSourceSensitiveEvents?.length ?? 0) > 0) error
 for (const id of researchIndex.coverage.eventsWithoutMicrohistory ?? []) if (!events.has(id)) errors.push(`coverage อ้าง event ที่ไม่มีจริง ${id}`);
 if ((researchIndex.coverage.eventsWithoutMicrohistory?.length ?? 0) > 0) errors.push(`event ที่ยังไม่มี microhistory มี ${researchIndex.coverage.eventsWithoutMicrohistory.length} เรื่อง (รุ่น 100% ต้องเป็น 0)`);
 
+const indicatorIds = new Set();
+for (const indicator of qualityIndicators.indicators ?? []) {
+  if (indicatorIds.has(indicator.id)) errors.push(`quality indicator id ซ้ำ ${indicator.id}`);
+  indicatorIds.add(indicator.id);
+  for (const field of ["labelTh", "unitTh", "definitionTh", "interpretationNoteTh", "sourceUrl", "sourceNote", "license"]) {
+    if (!indicator[field]) errors.push(`quality indicator ${indicator.id}: ไม่มี ${field}`);
+  }
+  if (!indicator.values?.length) errors.push(`quality indicator ${indicator.id}: ไม่มีข้อมูลรายปี`);
+  let previousYear = 0;
+  for (const point of indicator.values ?? []) {
+    if (point.beYear - 543 !== point.ceYear) errors.push(`quality indicator ${indicator.id}: ปีไม่ตรงกัน ${point.beYear}/${point.ceYear}`);
+    if (point.ceYear <= previousYear) errors.push(`quality indicator ${indicator.id}: ปีไม่เรียงจากเก่าไปใหม่`);
+    if (typeof point.value !== "number" || !Number.isFinite(point.value)) errors.push(`quality indicator ${indicator.id}: ค่าไม่ถูกต้องที่ ${point.ceYear}`);
+    previousYear = point.ceYear;
+  }
+}
+if (indicatorIds.size < 6) errors.push(`quality indicator มีเพียง ${indicatorIds.size} ชุด (ขั้นต่ำ 6)`);
+
 console.log(`ตรวจแล้ว: ${history.events.length} เหตุการณ์ | ${history.microhistories?.length ?? 0} microhistory | ${history.sources.length} แหล่งอ้างอิง | ${history.worldContexts.length} บริบทโลก | ${syntheses.stories?.length ?? 0} บทสังเคราะห์`);
+console.log(`ตัวชี้วัดชีวิต: ${indicatorIds.size} ชุด | ${qualityIndicators.indicators?.reduce((sum, item) => sum + item.values.length, 0) ?? 0} จุดข้อมูล`);
 console.log(Object.entries(periodCounts).map(([period, count]) => `${period}: ${count}`).join(" | "));
 for (const warning of warnings) console.warn(`คำเตือน: ${warning}`);
 if (errors.length) {

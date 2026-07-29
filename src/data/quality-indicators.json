@@ -1,0 +1,2056 @@
+{
+  "meta": {
+    "title": "ตัวชี้วัดชีวิตและบริบทสังคมไทย พ.ศ. 2503-2560",
+    "version": "0.1.0",
+    "updated": "2026-07-29",
+    "country": "Thailand",
+    "countryCode": "THA",
+    "sourceDatabase": "World Development Indicators",
+    "sourceLastUpdated": "2026-07-13",
+    "sourceApiUrl": "https://api.worldbank.org/v2/country/THA/indicator/SP.DYN.LE00.IN;SP.DYN.IMRT.IN;SE.SEC.ENRR;EG.ELC.ACCS.ZS;IT.NET.USER.ZS;SP.URB.TOTL.IN.ZS?source=2&date=1960:2017&format=json&per_page=1000",
+    "coverageBe": "2503-2560",
+    "editorialRule": "ตัวชี้วัดแสดงแนวโน้มระดับประเทศและเหตุการณ์ร่วมช่วงเวลา ไม่ใช้การเกิดพร้อมกันเป็นหลักฐานเชิงเหตุและผล"
+  },
+  "dimensions": [
+    {
+      "id": "health",
+      "labelTh": "สุขภาพ"
+    },
+    {
+      "id": "education",
+      "labelTh": "การศึกษา"
+    },
+    {
+      "id": "living-conditions",
+      "labelTh": "สาธารณูปโภค"
+    },
+    {
+      "id": "connectivity",
+      "labelTh": "การเชื่อมต่อ"
+    },
+    {
+      "id": "settlement-context",
+      "labelTh": "รูปแบบการตั้งถิ่นฐาน"
+    }
+  ],
+  "indicators": [
+    {
+      "id": "life-expectancy",
+      "code": "SP.DYN.LE00.IN",
+      "labelTh": "อายุคาดเฉลี่ยเมื่อแรกเกิด",
+      "shortLabelTh": "อายุคาดเฉลี่ย",
+      "dimension": "health",
+      "unitTh": "ปี",
+      "direction": "higher-better",
+      "decimals": 1,
+      "definitionTh": "จำนวนปีที่ทารกแรกเกิดคาดว่าจะมีชีวิต หากรูปแบบการตายตามช่วงอายุในปีนั้นคงเดิมตลอดชีวิต",
+      "interpretationNoteTh": "เป็นค่าประมาณระดับประชากร ไม่ได้แสดงความแตกต่างระหว่างเพศ พื้นที่ รายได้ หรือกลุ่มประชากร",
+      "eventThemes": [
+        "health",
+        "public-health",
+        "welfare"
+      ],
+      "worldBankCode": "SP.DYN.LE00.IN",
+      "sourceTitle": "World Development Indicators",
+      "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=TH",
+      "apiUrl": "https://api.worldbank.org/v2/indicator/SP.DYN.LE00.IN?source=2&format=json",
+      "sourceNote": "Life expectancy at birth indicates the number of years a newborn infant would live if prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.",
+      "sourceOrganization": "World Population Prospects, United Nations (UN), uri: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs), note: Derived from male and female life expectancy at birth from sources such as statistical databases and publications from national statistical offices.;\nDemographic Statistics, Eurostat (ESTAT), note: Derived from male and female life expectancy at birth from sources such as Eurostat: Demographic Statistics.",
+      "license": "CC BY 4.0",
+      "accessed": "2026-07-29",
+      "firstBeYear": 2503,
+      "lastBeYear": 2560,
+      "values": [
+        {
+          "beYear": 2503,
+          "ceYear": 1960,
+          "value": 50.608,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2504,
+          "ceYear": 1961,
+          "value": 51.065,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2505,
+          "ceYear": 1962,
+          "value": 51.444,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2506,
+          "ceYear": 1963,
+          "value": 51.988,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2507,
+          "ceYear": 1964,
+          "value": 52.539,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2508,
+          "ceYear": 1965,
+          "value": 53.131,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2509,
+          "ceYear": 1966,
+          "value": 53.729,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2510,
+          "ceYear": 1967,
+          "value": 54.316,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2511,
+          "ceYear": 1968,
+          "value": 54.977,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2512,
+          "ceYear": 1969,
+          "value": 55.705,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2513,
+          "ceYear": 1970,
+          "value": 56.47,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2514,
+          "ceYear": 1971,
+          "value": 57.1,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2515,
+          "ceYear": 1972,
+          "value": 57.746,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2516,
+          "ceYear": 1973,
+          "value": 58.323,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2517,
+          "ceYear": 1974,
+          "value": 59.031,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2518,
+          "ceYear": 1975,
+          "value": 59.713,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2519,
+          "ceYear": 1976,
+          "value": 60.371,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2520,
+          "ceYear": 1977,
+          "value": 60.906,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2521,
+          "ceYear": 1978,
+          "value": 61.266,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2522,
+          "ceYear": 1979,
+          "value": 61.696,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2523,
+          "ceYear": 1980,
+          "value": 62.186,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2524,
+          "ceYear": 1981,
+          "value": 62.856,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2525,
+          "ceYear": 1982,
+          "value": 63.603,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2526,
+          "ceYear": 1983,
+          "value": 64.5,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2527,
+          "ceYear": 1984,
+          "value": 65.55,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2528,
+          "ceYear": 1985,
+          "value": 66.543,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2529,
+          "ceYear": 1986,
+          "value": 67.308,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2530,
+          "ceYear": 1987,
+          "value": 67.833,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2531,
+          "ceYear": 1988,
+          "value": 68.194,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2532,
+          "ceYear": 1989,
+          "value": 68.557,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2533,
+          "ceYear": 1990,
+          "value": 68.924,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2534,
+          "ceYear": 1991,
+          "value": 69.132,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2535,
+          "ceYear": 1992,
+          "value": 69.353,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2536,
+          "ceYear": 1993,
+          "value": 69.568,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2537,
+          "ceYear": 1994,
+          "value": 69.661,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2538,
+          "ceYear": 1995,
+          "value": 69.757,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2539,
+          "ceYear": 1996,
+          "value": 69.94,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2540,
+          "ceYear": 1997,
+          "value": 70.362,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2541,
+          "ceYear": 1998,
+          "value": 70.703,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2542,
+          "ceYear": 1999,
+          "value": 70.979,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2543,
+          "ceYear": 2000,
+          "value": 71.205,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2544,
+          "ceYear": 2001,
+          "value": 71.52,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2545,
+          "ceYear": 2002,
+          "value": 71.775,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2546,
+          "ceYear": 2003,
+          "value": 72.101,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2547,
+          "ceYear": 2004,
+          "value": 72.1,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2548,
+          "ceYear": 2005,
+          "value": 72.894,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2549,
+          "ceYear": 2006,
+          "value": 73.341,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2550,
+          "ceYear": 2007,
+          "value": 73.779,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2551,
+          "ceYear": 2008,
+          "value": 74.221,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2552,
+          "ceYear": 2009,
+          "value": 74.669,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2553,
+          "ceYear": 2010,
+          "value": 75.012,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2554,
+          "ceYear": 2011,
+          "value": 75.302,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2555,
+          "ceYear": 2012,
+          "value": 75.59,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2556,
+          "ceYear": 2013,
+          "value": 75.96,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2557,
+          "ceYear": 2014,
+          "value": 76.279,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2558,
+          "ceYear": 2015,
+          "value": 76.563,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2559,
+          "ceYear": 2016,
+          "value": 76.769,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2560,
+          "ceYear": 2017,
+          "value": 76.989,
+          "observationStatus": null,
+          "decimal": 0
+        }
+      ]
+    },
+    {
+      "id": "infant-mortality",
+      "code": "SP.DYN.IMRT.IN",
+      "labelTh": "อัตราการตายของทารก",
+      "shortLabelTh": "การตายทารก",
+      "dimension": "health",
+      "unitTh": "ต่อการเกิดมีชีพ 1,000 คน",
+      "direction": "lower-better",
+      "decimals": 1,
+      "definitionTh": "จำนวนทารกที่เสียชีวิตก่อนอายุครบหนึ่งปีต่อการเกิดมีชีพ 1,000 คนในปีนั้น",
+      "interpretationNoteTh": "ตัวเลขเป็นค่าประมาณจากหลายแหล่งและอาจปรับย้อนหลังเมื่อแบบจำลองหรือข้อมูลต้นทางเปลี่ยน",
+      "eventThemes": [
+        "health",
+        "public-health",
+        "family",
+        "welfare"
+      ],
+      "worldBankCode": "SP.DYN.IMRT.IN",
+      "sourceTitle": "World Development Indicators",
+      "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=TH",
+      "apiUrl": "https://api.worldbank.org/v2/indicator/SP.DYN.IMRT.IN?source=2&format=json",
+      "sourceNote": "Infant mortality rate is the number of infants dying before reaching one year of age, per 1,000 live births in a given year.",
+      "sourceOrganization": "UN Inter-agency Group for Child Mortality Estimation, UN Children's Fund (UNICEF), uri: www.childmortality.org;\nWorld Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation;\nWorld Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation;\nUnited Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation, publisher: UN Population Division",
+      "license": "CC BY 4.0",
+      "accessed": "2026-07-29",
+      "firstBeYear": 2503,
+      "lastBeYear": 2560,
+      "values": [
+        {
+          "beYear": 2503,
+          "ceYear": 1960,
+          "value": 113.3,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2504,
+          "ceYear": 1961,
+          "value": 109.7,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2505,
+          "ceYear": 1962,
+          "value": 106.1,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2506,
+          "ceYear": 1963,
+          "value": 102.6,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2507,
+          "ceYear": 1964,
+          "value": 99.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2508,
+          "ceYear": 1965,
+          "value": 95.9,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2509,
+          "ceYear": 1966,
+          "value": 92.6,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2510,
+          "ceYear": 1967,
+          "value": 89.1,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2511,
+          "ceYear": 1968,
+          "value": 85.7,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2512,
+          "ceYear": 1969,
+          "value": 82.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2513,
+          "ceYear": 1970,
+          "value": 78.7,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2514,
+          "ceYear": 1971,
+          "value": 75.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2515,
+          "ceYear": 1972,
+          "value": 71.7,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2516,
+          "ceYear": 1973,
+          "value": 68.4,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2517,
+          "ceYear": 1974,
+          "value": 65.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2518,
+          "ceYear": 1975,
+          "value": 62.1,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2519,
+          "ceYear": 1976,
+          "value": 59.3,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2520,
+          "ceYear": 1977,
+          "value": 56.7,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2521,
+          "ceYear": 1978,
+          "value": 54.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2522,
+          "ceYear": 1979,
+          "value": 51.9,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2523,
+          "ceYear": 1980,
+          "value": 49.6,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2524,
+          "ceYear": 1981,
+          "value": 47.5,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2525,
+          "ceYear": 1982,
+          "value": 45.5,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2526,
+          "ceYear": 1983,
+          "value": 43.6,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2527,
+          "ceYear": 1984,
+          "value": 41.7,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2528,
+          "ceYear": 1985,
+          "value": 39.8,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2529,
+          "ceYear": 1986,
+          "value": 38,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2530,
+          "ceYear": 1987,
+          "value": 36.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2531,
+          "ceYear": 1988,
+          "value": 34.4,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2532,
+          "ceYear": 1989,
+          "value": 32.6,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2533,
+          "ceYear": 1990,
+          "value": 30.9,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2534,
+          "ceYear": 1991,
+          "value": 29.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2535,
+          "ceYear": 1992,
+          "value": 27.6,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2536,
+          "ceYear": 1993,
+          "value": 26.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2537,
+          "ceYear": 1994,
+          "value": 24.8,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2538,
+          "ceYear": 1995,
+          "value": 23.5,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2539,
+          "ceYear": 1996,
+          "value": 22.4,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2540,
+          "ceYear": 1997,
+          "value": 21.3,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2541,
+          "ceYear": 1998,
+          "value": 20.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2542,
+          "ceYear": 1999,
+          "value": 19.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2543,
+          "ceYear": 2000,
+          "value": 18.3,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2544,
+          "ceYear": 2001,
+          "value": 17.4,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2545,
+          "ceYear": 2002,
+          "value": 16.6,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2546,
+          "ceYear": 2003,
+          "value": 15.9,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2547,
+          "ceYear": 2004,
+          "value": 15.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2548,
+          "ceYear": 2005,
+          "value": 14.5,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2549,
+          "ceYear": 2006,
+          "value": 13.9,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2550,
+          "ceYear": 2007,
+          "value": 13.4,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2551,
+          "ceYear": 2008,
+          "value": 12.9,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2552,
+          "ceYear": 2009,
+          "value": 12.4,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2553,
+          "ceYear": 2010,
+          "value": 11.9,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2554,
+          "ceYear": 2011,
+          "value": 11.5,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2555,
+          "ceYear": 2012,
+          "value": 11.1,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2556,
+          "ceYear": 2013,
+          "value": 10.8,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2557,
+          "ceYear": 2014,
+          "value": 10.4,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2558,
+          "ceYear": 2015,
+          "value": 10.1,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2559,
+          "ceYear": 2016,
+          "value": 9.8,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2560,
+          "ceYear": 2017,
+          "value": 9.5,
+          "observationStatus": null,
+          "decimal": 0
+        }
+      ]
+    },
+    {
+      "id": "secondary-enrollment",
+      "code": "SE.SEC.ENRR",
+      "labelTh": "อัตราการเข้าเรียนระดับมัธยมศึกษาแบบรวม",
+      "shortLabelTh": "เข้าเรียนมัธยม",
+      "dimension": "education",
+      "unitTh": "ร้อยละของประชากรวัยเรียนระดับมัธยม",
+      "direction": "higher-better",
+      "decimals": 1,
+      "definitionTh": "จำนวนนักเรียนทุกวัยที่ลงทะเบียนในระดับมัธยมศึกษา เทียบกับประชากรวัยเรียนอย่างเป็นทางการของระดับนั้น",
+      "interpretationNoteTh": "อัตราแบบรวมอาจสูงกว่าร้อยละ 100 เพราะรวมผู้เรียนที่อายุต่ำหรือสูงกว่าวัยมาตรฐาน และไม่เท่ากับอัตราสำเร็จการศึกษา",
+      "eventThemes": [
+        "education",
+        "youth",
+        "state"
+      ],
+      "worldBankCode": "SE.SEC.ENRR",
+      "sourceTitle": "World Development Indicators",
+      "sourceUrl": "https://data.worldbank.org/indicator/SE.SEC.ENRR?locations=TH",
+      "apiUrl": "https://api.worldbank.org/v2/indicator/SE.SEC.ENRR?source=2&format=json",
+      "sourceNote": "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown. Secondary education completes the provision of basic education that began at the primary level, and aims at laying the foundations for lifelong learning and human development, by offering more subject- or skill-oriented instruction using more specialized teachers.",
+      "sourceOrganization": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02",
+      "license": "CC BY 4.0",
+      "accessed": "2026-07-29",
+      "firstBeYear": 2514,
+      "lastBeYear": 2560,
+      "values": [
+        {
+          "beYear": 2514,
+          "ceYear": 1971,
+          "value": 17.1638202667236,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2515,
+          "ceYear": 1972,
+          "value": 18.4518299102783,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2516,
+          "ceYear": 1973,
+          "value": 20.0774002075195,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2517,
+          "ceYear": 1974,
+          "value": 21.9800796508789,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2518,
+          "ceYear": 1975,
+          "value": 23.1193008422852,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2519,
+          "ceYear": 1976,
+          "value": 25.0751705169678,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2520,
+          "ceYear": 1977,
+          "value": 26.965669631958,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2521,
+          "ceYear": 1978,
+          "value": 27.3225193023682,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2522,
+          "ceYear": 1979,
+          "value": 27.2657604217529,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2523,
+          "ceYear": 1980,
+          "value": 27.5494499206543,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2524,
+          "ceYear": 1981,
+          "value": 28.5601100921631,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2525,
+          "ceYear": 1982,
+          "value": 28.9853000640869,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2527,
+          "ceYear": 1984,
+          "value": 31.0518798828125,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2528,
+          "ceYear": 1985,
+          "value": 31.6391296386719,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2529,
+          "ceYear": 1986,
+          "value": 31.3920593261719,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2530,
+          "ceYear": 1987,
+          "value": 30.5292892456055,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2531,
+          "ceYear": 1988,
+          "value": 29.5940799713135,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2532,
+          "ceYear": 1989,
+          "value": 29.329439163208,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2533,
+          "ceYear": 1990,
+          "value": 30.0151195526123,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2534,
+          "ceYear": 1991,
+          "value": 32.2471084594727,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2535,
+          "ceYear": 1992,
+          "value": 35.9716300964355,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2536,
+          "ceYear": 1993,
+          "value": 40.6418609619141,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2537,
+          "ceYear": 1994,
+          "value": 45.9383201599121,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2538,
+          "ceYear": 1995,
+          "value": 51.2646713256836,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2539,
+          "ceYear": 1996,
+          "value": 57.5684394836426,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2540,
+          "ceYear": 1997,
+          "value": 59.4612503051758,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2541,
+          "ceYear": 1998,
+          "value": 61.9174385070801,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2544,
+          "ceYear": 2001,
+          "value": 64.0281982421875,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2545,
+          "ceYear": 2002,
+          "value": 65.5458221435547,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2547,
+          "ceYear": 2004,
+          "value": 67.444221496582,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2548,
+          "ceYear": 2005,
+          "value": 71.8262786865234,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2549,
+          "ceYear": 2006,
+          "value": 71.6298599243164,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2550,
+          "ceYear": 2007,
+          "value": 75.7808074951172,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2551,
+          "ceYear": 2008,
+          "value": 75.2078475952148,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2552,
+          "ceYear": 2009,
+          "value": 76.6007080078125,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2553,
+          "ceYear": 2010,
+          "value": 78.3943786621094,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2554,
+          "ceYear": 2011,
+          "value": 86.9894790649414,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2555,
+          "ceYear": 2012,
+          "value": 85.5365295410156,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2556,
+          "ceYear": 2013,
+          "value": 83.854850769043,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2557,
+          "ceYear": 2014,
+          "value": 123.525459289551,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2558,
+          "ceYear": 2015,
+          "value": 124.330596923828,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2559,
+          "ceYear": 2016,
+          "value": 122.563217163086,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2560,
+          "ceYear": 2017,
+          "value": 79.5062371844027,
+          "observationStatus": null,
+          "decimal": 0
+        }
+      ]
+    },
+    {
+      "id": "electricity-access",
+      "code": "EG.ELC.ACCS.ZS",
+      "labelTh": "ประชากรที่เข้าถึงไฟฟ้า",
+      "shortLabelTh": "เข้าถึงไฟฟ้า",
+      "dimension": "living-conditions",
+      "unitTh": "ร้อยละของประชากร",
+      "direction": "higher-better",
+      "decimals": 1,
+      "definitionTh": "สัดส่วนประชากรที่มีไฟฟ้าใช้ตามนิยามของชุดข้อมูล",
+      "interpretationNoteTh": "การมีไฟฟ้าเข้าถึงไม่บอกความสม่ำเสมอของบริการ ค่าใช้จ่าย หรือความสามารถของครัวเรือนในการใช้เครื่องใช้ไฟฟ้า",
+      "eventThemes": [
+        "infrastructure",
+        "technology",
+        "rural"
+      ],
+      "worldBankCode": "EG.ELC.ACCS.ZS",
+      "sourceTitle": "World Development Indicators",
+      "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=TH",
+      "apiUrl": "https://api.worldbank.org/v2/indicator/EG.ELC.ACCS.ZS?source=2&format=json",
+      "sourceNote": "Access to electricity is the percentage of population with access to electricity. Electrification data are collected from industry, national surveys and international sources.",
+      "sourceOrganization": "SDG 7.1.1 Electrification Dataset, World Bank (WB), uri: https://trackingsdg7.esmap.org/downloads, note: Data is downloaded from ESMAP website. Data is released when a new Tracking SDG7 report is released., publisher: World Bank (WB), date accessed: 2024-05-16, date published: 2023",
+      "license": "CC BY 4.0",
+      "accessed": "2026-07-29",
+      "firstBeYear": 2543,
+      "lastBeYear": 2560,
+      "values": [
+        {
+          "beYear": 2543,
+          "ceYear": 2000,
+          "value": 82.1,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2544,
+          "ceYear": 2001,
+          "value": 90.4,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2545,
+          "ceYear": 2002,
+          "value": 91,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2546,
+          "ceYear": 2003,
+          "value": 91.6,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2547,
+          "ceYear": 2004,
+          "value": 92.2,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2548,
+          "ceYear": 2005,
+          "value": 92.8,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2549,
+          "ceYear": 2006,
+          "value": 99.1,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2550,
+          "ceYear": 2007,
+          "value": 94.1,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2551,
+          "ceYear": 2008,
+          "value": 94.8,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2552,
+          "ceYear": 2009,
+          "value": 99,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2553,
+          "ceYear": 2010,
+          "value": 99.7,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2554,
+          "ceYear": 2011,
+          "value": 99.3,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2555,
+          "ceYear": 2012,
+          "value": 99.1,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2556,
+          "ceYear": 2013,
+          "value": 99.4,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2557,
+          "ceYear": 2014,
+          "value": 99.5,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2558,
+          "ceYear": 2015,
+          "value": 99.6,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2559,
+          "ceYear": 2016,
+          "value": 99.9,
+          "observationStatus": null,
+          "decimal": 1
+        },
+        {
+          "beYear": 2560,
+          "ceYear": 2017,
+          "value": 99.9,
+          "observationStatus": null,
+          "decimal": 1
+        }
+      ]
+    },
+    {
+      "id": "internet-use",
+      "code": "IT.NET.USER.ZS",
+      "labelTh": "ประชากรที่ใช้อินเทอร์เน็ต",
+      "shortLabelTh": "ใช้อินเทอร์เน็ต",
+      "dimension": "connectivity",
+      "unitTh": "ร้อยละของประชากร",
+      "direction": "higher-better",
+      "decimals": 1,
+      "definitionTh": "สัดส่วนประชากรที่ใช้อินเทอร์เน็ตจากสถานที่และอุปกรณ์ใดก็ได้ในช่วงเวลาที่นิยามโดยแหล่งข้อมูล",
+      "interpretationNoteTh": "การใช้อินเทอร์เน็ตไม่เท่ากับคุณภาพ ความเร็ว ราคา หรือทักษะในการใช้ และไม่แสดงความเหลื่อมล้ำภายในประเทศ",
+      "eventThemes": [
+        "digital",
+        "internet",
+        "media",
+        "technology"
+      ],
+      "worldBankCode": "IT.NET.USER.ZS",
+      "sourceTitle": "World Development Indicators",
+      "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH",
+      "apiUrl": "https://api.worldbank.org/v2/indicator/IT.NET.USER.ZS?source=2&format=json",
+      "sourceNote": "Internet users are individuals who have used the Internet (from any location) in the last 3 months. The Internet can be used via a computer, mobile phone, personal digital assistant, games machine, digital TV etc.",
+      "sourceOrganization": "World Telecommunication/ICT Indicators Database, International Telecommunication Union (ITU), uri: https://datahub.itu.int/",
+      "license": "CC BY 4.0",
+      "accessed": "2026-07-29",
+      "firstBeYear": 2533,
+      "lastBeYear": 2560,
+      "values": [
+        {
+          "beYear": 2533,
+          "ceYear": 1990,
+          "value": 0,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2534,
+          "ceYear": 1991,
+          "value": 0.0000522,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2535,
+          "ceYear": 1992,
+          "value": 0.000344,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2536,
+          "ceYear": 1993,
+          "value": 0.0136,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2537,
+          "ceYear": 1994,
+          "value": 0.0386,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2538,
+          "ceYear": 1995,
+          "value": 0.0748,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2539,
+          "ceYear": 1996,
+          "value": 0.115,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2540,
+          "ceYear": 1997,
+          "value": 0.361,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2541,
+          "ceYear": 1998,
+          "value": 1.09,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2542,
+          "ceYear": 1999,
+          "value": 2.43,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2543,
+          "ceYear": 2000,
+          "value": 3.68904127944164,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2544,
+          "ceYear": 2001,
+          "value": 5.55632612097332,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2545,
+          "ceYear": 2002,
+          "value": 7.53125033488567,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2546,
+          "ceYear": 2003,
+          "value": 9.29902723805965,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2547,
+          "ceYear": 2004,
+          "value": 10.6773033237281,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2548,
+          "ceYear": 2005,
+          "value": 15.0260043588909,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2549,
+          "ceYear": 2006,
+          "value": 17.1607147169285,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2550,
+          "ceYear": 2007,
+          "value": 20.03,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2551,
+          "ceYear": 2008,
+          "value": 18.2,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2552,
+          "ceYear": 2009,
+          "value": 20.1,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2553,
+          "ceYear": 2010,
+          "value": 22.4,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2554,
+          "ceYear": 2011,
+          "value": 23.669925618731,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2555,
+          "ceYear": 2012,
+          "value": 26.46,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2556,
+          "ceYear": 2013,
+          "value": 28.94,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2557,
+          "ceYear": 2014,
+          "value": 34.8860535783465,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2558,
+          "ceYear": 2015,
+          "value": 39.3161267365004,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2559,
+          "ceYear": 2016,
+          "value": 47.5049656215909,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2560,
+          "ceYear": 2017,
+          "value": 52.8919293439676,
+          "observationStatus": null,
+          "decimal": 0
+        }
+      ]
+    },
+    {
+      "id": "urban-population-share",
+      "code": "SP.URB.TOTL.IN.ZS",
+      "labelTh": "ประชากรที่อาศัยในเขตเมือง",
+      "shortLabelTh": "ประชากรเมือง",
+      "dimension": "settlement-context",
+      "unitTh": "ร้อยละของประชากร",
+      "direction": "context-only",
+      "decimals": 1,
+      "definitionTh": "สัดส่วนประชากรที่อาศัยในพื้นที่ซึ่งประเทศไทยจัดประเภทเป็นเขตเมือง",
+      "interpretationNoteTh": "ใช้เป็นบริบทของการตั้งถิ่นฐานและการเปลี่ยนชนบท-เมือง ไม่ควรอ่านว่าค่าสูงขึ้นหมายถึงคุณภาพชีวิตดีขึ้นโดยอัตโนมัติ",
+      "eventThemes": [
+        "urban",
+        "migration",
+        "housing",
+        "economy"
+      ],
+      "worldBankCode": "SP.URB.TOTL.IN.ZS",
+      "sourceTitle": "World Development Indicators",
+      "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=TH",
+      "apiUrl": "https://api.worldbank.org/v2/indicator/SP.URB.TOTL.IN.ZS?source=2&format=json",
+      "sourceNote": "Urban population refers to people living in urban areas as defined by national statistical offices. The data are collected and smoothed by United Nations Population Division.",
+      "sourceOrganization": "World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: United Nations Population Division's World Urbanization Prospects, National definitions, publisher: UN Population Division",
+      "license": "CC BY 4.0",
+      "accessed": "2026-07-29",
+      "firstBeYear": 2503,
+      "lastBeYear": 2560,
+      "values": [
+        {
+          "beYear": 2503,
+          "ceYear": 1960,
+          "value": 11.8259031915076,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2504,
+          "ceYear": 1961,
+          "value": 11.963992179219,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2505,
+          "ceYear": 1962,
+          "value": 12.0928855757568,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2506,
+          "ceYear": 1963,
+          "value": 12.2170391523602,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2507,
+          "ceYear": 1964,
+          "value": 12.3404505516908,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2508,
+          "ceYear": 1965,
+          "value": 12.4671174164097,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2509,
+          "ceYear": 1966,
+          "value": 12.6010373891785,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2510,
+          "ceYear": 1967,
+          "value": 12.7462081126584,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2511,
+          "ceYear": 1968,
+          "value": 12.9066272295109,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2512,
+          "ceYear": 1969,
+          "value": 13.0862923823972,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2513,
+          "ceYear": 1970,
+          "value": 13.2943293788743,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2514,
+          "ceYear": 1971,
+          "value": 13.5670461058988,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2515,
+          "ceYear": 1972,
+          "value": 13.916324564384,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2516,
+          "ceYear": 1973,
+          "value": 14.3201813297757,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2517,
+          "ceYear": 1974,
+          "value": 14.7596606532936,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2518,
+          "ceYear": 1975,
+          "value": 15.2158067861574,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2519,
+          "ceYear": 1976,
+          "value": 15.6696639795869,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2520,
+          "ceYear": 1977,
+          "value": 16.1022764848018,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2521,
+          "ceYear": 1978,
+          "value": 16.4946885530218,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2522,
+          "ceYear": 1979,
+          "value": 16.8279444354667,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2523,
+          "ceYear": 1980,
+          "value": 17.0844066743608,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2524,
+          "ceYear": 1981,
+          "value": 17.2827538871177,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2525,
+          "ceYear": 1982,
+          "value": 17.4439726290857,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2526,
+          "ceYear": 1983,
+          "value": 17.5796435064122,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2527,
+          "ceYear": 1984,
+          "value": 17.7013465942106,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2528,
+          "ceYear": 1985,
+          "value": 17.8206619675942,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2529,
+          "ceYear": 1986,
+          "value": 17.9491697016767,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2530,
+          "ceYear": 1987,
+          "value": 18.0984498715714,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2531,
+          "ceYear": 1988,
+          "value": 18.2800825523918,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2532,
+          "ceYear": 1989,
+          "value": 18.5056478192513,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2533,
+          "ceYear": 1990,
+          "value": 18.8071480847314,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2534,
+          "ceYear": 1991,
+          "value": 19.3568451726218,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2535,
+          "ceYear": 1992,
+          "value": 20.2251472411188,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2536,
+          "ceYear": 1993,
+          "value": 21.344368876117,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2537,
+          "ceYear": 1994,
+          "value": 22.6578637457835,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2538,
+          "ceYear": 1995,
+          "value": 24.1089855182854,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2539,
+          "ceYear": 1996,
+          "value": 25.6410878617897,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2540,
+          "ceYear": 1997,
+          "value": 27.1975244444636,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2541,
+          "ceYear": 1998,
+          "value": 28.7216489344742,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2542,
+          "ceYear": 1999,
+          "value": 30.1568149999886,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2543,
+          "ceYear": 2000,
+          "value": 31.4626212652205,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2544,
+          "ceYear": 2001,
+          "value": 32.7428054763889,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2545,
+          "ceYear": 2002,
+          "value": 34.0732781018222,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2546,
+          "ceYear": 2003,
+          "value": 35.4270354382579,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2547,
+          "ceYear": 2004,
+          "value": 36.785516284484,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2548,
+          "ceYear": 2005,
+          "value": 38.1301594392881,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2549,
+          "ceYear": 2006,
+          "value": 39.4424037014582,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2550,
+          "ceYear": 2007,
+          "value": 40.7036878697821,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2551,
+          "ceYear": 2008,
+          "value": 41.8954507430475,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2552,
+          "ceYear": 2009,
+          "value": 42.9991311200422,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2553,
+          "ceYear": 2010,
+          "value": 44.0018736622496,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2554,
+          "ceYear": 2011,
+          "value": 44.8048723557374,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2555,
+          "ceYear": 2012,
+          "value": 45.373565813715,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2556,
+          "ceYear": 2013,
+          "value": 45.8321343847773,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2557,
+          "ceYear": 2014,
+          "value": 46.3138799467897,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2558,
+          "ceYear": 2015,
+          "value": 46.9521043776171,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2559,
+          "ceYear": 2016,
+          "value": 47.8801095551247,
+          "observationStatus": null,
+          "decimal": 0
+        },
+        {
+          "beYear": 2560,
+          "ceYear": 2017,
+          "value": 49.2311973571777,
+          "observationStatus": null,
+          "decimal": 0
+        }
+      ]
+    }
+  ]
+}

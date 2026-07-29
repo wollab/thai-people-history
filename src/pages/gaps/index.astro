@@ -1,40 +1,30 @@
 ---
-import { ArrowRight, Link2, MessageSquareText } from "lucide-astro";
+import { ArrowRight, MessageSquareText } from "lucide-astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { microhistories } from "../../data/history";
 import { periods } from "../../data/periods";
-import integrity from "../../data/source-integrity.json";
 
 const base = import.meta.env.BASE_URL;
 const documented = microhistories.filter((record) => record.evidenceStatus === "documented-case");
 const leads = microhistories.filter((record) => record.evidenceStatus !== "documented-case");
-const checkedDate = new Date(integrity.meta.checkedAt).toLocaleDateString("th-TH", { dateStyle: "long" });
 ---
 
-<BaseLayout title="ช่องว่างที่ยังเปิด | ประวัติศาสตร์ประชาชนไทย" description="รายการหลักฐาน ชีวิต และเสียงที่ฐานประวัติศาสตร์ประชาชนไทยยังขาด พร้อมสถานะตรวจลิงก์แหล่งอ้างอิง">
+<BaseLayout title="เรื่องที่ชวนร่วมค้นหา | ประวัติศาสตร์ประชาชนไทย" description="หัวข้อ คำถาม และมุมมองที่ผู้อ่านสามารถช่วยเสนอแหล่งข้อมูลให้คลังประวัติศาสตร์ประชาชนไทย">
   <header class="archive-header container gap-header">
     <div>
-      <p class="eyebrow">Public research gap log</p>
-      <h1>สิ่งที่เรายัง<br />ไม่รู้เพียงพอ</h1>
-      <p>หน้านี้เปิดเผยข้อจำกัดของฐานโดยไม่ซ่อนหัวข้อที่ยังไม่พร้อมสรุป “เบาะแสบริบท” ใช้วางคำถามได้ แต่ห้ามเขียนแทนประสบการณ์เฉพาะบุคคลจนกว่าจะมีหลักฐานตรง</p>
+      <p class="eyebrow">ร่วมเติมประวัติศาสตร์ประชาชน</p>
+      <h1>เรื่องที่ชวน<br />ร่วมค้นหา</h1>
+      <p>คำถามและมุมมองต่อไปนี้ช่วยชี้ทางไปยังเอกสาร ภาพถ่าย สถิติ และคำบอกเล่าที่อาจทำให้เราเข้าใจชีวิตของผู้คนในแต่ละช่วงได้รอบด้านขึ้น</p>
     </div>
     <dl class="archive-stats">
       <div><dt>มีหลักฐานชีวิต</dt><dd>{documented.length}</dd></div>
-      <div><dt>เบาะแสบริบท</dt><dd>{leads.length}</dd></div>
-      <div><dt>ลิงก์เข้าถึงได้</dt><dd>{integrity.summary.reachable}</dd></div>
-      <div><dt>ต้องตรวจซ้ำ</dt><dd>{integrity.summary.unverified + integrity.summary.broken}</dd></div>
+      <div><dt>ข้อมูลประกอบ</dt><dd>{leads.length}</dd></div>
+      <div><dt>ช่วงเวลา</dt><dd>{periods.length}</dd></div>
+      <div><dt>คำถามชวนค้น</dt><dd>{leads.length}</dd></div>
     </dl>
   </header>
 
-  <section class="integrity-strip">
-    <div class="container">
-      <Link2 size={20} />
-      <p><strong>ตรวจ URL ล่าสุด {checkedDate}</strong> เข้าถึงได้ {integrity.summary.reachable}, ปลายทางจำกัดบอต {integrity.summary.restricted}, ลิงก์เสีย {integrity.summary.broken}, ยังยืนยันไม่ได้ {integrity.summary.unverified}</p>
-      <a href={`${base}sources/`}>ดูบรรณานุกรม <ArrowRight size={16} /></a>
-    </div>
-  </section>
-
-  <section class="gap-periods container" aria-label="ช่องว่างตามช่วงเวลา">
+  <section class="gap-periods container" aria-label="เรื่องที่ชวนร่วมค้นหาตามช่วงเวลา">
     {periods.map((period) => {
       const periodLeads = leads.filter((record) => record.period === period.range);
       return (
@@ -43,9 +33,9 @@ const checkedDate = new Date(integrity.meta.checkedAt).toLocaleDateString("th-TH
           <div class="gap-list">
             {periodLeads.map((record) => (
               <article class="gap-row">
-                <div><span class="evidence-badge contextual-lead">เบาะแสบริบท</span><h3>{record.title}</h3><p>{record.openQuestion}</p></div>
-                <div class="gap-voices"><strong>เสียงที่ยังขาด</strong><span>{record.missingVoices.join(", ")}</span></div>
-                <a href={`${base}archive/?q=${encodeURIComponent(record.title)}`} aria-label={`เปิดระเบียน ${record.title}`}><ArrowRight size={19} /></a>
+                <div><span class="evidence-badge contextual-lead">ข้อมูลประกอบ</span><h3>{record.title}</h3><p>{record.openQuestion}</p></div>
+                <div class="gap-voices"><strong>มุมมองที่ชวนค้นเพิ่ม</strong><span>{record.missingVoices.join(", ")}</span></div>
+                <a href={`${base}archive/?q=${encodeURIComponent(record.title)}`} aria-label={`ดูรายละเอียด ${record.title}`}><ArrowRight size={19} /></a>
               </article>
             ))}
           </div>
@@ -57,7 +47,7 @@ const checkedDate = new Date(integrity.meta.checkedAt).toLocaleDateString("th-TH
   <section class="contribution-band">
     <div class="container contribution-band-inner">
       <MessageSquareText size={30} />
-      <div><p class="eyebrow">Help improve the record</p><h2>คุณมีหลักฐานที่ช่วยเติมช่องว่างหรือไม่</h2><p>ส่งชื่อแหล่ง เลขหน้า ภาพเอกสาร หรือคำอธิบายสิ่งที่ควรแก้ได้โดยไม่ต้องเห็นด้วยกับบทสังเคราะห์ของโครงการ</p></div>
+      <div><p class="eyebrow">ร่วมแบ่งปันแหล่งข้อมูล</p><h2>คุณมีข้อมูลเกี่ยวกับเรื่องเหล่านี้หรือไม่</h2><p>เสนอชื่อหนังสือ เลขหน้า ภาพเอกสาร คลังท้องถิ่น หรือคำอธิบายสิ่งที่ควรแก้ได้ แม้มุมมองของคุณจะแตกต่างจากบทสังเคราะห์บนเว็บไซต์</p></div>
       <a class="primary-action" href={`${base}contribute/`}>เสนอข้อมูลหรือแก้ไข <ArrowRight size={18} /></a>
     </div>
   </section>

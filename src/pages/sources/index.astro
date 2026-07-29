@@ -40,11 +40,11 @@ const sortedContexts = [...worldContexts].sort((a, b) => (a.beYear ?? "").locale
           {sortedSources.map((source) => {
             const link = linkById.get(source.id);
             return <tr>
-              <td>{source.title}{source.note && <span class="source-note-flag" title={source.note}> · แก้ไขแล้ว</span>}</td>
+              <td>{source.title}{source.note && <span class="source-note-flag" title={source.note}> · มีหมายเหตุ</span>}</td>
               <td>{source.publisher}</td>
               <td>{sourceTypeLabel[source.type] ?? source.type}</td>
               <td>{languageLabel[source.language] ?? source.language}</td>
-              <td>{source.accessed ?? "ยังไม่บันทึก"}</td>
+              <td>{source.accessed ?? "ไม่ระบุ"}</td>
               <td><span class:list={["link-state", link?.state ?? "unverified"]}>{linkStateLabel[link?.state ?? "unverified"]}</span></td>
               <td><a href={source.url} target="_blank" rel="noreferrer">เปิดต้นฉบับ <ArrowUpRight size={14} /></a></td>
             </tr>;

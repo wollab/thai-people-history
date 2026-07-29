@@ -33,3 +33,5 @@ npm run build
 ## Publication model
 
 The research knowledge base remains the source of truth. Only reviewed, public-safe records should be promoted into this website.
+
+Public-facing copy follows `PUBLIC_WEB_WRITING_STANDARD.md`: write for visitors using the site, while keeping implementation status, developer workflow, and handoff language in repository documentation.

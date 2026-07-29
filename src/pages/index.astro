@@ -24,7 +24,7 @@ const bangkokPhotoBeYear = beFromCe(1960);
 
 <BaseLayout>
   <section class="issue-line container" aria-label="ข้อมูลฉบับ">
-    <span>ปีที่ 1</span><span>ฉบับต้นแบบ</span><span>ปรับปรุง 21 กรกฎาคม 2569</span><span>คลังเรียนรู้ประวัติศาสตร์โดยและเพื่อประชาชน</span>
+    <span>พ.ศ. 2460-2560</span><span>ปรับปรุง 30 กรกฎาคม 2569</span><span>คลังเรียนรู้ประวัติศาสตร์โดยและเพื่อประชาชน</span>
   </section>
 
   <section class="hero container">
@@ -75,7 +75,7 @@ const bangkokPhotoBeYear = beFromCe(1960);
   </section>
 
   <section class="stories container" id="stories" aria-labelledby="stories-heading">
-    <div class="section-heading compact"><div><p class="eyebrow">Reading paths</p><h2 id="stories-heading">เรื่องที่ชวนอ่านต่อ</h2></div><p class="draft-label">ทุกบทเปิดเผยหลักฐานและข้อจำกัด</p></div>
+    <div class="section-heading compact"><div><p class="eyebrow">เส้นทางอ่าน</p><h2 id="stories-heading">เรื่องที่ชวนอ่านต่อ</h2></div><p class="draft-label">ตรวจสอบที่มาและกรณีอ้างอิงได้ทุกบท</p></div>
     <div class="story-grid">
       {featuredStories.map((story) => (
         <article class="story-card">
@@ -105,9 +105,9 @@ const bangkokPhotoBeYear = beFromCe(1960);
   </section>
 
   <section class="method-strip container">
-    <div><p class="eyebrow">Research protocol</p><h2>อ่านง่าย โดยไม่ซ่อนความไม่แน่นอน</h2></div>
+    <div><p class="eyebrow">วิธีอ่านข้อมูล</p><h2>อ่านง่าย พร้อมตรวจสอบที่มา</h2></div>
     <p>ทุกเนื้อหาแยกข้อเท็จจริง การตีความ ข้อถกเถียง และคำถามที่ยังเปิดอยู่ พร้อมพากลับไปหาแหล่งอ้างอิง</p>
-    <a class="text-action" href={`${base}method/`}>ดูวิธีทำงาน <ArrowRight size={18} /></a>
+    <a class="text-action" href={`${base}method/`}>ดูวิธีอ่านและตรวจสอบ <ArrowRight size={18} /></a>
   </section>
 
 <script type="application/json" id="period-data" is:inline set:html={JSON.stringify(periodsWithCounts)}></script>

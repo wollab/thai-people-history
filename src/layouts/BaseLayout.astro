@@ -58,7 +58,7 @@ const eventSearchData = [
         <a href={`${base}reading/`}>เส้นทางอ่าน</a>
         <a href={`${base}explore/`}>สำรวจข้อมูล</a>
         <a href={`${base}sources/`}>แหล่งอ้างอิง</a>
-        <a href={`${base}gaps/`}>ช่องว่าง</a>
+        <a href={`${base}gaps/`}>ร่วมค้นหา</a>
         <a href={`${base}#timeline`}>สำรวจตามเวลา</a>
         <a href={`${base}#world`}>ไทยกับโลก</a>
       </nav>
@@ -71,7 +71,7 @@ const eventSearchData = [
         <a href={`${base}reading/`}>เส้นทางอ่าน</a>
         <a href={`${base}explore/`}>สำรวจแนวโน้ม</a>
         <a href={`${base}sources/`}>แหล่งอ้างอิง</a>
-        <a href={`${base}gaps/`}>ช่องว่างที่ยังเปิด</a>
+        <a href={`${base}gaps/`}>เรื่องที่ชวนร่วมค้นหา</a>
         <a href={`${base}#timeline`}>สำรวจตามเวลา</a>
         <a href={`${base}#world`}>ไทยกับโลก</a>
         <a href={`${base}method/`}>วิธีอ่านหลักฐาน</a>
@@ -82,14 +82,14 @@ const eventSearchData = [
     <footer class="site-footer">
       <div>
         <strong>ประวัติศาสตร์ประชาชนไทย 2460-2560</strong>
-        <p>ต้นแบบคลังความรู้สาธารณะ เนื้อหายังอยู่ระหว่างค้นคว้าและตรวจสอบ</p>
+        <p>คลังความรู้สาธารณะที่เชื่อมเหตุการณ์ ชีวิตผู้คน และแหล่งอ้างอิงตลอดหนึ่งศตวรรษ</p>
       </div>
       <nav aria-label="เมนูท้ายหน้า">
         <a href={`${base}archive/`}>ฐานข้อมูล</a>
         <a href={`${base}reading/`}>เส้นทางอ่าน</a>
         <a href={`${base}explore/`}>สำรวจข้อมูล</a>
         <a href={`${base}sources/`}>แหล่งอ้างอิง</a>
-        <a href={`${base}gaps/`}>ช่องว่าง</a>
+        <a href={`${base}gaps/`}>ร่วมค้นหา</a>
         <a href={`${base}method/`}>วิธีวิจัย</a>
         <a href={`${base}contribute/`}>เสนอแก้ไข</a>
       </nav>
@@ -99,7 +99,7 @@ const eventSearchData = [
       <form method="dialog" class="search-shell">
         <div class="search-bar">
           <Search size={22} aria-hidden="true" />
-          <label class="sr-only" for="site-search">ค้นหาภายในต้นแบบ</label>
+          <label class="sr-only" for="site-search">ค้นหาภายในเว็บไซต์</label>
           <input id="site-search" type="search" placeholder="ค้นหาช่วงเวลา ประเด็น หรือชีวิตผู้คน" autocomplete="off" data-search-input />
           <button class="icon-button" value="cancel" aria-label="ปิดการค้นหา"><X size={22} /></button>
         </div>
@@ -131,7 +131,7 @@ const eventSearchData = [
         { title: "แหล่งอ้างอิงทั้งหมด", meta: "Sources", href: `${base}sources/`, keywords: "แหล่งอ้างอิง source บรรณานุกรม บริบทโลก world context" },
         { title: "เส้นทางอ่านจากชีวิตผู้คน", meta: "บทสังเคราะห์", href: `${base}reading/`, keywords: "บทสังเคราะห์ เรื่องอ่าน evidence หลักฐาน" },
         { title: "สำรวจแนวโน้มผ่านหลักฐาน", meta: "Interactive data explorer", href: `${base}explore/`, keywords: "กราฟ timeline ไทย โลก กลไก หลักฐาน dashboard สำรวจข้อมูล" },
-        { title: "ช่องว่างที่ยังเปิด", meta: "Research gaps", href: `${base}gaps/`, keywords: "ช่องว่าง contextual lead missing voices คำถาม" },
+        { title: "เรื่องที่ชวนร่วมค้นหา", meta: "ข้อมูลและมุมมองเพิ่มเติม", href: `${base}gaps/`, keywords: "ร่วมค้นหา ข้อมูลประกอบ มุมมอง คำถาม" },
         { title: "หนึ่งร้อยปีในหน้าประวัติศาสตร์", meta: "สำรวจตามเวลา", href: `${base}#timeline`, keywords: "ปี เวลา ช่วง ประวัติศาสตร์" },
         { title: "วิธีอ่านหลักฐาน", meta: "เกี่ยวกับโครงการ", href: `${base}method/`, keywords: "แหล่งอ้างอิง fact interpretation dispute สงครามเย็น" },
         { title: "เสนอข้อมูลหรือแก้ไข", meta: "Contribute", href: `${base}contribute/`, keywords: "แจ้งแก้ไข เสนอแหล่ง ข้อผิดพลาด contribution" },
@@ -147,7 +147,7 @@ const eventSearchData = [
         const matches = searchData.filter((item) => `${item.title} ${item.meta} ${item.keywords}`.toLowerCase().includes(query));
         results.innerHTML = matches.length
           ? matches.map((item) => `<a href="${item.href}"><strong>${item.title}</strong><span>${item.meta}</span></a>`).join("")
-          : `<p class="empty-result">ยังไม่พบในต้นแบบ ลองใช้คำที่กว้างขึ้น</p>`;
+          : `<p class="empty-result">ไม่พบผลลัพธ์ ลองใช้คำที่กว้างขึ้น</p>`;
       });
     </script>
   </body>

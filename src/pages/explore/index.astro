@@ -1,9 +1,10 @@
 ---
-import { ArrowRight, Globe2, Info, Network, ShieldCheck } from "lucide-astro";
+import { ArrowRight, BarChart3, Globe2, Info, Network, ShieldCheck } from "lucide-astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { events, microhistories, worldContexts } from "../../data/history";
 import { microhistoryFacets, taxonomies } from "../../data/research-index";
 import { periods } from "../../data/periods";
+import { qualityIndicatorData, qualityIndicators } from "../../data/quality-indicators";
 
 const base = import.meta.env.BASE_URL;
 const firstYear = (value: string) => Number(value.match(/\d{4}/)?.[0] ?? 0);
@@ -70,25 +71,32 @@ const evidenceRows = periods.map((period) => {
 const documentedTotal = microhistories.filter((record) => record.evidenceStatus === "documented-case").length;
 const contextualTotal = microhistories.filter((record) => record.evidenceStatus === "contextual-lead").length;
 const worldLinkedEvents = events.filter((event) => event.worldContextIds.length).length;
-const explorerData = { timelinePeriods, mechanismRows };
+const qualitySeries = qualityIndicators.map((indicator) => ({
+  ...indicator,
+  events: events
+    .filter((event) => event.themes.some((theme) => indicator.eventThemes.includes(theme)))
+    .map((event) => ({ id: event.id, title: event.title, year: firstYear(event.beYear), beYear: event.beYear, href: `${base}archive/?q=${encodeURIComponent(event.title)}` })),
+}));
+const explorerData = { timelinePeriods, mechanismRows, qualitySeries };
 ---
 
 <BaseLayout title="สำรวจแนวโน้ม 100 ปี | ประวัติศาสตร์ประชาชนไทย" description="สำรวจช่วงเวลา กลไกการเปลี่ยนแปลง บริบทโลก และความครอบคลุมของหลักฐานในฐานประวัติศาสตร์ประชาชนไทย">
   <header class="explore-header container">
     <div>
-      <p class="eyebrow">Interactive evidence desk</p>
+      <p class="eyebrow">สำรวจข้อมูล 100 ปี</p>
       <h1>สำรวจแนวโน้ม<br />ผ่านหลักฐาน</h1>
-      <p>เลือกช่วงเวลาแล้วมองเหตุการณ์ไทยควบคู่บริบทโลก สำรวจว่าการเปลี่ยนแปลงส่งผ่านมาถึงชีวิตคนด้วยกลไกใด และเห็นตรงไปตรงมาว่าฐานข้อมูลยังหนาแน่นหรือเบาบางตรงไหน</p>
+      <p>เปรียบเทียบตัวชี้วัดชีวิต เหตุการณ์ไทย และบริบทโลกในช่วงเวลาเดียวกัน พร้อมค้นหาว่าความเปลี่ยนแปลงเดินทางมาถึงผู้คนผ่านกลไกใด</p>
     </div>
     <dl class="explore-summary" aria-label="ภาพรวมข้อมูลสำหรับสำรวจ">
       <div><dt>เหตุการณ์ไทย</dt><dd>{events.length}</dd></div>
       <div><dt>เชื่อมบริบทโลก</dt><dd>{worldLinkedEvents}</dd></div>
       <div><dt>หลักฐานชีวิต</dt><dd>{documentedTotal}</dd></div>
-      <div><dt>เบาะแสบริบท</dt><dd>{contextualTotal}</dd></div>
+      <div><dt>ข้อมูลประกอบ</dt><dd>{contextualTotal}</dd></div>
     </dl>
   </header>
 
   <nav class="explore-jump container" aria-label="ส่วนต่างๆ ในหน้าสำรวจ">
+    <a href="#life-indicators"><BarChart3 size={18} /> ชีวิตในตัวเลข</a>
     <a href="#linked-time"><Globe2 size={18} /> ไทยกับโลก</a>
     <a href="#mechanisms"><Network size={18} /> กลไกการเปลี่ยนแปลง</a>
     <a href="#evidence"><ShieldCheck size={18} /> ความครอบคลุมหลักฐาน</a>
@@ -108,9 +116,35 @@ const explorerData = { timelinePeriods, mechanismRows };
   </section>
 
   <div class="explore-main">
+    <section class="explore-section quality-section container" id="life-indicators">
+      <header class="explore-section-heading">
+        <div><p class="eyebrow">01 · ชีวิตในตัวเลข</p><h2>แนวโน้มระดับประเทศ พ.ศ. 2503-2560</h2></div>
+        <p>เลือกตัวชี้วัดเพื่อดูค่ารายปีและเหตุการณ์ที่เกิดในช่วงเดียวกัน การวางร่วมกันช่วยสำรวจเวลา แต่ไม่ได้ยืนยันความสัมพันธ์เชิงสาเหตุ</p>
+      </header>
+      <div class="indicator-tabs" role="tablist" aria-label="เลือกตัวชี้วัด">
+        {qualityIndicators.map((indicator, index) => (
+          <button type="button" role="tab" aria-selected={index === 0 ? "true" : "false"} data-indicator={indicator.id}>
+            <span>{qualityIndicatorData.dimensions.find((dimension) => dimension.id === indicator.dimension)?.labelTh}</span>
+            <strong>{indicator.shortLabelTh}</strong>
+          </button>
+        ))}
+      </div>
+      <div class="quality-chart-shell">
+        <div class="quality-chart-wrap">
+          <svg data-quality-chart viewBox="0 0 1000 360" role="img" aria-labelledby="quality-title quality-desc">
+            <title id="quality-title">กราฟตัวชี้วัดชีวิตและบริบทสังคมไทย</title>
+            <desc id="quality-desc">เลือกตัวชี้วัดและจุดข้อมูลเพื่ออ่านค่า ปี นิยาม และแหล่งอ้างอิง</desc>
+          </svg>
+          <div class="quality-chart-legend"><span><i class="indicator-line-key"></i>ค่าตัวชี้วัด</span><span><i class="period-key"></i>ช่วงเวลาที่เลือก</span><span><i class="event-key"></i>เหตุการณ์ร่วมช่วงเวลา</span></div>
+        </div>
+        <aside class="quality-inspector" aria-live="polite" data-quality-inspector></aside>
+      </div>
+      <p class="data-source-line">ที่มา: World Development Indicators · ปรับปรุงข้อมูลต้นทาง {qualityIndicatorData.meta.sourceLastUpdated} · แสดงข้อมูลถึง พ.ศ. 2560 ตามขอบเขตของคลัง</p>
+    </section>
+
     <section class="explore-section container" id="linked-time">
       <header class="explore-section-heading">
-        <div><p class="eyebrow">01 · Linked timeline</p><h2>ไทยและโลกในช่วงเวลาเดียวกัน</h2></div>
+        <div><p class="eyebrow">02 · ไทยกับโลก</p><h2>ไทยและโลกในช่วงเวลาเดียวกัน</h2></div>
         <p>เส้นเชื่อมหมายถึงฐานข้อมูลระบุบริบทที่เกี่ยวข้อง ไม่ได้ยืนยันว่าจุดหนึ่งเป็นสาเหตุโดยตรงของอีกจุดหนึ่ง</p>
       </header>
       <div class="timeline-legend" aria-label="คำอธิบายสัญลักษณ์"><span class="legend-world">◆ บริบทโลก</span><span class="legend-thai">● เหตุการณ์ไทย</span><span class="legend-link">— มีการเชื่อมในฐาน</span></div>
@@ -126,8 +160,8 @@ const explorerData = { timelinePeriods, mechanismRows };
         </div>
         <aside class="timeline-inspector" aria-live="polite" data-timeline-inspector>
           <p class="eyebrow">เลือกจุดบนกราฟ</p>
-          <h3>อ่านเหตุการณ์และข้อจำกัด</h3>
-          <p>กดจุดเหตุการณ์ไทยหรือบริบทโลกเพื่อดูรายละเอียด โดยยังไม่ตีความความสัมพันธ์เป็นเหตุและผล</p>
+          <h3>เลือกเหตุการณ์ที่สนใจ</h3>
+          <p>กดจุดเหตุการณ์ไทยหรือบริบทโลกเพื่ออ่านรายละเอียดและช่องทางความเชื่อมโยง</p>
         </aside>
       </div>
     </section>
@@ -135,7 +169,7 @@ const explorerData = { timelinePeriods, mechanismRows };
     <section class="explore-section mechanism-section" id="mechanisms">
       <div class="container">
         <header class="explore-section-heading">
-          <div><p class="eyebrow">02 · Change mechanisms</p><h2>การเปลี่ยนแปลงมาถึงชีวิตคนผ่านอะไร</h2></div>
+          <div><p class="eyebrow">03 · กลไกการเปลี่ยนแปลง</p><h2>การเปลี่ยนแปลงมาถึงชีวิตคนผ่านอะไร</h2></div>
           <p>วงกลมใหญ่หมายถึงมี microhistory ในคลังเชื่อมกับกลไกนั้นมากกว่า ไม่ได้หมายความว่ากลไกนั้นสำคัญกว่าในประวัติศาสตร์จริง</p>
         </header>
         <div class="mechanism-layout">
@@ -157,7 +191,7 @@ const explorerData = { timelinePeriods, mechanismRows };
           </div>
           <aside class="mechanism-inspector" aria-live="polite" data-mechanism-inspector>
             <p class="eyebrow">พ.ศ. 2500-2516</p>
-            <h3>เลือกวงกลมเพื่อเปิดกรณีชีวิต</h3>
+            <h3>เลือกวงกลมเพื่อดูกรณีชีวิต</h3>
             <p>ตารางนี้ช่วยตั้งคำถามว่าหลักฐานในคลังมองการเปลี่ยนแปลงผ่านกลไกใดบ่อยหรือน้อย</p>
           </aside>
         </div>
@@ -166,13 +200,13 @@ const explorerData = { timelinePeriods, mechanismRows };
 
     <section class="explore-section container" id="evidence">
       <header class="explore-section-heading">
-        <div><p class="eyebrow">03 · Evidence coverage</p><h2>หลักฐานแน่นตรงไหน ยังบางตรงไหน</h2></div>
-        <p>ส่วนนี้วัดสถานะงานวิจัยของคลัง ไม่ใช่วัดว่าคนในยุคนั้นมีชีวิตหรือเสียงมากน้อยเพียงใด</p>
+        <div><p class="eyebrow">04 · ความครอบคลุมของข้อมูล</p><h2>ข้อมูลชีวิตประชาชนในแต่ละช่วง</h2></div>
+        <p>แถบนี้แสดงสัดส่วนเรื่องที่มีหลักฐานชีวิตโดยตรงเทียบกับเรื่องที่ใช้ข้อมูลประกอบ จึงช่วยอ่านความละเอียดของข้อมูลในแต่ละช่วง</p>
       </header>
-      <div class="evidence-legend"><span><i class="documented"></i>มีหลักฐานกรณีชีวิต</span><span><i class="contextual"></i>มีหลักฐานบริบท</span><span><i class="research"></i>รอหลักฐาน</span></div>
+      <div class="evidence-legend"><span><i class="documented"></i>มีหลักฐานชีวิตโดยตรง</span><span><i class="contextual"></i>ข้อมูลประกอบ</span><span><i class="research"></i>ยังไม่มีข้อมูลเพียงพอ</span></div>
       <div class="evidence-chart">
         {evidenceRows.map((row) => (
-          <button type="button" class="evidence-row" data-evidence-period={row.period} aria-label={`ช่วง พ.ศ. ${row.period}: มีหลักฐานชีวิต ${row.documented}, มีหลักฐานบริบท ${row.contextual}, รอหลักฐาน ${row.research}`}>
+          <button type="button" class="evidence-row" data-evidence-period={row.period} aria-label={`ช่วง พ.ศ. ${row.period}: มีหลักฐานชีวิต ${row.documented}, มีข้อมูลประกอบ ${row.contextual}, ยังไม่มีข้อมูลเพียงพอ ${row.research}`}>
             <strong>{row.period}</strong>
             <span class="evidence-track">
               <i class="documented" style={`width:${(row.documented / row.total) * 100}%`}></i>
@@ -185,8 +219,8 @@ const explorerData = { timelinePeriods, mechanismRows };
       </div>
       <div class="evidence-note">
         <Info size={22} />
-        <div><strong>ยังไม่ใช่กราฟคุณภาพชีวิต</strong><p>ฐานปัจจุบันเหมาะกับการมองโครงสร้างหลักฐานและความเชื่อมโยง ส่วนอายุคาดเฉลี่ย รายได้จริง ความยากจน การศึกษา และบริการพื้นฐาน ต้องสร้างฐานตัวชี้วัดที่เก็บนิยาม หน่วย พื้นที่ และแหล่งข้อมูลของทุกจุดก่อน</p></div>
-        <a href={`${base}gaps/`}>ดูช่องว่างทั้งหมด <ArrowRight size={17} /></a>
+        <div><strong>จำนวนเรื่องไม่ใช่คะแนนของยุคสมัย</strong><p>จำนวนระเบียนสะท้อนสิ่งที่รวบรวมไว้ในคลัง ไม่ได้หมายความว่าช่วงหนึ่งมีเหตุการณ์หรือเสียงของประชาชนมากกว่าอีกช่วงหนึ่ง</p></div>
+        <a href={`${base}gaps/`}>ร่วมค้นหาเรื่องเพิ่มเติม <ArrowRight size={17} /></a>
       </div>
     </section>
   </div>
@@ -200,7 +234,11 @@ const explorerData = { timelinePeriods, mechanismRows };
     const timelineAxis = document.querySelector("[data-timeline-axis]");
     const timelineInspector = document.querySelector("[data-timeline-inspector]");
     const mechanismInspector = document.querySelector("[data-mechanism-inspector]");
+    const qualitySvg = document.querySelector("[data-quality-chart]");
+    const qualityInspector = document.querySelector("[data-quality-inspector]");
+    const indicatorButtons = [...document.querySelectorAll("[data-indicator]")];
     let selectedPeriod = "2500-2516";
+    let selectedIndicator = explorerData.qualitySeries[0]?.id;
 
     const svgElement = (name, attributes = {}) => {
       const element = document.createElementNS(svgNs, name);
@@ -214,7 +252,72 @@ const explorerData = { timelinePeriods, mechanismRows };
       const paragraph = document.createElement("p"); paragraph.textContent = copy;
       container.append(kicker, heading, paragraph);
       if (meta) { const detail = document.createElement("small"); detail.textContent = meta; container.append(detail); }
-      if (href) { const link = document.createElement("a"); link.href = href; link.textContent = "เปิดระเบียน →"; container.append(link); }
+      if (href) { const link = document.createElement("a"); link.href = href; link.textContent = "ดูรายละเอียดและแหล่งอ้างอิง →"; container.append(link); }
+    };
+
+    const renderQualityIndicator = () => {
+      const indicator = explorerData.qualitySeries.find((item) => item.id === selectedIndicator);
+      const period = explorerData.timelinePeriods.find((item) => item.range === selectedPeriod);
+      if (!indicator || !period || !qualitySvg || !qualityInspector) return;
+      qualitySvg.replaceChildren();
+      const plot = { left: 86, right: 960, top: 35, bottom: 292 };
+      const firstYear = 1960;
+      const lastYear = 2017;
+      const rawMin = Math.min(...indicator.values.map((point) => point.value));
+      const rawMax = Math.max(...indicator.values.map((point) => point.value));
+      const padding = Math.max((rawMax - rawMin) * .12, 1);
+      const min = rawMin - padding;
+      const max = rawMax + padding;
+      const x = (year) => plot.left + ((year - firstYear) / (lastYear - firstYear)) * (plot.right - plot.left);
+      const y = (value) => plot.bottom - ((value - min) / (max - min)) * (plot.bottom - plot.top);
+      const formatValue = (value) => new Intl.NumberFormat("th-TH", { maximumFractionDigits: indicator.decimals, minimumFractionDigits: indicator.decimals }).format(value);
+
+      const periodStart = Math.max(firstYear, period.start - 543);
+      const periodEnd = Math.min(lastYear, period.end - 543);
+      if (periodStart <= periodEnd) qualitySvg.append(svgElement("rect", { x: x(periodStart), y: plot.top, width: Math.max(2, x(periodEnd) - x(periodStart)), height: plot.bottom - plot.top, class: "quality-period-band" }));
+
+      for (let index = 0; index <= 4; index += 1) {
+        const value = min + ((max - min) / 4) * index;
+        const lineY = y(value);
+        qualitySvg.append(svgElement("line", { x1: plot.left, y1: lineY, x2: plot.right, y2: lineY, class: "quality-grid-line" }));
+        const label = svgElement("text", { x: plot.left - 12, y: lineY + 4, class: "quality-axis-label", "text-anchor": "end" });
+        label.textContent = formatValue(value);
+        qualitySvg.append(label);
+      }
+      [1960, 1970, 1980, 1990, 2000, 2010, 2017].forEach((year) => {
+        const label = svgElement("text", { x: x(year), y: 330, class: "quality-axis-label", "text-anchor": year === firstYear ? "start" : year === lastYear ? "end" : "middle" });
+        label.textContent = String(year + 543);
+        qualitySvg.append(label);
+      });
+
+      const pathData = indicator.values.map((point, index) => `${index ? "L" : "M"}${x(point.ceYear).toFixed(2)},${y(point.value).toFixed(2)}`).join(" ");
+      qualitySvg.append(svgElement("path", { d: pathData, class: "quality-series-line" }));
+      const relevantEvents = indicator.events.filter((event) => event.year >= firstYear + 543 && event.year <= lastYear + 543);
+      relevantEvents.forEach((event, index) => {
+        const eventX = x(event.year - 543);
+        const marker = svgElement("line", { x1: eventX, y1: plot.bottom + 4, x2: eventX, y2: plot.bottom + 15 + (index % 2) * 6, class: "quality-event-marker", tabindex: 0, role: "button", "aria-label": `${event.title} พ.ศ. ${event.beYear}` });
+        const inspect = () => setInspector(qualityInspector, `เหตุการณ์ร่วมช่วงเวลา · พ.ศ. ${event.beYear}`, event.title, "เหตุการณ์นี้วางร่วมกับกราฟตามปีและหัวข้อที่เกี่ยวข้อง การแสดงร่วมกันไม่ได้ยืนยันความสัมพันธ์เชิงสาเหตุ", event.href, indicator.labelTh);
+        marker.addEventListener("click", inspect); marker.addEventListener("keydown", (keyEvent) => { if (["Enter", " "].includes(keyEvent.key)) inspect(); });
+        qualitySvg.append(marker);
+      });
+      indicator.values.forEach((point) => {
+        const node = svgElement("circle", { cx: x(point.ceYear), cy: y(point.value), r: 4, class: "quality-point", tabindex: 0, role: "button", "aria-label": `${indicator.labelTh} พ.ศ. ${point.beYear} ${formatValue(point.value)} ${indicator.unitTh}` });
+        const inspect = () => setInspector(qualityInspector, `พ.ศ. ${point.beYear} / ค.ศ. ${point.ceYear}`, `${formatValue(point.value)} ${indicator.unitTh}`, indicator.definitionTh, indicator.sourceUrl, indicator.interpretationNoteTh);
+        node.addEventListener("click", inspect); node.addEventListener("keydown", (keyEvent) => { if (["Enter", " "].includes(keyEvent.key)) inspect(); });
+        qualitySvg.append(node);
+      });
+
+      const first = indicator.values[0];
+      const last = indicator.values.at(-1);
+      qualityInspector.replaceChildren();
+      const kicker = document.createElement("p"); kicker.className = "eyebrow"; kicker.textContent = `${indicator.worldBankCode} · ${indicator.unitTh}`;
+      const heading = document.createElement("h3"); heading.textContent = indicator.labelTh;
+      const definition = document.createElement("p"); definition.textContent = indicator.definitionTh;
+      const comparison = document.createElement("dl"); comparison.className = "quality-comparison";
+      comparison.innerHTML = `<div><dt>พ.ศ. ${first.beYear}</dt><dd>${formatValue(first.value)}</dd></div><div><dt>พ.ศ. ${last.beYear}</dt><dd>${formatValue(last.value)}</dd></div>`;
+      const note = document.createElement("small"); note.textContent = indicator.interpretationNoteTh;
+      const link = document.createElement("a"); link.href = indicator.sourceUrl; link.target = "_blank"; link.rel = "noreferrer"; link.textContent = `ที่มา: ${indicator.sourceTitle} ↗`;
+      qualityInspector.append(kicker, heading, definition, comparison, note, link);
     };
 
     const renderTimeline = (periodRange) => {
@@ -261,8 +364,14 @@ const explorerData = { timelinePeriods, mechanismRows };
       periodButtons.forEach((button) => button.setAttribute("aria-selected", String(button.dataset.explorePeriod === periodRange)));
       document.querySelectorAll("[data-mechanism]").forEach((cell) => cell.classList.toggle("period-active", cell.dataset.period === periodRange));
       document.querySelectorAll("[data-evidence-period]").forEach((row) => row.classList.toggle("period-active", row.dataset.evidencePeriod === periodRange));
+      renderQualityIndicator();
       renderTimeline(periodRange);
     };
+    indicatorButtons.forEach((button) => button.addEventListener("click", () => {
+      selectedIndicator = button.dataset.indicator;
+      indicatorButtons.forEach((item) => item.setAttribute("aria-selected", String(item === button)));
+      renderQualityIndicator();
+    }));
     periodButtons.forEach((button) => button.addEventListener("click", () => selectPeriod(button.dataset.explorePeriod)));
     document.querySelectorAll("[data-evidence-period]").forEach((row) => row.addEventListener("click", () => { selectPeriod(row.dataset.evidencePeriod); document.querySelector("#linked-time")?.scrollIntoView({ behavior: "smooth" }); }));
     document.querySelectorAll("[data-mechanism]").forEach((cell) => cell.addEventListener("click", () => {
@@ -293,7 +402,7 @@ const explorerData = { timelinePeriods, mechanismRows };
   .explore-summary div:nth-last-child(-n + 2) { border-bottom: 0; }
   .explore-summary dt { color: var(--muted); font-size: 13px; }
   .explore-summary dd { margin: 2px 0 0; color: var(--vermilion); font-family: var(--serif); font-size: 36px; font-weight: 800; line-height: 1.1; }
-  .explore-jump { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--ink); }
+  .explore-jump { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--ink); }
   .explore-jump a { display: flex; gap: 10px; align-items: center; justify-content: center; min-height: 64px; border-right: 1px solid var(--line); font-weight: 700; }
   .explore-jump a:last-child { border-right: 0; }
   .explore-jump a:hover { color: var(--vermilion); background: var(--paper-bright); }
@@ -312,6 +421,42 @@ const explorerData = { timelinePeriods, mechanismRows };
   .explore-section-heading { display: flex; gap: 60px; align-items: end; justify-content: space-between; margin-bottom: 30px; }
   .explore-section-heading h2 { margin: 0; font-family: var(--serif); font-size: clamp(34px, 4vw, 52px); line-height: 1.2; }
   .explore-section-heading > p { max-width: 560px; margin: 0; padding-left: 16px; border-left: 3px solid var(--mustard); color: var(--muted); font-size: 14px; }
+  .indicator-tabs { display: grid; grid-template-columns: repeat(6, 1fr); margin-bottom: 20px; border: 1px solid var(--ink); overflow-x: auto; }
+  .indicator-tabs button { min-width: 148px; min-height: 72px; padding: 10px 13px; border: 0; border-right: 1px solid var(--line); background: transparent; text-align: left; cursor: pointer; }
+  .indicator-tabs button:last-child { border-right: 0; }
+  .indicator-tabs span, .indicator-tabs strong { display: block; }
+  .indicator-tabs span { color: var(--muted); font-size: 11px; }
+  .indicator-tabs strong { margin-top: 2px; font-family: var(--serif); font-size: 16px; }
+  .indicator-tabs button[aria-selected="true"] { color: var(--paper-bright); background: var(--jade); }
+  .indicator-tabs button[aria-selected="true"] span { color: #d5ded9; }
+  .indicator-tabs button:focus-visible { outline: 3px solid var(--mustard); outline-offset: -4px; }
+  .quality-chart-shell { display: grid; grid-template-columns: minmax(0, 1fr) 340px; border-block: 1px solid var(--ink); }
+  .quality-chart-wrap { min-width: 0; padding: 18px 18px 10px; border-right: 1px solid var(--ink); background: var(--paper-bright); }
+  .quality-chart-wrap svg { display: block; width: 100%; height: 380px; }
+  .quality-chart-legend { display: flex; flex-wrap: wrap; gap: 10px 20px; padding: 5px 14px 10px; color: var(--muted); font-size: 12px; }
+  .quality-chart-legend i { display: inline-block; width: 18px; height: 3px; margin-right: 6px; vertical-align: 3px; }
+  .indicator-line-key { background: var(--vermilion); }
+  .period-key { height: 10px !important; background: #c79a2b55; }
+  .event-key { border-top: 3px dotted var(--jade); }
+  .quality-inspector { min-width: 0; padding: 30px; }
+  .quality-inspector h3 { margin: 0; font-family: var(--serif); font-size: 27px; line-height: 1.35; }
+  .quality-inspector > p:not(.eyebrow) { margin: 10px 0; color: #45423d; font-size: 14px; }
+  .quality-inspector small { display: block; margin-top: 15px; padding-left: 12px; border-left: 3px solid var(--mustard); color: var(--muted); font-size: 12px; }
+  .quality-inspector > a { display: inline-block; margin-top: 18px; color: var(--vermilion); font-size: 13px; font-weight: 700; }
+  .quality-comparison { display: grid; grid-template-columns: repeat(2, 1fr); margin: 18px 0 0; border-block: 1px solid var(--ink); }
+  .quality-comparison div { padding: 12px; border-right: 1px solid var(--line); }
+  .quality-comparison div:last-child { border-right: 0; }
+  .quality-comparison dt { color: var(--muted); font-size: 11px; }
+  .quality-comparison dd { margin: 2px 0 0; color: var(--vermilion); font-family: var(--serif); font-size: 25px; font-weight: 800; }
+  .data-source-line { margin: 11px 0 0; color: var(--muted); font-size: 12px; }
+  :global(.quality-period-band) { fill: #c79a2b24; }
+  :global(.quality-grid-line) { stroke: #d2cabd; stroke-width: 1; }
+  :global(.quality-axis-label) { fill: #68645b; font-family: var(--sans); font-size: 12px; }
+  :global(.quality-series-line) { fill: none; stroke: var(--vermilion); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+  :global(.quality-point) { fill: var(--paper-bright); stroke: var(--vermilion); stroke-width: 2; cursor: pointer; transform-box: fill-box; transform-origin: center; transition: transform 140ms ease; }
+  :global(.quality-point:hover), :global(.quality-point:focus) { outline: none; fill: var(--vermilion); transform: scale(1.7); }
+  :global(.quality-event-marker) { stroke: var(--jade); stroke-width: 4; stroke-dasharray: 2 3; cursor: pointer; }
+  :global(.quality-event-marker:hover), :global(.quality-event-marker:focus) { outline: none; stroke: var(--mustard); stroke-width: 7; }
   .timeline-legend, .evidence-legend { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-bottom: 15px; color: var(--muted); font-size: 13px; }
   .legend-world { color: var(--jade); } .legend-thai { color: var(--vermilion); }
   .linked-timeline-shell { display: grid; grid-template-columns: minmax(0, 1fr) 330px; border-block: 1px solid var(--ink); }
@@ -371,8 +516,8 @@ const explorerData = { timelinePeriods, mechanismRows };
     .explore-header { grid-template-columns: 1fr; gap: 32px; }
     .explore-controls .container { grid-template-columns: 1fr; }
     .explore-controls .container > span { display: none; }
-    .linked-timeline-shell, .mechanism-layout { grid-template-columns: 1fr; }
-    .linked-timeline-chart, .mechanism-matrix { border-right: 0; border-bottom: 1px solid var(--ink); }
+    .quality-chart-shell, .linked-timeline-shell, .mechanism-layout { grid-template-columns: 1fr; }
+    .quality-chart-wrap, .linked-timeline-chart, .mechanism-matrix { border-right: 0; border-bottom: 1px solid var(--ink); }
     .mechanism-matrix { overflow-x: auto; }
     .mechanism-head, .mechanism-row { min-width: 850px; }
   }
@@ -389,6 +534,10 @@ const explorerData = { timelinePeriods, mechanismRows };
     .explore-section-heading { display: grid; gap: 18px; }
     .explore-section-heading h2 { font-size: 34px; }
     .linked-timeline-chart { padding: 15px 8px 12px; overflow-x: auto; }
+    .indicator-tabs { margin-inline: -14px; border-inline: 0; padding-left: 14px; }
+    .quality-chart-wrap { padding-inline: 0; overflow-x: auto; }
+    .quality-chart-wrap svg, .quality-chart-legend { width: 760px; }
+    .quality-inspector { padding: 22px 14px; }
     .linked-timeline-chart svg { width: 850px; height: 260px; }
     .timeline-lane-name { display: none; }
     .timeline-axis { width: 850px; padding-left: 8px; }

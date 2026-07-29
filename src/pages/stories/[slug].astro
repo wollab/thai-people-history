@@ -35,19 +35,19 @@ const source = sourceMap[story.slug];
     <a class="back-link" href={`${base}#stories`}><ArrowLeft size={18} /> กลับสู่เรื่องที่ชวนอ่าน</a>
     <header class="article-header">
       <div class="article-date"><span>พ.ศ.</span><strong>{story.period}</strong><small>(ค.ศ. {ceRangeFromBeRange(story.period)})</small></div>
-      <div><p class="eyebrow">บททดลอง · อยู่ระหว่างค้นคว้า</p><h1>{story.title}</h1><p class="article-deck">{story.deck}</p></div>
+      <div><p class="eyebrow">คู่มือสำรวจหัวข้อ</p><h1>{story.title}</h1><p class="article-deck">{story.deck}</p></div>
     </header>
     <figure class="article-figure">
       <img src={`${base}${story.image}`} alt={story.imageAlt} />
       <figcaption><span>{source.caption}</span><span>{source.credit}</span></figcaption>
     </figure>
     <div class="article-layout">
-      <aside class="article-index"><strong>ในหน้านี้</strong><a href="#question">คำถามตั้งต้น</a><a href="#evidence">หลักฐานที่ต้องหา</a><a href="#limits">ขอบเขตของบททดลอง</a></aside>
+      <aside class="article-index"><strong>ในหน้านี้</strong><a href="#question">คำถามสำคัญ</a><a href="#evidence">ข้อมูลที่ควรอ่านร่วมกัน</a><a href="#limits">ข้อควรระวัง</a></aside>
       <div class="article-body">
-        <section id="question"><p class="status-line interpretation">คำถามตั้งต้น</p><h2>เราอยากเข้าใจอะไรจากเรื่องนี้</h2><p>หน้านี้แสดงรูปแบบการอ่านและระบบอ้างอิงของเว็บไซต์ เนื้อหายังเป็นกรอบคำถามจากโครงการวิจัย ไม่ใช่ข้อสรุปทางประวัติศาสตร์</p><p>การเขียนฉบับจริงจะเริ่มจากหลักฐานร่วมสมัย งานวิชาการ สถิติ และประสบการณ์ของผู้คนหลายกลุ่ม ก่อนพัฒนาเป็น narrative ที่อ่านต่อเนื่องได้</p></section>
-        <section id="evidence"><p class="status-line evidence"><CheckCircle2 size={17} /> แผนการตรวจสอบ</p><h2>หลักฐานที่ต้องนำมาวางร่วมกัน</h2><ul><li>เอกสารรัฐและสถิติที่นิยามปี หน่วย และขอบเขตชัดเจน</li><li>หนังสือพิมพ์ ภาพถ่าย หรือสื่อร่วมสมัยที่บอกบรรยากาศของช่วงเวลา</li><li>งานวิชาการที่ช่วยอธิบายโครงสร้างและข้อถกเถียง</li><li>คำบอกเล่าหรือ memoir ที่ทำให้เห็นประสบการณ์ แต่ต้องแยกความทรงจำออกจาก fact ที่ตรวจได้</li></ul></section>
-        <section id="limits"><p class="status-line caution">ข้อมูลยังไม่พอ</p><h2>ขอบเขตของบททดลอง</h2><p>ภาพในหน้านี้ผ่านการตรวจสิทธิแล้ว แต่ยังไม่ถูกใช้เป็นหลักฐานรองรับข้อสรุปใด เนื้อหาจะเลื่อนเป็น public draft ได้เมื่อ claim สำคัญมี source metadata, counter-source และ bias review ครบตาม protocol</p></section>
-        <section class="source-note"><p class="eyebrow">Image source</p><h2>ที่มาของภาพ</h2><p>{source.caption} · {source.credit}</p><a href={source.source} target="_blank" rel="noreferrer">เปิดหน้าต้นฉบับที่ Wikimedia Commons <ExternalLink size={16} /></a></section>
+        <section id="question"><p class="status-line interpretation">คำถามสำคัญ</p><h2>อ่านความเปลี่ยนแปลงผ่านชีวิตผู้คน</h2><p>หัวข้อนี้ชวนมองว่าโครงสร้างทางเศรษฐกิจ สังคม และนโยบายปรากฏในงาน บ้าน โรงเรียน การเดินทาง และความคาดหวังของผู้คนอย่างไร</p><p>การเปรียบเทียบคนต่างพื้นที่ ชนชั้น เพศ และวัยช่วยให้เห็นว่าการเปลี่ยนแปลงเดียวกันอาจสร้างโอกาสและภาระไม่เท่ากัน</p></section>
+        <section id="evidence"><p class="status-line evidence"><CheckCircle2 size={17} /> ข้อมูลที่ควรอ่านร่วมกัน</p><h2>อ่านแหล่งหลายประเภทควบคู่กัน</h2><ul><li>เอกสารรัฐและสถิติที่ระบุปี หน่วย และขอบเขตชัดเจน</li><li>หนังสือพิมพ์ ภาพถ่าย และสื่อร่วมสมัยที่บอกบรรยากาศของช่วงเวลา</li><li>งานวิชาการที่ช่วยอธิบายโครงสร้างและข้อถกเถียง</li><li>คำบอกเล่าและความทรงจำที่ทำให้เห็นประสบการณ์เฉพาะบุคคล</li></ul></section>
+        <section id="limits"><p class="status-line caution">ข้อควรระวัง</p><h2>ไม่ใช้กรณีเดียวแทนคนทุกกลุ่ม</h2><p>ภาพถ่ายและเรื่องเล่าแต่ละชิ้นมีพื้นที่ เวลา และมุมมองของผู้สร้าง การอ่านร่วมกับแหล่งประเภทอื่นช่วยลดการเหมารวมและทำให้เห็นความแตกต่างภายในสังคม</p></section>
+        <section class="source-note"><p class="eyebrow">ที่มาของภาพ</p><h2>ภาพประกอบหน้านี้</h2><p>{source.caption} · {source.credit}</p><a href={source.source} target="_blank" rel="noreferrer">เปิดหน้าต้นฉบับที่ Wikimedia Commons <ExternalLink size={16} /></a></section>
       </div>
     </div>
   </article>

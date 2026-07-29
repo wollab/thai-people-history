@@ -11,12 +11,12 @@ const stories = synthesisStories.map((story) => ({
 }));
 ---
 
-<BaseLayout title="เส้นทางอ่าน | ประวัติศาสตร์ประชาชนไทย" description="บทสังเคราะห์ 12 เส้นทางจากฐานประวัติศาสตร์ประชาชนไทย พร้อมหลักฐาน ข้อจำกัด และคำถามที่ยังเปิดอยู่">
+<BaseLayout title="เส้นทางอ่าน | ประวัติศาสตร์ประชาชนไทย" description="บทสังเคราะห์ 12 เส้นทางจากฐานประวัติศาสตร์ประชาชนไทย พร้อมกรณีอ้างอิงและที่มาของข้อมูล">
   <header class="archive-header container reading-header">
     <div>
-      <p class="eyebrow">Evidence-led reading paths</p>
+      <p class="eyebrow">บทอ่านจากหลักฐาน</p>
       <h1>เส้นทางอ่าน<br />จากชีวิตผู้คน</h1>
-      <p>บทสังเคราะห์เหล่านี้วางกรณีชีวิตหลายช่วงเวลาเข้าด้วยกันเพื่อให้เห็นความเปลี่ยนแปลงระยะยาว ทุกบทแสดงหลักฐานที่ใช้และสิ่งที่ฐานปัจจุบันยังตอบไม่ได้</p>
+      <p>บทสังเคราะห์เหล่านี้วางกรณีชีวิตจากหลายช่วงเวลาเข้าด้วยกันเพื่อให้เห็นความเปลี่ยนแปลงระยะยาว พร้อมลิงก์ไปยังกรณีและแหล่งอ้างอิงที่ใช้</p>
     </div>
     <dl class="archive-stats stats-2">
       <div><dt>บทสังเคราะห์</dt><dd>{stories.length}</dd></div>
@@ -34,8 +34,8 @@ const stories = synthesisStories.map((story) => ({
           <p>{story.deck}</p>
           <div class="reading-evidence-line">
             <span><BookOpenCheck size={16} /> หลักฐาน {story.evidenceIds.length} กรณี</span>
-            <span>{story.documented} documented case</span>
-            <span><CircleAlert size={16} /> มีข้อจำกัดเปิดเผย</span>
+            <span>{story.documented} กรณีที่มีหลักฐานชีวิตโดยตรง</span>
+            <span><CircleAlert size={16} /> มีคำอธิบายขอบเขตการอ่าน</span>
           </div>
         </div>
         <a class="reading-open" href={`${base}reading/${story.slug}/`} aria-label={`อ่าน ${story.title}`}><ArrowRight size={22} /></a>

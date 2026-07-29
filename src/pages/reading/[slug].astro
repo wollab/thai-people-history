@@ -13,9 +13,9 @@ const base = import.meta.env.BASE_URL;
 const evidence = story.evidenceIds.map((id) => microhistoryById.get(id)).filter(Boolean);
 const sources = story.sourceIds.map((id) => sourceById.get(id)).filter(Boolean);
 const evidenceLabel: Record<string, string> = {
-  "documented-case": "มีหลักฐานชีวิตจริง",
-  "contextual-lead": "เบาะแสบริบท",
-  "research-lead": "ต้องค้นต่อ",
+  "documented-case": "มีหลักฐานชีวิตโดยตรง",
+  "contextual-lead": "ข้อมูลประกอบ",
+  "research-lead": "ยังไม่มีข้อมูลเพียงพอ",
 };
 ---
 
@@ -23,7 +23,7 @@ const evidenceLabel: Record<string, string> = {
   <article class="synthesis-page">
     <header class="synthesis-hero container">
       <a class="back-link" href={`${base}reading/`}><ArrowLeft size={18} /> เส้นทางอ่านทั้งหมด</a>
-      <p class="eyebrow">Reader draft · พ.ศ. {story.periodRange}</p>
+      <p class="eyebrow">บทสังเคราะห์ · พ.ศ. {story.periodRange}</p>
       <h1>{story.title}</h1>
       <p class="article-deck">{story.deck}</p>
       <div class="synthesis-meta"><span><BookOpenCheck size={17} /> {evidence.length} กรณีหลักฐาน</span><span><Database size={17} /> {sources.length} แหล่งอ้างอิง</span></div>
@@ -31,7 +31,7 @@ const evidenceLabel: Record<string, string> = {
 
     <section class="synthesis-claim">
       <div class="container synthesis-claim-inner">
-        <p class="eyebrow">ข้อสังเคราะห์ที่ฐานปัจจุบันรองรับ</p>
+        <p class="eyebrow">ข้อสังเคราะห์จากกรณีอ้างอิง</p>
         <h2>{story.claim}</h2>
         <p>ข้อความนี้เป็นการสังเคราะห์จากกรณีด้านล่าง ไม่ใช่คำอธิบายแทนประสบการณ์ของคนไทยทุกพื้นที่หรือทุกกลุ่ม</p>
       </div>
@@ -41,13 +41,13 @@ const evidenceLabel: Record<string, string> = {
       <aside class="article-index">
         <strong>ในหน้านี้</strong>
         <a href="#evidence">หลักฐานที่วางร่วมกัน</a>
-        <a href="#limits">ข้อจำกัด</a>
+        <a href="#limits">ขอบเขตการอ่าน</a>
         <a href="#sources">แหล่งอ้างอิง</a>
-        <a href={`${base}gaps/`}>ช่องว่างทั้งหมด</a>
+        <a href={`${base}gaps/`}>เรื่องที่ชวนร่วมค้นหา</a>
       </aside>
       <div class="synthesis-body">
         <section id="evidence">
-          <p class="status-line evidence"><BookOpenCheck size={17} /> Evidence trail</p>
+          <p class="status-line evidence"><BookOpenCheck size={17} /> กรณีอ้างอิง</p>
           <h2>หลักฐานที่วางร่วมกัน</h2>
           <div class="synthesis-evidence-list">
             {evidence.map((record) => (
@@ -56,21 +56,21 @@ const evidenceLabel: Record<string, string> = {
                 <h3>{record?.title}</h3>
                 <p>{record?.fact}</p>
                 <div class="evidence-lived"><strong>สิ่งที่หลักฐานช่วยให้เห็นในระดับชีวิต</strong><p>{record?.livedExperience}</p></div>
-                <a href={`${base}archive/?q=${encodeURIComponent(record?.title ?? "")}`}>เปิดระเบียนและคำถามที่ยังค้าง <ArrowRight size={16} /></a>
+                <a href={`${base}archive/?q=${encodeURIComponent(record?.title ?? "")}`}>ดูรายละเอียดและแหล่งอ้างอิง <ArrowRight size={16} /></a>
               </article>
             ))}
           </div>
         </section>
 
         <section id="limits" class="synthesis-limit">
-          <p class="status-line caution"><AlertTriangle size={17} /> ขอบเขตที่ยังห้ามสรุปเกิน</p>
-          <h2>ฐานนี้ยังตอบไม่ได้ทั้งหมด</h2>
+          <p class="status-line caution"><AlertTriangle size={17} /> ขอบเขตการอ่าน</p>
+          <h2>สิ่งที่ควรพิจารณาร่วมกัน</h2>
           <p>{story.limits}</p>
-          <a href={`${base}gaps/`}>ดู contextual lead และเสียงที่ยังขาดทั้งหมด <ArrowRight size={16} /></a>
+          <a href={`${base}gaps/`}>ดูเรื่องและมุมมองที่ชวนร่วมค้นหา <ArrowRight size={16} /></a>
         </section>
 
         <section id="sources" class="synthesis-sources">
-          <p class="status-line interpretation"><Scale size={17} /> Sources</p>
+          <p class="status-line interpretation"><Scale size={17} /> ที่มาของข้อมูล</p>
           <h2>แหล่งอ้างอิงของบทนี้</h2>
           <ol>
             {sources.map((source) => (
