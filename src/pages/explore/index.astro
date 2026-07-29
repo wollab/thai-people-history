@@ -1,0 +1,400 @@
+---
+import { ArrowRight, Globe2, Info, Network, ShieldCheck } from "lucide-astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { events, microhistories, worldContexts } from "../../data/history";
+import { microhistoryFacets, taxonomies } from "../../data/research-index";
+import { periods } from "../../data/periods";
+
+const base = import.meta.env.BASE_URL;
+const firstYear = (value: string) => Number(value.match(/\d{4}/)?.[0] ?? 0);
+const periodRanges = Object.fromEntries(periods.map((period) => {
+  const [start, end] = period.range.split("-").map(Number);
+  return [period.range, { start, end }];
+}));
+
+const timelinePeriods = periods.map((period) => {
+  const periodEvents = events.filter((event) => event.period === period.range);
+  const contextIds = new Set(periodEvents.flatMap((event) => event.worldContextIds));
+  return {
+    ...period,
+    ...periodRanges[period.range],
+    events: periodEvents.map((event) => ({
+      id: event.id,
+      year: firstYear(event.beYear),
+      beYear: event.beYear,
+      ceYear: event.ceYear,
+      title: event.title,
+      summary: event.summary,
+      impactStatus: event.impactStatus,
+      contextIds: event.worldContextIds,
+      href: `${base}archive/?q=${encodeURIComponent(event.title)}`,
+    })),
+    contexts: worldContexts.filter((context) => contextIds.has(context.id)).map((context) => ({
+      id: context.id,
+      year: firstYear(context.beYear),
+      beYear: context.beYear,
+      ceYear: context.ceYear,
+      title: context.title,
+      summary: context.summary,
+      channel: context.channel,
+      relation: context.relation,
+    })),
+  };
+});
+
+const mechanismRows = taxonomies.mechanisms.map((mechanism) => ({
+  ...mechanism,
+  periods: periods.map((period) => {
+    const ids = Object.entries(microhistoryFacets)
+      .filter(([, facet]) => facet.period === period.range && facet.mechanismIds.includes(mechanism.id))
+      .map(([id]) => id);
+    return {
+      period: period.range,
+      count: ids.length,
+      records: ids.map((id) => {
+        const record = microhistories.find((item) => item.id === id)!;
+        return { id, title: record.title, beYear: record.beYear, evidenceStatus: record.evidenceStatus, href: `${base}archive/?q=${encodeURIComponent(record.title)}` };
+      }),
+    };
+  }),
+}));
+const maxMechanismCount = Math.max(...mechanismRows.flatMap((row) => row.periods.map((item) => item.count)));
+
+const evidenceRows = periods.map((period) => {
+  const records = microhistories.filter((record) => record.period === period.range);
+  const documented = records.filter((record) => record.evidenceStatus === "documented-case").length;
+  const contextual = records.filter((record) => record.evidenceStatus === "contextual-lead").length;
+  const research = records.filter((record) => record.evidenceStatus === "research-lead").length;
+  return { period: period.range, total: records.length, documented, contextual, research };
+});
+const documentedTotal = microhistories.filter((record) => record.evidenceStatus === "documented-case").length;
+const contextualTotal = microhistories.filter((record) => record.evidenceStatus === "contextual-lead").length;
+const worldLinkedEvents = events.filter((event) => event.worldContextIds.length).length;
+const explorerData = { timelinePeriods, mechanismRows };
+---
+
+<BaseLayout title="สำรวจแนวโน้ม 100 ปี | ประวัติศาสตร์ประชาชนไทย" description="สำรวจช่วงเวลา กลไกการเปลี่ยนแปลง บริบทโลก และความครอบคลุมของหลักฐานในฐานประวัติศาสตร์ประชาชนไทย">
+  <header class="explore-header container">
+    <div>
+      <p class="eyebrow">Interactive evidence desk</p>
+      <h1>สำรวจแนวโน้ม<br />ผ่านหลักฐาน</h1>
+      <p>เลือกช่วงเวลาแล้วมองเหตุการณ์ไทยควบคู่บริบทโลก สำรวจว่าการเปลี่ยนแปลงส่งผ่านมาถึงชีวิตคนด้วยกลไกใด และเห็นตรงไปตรงมาว่าฐานข้อมูลยังหนาแน่นหรือเบาบางตรงไหน</p>
+    </div>
+    <dl class="explore-summary" aria-label="ภาพรวมข้อมูลสำหรับสำรวจ">
+      <div><dt>เหตุการณ์ไทย</dt><dd>{events.length}</dd></div>
+      <div><dt>เชื่อมบริบทโลก</dt><dd>{worldLinkedEvents}</dd></div>
+      <div><dt>หลักฐานชีวิต</dt><dd>{documentedTotal}</dd></div>
+      <div><dt>เบาะแสบริบท</dt><dd>{contextualTotal}</dd></div>
+    </dl>
+  </header>
+
+  <nav class="explore-jump container" aria-label="ส่วนต่างๆ ในหน้าสำรวจ">
+    <a href="#linked-time"><Globe2 size={18} /> ไทยกับโลก</a>
+    <a href="#mechanisms"><Network size={18} /> กลไกการเปลี่ยนแปลง</a>
+    <a href="#evidence"><ShieldCheck size={18} /> ความครอบคลุมหลักฐาน</a>
+  </nav>
+
+  <section class="explore-controls" aria-label="เลือกช่วงเวลา">
+    <div class="container">
+      <span>ช่วงที่กำลังอ่าน</span>
+      <div class="explore-period-tabs" role="tablist">
+        {periods.map((period, index) => (
+          <button type="button" role="tab" aria-selected={index === 2 ? "true" : "false"} data-explore-period={period.range}>
+            <strong>{period.range}</strong><small>{period.title}</small>
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="explore-main">
+    <section class="explore-section container" id="linked-time">
+      <header class="explore-section-heading">
+        <div><p class="eyebrow">01 · Linked timeline</p><h2>ไทยและโลกในช่วงเวลาเดียวกัน</h2></div>
+        <p>เส้นเชื่อมหมายถึงฐานข้อมูลระบุบริบทที่เกี่ยวข้อง ไม่ได้ยืนยันว่าจุดหนึ่งเป็นสาเหตุโดยตรงของอีกจุดหนึ่ง</p>
+      </header>
+      <div class="timeline-legend" aria-label="คำอธิบายสัญลักษณ์"><span class="legend-world">◆ บริบทโลก</span><span class="legend-thai">● เหตุการณ์ไทย</span><span class="legend-link">— มีการเชื่อมในฐาน</span></div>
+      <div class="linked-timeline-shell">
+        <div class="linked-timeline-chart">
+          <div class="timeline-lane-name world">โลกและภูมิภาค</div>
+          <div class="timeline-lane-name thai">ประเทศไทย</div>
+          <svg data-linked-timeline viewBox="0 0 1200 230" role="img" aria-labelledby="timeline-title timeline-desc">
+            <title id="timeline-title">เส้นเวลาเปรียบเทียบประเทศไทยกับโลก</title>
+            <desc id="timeline-desc">เลือกช่วงเวลาหรือจุดบนกราฟเพื่ออ่านรายละเอียดเหตุการณ์และระดับความสัมพันธ์</desc>
+          </svg>
+          <div class="timeline-axis" data-timeline-axis></div>
+        </div>
+        <aside class="timeline-inspector" aria-live="polite" data-timeline-inspector>
+          <p class="eyebrow">เลือกจุดบนกราฟ</p>
+          <h3>อ่านเหตุการณ์และข้อจำกัด</h3>
+          <p>กดจุดเหตุการณ์ไทยหรือบริบทโลกเพื่อดูรายละเอียด โดยยังไม่ตีความความสัมพันธ์เป็นเหตุและผล</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="explore-section mechanism-section" id="mechanisms">
+      <div class="container">
+        <header class="explore-section-heading">
+          <div><p class="eyebrow">02 · Change mechanisms</p><h2>การเปลี่ยนแปลงมาถึงชีวิตคนผ่านอะไร</h2></div>
+          <p>วงกลมใหญ่หมายถึงมี microhistory ในคลังเชื่อมกับกลไกนั้นมากกว่า ไม่ได้หมายความว่ากลไกนั้นสำคัญกว่าในประวัติศาสตร์จริง</p>
+        </header>
+        <div class="mechanism-layout">
+          <div class="mechanism-matrix" role="table" aria-label="จำนวน microhistory แยกตามกลไกและช่วงเวลา">
+            <div class="mechanism-head" role="row">
+              <span role="columnheader">กลไก</span>
+              {periods.map((period) => <span role="columnheader">{period.range}</span>)}
+            </div>
+            {mechanismRows.map((row) => (
+              <div class="mechanism-row" role="row">
+                <strong role="rowheader">{row.label}</strong>
+                {row.periods.map((cell) => (
+                  <button type="button" role="cell" data-mechanism={row.id} data-period={cell.period} aria-label={`${row.label} ช่วง พ.ศ. ${cell.period} มี ${cell.count} รายการ`}>
+                    <span style={`--dot-size:${cell.count ? 13 + (cell.count / maxMechanismCount) * 31 : 4}px`}>{cell.count || ""}</span>
+                  </button>
+                ))}
+              </div>
+            ))}
+          </div>
+          <aside class="mechanism-inspector" aria-live="polite" data-mechanism-inspector>
+            <p class="eyebrow">พ.ศ. 2500-2516</p>
+            <h3>เลือกวงกลมเพื่อเปิดกรณีชีวิต</h3>
+            <p>ตารางนี้ช่วยตั้งคำถามว่าหลักฐานในคลังมองการเปลี่ยนแปลงผ่านกลไกใดบ่อยหรือน้อย</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-section container" id="evidence">
+      <header class="explore-section-heading">
+        <div><p class="eyebrow">03 · Evidence coverage</p><h2>หลักฐานแน่นตรงไหน ยังบางตรงไหน</h2></div>
+        <p>ส่วนนี้วัดสถานะงานวิจัยของคลัง ไม่ใช่วัดว่าคนในยุคนั้นมีชีวิตหรือเสียงมากน้อยเพียงใด</p>
+      </header>
+      <div class="evidence-legend"><span><i class="documented"></i>มีหลักฐานกรณีชีวิต</span><span><i class="contextual"></i>มีหลักฐานบริบท</span><span><i class="research"></i>รอหลักฐาน</span></div>
+      <div class="evidence-chart">
+        {evidenceRows.map((row) => (
+          <button type="button" class="evidence-row" data-evidence-period={row.period} aria-label={`ช่วง พ.ศ. ${row.period}: มีหลักฐานชีวิต ${row.documented}, มีหลักฐานบริบท ${row.contextual}, รอหลักฐาน ${row.research}`}>
+            <strong>{row.period}</strong>
+            <span class="evidence-track">
+              <i class="documented" style={`width:${(row.documented / row.total) * 100}%`}></i>
+              <i class="contextual" style={`width:${(row.contextual / row.total) * 100}%`}></i>
+              <i class="research" style={`width:${(row.research / row.total) * 100}%`}></i>
+            </span>
+            <span>{row.documented}/{row.total}</span>
+          </button>
+        ))}
+      </div>
+      <div class="evidence-note">
+        <Info size={22} />
+        <div><strong>ยังไม่ใช่กราฟคุณภาพชีวิต</strong><p>ฐานปัจจุบันเหมาะกับการมองโครงสร้างหลักฐานและความเชื่อมโยง ส่วนอายุคาดเฉลี่ย รายได้จริง ความยากจน การศึกษา และบริการพื้นฐาน ต้องสร้างฐานตัวชี้วัดที่เก็บนิยาม หน่วย พื้นที่ และแหล่งข้อมูลของทุกจุดก่อน</p></div>
+        <a href={`${base}gaps/`}>ดูช่องว่างทั้งหมด <ArrowRight size={17} /></a>
+      </div>
+    </section>
+  </div>
+
+  <script type="application/json" id="explorer-data" is:inline set:html={JSON.stringify(explorerData)}></script>
+  <script is:inline define:vars={{ base }}>
+    const explorerData = JSON.parse(document.querySelector("#explorer-data")?.textContent ?? "{}");
+    const svgNs = "http://www.w3.org/2000/svg";
+    const periodButtons = [...document.querySelectorAll("[data-explore-period]")];
+    const timelineSvg = document.querySelector("[data-linked-timeline]");
+    const timelineAxis = document.querySelector("[data-timeline-axis]");
+    const timelineInspector = document.querySelector("[data-timeline-inspector]");
+    const mechanismInspector = document.querySelector("[data-mechanism-inspector]");
+    let selectedPeriod = "2500-2516";
+
+    const svgElement = (name, attributes = {}) => {
+      const element = document.createElementNS(svgNs, name);
+      Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, String(value)));
+      return element;
+    };
+    const setInspector = (container, eyebrow, title, copy, href, meta = "") => {
+      container.replaceChildren();
+      const kicker = document.createElement("p"); kicker.className = "eyebrow"; kicker.textContent = eyebrow;
+      const heading = document.createElement("h3"); heading.textContent = title;
+      const paragraph = document.createElement("p"); paragraph.textContent = copy;
+      container.append(kicker, heading, paragraph);
+      if (meta) { const detail = document.createElement("small"); detail.textContent = meta; container.append(detail); }
+      if (href) { const link = document.createElement("a"); link.href = href; link.textContent = "เปิดระเบียน →"; container.append(link); }
+    };
+
+    const renderTimeline = (periodRange) => {
+      const period = explorerData.timelinePeriods.find((item) => item.range === periodRange);
+      if (!period || !timelineSvg) return;
+      timelineSvg.replaceChildren();
+      const margin = 72;
+      const width = 1200 - margin * 2;
+      const x = (year) => margin + ((Math.min(period.end, Math.max(period.start, year)) - period.start) / Math.max(1, period.end - period.start)) * width;
+      [65, 118].forEach((y) => timelineSvg.append(svgElement("line", { x1: margin, y1: y, x2: 1200 - margin, y2: y, class: "timeline-guide" })));
+      const countsByYear = {};
+      const eventPositions = new Map();
+      period.events.forEach((event) => {
+        const lane = countsByYear[event.year] ?? 0;
+        countsByYear[event.year] = lane + 1;
+        eventPositions.set(event.id, { x: x(event.year), y: 135 + Math.min(lane, 3) * 21 });
+      });
+      const contextPositions = new Map(period.contexts.map((context, index) => [context.id, { x: x(context.year), y: 44 + (index % 2) * 20 }]));
+      period.events.forEach((event) => event.contextIds.forEach((contextId) => {
+        const from = contextPositions.get(contextId); const to = eventPositions.get(event.id);
+        if (from && to) timelineSvg.append(svgElement("line", { x1: from.x, y1: from.y, x2: to.x, y2: to.y, class: "timeline-context-link" }));
+      }));
+      period.contexts.forEach((context) => {
+        const position = contextPositions.get(context.id);
+        const node = svgElement("polygon", { points: `${position.x},${position.y - 8} ${position.x + 8},${position.y} ${position.x},${position.y + 8} ${position.x - 8},${position.y}`, class: `timeline-node world relation-${context.relation}`, tabindex: 0, role: "button", "aria-label": `${context.title} พ.ศ. ${context.beYear}` });
+        const inspect = () => setInspector(timelineInspector, `บริบทโลก · พ.ศ. ${context.beYear} / ค.ศ. ${context.ceYear}`, context.title, context.summary, "", `ช่องทางที่ต้องพิจารณา: ${context.channel} · ระดับความสัมพันธ์: ${context.relation}`);
+        node.addEventListener("click", inspect); node.addEventListener("keydown", (event) => { if (["Enter", " "].includes(event.key)) inspect(); });
+        timelineSvg.append(node);
+      });
+      period.events.forEach((event) => {
+        const position = eventPositions.get(event.id);
+        const node = svgElement("circle", { cx: position.x, cy: position.y, r: 8, class: `timeline-node thai ${event.impactStatus}`, tabindex: 0, role: "button", "aria-label": `${event.title} พ.ศ. ${event.beYear}` });
+        const inspect = () => setInspector(timelineInspector, `ประเทศไทย · พ.ศ. ${event.beYear} / ค.ศ. ${event.ceYear}`, event.title, event.summary, event.href, event.impactStatus === "documented" ? "มีหลักฐานผลต่อประชาชน" : "หลักฐานระดับบริบท");
+        node.addEventListener("click", inspect); node.addEventListener("keydown", (event) => { if (["Enter", " "].includes(event.key)) inspect(); });
+        timelineSvg.append(node);
+      });
+      timelineAxis.innerHTML = `<span>${period.start}</span><strong>${period.title}</strong><span>${period.end}</span>`;
+      const first = period.events[0];
+      if (first) setInspector(timelineInspector, `ประเทศไทย · พ.ศ. ${first.beYear} / ค.ศ. ${first.ceYear}`, first.title, first.summary, first.href, `${period.events.length} เหตุการณ์ไทย · ${period.contexts.length} บริบทโลกในช่วงนี้`);
+    };
+
+    const selectPeriod = (periodRange) => {
+      selectedPeriod = periodRange;
+      periodButtons.forEach((button) => button.setAttribute("aria-selected", String(button.dataset.explorePeriod === periodRange)));
+      document.querySelectorAll("[data-mechanism]").forEach((cell) => cell.classList.toggle("period-active", cell.dataset.period === periodRange));
+      document.querySelectorAll("[data-evidence-period]").forEach((row) => row.classList.toggle("period-active", row.dataset.evidencePeriod === periodRange));
+      renderTimeline(periodRange);
+    };
+    periodButtons.forEach((button) => button.addEventListener("click", () => selectPeriod(button.dataset.explorePeriod)));
+    document.querySelectorAll("[data-evidence-period]").forEach((row) => row.addEventListener("click", () => { selectPeriod(row.dataset.evidencePeriod); document.querySelector("#linked-time")?.scrollIntoView({ behavior: "smooth" }); }));
+    document.querySelectorAll("[data-mechanism]").forEach((cell) => cell.addEventListener("click", () => {
+      const row = explorerData.mechanismRows.find((item) => item.id === cell.dataset.mechanism);
+      const period = row?.periods.find((item) => item.period === cell.dataset.period);
+      if (!row || !period) return;
+      selectPeriod(period.period);
+      mechanismInspector.replaceChildren();
+      const kicker = document.createElement("p"); kicker.className = "eyebrow"; kicker.textContent = `พ.ศ. ${period.period} · ${period.count} รายการ`;
+      const heading = document.createElement("h3"); heading.textContent = row.label;
+      const copy = document.createElement("p"); copy.textContent = period.count ? "กรณีในคลังที่ถูกจัดหมวดด้วยกลไกนี้" : "ยังไม่มีกรณีในคลังสำหรับกลไกและช่วงเวลานี้";
+      const list = document.createElement("ol");
+      period.records.slice(0, 6).forEach((record) => { const item = document.createElement("li"); const link = document.createElement("a"); link.href = record.href; link.textContent = `พ.ศ. ${record.beYear} · ${record.title}`; item.append(link); list.append(item); });
+      mechanismInspector.append(kicker, heading, copy, list);
+      if (period.records.length > 6) { const more = document.createElement("small"); more.textContent = `และอีก ${period.records.length - 6} รายการ`; mechanismInspector.append(more); }
+    }));
+    selectPeriod(selectedPeriod);
+  </script>
+</BaseLayout>
+
+<style>
+  .explore-header { display: grid; grid-template-columns: minmax(0, 1fr) 430px; gap: 72px; align-items: end; padding-block: 68px 48px; border-bottom: 2px solid var(--ink); }
+  .explore-header h1 { margin: 0; font-family: var(--serif); font-size: clamp(52px, 6vw, 82px); line-height: 1.08; }
+  .explore-header > div > p:last-child { max-width: 800px; margin: 22px 0 0; color: var(--muted); font-size: 20px; }
+  .explore-summary { display: grid; grid-template-columns: repeat(2, 1fr); margin: 0; border-block: 1px solid var(--ink); }
+  .explore-summary div { padding: 17px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .explore-summary div:nth-child(even) { border-right: 0; }
+  .explore-summary div:nth-last-child(-n + 2) { border-bottom: 0; }
+  .explore-summary dt { color: var(--muted); font-size: 13px; }
+  .explore-summary dd { margin: 2px 0 0; color: var(--vermilion); font-family: var(--serif); font-size: 36px; font-weight: 800; line-height: 1.1; }
+  .explore-jump { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--ink); }
+  .explore-jump a { display: flex; gap: 10px; align-items: center; justify-content: center; min-height: 64px; border-right: 1px solid var(--line); font-weight: 700; }
+  .explore-jump a:last-child { border-right: 0; }
+  .explore-jump a:hover { color: var(--vermilion); background: var(--paper-bright); }
+  .explore-controls { position: sticky; top: 78px; z-index: 20; border-bottom: 1px solid var(--ink); background: color-mix(in srgb, var(--paper) 96%, transparent); backdrop-filter: blur(12px); }
+  .explore-controls .container { display: grid; grid-template-columns: 150px 1fr; align-items: stretch; }
+  .explore-controls .container > span { display: grid; place-items: center start; color: var(--muted); font-size: 13px; font-weight: 700; }
+  .explore-period-tabs { display: grid; grid-template-columns: repeat(6, 1fr); overflow-x: auto; }
+  .explore-period-tabs button { min-width: 145px; min-height: 70px; padding: 9px 12px; border: 0; border-left: 1px solid var(--line); background: transparent; cursor: pointer; }
+  .explore-period-tabs strong, .explore-period-tabs small { display: block; }
+  .explore-period-tabs strong { font-family: var(--serif); font-size: 17px; }
+  .explore-period-tabs small { overflow: hidden; color: var(--muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+  .explore-period-tabs button[aria-selected="true"] { color: var(--paper-bright); background: var(--vermilion); }
+  .explore-period-tabs button[aria-selected="true"] small { color: #f8ded8; }
+  .explore-main { overflow: hidden; }
+  .explore-section { padding-block: 72px; scroll-margin-top: 150px; }
+  .explore-section-heading { display: flex; gap: 60px; align-items: end; justify-content: space-between; margin-bottom: 30px; }
+  .explore-section-heading h2 { margin: 0; font-family: var(--serif); font-size: clamp(34px, 4vw, 52px); line-height: 1.2; }
+  .explore-section-heading > p { max-width: 560px; margin: 0; padding-left: 16px; border-left: 3px solid var(--mustard); color: var(--muted); font-size: 14px; }
+  .timeline-legend, .evidence-legend { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-bottom: 15px; color: var(--muted); font-size: 13px; }
+  .legend-world { color: var(--jade); } .legend-thai { color: var(--vermilion); }
+  .linked-timeline-shell { display: grid; grid-template-columns: minmax(0, 1fr) 330px; border-block: 1px solid var(--ink); }
+  .linked-timeline-chart { position: relative; min-width: 0; padding: 25px 18px 14px 126px; border-right: 1px solid var(--ink); background: var(--paper-bright); }
+  .linked-timeline-chart svg { display: block; width: 100%; height: 300px; overflow: visible; }
+  .timeline-lane-name { position: absolute; left: 0; width: 126px; padding-left: 16px; font-size: 12px; font-weight: 700; }
+  .timeline-lane-name.world { top: 70px; color: var(--jade); }
+  .timeline-lane-name.thai { top: 174px; color: var(--vermilion); }
+  :global(.timeline-guide) { stroke: #b9b1a3; stroke-width: 1; stroke-dasharray: 4 6; }
+  :global(.timeline-context-link) { stroke: #8f887c; stroke-width: 1; stroke-dasharray: 3 5; opacity: .55; }
+  :global(.timeline-node) { cursor: pointer; transition: transform 140ms ease, opacity 140ms ease; transform-box: fill-box; transform-origin: center; }
+  :global(.timeline-node:hover), :global(.timeline-node:focus) { outline: none; transform: scale(1.5); }
+  :global(.timeline-node.world) { fill: var(--jade); stroke: var(--paper-bright); stroke-width: 2; }
+  :global(.timeline-node.thai) { fill: var(--vermilion); stroke: var(--paper-bright); stroke-width: 2; }
+  :global(.timeline-node.thai.contextual) { fill: var(--mustard); }
+  .timeline-axis { display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center; padding: 8px 18px 0 72px; color: var(--muted); font-size: 12px; }
+  .timeline-axis strong { overflow: hidden; text-align: center; text-overflow: ellipsis; white-space: nowrap; }
+  .timeline-inspector, .mechanism-inspector { min-width: 0; padding: 30px; background: var(--paper); }
+  .timeline-inspector h3, .mechanism-inspector h3 { margin: 0; font-family: var(--serif); font-size: 25px; line-height: 1.35; }
+  .timeline-inspector p:not(.eyebrow), .mechanism-inspector p:not(.eyebrow) { margin: 10px 0; color: #45423d; font-size: 15px; }
+  .timeline-inspector small, .mechanism-inspector small { display: block; margin-top: 12px; color: var(--muted); font-size: 12px; }
+  .timeline-inspector a { display: inline-block; margin-top: 16px; color: var(--vermilion); font-weight: 700; }
+  .mechanism-section { color: var(--paper); background: var(--jade); }
+  .mechanism-section .eyebrow { color: #efb43d; }
+  .mechanism-section .explore-section-heading > p { color: #d5ded9; }
+  .mechanism-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; border-block: 1px solid #8da198; }
+  .mechanism-matrix { min-width: 0; border-right: 1px solid #8da198; }
+  .mechanism-head, .mechanism-row { display: grid; grid-template-columns: minmax(180px, 1.5fr) repeat(6, minmax(70px, 1fr)); }
+  .mechanism-head { min-height: 52px; border-bottom: 1px solid #8da198; color: #d5ded9; font-size: 11px; }
+  .mechanism-head span, .mechanism-row strong { display: grid; align-items: center; padding-inline: 14px; }
+  .mechanism-head span:not(:first-child) { justify-items: center; border-left: 1px solid #688075; }
+  .mechanism-row { min-height: 58px; border-bottom: 1px solid #688075; }
+  .mechanism-row:last-child { border-bottom: 0; }
+  .mechanism-row strong { font-family: var(--serif); font-size: 15px; }
+  .mechanism-row button { display: grid; min-width: 0; padding: 0; place-items: center; border: 0; border-left: 1px solid #688075; color: var(--ink); background: transparent; cursor: pointer; }
+  .mechanism-row button.period-active { background: #ffffff0b; }
+  .mechanism-row button:hover, .mechanism-row button:focus-visible { background: #ffffff1a; outline: 2px solid #efb43d; outline-offset: -3px; }
+  .mechanism-row button span { display: grid; width: var(--dot-size); height: var(--dot-size); min-width: 4px; min-height: 4px; place-items: center; border-radius: 50%; background: #efb43d; font-size: 11px; font-weight: 800; }
+  .mechanism-inspector { color: var(--ink); background: var(--paper); }
+  .mechanism-inspector ol { margin: 16px 0 0; padding-left: 20px; }
+  .mechanism-inspector li { padding: 7px 0; border-top: 1px solid var(--line); font-size: 13px; }
+  .mechanism-inspector a:hover { color: var(--vermilion); text-decoration: underline; }
+  .evidence-legend i { display: inline-block; width: 14px; height: 14px; margin-right: 6px; vertical-align: -2px; }
+  .documented { background: var(--jade); } .contextual { background: var(--mustard); } .research { background: var(--line); }
+  .evidence-chart { border-top: 2px solid var(--ink); }
+  .evidence-row { display: grid; grid-template-columns: 130px minmax(0, 1fr) 74px; gap: 18px; align-items: center; width: 100%; min-height: 66px; padding: 10px 14px; border: 0; border-bottom: 1px solid var(--line); background: transparent; text-align: left; cursor: pointer; }
+  .evidence-row:hover, .evidence-row:focus-visible, .evidence-row.period-active { background: var(--paper-bright); outline: none; }
+  .evidence-row.period-active strong { color: var(--vermilion); }
+  .evidence-track { display: flex; height: 25px; overflow: hidden; background: #ddd5c7; }
+  .evidence-track i { display: block; height: 100%; }
+  .evidence-row > span:last-child { color: var(--muted); font-size: 13px; text-align: right; }
+  .evidence-note { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 18px; align-items: start; margin-top: 34px; padding: 22px 0; border-block: 1px solid var(--ink); }
+  .evidence-note > svg { color: var(--vermilion); }
+  .evidence-note p { max-width: 900px; margin: 3px 0 0; color: var(--muted); font-size: 14px; }
+  .evidence-note a { display: inline-flex; gap: 7px; align-items: center; color: var(--vermilion); font-weight: 700; white-space: nowrap; }
+  @media (max-width: 1050px) {
+    .explore-header { grid-template-columns: 1fr; gap: 32px; }
+    .explore-controls .container { grid-template-columns: 1fr; }
+    .explore-controls .container > span { display: none; }
+    .linked-timeline-shell, .mechanism-layout { grid-template-columns: 1fr; }
+    .linked-timeline-chart, .mechanism-matrix { border-right: 0; border-bottom: 1px solid var(--ink); }
+    .mechanism-matrix { overflow-x: auto; }
+    .mechanism-head, .mechanism-row { min-width: 850px; }
+  }
+  @media (max-width: 720px) {
+    .explore-header { padding-block: 44px 32px; }
+    .explore-header h1 { font-size: 44px; }
+    .explore-header > div > p:last-child { font-size: 17px; }
+    .explore-jump { grid-template-columns: 1fr; }
+    .explore-jump a { justify-content: start; min-height: 50px; padding-inline: 8px; border-right: 0; border-bottom: 1px solid var(--line); }
+    .explore-controls { top: 66px; }
+    .explore-period-tabs { margin-inline: -14px; padding-left: 14px; }
+    .explore-period-tabs button { min-width: 132px; }
+    .explore-section { padding-block: 48px; scroll-margin-top: 140px; }
+    .explore-section-heading { display: grid; gap: 18px; }
+    .explore-section-heading h2 { font-size: 34px; }
+    .linked-timeline-chart { padding: 15px 8px 12px; overflow-x: auto; }
+    .linked-timeline-chart svg { width: 850px; height: 260px; }
+    .timeline-lane-name { display: none; }
+    .timeline-axis { width: 850px; padding-left: 8px; }
+    .timeline-inspector, .mechanism-inspector { padding: 22px 14px; }
+    .evidence-row { grid-template-columns: 90px minmax(0, 1fr) 48px; gap: 8px; padding-inline: 4px; }
+    .evidence-note { grid-template-columns: 28px 1fr; }
+    .evidence-note a { grid-column: 2; }
+  }
+</style>

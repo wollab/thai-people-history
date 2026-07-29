@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-30 - Interactive evidence explorer
+
+- เพิ่มหน้า `/explore/` สำหรับเลือกช่วงเวลาและสำรวจ timeline ไทย-โลกแบบเชื่อมโยง
+- เพิ่ม mechanism matrix ที่เปิดย้อนกลับไปยัง microhistory ในแต่ละช่วง
+- เพิ่ม evidence coverage chart พร้อมคำเตือนว่ากำลังนับระเบียนในคลัง ไม่ใช่ความถี่ของเหตุการณ์จริง
+- ซิงก์ฐานรุ่น `0.12.0`: 82 เหตุการณ์ 121 microhistory และ 193 แหล่งอ้างอิง
+- เพิ่มทางเข้าหน้า explorer ในเมนูหลัก เมนูมือถือ หน้าแรก และระบบค้นหา
+
 ## 2026-07-29 - Research integrity and reading paths
 
 - เพิ่ม source-integrity ledger และ public research gap log

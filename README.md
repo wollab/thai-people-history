@@ -9,6 +9,14 @@ Public website prototype for the Thai people history project covering B.E. 2460-
 - Public-domain and CC0 images are documented in `public/images/ATTRIBUTION.md`
 - Current research completion and first-release targets are documented in `RESEARCH_PROGRESS.md`
 
+## Public routes
+
+- `/archive/` ค้นและกรองเหตุการณ์กับ microhistory
+- `/reading/` อ่านบทสังเคราะห์พร้อม evidence trail
+- `/explore/` สำรวจ timeline ไทย-โลก กลไกการเปลี่ยนแปลง และ coverage ของหลักฐาน
+- `/sources/` ตรวจบรรณานุกรมและสถานะการเข้าถึงลิงก์
+- `/gaps/` ดูคำถามและเสียงที่ฐานยังขาด
+
 ## Local development
 
 ```bash

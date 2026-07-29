@@ -2,19 +2,20 @@
   "meta": {
     "title": "Thai People History Source Link Integrity Report",
     "checkedAt": "2026-07-29T10:02:07.036Z",
-    "sourceDatabaseVersion": "0.11.2",
+    "sourceDatabaseVersion": "0.12.0",
     "sourceDatabaseUpdated": "2026-07-29",
-    "total": 191,
+    "total": 193,
     "timeoutMs": 12000,
     "concurrency": 8,
-    "sourcesWithAccessDate": 191,
-    "rule": "HTTP status confirms link reachability only; it does not validate historical claims or citation completeness."
+    "sourcesWithAccessDate": 193,
+    "rule": "HTTP status confirms link reachability only; it does not validate historical claims or citation completeness.",
+    "note": "191 sources retain the 2026-07-29 successful audit; 2 later sources await a network-enabled check."
   },
   "summary": {
     "reachable": 165,
     "restricted": 17,
     "broken": 0,
-    "unverified": 9
+    "unverified": 11
   },
   "results": [
     {
@@ -2317,6 +2318,32 @@
       "contentType": "text/html; charset=utf-8",
       "elapsedMs": 140,
       "checkedAt": "2026-07-29T10:02:07.036Z"
+    },
+    {
+      "id": "src-ilo-minimum-wage-review",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_dialogue/%40actrav/documents/meetingdocument/wcms_208812.pdf",
+      "databaseAccessed": "2026-07-29",
+      "finalUrl": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_dialogue/%40actrav/documents/meetingdocument/wcms_208812.pdf",
+      "status": 0,
+      "state": "unverified",
+      "method": "HEAD",
+      "contentType": "",
+      "elapsedMs": 0,
+      "checkedAt": null,
+      "error": "added after last successful network audit"
+    },
+    {
+      "id": "src-ilo-natlex-announcement-103",
+      "url": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=5095",
+      "databaseAccessed": "2026-07-29",
+      "finalUrl": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=5095",
+      "status": 0,
+      "state": "unverified",
+      "method": "HEAD",
+      "contentType": "",
+      "elapsedMs": 0,
+      "checkedAt": null,
+      "error": "added after last successful network audit"
     }
   ]
 }

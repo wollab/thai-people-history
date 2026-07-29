@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "ฐานข้อมูลประวัติศาสตร์ประชาชนไทย พ.ศ. 2460-2560",
-    "version": "0.11.2",
+    "version": "0.12.0",
     "updated": "2026-07-29",
     "canonicalStatus": "staging-source-of-truth",
     "canonicalPath": "03_Documents/04_Knowledge_Base/01_Inbox/04_Personal_Learning/2026-07-19-thai-people-history-2460-2560/09_event_database.json",
     "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า",
-    "lastResearchBatch": "batch-2026-07-29-source-access-dates"
+    "lastResearchBatch": "batch-2026-07-29-book-facts-and-first-minimum-wage"
   },
   "sources": [
     {
@@ -1223,7 +1223,9 @@
       "url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/th/thailandcountrys00lepo/thailandcountrys00lepo.pdf",
       "type": "institutional-research",
       "language": "en",
-      "accessed": "2026-07-21"
+      "accessed": "2026-07-21",
+      "year": 1989,
+      "bookId": "book-thailand-country-study-1989"
     },
     {
       "id": "src-pmc-rural-doctors-movement",
@@ -1729,6 +1731,24 @@
       "type": "qualitative-case-study",
       "language": "en",
       "accessed": "2026-07-23"
+    },
+    {
+      "id": "src-ilo-minimum-wage-review",
+      "title": "Review of Minimum Wage Fixation in Thailand",
+      "publisher": "International Labour Organization",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_dialogue/%40actrav/documents/meetingdocument/wcms_208812.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-07-29"
+    },
+    {
+      "id": "src-ilo-natlex-announcement-103",
+      "title": "Announcement of the Revolutionary Party No. 103",
+      "publisher": "ILO NATLEX",
+      "url": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=5095",
+      "type": "legal-record",
+      "language": "en",
+      "accessed": "2026-07-29"
     }
   ],
   "worldContexts": [
@@ -2032,7 +2052,8 @@
       ],
       "sourceIds": [
         "src-parliament-2475",
-        "src-parliament-constitution-2475"
+        "src-parliament-constitution-2475",
+        "src-loc-thailand-country-study"
       ],
       "worldContextIds": [
         "world-depression"
@@ -2060,7 +2081,8 @@
       "sourceIds": [
         "src-parliament-constitution-2475",
         "src-cambridge-women-suffrage-thailand",
-        "src-parliament-women-politics"
+        "src-parliament-women-politics",
+        "src-loc-thailand-country-study"
       ],
       "worldContextIds": [
         "world-depression"
@@ -2421,7 +2443,8 @@
       ],
       "sourceIds": [
         "src-doct6",
-        "src-ago-oct6-case"
+        "src-ago-oct6-case",
+        "src-loc-thailand-country-study"
       ],
       "worldContextIds": [
         "world-indochina"
@@ -3413,7 +3436,8 @@
       "sourceIds": [
         "src-pubmed-family-planning-thailand",
         "src-pubmed-health-family-planning",
-        "src-ppat-history"
+        "src-ppat-history",
+        "src-loc-thailand-country-study"
       ],
       "worldContextIds": [
         "world-development"
@@ -3444,7 +3468,8 @@
         "src-pea-history",
         "src-wb-rural-electrification-thailand",
         "src-wb-pea-1973-plan",
-        "src-wb-rural-electricity-northeast"
+        "src-wb-rural-electricity-northeast",
+        "src-loc-thailand-country-study"
       ],
       "worldContextIds": [
         "world-development"
@@ -4161,6 +4186,36 @@
       ],
       "verification": "corroborated",
       "openQuestion": "คำสั่งศาลเปลี่ยนการเข้าถึงข้อมูล สุขภาพ และการมีส่วนร่วมของครัวเรือนแต่ละกลุ่มจริงเพียงใด"
+    },
+    {
+      "id": "th-2516-first-minimum-wage",
+      "period": "2500-2516",
+      "beYear": "2516",
+      "ceYear": "1973",
+      "title": "เริ่มกำหนดค่าจ้างขั้นต่ำครั้งแรก",
+      "summary": "ประเทศไทยกำหนดค่าจ้างขั้นต่ำครั้งแรกใน พ.ศ. 2516 ที่วันละ 12 บาท โดยเริ่มครอบคลุมกรุงเทพฯ สมุทรปราการ นนทบุรี และปทุมธานี ก่อนขยายทั่วประเทศใน พ.ศ. 2517",
+      "peopleImpact": "ลูกจ้างในพื้นที่ที่กำหนดมีฐานค่าจ้างตามกฎหมายเป็นครั้งแรก แต่หลักฐานชุดนี้ยังไม่เพียงพอที่จะระบุว่าทุกสถานประกอบการจ่ายตามอัตราหรือแรงงานแต่ละกลุ่มได้รับผลเท่ากัน",
+      "impactStatus": "contextual",
+      "themes": [
+        "labour",
+        "economy",
+        "law",
+        "state"
+      ],
+      "locations": [
+        "กรุงเทพฯ",
+        "สมุทรปราการ",
+        "นนทบุรี",
+        "ปทุมธานี"
+      ],
+      "sourceIds": [
+        "src-loc-thailand-country-study",
+        "src-ilo-minimum-wage-review",
+        "src-ilo-natlex-announcement-103"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "การบังคับใช้จริงต่างกันอย่างไรระหว่างโรงงานขนาดใหญ่ กิจการรายย่อย แรงงานหญิง และแรงงานนอกระบบ"
     }
   ],
   "microhistoryMeta": {
@@ -8753,6 +8808,49 @@
         "นายจ้างรายย่อย"
       ],
       "openQuestion": "คำร้องตามกฎหมาย พ.ศ. 2558 เปลี่ยนการปฏิบัติของนายจ้างในช่วงแรกอย่างไร"
+    },
+    {
+      "id": "mh-2516-first-minimum-wage-workers",
+      "period": "2500-2516",
+      "beYear": "2516",
+      "ceYear": "1973",
+      "title": "แรงงานในพื้นที่แรกที่มีกฎหมายค่าจ้างขั้นต่ำ",
+      "location": [
+        "กรุงเทพฯ",
+        "สมุทรปราการ",
+        "นนทบุรี",
+        "ปทุมธานี"
+      ],
+      "groups": [
+        "ลูกจ้าง",
+        "แรงงานโรงงาน",
+        "นายจ้าง",
+        "เจ้าหน้าที่แรงงาน"
+      ],
+      "everydayDimensions": [
+        "labour",
+        "income",
+        "cost-of-living",
+        "law"
+      ],
+      "fact": "ใน พ.ศ. 2516 อัตราค่าจ้างขั้นต่ำวันละ 12 บาทเริ่มใช้ในกรุงเทพฯ สมุทรปราการ นนทบุรี และปทุมธานี ก่อนขยายทั่วประเทศในปีถัดมา",
+      "livedExperience": "หลักฐานกฎหมายทำให้เห็นฐานค่าจ้างที่ประกาศใช้ แต่ข้อมูลชุดนี้ยังไม่บอกว่าคนงานแต่ละแห่งได้รับเงินจริงเท่าใดหรือร้องเรียนเมื่อได้ต่ำกว่าอัตราอย่างไร",
+      "evidenceStatus": "contextual-lead",
+      "sourceIds": [
+        "src-loc-thailand-country-study",
+        "src-ilo-minimum-wage-review",
+        "src-ilo-natlex-announcement-103"
+      ],
+      "linkedEventIds": [
+        "th-2516-first-minimum-wage"
+      ],
+      "missingVoices": [
+        "แรงงานหญิง",
+        "แรงงานนอกระบบ",
+        "นายจ้างรายย่อย",
+        "ผู้ตรวจแรงงาน"
+      ],
+      "openQuestion": "บันทึกค่าจ้าง สหภาพแรงงาน และคดีแรงงานสะท้อนการปฏิบัติตามอัตรา 12 บาทในสถานประกอบการจริงอย่างไร"
     }
   ]
 }

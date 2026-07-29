@@ -4,7 +4,7 @@
     "version": "0.2.0",
     "updated": "2026-07-29",
     "derivedFrom": "09_event_database.json",
-    "derivedFromVersion": "0.11.2",
+    "derivedFromVersion": "0.12.0",
     "generator": "scripts/build_research_index.mjs",
     "rule": "ไฟล์นี้เป็นดัชนีอนุพันธ์ ห้ามแก้แทนฐานข้อมูลหลัก"
   },
@@ -2794,6 +2794,26 @@
         "families-households"
       ],
       "evidenceStatus": "documented-case"
+    },
+    "mh-2516-first-minimum-wage-workers": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "economy-opportunity",
+        "state-everyday",
+        "institutions-long-term"
+      ],
+      "mechanismIds": [
+        "policy-law"
+      ],
+      "regionIds": [
+        "bangkok",
+        "central"
+      ],
+      "groupCategoryIds": [
+        "workers",
+        "families-households"
+      ],
+      "evidenceStatus": "contextual-lead"
     }
   },
   "indexes": {
@@ -2856,7 +2876,8 @@
         "mh-2500-eastern-cassava-farmers",
         "mh-2500-cassava-processing-workers",
         "mh-2500-malay-students-language-paths",
-        "mh-2500-pondok-teachers-adjustment"
+        "mh-2500-pondok-teachers-adjustment",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "2516-2535": [
         "mh-2516-women-media-citizenship",
@@ -3010,7 +3031,8 @@
         "mh-2485-romusha-unequal-memory",
         "mh-2500-pondok-teachers-adjustment",
         "mh-2552-map-ta-phut-community-litigation",
-        "mh-2558-transgender-workers-discrimination"
+        "mh-2558-transgender-workers-discrimination",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "state-everyday": [
         "mh-2460-war-volunteer-families",
@@ -3078,7 +3100,8 @@
         "mh-2540-map-ta-phut-school-routines",
         "mh-2548-migrant-children-public-schools",
         "mh-2547-deep-south-school-safety",
-        "mh-2552-map-ta-phut-community-litigation"
+        "mh-2552-map-ta-phut-community-litigation",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "identity-belonging": [
         "mh-2460-war-volunteer-families",
@@ -3191,7 +3214,8 @@
         "mh-2531-map-ta-phut-workers-services",
         "mh-2548-mahachai-migrant-child-workers",
         "mh-2541-nathap-fishing-households",
-        "mh-2558-transgender-workers-discrimination"
+        "mh-2558-transgender-workers-discrimination",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "rural-urban": [
         "mh-2472-rice-households",
@@ -3405,7 +3429,8 @@
         "mh-2545-chana-muslim-core-group",
         "mh-2548-migrant-children-public-schools",
         "mh-2552-map-ta-phut-community-litigation",
-        "mh-2558-transgender-workers-discrimination"
+        "mh-2558-transgender-workers-discrimination",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "media-ideas": [
         "mh-2468-satri-thai-readers",
@@ -3605,7 +3630,8 @@
         "mh-2519-oct6-victims-families",
         "mh-2477-southern-representatives-rubber-debate",
         "mh-2521-klongtoei-one-baht-school",
-        "mh-2558-transgender-workers-discrimination"
+        "mh-2558-transgender-workers-discrimination",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "international": [
         "mh-2460-war-volunteer-families",
@@ -3664,7 +3690,8 @@
         "mh-2485-thai-chinese-railway-workers",
         "mh-2485-romusha-unequal-memory",
         "mh-2548-mahachai-migrant-child-workers",
-        "mh-2548-migrant-children-public-schools"
+        "mh-2548-migrant-children-public-schools",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "multi-region": [
         "mh-2472-rice-households",
@@ -3884,7 +3911,8 @@
         "mh-2548-migrant-children-public-schools",
         "mh-2547-deep-south-school-safety",
         "mh-2552-map-ta-phut-community-litigation",
-        "mh-2558-transgender-workers-discrimination"
+        "mh-2558-transgender-workers-discrimination",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "workers": [
         "mh-2460-war-volunteer-families",
@@ -3925,7 +3953,8 @@
         "mh-2531-map-ta-phut-workers-services",
         "mh-2521-klongtoei-one-baht-school",
         "mh-2548-mahachai-migrant-child-workers",
-        "mh-2558-transgender-workers-discrimination"
+        "mh-2558-transgender-workers-discrimination",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "children-youth": [
         "mh-2464-compulsory-school",
@@ -4218,7 +4247,8 @@
         "mh-2557-community-radio-shutdown",
         "mh-2477-southern-representatives-rubber-debate",
         "mh-2531-map-ta-phut-coastal-households",
-        "mh-2531-map-ta-phut-workers-services"
+        "mh-2531-map-ta-phut-workers-services",
+        "mh-2516-first-minimum-wage-workers"
       ],
       "documented-case": [
         "mh-2468-satri-thai-readers",
@@ -4357,7 +4387,8 @@
         "src-dpf-klongtoei-history",
         "src-msociety-klongtoei-context",
         "src-map-ta-phut-school-history",
-        "src-informea-map-ta-phut-order-592-2552"
+        "src-informea-map-ta-phut-order-592-2552",
+        "src-ilo-natlex-announcement-103"
       ],
       "academic-analysis": [
         "src-mfa-treaties",
@@ -4447,7 +4478,8 @@
         "src-unicef-education-no-border",
         "src-chula-map-ta-phut-pollution-2006",
         "src-unicef-deep-south-education-conflict",
-        "src-unesco-protecting-education-south"
+        "src-unesco-protecting-education-south",
+        "src-ilo-minimum-wage-review"
       ],
       "international-institutional": [
         "src-wb-depression",
@@ -4522,13 +4554,13 @@
         "institutions-long-term": 8
       },
       "2500-2516": {
-        "state-everyday": 7,
-        "economy-opportunity": 9,
+        "state-everyday": 8,
+        "economy-opportunity": 10,
         "rural-urban": 9,
         "education-media": 5,
         "movements-civil-society": 1,
         "identity-belonging": 7,
-        "institutions-long-term": 8
+        "institutions-long-term": 9
       },
       "2516-2535": {
         "state-everyday": 10,
@@ -4560,8 +4592,8 @@
     },
     "sourceFamilyCounts": {
       "archive-primary": 19,
-      "state-official": 38,
-      "academic-analysis": 88,
+      "state-official": 39,
+      "academic-analysis": 89,
       "international-institutional": 24,
       "lived-fieldwork": 22
     },
@@ -4849,6 +4881,9 @@
       ],
       "th-2552-map-ta-phut-court-order": [
         "mh-2552-map-ta-phut-community-litigation"
+      ],
+      "th-2516-first-minimum-wage": [
+        "mh-2516-first-minimum-wage-workers"
       ]
     },
     "eventsWithoutMicrohistory": [],

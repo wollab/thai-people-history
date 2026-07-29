@@ -1,5 +1,5 @@
 ---
-import { ArrowRight, BookOpen, CalendarDays, CheckCircle2, Clock3, Globe2, Users } from "lucide-astro";
+import { ArrowRight, BarChart3, BookOpen, CalendarDays, CheckCircle2, Clock3, Globe2, Users } from "lucide-astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { periods } from "../data/periods";
 import { events, microhistories } from "../data/history";
@@ -49,7 +49,7 @@ const bangkokPhotoBeYear = beFromCe(1960);
     <a href={`${base}archive/`}><CalendarDays /><span><strong>ตามปี</strong><small>ค้นหาและกรอง {events.length} เหตุการณ์พร้อมแหล่งอ้างอิง</small></span><ArrowRight /></a>
     <a href="#stories"><Users /><span><strong>ตามชีวิต</strong><small>เข้าใจชีวิตผู้คนในหลากหลายมิติ</small></span><ArrowRight /></a>
     <a href="#themes"><BookOpen /><span><strong>ตามเรื่อง</strong><small>เจาะลึกประเด็นที่หลากหลายและเชื่อมโยง</small></span><ArrowRight /></a>
-    <a href="#world"><Globe2 /><span><strong>เทียบโลก</strong><small>มองประเทศไทยในบริบทโลกและภูมิภาค</small></span><ArrowRight /></a>
+    <a href={`${base}explore/`}><BarChart3 /><span><strong>สำรวจข้อมูล</strong><small>เล่นกับช่วงเวลา กลไก และความครอบคลุมหลักฐาน</small></span><ArrowRight /></a>
   </section>
 
   <section class="timeline-section" id="timeline" data-timeline>
