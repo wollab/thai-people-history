@@ -11,6 +11,7 @@ This percentage measures the declared first-release baseline. It does not claim 
 | Structural event/process records | 81 | 80+ |
 | People-level microhistories | 120 | 120+ |
 | Sources | 191 | 180+ |
+| Sources with access dates | 191 | 191 |
 | Sensitive events with only one source | 0 | 0 |
 | Events without linked microhistory | 0 | 0 |
 | Reader-ready synthesis drafts | 12 | 12+ |
@@ -27,6 +28,7 @@ The percentage can remain unchanged or decrease when new evidence reveals weak c
 - No sensitive event detected by the audit remains dependent on one source.
 - Every event is linked to at least one people-level microhistory.
 - 74 microhistories are documented cases, 46 are contextual leads, and no research leads remain in the public snapshot.
+- The latest automated link audit found 165 reachable, 17 restricted, 9 unverified, and 0 broken URLs; restricted/unverified links remain in a manual review queue.
 
 ## Continuous research after baseline
 

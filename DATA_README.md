@@ -1,6 +1,6 @@
 # ฐานข้อมูลประวัติศาสตร์ประชาชนไทย
 
-ไฟล์ข้อมูลหลักอยู่ที่ `src/data/history.json` (ซิงก์มาจาก `09_event_database.json` ใน research KB) และหน้าเว็บอ่านข้อมูลผ่าน `src/data/history.ts` ดัชนีค้นแบบมิติ/กลไก/ภูมิภาค/กลุ่มคน และ pattern ข้ามเหตุการณ์อยู่ที่ `src/data/research-index.json` + `src/data/research-index.ts` ส่วนบทสังเคราะห์อยู่ที่ `src/data/syntheses.json` ไฟล์ทั้งหมดซิงก์เฉพาะเมื่อผ่าน release quality gate
+ไฟล์ข้อมูลหลักอยู่ที่ `src/data/history.json` (ซิงก์มาจาก `09_event_database.json` ใน research KB) และหน้าเว็บอ่านข้อมูลผ่าน `src/data/history.ts` ดัชนีค้นแบบมิติ/กลไก/ภูมิภาค/กลุ่มคน และ pattern ข้ามเหตุการณ์อยู่ที่ `src/data/research-index.json` + `src/data/research-index.ts` บทสังเคราะห์อยู่ที่ `src/data/syntheses.json` และผลตรวจ URL อยู่ที่ `src/data/source-integrity.json` ไฟล์ทั้งหมดซิงก์เฉพาะเมื่อผ่าน release quality gate
 
 ## ขอบเขตปัจจุบัน
 
@@ -10,6 +10,7 @@
 - 12 บริบทโลกและภูมิภาค เชื่อมกับเหตุการณ์ไทยเฉพาะเมื่อระบุช่องทางอิทธิพลได้
 - 7 working pattern ที่อ้างกลับไปยัง microhistory เสมอ
 - 12 บทสังเคราะห์ที่อ้างกลับไปยัง microhistory และ source IDs พร้อมระบุข้อจำกัด
+- วันที่เข้าถึงครบ 191 แหล่ง; ผลตรวจ URL รอบ 29 กรกฎาคม 2026 ไม่พบลิงก์เสีย
 - นี่คือฐานเหตุการณ์สำคัญตั้งต้น ไม่ใช่รายการทุกเหตุการณ์ในทุกปี
 
 ## โครงข้อมูล
@@ -46,7 +47,7 @@ npm run build
 
 ตัวตรวจจะหยุด build เมื่อพบ id ซ้ำ, ลิงก์ไม่ถูกต้อง, source/context/event ที่อ้างถึงไม่มีจริง, ปี พ.ศ./ค.ศ. ไม่ตรงกัน, ฟิลด์จำเป็นหาย, ช่วงใดมี microhistory น้อยกว่า 18 เรื่อง, บทสังเคราะห์น้อยกว่า 12 เรื่อง, documented case ต่ำกว่า 72, ยังมี research lead หรือยังพบเหตุการณ์อ่อนไหวที่มีแหล่งเดียว
 
-เมื่อผ่าน release gate ใน research KB ให้ก็อปปี้ `09_event_database.json`, `11_research_index.json` และ `15_synthesis_database.json` มาทับไฟล์ใน `src/data/` แล้วรัน `npm run validate:data` ซ้ำ
+เมื่อผ่าน release gate ใน research KB ให้ก็อปปี้ `09_event_database.json`, `11_research_index.json`, `15_synthesis_database.json` และ `16_source_integrity_report.json` มาทับไฟล์ใน `src/data/` แล้วรัน `npm run validate:data` ซ้ำ
 
 ## งานวิจัยหลัง baseline รุ่นแรก
 

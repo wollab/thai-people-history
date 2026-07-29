@@ -2,9 +2,9 @@
   "meta": {
     "title": "Thai People History Research Index",
     "version": "0.2.0",
-    "updated": "2026-07-23",
+    "updated": "2026-07-29",
     "derivedFrom": "09_event_database.json",
-    "derivedFromVersion": "0.11.0",
+    "derivedFromVersion": "0.11.2",
     "generator": "scripts/build_research_index.mjs",
     "rule": "ไฟล์นี้เป็นดัชนีอนุพันธ์ ห้ามแก้แทนฐานข้อมูลหลัก"
   },

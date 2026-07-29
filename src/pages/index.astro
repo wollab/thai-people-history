@@ -1,9 +1,10 @@
 ---
 import { ArrowRight, BookOpen, CalendarDays, CheckCircle2, Clock3, Globe2, Users } from "lucide-astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { periods, stories } from "../data/periods";
+import { periods } from "../data/periods";
 import { events, microhistories } from "../data/history";
-import { beFromCe, ceRangeFromBeRange, formatBeCe, formatBeRange } from "../utils/thai-year";
+import { synthesisStories } from "../data/syntheses";
+import { beFromCe, ceRangeFromBeRange, formatBeCe } from "../utils/thai-year";
 
 const base = import.meta.env.BASE_URL;
 const periodsWithCounts = periods.map((period) => ({
@@ -12,6 +13,12 @@ const periodsWithCounts = periods.map((period) => ({
   eventCount: events.filter((event) => event.period === period.range).length,
   mhCount: microhistories.filter((record) => record.period === period.range).length,
 }));
+const readingImages = [
+  { image: "images/classroom-na-wa.jpg", alt: "ห้องเรียนระดับประถมในอำเภอนาหว้า จังหวัดนครพนม" },
+  { image: "images/rice-farmers-thailand.jpg", alt: "เกษตรกรในนาข้าว ประเทศไทย" },
+  { image: "images/bangkok-1960.jpg", alt: "กรุงเทพฯ ในปี พ.ศ. 2503" },
+];
+const featuredStories = synthesisStories.slice(0, 3).map((story, index) => ({ ...story, ...readingImages[index], time: `${Math.max(6, story.evidenceIds.length + 2)} นาที` }));
 const bangkokPhotoBeYear = beFromCe(1960);
 ---
 
@@ -68,20 +75,21 @@ const bangkokPhotoBeYear = beFromCe(1960);
   </section>
 
   <section class="stories container" id="stories" aria-labelledby="stories-heading">
-    <div class="section-heading compact"><div><p class="eyebrow">Reading paths</p><h2 id="stories-heading">เรื่องที่ชวนอ่านต่อ</h2></div><p class="draft-label">เนื้อหาทดลอง ยังไม่ใช่บทสรุปทางประวัติศาสตร์</p></div>
+    <div class="section-heading compact"><div><p class="eyebrow">Reading paths</p><h2 id="stories-heading">เรื่องที่ชวนอ่านต่อ</h2></div><p class="draft-label">ทุกบทเปิดเผยหลักฐานและข้อจำกัด</p></div>
     <div class="story-grid">
-      {stories.map((story) => (
+      {featuredStories.map((story) => (
         <article class="story-card">
-          <a class="story-image" href={`${base}stories/${story.slug}/`}><img src={`${base}${story.image}`} alt={story.imageAlt} /></a>
+          <a class="story-image" href={`${base}reading/${story.slug}/`}><img src={`${base}${story.image}`} alt={story.alt} /></a>
           <div class="story-content">
-            <p class="story-period">{formatBeRange(story.period)}</p>
-            <h3><a href={`${base}stories/${story.slug}/`}>{story.title}</a></h3>
+            <p class="story-period">พ.ศ. {story.periodRange}</p>
+            <h3><a href={`${base}reading/${story.slug}/`}>{story.title}</a></h3>
             <p>{story.deck}</p>
-            <footer><span><CheckCircle2 size={16} />ตรวจสิทธิภาพแล้ว</span><span><Clock3 size={16} />{story.time}</span><a href={`${base}stories/${story.slug}/`} aria-label={`อ่าน ${story.title}`}><ArrowRight size={19} /></a></footer>
+            <footer><span><CheckCircle2 size={16} />{story.evidenceIds.length} กรณีหลักฐาน</span><span><Clock3 size={16} />{story.time}</span><a href={`${base}reading/${story.slug}/`} aria-label={`อ่าน ${story.title}`}><ArrowRight size={19} /></a></footer>
           </div>
         </article>
       ))}
     </div>
+    <p class="reading-all-link"><a href={`${base}reading/`}>ดูบทสังเคราะห์ทั้ง {synthesisStories.length} เรื่อง <ArrowRight size={18} /></a></p>
   </section>
 
   <section class="themes" id="themes">

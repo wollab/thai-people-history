@@ -1,0 +1,45 @@
+---
+import { ArrowRight, BookOpenCheck, CircleAlert } from "lucide-astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { synthesisStories } from "../../data/syntheses";
+import { microhistoryById } from "../../data/history";
+
+const base = import.meta.env.BASE_URL;
+const stories = synthesisStories.map((story) => ({
+  ...story,
+  documented: story.evidenceIds.filter((id) => microhistoryById.get(id)?.evidenceStatus === "documented-case").length,
+}));
+---
+
+<BaseLayout title="เส้นทางอ่าน | ประวัติศาสตร์ประชาชนไทย" description="บทสังเคราะห์ 12 เส้นทางจากฐานประวัติศาสตร์ประชาชนไทย พร้อมหลักฐาน ข้อจำกัด และคำถามที่ยังเปิดอยู่">
+  <header class="archive-header container reading-header">
+    <div>
+      <p class="eyebrow">Evidence-led reading paths</p>
+      <h1>เส้นทางอ่าน<br />จากชีวิตผู้คน</h1>
+      <p>บทสังเคราะห์เหล่านี้วางกรณีชีวิตหลายช่วงเวลาเข้าด้วยกันเพื่อให้เห็นความเปลี่ยนแปลงระยะยาว ทุกบทแสดงหลักฐานที่ใช้และสิ่งที่ฐานปัจจุบันยังตอบไม่ได้</p>
+    </div>
+    <dl class="archive-stats stats-2">
+      <div><dt>บทสังเคราะห์</dt><dd>{stories.length}</dd></div>
+      <div><dt>สถานะ</dt><dd class="status-word">ฉบับอ่าน</dd></div>
+    </dl>
+  </header>
+
+  <section class="reading-list container" aria-label="บทสังเคราะห์ทั้งหมด">
+    {stories.map((story, index) => (
+      <article class="reading-row">
+        <div class="reading-number">{String(index + 1).padStart(2, "0")}</div>
+        <div class="reading-copy">
+          <p class="reading-period">พ.ศ. {story.periodRange}</p>
+          <h2><a href={`${base}reading/${story.slug}/`}>{story.title}</a></h2>
+          <p>{story.deck}</p>
+          <div class="reading-evidence-line">
+            <span><BookOpenCheck size={16} /> หลักฐาน {story.evidenceIds.length} กรณี</span>
+            <span>{story.documented} documented case</span>
+            <span><CircleAlert size={16} /> มีข้อจำกัดเปิดเผย</span>
+          </div>
+        </div>
+        <a class="reading-open" href={`${base}reading/${story.slug}/`} aria-label={`อ่าน ${story.title}`}><ArrowRight size={22} /></a>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

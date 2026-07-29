@@ -12,6 +12,7 @@ export type HistorySource = {
   url: string;
   type: string;
   language: string;
+  accessed?: string;
   note?: string;
 };
 

@@ -3,19 +3,14 @@ import { ArrowUpRight, Globe2 } from "lucide-astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { sources, worldContexts } from "../../data/history";
 import { formatBeCe } from "../../utils/thai-year";
+import labels from "../../data/source-labels.json";
+import integrity from "../../data/source-integrity.json";
 
-const sourceTypeLabel: Record<string, string> = {
-  "official-history": "ประวัติทางการ", "official-record": "บันทึกทางการ", "peer-reviewed-research": "งานวิจัยตรวจทาน",
-  "institutional-research": "งานวิจัยสถาบัน", "primary-document": "เอกสารปฐมภูมิ", "legal-record": "บันทึกกฎหมาย",
-  "institutional-report": "รายงานสถาบัน", "anthropological-research": "งานวิจัยมานุษยวิทยา", "institutional-history": "ประวัติสถาบัน",
-  "scholarly-official": "งานวิชาการทางการ", research: "งานวิจัย", archive: "จดหมายเหตุ", "archival-study": "งานศึกษาจดหมายเหตุ",
-  "official-plan": "แผนทางการ", "primary-document-archive": "จดหมายเหตุเอกสารปฐมภูมิ", "public-archive": "จดหมายเหตุสาธารณะ",
-  "official-case-record": "บันทึกคดีทางการ", "official-commemoration": "การรำลึกทางการ", "secondary-summary-of-official-report": "สรุปรายงานทางการ",
-  "institutional-assessment": "การประเมินสถาบัน", "official-statistics": "สถิติทางการ", "doctoral-research": "วิทยานิพนธ์ปริญญาเอก",
-  "oral-history-research": "งานวิจัยประวัติศาสตร์บอกเล่า", "academic-thesis": "วิทยานิพนธ์", "open-access-dissertation": "ดุษฎีนิพนธ์เปิดเผย",
-  "field-research": "งานวิจัยภาคสนาม", "ethnographic-case-study": "กรณีศึกษาชาติพันธุ์วรรณนา", "qualitative-case-study": "กรณีศึกษาเชิงคุณภาพ",
-  "household-survey-research": "งานสำรวจครัวเรือน", "official-survey-series": "ชุดสำรวจทางการ",
-};
+const sourceTypeLabel = labels.sourceTypes as Record<string, string>;
+const languageLabel = labels.languages as Record<string, string>;
+const linkStateLabel = labels.linkStates as Record<string, string>;
+const linkById = new Map(integrity.results.map((result) => [result.id, result]));
+const sourcesWithAccessDate = sources.filter((source) => source.accessed).length;
 
 const sortedSources = [...sources].sort((a, b) => a.title.localeCompare(b.title, "th"));
 const sortedContexts = [...worldContexts].sort((a, b) => (a.beYear ?? "").localeCompare(b.beYear ?? ""));
@@ -28,9 +23,11 @@ const sortedContexts = [...worldContexts].sort((a, b) => (a.beYear ?? "").locale
       <h1>แหล่งอ้างอิง<br />ทั้งหมด</h1>
       <p>บรรณานุกรมทุกรายการที่ใช้รองรับเหตุการณ์และ microhistory ในฐานข้อมูล เปิดต้นฉบับได้ทันทีเพื่อใช้ตรวจสอบหรืออ้างอิงต่อในงานของคุณเอง</p>
     </div>
-    <dl class="archive-stats stats-2">
+    <dl class="archive-stats">
       <div><dt>แหล่งอ้างอิง</dt><dd>{sources.length}</dd></div>
       <div><dt>บริบทโลก</dt><dd>{worldContexts.length}</dd></div>
+      <div><dt>มีวันที่เข้าถึง</dt><dd>{sourcesWithAccessDate}</dd></div>
+      <div><dt>ลิงก์เข้าถึงได้</dt><dd>{integrity.summary.reachable}</dd></div>
     </dl>
   </header>
 
@@ -38,17 +35,20 @@ const sortedContexts = [...worldContexts].sort((a, b) => (a.beYear ?? "").locale
     <div class="archive-result-line"><p><strong>{sortedSources.length}</strong> แหล่งอ้างอิง</p><p>เรียงตามชื่อเรื่อง</p></div>
     <div class="source-table-wrap">
       <table class="source-table">
-        <thead><tr><th>ชื่อแหล่ง</th><th>ผู้เผยแพร่</th><th>ประเภท</th><th>ภาษา</th><th>ลิงก์</th></tr></thead>
+        <thead><tr><th>ชื่อแหล่ง</th><th>ผู้เผยแพร่</th><th>ประเภท</th><th>ภาษา</th><th>เข้าถึง</th><th>ผลตรวจลิงก์</th><th>ลิงก์</th></tr></thead>
         <tbody>
-          {sortedSources.map((source) => (
-            <tr>
+          {sortedSources.map((source) => {
+            const link = linkById.get(source.id);
+            return <tr>
               <td>{source.title}{source.note && <span class="source-note-flag" title={source.note}> · แก้ไขแล้ว</span>}</td>
               <td>{source.publisher}</td>
               <td>{sourceTypeLabel[source.type] ?? source.type}</td>
-              <td>{source.language === "th" ? "ไทย" : "อังกฤษ"}</td>
+              <td>{languageLabel[source.language] ?? source.language}</td>
+              <td>{source.accessed ?? "ยังไม่บันทึก"}</td>
+              <td><span class:list={["link-state", link?.state ?? "unverified"]}>{linkStateLabel[link?.state ?? "unverified"]}</span></td>
               <td><a href={source.url} target="_blank" rel="noreferrer">เปิดต้นฉบับ <ArrowUpRight size={14} /></a></td>
-            </tr>
-          ))}
+            </tr>;
+          })}
         </tbody>
       </table>
     </div>

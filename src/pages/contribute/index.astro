@@ -1,0 +1,30 @@
+---
+import { ArrowUpRight, CheckCircle2, FileSearch, GitPullRequest, MessageSquareWarning } from "lucide-astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const issueUrl = "https://github.com/wollab/thai-people-history/issues/new?template=history-correction.yml";
+---
+
+<BaseLayout title="เสนอข้อมูลหรือแก้ไข | ประวัติศาสตร์ประชาชนไทย" description="วิธีเสนอหลักฐาน แจ้งข้อผิดพลาด หรือทักท้วงการตีความในโครงการประวัติศาสตร์ประชาชนไทย">
+  <header class="method-hero container contribution-hero">
+    <p class="eyebrow">Corrections and contributions</p>
+    <h1>ช่วยกันทำให้หลักฐาน<br />ตรวจสอบได้มากขึ้น</h1>
+    <p>คุณไม่จำเป็นต้องเห็นด้วยกับบทสังเคราะห์ของเรา การชี้แหล่งที่ขัดแย้ง ระบุปีผิด หรือบอกว่าเสียงของใครหายไป ล้วนเป็นส่วนสำคัญของโครงการนี้</p>
+    <a class="primary-action" href={issueUrl} target="_blank" rel="noreferrer">เปิดแบบแจ้งบน GitHub <ArrowUpRight size={18} /></a>
+  </header>
+
+  <section class="method-content container contribution-content">
+    <div class="principle-grid">
+      <article><FileSearch size={27} /><h2>สิ่งที่ส่งมาได้</h2><p>แหล่งข้อมูลใหม่ ลิงก์สำรอง เลขหน้า เอกสารท้องถิ่น ภาพถ่ายพร้อมสิทธิ หรือคำบอกเล่าที่มีบริบทการเก็บข้อมูล</p></article>
+      <article><MessageSquareWarning size={27} /><h2>สิ่งที่ทักท้วงได้</h2><p>ปี ชื่อบุคคล พื้นที่ การแปล การขยาย claim เกินแหล่ง การละเลยข้อถกเถียง หรือภาษาที่ทำให้คนหลายกลุ่มกลายเป็นประสบการณ์เดียว</p></article>
+      <article><GitPullRequest size={27} /><h2>วิธีพิจารณา</h2><p>ทีมจะตรวจต้นฉบับ เปรียบเทียบแหล่งต่างประเภท บันทึกเหตุผล และเผยแพร่ผ่าน changelog โดยไม่ลบประวัติการแก้ไข</p></article>
+      <article><CheckCircle2 size={27} /><h2>เกณฑ์รับเข้า</h2><p>ข้อเสนอระบุได้ว่าแหล่งใดรองรับข้อความใด มีขอบเขตเพียงใด และสิ่งใดเป็น fact การตีความ หรือความทรงจำ</p></article>
+    </div>
+
+    <section class="contribution-checklist">
+      <h2>ข้อมูลที่ช่วยให้ตรวจได้เร็ว</h2>
+      <ol><li>ชื่อ record หรือ URL หน้าที่ต้องการแก้</li><li>ข้อความเดิมและข้อเสนอแก้ไข</li><li>ชื่อแหล่ง ผู้สร้าง ปีเผยแพร่ และลิงก์หรือที่เก็บ</li><li>เลขหน้า ตาราง timestamp หรือส่วนที่รองรับข้อเสนอ</li><li>ข้อจำกัดของแหล่งและความสัมพันธ์ของผู้ให้ข้อมูลกับเหตุการณ์</li></ol>
+      <p>ข้อมูลส่วนบุคคล เอกสารที่ยังไม่ได้รับอนุญาต และคำบอกเล่าที่อาจทำให้ผู้ให้ข้อมูลเสี่ยง จะไม่ถูกเผยแพร่โดยอัตโนมัติ</p>
+    </section>
+  </section>
+</BaseLayout>

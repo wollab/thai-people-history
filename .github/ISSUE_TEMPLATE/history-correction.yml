@@ -1,0 +1,38 @@
+name: เสนอข้อมูลหรือแจ้งข้อแก้ไข
+description: เสนอแหล่งใหม่ แจ้งข้อผิดพลาด หรือทักท้วงการตีความในฐานประวัติศาสตร์ประชาชนไทย
+title: "[ข้อมูล/แก้ไข] "
+labels: ["research-review"]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record หรือหน้าที่เกี่ยวข้อง
+      description: ใส่ชื่อ record, ID หรือ URL
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: สิ่งที่ควรเพิ่มหรือแก้
+      description: แยกข้อเท็จจริง การตีความ และข้อสงสัยเท่าที่ทำได้
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: แหล่งอ้างอิง
+      description: ชื่อแหล่ง ผู้สร้าง ปี URL/ที่เก็บ และเลขหน้า ตาราง หรือ timestamp
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: ขอบเขตหรือข้อจำกัดของแหล่ง
+      description: แหล่งนี้ครอบคลุมพื้นที่ กลุ่มคน และช่วงเวลาใด และยังขาดเสียงของใคร
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: สิทธิและความปลอดภัย
+      options:
+        - label: ข้อเสนอนี้ไม่มีข้อมูลส่วนบุคคลอ่อนไหวหรือเอกสารที่เผยแพร่โดยไม่ได้รับอนุญาต
+          required: true

@@ -1,0 +1,85 @@
+---
+import { AlertTriangle, ArrowLeft, ArrowRight, ArrowUpRight, BookOpenCheck, Database, Scale } from "lucide-astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { synthesisStories } from "../../data/syntheses";
+import { microhistoryById, sourceById } from "../../data/history";
+
+export function getStaticPaths() {
+  return synthesisStories.map((story) => ({ params: { slug: story.slug }, props: { story } }));
+}
+
+const { story } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const evidence = story.evidenceIds.map((id) => microhistoryById.get(id)).filter(Boolean);
+const sources = story.sourceIds.map((id) => sourceById.get(id)).filter(Boolean);
+const evidenceLabel: Record<string, string> = {
+  "documented-case": "มีหลักฐานชีวิตจริง",
+  "contextual-lead": "เบาะแสบริบท",
+  "research-lead": "ต้องค้นต่อ",
+};
+---
+
+<BaseLayout title={`${story.title} | ประวัติศาสตร์ประชาชนไทย`} description={story.deck}>
+  <article class="synthesis-page">
+    <header class="synthesis-hero container">
+      <a class="back-link" href={`${base}reading/`}><ArrowLeft size={18} /> เส้นทางอ่านทั้งหมด</a>
+      <p class="eyebrow">Reader draft · พ.ศ. {story.periodRange}</p>
+      <h1>{story.title}</h1>
+      <p class="article-deck">{story.deck}</p>
+      <div class="synthesis-meta"><span><BookOpenCheck size={17} /> {evidence.length} กรณีหลักฐาน</span><span><Database size={17} /> {sources.length} แหล่งอ้างอิง</span></div>
+    </header>
+
+    <section class="synthesis-claim">
+      <div class="container synthesis-claim-inner">
+        <p class="eyebrow">ข้อสังเคราะห์ที่ฐานปัจจุบันรองรับ</p>
+        <h2>{story.claim}</h2>
+        <p>ข้อความนี้เป็นการสังเคราะห์จากกรณีด้านล่าง ไม่ใช่คำอธิบายแทนประสบการณ์ของคนไทยทุกพื้นที่หรือทุกกลุ่ม</p>
+      </div>
+    </section>
+
+    <div class="synthesis-layout container">
+      <aside class="article-index">
+        <strong>ในหน้านี้</strong>
+        <a href="#evidence">หลักฐานที่วางร่วมกัน</a>
+        <a href="#limits">ข้อจำกัด</a>
+        <a href="#sources">แหล่งอ้างอิง</a>
+        <a href={`${base}gaps/`}>ช่องว่างทั้งหมด</a>
+      </aside>
+      <div class="synthesis-body">
+        <section id="evidence">
+          <p class="status-line evidence"><BookOpenCheck size={17} /> Evidence trail</p>
+          <h2>หลักฐานที่วางร่วมกัน</h2>
+          <div class="synthesis-evidence-list">
+            {evidence.map((record) => (
+              <article class="synthesis-evidence-item">
+                <header><span>พ.ศ. {record?.beYear}</span><span class:list={["evidence-badge", record?.evidenceStatus]}>{evidenceLabel[record?.evidenceStatus ?? ""]}</span></header>
+                <h3>{record?.title}</h3>
+                <p>{record?.fact}</p>
+                <div class="evidence-lived"><strong>สิ่งที่หลักฐานช่วยให้เห็นในระดับชีวิต</strong><p>{record?.livedExperience}</p></div>
+                <a href={`${base}archive/?q=${encodeURIComponent(record?.title ?? "")}`}>เปิดระเบียนและคำถามที่ยังค้าง <ArrowRight size={16} /></a>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="limits" class="synthesis-limit">
+          <p class="status-line caution"><AlertTriangle size={17} /> ขอบเขตที่ยังห้ามสรุปเกิน</p>
+          <h2>ฐานนี้ยังตอบไม่ได้ทั้งหมด</h2>
+          <p>{story.limits}</p>
+          <a href={`${base}gaps/`}>ดู contextual lead และเสียงที่ยังขาดทั้งหมด <ArrowRight size={16} /></a>
+        </section>
+
+        <section id="sources" class="synthesis-sources">
+          <p class="status-line interpretation"><Scale size={17} /> Sources</p>
+          <h2>แหล่งอ้างอิงของบทนี้</h2>
+          <ol>
+            {sources.map((source) => (
+              <li><a href={source?.url} target="_blank" rel="noreferrer"><span><strong>{source?.title}</strong><small>{source?.publisher}</small></span><ArrowUpRight size={16} /></a></li>
+            ))}
+          </ol>
+          <p class="source-caveat">จำนวนแหล่งไม่ใช่คะแนนความจริง ผู้อ่านควรตรวจชนิดแหล่ง ขอบเขต วิธีวิจัย และเสียงที่แหล่งนั้นไม่ครอบคลุมร่วมด้วย</p>
+        </section>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

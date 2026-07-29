@@ -2,6 +2,7 @@
 import { Menu, Search, X } from "lucide-astro";
 import "../styles/global.css";
 import { events, microhistories } from "../data/history";
+import { synthesisStories } from "../data/syntheses";
 import { formatBeCe } from "../utils/thai-year";
 
 interface Props {
@@ -27,6 +28,12 @@ const eventSearchData = [
     href: `${base}archive/?q=${encodeURIComponent(record.title)}`,
     keywords: [record.fact, record.livedExperience, ...record.everydayDimensions, ...record.groups, ...record.location].join(" "),
   })),
+  ...synthesisStories.map((story) => ({
+    title: story.title,
+    meta: `บทสังเคราะห์ · พ.ศ. ${story.periodRange}`,
+    href: `${base}reading/${story.slug}/`,
+    keywords: [story.deck, story.claim, story.limits].join(" "),
+  })),
 ];
 ---
 
@@ -48,10 +55,10 @@ const eventSearchData = [
       <span class="date-stamp">พ.ศ. 2460-2560</span>
       <nav class="desktop-nav" aria-label="เมนูหลัก">
         <a href={`${base}archive/`}>ฐานข้อมูล</a>
+        <a href={`${base}reading/`}>เส้นทางอ่าน</a>
         <a href={`${base}sources/`}>แหล่งอ้างอิง</a>
+        <a href={`${base}gaps/`}>ช่องว่าง</a>
         <a href={`${base}#timeline`}>สำรวจตามเวลา</a>
-        <a href={`${base}#stories`}>ชีวิตผู้คน</a>
-        <a href={`${base}#themes`}>ประเด็น</a>
         <a href={`${base}#world`}>ไทยกับโลก</a>
       </nav>
       <div class="header-actions">
@@ -60,12 +67,13 @@ const eventSearchData = [
       </div>
       <nav class="mobile-nav" aria-label="เมนูมือถือ" data-mobile-nav hidden>
         <a href={`${base}archive/`}>ฐานข้อมูลเหตุการณ์</a>
+        <a href={`${base}reading/`}>เส้นทางอ่าน</a>
         <a href={`${base}sources/`}>แหล่งอ้างอิง</a>
+        <a href={`${base}gaps/`}>ช่องว่างที่ยังเปิด</a>
         <a href={`${base}#timeline`}>สำรวจตามเวลา</a>
-        <a href={`${base}#stories`}>ชีวิตผู้คน</a>
-        <a href={`${base}#themes`}>ประเด็น</a>
         <a href={`${base}#world`}>ไทยกับโลก</a>
         <a href={`${base}method/`}>วิธีอ่านหลักฐาน</a>
+        <a href={`${base}contribute/`}>เสนอข้อมูลหรือแก้ไข</a>
       </nav>
     </header>
     <main><slot /></main>
@@ -76,10 +84,11 @@ const eventSearchData = [
       </div>
       <nav aria-label="เมนูท้ายหน้า">
         <a href={`${base}archive/`}>ฐานข้อมูล</a>
+        <a href={`${base}reading/`}>เส้นทางอ่าน</a>
         <a href={`${base}sources/`}>แหล่งอ้างอิง</a>
+        <a href={`${base}gaps/`}>ช่องว่าง</a>
         <a href={`${base}method/`}>วิธีวิจัย</a>
-        <a href={`${base}method/#evidence`}>สถานะหลักฐาน</a>
-        <a href={`${base}method/#rights`}>สิทธิภาพและสื่อ</a>
+        <a href={`${base}contribute/`}>เสนอแก้ไข</a>
       </nav>
     </footer>
 
@@ -117,11 +126,11 @@ const eventSearchData = [
       const searchData = [
         { title: "ฐานข้อมูลเหตุการณ์ 2460-2560", meta: "เหตุการณ์และ Microhistory", href: `${base}archive/`, keywords: "ฐานข้อมูล timeline source อ้างอิง pattern" },
         { title: "แหล่งอ้างอิงทั้งหมด", meta: "Sources", href: `${base}sources/`, keywords: "แหล่งอ้างอิง source บรรณานุกรม บริบทโลก world context" },
+        { title: "เส้นทางอ่านจากชีวิตผู้คน", meta: "บทสังเคราะห์", href: `${base}reading/`, keywords: "บทสังเคราะห์ เรื่องอ่าน evidence หลักฐาน" },
+        { title: "ช่องว่างที่ยังเปิด", meta: "Research gaps", href: `${base}gaps/`, keywords: "ช่องว่าง contextual lead missing voices คำถาม" },
         { title: "หนึ่งร้อยปีในหน้าประวัติศาสตร์", meta: "สำรวจตามเวลา", href: `${base}#timeline`, keywords: "ปี เวลา ช่วง ประวัติศาสตร์" },
-        { title: "เมืองขยาย ชีวิตเปลี่ยน", meta: "บททดลอง", href: `${base}stories/city-and-mobility/`, keywords: "เมือง กรุงเทพ การเดินทาง งาน" },
-        { title: "การศึกษาและความฝัน", meta: "บททดลอง", href: `${base}stories/education-and-dreams/`, keywords: "โรงเรียน การศึกษา เด็ก ครอบครัว โอกาส" },
-        { title: "เศรษฐกิจในชีวิตประจำวัน", meta: "บททดลอง", href: `${base}stories/everyday-economy/`, keywords: "เศรษฐกิจ รายได้ ราคา ที่ดิน หนี้ เกษตร" },
         { title: "วิธีอ่านหลักฐาน", meta: "เกี่ยวกับโครงการ", href: `${base}method/`, keywords: "แหล่งอ้างอิง fact interpretation dispute สงครามเย็น" },
+        { title: "เสนอข้อมูลหรือแก้ไข", meta: "Contribute", href: `${base}contribute/`, keywords: "แจ้งแก้ไข เสนอแหล่ง ข้อผิดพลาด contribution" },
         ...eventSearchData,
       ];
       document.querySelector("[data-search-open]")?.addEventListener("click", () => {

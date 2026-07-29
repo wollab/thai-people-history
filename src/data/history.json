@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "ฐานข้อมูลประวัติศาสตร์ประชาชนไทย พ.ศ. 2460-2560",
-    "version": "0.11.0",
-    "updated": "2026-07-23",
+    "version": "0.11.2",
+    "updated": "2026-07-29",
     "canonicalStatus": "staging-source-of-truth",
     "canonicalPath": "03_Documents/04_Knowledge_Base/01_Inbox/04_Personal_Learning/2026-07-19-thai-people-history-2460-2560/09_event_database.json",
     "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า",
-    "lastResearchBatch": "batch-2026-07-23-gate100-late"
+    "lastResearchBatch": "batch-2026-07-29-source-access-dates"
   },
   "sources": [
     {
@@ -15,7 +15,8 @@
       "publisher": "U.S. Department of State, Office of the Historian",
       "url": "https://history.state.gov/historicaldocuments/frus1917Supp01v01/d644",
       "type": "primary-document",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-moe-history",
@@ -23,7 +24,8 @@
       "publisher": "Ministry of Education, Thailand",
       "url": "https://bic.moe.go.th/images/stories/book/other/MOE/A_HISTORY_OF_THAI_EDUCATION-1976.pdf",
       "type": "official-history",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-chula-history",
@@ -31,7 +33,8 @@
       "publisher": "Chulalongkorn University",
       "url": "https://www.chula.ac.th/en/about/overview/history/",
       "type": "institutional-history",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-mfa-treaties",
@@ -39,7 +42,8 @@
       "publisher": "International Studies Center, Ministry of Foreign Affairs",
       "url": "https://isc.mfa.go.th/en/content/from-extraterritoriality-to-equality-thailand-s-fo",
       "type": "scholarly-official",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-depression",
@@ -47,7 +51,8 @@
       "publisher": "World Bank",
       "url": "https://www.worldbank.org/en/events/2017/09/07/unequal-effects-of-the-great-depression-on-rural-households-in-siam",
       "type": "research",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-parliament-2475",
@@ -55,7 +60,8 @@
       "publisher": "พิพิธภัณฑ์รัฐสภา",
       "url": "https://www.parliamentmuseum.go.th/ar63-People_team.html",
       "type": "official-history",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-parliament-constitution-2475",
@@ -63,7 +69,8 @@
       "publisher": "พิพิธภัณฑ์รัฐสภา",
       "url": "https://www.parliamentmuseum.go.th/constitution/constitution-1-2475.html",
       "type": "official-record",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-national-archives-mandates",
@@ -71,7 +78,8 @@
       "publisher": "The National Archives of Thailand via Google Arts & Culture",
       "url": "https://artsandculture.google.com/asset/thai-cultural-mandates-the-national-archives-of-thailand/wwFI4bpgoMsPhQ?hl=en",
       "type": "archive",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-cia-free-thai",
@@ -79,7 +87,8 @@
       "publisher": "Central Intelligence Agency, Center for the Study of Intelligence",
       "url": "https://www.cia.gov/resources/csi/static/OSS-and-Free-Thai.pdf",
       "type": "archival-study",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-un-thailand",
@@ -87,7 +96,8 @@
       "publisher": "United Nations",
       "url": "https://www.un.org/en/about-us/member-states/thailand",
       "type": "official-record",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-state-seato",
@@ -95,7 +105,8 @@
       "publisher": "U.S. Department of State, Office of the Historian",
       "url": "https://history.state.gov/milestones/1953-1960/seato",
       "type": "official-history",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-parliament-history",
@@ -103,7 +114,8 @@
       "publisher": "พิพิธภัณฑ์รัฐสภา",
       "url": "https://www.parliamentmuseum.go.th/89y/content5.html",
       "type": "official-history",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-nesdc-plans",
@@ -111,7 +123,8 @@
       "publisher": "Office of the National Economic and Social Development Council",
       "url": "https://www.nesdc.go.th/en/the-national-economic-and-social-development-plan/",
       "type": "official-plan",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-frus-bases",
@@ -119,7 +132,8 @@
       "publisher": "U.S. Department of State, Office of the Historian",
       "url": "https://history.state.gov/historicaldocuments/frus1969-76v20/d164",
       "type": "primary-document",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-asean-history",
@@ -127,7 +141,8 @@
       "publisher": "ASEAN Secretariat",
       "url": "https://asean.org/main-search/",
       "type": "official-history",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-ops-highered",
@@ -135,7 +150,8 @@
       "publisher": "สำนักงานปลัดกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม",
       "url": "https://www.ops.go.th/th/content_page/item/1707-history-mua",
       "type": "official-history",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-nrct-14oct",
@@ -143,7 +159,8 @@
       "publisher": "ระบบหอจดหมายเหตุต่างประเทศ ทูลกระหม่อมอาจารย์, วช.",
       "url": "https://archives.nrct.go.th/histdept/items/show/400",
       "type": "primary-document-archive",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-ilo-labour-2518",
@@ -151,7 +168,8 @@
       "publisher": "ILO NATLEX",
       "url": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=14497",
       "type": "legal-record",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-doct6",
@@ -159,7 +177,8 @@
       "publisher": "โครงการบันทึก 6 ตุลา",
       "url": "https://doct6.com/",
       "type": "public-archive",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-ago-oct6-case",
@@ -167,7 +186,8 @@
       "publisher": "ห้องสมุดกฎหมาย สำนักงานอัยการสูงสุด",
       "url": "https://www3.ago.go.th/library/riot-case-6-october-2519/",
       "type": "official-case-record",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-order-66-study",
@@ -175,7 +195,8 @@
       "publisher": "Journal of Arts and Thai Studies",
       "url": "https://so08.tci-thaijo.org/index.php/artssu/article/view/4312",
       "type": "peer-reviewed-research",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-eastern-seaboard",
@@ -183,7 +204,8 @@
       "publisher": "World Bank",
       "url": "https://documents1.worldbank.org/curated/en/116101468118461511/pdf/35353.pdf",
       "type": "institutional-research",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-parliament-may-1992",
@@ -191,7 +213,8 @@
       "publisher": "รัฐสภาไทย",
       "url": "https://web.parliament.go.th/view/7/ภาพข่าวรัฐสภา/ข่าวรัฐสภา/4226/TH-TH",
       "type": "official-commemoration",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wto-thailand",
@@ -199,7 +222,8 @@
       "publisher": "World Trade Organization",
       "url": "https://www.wto.org/english/thewto_e/countries_e/thailand_e.htm",
       "type": "official-record",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-bot-2540",
@@ -207,7 +231,8 @@
       "publisher": "Bank of Thailand",
       "url": "https://www.bot.or.th/en/our-roles/special-measures/Tom-Yum-Kung-lesson.html",
       "type": "official-history",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-imf-2540",
@@ -215,7 +240,8 @@
       "publisher": "International Monetary Fund",
       "url": "https://www.imf.org/external/np/sec/pr/1997/pr9737.htm",
       "type": "official-record",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-parliament-constitution-2540",
@@ -223,7 +249,8 @@
       "publisher": "พิพิธภัณฑ์รัฐสภา",
       "url": "https://parliamentmuseum.go.th/constitution/constitution-16-2540.html",
       "type": "official-record",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-education-act-2542",
@@ -231,7 +258,8 @@
       "publisher": "สำนักงานปลัดกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม",
       "url": "https://www.ops.go.th/th/content_page/item/1707-history-mua",
       "type": "official-history",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-village-fund",
@@ -239,7 +267,8 @@
       "publisher": "World Bank",
       "url": "https://www.worldbank.org/en/country/thailand/publication/thailand-economic-monitor-reports",
       "type": "institutional-research",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-who-uhc",
@@ -247,7 +276,8 @@
       "publisher": "World Health Organization",
       "url": "https://www.who.int/en/news-room/feature-stories/detail/in-thailand-universal-health-care-eases-the-impact-of-diabetes",
       "type": "official-history",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-tsunami",
@@ -255,7 +285,8 @@
       "publisher": "World Bank",
       "url": "https://documents1.worldbank.org/curated/en/319941468308953677/pdf/353850TH0Country0dialogue020051cdm2004.pdf",
       "type": "institutional-report",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-parliament-constitution-2549",
@@ -263,7 +294,8 @@
       "publisher": "Library of Parliament",
       "url": "https://library.parliament.go.th/sites/default/files/assets/files/give%20%26%20take/main%20page/constitutions/NALT-cons_temp2549E.pdf",
       "type": "legal-record",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-gfc",
@@ -271,7 +303,8 @@
       "publisher": "World Bank",
       "url": "https://www.worldbank.org/en/news/press-release/2010/06/24/thai-economic-recovery-still-driven-export-growth-world-bank-says",
       "type": "institutional-report",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-trct-2010",
@@ -279,7 +312,8 @@
       "publisher": "Center for Strategic and International Studies",
       "url": "https://www.csis.org/analysis/thailands-truth-reconciliation-commission-issues-final-report",
       "type": "secondary-summary-of-official-report",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-flood-2554",
@@ -287,7 +321,8 @@
       "publisher": "World Bank",
       "url": "https://www.worldbank.org/en/news/feature/2011/12/13/world-bank-supports-thailands-post-floods-recovery-effort",
       "type": "institutional-assessment",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-ilo-wage-300",
@@ -295,7 +330,8 @@
       "publisher": "ILO NATLEX / Ministry of Labour",
       "url": "https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/93544/THA93544%20Eng.pdf",
       "type": "legal-record",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-mfa-ncpo",
@@ -304,7 +340,8 @@
       "url": "https://th.wikisource.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%87%E0%B8%9A%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%88_%E0%B9%91/%E0%B9%92%E0%B9%95%E0%B9%95%E0%B9%97",
       "type": "primary-document",
       "language": "th",
-      "note": "แทนที่ URL เดิมของ mfa.go.th ที่เสีย (404) เมื่อ 2026-07-19 — ตรวจแล้วว่าเป็นต้นฉบับประกาศฉบับเดียวกัน"
+      "note": "แทนที่ URL เดิมของ mfa.go.th ที่เสีย (404) เมื่อ 2026-07-19 — ตรวจแล้วว่าเป็นต้นฉบับประกาศฉบับเดียวกัน",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-asean-aec",
@@ -312,7 +349,8 @@
       "publisher": "ASEAN Secretariat",
       "url": "https://www.asean.org/wp-content/uploads/2012/05/56.-December-2015-Fact-Sheet-on-ASEAN-Economic-Community-AEC-1.pdf",
       "type": "official-record",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-parliament-constitution-2560",
@@ -320,7 +358,8 @@
       "publisher": "พิพิธภัณฑ์รัฐสภา",
       "url": "https://parliamentmuseum.go.th/constitution/constitution-20-2560.html",
       "type": "official-record",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-un-internet",
@@ -328,7 +367,8 @@
       "publisher": "UNdata / ITU",
       "url": "https://data.un.org/Data.aspx?d=ITU&f=ind1Code%3AI99H%3BcountryCode%3ATHA",
       "type": "official-statistics",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-jts-satri-thai",
@@ -336,7 +376,8 @@
       "publisher": "Journal of Thai Studies, Chulalongkorn University",
       "url": "https://so04.tci-thaijo.org/index.php/TSDJ/article/view/267248",
       "type": "peer-reviewed-research",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-oxford-ww2-impact",
@@ -344,7 +385,8 @@
       "publisher": "Oxford University Research Archive",
       "url": "https://ora.ox.ac.uk/objects/uuid%3A623a2d48-a892-49e4-842d-0ea1758a72c2",
       "type": "doctoral-research",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-silpakorn-bangkoknoi-ww2",
@@ -352,7 +394,8 @@
       "publisher": "วารสารอักษรศาสตร์ มหาวิทยาลัยศิลปากร",
       "url": "https://so04.tci-thaijo.org/index.php/jasu/article/view/239327",
       "type": "oral-history-research",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-jsn-women-ww2",
@@ -360,7 +403,8 @@
       "publisher": "วารสารเครือข่ายญี่ปุ่นศึกษา",
       "url": "https://so04.tci-thaijo.org/index.php/jsn/article/viewFile/42407/35053",
       "type": "peer-reviewed-research",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-chula-working-women",
@@ -368,7 +412,8 @@
       "publisher": "Chulalongkorn University Theses and Dissertations",
       "url": "https://digital.car.chula.ac.th/chulaetd/24352/",
       "type": "academic-thesis",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-isan-roads",
@@ -376,7 +421,8 @@
       "publisher": "World Bank",
       "url": "https://documents1.worldbank.org/curated/en/312591468004457911/pdf/490460PUB0slee101Official0Use0Only1.pdf",
       "type": "institutional-research",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-claremont-base-towns",
@@ -384,7 +430,8 @@
       "publisher": "Claremont Graduate University",
       "url": "https://scholarship.claremont.edu/cgu_etd/897/",
       "type": "open-access-dissertation",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-population-1978",
@@ -392,7 +439,8 @@
       "publisher": "World Bank",
       "url": "https://documents1.worldbank.org/curated/en/412641468117279973/pdf/multi0page.pdf",
       "type": "institutional-report",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-jss-women-media-2516",
@@ -400,7 +448,8 @@
       "publisher": "วารสารวิจัยสังคมและปริทัศน์",
       "url": "https://so04.tci-thaijo.org/index.php/socialresearchjournal/article/view/84119",
       "type": "peer-reviewed-research",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-jss-farmer-movement",
@@ -408,7 +457,8 @@
       "publisher": "วารสารวิจัยสังคมและปริทัศน์",
       "url": "https://so04.tci-thaijo.org/index.php/socialresearchjournal/article/view/246908",
       "type": "peer-reviewed-research",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-jssnu-women-cpt-south",
@@ -416,7 +466,8 @@
       "publisher": "Journal of Social Sciences Naresuan University",
       "url": "https://so04.tci-thaijo.org/index.php/jssnu/article/view/270951",
       "type": "peer-reviewed-research",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-cmu-sanpong",
@@ -424,7 +475,8 @@
       "publisher": "Journal of Social Sciences, Chiang Mai University",
       "url": "https://so04.tci-thaijo.org/index.php/jss/article/view/173567",
       "type": "anthropological-research",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-wb-workers-crisis",
@@ -432,7 +484,8 @@
       "publisher": "World Bank",
       "url": "https://documents1.worldbank.org/curated/en/612531468778514857/pdf/multi0page.pdf",
       "type": "institutional-research",
-      "language": "en"
+      "language": "en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-kbu-karen-migration",
@@ -440,7 +493,8 @@
       "publisher": "Kasem Bundit Journal",
       "url": "https://so04.tci-thaijo.org/index.php/jkbu/article/view/58842",
       "type": "field-research",
-      "language": "th-en"
+      "language": "th-en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-nida-pakmun",
@@ -448,7 +502,8 @@
       "publisher": "NIDA Case Research Journal",
       "url": "https://so04.tci-thaijo.org/index.php/ncrj/article/view/100229",
       "type": "ethnographic-case-study",
-      "language": "th-en"
+      "language": "th-en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-cmu-women-traders",
@@ -456,7 +511,8 @@
       "publisher": "Journal of Social Sciences, Chiang Mai University",
       "url": "https://so04.tci-thaijo.org/index.php/jss/article/view/170697",
       "type": "qualitative-case-study",
-      "language": "th-en"
+      "language": "th-en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-swurd-flood-households",
@@ -464,7 +520,8 @@
       "publisher": "Srinakharinwirot Research and Development Journal",
       "url": "https://so04.tci-thaijo.org/index.php/swurd/article/view/123691",
       "type": "household-survey-research",
-      "language": "th-en"
+      "language": "th-en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-sjij-migrant-workers",
@@ -472,7 +529,8 @@
       "publisher": "Social Justice and Inequality Journal",
       "url": "https://so04.tci-thaijo.org/index.php/sjij/article/view/264865",
       "type": "anthropological-research",
-      "language": "th-en"
+      "language": "th-en",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-etda-internet-profile",
@@ -480,7 +538,8 @@
       "publisher": "Electronic Transactions Development Agency",
       "url": "https://www.etda.or.th/th/Our-Service/Standard-%281%29/Certifications-%281%29.aspx",
       "type": "official-survey-series",
-      "language": "th"
+      "language": "th",
+      "accessed": "2026-07-29"
     },
     {
       "id": "src-kpi-first-election-2476",
@@ -1575,10 +1634,11 @@
       "id": "src-un-thailand-escr-education-2005",
       "title": "Thailand report on economic, social and cultural rights",
       "publisher": "United Nations",
-      "url": "https://documents.un.org/access.nsf/get?DS=E%2FC.12%2FTHA%2F1-2&Lang=E&Open=",
+      "url": "https://documents.un.org/api/symbol/access?l=en&s=E%2FC.12%2FTHA%2F1-2&t=pdf",
       "type": "international-official-record",
       "language": "en",
-      "accessed": "2026-07-23"
+      "accessed": "2026-07-29",
+      "note": "Replaced the retired ODS access URL with the current United Nations document API for E/C.12/THA/1-2 after link audit."
     },
     {
       "id": "src-swurd-nathap-chana",

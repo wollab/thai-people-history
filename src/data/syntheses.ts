@@ -14,4 +14,8 @@ export type SynthesisStory = {
 };
 
 export const synthesisMeta = rawSyntheses.meta;
-export const synthesisStories = rawSyntheses.stories as SynthesisStory[];
+export const synthesisStories = (rawSyntheses.stories as SynthesisStory[]).map((story) => ({
+  ...story,
+  slug: story.id.replace(/^syn-/, ""),
+}));
+export const synthesisBySlug = new Map(synthesisStories.map((story) => [story.slug, story]));
