@@ -184,6 +184,33 @@
         font-size: 29px;
         line-height: 1;
       }
+      .profile-v5-copy {
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        display: grid;
+        width: 45%;
+        justify-items: center;
+        color: #171714;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      .profile-v5-label {
+        margin-bottom: 13px;
+        color: #b52a22;
+        font-size: 43px;
+        line-height: 1;
+      }
+      .profile-v5-year {
+        font-size: 82px;
+        line-height: .78;
+      }
+      .profile-v5-divider {
+        width: 48px;
+        height: 7px;
+        margin: 17px 0 19px;
+        background: #24483c;
+      }
     </style>
   </head>
   <body>
@@ -224,6 +251,14 @@
         <span class="profile-v4-period">พ.ศ. 2460–2560</span>
         <strong class="profile-v4-title">ประวัติศาสตร์<br />ประชาชนไทย</strong>
         <span class="profile-v4-mark">๑๐๐ ปี</span>
+      </div>
+    </main>
+    <main class="asset profile profile-v2" data-mode="profile-v5" aria-label="100 ปี พ.ศ. 2460 ถึง 2560">
+      <div class="profile-v5-copy thai-condensed">
+        <strong class="profile-v5-label">100 ปี</strong>
+        <strong class="profile-v5-year">2460</strong>
+        <span class="profile-v5-divider" aria-hidden="true"></span>
+        <strong class="profile-v5-year">2560</strong>
       </div>
     </main>
     <script>

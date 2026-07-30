@@ -8,9 +8,10 @@ Final files:
 - `public/social/facebook-page/facebook-cover-v2.png` - Thai everyday-life revision, 1640 x 924 PNG, 16:9
 - `public/social/facebook-page/facebook-profile-v3.png` - full Thai Page-name lockup, 640 x 640 PNG
 - `public/social/facebook-page/facebook-profile-v4-condensed.png` - Noto Sans Thai Extra Condensed lockup, 640 x 640 PNG
+- `public/social/facebook-page/facebook-profile-v5-years.png` - compact `100 ปี / 2460 / 2560` lockup, 640 x 640 PNG
 - `public/social/facebook-page/facebook-cover-v3-condensed.png` - matching condensed cover, 1640 x 924 PNG, 16:9
 
-Recommended condensed set: use `facebook-profile-v4-condensed.png` with `facebook-cover-v3-condensed.png`. The exact text is rendered with the locally bundled Noto Sans Thai variable font at width `62.5` and weight `800`.
+Recommended condensed set: use `facebook-profile-v5-years.png` with `facebook-cover-v3-condensed.png`. The profile lets the Page name carry the identity while the image communicates the 100-year scope at small sizes. Exact text is rendered with the locally bundled Noto Sans Thai variable font at width `62.5` and weight `800`.
 
 Source files:
 
