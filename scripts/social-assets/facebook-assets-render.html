@@ -96,6 +96,41 @@
       }
       .profile-v2-number { display: block; font-size: 224px; }
       .profile-v2-year { display: block; margin-top: 24px; color: #b52a22; font-size: 66px; }
+      .profile-v3-copy {
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        width: 46%;
+        color: #171714;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      .profile-v3-period {
+        display: block;
+        margin-bottom: 15px;
+        color: #b52a22;
+        font-family: "Leelawadee UI", Tahoma, sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+      }
+      .profile-v3-title {
+        display: block;
+        font-family: "Angsana New", "Leelawadee UI", serif;
+        font-size: 66px;
+        font-weight: 700;
+        line-height: .82;
+      }
+      .profile-v3-mark {
+        display: inline-block;
+        margin-top: 22px;
+        padding: 5px 12px 3px;
+        color: #f7f2e8;
+        background: #24483c;
+        font-family: "Angsana New", "Leelawadee UI", serif;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1;
+      }
     </style>
   </head>
   <body>
@@ -116,6 +151,13 @@
     </main>
     <main class="asset profile profile-v2" data-mode="profile-v2" aria-label="ปฏิทินหนึ่งร้อยปีและหนังสือพิมพ์ไทย">
       <div class="profile-v2-copy"><span class="profile-v2-number">๑๐๐</span><span class="profile-v2-year">ปี</span></div>
+    </main>
+    <main class="asset profile profile-v2" data-mode="profile-v3" aria-label="ประวัติศาสตร์ประชาชนไทย พ.ศ. 2460 ถึง 2560">
+      <div class="profile-v3-copy">
+        <span class="profile-v3-period">พ.ศ. 2460–2560</span>
+        <strong class="profile-v3-title">ประวัติศาสตร์<br />ประชาชนไทย</strong>
+        <span class="profile-v3-mark">๑๐๐ ปี</span>
+      </div>
     </main>
     <script>
       const mode = new URLSearchParams(location.search).get("mode") || "cover";

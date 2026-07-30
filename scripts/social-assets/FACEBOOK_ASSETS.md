@@ -6,8 +6,9 @@ Final files:
 - `public/social/facebook-page/facebook-cover.png` - 1640 x 924 PNG, 16:9
 - `public/social/facebook-page/facebook-profile-v2.png` - Thai-print revision, 640 x 640 PNG
 - `public/social/facebook-page/facebook-cover-v2.png` - Thai everyday-life revision, 1640 x 924 PNG, 16:9
+- `public/social/facebook-page/facebook-profile-v3.png` - full Thai Page-name lockup, 640 x 640 PNG
 
-Recommended for the Page launch: use the two `v2` files. They replace the generic East-Asian visual cues with Thai numerals, vernacular print borders, and everyday Thai settings without relying on tourism or state symbols.
+Recommended for the Page launch: use `facebook-profile-v3.png` with `facebook-cover-v2.png`. They replace the generic East-Asian visual cues with Thai text, Thai numerals, vernacular print borders, and everyday Thai settings without relying on tourism or state symbols.
 
 Source files:
 
