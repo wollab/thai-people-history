@@ -4,11 +4,17 @@ Final files:
 
 - `public/social/facebook-page/facebook-profile.png` - 640 x 640 PNG
 - `public/social/facebook-page/facebook-cover.png` - 1640 x 924 PNG, 16:9
+- `public/social/facebook-page/facebook-profile-v2.png` - Thai-print revision, 640 x 640 PNG
+- `public/social/facebook-page/facebook-cover-v2.png` - Thai everyday-life revision, 1640 x 924 PNG, 16:9
+
+Recommended for the Page launch: use the two `v2` files. They replace the generic East-Asian visual cues with Thai numerals, vernacular print borders, and everyday Thai settings without relying on tourism or state symbols.
 
 Source files:
 
 - `facebook-profile-source.png` - generated emblem without text
 - `facebook-cover-background.png` - generated editorial collage without text
+- `facebook-profile-v2-source.png` - revised Thai shop-calendar and newspaper emblem
+- `facebook-cover-v2-background.png` - revised Thai everyday-life collage without text
 - `scripts/social-assets/facebook-assets-render.html` - deterministic Thai title and export layout
 
 ## Direction
@@ -28,3 +34,4 @@ Exact public copy is rendered separately:
 - `คลังความรู้สาธารณะ`
 - `ประวัติศาสตร์ประชาชนไทย`
 - `พ.ศ. 2460–2560`
+- `๑๐๐ ปี` on the revised profile emblem
