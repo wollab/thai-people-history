@@ -7,8 +7,10 @@ Final files:
 - `public/social/facebook-page/facebook-profile-v2.png` - Thai-print revision, 640 x 640 PNG
 - `public/social/facebook-page/facebook-cover-v2.png` - Thai everyday-life revision, 1640 x 924 PNG, 16:9
 - `public/social/facebook-page/facebook-profile-v3.png` - full Thai Page-name lockup, 640 x 640 PNG
+- `public/social/facebook-page/facebook-profile-v4-condensed.png` - Noto Sans Thai Extra Condensed lockup, 640 x 640 PNG
+- `public/social/facebook-page/facebook-cover-v3-condensed.png` - matching condensed cover, 1640 x 924 PNG, 16:9
 
-Recommended for the Page launch: use `facebook-profile-v3.png` with `facebook-cover-v2.png`. They replace the generic East-Asian visual cues with Thai text, Thai numerals, vernacular print borders, and everyday Thai settings without relying on tourism or state symbols.
+Recommended condensed set: use `facebook-profile-v4-condensed.png` with `facebook-cover-v3-condensed.png`. The exact text is rendered with the locally bundled Noto Sans Thai variable font at width `62.5` and weight `800`.
 
 Source files:
 
@@ -17,6 +19,8 @@ Source files:
 - `facebook-profile-v2-source.png` - revised Thai shop-calendar and newspaper emblem
 - `facebook-cover-v2-background.png` - revised Thai everyday-life collage without text
 - `scripts/social-assets/facebook-assets-render.html` - deterministic Thai title and export layout
+- `scripts/social-assets/fonts/NotoSansThai-Variable.ttf` - Google Fonts variable font with `wdth 62.5-100` and `wght 100-900`
+- `scripts/social-assets/fonts/OFL-NotoSansThai.txt` - SIL Open Font License
 
 ## Direction
 

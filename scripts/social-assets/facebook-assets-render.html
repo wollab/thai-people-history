@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Thai People History Facebook Assets</title>
     <style>
+      @font-face {
+        font-family: "Noto Sans Thai Condensed Local";
+        src: url("fonts/NotoSansThai-Variable.ttf") format("truetype-variations");
+        font-style: normal;
+        font-weight: 100 900;
+        font-stretch: 62.5% 100%;
+      }
       * { box-sizing: border-box; }
       html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
       body { background: #f7f2e8; }
@@ -131,6 +138,52 @@
         font-weight: 700;
         line-height: 1;
       }
+      .thai-condensed {
+        font-family: "Noto Sans Thai Condensed Local", "Leelawadee UI", sans-serif;
+        font-stretch: 62.5%;
+        font-variation-settings: "wdth" 62.5, "wght" 800;
+      }
+      .cover-v3 .cover-kicker,
+      .cover-v3 h1,
+      .cover-v3 .cover-period {
+        font-family: "Noto Sans Thai Condensed Local", "Leelawadee UI", sans-serif;
+        font-stretch: 62.5%;
+        font-variation-settings: "wdth" 62.5, "wght" 800;
+      }
+      .cover-v3 h1 {
+        font-size: 80px;
+        line-height: .94;
+      }
+      .profile-v4-copy {
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        width: 47%;
+        color: #171714;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      .profile-v4-period {
+        display: block;
+        margin-bottom: 18px;
+        color: #b52a22;
+        font-size: 24px;
+        line-height: 1;
+      }
+      .profile-v4-title {
+        display: block;
+        font-size: 50px;
+        line-height: .92;
+      }
+      .profile-v4-mark {
+        display: inline-block;
+        margin-top: 23px;
+        padding: 7px 14px 5px;
+        color: #f7f2e8;
+        background: #24483c;
+        font-size: 29px;
+        line-height: 1;
+      }
     </style>
   </head>
   <body>
@@ -157,6 +210,20 @@
         <span class="profile-v3-period">พ.ศ. 2460–2560</span>
         <strong class="profile-v3-title">ประวัติศาสตร์<br />ประชาชนไทย</strong>
         <span class="profile-v3-mark">๑๐๐ ปี</span>
+      </div>
+    </main>
+    <main class="asset cover cover-v2 cover-v3" data-mode="cover-v3">
+      <div class="cover-copy">
+        <p class="cover-kicker">คลังความรู้สาธารณะ</p>
+        <h1>ประวัติศาสตร์<br />ประชาชนไทย</h1>
+        <p class="cover-period">พ.ศ. 2460–2560</p>
+      </div>
+    </main>
+    <main class="asset profile profile-v2" data-mode="profile-v4" aria-label="ประวัติศาสตร์ประชาชนไทย พ.ศ. 2460 ถึง 2560">
+      <div class="profile-v4-copy thai-condensed">
+        <span class="profile-v4-period">พ.ศ. 2460–2560</span>
+        <strong class="profile-v4-title">ประวัติศาสตร์<br />ประชาชนไทย</strong>
+        <span class="profile-v4-mark">๑๐๐ ปี</span>
       </div>
     </main>
     <script>
