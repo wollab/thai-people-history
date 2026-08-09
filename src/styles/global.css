@@ -288,6 +288,16 @@ img { display: block; max-width: 100%; }
 .synthesis-body h2, .synthesis-sources h2 { margin: 0 0 10px; font-family: var(--serif); font-size: 28px; }
 .synthesis-layout { display: grid; grid-template-columns: 220px minmax(0, 780px); gap: 70px; justify-content: center; padding-top: 42px; }
 .synthesis-evidence-list { margin: 0; padding: 0; list-style: none; }
+.synthesis-media { margin-bottom: 46px; }
+.media-intro { max-width: 700px; margin: 0 0 18px; color: var(--muted); }
+.media-player { width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--ink); background: #111; }
+.media-player iframe { display: block; width: 100%; height: 100%; border: 0; }
+.media-highlight-list { border-bottom: 1px solid var(--line); }
+.media-highlight-item { padding: 18px 0; border-top: 1px solid var(--line); }
+.media-highlight-item > div { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; color: var(--vermilion); font-size: 13px; font-weight: 700; }
+.media-highlight-item h3 { margin: 8px 0 4px; font-family: var(--serif); font-size: 20px; }
+.media-highlight-item p { margin: 0; color: var(--muted); }
+.media-highlight-item a { display: inline-flex; align-items: center; gap: 5px; margin-top: 9px; color: var(--vermilion); font-size: 14px; font-weight: 700; }
 .synthesis-evidence-item { padding: 24px 0; border-top: 1px solid var(--line); }
 .synthesis-evidence-item:first-child { border-top: 2px solid var(--ink); }
 .synthesis-evidence-item > header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 8px; }

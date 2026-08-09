@@ -134,6 +134,11 @@ for (const story of syntheses.stories ?? []) {
   for (const id of story.evidenceIds ?? []) if (!microhistoryIndex.has(id)) errors.push(`synthesis ${story.id}: ไม่พบ microhistory ${id}`);
   for (const id of story.sourceIds ?? []) if (!sources.has(id)) errors.push(`synthesis ${story.id}: ไม่พบ source ${id}`);
   for (const id of story.patternIds ?? []) if (!patternIds.has(id)) errors.push(`synthesis ${story.id}: ไม่พบ pattern ${id}`);
+  for (const highlight of story.mediaHighlights ?? []) {
+    if (!sources.has(highlight.sourceId)) errors.push(`synthesis ${story.id}: media ไม่พบ source ${highlight.sourceId}`);
+    if (!story.sourceIds?.includes(highlight.sourceId)) errors.push(`synthesis ${story.id}: media source ${highlight.sourceId} ไม่อยู่ใน sourceIds`);
+    if (!highlight.videoId || !Number.isFinite(highlight.startSeconds) || !highlight.title || !highlight.summary) errors.push(`synthesis ${story.id}: media highlight ข้อมูลไม่ครบ`);
+  }
   const slug = story.id.replace(/^syn-/, "");
   if (synthesisSlugs.has(slug)) errors.push(`synthesis slug ซ้ำ ${slug}`);
   synthesisSlugs.add(slug);

@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "บทสังเคราะห์ประวัติศาสตร์ประชาชนไทย",
-    "version": "0.3.0",
-    "updated": "2026-07-23",
+    "version": "0.4.0",
+    "updated": "2026-08-10",
     "rule": "ทุกเรื่องต้องอ้างกลับไปยัง microhistory และ source IDs และระบุข้อจำกัดที่ยังไม่ควรสรุปเกินหลักฐาน"
   },
   "stories": [
@@ -148,6 +148,40 @@
       "sourceIds": ["src-chula-hatyai-1915-1941", "src-buu-eastern-cassava-2490-2510", "src-wb-eastern-seaboard", "src-mdpi-map-ta-phut-conflict", "src-chula-map-ta-phut-pollution-2006", "src-swurd-nathap-chana", "src-informea-map-ta-phut-order-592-2552"],
       "claim": "โครงสร้างพื้นฐานสร้างงาน การค้า และการย้ายถิ่น พร้อมเปลี่ยนการใช้ที่ดิน สุขภาพ และฐานทรัพยากร เมื่อข้อมูลและการชดเชยไม่ทันการลงทุน ผู้คนจึงใช้โรงเรียน เครือข่ายชุมชน การชุมนุม และศาลเพื่อทำให้ต้นทุนที่มองไม่เห็นเข้าสู่การตัดสินใจสาธารณะ",
       "limits": "ต้องเพิ่มเสียงแรงงานที่สนับสนุนโครงการ ผู้ประกอบการรายย่อย ผู้ไม่เข้าร่วมการคัดค้าน และข้อมูลเปรียบเทียบพื้นที่ที่จัดการผลกระทบได้ดีกว่า",
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-modern-economy-foundations",
+      "title": "ถนน แผนพัฒนา และรากฐานเศรษฐกิจยุคใหม่",
+      "deck": "นโยบายสงครามเย็น เงินช่วยเหลือ และแผนพัฒนาเปลี่ยนโครงข่ายคมนาคม ตลาด งาน และการย้ายถิ่น โดยผลลัพธ์เกิดไม่พร้อมกันในแต่ละพื้นที่",
+      "periodRange": "2493-2516",
+      "patternIds": ["pat-01-state-through-daily-systems", "pat-02-infrastructure-opportunity-cost", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2504-isan-roads-migration", "mh-2505-bangkok-migrants-housing", "mh-2507-base-towns", "mh-2500-cassava-processing-workers"],
+      "sourceIds": ["src-nesdc-plans", "src-worldbank-thailand-growth-path", "src-wb-isan-roads", "src-wb-bangkok-migration", "src-frus-bases", "src-claremont-base-towns", "src-video-modern-thai-economy-ep1"],
+      "claim": "แผนพัฒนาและโครงสร้างพื้นฐานในยุคสงครามเย็นขยายตลาดและโอกาสทางงาน พร้อมดึงผู้คนเข้าสู่เมืองและภาคบริการ การเติบโตจึงไม่ได้เปลี่ยนเพียงตัวเลขเศรษฐกิจ แต่เปลี่ยนระยะทาง การเดินทาง การจัดสรรแรงงานในครัวเรือน และความสัมพันธ์ระหว่างกรุงเทพฯ กับภูมิภาค",
+      "limits": "วิดีโอใช้เป็นจุดตั้งต้นและทางนำไปยังประเด็น ส่วนข้อสรุปอาศัยแผนทางการ งานศึกษา และกรณีชีวิตประกอบ ยังต้องเพิ่มบัญชีครัวเรือน เสียงผู้สร้างถนน ผู้ค้ารายย่อย และชุมชนที่โครงสร้างพื้นฐานไปถึงช้า",
+      "mediaHighlights": [
+        { "sourceId": "src-video-modern-thai-economy-ep1", "videoId": "Udr4BJDjETk", "startSeconds": 1498, "timeLabel": "24:58", "title": "จุดเริ่มต้นแผนพัฒนาฯ ฉบับที่ 1", "summary": "ใช้ช่วงนี้เป็นทางเข้าสู่เรื่องการวางแผนพัฒนา ก่อนตรวจปีและขอบเขตกับเอกสารของ สศช.", "evidenceStatus": "corroborated" },
+        { "sourceId": "src-video-modern-thai-economy-ep1", "videoId": "Udr4BJDjETk", "startSeconds": 1616, "timeLabel": "26:56", "title": "ถนนมิตรภาพและการเชื่อมภูมิภาค", "summary": "ช่วงนี้ชี้ประเด็นถนน ตลาด และการเดินทาง ซึ่งตรวจประกอบกับงานศึกษาของธนาคารโลก", "evidenceStatus": "corroborated" },
+        { "sourceId": "src-video-modern-thai-economy-ep1", "videoId": "Udr4BJDjETk", "startSeconds": 1690, "timeLabel": "28:10", "title": "งานในเมืองกับการย้ายถิ่น", "summary": "ใช้เปิดคำถามว่าการขยายงานในกรุงเทพฯ เปลี่ยนครัวเรือนชนบทอย่างไร", "evidenceStatus": "corroborated" }
+      ],
+      "status": "reader-draft"
+    },
+    {
+      "id": "syn-luk-thung-everyday-archive",
+      "title": "เพลงลูกทุ่งเป็นคลังเสียงของชีวิตทำงาน",
+      "deck": "เพลงยอดนิยมช่วยเก็บภาษา ความหวัง ความยากจน การย้ายถิ่น และความสัมพันธ์ระหว่างชนบทกับเมืองในรูปที่ผู้คนฟังร่วมกัน",
+      "periodRange": "2500-2560",
+      "patternIds": ["pat-03-households-absorb-shocks", "pat-04-gender-opportunity-double-burden", "pat-07-center-periphery-uneven-timing"],
+      "evidenceIds": ["mh-2507-luk-thung-everyday-life", "mh-2504-isan-roads-migration", "mh-2505-bangkok-migrants-housing"],
+      "sourceIds": ["src-thai-encyclopedia-luk-thung", "src-thai-media-fund-84-years-luk-thung", "src-dru-luk-thung-social-change", "src-ubu-luk-thung-poverty", "src-video-luk-thung-legends"],
+      "claim": "เพลงลูกทุ่งทำให้ประสบการณ์ที่กระจัดกระจาย เช่น งานเกษตร ค่าแรงต่ำ การจากบ้าน ความสัมพันธ์ในครอบครัว และความหวังต่อเมือง กลายเป็นเรื่องเล่าสาธารณะ จึงใช้เป็นหลักฐานทางวัฒนธรรมได้เมื่ออ่านร่วมกับช่วงเวลา อุตสาหกรรมสื่อ และงานวิจัย ไม่ใช่อ่านเนื้อเพลงเป็นภาพแทนคนชนบททั้งหมด",
+      "limits": "ยังไม่ควรใช้ผลงานของศิลปินหรือยุคใดยุคหนึ่งแทนเพลงลูกทุ่งทั้งหมด ต้องเพิ่มคลังเสียง รายการวิทยุ เสียงผู้ฟัง นักดนตรีเบื้องหลัง และงานจากภูมิภาคอื่น พร้อมหลีกเลี่ยงการเผยแพร่เนื้อร้องที่มีลิขสิทธิ์",
+      "mediaHighlights": [
+        { "sourceId": "src-video-luk-thung-legends", "videoId": "8tWjIimoU18", "startSeconds": 44, "timeLabel": "00:44", "title": "เพลงกับความทรงจำเรื่องชนบท", "summary": "ช่วงเปิดรายการตั้งคำถามว่าเพลงเก็บวิถีชีวิตและความเปลี่ยนแปลงไว้ได้อย่างไร", "evidenceStatus": "corroborated" },
+        { "sourceId": "src-video-luk-thung-legends", "videoId": "8tWjIimoU18", "startSeconds": 709, "timeLabel": "11:49", "title": "ภาพการทำมาหากินในบทเพลง", "summary": "ใช้เป็นตัวอย่างการตามหาหัวข้อเกษตร งาน และชนบท โดยไม่คัดลอกเนื้อร้อง", "evidenceStatus": "corroborated" },
+        { "sourceId": "src-video-luk-thung-legends", "videoId": "8tWjIimoU18", "startSeconds": 2043, "timeLabel": "34:03", "title": "ผู้ฟังชนบท ผู้ย้ายถิ่น และแรงงาน", "summary": "ช่วงนี้ช่วยเชื่อมประวัติสื่อกับผู้ฟัง ก่อนตรวจเทียบกับงานวิจัยเนื้อหาเพลง", "evidenceStatus": "corroborated" }
+      ],
       "status": "reader-draft"
     }
   ]

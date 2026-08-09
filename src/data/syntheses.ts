@@ -10,6 +10,15 @@ export type SynthesisStory = {
   sourceIds: string[];
   claim: string;
   limits: string;
+  mediaHighlights?: Array<{
+    sourceId: string;
+    videoId: string;
+    startSeconds: number;
+    timeLabel: string;
+    title: string;
+    summary: string;
+    evidenceStatus: "corroborated" | "context-only";
+  }>;
   status: "reader-draft";
 };
 

@@ -2,9 +2,9 @@
   "meta": {
     "title": "Thai People History Research Index",
     "version": "0.2.0",
-    "updated": "2026-07-29",
+    "updated": "2026-08-10",
     "derivedFrom": "09_event_database.json",
-    "derivedFromVersion": "0.12.0",
+    "derivedFromVersion": "0.13.0",
     "generator": "scripts/build_research_index.mjs",
     "rule": "ไฟล์นี้เป็นดัชนีอนุพันธ์ ห้ามแก้แทนฐานข้อมูลหลัก"
   },
@@ -2814,6 +2814,30 @@
         "families-households"
       ],
       "evidenceStatus": "contextual-lead"
+    },
+    "mh-2507-luk-thung-everyday-life": {
+      "period": "2500-2516",
+      "macroThemeIds": [
+        "education-media",
+        "rural-urban",
+        "economy-opportunity"
+      ],
+      "mechanismIds": [
+        "media-ideas",
+        "migration-mobility"
+      ],
+      "regionIds": [
+        "nationwide",
+        "bangkok",
+        "multi-region"
+      ],
+      "groupCategoryIds": [
+        "farmers-rural",
+        "workers",
+        "migrants",
+        "families-households"
+      ],
+      "evidenceStatus": "documented-case"
     }
   },
   "indexes": {
@@ -2877,7 +2901,8 @@
         "mh-2500-cassava-processing-workers",
         "mh-2500-malay-students-language-paths",
         "mh-2500-pondok-teachers-adjustment",
-        "mh-2516-first-minimum-wage-workers"
+        "mh-2516-first-minimum-wage-workers",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "2516-2535": [
         "mh-2516-women-media-citizenship",
@@ -2980,7 +3005,8 @@
         "mh-2540-map-ta-phut-school-routines",
         "mh-2545-chana-muslim-core-group",
         "mh-2548-migrant-children-public-schools",
-        "mh-2547-deep-south-school-safety"
+        "mh-2547-deep-south-school-safety",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "institutions-long-term": [
         "mh-2460-university-access",
@@ -3215,7 +3241,8 @@
         "mh-2548-mahachai-migrant-child-workers",
         "mh-2541-nathap-fishing-households",
         "mh-2558-transgender-workers-discrimination",
-        "mh-2516-first-minimum-wage-workers"
+        "mh-2516-first-minimum-wage-workers",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "rural-urban": [
         "mh-2472-rice-households",
@@ -3252,7 +3279,8 @@
         "mh-2500-cassava-processing-workers",
         "mh-2531-map-ta-phut-coastal-households",
         "mh-2531-map-ta-phut-workers-services",
-        "mh-2540-map-ta-phut-school-routines"
+        "mh-2540-map-ta-phut-school-routines",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "movements-civil-society": [
         "mh-2485-free-thai-networks",
@@ -3376,7 +3404,8 @@
         "mh-2531-map-ta-phut-workers-services",
         "mh-2531-khmer-refugee-camp-schools",
         "mh-2548-mahachai-migrant-child-workers",
-        "mh-2548-migrant-children-public-schools"
+        "mh-2548-migrant-children-public-schools",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "policy-law": [
         "mh-2464-compulsory-school",
@@ -3447,7 +3476,8 @@
         "mh-2527-hiv-stigma-families",
         "mh-2544-community-radio-listeners",
         "mh-2557-community-radio-shutdown",
-        "mh-2545-chana-muslim-core-group"
+        "mh-2545-chana-muslim-core-group",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "market-shock": [
         "mh-2472-rice-households",
@@ -3631,7 +3661,8 @@
         "mh-2477-southern-representatives-rubber-debate",
         "mh-2521-klongtoei-one-baht-school",
         "mh-2558-transgender-workers-discrimination",
-        "mh-2516-first-minimum-wage-workers"
+        "mh-2516-first-minimum-wage-workers",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "international": [
         "mh-2460-war-volunteer-families",
@@ -3679,7 +3710,8 @@
         "mh-2542-disabled-students-inclusion",
         "mh-2551-stateless-applicants",
         "mh-2558-gender-discrimination-complaints",
-        "mh-2558-child-grant-caregivers"
+        "mh-2558-child-grant-caregivers",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "central": [
         "mh-2472-rice-households",
@@ -3737,7 +3769,8 @@
         "mh-2558-fishers-hours-safety",
         "mh-2557-community-radio-shutdown",
         "mh-2548-migrant-children-public-schools",
-        "mh-2558-transgender-workers-discrimination"
+        "mh-2558-transgender-workers-discrimination",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "northeast": [
         "mh-2504-isan-roads-migration",
@@ -3912,7 +3945,8 @@
         "mh-2547-deep-south-school-safety",
         "mh-2552-map-ta-phut-community-litigation",
         "mh-2558-transgender-workers-discrimination",
-        "mh-2516-first-minimum-wage-workers"
+        "mh-2516-first-minimum-wage-workers",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "workers": [
         "mh-2460-war-volunteer-families",
@@ -3954,7 +3988,8 @@
         "mh-2521-klongtoei-one-baht-school",
         "mh-2548-mahachai-migrant-child-workers",
         "mh-2558-transgender-workers-discrimination",
-        "mh-2516-first-minimum-wage-workers"
+        "mh-2516-first-minimum-wage-workers",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "children-youth": [
         "mh-2464-compulsory-school",
@@ -4031,7 +4066,8 @@
         "mh-2477-southern-representatives-rubber-debate",
         "mh-2500-eastern-cassava-farmers",
         "mh-2531-map-ta-phut-coastal-households",
-        "mh-2541-nathap-fishing-households"
+        "mh-2541-nathap-fishing-households",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "professionals-officials": [
         "mh-2482-cultural-mandates",
@@ -4151,7 +4187,8 @@
         "mh-2531-map-ta-phut-workers-services",
         "mh-2531-khmer-refugee-camp-schools",
         "mh-2548-mahachai-migrant-child-workers",
-        "mh-2548-migrant-children-public-schools"
+        "mh-2548-migrant-children-public-schools",
+        "mh-2507-luk-thung-everyday-life"
       ],
       "ethnic-religious": [
         "mh-2519-southern-women-cpt",
@@ -4324,7 +4361,8 @@
         "mh-2548-migrant-children-public-schools",
         "mh-2547-deep-south-school-safety",
         "mh-2552-map-ta-phut-community-litigation",
-        "mh-2558-transgender-workers-discrimination"
+        "mh-2558-transgender-workers-discrimination",
+        "mh-2507-luk-thung-everyday-life"
       ]
     },
     "bySourceFamily": {
@@ -4479,7 +4517,13 @@
         "src-chula-map-ta-phut-pollution-2006",
         "src-unicef-deep-south-education-conflict",
         "src-unesco-protecting-education-south",
-        "src-ilo-minimum-wage-review"
+        "src-ilo-minimum-wage-review",
+        "src-video-modern-thai-economy-ep1",
+        "src-video-luk-thung-legends",
+        "src-thai-encyclopedia-luk-thung",
+        "src-thai-media-fund-84-years-luk-thung",
+        "src-dru-luk-thung-social-change",
+        "src-ubu-luk-thung-poverty"
       ],
       "international-institutional": [
         "src-wb-depression",
@@ -4505,7 +4549,8 @@
         "src-worldbank-thailand-agricultural-pricing",
         "src-unescap-cassava-asia-1984",
         "src-worldbank-thai-agriculture-3705",
-        "src-un-thailand-escr-education-2005"
+        "src-un-thailand-escr-education-2005",
+        "src-worldbank-thailand-growth-path"
       ],
       "lived-fieldwork": [
         "src-silpakorn-bangkoknoi-ww2",
@@ -4555,9 +4600,9 @@
       },
       "2500-2516": {
         "state-everyday": 8,
-        "economy-opportunity": 10,
-        "rural-urban": 9,
-        "education-media": 5,
+        "economy-opportunity": 11,
+        "rural-urban": 10,
+        "education-media": 6,
         "movements-civil-society": 1,
         "identity-belonging": 7,
         "institutions-long-term": 9
@@ -4593,8 +4638,8 @@
     "sourceFamilyCounts": {
       "archive-primary": 19,
       "state-official": 39,
-      "academic-analysis": 89,
-      "international-institutional": 24,
+      "academic-analysis": 95,
+      "international-institutional": 25,
       "lived-fieldwork": 22
     },
     "eventToMicrohistories": {
@@ -4884,6 +4929,9 @@
       ],
       "th-2516-first-minimum-wage": [
         "mh-2516-first-minimum-wage-workers"
+      ],
+      "th-2507-luk-thung-mass-media": [
+        "mh-2507-luk-thung-everyday-life"
       ]
     },
     "eventsWithoutMicrohistory": [],

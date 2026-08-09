@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "ฐานข้อมูลประวัติศาสตร์ประชาชนไทย พ.ศ. 2460-2560",
-    "version": "0.12.0",
-    "updated": "2026-07-29",
+    "version": "0.13.0",
+    "updated": "2026-08-10",
     "canonicalStatus": "staging-source-of-truth",
     "canonicalPath": "03_Documents/04_Knowledge_Base/01_Inbox/04_Personal_Learning/2026-07-19-thai-people-history-2460-2560/09_event_database.json",
     "editorialNote": "ฐานข้อมูลตั้งต้น เหตุการณ์และวันที่ผ่านการตรวจจากแหล่งที่ระบุ แต่ข้อความผลต่อประชาชนเป็นบทสรุประดับระมัดระวังและยังต้องขยายด้วยหลักฐานชีวิตประจำวันและคำบอกเล่า",
-    "lastResearchBatch": "batch-2026-07-29-book-facts-and-first-minimum-wage"
+    "lastResearchBatch": "batch-2026-08-10-media-economy-luk-thung"
   },
   "sources": [
     {
@@ -1749,6 +1749,69 @@
       "type": "legal-record",
       "language": "en",
       "accessed": "2026-07-29"
+    },
+    {
+      "id": "src-video-modern-thai-economy-ep1",
+      "title": "จุดเริ่มต้นเศรษฐกิจไทยยุคใหม่ | The Making of the Modern Thai Economy EP.1",
+      "publisher": "THE STANDARD",
+      "url": "https://www.youtube.com/watch?v=Udr4BJDjETk",
+      "type": "documentary-video",
+      "language": "th",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "src-video-luk-thung-legends",
+      "title": "อมตะราชา-ราชินีเพลงลูกทุ่ง | โลกวิวัฒน์ EP.149",
+      "publisher": "Thairath Studio",
+      "url": "https://www.youtube.com/watch?v=8tWjIimoU18",
+      "type": "documentary-video",
+      "language": "th",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "src-worldbank-thailand-growth-path",
+      "title": "Thailand's Growth Path: From Recovery to Prosperity",
+      "publisher": "World Bank",
+      "url": "https://openknowledge.worldbank.org/bitstream/handle/10986/8671/wps3912.pdf",
+      "type": "international-study",
+      "language": "en",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "src-thai-encyclopedia-luk-thung",
+      "title": "เพลงลูกทุ่ง",
+      "publisher": "สารานุกรมไทยสำหรับเยาวชนฯ",
+      "url": "https://saranukromthai.or.th/oldchild/2611",
+      "type": "official-cultural-reference",
+      "language": "th",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "src-thai-media-fund-84-years-luk-thung",
+      "title": "84 ปี ลูกทุ่งไทย",
+      "publisher": "กองทุนพัฒนาสื่อปลอดภัยและสร้างสรรค์",
+      "url": "https://www.thaimediafund.or.th/download/%E0%B9%98%E0%B9%94-%E0%B8%9B%E0%B8%B5-%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%97%E0%B8%A2/",
+      "type": "institutional-publication",
+      "language": "th",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "src-dru-luk-thung-social-change",
+      "title": "การเปลี่ยนแปลงของสังคมชนบทไทยภาคอีสานจากเพลงลูกทุ่งของสลา คุณวุฒิ",
+      "publisher": "วารสารมหาวิทยาลัยราชภัฏธนบุรี",
+      "url": "https://so02.tci-thaijo.org/index.php/journaldru/article/view/250547",
+      "type": "peer-reviewed-research",
+      "language": "th",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "src-ubu-luk-thung-poverty",
+      "title": "ภาพสะท้อนความยากจนจากบทเพลงลูกทุ่งของไมค์ ภิรมย์พร",
+      "publisher": "วารสารศิลปศาสตร์ มหาวิทยาลัยอุบลราชธานี",
+      "url": "https://so02.tci-thaijo.org/index.php/human_ubu/article/view/229042",
+      "type": "peer-reviewed-research",
+      "language": "th",
+      "accessed": "2026-08-10"
     }
   ],
   "worldContexts": [
@@ -2271,7 +2334,9 @@
         "ทั่วประเทศ"
       ],
       "sourceIds": [
-        "src-nesdc-plans"
+        "src-nesdc-plans",
+        "src-worldbank-thailand-growth-path",
+        "src-video-modern-thai-economy-ep1"
       ],
       "worldContextIds": [
         "world-development",
@@ -2304,7 +2369,8 @@
         "ตาคลี"
       ],
       "sourceIds": [
-        "src-frus-bases"
+        "src-frus-bases",
+        "src-video-modern-thai-economy-ep1"
       ],
       "worldContextIds": [
         "world-cold-war"
@@ -4216,6 +4282,35 @@
       "worldContextIds": [],
       "verification": "corroborated",
       "openQuestion": "การบังคับใช้จริงต่างกันอย่างไรระหว่างโรงงานขนาดใหญ่ กิจการรายย่อย แรงงานหญิง และแรงงานนอกระบบ"
+    },
+    {
+      "id": "th-2507-luk-thung-mass-media",
+      "period": "2500-2516",
+      "beYear": "2507-2513",
+      "ceYear": "1964-1970",
+      "title": "เพลงลูกทุ่งแพร่ผ่านภาพยนตร์ โทรทัศน์ และวงดนตรี",
+      "summary": "ในช่วงกลางถึงปลายทศวรรษ 2500 เพลงที่เล่าเรื่องชนบทและใช้ภาษาพูดแพร่กว้างขึ้นผ่านแผ่นเสียง วิทยุ ภาพยนตร์ โทรทัศน์ และวงดนตรีเดินสาย ขณะที่ที่มาและเส้นแบ่งของคำว่าเพลงลูกทุ่งยังมีคำอธิบายหลายแบบ",
+      "peopleImpact": "ผู้ฟังจากชนบท ผู้ย้ายถิ่น และแรงงานในเมืองพบเรื่องงาน ความรัก ความยากจน และบ้านเกิดในสื่อมวลชน พร้อมกับที่ศิลปินและผู้จัดวงใช้ตลาดบันเทิงเป็นเส้นทางอาชีพใหม่",
+      "impactStatus": "documented",
+      "themes": [
+        "culture",
+        "media",
+        "rural-urban",
+        "work"
+      ],
+      "locations": [
+        "ทั่วประเทศ",
+        "กรุงเทพฯ"
+      ],
+      "sourceIds": [
+        "src-thai-encyclopedia-luk-thung",
+        "src-thai-media-fund-84-years-luk-thung",
+        "src-dru-luk-thung-social-change",
+        "src-video-luk-thung-legends"
+      ],
+      "worldContextIds": [],
+      "verification": "corroborated",
+      "openQuestion": "คลังรายการวิทยุ ยอดจำหน่ายแผ่นเสียง และบันทึกผู้ฟังแต่ละภูมิภาคจะช่วยอธิบายเส้นทางการรับฟังได้ละเอียดเพียงใด"
     }
   ],
   "microhistoryMeta": {
@@ -4654,7 +4749,9 @@
       "livedExperience": "ถนนเพิ่มการเข้าถึงตลาดและบริการ พร้อมทำให้การเดินทางไปหางานในกรุงเทพฯ และเมืองภาคกลางสะดวกขึ้น ความมั่นคงและการพัฒนาจึงเปลี่ยนทั้งการค้าและโครงสร้างครอบครัว",
       "evidenceStatus": "documented-case",
       "sourceIds": [
-        "src-wb-isan-roads"
+        "src-wb-isan-roads",
+        "src-worldbank-thailand-growth-path",
+        "src-video-modern-thai-economy-ep1"
       ],
       "linkedEventIds": [
         "th-2504-first-plan"
@@ -4696,7 +4793,8 @@
       "evidenceStatus": "documented-case",
       "sourceIds": [
         "src-claremont-base-towns",
-        "src-frus-bases"
+        "src-frus-bases",
+        "src-video-modern-thai-economy-ep1"
       ],
       "linkedEventIds": [
         "th-2508-us-bases"
@@ -5941,7 +6039,9 @@
       "evidenceStatus": "contextual-lead",
       "sourceIds": [
         "src-wb-bangkok-migration",
-        "src-nesdc-plans"
+        "src-nesdc-plans",
+        "src-worldbank-thailand-growth-path",
+        "src-video-modern-thai-economy-ep1"
       ],
       "linkedEventIds": [
         "th-2504-first-plan"
@@ -8851,6 +8951,50 @@
         "ผู้ตรวจแรงงาน"
       ],
       "openQuestion": "บันทึกค่าจ้าง สหภาพแรงงาน และคดีแรงงานสะท้อนการปฏิบัติตามอัตรา 12 บาทในสถานประกอบการจริงอย่างไร"
+    },
+    {
+      "id": "mh-2507-luk-thung-everyday-life",
+      "period": "2500-2516",
+      "beYear": "2507-2513",
+      "ceYear": "1964-1970",
+      "title": "ผู้ฟังได้ยินเรื่องชนบทและชีวิตทำงานในเพลงลูกทุ่ง",
+      "location": [
+        "ชนบทไทย",
+        "กรุงเทพฯ",
+        "เมืองอุตสาหกรรม"
+      ],
+      "groups": [
+        "ชาวนา",
+        "แรงงานย้ายถิ่น",
+        "นักร้อง",
+        "ผู้ฟังวิทยุ"
+      ],
+      "everydayDimensions": [
+        "music",
+        "work",
+        "migration",
+        "family",
+        "poverty"
+      ],
+      "fact": "งานศึกษาบทเพลงลูกทุ่งพบเนื้อหาเกี่ยวกับอาชีพเกษตร การย้ายเข้าสู่เมือง งานรับจ้าง โรงงาน ครอบครัว และความสัมพันธ์ระหว่างชนบทกับเมือง ส่วนสื่อประวัติศาสตร์เพลงระบุว่าช่องทางวิทยุ ภาพยนตร์ โทรทัศน์ และวงดนตรีช่วยขยายผู้ฟัง",
+      "livedExperience": "เพลงทำหน้าที่มากกว่าความบันเทิง เพราะทำให้ประสบการณ์หาเลี้ยงชีพ ความคิดถึงบ้าน ความไม่มั่นคงของรายได้ และความหวังต่อชีวิตในเมืองกลายเป็นเรื่องที่ผู้คนจำนวนมากรับฟังร่วมกัน",
+      "evidenceStatus": "documented-case",
+      "sourceIds": [
+        "src-dru-luk-thung-social-change",
+        "src-ubu-luk-thung-poverty",
+        "src-thai-encyclopedia-luk-thung",
+        "src-video-luk-thung-legends"
+      ],
+      "linkedEventIds": [
+        "th-2507-luk-thung-mass-media"
+      ],
+      "missingVoices": [
+        "ผู้ฟังหญิงในชนบท",
+        "คนทำงานหลังเวที",
+        "ผู้ฟังภาคเหนือและภาคใต้",
+        "ผู้ผลิตรายการวิทยุท้องถิ่น"
+      ],
+      "openQuestion": "ผู้ฟังต่างภูมิภาคและต่างรุ่นตีความเพลงเกี่ยวกับงาน การย้ายถิ่น และครอบครัวเหมือนหรือต่างกันอย่างไร"
     }
   ]
 }

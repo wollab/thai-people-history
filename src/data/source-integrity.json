@@ -1,21 +1,20 @@
 {
   "meta": {
     "title": "Thai People History Source Link Integrity Report",
-    "checkedAt": "2026-07-29T10:02:07.036Z",
-    "sourceDatabaseVersion": "0.12.0",
-    "sourceDatabaseUpdated": "2026-07-29",
-    "total": 193,
+    "checkedAt": "2026-08-09T23:39:34.388Z",
+    "sourceDatabaseVersion": "0.13.0",
+    "sourceDatabaseUpdated": "2026-08-10",
+    "total": 200,
     "timeoutMs": 12000,
-    "concurrency": 8,
-    "sourcesWithAccessDate": 193,
-    "rule": "HTTP status confirms link reachability only; it does not validate historical claims or citation completeness.",
-    "note": "191 sources retain the 2026-07-29 successful audit; 2 later sources await a network-enabled check."
+    "concurrency": 12,
+    "sourcesWithAccessDate": 200,
+    "rule": "HTTP status confirms link reachability only; it does not validate historical claims or citation completeness."
   },
   "summary": {
-    "reachable": 165,
-    "restricted": 17,
+    "reachable": 174,
+    "restricted": 18,
     "broken": 0,
-    "unverified": 11
+    "unverified": 8
   },
   "results": [
     {
@@ -27,8 +26,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 1110,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1095,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-moe-history",
@@ -39,8 +38,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 2706,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 2548,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-chula-history",
@@ -51,8 +50,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 221,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 204,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-mfa-treaties",
@@ -63,8 +62,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 964,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 775,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-depression",
@@ -75,8 +74,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 217,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 174,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-parliament-2475",
@@ -87,8 +86,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 189,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 222,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-parliament-constitution-2475",
@@ -99,8 +98,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 193,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 220,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-national-archives-mandates",
@@ -111,8 +110,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 527,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 514,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cia-free-thai",
@@ -123,8 +122,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 739,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 717,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-un-thailand",
@@ -135,8 +134,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 583,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 551,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-state-seato",
@@ -147,8 +146,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 772,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1083,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-parliament-history",
@@ -159,8 +158,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 53,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 195,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-nesdc-plans",
@@ -171,8 +170,8 @@
       "state": "unverified",
       "method": "HEAD",
       "contentType": "",
-      "elapsedMs": 422,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
+      "elapsedMs": 397,
+      "checkedAt": "2026-08-09T23:39:34.388Z",
       "error": "fetch failed"
     },
     {
@@ -184,8 +183,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 763,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1026,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-asean-history",
@@ -196,8 +195,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 145,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 100,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ops-highered",
@@ -208,8 +207,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1735,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1779,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-nrct-14oct",
@@ -220,8 +219,8 @@
       "state": "unverified",
       "method": "HEAD",
       "contentType": "",
-      "elapsedMs": 20,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
+      "elapsedMs": 53,
+      "checkedAt": "2026-08-09T23:39:34.388Z",
       "error": "fetch failed"
     },
     {
@@ -233,8 +232,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 227,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 206,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-doct6",
@@ -245,8 +244,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 141,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 114,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ago-oct6-case",
@@ -257,8 +256,8 @@
       "state": "unverified",
       "method": "HEAD",
       "contentType": "",
-      "elapsedMs": 20,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
+      "elapsedMs": 19,
+      "checkedAt": "2026-08-09T23:39:34.388Z",
       "error": "fetch failed"
     },
     {
@@ -270,8 +269,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 516,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 515,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-eastern-seaboard",
@@ -282,8 +281,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 64,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 29,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-parliament-may-1992",
@@ -294,8 +293,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 327,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1343,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wto-thailand",
@@ -306,8 +305,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 288,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 248,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-bot-2540",
@@ -318,8 +317,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 77,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 70,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-imf-2540",
@@ -330,8 +329,8 @@
       "state": "unverified",
       "method": "HEAD",
       "contentType": "",
-      "elapsedMs": 12001,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
+      "elapsedMs": 12003,
+      "checkedAt": "2026-08-09T23:39:34.388Z",
       "error": "timeout after 12000ms"
     },
     {
@@ -343,8 +342,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 74,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 55,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-education-act-2542",
@@ -355,8 +354,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1723,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1871,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-village-fund",
@@ -367,8 +366,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 145,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 112,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-who-uhc",
@@ -379,8 +378,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1224,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 84,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-tsunami",
@@ -389,10 +388,10 @@
       "finalUrl": "https://documents1.worldbank.org/curated/en/319941468308953677/pdf/353850TH0Country0dialogue020051cdm2004.pdf",
       "status": 200,
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 918,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 28,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-parliament-constitution-2549",
@@ -403,8 +402,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "application/pdf",
-      "elapsedMs": 116,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 135,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-gfc",
@@ -415,8 +414,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 159,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 122,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-trct-2010",
@@ -427,8 +426,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 60,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 71,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-flood-2554",
@@ -439,8 +438,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 139,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 123,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-wage-300",
@@ -451,8 +450,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 954,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1062,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-mfa-ncpo",
@@ -463,8 +462,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 129,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 99,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-asean-aec",
@@ -475,8 +474,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 101,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 154,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-parliament-constitution-2560",
@@ -487,8 +486,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 31,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 88,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-un-internet",
@@ -499,8 +498,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 825,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1089,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jts-satri-thai",
@@ -511,8 +510,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 487,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 500,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-oxford-ww2-impact",
@@ -523,8 +522,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1238,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1328,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-silpakorn-bangkoknoi-ww2",
@@ -535,8 +534,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 364,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 437,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jsn-women-ww2",
@@ -547,8 +546,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 546,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 810,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-chula-working-women",
@@ -559,8 +558,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 967,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1902,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-isan-roads",
@@ -569,10 +568,10 @@
       "finalUrl": "https://documents1.worldbank.org/curated/en/312591468004457911/pdf/490460PUB0slee101Official0Use0Only1.pdf",
       "status": 200,
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 24,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 828,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-claremont-base-towns",
@@ -583,8 +582,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 1206,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 905,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-population-1978",
@@ -595,8 +594,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 25,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 270,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jss-women-media-2516",
@@ -607,8 +606,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 368,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 488,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jss-farmer-movement",
@@ -619,8 +618,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 393,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 436,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jssnu-women-cpt-south",
@@ -631,8 +630,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 506,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 516,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cmu-sanpong",
@@ -643,8 +642,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 410,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 463,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-workers-crisis",
@@ -655,8 +654,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 29,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 52,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-kbu-karen-migration",
@@ -667,8 +666,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 369,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 396,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-nida-pakmun",
@@ -679,8 +678,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 398,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 493,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cmu-women-traders",
@@ -691,8 +690,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 416,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 414,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-swurd-flood-households",
@@ -703,8 +702,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 351,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 473,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-sjij-migrant-workers",
@@ -715,8 +714,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 443,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 617,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-etda-internet-profile",
@@ -727,8 +726,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 868,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 939,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-kpi-first-election-2476",
@@ -739,8 +738,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 132,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1122,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-escap-women-industry",
@@ -751,8 +750,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 208,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 190,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-anamwathana-women-factory",
@@ -763,8 +762,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 409,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 653,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-hrw-black-may",
@@ -775,8 +774,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 22,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 401,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-amnesty-black-may-families",
@@ -787,8 +786,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 52,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 776,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-fao-moac-tsunami-assessment",
@@ -799,8 +798,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 338,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 330,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-thailand-tsunami-tourism",
@@ -811,8 +810,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 619,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1155,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-thai-unions-gfc",
@@ -823,8 +822,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 629,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1583,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-hrw-2010-descent-chaos",
@@ -835,8 +834,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 26,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 35,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-amnesty-2014-attitude-adjustment",
@@ -847,8 +846,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 83,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 494,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ohchr-2016-military-courts",
@@ -859,8 +858,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 1885,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 2321,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-dcj-influenza-siam",
@@ -871,8 +870,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 705,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 745,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cambridge-influenza-thailand",
@@ -883,8 +882,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 315,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 424,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-chula-chinese-schools-1918",
@@ -895,8 +894,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 840,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 869,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-rmu-chinese-private-schools",
@@ -907,8 +906,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 715,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 724,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-liberalarts-rama7-strikes",
@@ -919,8 +918,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 889,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 583,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-first-direct-election",
@@ -931,8 +930,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=UTF-8",
-      "elapsedMs": 1021,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1474,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-mol-labour-history",
@@ -943,8 +942,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 48,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1225,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jil-thai-labour-law",
@@ -955,8 +954,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 824,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 817,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-frus-sarit-charter",
@@ -967,8 +966,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 824,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1045,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pmc-malaria-thailand",
@@ -979,8 +978,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 390,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 374,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-who-malaria-1964",
@@ -991,8 +990,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 2304,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 2435,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-bangkok-migration",
@@ -1001,10 +1000,10 @@
       "finalUrl": "https://documents1.worldbank.org/curated/en/181861468765014332/pdf/multi0page.pdf",
       "status": 200,
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 27,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1303,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-frus-october-1973",
@@ -1015,8 +1014,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 769,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1040,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cambridge-youth-democracy",
@@ -1027,8 +1026,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 445,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 347,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-fes-thai-women-workers",
@@ -1039,8 +1038,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 1465,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 2206,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-columbia-hara-workers",
@@ -1051,8 +1050,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 1471,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1250,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pmc-informal-workers-thailand",
@@ -1063,8 +1062,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 369,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 554,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-oxford-thai-phc-volunteers",
@@ -1075,8 +1074,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 91,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 136,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-who-village-health-volunteers",
@@ -1087,8 +1086,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1851,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1739,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-sage-assembly-poor",
@@ -1099,8 +1098,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 75,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 87,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-assembly-poor",
@@ -1111,8 +1110,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1176,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 584,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pajournal-community-rights",
@@ -1123,8 +1122,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 447,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 426,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cmu-community-forest-rights",
@@ -1135,8 +1134,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 913,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 423,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-kku-school-community",
@@ -1147,8 +1146,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 371,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 348,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-mahidol-trips-medicines",
@@ -1159,8 +1158,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=UTF-8",
-      "elapsedMs": 175,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 387,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pmc-thailand-medicine-access",
@@ -1171,8 +1170,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 370,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 368,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-hrw-thailand-2007",
@@ -1183,8 +1182,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 27,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 263,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-tsri-aec-border",
@@ -1195,8 +1194,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 87,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 54,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-amnesty-referendum-2016",
@@ -1207,8 +1206,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 164,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 694,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-hrw-referendum-monitoring",
@@ -1219,8 +1218,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 28,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 278,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-homeworkers-act",
@@ -1231,8 +1230,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 215,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 209,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-homeworkers-organizing",
@@ -1243,8 +1242,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 140,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 741,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-un-disability-law-thailand",
@@ -1255,8 +1254,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 514,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 755,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-escap-disability-thailand",
@@ -1267,8 +1266,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "application/pdf",
-      "elapsedMs": 587,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 521,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jss-public-health-siam",
@@ -1279,8 +1278,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 630,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 574,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-mahidol-siriraj-nursing",
@@ -1291,8 +1290,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html",
-      "elapsedMs": 145,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 114,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-thammasat-women-nursing",
@@ -1303,8 +1302,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 262,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 337,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pmc-thai-mortality-transition",
@@ -1315,8 +1314,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 382,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 394,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-tsri-islamic-education-south",
@@ -1327,8 +1326,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 43,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 37,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cambridge-women-suffrage-thailand",
@@ -1339,8 +1338,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 386,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 406,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-parliament-women-politics",
@@ -1351,8 +1350,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "application/pdf;charset=UTF-8",
-      "elapsedMs": 373,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 374,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cambridge-female-politicians-thailand",
@@ -1363,8 +1362,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 396,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 324,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-who-thai-primary-health-history",
@@ -1375,8 +1374,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 1535,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 2121,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pmc-thai-doctor-distribution",
@@ -1387,8 +1386,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 381,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 366,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-nhso-uhc-history",
@@ -1399,8 +1398,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 140,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 133,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cinii-medicalizing-state-siam",
@@ -1411,8 +1410,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/json;charset=UTF-8",
-      "elapsedMs": 367,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 336,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-un-thailand-membership",
@@ -1423,8 +1422,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 504,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 507,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ppat-history",
@@ -1435,8 +1434,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 258,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 196,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pubmed-family-planning-thailand",
@@ -1447,8 +1446,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 384,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 398,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pubmed-health-family-planning",
@@ -1459,8 +1458,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 394,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 396,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unfpa-thailand-40-years",
@@ -1471,8 +1470,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 22,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 359,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pea-history",
@@ -1483,8 +1482,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 149,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 269,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-rural-electrification-thailand",
@@ -1493,10 +1492,10 @@
       "finalUrl": "https://documents1.worldbank.org/curated/en/841361468740715123/pdf/multi-page.pdf",
       "status": 200,
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 29,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1393,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-pea-1973-plan",
@@ -1507,8 +1506,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 1353,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1426,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-rural-electricity-northeast",
@@ -1517,10 +1516,10 @@
       "finalUrl": "https://documents1.worldbank.org/curated/en/174121468335451620/pdf/multi-page.pdf",
       "status": 200,
       "state": "reachable",
-      "method": "GET",
+      "method": "HEAD",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 1283,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 322,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-oxford-hill-tribe-citizenship",
@@ -1531,8 +1530,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 62,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 47,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-american-hill-tribe-stateless",
@@ -1543,8 +1542,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 598,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1359,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-thai-green-revolution",
@@ -1555,8 +1554,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 1404,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1660,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-agecon-thai-rice-hyv",
@@ -1567,8 +1566,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 1260,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 870,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pmc-thai-hiv-response",
@@ -1579,8 +1578,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 384,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 633,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-chula-hiv-public-response",
@@ -1591,8 +1590,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 862,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1112,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-un-thailand-hiv-report",
@@ -1603,8 +1602,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 805,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 848,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-thai-social-security",
@@ -1615,8 +1614,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 140,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1028,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-heidelberg-indochinese-refugees",
@@ -1627,8 +1626,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1484,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1102,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-loc-thailand-country-study",
@@ -1639,8 +1638,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 135,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 129,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-pmc-rural-doctors-movement",
@@ -1651,8 +1650,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 373,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 393,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jica-thai-decentralization",
@@ -1663,8 +1662,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 228,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 448,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-wb-thai-tao",
@@ -1675,8 +1674,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 852,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1295,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ugm-tao-participation",
@@ -1687,8 +1686,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 897,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 844,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-tci-community-radio-history",
@@ -1699,8 +1698,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 354,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 484,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-tci-community-radio-audience",
@@ -1711,8 +1710,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 393,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 408,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-thammasat-youth-community-radio",
@@ -1723,8 +1722,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 372,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 463,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-amnesty-war-drugs-2003",
@@ -1735,8 +1734,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 49,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 946,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-hrw-war-drugs-thailand",
@@ -1747,8 +1746,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 25,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 24,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ahr-war-drugs-family-case",
@@ -1759,8 +1758,8 @@
       "state": "unverified",
       "method": "HEAD",
       "contentType": "",
-      "elapsedMs": 10629,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
+      "elapsedMs": 10413,
+      "checkedAt": "2026-08-09T23:39:34.388Z",
       "error": "fetch failed"
     },
     {
@@ -1772,8 +1771,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 637,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1183,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unhcr-thailand-nationality-2015",
@@ -1784,8 +1783,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 238,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 640,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unhcr-nationality-act-2551",
@@ -1796,8 +1795,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 75,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 408,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unwomen-gender-equality-act",
@@ -1808,8 +1807,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 26,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1268,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unwomen-thailand",
@@ -1820,8 +1819,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 1858,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 545,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unicef-child-support-grant",
@@ -1832,8 +1831,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 226,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 438,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unicef-first-three",
@@ -1844,8 +1843,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 214,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 413,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-fishing-conditions-2013",
@@ -1856,8 +1855,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 313,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1061,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-fishing-safeguarding",
@@ -1868,8 +1867,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 136,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 759,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-chula-hatyai-1915-1941",
@@ -1880,8 +1879,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 842,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 883,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-tsu-chinese-hatyai-change",
@@ -1892,8 +1891,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 389,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 331,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-silpakorn-chinese-mining-phuket",
@@ -1904,8 +1903,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 514,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 394,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-anu-phuket-hokkien-frontier",
@@ -1916,8 +1915,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 650,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 782,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cambridge-southern-rubber-economy",
@@ -1928,8 +1927,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 404,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 452,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-worldbank-thailand-agricultural-pricing",
@@ -1938,10 +1937,10 @@
       "finalUrl": "https://documents1.worldbank.org/curated/en/867311468334157136/pdf/SWP385000Thail0t0and0output0pricing.pdf",
       "status": 200,
       "state": "reachable",
-      "method": "HEAD",
+      "method": "GET",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 28,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1535,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-jss-first-phibun-government",
@@ -1952,8 +1951,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 265,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 256,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-kobe-rubber-restriction-1934",
@@ -1964,8 +1963,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1013,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 2938,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-murdoch-asian-labourers-railway",
@@ -1975,9 +1974,9 @@
       "status": 200,
       "state": "reachable",
       "method": "HEAD",
-      "contentType": "text/html;charset=ISO-8859-1",
-      "elapsedMs": 540,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "contentType": "text/html;charset=UTF-8",
+      "elapsedMs": 1359,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-awm-thailand-burma-railway-documents",
@@ -1988,8 +1987,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 19,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 883,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-anzac-railway-prisoners-labourers",
@@ -2000,8 +1999,8 @@
       "state": "unverified",
       "method": "HEAD",
       "contentType": "",
-      "elapsedMs": 12014,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
+      "elapsedMs": 12015,
+      "checkedAt": "2026-08-09T23:39:34.388Z",
       "error": "timeout after 12000ms"
     },
     {
@@ -2013,8 +2012,8 @@
       "state": "unverified",
       "method": "HEAD",
       "contentType": "",
-      "elapsedMs": 32,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
+      "elapsedMs": 519,
+      "checkedAt": "2026-08-09T23:39:34.388Z",
       "error": "fetch failed"
     },
     {
@@ -2026,8 +2025,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 376,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 986,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-worldbank-thai-agriculture-3705",
@@ -2038,8 +2037,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "application/pdf;charset=utf-8",
-      "elapsedMs": 723,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1591,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-sure-malay-education-2500-2516",
@@ -2050,8 +2049,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html;charset=utf-8",
-      "elapsedMs": 888,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 2131,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-nida-map-ta-phut-case",
@@ -2062,8 +2061,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 413,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 853,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-mdpi-map-ta-phut-conflict",
@@ -2074,8 +2073,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html",
-      "elapsedMs": 68,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 875,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-doaj-map-ta-phut-respiratory",
@@ -2086,8 +2085,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 226,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 407,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-dpf-klongtoei-history",
@@ -2098,8 +2097,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 75,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 137,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-msociety-klongtoei-context",
@@ -2110,8 +2109,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 66,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 122,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-openlibrary-klongtoei-1971-survey",
@@ -2122,8 +2121,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 1135,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1041,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-oxford-displaced-khmer-education",
@@ -2134,8 +2133,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 62,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 254,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-gao-indochinese-refugees-1980",
@@ -2146,8 +2145,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html",
-      "elapsedMs": 510,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1156,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-chula-mahachai-child-workers",
@@ -2158,8 +2157,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 821,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1019,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-samut-sakhon-child-labour",
@@ -2170,8 +2169,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 606,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1276,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unicef-education-no-border",
@@ -2182,8 +2181,8 @@
       "state": "restricted",
       "method": "GET",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 216,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 446,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-un-thailand-escr-education-2005",
@@ -2194,21 +2193,20 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 4471,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 3755,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-swurd-nathap-chana",
       "url": "https://ejournals.swu.ac.th/index.php/swurd/article/view/2505",
       "databaseAccessed": "2026-07-23",
       "finalUrl": "https://ejournals.swu.ac.th/index.php/swurd/article/view/2505",
-      "status": 0,
-      "state": "unverified",
+      "status": 200,
+      "state": "reachable",
       "method": "HEAD",
-      "contentType": "",
-      "elapsedMs": 10235,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
-      "error": "fetch failed"
+      "contentType": "text/html; charset=utf-8",
+      "elapsedMs": 389,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-parichart-chana-gas-learning",
@@ -2219,8 +2217,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 371,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 427,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-cornerhouse-chana-pipeline",
@@ -2231,8 +2229,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 601,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 2130,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-chula-map-ta-phut-pollution-2006",
@@ -2243,8 +2241,8 @@
       "state": "unverified",
       "method": "HEAD",
       "contentType": "",
-      "elapsedMs": 12016,
-      "checkedAt": "2026-07-29T10:02:07.036Z",
+      "elapsedMs": 12001,
+      "checkedAt": "2026-08-09T23:39:34.388Z",
       "error": "timeout after 12000ms"
     },
     {
@@ -2256,8 +2254,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 1403,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1624,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-informea-map-ta-phut-order-592-2552",
@@ -2268,8 +2266,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 880,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 890,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unicef-deep-south-education-conflict",
@@ -2280,8 +2278,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "application/pdf",
-      "elapsedMs": 131,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 226,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-unesco-protecting-education-south",
@@ -2292,8 +2290,8 @@
       "state": "reachable",
       "method": "GET",
       "contentType": "application/pdf",
-      "elapsedMs": 506,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 521,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-pride-thailand",
@@ -2304,8 +2302,8 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=UTF-8",
-      "elapsedMs": 283,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 1288,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-au-transgender-work-interviews",
@@ -2316,34 +2314,116 @@
       "state": "reachable",
       "method": "HEAD",
       "contentType": "text/html; charset=utf-8",
-      "elapsedMs": 140,
-      "checkedAt": "2026-07-29T10:02:07.036Z"
+      "elapsedMs": 205,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-minimum-wage-review",
       "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_dialogue/%40actrav/documents/meetingdocument/wcms_208812.pdf",
       "databaseAccessed": "2026-07-29",
       "finalUrl": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_dialogue/%40actrav/documents/meetingdocument/wcms_208812.pdf",
-      "status": 0,
-      "state": "unverified",
+      "status": 200,
+      "state": "reachable",
       "method": "HEAD",
-      "contentType": "",
-      "elapsedMs": 0,
-      "checkedAt": null,
-      "error": "added after last successful network audit"
+      "contentType": "application/pdf",
+      "elapsedMs": 753,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     },
     {
       "id": "src-ilo-natlex-announcement-103",
       "url": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=5095",
       "databaseAccessed": "2026-07-29",
       "finalUrl": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=5095",
-      "status": 0,
-      "state": "unverified",
+      "status": 403,
+      "state": "restricted",
+      "method": "GET",
+      "contentType": "text/html; charset=UTF-8",
+      "elapsedMs": 209,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
+    },
+    {
+      "id": "src-video-modern-thai-economy-ep1",
+      "url": "https://www.youtube.com/watch?v=Udr4BJDjETk",
+      "databaseAccessed": "2026-08-10",
+      "finalUrl": "https://www.youtube.com/watch?v=Udr4BJDjETk",
+      "status": 200,
+      "state": "reachable",
       "method": "HEAD",
-      "contentType": "",
-      "elapsedMs": 0,
-      "checkedAt": null,
-      "error": "added after last successful network audit"
+      "contentType": "text/html; charset=utf-8",
+      "elapsedMs": 553,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
+    },
+    {
+      "id": "src-video-luk-thung-legends",
+      "url": "https://www.youtube.com/watch?v=8tWjIimoU18",
+      "databaseAccessed": "2026-08-10",
+      "finalUrl": "https://www.youtube.com/watch?v=8tWjIimoU18",
+      "status": 200,
+      "state": "reachable",
+      "method": "HEAD",
+      "contentType": "text/html; charset=utf-8",
+      "elapsedMs": 510,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
+    },
+    {
+      "id": "src-worldbank-thailand-growth-path",
+      "url": "https://openknowledge.worldbank.org/bitstream/handle/10986/8671/wps3912.pdf",
+      "databaseAccessed": "2026-08-10",
+      "finalUrl": "https://openknowledge.worldbank.org/bitstream/handle/10986/8671/wps3912.pdf",
+      "status": 200,
+      "state": "reachable",
+      "method": "HEAD",
+      "contentType": "text/html; charset=UTF-8",
+      "elapsedMs": 848,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
+    },
+    {
+      "id": "src-thai-encyclopedia-luk-thung",
+      "url": "https://saranukromthai.or.th/oldchild/2611",
+      "databaseAccessed": "2026-08-10",
+      "finalUrl": "https://saranukromthai.or.th/oldchild/2611",
+      "status": 200,
+      "state": "reachable",
+      "method": "HEAD",
+      "contentType": "text/html; charset=UTF-8",
+      "elapsedMs": 441,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
+    },
+    {
+      "id": "src-thai-media-fund-84-years-luk-thung",
+      "url": "https://www.thaimediafund.or.th/download/%E0%B9%98%E0%B9%94-%E0%B8%9B%E0%B8%B5-%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%97%E0%B8%A2/",
+      "databaseAccessed": "2026-08-10",
+      "finalUrl": "https://www.thaimediafund.or.th/download/%E0%B9%98%E0%B9%94-%E0%B8%9B%E0%B8%B5-%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%97%E0%B8%A2/",
+      "status": 200,
+      "state": "reachable",
+      "method": "HEAD",
+      "contentType": "text/html; charset=UTF-8",
+      "elapsedMs": 1885,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
+    },
+    {
+      "id": "src-dru-luk-thung-social-change",
+      "url": "https://so02.tci-thaijo.org/index.php/journaldru/article/view/250547",
+      "databaseAccessed": "2026-08-10",
+      "finalUrl": "https://so02.tci-thaijo.org/index.php/journaldru/article/view/250547",
+      "status": 200,
+      "state": "reachable",
+      "method": "HEAD",
+      "contentType": "text/html; charset=utf-8",
+      "elapsedMs": 719,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
+    },
+    {
+      "id": "src-ubu-luk-thung-poverty",
+      "url": "https://so02.tci-thaijo.org/index.php/human_ubu/article/view/229042",
+      "databaseAccessed": "2026-08-10",
+      "finalUrl": "https://so02.tci-thaijo.org/index.php/human_ubu/article/view/229042",
+      "status": 200,
+      "state": "reachable",
+      "method": "HEAD",
+      "contentType": "text/html; charset=utf-8",
+      "elapsedMs": 404,
+      "checkedAt": "2026-08-09T23:39:34.388Z"
     }
   ]
 }

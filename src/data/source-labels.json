@@ -42,7 +42,10 @@
     "oral-history-public-program": "โครงการประวัติศาสตร์บอกเล่าสาธารณะ",
     "international-assessment": "การประเมินระหว่างประเทศ",
     "historical-study": "งานศึกษาประวัติศาสตร์",
-    "movement-archive": "จดหมายเหตุขบวนการ"
+    "movement-archive": "จดหมายเหตุขบวนการ",
+    "documentary-video": "วิดีโอสารคดีและบทสนทนา",
+    "official-cultural-reference": "แหล่งอ้างอิงวัฒนธรรมทางการ",
+    "institutional-publication": "สิ่งพิมพ์สถาบัน"
   },
   "languages": {
     "th": "ไทย",
