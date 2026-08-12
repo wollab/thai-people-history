@@ -2,13 +2,14 @@
   "meta": {
     "title": "Thai People History Source Link Integrity Report",
     "checkedAt": "2026-08-09T23:39:34.388Z",
-    "sourceDatabaseVersion": "0.13.0",
-    "sourceDatabaseUpdated": "2026-08-10",
+    "sourceDatabaseVersion": "0.13.1",
+    "sourceDatabaseUpdated": "2026-08-12",
     "total": 200,
     "timeoutMs": 12000,
     "concurrency": 12,
     "sourcesWithAccessDate": 200,
-    "rule": "HTTP status confirms link reachability only; it does not validate historical claims or citation completeness."
+    "rule": "HTTP status confirms link reachability only; it does not validate historical claims or citation completeness.",
+    "note": "Source list unchanged from 0.13.0; 0.13.1 added microhistory records using existing source IDs, so link results from 2026-08-09 remain the latest reachability audit."
   },
   "summary": {
     "reachable": 174,
